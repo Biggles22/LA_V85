@@ -276,7 +276,7 @@
             if (Number.isFinite(value) && value >= 1 && value <= 10000) (oddsHistory[horse.key] ||= {})[day] = value;
           }
         }
-        document.querySelector("#odds-source-status").textContent = data.updatedAt ? "Publicerade odds senast " + new Date(data.updatedAt).toLocaleString("sv-SE", {timeZone:"Europe/Stockholm"}) + "." : data.checkedAt ? "Kontrollerat " + new Date(data.checkedAt).toLocaleString("sv-SE", {timeZone:"Europe/Stockholm"}) + ": vinnarodds saknas ännu hos källan." : "Inga publicerade odds ännu.";
+        document.querySelector("#odds-source-status").textContent = data.updatedAt ? "Publicerade odds senast " + new Date(data.updatedAt).toLocaleString("sv-SE", {timeZone:"Europe/Stockholm"}) + "." : data.checkedAt ? "Kontrollerat " + new Date(data.checkedAt).toLocaleString("sv-SE", {timeZone:"Europe/Stockholm"}) + ": ATG:s odds kunde inte verifieras härifrån." : "Inga publicerade odds ännu.";
       } catch {
         document.querySelector("#odds-source-status").textContent = "Kunde inte hämta publicerade odds. Lokala noteringar visas.";
       }
