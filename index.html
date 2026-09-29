@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101714">
   <meta name="description" content="LA_V85 samlar veckans V85-tips och hjälper dig bygga ditt system.">
-  <title>LA_V85 — veckans V85</title>
+  <title>LA_V85 — skrällbevakning V85 Boden 3 oktober 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -184,12 +184,12 @@
       <div class="topbar"><div class="breadcrumb">Spelöversikt&nbsp; / &nbsp;<span>Veckans V85</span></div><div class="top-actions"><button class="icon-button" type="button" aria-label="Hjälp" title="Om LA_V85">i</button><div class="avatar" aria-label="Profil LA">LA</div></div></div>
       <div class="layout">
         <section class="main-column" aria-labelledby="page-title">
-          <div class="eyebrow"><span class="live-dot"></span>V85 · Veckans tips</div>
-          <h1 id="page-title">Bygg ditt system.</h1>
-          <p class="intro">Åtta lopp. Dina val. Ett system som känns som ditt.</p>
-          <section class="race-banner" aria-label="Veckans omgång"><img class="race-image" src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Travhästar på en bana" fetchpriority="high"><span class="example-tag">Demoinnehåll</span><div class="race-copy"><div class="race-kicker">Veckans omgång · uppdateras manuellt</div><h2 class="race-title">Lördagens V85</h2><div class="race-subtitle">Omgångsinformation och startlista läggs till här.</div></div></section>
-          <div class="notice"><span aria-hidden="true">ⓘ</span><span><b>Exempelrader:</b> startlista, odds och tips nedan är fiktiva demodata, inte ATG:s aktuella omgång. Kontrollera alltid uppgifterna hos ATG före spel.</span></div>
-          <div class="section-head"><div><h2>Avdelningar</h2><div class="section-sub">Välj en eller flera hästar i varje lopp</div></div><div class="filter" role="group" aria-label="Filtrera avdelningar"><button class="selected" type="button" data-filter="all">Alla 8</button><button type="button" data-filter="open">Ej klara</button></div></div>
+          <div class="eyebrow"><span class="live-dot"></span>V85 · Skrällbevakning</div>
+          <h1 id="page-title">Veckans skrällar.</h1>
+          <p class="intro">Potentiella lågstreckare och garderingsbud inför V85 på Boden lördag 3 oktober.</p>
+          <section class="race-banner" aria-label="Veckans omgång"><img class="race-image" src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Travhästar på en bana" fetchpriority="high"><span class="example-tag">Uppdaterad 29 sep</span><div class="race-copy"><div class="race-kicker">V85 · Boden · lördag 3 oktober 2026</div><h2 class="race-title">Veckans skrällbevakning</h2><div class="race-subtitle">Tidiga outsiderbud utifrån publicerade analyser. Kontrollera streck, balans, strykningar och värmning närmare spelstopp.</div></div></section>
+          <div class="notice"><span aria-hidden="true">ⓘ</span><span><b>Tidig skrällista:</b> kandidaterna bygger på analyser publicerade inför Boden 3 oktober. De är inte garantier och kan ändras när streckprocent, balans, utrustning, strykningar och värmningsintryck blir kända.</span></div>
+          <div class="section-head"><div><h2>Avdelningar</h2><div class="section-sub">Välj de skrällbud du vill ha med i ditt system</div></div><div class="filter" role="group" aria-label="Filtrera avdelningar"><button class="selected" type="button" data-filter="all">Alla 8</button><button type="button" data-filter="open">Ej klara</button></div></div>
           <div class="races" id="races"></div>
         </section>
         <aside class="right-column" aria-label="Systemöversikt">
@@ -205,7 +205,7 @@
             </div>
             <div class="cost-note">Beräkningen använder 0,50 kr per rad som exempel. Kontrollera aktuell insats hos ATG.</div>
           </section>
-          <section class="tip-box"><h3>Så tänker tipset</h3><div class="tip-item"><span>Spik</span><strong>En tydlig förstahäst</strong></div><div class="tip-item"><span>Gardering</span><strong>Flera tänkbara vinnare</strong></div><div class="tip-item"><span>Skräll</span><strong>Outsider med potential</strong></div></section>
+          <section class="tip-box"><h3>Skrällradar</h3><div class="tip-item"><span>Huvudskräll</span><strong>Extra intressant outsider</strong></div><div class="tip-item"><span>Skräll</span><strong>Tydligt garderingsbud</strong></div><div class="tip-item"><span>Bevaka</span><strong>Intressant om strecken blir låga</strong></div></section>
         </aside>
       </div>
     </main>
@@ -213,14 +213,14 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script>
     const races = [
-      { title: "Silverdivisionen", meta: "2140 m · autostart", horses: [[1, "Nordic Pilot", "Förstahäst", "3,4"], [3, "Rapid Action", "Tidigt bud", "4,8"], [6, "Mister Avenue", "Gardering", "7,2"], [9, "Lucky Strike", "Skrällbud", "18,5"]] },
-      { title: "Klass II", meta: "1640 m · autostart", horses: [[2, "Golden Horizon", "Förstahäst", "2,9"], [4, "Vega Star", "Tidigt bud", "5,1"], [7, "Blueberry Hill", "Gardering", "8,6"], [10, "Digital Dream", "Skrällbud", "21,0"]] },
-      { title: "Klass I", meta: "2140 m · voltstart", horses: [[1, "Arctic Melody", "Förstahäst", "3,1"], [5, "King of June", "Tidigt bud", "4,4"], [8, "Sweet Caroline", "Gardering", "9,0"], [11, "On the Run", "Skrällbud", "26,2"]] },
-      { title: "Bronsdivisionen", meta: "2140 m · autostart", horses: [[2, "Jetstream", "Förstahäst", "2,5"], [3, "Redwood Classic", "Tidigt bud", "5,8"], [6, "Dancing Queen", "Gardering", "7,9"], [12, "Major Tom", "Skrällbud", "31,5"]] },
-      { title: "Kallblodsloppet", meta: "2140 m · voltstart", horses: [[1, "Stormvind", "Förstahäst", "3,7"], [4, "Fjällbrisen", "Tidigt bud", "6,0"], [9, "Silverfaks", "Gardering", "9,4"], [13, "Rasken", "Skrällbud", "19,8"]] },
-      { title: "Diamantstoet", meta: "2140 m · autostart", horses: [[2, "Luna Park", "Förstahäst", "2,7"], [5, "Bella Notte", "Tidigt bud", "4,9"], [7, "Miss Sunshine", "Gardering", "7,3"], [10, "Violet Sky", "Skrällbud", "23,0"]] },
-      { title: "Gulddivisionen", meta: "1640 m · autostart", horses: [[1, "Grand Finale", "Förstahäst", "2,2"], [3, "Fast Forward", "Tidigt bud", "5,6"], [6, "Rocket Man", "Gardering", "8,1"], [8, "Night Rider", "Skrällbud", "17,4"]] },
-      { title: "V85-finalen", meta: "2140 m · autostart", horses: [[2, "Blue Ocean", "Förstahäst", "3,0"], [4, "Perfect Match", "Tidigt bud", "4,7"], [9, "Last Call", "Gardering", "8,8"], [11, "Easy Money", "Skrällbud", "28,0"]] }
+      { title: "Sto-loppet", meta: "V85-1 · Boden", horses: [[8, "R.K.Kiara", "Huvudskräll · smygläge och form", "BEVAKA"], [12, "Sonoma L.A.", "Stark avslutning · kuskplus", "BEVAKA"], [11, "Chocliq Bishop", "Vass avslutare · tempo gynnar", "UTMANARE"]] },
+      { title: "Bronsdivisionen", meta: "V85-2 · Boden", horses: [[9, "Moni Elite", "Stark och i toppform", "SKRÄLL"], [1, "Jimmy Adore", "Underskattad vid gardering", "BEVAKA"]] },
+      { title: "Klass II", meta: "V85-3 · 1640 m", horses: [[10, "Sacrebleu", "Jämn och gynnas av hårt tempo", "SKRÄLL"], [12, "Mandrake", "Enklare motstånd · vass avslutning", "SKRÄLL"]] },
+      { title: "Kallblodsloppet", meta: "V85-4 · Boden", horses: [[3, "Mälarstens Sagari", "Bra senast · toppform", "SKRÄLL"], [11, "Tyri Leo", "Kapabel och intressant med rätt resa", "BEVAKA"], [12, "Eldbrand", "Stalloptimism · hög kapacitet", "BEVAKA"]] },
+      { title: "Klass I", meta: "V85-5 · Boden", horses: [[10, "Puskas Boko", "Utveckling uppåt · barfota runt om anmält", "SKRÄLL"]] },
+      { title: "Klass III", meta: "V85-6 · Boden", horses: [[12, "Forget Me Not", "Farlig vid överpace", "SKRÄLL"]] },
+      { title: "Silverdivisionen", meta: "V85-7 · Boden", horses: [[4, "Maserati Hall", "Kapacitet finns · svårbedömd efter uppehåll", "SKRÄLL"]] },
+      { title: "Scandal Plays Minne", meta: "V85-8 · Boden", horses: [[8, "Uno", "Urstark V85-vinnare senast", "HUVUDSKRÄLL"], [7, "Lots of Fun Sisu", "Speedig · gynnas av rätt ryggar", "BEVAKA"], [4, "Irwin Zet", "Intressant från startvolten", "BEVAKA"]] }
     ];
     const selections = races.map(() => new Set());
     const raceList = document.querySelector("#races");
