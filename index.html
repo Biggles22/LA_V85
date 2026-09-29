@@ -287,6 +287,7 @@
             if (Number.isFinite(value) && value >= 1 && value <= 10000) (oddsHistory[horse.key] ||= {})[day] = value;
           }
         }
+        if (data.percentages && typeof data.percentages === "object") { for (const [key, value] of Object.entries(data.percentages)) if (Number.isFinite(value) && value >= 0 && value <= 100 && !(key in percentages)) percentages[key] = value; refreshRankings(); }
         if (data.trends && typeof data.trends === "object") {
           for (const horse of oddsHorses) {
             const entry = data.trends[horse.key];
