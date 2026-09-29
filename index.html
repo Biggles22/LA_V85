@@ -89,7 +89,7 @@
     .horse-name, .horse-note { display: block; }
     .horse-name { overflow: hidden; color: var(--paper); font-size: 11px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
     .horse-note { margin-top: 2px; color: var(--muted); font-size: 9px; }
-    .horse-odds { color: #cad2c7; font: 10px var(--mono); }
+    .horse-odds { color: #cad2c7; font: 10px var(--mono); text-align: right; } .horse-percent { display: block; color: var(--acid); margin-bottom: 3px; } .percent-editor { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 0 0 14px; color: var(--muted); font-size: 11px; } .percent-editor input { width: 80px; padding: 6px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--paper); font: 12px var(--mono); } .percent-editor button { padding: 6px 9px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel-raised); cursor: pointer; }
     .right-column { position: sticky; top: 20px; display: grid; gap: 12px; }
     .slip { overflow: hidden; border: 1px solid var(--line); border-radius: 5px; background: var(--panel); }
     .slip-head { padding: 17px 17px 14px; border-bottom: 1px solid var(--line); }
@@ -188,9 +188,9 @@
           <h1 id="page-title">Veckans skrällar.</h1>
           <p class="intro">Potentiella lågstreckare och garderingsbud inför V85 på Boden lördag 3 oktober.</p>
           <section class="race-banner" aria-label="Veckans omgång"><img class="race-image" src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Travhästar på en bana" fetchpriority="high"><span class="example-tag">Uppdaterad 29 sep</span><div class="race-copy"><div class="race-kicker">V85 · Boden · lördag 3 oktober 2026</div><h2 class="race-title">Veckans skrällbevakning</h2><div class="race-subtitle">Tidiga outsiderbud utifrån publicerade analyser. Kontrollera streck, balans, strykningar och värmning närmare spelstopp.</div></div></section>
-          <div class="notice"><span aria-hidden="true">ⓘ</span><span><b>Tidig skrällista:</b> kandidaterna bygger på analyser publicerade inför Boden 3 oktober. De är inte garantier och kan ändras när streckprocent, balans, utrustning, strykningar och värmningsintryck blir kända.</span></div>
+          <div class="notice"><span aria-hidden="true">ⓘ</span><span><b>Tidig skrällista:</b> kandidaterna bygger på analyser inför Boden 3 oktober. Fyll i V85-% från ATG ovan; rankningen uppdateras direkt i din webbläsare. Kontrollera även strykningar, balans och utrustning. Procenten hämtas inte automatiskt.</span></div>
           <div class="section-head"><div><h2>Avdelningar</h2><div class="section-sub">Välj de skrällbud du vill ha med i ditt system</div></div><div class="filter" role="group" aria-label="Filtrera avdelningar"><button class="selected" type="button" data-filter="all">Alla 8</button><button type="button" data-filter="open">Ej klara</button></div></div>
-          <div class="races" id="races"></div>
+          <div class="percent-editor"><label for="percent-input">Uppdatera streck: ange avdelning, startnummer och V85-%</label><input id="percent-input" placeholder="3 12 6" aria-label="Avdelning startnummer procent"><button id="set-percent" type="button">Uppdatera</button><a href="https://www.atg.se/spel/2026-10-03/V85/boden" target="_blank" rel="noopener noreferrer">Se aktuella streck hos ATG ↗</a></div><div class="races" id="races"></div>
         </section>
         <aside class="right-column" aria-label="Systemöversikt">
           <section class="slip">
@@ -223,6 +223,22 @@
       { title: "Scandal Plays Minne", meta: "V85-8 · Boden", horses: [[8, "Uno", "Urstark V85-vinnare senast", "HUVUDSKRÄLL"], [7, "Lots of Fun Sisu", "Speedig · gynnas av rätt ryggar", "BEVAKA"], [4, "Irwin Zet", "Intressant från startvolten", "BEVAKA"]] }
     ];
     const selections = races.map(() => new Set());
+    const percentages = (() => { try { return JSON.parse(localStorage.getItem("la-v85-percentages-2026-10-03") || "{}"); } catch { return {}; } })();
+    function rank(base, percentage) {
+      if (!Number.isFinite(percentage)) return base;
+      if (percentage <= 5) return "HUVUDSKRÄLL";
+      if (percentage <= 12) return "SKRÄLL";
+      return "BEVAKA";
+    }
+    function refreshRankings() {
+      document.querySelectorAll(".horse").forEach(button => {
+        const key = `${button.dataset.leg}-${button.dataset.number}`;
+        const pct = percentages[key];
+        const available = typeof pct === "number" && Number.isFinite(pct);
+        button.querySelector(".horse-percent").textContent = available ? `${pct.toLocaleString("sv-SE")} %` : "V85-% saknas";
+        button.querySelector(".rank").textContent = rank(button.dataset.baseRank, available ? pct : NaN);
+      });
+    }
     const raceList = document.querySelector("#races");
     const saved = localStorage.getItem("la-v85-selections");
     if (saved) {
@@ -241,8 +257,10 @@
         horse.type = "button";
         horse.className = "horse";
         horse.dataset.number = number;
+        horse.dataset.leg = raceIndex + 1;
+        horse.dataset.baseRank = odds;
         horse.setAttribute("aria-pressed", "false");
-        horse.innerHTML = `<span class="horse-number">${number}</span><span><span class="horse-name">${name}</span><span class="horse-note">${note}</span></span><span class="horse-odds">${odds}</span>`;
+        horse.innerHTML = `<span class="horse-number">${number}</span><span><span class="horse-name">${name}</span><span class="horse-note">${note}</span></span><span class="horse-odds"><span class="horse-percent">V85-% saknas</span><span class="rank">${odds}</span></span>`;
         horse.addEventListener("click", () => {
           if (selections[raceIndex].has(number)) selections[raceIndex].delete(number);
           else selections[raceIndex].add(number);
@@ -327,6 +345,21 @@
       card.querySelector(".chevron").setAttribute("aria-expanded", "true");
       card.scrollIntoView({ behavior: "smooth", block: "center" });
     });
+    document.querySelector("#set-percent").addEventListener("click", () => {
+      const input = document.querySelector("#percent-input");
+      const match = input.value.trim().replace(",", ".").match(/^(\d+)\s+(\d+)\s+(\d+(?:\.\d+)?)$/);
+      if (!match) { showToast("Skriv till exempel: 3 12 6"); return; }
+      const [, legText, numberText, percentText] = match;
+      const leg = Number(legText), number = Number(numberText), percent = Number(percentText);
+      if (!races[leg - 1]?.horses.some(horse => horse[0] === number) || percent > 100) { showToast("Kontrollera avdelning, startnummer och procent."); return; }
+      percentages[`${leg}-${number}`] = percent;
+      localStorage.setItem("la-v85-percentages-2026-10-03", JSON.stringify(percentages));
+      refreshRankings();
+      input.value = "";
+      showToast(`V85-${leg}, nr ${number}: ${percent.toLocaleString("sv-SE")} %. Rankningen uppdaterad.`);
+    });
+    document.querySelector("#percent-input").addEventListener("keydown", event => { if (event.key === "Enter") document.querySelector("#set-percent").click(); });
+    refreshRankings();
     document.querySelector(".icon-button").addEventListener("click", () => showToast("LA_V85 är en fristående tipsida, inte en del av ATG."));
     update();
   </script>
