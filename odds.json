@@ -56,5 +56,15 @@
       "2026-09-29": 3.75
     }
   },
-  "status": "V85-1 nr 1–8 verifierade från skärmbild. Övriga startande väntar på verifiering."
+  "status": "V85-1 nr 1–8 verifierade från skärmbild. Övriga startande väntar på verifiering.",
+  "percentages": {
+    "1-1": 2,
+    "1-2": 4,
+    "1-3": 3,
+    "1-4": 7,
+    "1-5": 10,
+    "1-6": 1,
+    "1-7": 12,
+    "1-8": 34
+  }
 }
