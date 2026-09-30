@@ -302,14 +302,14 @@
           
           <section class="radar-shell" id="skrallradar" aria-labelledby="radar-title">
             <div class="radar-head">
-              <div><h2 id="radar-title">Skrällradar</h2><p>Kandidaterna visas först. V85-%, ATG Trend% och oddsändring hålls isär så att ett oddsfall inte automatiskt tolkas som spelvärde. Klicka på en häst för oddshistorik.</p></div>
+              <div><h2 id="radar-title">Skrällradar</h2><p>Radarn hämtar automatiskt lågprocentare (≤10 %) med minst 3 av 6 skrällpoäng. 4–6 poäng är de starkaste kandidaterna. Klicka på en häst för oddshistorik och signaler.</p></div>
               <div class="radar-source" id="radar-source">ATG-PDF · 30 sep 12:57</div>
             </div>
             <div class="radar-toolbar" aria-label="Filter för skrällradar">
               <label>Avdelning
                 <select id="radar-leg"><option value="all">Alla 8</option><option value="1">V85-1</option><option value="2">V85-2</option><option value="3">V85-3</option><option value="4">V85-4</option><option value="5">V85-5</option><option value="6">V85-6</option><option value="7">V85-7</option><option value="8">V85-8</option></select>
               </label>
-              <label><input id="radar-low" type="checkbox"> Låg V85-% (≤10)</label>
+              <label><input id="radar-low" type="checkbox"> Bara 4–6 poäng</label>
               <label><input id="radar-drop" type="checkbox"> Sjunkande odds</label>
               <label><input id="radar-watch-only" type="checkbox"> Bara bevakade</label>
               <span class="radar-count" id="radar-count"></span>
@@ -735,16 +735,13 @@
         return new Set(Array.isArray(saved) ? saved : []);
       } catch { return new Set(); }
     })();
-    const radarCandidates = races.flatMap((race, raceIndex) =>
-      race.horses.map(([number, name, note]) => ({
-        key: `${raceIndex + 1}-${number}`,
-        leg: raceIndex + 1,
-        number,
-        name,
-        note,
-        driver: driverByKey[`${raceIndex + 1}-${number}`] || "Kusk saknas"
-      }))
-    );
+    const radarCandidates = oddsHorses.map(horse => ({
+      key: horse.key,
+      leg: horse.leg,
+      number: Number(horse.key.split("-")[1]),
+      name: horse.name,
+      driver: horse.driver
+    }));
     function radarLatestNumeric(series) {
       const days = oddsDays.filter(day => Number.isFinite(series?.[day]));
       const day = days.at(-1);
@@ -763,7 +760,8 @@
       const withdrawn = statusDays.length > 0;
       const percentage = Number.isFinite(percentages[candidate.key]) ? percentages[candidate.key] :
         Number.isFinite(publishedSnapshot.percentages?.[candidate.key]) ? publishedSnapshot.percentages[candidate.key] : null;
-      return { series, latestOdds, change, trend: trendEntry?.value ?? null, withdrawn, percentage };
+      const score = scoreMetrics(candidate);
+      return { series, latestOdds, change, trend: trendEntry?.value ?? null, withdrawn, percentage, score };
     }
     function radarChart(series) {
       const points = oddsDays.map((day, index) => ({ day, index, value: series?.[day] })).filter(point => isExactOdds(point.value));
@@ -790,14 +788,19 @@
       const dropOnly = document.querySelector("#radar-drop").checked;
       const watchOnly = document.querySelector("#radar-watch-only").checked;
       const candidates = radarCandidates.map(candidate => ({ ...candidate, metrics: radarMetrics(candidate) }))
+        .filter(candidate => !candidate.metrics.withdrawn)
+        .filter(candidate => Number.isFinite(candidate.metrics.percentage) && candidate.metrics.percentage <= 10)
+        .filter(candidate => candidate.metrics.score.total >= 3)
         .filter(candidate => legFilter === "all" || candidate.leg === Number(legFilter))
-        .filter(candidate => !lowOnly || (Number.isFinite(candidate.metrics.percentage) && candidate.metrics.percentage <= 10))
+        .filter(candidate => !lowOnly || candidate.metrics.score.total >= 4)
         .filter(candidate => !dropOnly || (Number.isFinite(candidate.metrics.change) && candidate.metrics.change < 0))
         .filter(candidate => !watchOnly || radarWatch.has(candidate.key))
         .sort((a,b) => {
-          if (a.metrics.withdrawn !== b.metrics.withdrawn) return a.metrics.withdrawn ? 1 : -1;
-          const aw = radarWatch.has(a.key), bw = radarWatch.has(b.key);
-          if (aw !== bw) return aw ? -1 : 1;
+          if (b.metrics.score.total !== a.metrics.score.total) return b.metrics.score.total - a.metrics.score.total;
+          if (a.metrics.score.market !== b.metrics.score.market) return b.metrics.score.market - a.metrics.score.market;
+          if (a.metrics.score.trend !== b.metrics.score.trend) return b.metrics.score.trend - a.metrics.score.trend;
+          const ap = a.metrics.percentage ?? 999, bp = b.metrics.percentage ?? 999;
+          if (ap !== bp) return ap - bp;
           const ac = Number.isFinite(a.metrics.change) ? a.metrics.change : 999;
           const bc = Number.isFinite(b.metrics.change) ? b.metrics.change : 999;
           return ac - bc;
@@ -810,7 +813,7 @@
       if (!candidates.length) {
         const empty = document.createElement("div");
         empty.className = "radar-empty";
-        empty.textContent = "Ingen kandidat matchar de valda filtren.";
+        empty.textContent = "Ingen lågprocentare når minst 3 skrällpoäng med de valda filtren.";
         grid.append(empty);
         return;
       }
@@ -829,12 +832,12 @@
             <span class="radar-number">${candidate.number}</span>
             <span>
               <span class="radar-line"><span class="radar-name">${candidate.name}</span><span class="radar-leg">V85-${candidate.leg}</span></span>
-              <span class="radar-note">${candidate.note} · Kusk: ${candidate.driver}</span>
+              <span class="radar-note">Skrällpoäng ${m.score.total}/6 · ${scoreVerdict(m.score.total, m.percentage).text} · Kusk: ${candidate.driver}</span>
               <span class="radar-signals">
+                <span class="signal ${m.score.total >= 4 ? "good" : ""}">Poäng ${m.score.total}/6</span>
                 <span class="signal">V85 ${pct}</span>
                 <span class="signal ${changeClass}">Odds ${odds} · ${changeText}</span>
                 <span class="signal ${trendClass}">Trend ${trendText}</span>
-                ${m.withdrawn ? '<span class="signal withdrawn">STRUKEN</span>' : ''}
               </span>
             </span>
           </button>
@@ -842,7 +845,7 @@
         </div>
         <div class="radar-detail" hidden>
           ${radarChart(m.series)}
-          <div class="history-values"><span>V85-%: ${pct}</span><span>ATG Trend%: ${trendText}</span><span>Oddsändring: ${changeText}</span></div>
+          <div class="history-values"><span>Skrällpoäng: ${m.score.total}/6</span><span>Odds/%: ${m.score.market}</span><span>Dold form: ${m.score.form}</span><span>Utrustning: ${m.score.equipment}</span><span>Loppbild: ${m.score.pace}</span><span>Klass/dist.: ${m.score.classDistance}</span><span>Trend: ${m.score.trend}</span><span>Oddsändring: ${changeText}</span></div>
           <a class="detail-link" href="#odds-title">Visa i detaljtabellen ↓</a>
         </div>`;
         const openButton = card.querySelector(".radar-open");
