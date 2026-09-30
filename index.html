@@ -195,6 +195,17 @@
     .radar-head h2 { font-size: 21px; }
     .radar-head p { max-width: 650px; margin: 4px 0 0; color: var(--muted); font-size: 11px; }
     .radar-source { flex: 0 0 auto; padding: 6px 8px; border: 1px solid #bdd2ef; border-radius: 999px; background: #edf4ff; color: #25476e; font: 9px var(--mono); white-space: nowrap; }
+    .reliability-box { margin: 0 0 14px; padding: 11px 12px; border: 1px solid #d9e0e9; border-radius: 6px; background: #fbfdff; display:flex; justify-content:space-between; gap:14px; align-items:center; }
+    .reliability-copy { min-width:0; }
+    .reliability-copy strong { display:block; margin-bottom:3px; font-size:11px; color:var(--paper); }
+    .reliability-copy span { display:block; color:var(--muted); font-size:10px; }
+    .reliability-badge { flex:0 0 auto; padding:7px 10px; border-radius:999px; font:700 9px var(--mono); white-space:nowrap; }
+    .reliability-badge.early { background:#f2f4f7; color:#66758a; }
+    .reliability-badge.preliminary { background:#fff6df; color:#7a5a00; }
+    .reliability-badge.good { background:#edf4ff; color:#0057b8; }
+    .reliability-badge.final { background:#e7f6ec; color:#14733a; }
+    .reliability-badge.started { background:#eef1f5; color:#4e5d72; }
+
     .radar-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px; margin-bottom: 12px; border: 1px solid #e0e7f1; border-radius: 6px; background: #f5f8fc; }
     .radar-toolbar label { display: flex; align-items: center; gap: 6px; color: #39506e; font-size: 10px; }
     .radar-toolbar select { min-height: 32px; padding: 5px 28px 5px 8px; border: 1px solid #cbd7e6; border-radius: 4px; background: #fff; color: var(--paper); font: 10px var(--mono); }
@@ -300,6 +311,14 @@
           <section class="race-banner" aria-label="Veckans omgång"><img class="race-image" src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Travhästar på en bana" fetchpriority="high"><span class="example-tag">Uppdaterad 30 sep</span><div class="race-copy"><div class="race-kicker">V85 · Boden · lördag 3 oktober 2026</div><h2 class="race-title">Veckans skrällbevakning</h2><div class="race-subtitle">Tidiga outsiderbud utifrån publicerade analyser. Kontrollera streck, balans, strykningar och värmning närmare spelstopp.</div></div></section>
           <div class="notice"><span aria-hidden="true">ⓘ</span><span><b>Tidig skrällista:</b> kandidaterna bygger på analyser inför Boden 3 oktober. V85-% är uppdaterade från ATG-PDF; rankningen uppdateras direkt i din webbläsare. Kontrollera även strykningar, balans och utrustning. Publicerade procenttal från ATG-PDF uppdateras när nya noteringar läggs in.</span></div>
           
+          <div class="reliability-box" id="market-reliability" aria-live="polite">
+            <div class="reliability-copy">
+              <strong>Tillförlitlighet för streck och odds</strong>
+              <span id="reliability-text">Beräknar hur nära första V85-starten vi är…</span>
+            </div>
+            <div class="reliability-badge early" id="reliability-badge">Tidigt</div>
+          </div>
+
           <section class="radar-shell" id="skrallradar" aria-labelledby="radar-title">
             <div class="radar-head">
               <div><h2 id="radar-title">Skrällradar</h2><p>Radarn hämtar automatiskt lågprocentare (≤10 %) med minst 3 av 6 skrällpoäng. 4–6 poäng är de starkaste kandidaterna. Klicka på en häst för oddshistorik och signaler.</p></div>
@@ -401,6 +420,42 @@
       : Number.isFinite(value)
         ? value.toLocaleString("sv-SE", {minimumFractionDigits: 2, maximumFractionDigits: 2})
         : value === "EJ" ? "EJ" : "—";
+    const FIRST_V85_START = new Date("2026-10-03T15:00:00+02:00");
+    function updateReliability() {
+      const now = new Date();
+      const ms = FIRST_V85_START - now;
+      const hours = ms / 3600000;
+      const badge = document.querySelector("#reliability-badge");
+      const textEl = document.querySelector("#reliability-text");
+      if (!badge || !textEl) return;
+      let label, cls, text;
+      if (hours <= 0) {
+        label = "Startad";
+        cls = "started";
+        text = "Första V85-starten har gått. Använd slutliga streck och odds för efteranalys.";
+      } else if (hours <= 1.5) {
+        label = "Nära slutligt";
+        cls = "final";
+        text = `Ca ${Math.max(1, Math.round(hours * 60))} min till första start. Streck och vinnarodds är nu som mest användbara för den slutliga skrällrankingen.`;
+      } else if (hours <= 6) {
+        label = "Bra underlag";
+        cls = "good";
+        text = `Ca ${hours.toFixed(1).replace(".", ",")} timmar till första start. Marknaderna brukar nu vara betydligt mer representativa.`;
+      } else if (hours <= 24) {
+        label = "Preliminärt";
+        cls = "preliminary";
+        text = `Ca ${Math.round(hours)} timmar till första start. Strecken börjar bli användbara, men sena ändringar kan fortfarande påverka rankingen.`;
+      } else {
+        label = "Tidigt";
+        cls = "early";
+        const days = Math.floor(hours / 24);
+        const remHours = Math.round(hours - days * 24);
+        text = `Ca ${days} dygn ${remHours} timmar till första start. Vinnaroddsen kan vara tunna och 99,99+ är särskilt osäkert; se detta främst som bevakningsdata.`;
+      }
+      badge.className = "reliability-badge " + cls;
+      badge.textContent = label;
+      textEl.textContent = text;
+    }
     const oddsStorageKey = "la-v85-win-odds-2026-10-03";
     const todayInSweden = new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Stockholm", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
     document.querySelector("#odds-date").value = oddsDays.includes(todayInSweden) ? todayInSweden : oddsDays[0];
@@ -869,6 +924,8 @@
       document.querySelector(selector)?.addEventListener("change", renderRadar)
     );
     renderRadar();
+    updateReliability();
+    setInterval(updateReliability, 60000);
 
   </script>
 </body>
