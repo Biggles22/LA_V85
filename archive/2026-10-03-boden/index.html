@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0057b8">
   <meta name="description" content="LA_V85 samlar veckans V85-tips och hjälper dig bygga ditt system.">
-  <title>LA_V85 — skrällbevakning V85 Boden 3 oktober 2026</title>
+  <title>LA_V85 — sparad kopia av V85 Boden 3 oktober 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -35,7 +35,13 @@
     .nav-label { padding: 0 10px; margin-bottom: 9px; color: #60718a; font: 700 11px var(--mono); letter-spacing:.04em; text-transform: uppercase; }
     .nav-link { display: flex; align-items: center; gap: 11px; width: 100%; padding: 11px 10px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); font-size:13px; font-weight:600; line-height:1.25; text-align: left; cursor: pointer; }
     .nav-link.active { background: #dcecff; color: #0057b8; box-shadow: inset 3px 0 0 #0057b8; }
-    .nav-icon { width: 19px; text-align: center; font-size: 18px; }\n    .nav-link small { font-size:11px; font-weight:500; color:#718197; }\n    .nav-link.active small { color:#0057b8; }\n    .current-round { margin: 0 0 16px; padding: 12px 14px; border: 1px solid #bdd2ef; border-left: 4px solid #0057b8; border-radius: 7px; background:#edf4ff; }\n    .current-round .label { display:block; margin-bottom:3px; color:#60718a; font:700 10px var(--mono); text-transform:uppercase; letter-spacing:.04em; }\n    .current-round strong { color:#12345b; font-size:16px; }\n    .current-round span:last-child { display:block; margin-top:2px; color:#526780; font-size:11px; }
+    .nav-icon { width: 19px; text-align: center; font-size: 18px; }
+    .nav-link small { font-size:11px; font-weight:500; color:#718197; }
+    .nav-link.active small { color:#0057b8; }
+    .current-round { margin: 0 0 16px; padding: 12px 14px; border: 1px solid #bdd2ef; border-left: 4px solid #0057b8; border-radius: 7px; background:#edf4ff; }
+    .current-round .label { display:block; margin-bottom:3px; color:#60718a; font:700 10px var(--mono); text-transform:uppercase; letter-spacing:.04em; }
+    .current-round strong { color:#12345b; font-size:16px; }
+    .current-round span:last-child { display:block; margin-top:2px; color:#526780; font-size:11px; }
     .side-bottom { margin-top: auto; }
     .responsible { padding: 13px 11px; border-top: 1px solid var(--line); color: #60718a; font-size: 11px; }
     .responsible strong { display: block; margin-bottom: 5px; color: var(--paper); font-weight: 600; }
@@ -138,7 +144,7 @@
       .nav-label, .side-bottom { display: none; }
       .sidebar nav { display: flex; gap: 4px; }
       .nav-link { width: auto; padding: 8px; }
-      .nav-link:not(.active) { display: none; }
+      .nav-link { display: flex; }
       .nav-link.active { font-size: 11px; }
       main { padding: 18px 14px 30px; }
       .topbar { margin-bottom: 20px; }
@@ -289,29 +295,34 @@
     }
 
   </style>
+  <link rel="stylesheet" href="../../round-navigation.css">
 </head>
 <body>
   <div class="shell">
     <aside class="sidebar" aria-label="Huvudmeny">
-      <a class="brand" href="#top" aria-label="LA_V85 startsida"><span class="brand-mark">LA</span><span class="brand-name">LA_V85</span></a>
-      <nav>
-        <div class="nav-label">Aktuell omgång</div>
-        <a class="nav-link" href="../../"><span class="nav-icon" aria-hidden="true">◷</span><span>Solvalla<br><small>10 okt 2026</small></span></a>
-        <button class="nav-link" type="button"><span class="nav-icon" aria-hidden="true">▤</span>Mina system</button>
-
-        <div class="nav-archive">
-          <div class="nav-label">Tidigare omgångar</div>
-          <a class="nav-link archive-link active" href="./" aria-current="page"><span class="nav-icon" aria-hidden="true">▣</span><span>Boden<br><small>3 okt 2026 · arkiv</small></span></a>
+      <a class="brand" href="../../" aria-label="LA_V85 startsida"><span class="brand-mark">LA</span><span class="brand-name">LA_V85</span></a>
+      <nav aria-label="V85-omgångar">
+        <div class="nav-section">
+          <div class="nav-label">Aktuell omgång</div>
+          <a class="nav-link" href="../../"><span class="nav-icon" aria-hidden="true">◷</span><span>Boden<br><small>3 okt 2026 · aktuell</small></span></a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">Nästa omgång</div>
+          <a class="nav-link" href="../../rounds/2026-10-10-solvalla/"><span class="nav-icon" aria-hidden="true">→</span><span>Solvalla<br><small>10 okt 2026 · nästa</small></span></a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">Sparade versioner</div>
+          <a class="nav-link active" href="../../archive/2026-10-03-boden/" aria-current="page"><span class="nav-icon" aria-hidden="true">▣</span><span>Boden (kopia)<br><small>3 okt 2026 · sparad</small></span></a>
         </div>
       </nav>
       <div class="side-bottom"><div class="responsible"><strong>Spela ansvarsfullt</strong>Tips är inspiration, aldrig en garanti. Sätt en gräns innan du spelar.</div></div>
     </aside>
     <main id="top">
-      <div class="topbar"><div class="breadcrumb">V85-arkiv&nbsp; / &nbsp;<span>Boden · 3 okt 2026</span></div><div class="top-actions"><button class="icon-button" type="button" aria-label="Hjälp" title="Om LA_V85">i</button><div class="avatar" aria-label="Profil LA">LA</div></div></div>
+      <div class="topbar"><div class="breadcrumb">SPARAD V85&nbsp; / &nbsp;<span>Boden · 3 okt 2026</span></div><div class="top-actions"><button class="icon-button" type="button" aria-label="Hjälp" title="Om LA_V85">i</button><div class="avatar" aria-label="Profil LA">LA</div></div></div>
       <div class="layout">
         <section class="main-column" aria-labelledby="page-title">
-          <div class="eyebrow"><span class="live-dot"></span>ARKIVERAD OMGÅNG · BODEN 3 OKT 2026</div>
-          <div class="current-round"><span class="label">Du tittar på</span><strong>Boden · V85 · 3 oktober 2026</strong><span>Arkiverad omgång</span></div><h1 id="page-title">Veckans skrällar.</h1>
+          <div class="eyebrow"><span class="live-dot"></span>SPARAD KOPIA · BODEN 3 OKT 2026</div>
+          <div class="current-round"><span class="label">DU TITTAR PÅ EN SPARAD KOPIA</span><strong>BODEN · V85 · 3 OKTOBER 2026</strong><span>Sparad version från 30 september. <a href="../../">Öppna aktuell Bodensida →</a></span></div><h1 id="page-title">Veckans skrällar.</h1>
           <p class="intro">Potentiella lågstreckare och garderingsbud inför V85 på Boden lördag 3 oktober.</p>
           <section class="race-banner" aria-label="Veckans omgång"><img class="race-image" src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Travhästar på en bana" fetchpriority="high"><span class="example-tag">Uppdaterad 30 sep</span><div class="race-copy"><div class="race-kicker">V85 · Boden · lördag 3 oktober 2026</div><h2 class="race-title">Veckans skrällbevakning</h2><div class="race-subtitle">Tidiga outsiderbud utifrån publicerade analyser. Kontrollera streck, balans, strykningar och värmning närmare spelstopp.</div></div></section>
           <div class="notice"><span aria-hidden="true">ⓘ</span><span><b>Tidig skrällista:</b> kandidaterna bygger på analyser inför Boden 3 oktober. V85-% är uppdaterade från ATG-PDF; rankningen uppdateras direkt i din webbläsare. Kontrollera även strykningar, balans och utrustning. Publicerade procenttal från ATG-PDF uppdateras när nya noteringar läggs in.</span></div>

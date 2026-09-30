@@ -35,7 +35,13 @@
     .nav-label { padding: 0 10px; margin-bottom: 9px; color: #60718a; font: 700 11px var(--mono); letter-spacing:.04em; text-transform: uppercase; }
     .nav-link { display: flex; align-items: center; gap: 11px; width: 100%; padding: 11px 10px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); font-size:13px; font-weight:600; line-height:1.25; text-align: left; cursor: pointer; }
     .nav-link.active { background: #dcecff; color: #0057b8; box-shadow: inset 3px 0 0 #0057b8; }
-    .nav-icon { width: 19px; text-align: center; font-size: 18px; }\n    .nav-link small { font-size:11px; font-weight:500; color:#718197; }\n    .nav-link.active small { color:#0057b8; }\n    .current-round { margin:0 0 18px; padding:18px 20px; border:2px solid #8bb7ea; border-left:8px solid #0057b8; border-radius:8px; background:#edf4ff; }\n    .current-round .label { display:block; margin-bottom:5px; color:#0057b8; font:800 12px var(--mono); letter-spacing:.06em; }\n    .current-round strong { display:block; color:#12345b; font-size:34px; line-height:1.05; }\n    .current-round span:last-child { display:block; margin-top:7px; color:#526780; font-size:14px; }
+    .nav-icon { width: 19px; text-align: center; font-size: 18px; }
+    .nav-link small { font-size:11px; font-weight:500; color:#718197; }
+    .nav-link.active small { color:#0057b8; }
+    .current-round { margin:0 0 18px; padding:18px 20px; border:2px solid #8bb7ea; border-left:8px solid #0057b8; border-radius:8px; background:#edf4ff; }
+    .current-round .label { display:block; margin-bottom:5px; color:#0057b8; font:800 12px var(--mono); letter-spacing:.06em; }
+    .current-round strong { display:block; color:#12345b; font-size:34px; line-height:1.05; }
+    .current-round span:last-child { display:block; margin-top:7px; color:#526780; font-size:14px; }
     .side-bottom { margin-top: auto; }
     .responsible { padding: 13px 11px; border-top: 1px solid var(--line); color: #60718a; font-size: 11px; }
     .responsible strong { display: block; margin-bottom: 5px; color: var(--paper); font-weight: 600; }
@@ -138,7 +144,7 @@
       .nav-label, .side-bottom { display: none; }
       .sidebar nav { display: flex; gap: 4px; }
       .nav-link { width: auto; padding: 8px; }
-      .nav-link:not(.active) { display: none; }
+      .nav-link { display: flex; }
       .nav-link.active { font-size: 11px; }
       main { padding: 18px 14px 30px; }
       .topbar { margin-bottom: 20px; }
@@ -289,23 +295,24 @@
     }
 
   </style>
+  <link rel="stylesheet" href="./round-navigation.css">
 </head>
 <body>
   <div class="shell">
     <aside class="sidebar" aria-label="Huvudmeny">
       <a class="brand" href="#top" aria-label="LA_V85 startsida"><span class="brand-mark">LA</span><span class="brand-name">LA_V85</span></a>
-      <nav>
-        <div class="nav-label">Aktuell omgång</div>
-        <a class="nav-link active" href="#top" aria-current="page"><span class="nav-icon" aria-hidden="true">◷</span><span>Boden<br><small>3 okt 2026 · AKTUELL</small></span></a>
-
-        <div class="nav-archive">
-          <div class="nav-label">Nästa omgång</div>
-          <a class="nav-link archive-link" href="#" title="Nästa V85-omgång"><span class="nav-icon" aria-hidden="true">→</span><span>Solvalla<br><small>10 okt 2026 · nästa</small></span></a>
+      <nav aria-label="V85-omgångar">
+        <div class="nav-section">
+          <div class="nav-label">Aktuell omgång</div>
+          <a class="nav-link active" href="./" aria-current="page"><span class="nav-icon" aria-hidden="true">◷</span><span>Boden<br><small>3 okt 2026 · aktuell</small></span></a>
         </div>
-
-        <div class="nav-archive">
-          <div class="nav-label">Arkiv</div>
-          <a class="nav-link archive-link" href="./archive/2026-10-03-boden/"><span class="nav-icon" aria-hidden="true">▣</span><span>Boden-kopia<br><small>3 okt 2026</small></span></a>
+        <div class="nav-section">
+          <div class="nav-label">Nästa omgång</div>
+          <a class="nav-link" href="./rounds/2026-10-10-solvalla/"><span class="nav-icon" aria-hidden="true">→</span><span>Solvalla<br><small>10 okt 2026 · nästa</small></span></a>
+        </div>
+        <div class="nav-section">
+          <div class="nav-label">Sparade versioner</div>
+          <a class="nav-link" href="./archive/2026-10-03-boden/"><span class="nav-icon" aria-hidden="true">▣</span><span>Boden (kopia)<br><small>3 okt 2026 · sparad</small></span></a>
         </div>
       </nav>
       <div class="side-bottom"><div class="responsible"><strong>Spela ansvarsfullt</strong>Tips är inspiration, aldrig en garanti. Sätt en gräns innan du spelar.</div></div>
