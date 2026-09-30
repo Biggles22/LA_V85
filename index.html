@@ -33,7 +33,7 @@
     .brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--acid); color: var(--ink); font: 700 12px var(--display); }
     .brand-name { font: 700 19px var(--display); }
     .nav-label { padding: 0 10px; margin-bottom: 9px; color: #60718a; font: 10px var(--mono); text-transform: uppercase; }
-    .nav-link { display: flex; align-items: center; gap: 11px; width: 100%; padding: 10px; border: 0; border-radius: 5px; background: transparent; color: var(--muted); text-align: left; cursor: pointer; }
+    .nav-link { display: flex; align-items: center; gap: 11px; width: 100%; padding: 10px; border: 0; border-radius: 5px; background: transparent; color: var(--muted); text-align: left; text-decoration: none; cursor: pointer; }\n    .nav-archive { margin-top: 22px; }\n    .nav-link.archive-link { font-size: 11px; }\n    .nav-link.archive-link:hover { background: #f1f5fa; color: #0057b8; }
     .nav-link.active { background: #e7f0fc; color: var(--acid); }
     .nav-icon { width: 17px; text-align: center; font-size: 16px; }
     .side-bottom { margin-top: auto; }
@@ -298,6 +298,12 @@
         <div class="nav-label">Spel</div>
         <button class="nav-link active" type="button"><span class="nav-icon" aria-hidden="true">◷</span>Veckans V85</button>
         <button class="nav-link" type="button"><span class="nav-icon" aria-hidden="true">▤</span>Mina system</button>
+
+        <div class="nav-archive">
+          <div class="nav-label">Arkiv</div>
+          <!-- Lägg framtida arkiverade V85-omgångar som nya archive-link-rader här. -->
+          <a class="nav-link archive-link" href="./archive/2026-10-03-boden/"><span class="nav-icon" aria-hidden="true">▣</span><span>Boden<br><small>3 okt 2026</small></span></a>
+        </div>
       </nav>
       <div class="side-bottom"><div class="responsible"><strong>Spela ansvarsfullt</strong>Tips är inspiration, aldrig en garanti. Sätt en gräns innan du spelar.</div></div>
     </aside>
