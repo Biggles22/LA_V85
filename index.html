@@ -313,7 +313,7 @@
             <div class="score-head">
               <div>
                 <h2 id="score-title">Skrällpoäng · 0–6</h2>
-                <p>En poäng per signal: Vinnarodds kontra V85-%, dold form, utrustning, loppbild, klass/distans och sen speltrend. Marknadssignal och speltrend räknas automatiskt. De fyra övriga sätter du med ett klick.</p>
+                <p>En poäng per signal: Vinnarodds kontra V85-%, dold form, utrustning, loppbild, klass/distans och sen speltrend. Alla sex räknas nu automatiskt från ATG-underlaget. Håll muspekaren över 0/1 för att se varför.</p>
               </div>
               <div class="score-legend">4–6 p = riktigt skrällstreck</div>
             </div>
@@ -332,7 +332,7 @@
                 <tbody id="score-body"></tbody>
               </table>
             </div>
-            <p class="score-foot">Odds vs % får 1 poäng när senaste vinnaroddset är lägre än jämförelseoddset 85 / V85-%. Sen trend får 1 poäng när senaste ATG Trend% är positiv. Manuella val sparas lokalt i webbläsaren.</p>
+            <p class="score-foot">Regler: Odds vs % = senaste vinnarodds lägre än 85 / V85-%. Dold form = lågstreckare (≤10 %) med minst 5 starter och minst 50 % topp-3 i år. Utrustning = amerikansk vagn (Am.) i ATG-underlaget. Loppbild = grundsignal för gynnsamt utgångsläge (spår 1–5 i autostart eller startvolten i voltstart). Klass/distans = hästens publicerade rekord är satt i samma distanskategori K/M/L som loppet. Sen trend = positiv ATG Trend%. Detta är objektiva indikatorer, inte en garanti; särskilt utrustning och loppbild är förenklade signaler.</p>
           </section>
 
           <section class="odds-tracker" aria-labelledby="odds-title"><h2 id="odds-title">Detaljvy · alla hästar</h2><p>Vinnarodds för veckans bevakade hästar. Alla startande i åtta avdelningar. Registrera vinnarodds och ATG Trend% per dag för att upptäcka sena ändringar.</p><div class="odds-form"><label>Dag<input id="odds-date" type="date" min="2026-09-29" max="2026-10-03" value="2026-09-30"></label><label>Häst<select id="odds-horse"></select></label><label>Vinnarodds<input id="odds-value" type="number" min="1" max="10000" step="0.01" inputmode="decimal" placeholder="12,50"></label><label>ATG Trend%<input id="trend-value" type="number" min="-100" max="100" step="0.01" inputmode="decimal" placeholder="+1,25"></label><button id="save-odds" type="button">Spara odds</button></div><div class="odds-form"><label>Visa avdelning<select id="odds-leg-filter"><option value="all">Alla 8</option><option value="1">V85-1</option><option value="2">V85-2</option><option value="3">V85-3</option><option value="4">V85-4</option><option value="5">V85-5</option><option value="6">V85-6</option><option value="7">V85-7</option><option value="8">V85-8</option></select></label></div><div class="odds-scroll"><table class="odds-table"><thead><tr><th>Häst</th><th>29 sep</th><th>30 sep</th><th>1 okt</th><th>2 okt</th><th>3 okt</th><th>Senaste ändring</th><th>Trend%</th></tr></thead><tbody id="odds-history"></tbody></table></div><p class="odds-foot">Senaste ändring jämför de två senaste registrerade dagarna. Lägre odds markeras grönt, högre orange. EJ betyder struken enligt ATG. Publicerade kvällsnoteringar visas för alla. Egna ändringar sparas bara i din webbläsare. <span id="odds-source-status">ATG-PDF 30 sep kl. 12:57. Hämtar senaste publicerade noteringar…</span> <a href="https://www.atg.se/spel/2026-10-03/V85/boden" target="_blank" rel="noopener noreferrer">Kontrollera odds hos ATG ↗</a></p></section><div class="section-head"><div><h2>Avdelningar</h2><div class="section-sub">Välj de skrällbud du vill ha med i ditt system</div></div><div class="filter" role="group" aria-label="Filtrera avdelningar"><button class="selected" type="button" data-filter="all">Alla 8</button><button type="button" data-filter="open">Ej klara</button></div></div>
@@ -470,13 +470,9 @@
     const localPercentageKeys = new Set(Object.keys(percentages));
     for (const [key, value] of Object.entries(initialSnapshot.percentages)) if (!(key in percentages)) percentages[key] = value;
 
-    const scoreStorageKey = "la-v85-skrallpoang-2026-10-03";
-    const manualScores = (() => {
-      try {
-        const saved = JSON.parse(localStorage.getItem(scoreStorageKey) || "{}");
-        return saved && typeof saved === "object" && !Array.isArray(saved) ? saved : {};
-      } catch { return {}; }
-    })();
+    const seasonSignals = {"1-1":[10,1,0,1,"M","Va"],"1-2":[12,1,2,0,"M","Va"],"1-3":[11,1,3,0,"M","Va"],"1-4":[10,3,0,1,"M","Va"],"1-5":[10,3,1,2,"M","Va"],"1-6":[12,0,2,1,"M","Va"],"1-7":[13,2,2,5,"M","Va"],"1-8":[10,1,2,1,"M","Va"],"1-9":[15,3,0,1,"M","Va"],"1-10":[12,1,2,1,"M","Va"],"1-11":[8,2,1,1,"M","Va"],"1-12":[10,2,2,1,"M","Va"],"1-13":[13,3,2,2,"M","Va"],"1-14":[8,2,0,2,"M","Va"],"1-15":[10,1,1,1,"K","Va"],"2-1":[10,2,2,2,"K","Am"],"2-2":[14,3,0,3,"K","Va"],"2-3":[10,4,0,1,"K","Va"],"2-4":[15,2,0,3,"M","Va"],"2-5":[13,6,1,1,"K","Va"],"2-6":[11,4,1,1,"M","Am"],"2-7":[9,2,2,2,"M","Am"],"2-8":[10,3,3,1,"M","Am"],"2-9":[5,1,1,0,"M","Am"],"2-10":[12,1,3,5,"K","Va"],"2-11":[16,0,4,4,"K","Am"],"2-12":[13,3,1,1,"M","Va"],"3-1":[13,2,1,2,"K","Va"],"3-2":[9,3,1,0,"K","Va"],"3-3":[15,2,4,1,"M","Va"],"3-4":[3,1,0,0,"M","Am"],"3-5":[16,1,3,4,"K","Va"],"3-6":[12,4,2,2,"K","Va"],"3-7":[8,1,3,2,"K","Va"],"3-8":[10,7,0,3,"K","Am"],"3-9":[8,4,2,0,"M","Va"],"3-10":[14,2,1,3,"K","Am"],"3-11":[10,4,0,1,"M","Va"],"3-12":[5,0,0,1,"M","Va"],"4-1":[13,1,1,5,"M","Va"],"4-2":[5,2,0,0,"K","Va"],"4-3":[7,3,1,1,"M","Va"],"4-4":[12,2,3,4,"K","Va"],"4-5":[9,3,0,1,"M","Va"],"4-6":[7,1,0,1,"K","Va"],"4-7":[9,4,1,0,"M","Va"],"4-8":[10,1,2,1,"M","Va"],"4-9":[9,3,0,1,"M","Va"],"4-10":[14,1,2,1,"M","Va"],"4-11":[7,4,1,0,"M","Va"],"4-12":[14,5,2,3,"K","Va"],"4-13":[13,3,4,4,"K","Va"],"4-14":[10,1,2,1,"M","Va"],"4-15":[9,3,0,0,"K","Va"],"5-1":[9,3,0,0,"K","Va"],"5-2":[10,3,0,1,"M","Va"],"5-3":[7,1,2,0,"M","Va"],"5-4":[15,4,3,3,"K","Va"],"5-5":[7,2,3,0,"K","Va"],"5-6":[7,2,2,0,"M","Am"],"5-7":[11,3,1,0,"K","Va"],"5-8":[8,3,3,0,"K","Va"],"5-9":[10,3,1,0,"K","Va"],"5-10":[9,5,0,0,"M","Va"],"5-11":[11,4,0,1,"K","Va"],"5-12":[13,1,3,3,"M","Am"],"6-1":[8,1,1,1,"M","Va"],"6-2":[7,2,1,1,"M","Va"],"6-3":[9,2,0,1,"M","Va"],"6-4":[11,2,2,1,"M","Va"],"6-5":[15,1,2,3,"K","Am"],"6-6":[3,1,0,0,"K","Va"],"6-7":[5,2,0,1,"L","Va"],"6-8":[10,1,1,0,"M","Va"],"6-9":[7,3,3,0,"L","Va"],"6-10":[12,1,1,2,"K","Va"],"6-11":[8,1,2,1,"M","Am"],"6-12":[5,3,2,0,"M","Va"],"7-1":[11,3,0,0,"K","Am"],"7-2":[12,1,1,0,"K","Am"],"7-3":[8,3,1,1,"M","Va"],"7-4":[4,0,0,0,"M","Va"],"7-5":[8,5,2,0,"M","Am"],"7-6":[13,0,2,2,"K","Am"],"7-7":[19,6,3,2,"K","Va"],"7-8":[12,1,1,2,"K","Va"],"7-9":[11,2,1,2,"K","Va"],"7-10":[9,2,0,2,"K","Va"],"7-11":[10,2,3,2,"K","Va"],"8-1":[3,1,0,0,"M","Va"],"8-2":[13,3,5,4,"M","Va"],"8-3":[6,1,1,1,"M","Va"],"8-4":[0,0,0,0,"L","Va"],"8-5":[10,2,1,0,"M","Va"],"8-6":[11,4,2,0,"M","Va"],"8-7":[12,2,1,2,"M","Va"],"8-8":[10,3,1,1,"M","Va"],"8-9":[7,1,1,2,"L","Va"],"8-10":[15,1,1,1,"K","Va"],"8-11":[10,2,1,1,"K","Va"],"8-12":[12,8,1,2,"K","Va"],"8-13":[9,1,0,1,"L","Va"],"8-14":[9,2,0,0,"M","Va"],"8-15":[12,3,4,0,"L","Va"]};
+    const raceScoreMeta = {"1":[2140,"Voltstart",9],"2":[2140,"Autostart",null],"3":[1640,"Autostart",null],"4":[1640,"Voltstart",5],"5":[2140,"Autostart",null],"6":[2640,"Autostart",null],"7":[2140,"Autostart",null],"8":[2640,"Voltstart",4]};
+    const distanceClass = {"1640":"K","2140":"M","2640":"L"};
     function scoreLatestNumeric(series) {
       const days = oddsDays.filter(day => Number.isFinite(series?.[day]));
       const day = days.at(-1);
@@ -484,24 +480,42 @@
     }
     function scoreMetrics(horse) {
       const key = horse.key;
+      const number = Number(key.split("-")[1]);
       const pct = Number.isFinite(percentages[key]) ? percentages[key] : null;
       const latestOdds = scoreLatestNumeric(oddsHistory[key])?.value ?? null;
       const latestTrend = scoreLatestNumeric(trends[key])?.value ?? null;
       const marketReference = Number.isFinite(pct) && pct > 0 ? 85 / pct : null;
       const market = Number.isFinite(latestOdds) && Number.isFinite(marketReference) && latestOdds < marketReference ? 1 : 0;
+
+      const s = seasonSignals[key] || [0,0,0,0,"",""];
+      const [starts,wins,seconds,thirds,recordClass,wagon] = s;
+      const top3Rate = starts > 0 ? (wins + seconds + thirds) / starts : 0;
+      const form = Number.isFinite(pct) && pct <= 10 && starts >= 5 && top3Rate >= 0.50 ? 1 : 0;
+      const equipment = wagon === "Am" ? 1 : 0;
+
+      const [distance,startType,startVoltMax] = raceScoreMeta[horse.leg] || [null,"",null];
+      const pace = startType === "Autostart" ? (number <= 5 ? 1 : 0) : (number <= startVoltMax ? 1 : 0);
+      const classDistance = distanceClass[distance] && recordClass === distanceClass[distance] ? 1 : 0;
       const trend = Number.isFinite(latestTrend) && latestTrend > 0 ? 1 : 0;
-      const manual = manualScores[key] || {};
-      const form = manual.form ? 1 : 0;
-      const equipment = manual.equipment ? 1 : 0;
-      const pace = manual.pace ? 1 : 0;
-      const classDistance = manual.classDistance ? 1 : 0;
       const total = market + trend + form + equipment + pace + classDistance;
-      return { pct, latestOdds, latestTrend, marketReference, market, trend, form, equipment, pace, classDistance, total };
+
+      const reasons = {
+        market: market ? `V-odds ${latestOdds?.toLocaleString("sv-SE",{maximumFractionDigits:2})} är lägre än jämförelseoddset ${marketReference?.toLocaleString("sv-SE",{maximumFractionDigits:1})}.` : `Ingen marknadssignal: jämförelseodds ${marketReference?.toLocaleString("sv-SE",{maximumFractionDigits:1}) || "saknas"}.`,
+        form: form ? `Topp-3 i ${Math.round(top3Rate*100)} % av ${starts} starter i år och bara ${pct} % på V85.` : `Formproxy: topp-3 ${Math.round(top3Rate*100)} % på ${starts} starter; kräver ≥50 %, minst 5 starter och ≤10 % V85.`,
+        equipment: equipment ? "Amerikansk vagn (Am.) är anmäld enligt ATG-underlaget." : "Ingen amerikansk vagn registrerad i ATG-underlaget.",
+        pace: pace ? (startType === "Autostart" ? `Spår ${number} räknas som gynnsamt grundläge i autostart.` : `Nr ${number} står på startvolten utan tillägg.`) : (startType === "Autostart" ? `Spår ${number} ger ingen grundpoäng för loppbild.` : `Nr ${number} står på tillägg och får ingen grundpoäng för loppbild.`),
+        classDistance: classDistance ? `Publicerat rekord är satt över ${recordClass}-distans, samma kategori som loppets ${distance} m.` : `Publicerat rekord är satt över ${recordClass || "okänd"}-distans; loppet är ${distance} m (${distanceClass[distance]}).`,
+        trend: trend ? `ATG Trend% är positiv: +${latestTrend.toLocaleString("sv-SE",{maximumFractionDigits:2})}.` : `ATG Trend% är ${Number.isFinite(latestTrend) ? latestTrend.toLocaleString("sv-SE",{maximumFractionDigits:2}) : "saknas"}.`
+      };
+      return { pct, latestOdds, latestTrend, marketReference, market, trend, form, equipment, pace, classDistance, total, reasons };
     }
     function scoreVerdict(total, pct) {
       if (total >= 4 && Number.isFinite(pct) && pct <= 10) return { text: "RIKTIGT SKRÄLLSTRECK", cls: "hot" };
       if (total >= 3) return { text: "BEVAKA", cls: "watch" };
       return { text: "SVAG SIGNAL", cls: "low" };
+    }
+    function scorePill(value, reason) {
+      return `<span class="score-auto ${value ? "on" : ""}" title="${reason.replaceAll('"','&quot;')}">${value}</span>`;
     }
     function renderScores() {
       const body = document.querySelector("#score-body");
@@ -521,30 +535,20 @@
         else if (m.total === 3) tr.className = "strong";
         const pctText = Number.isFinite(m.pct) ? m.pct.toLocaleString("sv-SE") + " %" : "—";
         const oddsText = Number.isFinite(m.latestOdds) ? m.latestOdds.toLocaleString("sv-SE",{minimumFractionDigits:2,maximumFractionDigits:2}) : "—";
-        const refText = Number.isFinite(m.marketReference) ? "gräns " + m.marketReference.toLocaleString("sv-SE",{maximumFractionDigits:1}) : "";
         tr.innerHTML = `
           <td><span class="score-horse">V85-${horse.leg} · ${horse.key.split("-")[1]} ${horse.name}</span><span class="score-driver">${horse.driver}</span></td>
           <td>${pctText}</td>
           <td>${oddsText}</td>
-          <td><span class="score-auto ${m.market ? "on" : ""}" title="${refText}">${m.market ? "1" : "0"}</span></td>
-          <td><button class="score-toggle ${m.form ? "on" : ""}" data-field="form" data-key="${horse.key}" type="button">${m.form}</button></td>
-          <td><button class="score-toggle ${m.equipment ? "on" : ""}" data-field="equipment" data-key="${horse.key}" type="button">${m.equipment}</button></td>
-          <td><button class="score-toggle ${m.pace ? "on" : ""}" data-field="pace" data-key="${horse.key}" type="button">${m.pace}</button></td>
-          <td><button class="score-toggle ${m.classDistance ? "on" : ""}" data-field="classDistance" data-key="${horse.key}" type="button">${m.classDistance}</button></td>
-          <td><span class="score-auto ${m.trend ? "on" : ""}" title="${Number.isFinite(m.latestTrend) ? "Trend " + m.latestTrend.toLocaleString("sv-SE",{maximumFractionDigits:2}) : "Trend saknas"}">${m.trend ? "1" : "0"}</span></td>
+          <td>${scorePill(m.market,m.reasons.market)}</td>
+          <td>${scorePill(m.form,m.reasons.form)}</td>
+          <td>${scorePill(m.equipment,m.reasons.equipment)}</td>
+          <td>${scorePill(m.pace,m.reasons.pace)}</td>
+          <td>${scorePill(m.classDistance,m.reasons.classDistance)}</td>
+          <td>${scorePill(m.trend,m.reasons.trend)}</td>
           <td><span class="score-total ${m.total >= 4 ? "high" : ""}">${m.total}</span></td>
           <td><span class="score-verdict ${verdict.cls}">${verdict.text}</span></td>`;
         body.append(tr);
       }
-      body.querySelectorAll(".score-toggle").forEach(button => button.addEventListener("click", () => {
-        const key = button.dataset.key;
-        const field = button.dataset.field;
-        const current = !!manualScores[key]?.[field];
-        manualScores[key] ||= {};
-        manualScores[key][field] = !current;
-        localStorage.setItem(scoreStorageKey, JSON.stringify(manualScores));
-        renderScores();
-      }));
     }
     document.querySelector("#score-leg")?.addEventListener("change", renderScores);
     document.querySelector("#score-filter")?.addEventListener("change", renderScores);
