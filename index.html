@@ -332,10 +332,10 @@
                 <tbody id="score-body"></tbody>
               </table>
             </div>
-            <p class="score-foot">Regler: Odds vs % = senaste vinnarodds lägre än 85 / V85-%. Dold form = lågstreckare (≤10 %) med minst 5 starter och minst 50 % topp-3 i år. Utrustning = amerikansk vagn (Am.) i ATG-underlaget. Loppbild = grundsignal för gynnsamt utgångsläge (spår 1–5 i autostart eller startvolten i voltstart). Klass/distans = hästens publicerade rekord är satt i samma distanskategori K/M/L som loppet. Sen trend = positiv ATG Trend%. Detta är objektiva indikatorer, inte en garanti; särskilt utrustning och loppbild är förenklade signaler.</p>
+            <p class="score-foot">Regler: Odds vs % = senaste exakta vinnarodds lägre än 85 / V85-%. 99,99+ ger aldrig marknadspoäng. Dold form = lågstreckare (≤10 %) med minst 5 starter och minst 50 % topp-3 i år. Utrustning = amerikansk vagn (Am.) i ATG-underlaget. Loppbild = grundsignal för gynnsamt utgångsläge (spår 1–5 i autostart eller startvolten i voltstart). Klass/distans = hästens publicerade rekord är satt i samma distanskategori K/M/L som loppet. Sen trend = positiv ATG Trend%. Detta är objektiva indikatorer, inte en garanti; särskilt utrustning och loppbild är förenklade signaler.</p>
           </section>
 
-          <section class="odds-tracker" aria-labelledby="odds-title"><h2 id="odds-title">Detaljvy · alla hästar</h2><p>Vinnarodds för veckans bevakade hästar. Alla startande i åtta avdelningar. Registrera vinnarodds och ATG Trend% per dag för att upptäcka sena ändringar.</p><div class="odds-form"><label>Dag<input id="odds-date" type="date" min="2026-09-29" max="2026-10-03" value="2026-09-30"></label><label>Häst<select id="odds-horse"></select></label><label>Vinnarodds<input id="odds-value" type="number" min="1" max="10000" step="0.01" inputmode="decimal" placeholder="12,50"></label><label>ATG Trend%<input id="trend-value" type="number" min="-100" max="100" step="0.01" inputmode="decimal" placeholder="+1,25"></label><button id="save-odds" type="button">Spara odds</button></div><div class="odds-form"><label>Visa avdelning<select id="odds-leg-filter"><option value="all">Alla 8</option><option value="1">V85-1</option><option value="2">V85-2</option><option value="3">V85-3</option><option value="4">V85-4</option><option value="5">V85-5</option><option value="6">V85-6</option><option value="7">V85-7</option><option value="8">V85-8</option></select></label></div><div class="odds-scroll"><table class="odds-table"><thead><tr><th>Häst</th><th>29 sep</th><th>30 sep</th><th>1 okt</th><th>2 okt</th><th>3 okt</th><th>Senaste ändring</th><th>Trend%</th></tr></thead><tbody id="odds-history"></tbody></table></div><p class="odds-foot">Senaste ändring jämför de två senaste registrerade dagarna. Lägre odds markeras grönt, högre orange. EJ betyder struken enligt ATG. Publicerade kvällsnoteringar visas för alla. Egna ändringar sparas bara i din webbläsare. <span id="odds-source-status">ATG-PDF 30 sep kl. 12:57. Hämtar senaste publicerade noteringar…</span> <a href="https://www.atg.se/spel/2026-10-03/V85/boden" target="_blank" rel="noopener noreferrer">Kontrollera odds hos ATG ↗</a></p></section><div class="section-head"><div><h2>Avdelningar</h2><div class="section-sub">Välj de skrällbud du vill ha med i ditt system</div></div><div class="filter" role="group" aria-label="Filtrera avdelningar"><button class="selected" type="button" data-filter="all">Alla 8</button><button type="button" data-filter="open">Ej klara</button></div></div>
+          <section class="odds-tracker" aria-labelledby="odds-title"><h2 id="odds-title">Detaljvy · alla hästar</h2><p>Vinnarodds för veckans bevakade hästar. Alla startande i åtta avdelningar. Registrera vinnarodds och ATG Trend% per dag för att upptäcka sena ändringar.</p><div class="odds-form"><label>Dag<input id="odds-date" type="date" min="2026-09-29" max="2026-10-03" value="2026-09-30"></label><label>Häst<select id="odds-horse"></select></label><label>Vinnarodds<input id="odds-value" type="number" min="1" max="10000" step="0.01" inputmode="decimal" placeholder="12,50"></label><label>ATG Trend%<input id="trend-value" type="number" min="-100" max="100" step="0.01" inputmode="decimal" placeholder="+1,25"></label><button id="save-odds" type="button">Spara odds</button></div><div class="odds-form"><label>Visa avdelning<select id="odds-leg-filter"><option value="all">Alla 8</option><option value="1">V85-1</option><option value="2">V85-2</option><option value="3">V85-3</option><option value="4">V85-4</option><option value="5">V85-5</option><option value="6">V85-6</option><option value="7">V85-7</option><option value="8">V85-8</option></select></label></div><div class="odds-scroll"><table class="odds-table"><thead><tr><th>Häst</th><th>29 sep</th><th>30 sep</th><th>1 okt</th><th>2 okt</th><th>3 okt</th><th>Senaste ändring</th><th>Trend%</th></tr></thead><tbody id="odds-history"></tbody></table></div><p class="odds-foot">Senaste ändring jämför de två senaste registrerade exakta oddsen. 99,99 visas som 99,99+ och behandlas som ett osäkert takvärde, inte ett exakt odds. Lägre odds markeras grönt, högre orange. EJ betyder struken enligt ATG. Publicerade kvällsnoteringar visas för alla. Egna ändringar sparas bara i din webbläsare. <span id="odds-source-status">ATG-PDF 30 sep kl. 12:57. Hämtar senaste publicerade noteringar…</span> <a href="https://www.atg.se/spel/2026-10-03/V85/boden" target="_blank" rel="noopener noreferrer">Kontrollera odds hos ATG ↗</a></p></section><div class="section-head"><div><h2>Avdelningar</h2><div class="section-sub">Välj de skrällbud du vill ha med i ditt system</div></div><div class="filter" role="group" aria-label="Filtrera avdelningar"><button class="selected" type="button" data-filter="all">Alla 8</button><button type="button" data-filter="open">Ej klara</button></div></div>
           <div class="percent-editor"><label for="percent-input">Uppdatera streck: ange avdelning, startnummer och V85-%</label><input id="percent-input" placeholder="3 12 6" aria-label="Avdelning startnummer procent"><button id="set-percent" type="button">Uppdatera</button><a href="https://www.atg.se/spel/2026-10-03/V85/boden" target="_blank" rel="noopener noreferrer">Se aktuella streck hos ATG ↗</a></div><div class="races" id="races"></div><section class="history" aria-labelledby="history-title"><div class="section-head"><div><h2 id="history-title">De tre senaste V85-omgångarna</h2><div class="section-sub">Vinnare, slutlig V85-procent och vinnarodds · 9 av 24 vinnare var streckade på högst 10 %</div></div></div><div class="history-grid"><article class="history-card"><h3>Solvalla <small>27 sep 2026</small></h3><p>Utdelning 8 rätt: <strong>16 951 kr</strong></p><div class="history-table" role="table" aria-label="Resultat Solvalla 27 sep 2026"><div class="history-row history-header" role="row"><span>Avd</span><span>Vinnare</span><span>V85</span><span>Odds</span></div><div class="history-row " role="row"><span>1</span><span>2 Steady Spender</span><strong>40 %</strong><span>2,04</span></div><div class="history-row " role="row"><span>2</span><span>10 Thai Medina</span><strong>38 %</strong><span>2,43</span></div><div class="history-row surprise" role="row"><span>3</span><span>10 Toto Tooma</span><strong>3 %</strong><span>23,68</span></div><div class="history-row " role="row"><span>4</span><span>2 I See Tail Lights</span><strong>27 %</strong><span>2,97</span></div><div class="history-row " role="row"><span>5</span><span>11 Po Tay Toes</span><strong>28 %</strong><span>3,16</span></div><div class="history-row " role="row"><span>6</span><span>4 Kodiak Zet</span><strong>76 %</strong><span>1,31</span></div><div class="history-row surprise" role="row"><span>7</span><span>6 No Hitter</span><strong>5 %</strong><span>15,29</span></div><div class="history-row " role="row"><span>8</span><span>3 Nanda Devi Cut</span><strong>22 %</strong><span>3,19</span></div></div></article><article class="history-card"><h3>Åby <small>26 sep 2026</small></h3><p>Utdelning 8 rätt: <strong>1 485 911 kr</strong></p><div class="history-table" role="table" aria-label="Resultat Åby 26 sep 2026"><div class="history-row history-header" role="row"><span>Avd</span><span>Vinnare</span><span>V85</span><span>Odds</span></div><div class="history-row " role="row"><span>1</span><span>6 La Yuca</span><strong>23 %</strong><span>3,85</span></div><div class="history-row " role="row"><span>2</span><span>1 Patton</span><strong>63 %</strong><span>1,74</span></div><div class="history-row " role="row"><span>3</span><span>9 Occam&#39;s Razor</span><strong>27 %</strong><span>3,78</span></div><div class="history-row surprise" role="row"><span>4</span><span>4 Wiener Sängerknabe</span><strong>1 %</strong><span>43,92</span></div><div class="history-row " role="row"><span>5</span><span>5 Tvingens Calippo</span><strong>56 %</strong><span>1,78</span></div><div class="history-row surprise" role="row"><span>6</span><span>1 Blixt Lane</span><strong>8 %</strong><span>8,59</span></div><div class="history-row surprise" role="row"><span>7</span><span>6 Run Rhapsody Run</span><strong>8 %</strong><span>12,10</span></div><div class="history-row surprise" role="row"><span>8</span><span>10 A Fair Day</span><strong>6 %</strong><span>11,57</span></div></div></article><article class="history-card"><h3>Färjestad <small>19 sep 2026</small></h3><p>Utdelning 8 rätt: <strong>492 890 kr</strong></p><div class="history-table" role="table" aria-label="Resultat Färjestad 19 sep 2026"><div class="history-row history-header" role="row"><span>Avd</span><span>Vinnare</span><span>V85</span><span>Odds</span></div><div class="history-row " role="row"><span>1</span><span>2 Mohawk</span><strong>55 %</strong><span>1,83</span></div><div class="history-row " role="row"><span>2</span><span>5 Nilla Lane</span><strong>46 %</strong><span>2,39</span></div><div class="history-row " role="row"><span>3</span><span>7 Lotusorchide</span><strong>21 %</strong><span>6,61</span></div><div class="history-row surprise" role="row"><span>4</span><span>9 Tordenskjold</span><strong>1 %</strong><span>23,80</span></div><div class="history-row " role="row"><span>5</span><span>1 Fedorov</span><strong>41 %</strong><span>2,43</span></div><div class="history-row " role="row"><span>6</span><span>4 Cold Blaze</span><strong>60 %</strong><span>1,91</span></div><div class="history-row surprise" role="row"><span>7</span><span>3 Barack Face</span><strong>9 %</strong><span>8,21</span></div><div class="history-row surprise" role="row"><span>8</span><span>8 Weekend Vibe</span><strong>1 %</strong><span>38,42</span></div></div></article></div><p class="history-source">Markerade rader: vinnare på högst 10 % av V85-systemen. Procentsatserna gäller de avslutade omgångarna, inte veckans Boden-tips. Källa: <a href="https://www.travet.se/v85-resultat/" target="_blank" rel="noopener noreferrer">Travet.se, V85-resultat ↗</a>.</p></section>
         </section>
         <aside class="right-column" aria-label="Systemöversikt">
@@ -369,6 +369,14 @@
       { title: "Scandal Plays Minne", meta: "V85-8 · Boden", horses: [[8, "Uno", "Urstark V85-vinnare senast", "HUVUDSKRÄLL"], [7, "Lots of Fun Sisu", "Speedig · gynnas av rätt ryggar", "BEVAKA"], [4, "Irwin Zet", "Intressant från startvolten", "BEVAKA"]] }
     ];
     const oddsDays = ["2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03"];
+    const ODDS_CAP = 99.99;
+    const isCappedOdds = value => Number.isFinite(value) && value >= ODDS_CAP;
+    const isExactOdds = value => Number.isFinite(value) && value < ODDS_CAP;
+    const formatOdds = value => isCappedOdds(value)
+      ? "99,99+"
+      : Number.isFinite(value)
+        ? value.toLocaleString("sv-SE", {minimumFractionDigits: 2, maximumFractionDigits: 2})
+        : value === "EJ" ? "EJ" : "—";
     const oddsStorageKey = "la-v85-win-odds-2026-10-03";
     const todayInSweden = new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Stockholm", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
     document.querySelector("#odds-date").value = oddsDays.includes(todayInSweden) ? todayInSweden : oddsDays[0];
@@ -392,10 +400,10 @@
       oddsHorses.filter(horse => document.querySelector("#odds-leg-filter").value === "all" || horse.leg === Number(document.querySelector("#odds-leg-filter").value)).forEach(horse => {
         const entries = oddsDays.filter(day => Number.isFinite(oddsHistory[horse.key]?.[day]) || oddsHistory[horse.key]?.[day] === "EJ");
         const last = entries.at(-1), previous = entries.at(-2);
-        const delta = last && previous && Number.isFinite(oddsHistory[horse.key][last]) && Number.isFinite(oddsHistory[horse.key][previous]) ? (oddsHistory[horse.key][last] / oddsHistory[horse.key][previous] - 1) * 100 : null;
+        const delta = last && previous && isExactOdds(oddsHistory[horse.key][last]) && isExactOdds(oddsHistory[horse.key][previous]) ? (oddsHistory[horse.key][last] / oddsHistory[horse.key][previous] - 1) * 100 : null;
         const row = document.createElement("tr");
         const label = document.createElement("td"); label.textContent = horse.label; row.append(label);
-        oddsDays.forEach(day => { const cell = document.createElement("td"); const value = oddsHistory[horse.key]?.[day]; cell.textContent = Number.isFinite(value) ? value.toLocaleString("sv-SE", {minimumFractionDigits: 2, maximumFractionDigits: 2}) : value === "EJ" ? "EJ" : "—"; if (value === "EJ") cell.title = "Struken enligt ATG"; row.append(cell); });
+        oddsDays.forEach(day => { const cell = document.createElement("td"); const value = oddsHistory[horse.key]?.[day]; cell.textContent = formatOdds(value); if (value === "EJ") cell.title = "Struken enligt ATG"; else if (isCappedOdds(value)) cell.title = "99,99 är ett tak-/visningsvärde och behandlas inte som ett exakt vinnarodds."; row.append(cell); });
         const change = document.createElement("td");
         change.textContent = delta === null ? "—" : `${delta > 0 ? "+" : ""}${delta.toLocaleString("sv-SE", { maximumFractionDigits: 1 })} %`;
         if (delta < 0) change.className = "drop";
@@ -485,7 +493,8 @@
       const latestOdds = scoreLatestNumeric(oddsHistory[key])?.value ?? null;
       const latestTrend = scoreLatestNumeric(trends[key])?.value ?? null;
       const marketReference = Number.isFinite(pct) && pct > 0 ? 85 / pct : null;
-      const market = Number.isFinite(latestOdds) && Number.isFinite(marketReference) && latestOdds < marketReference ? 1 : 0;
+      const marketEligible = isExactOdds(latestOdds);
+      const market = marketEligible && Number.isFinite(marketReference) && latestOdds < marketReference ? 1 : 0;
 
       const s = seasonSignals[key] || [0,0,0,0,"",""];
       const [starts,wins,seconds,thirds,recordClass,wagon] = s;
@@ -500,7 +509,7 @@
       const total = market + trend + form + equipment + pace + classDistance;
 
       const reasons = {
-        market: market ? `V-odds ${latestOdds?.toLocaleString("sv-SE",{maximumFractionDigits:2})} är lägre än jämförelseoddset ${marketReference?.toLocaleString("sv-SE",{maximumFractionDigits:1})}.` : `Ingen marknadssignal: jämförelseodds ${marketReference?.toLocaleString("sv-SE",{maximumFractionDigits:1}) || "saknas"}.`,
+        market: !marketEligible && isCappedOdds(latestOdds) ? "V-oddset visas som 99,99+ och är ett tak-/visningsvärde. Ingen Odds-vs-V85-poäng sätts." : market ? `V-odds ${latestOdds?.toLocaleString("sv-SE",{maximumFractionDigits:2})} är lägre än jämförelseoddset ${marketReference?.toLocaleString("sv-SE",{maximumFractionDigits:1})}.` : `Ingen marknadssignal: jämförelseodds ${marketReference?.toLocaleString("sv-SE",{maximumFractionDigits:1}) || "saknas"}.`,
         form: form ? `Topp-3 i ${Math.round(top3Rate*100)} % av ${starts} starter i år och bara ${pct} % på V85.` : `Formproxy: topp-3 ${Math.round(top3Rate*100)} % på ${starts} starter; kräver ≥50 %, minst 5 starter och ≤10 % V85.`,
         equipment: equipment ? "Amerikansk vagn (Am.) är anmäld enligt ATG-underlaget." : "Ingen amerikansk vagn registrerad i ATG-underlaget.",
         pace: pace ? (startType === "Autostart" ? `Spår ${number} räknas som gynnsamt grundläge i autostart.` : `Nr ${number} står på startvolten utan tillägg.`) : (startType === "Autostart" ? `Spår ${number} ger ingen grundpoäng för loppbild.` : `Nr ${number} står på tillägg och får ingen grundpoäng för loppbild.`),
@@ -534,7 +543,7 @@
         if (m.total >= 4) tr.className = "hot";
         else if (m.total === 3) tr.className = "strong";
         const pctText = Number.isFinite(m.pct) ? m.pct.toLocaleString("sv-SE") + " %" : "—";
-        const oddsText = Number.isFinite(m.latestOdds) ? m.latestOdds.toLocaleString("sv-SE",{minimumFractionDigits:2,maximumFractionDigits:2}) : "—";
+        const oddsText = formatOdds(m.latestOdds);
         tr.innerHTML = `
           <td><span class="score-horse">V85-${horse.leg} · ${horse.key.split("-")[1]} ${horse.name}</span><span class="score-driver">${horse.driver}</span></td>
           <td>${pctText}</td>
@@ -724,7 +733,7 @@
       const prevDay = numericDays.at(-2);
       const latestOdds = lastDay ? series[lastDay] : null;
       const previousOdds = prevDay ? series[prevDay] : null;
-      const change = Number.isFinite(latestOdds) && Number.isFinite(previousOdds) ? (latestOdds / previousOdds - 1) * 100 : null;
+      const change = isExactOdds(latestOdds) && isExactOdds(previousOdds) ? (latestOdds / previousOdds - 1) * 100 : null;
       const trendEntry = radarLatestNumeric(trends[candidate.key]);
       const statusDays = oddsDays.filter(day => series?.[day] === "EJ");
       const withdrawn = statusDays.length > 0;
@@ -733,7 +742,7 @@
       return { series, latestOdds, change, trend: trendEntry?.value ?? null, withdrawn, percentage };
     }
     function radarChart(series) {
-      const points = oddsDays.map((day, index) => ({ day, index, value: series?.[day] })).filter(point => Number.isFinite(point.value));
+      const points = oddsDays.map((day, index) => ({ day, index, value: series?.[day] })).filter(point => isExactOdds(point.value));
       if (!points.length) return '<div class="history-chart">Ingen oddshistorik registrerad ännu.</div>';
       const width = 280, height = 72, pad = 8;
       const values = points.map(point => point.value);
@@ -746,7 +755,7 @@
       });
       const polyline = coords.map(([x,y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
       const circles = coords.map(([x,y]) => `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3.5" fill="currentColor"></circle>`).join("");
-      const valuesHtml = points.map(point => `<span>${point.day.slice(5).replace("-","/")}: ${point.value.toLocaleString("sv-SE",{minimumFractionDigits:2,maximumFractionDigits:2})}</span>`).join("");
+      const valuesHtml = oddsDays.filter(day => Number.isFinite(series?.[day])).map(day => `<span>${day.slice(5).replace("-","/")}: ${formatOdds(series[day])}</span>`).join("");
       return `<div class="history-chart"><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Oddshistorik"><polyline points="${polyline}" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline>${circles}</svg><div class="history-values">${valuesHtml}</div></div>`;
     }
     function renderRadar() {
@@ -786,7 +795,7 @@
         const card = document.createElement("article");
         card.className = "radar-card" + (m.withdrawn ? " withdrawn" : "");
         const pct = Number.isFinite(m.percentage) ? `${m.percentage.toLocaleString("sv-SE")} %` : "—";
-        const odds = Number.isFinite(m.latestOdds) ? m.latestOdds.toLocaleString("sv-SE",{minimumFractionDigits:2,maximumFractionDigits:2}) : (m.withdrawn ? "EJ" : "—");
+        const odds = m.withdrawn ? "EJ" : formatOdds(m.latestOdds);
         const changeText = Number.isFinite(m.change) ? `${m.change > 0 ? "+" : ""}${m.change.toLocaleString("sv-SE",{maximumFractionDigits:1})} %` : "—";
         const trendText = Number.isFinite(m.trend) ? `${m.trend > 0 ? "+" : ""}${m.trend.toLocaleString("sv-SE",{maximumFractionDigits:2})}` : "—";
         const changeClass = Number.isFinite(m.change) ? (m.change < 0 ? "good" : m.change > 0 ? "bad" : "") : "";
