@@ -1,7 +1,7 @@
 {
   "round": "2026-10-03",
   "track": "Boden",
-  "checkedAt": "2026-09-30T10:57:15Z",
+  "checkedAt": "2026-09-30T18:05:41Z",
   "updatedAt": "2026-09-30T10:57:15Z",
   "source": "ATG V85 Boden, PDF sparad 2026-09-30 kl. 12.57 av användaren",
   "horses": {
@@ -840,7 +840,7 @@
       "2026-09-30": 2.48
     }
   },
-  "status": "Alla 104 hästar kontrollerade mot dagens ATG-PDF: 103 vinnarodds, Trend% och V85%. V85-2 nr 10 Ray Of Sunshine är struken (EJ).",
+  "status": "Kvällskontroll 2026-09-30 kl. 20:05: ATG:s V85-sida visar ingen startlista eller oddstabell även efter omladdning; webbhämtningen kan inte läsa sidan. 0 av 104 hästars kvällsodds/Trend% kunde verifieras. Alla tidigare värden är bevarade. Senaste verifierade underlag: användarens ATG-PDF 2026-09-30 kl. 12:57.",
   "percentages": {
     "1-1": 1,
     "1-2": 3,
