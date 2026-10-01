@@ -2765,5 +2765,961 @@
     }
   ],
   "sourceLabel": "ATG-text",
-  "receivedAt": "2026-10-01T09:08:24Z"
+  "receivedAt": "2026-10-01T09:08:24Z",
+  "homeTracks": {
+    "round": "2026-10-03",
+    "track": "Boden",
+    "source": "Bodentravets officiella banprogram för 3 oktober 2026, publicerat 28 september 2026",
+    "sourceUrl": "https://bodentravet.com/upload/images/PDF-filer/261003%20Boden_web.pdf",
+    "sourcePublishedAt": "2026-09-28",
+    "checkedAt": "2026-10-01T14:37:16Z",
+    "definition": "Hästens hemmabana enligt tränarens licens, markerad vid aktuell körsven/tränare i banprogrammet. Tom banbeteckning betyder tävlingsdagens bana, Boden. * betyder att tränaren har utländsk licens; ingen namngiven hemmabana anges.",
+    "notationSourceUrl": "https://cdn.travsport.se/racecards/trot/sport/605661.pdf",
+    "coverage": {
+      "matched": 104,
+      "active": 103,
+      "namedActive": 86,
+      "homeActive": 37,
+      "foreignLicenseActive": 17,
+      "unverifiedActive": 0
+    },
+    "horses": {
+      "1-1": {
+        "name": "Adjacent Circuit",
+        "trainer": "Kjell-Ove Eriksson",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-2": {
+        "name": "Waka Waka L.A.",
+        "trainer": "Gunnel Fredriksson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-3": {
+        "name": "Mellby Medusa",
+        "trainer": "Roger Nilsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-4": {
+        "name": "Ajamaja",
+        "trainer": "Petri Salmela",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-5": {
+        "name": "Gabor",
+        "trainer": "Stefan Johansson",
+        "code": "U",
+        "track": "Umåker",
+        "programCode": "U",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-6": {
+        "name": "Isolde Brick",
+        "trainer": "Christian Månsson",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-7": {
+        "name": "Arizona",
+        "trainer": "Sandra Eriksson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-8": {
+        "name": "R.K.Kiara",
+        "trainer": "Markus Pihlström",
+        "code": "B",
+        "track": "Bergsåker",
+        "programCode": "B",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-9": {
+        "name": "Perez Mora Boko",
+        "trainer": "Kevin Svedlund",
+        "code": "G",
+        "track": "Gävle",
+        "programCode": "G",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-10": {
+        "name": "Sensitive Tile",
+        "trainer": "Hanna Olofsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-11": {
+        "name": "Chocliq Bishop",
+        "trainer": "Anna-Carin Sandberg",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-12": {
+        "name": "Sonoma L.A.",
+        "trainer": "Gunnel Fredriksson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-13": {
+        "name": "Rupie",
+        "trainer": "Linn E Andersson",
+        "code": "D",
+        "track": "Dannero",
+        "programCode": "D",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-14": {
+        "name": "Younameit",
+        "trainer": "Per Edström",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "1-15": {
+        "name": "Squaw L.A.",
+        "trainer": "Gunnel Fredriksson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 12
+      },
+      "2-1": {
+        "name": "Jimmy Adore",
+        "trainer": "Hanna Olofsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 13
+      },
+      "2-2": {
+        "name": "Needle'em*",
+        "trainer": "Kalle Peura",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 13
+      },
+      "2-3": {
+        "name": "Andiamo",
+        "trainer": "Petter Lundberg",
+        "code": "Ro",
+        "track": "Romme",
+        "programCode": "Ro",
+        "status": "verified",
+        "sourcePage": 13
+      },
+      "2-4": {
+        "name": "Hjalmar Xpress",
+        "trainer": "Hanna Olofsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 13
+      },
+      "2-5": {
+        "name": "Raven",
+        "trainer": "Sandra Eriksson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 13
+      },
+      "2-6": {
+        "name": "Readly Brodde",
+        "trainer": "Daniel Wäjersten",
+        "code": "B",
+        "track": "Bergsåker",
+        "programCode": "B",
+        "status": "verified",
+        "sourcePage": 13
+      },
+      "2-7": {
+        "name": "Punchboard",
+        "trainer": "Daniel Wäjersten",
+        "code": "B",
+        "track": "Bergsåker",
+        "programCode": "B",
+        "status": "verified",
+        "sourcePage": 13
+      },
+      "2-8": {
+        "name": "Jobiline Ridge*",
+        "trainer": "Ari Aatsinki",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 13
+      },
+      "2-9": {
+        "name": "Moni Elite* (NO)",
+        "trainer": "Jan Lyng",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 13
+      },
+      "2-10": {
+        "name": "Ray Of Sunshine* (FI)",
+        "trainer": "Tuomas Pakkanen",
+        "code": "S",
+        "track": "Solvalla",
+        "programCode": "S",
+        "status": "verified",
+        "sourcePage": 13
+      },
+      "2-11": {
+        "name": "Speed Matters (US)",
+        "trainer": "Petri Salmela",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 13
+      },
+      "2-12": {
+        "name": "Global Crossover*",
+        "trainer": "Vesa-Pekka Kellokumpu",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 13
+      },
+      "3-1": {
+        "name": "Charlton Heston",
+        "trainer": "Hanna Olofsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 14
+      },
+      "3-2": {
+        "name": "Sir Håleryd",
+        "trainer": "Ann-Catrin Frisk",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 14
+      },
+      "3-3": {
+        "name": "Galleon",
+        "trainer": "Thelma Ragnarsson",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 14
+      },
+      "3-4": {
+        "name": "So Far So Good Zaz",
+        "trainer": "Tilde Eriksson",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 14
+      },
+      "3-5": {
+        "name": "T.Wall's Nitro*",
+        "trainer": "Tommi Törnvall",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 14
+      },
+      "3-6": {
+        "name": "Inglourious Zet",
+        "trainer": "Roger Nilsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 14
+      },
+      "3-7": {
+        "name": "Speedy Path M.G.",
+        "trainer": "Mats Gällerstedt",
+        "code": "U",
+        "track": "Umåker",
+        "programCode": "U",
+        "status": "verified",
+        "sourcePage": 14
+      },
+      "3-8": {
+        "name": "Octavio Schermer*",
+        "trainer": "Mariann V Trudvang",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 14
+      },
+      "3-9": {
+        "name": "Handsome Hero*",
+        "trainer": "Kimmo Nurmos",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 14
+      },
+      "3-10": {
+        "name": "Sacrebleu",
+        "trainer": "Markus Pihlström",
+        "code": "B",
+        "track": "Bergsåker",
+        "programCode": "B",
+        "status": "verified",
+        "sourcePage": 14
+      },
+      "3-11": {
+        "name": "Pommery Boko",
+        "trainer": "Christian Månsson",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 14
+      },
+      "3-12": {
+        "name": "Mandrake",
+        "trainer": "Marcus Schön",
+        "code": "S",
+        "track": "Solvalla",
+        "programCode": "S",
+        "status": "verified",
+        "sourcePage": 14
+      },
+      "4-1": {
+        "name": "Tåsjö Teddy",
+        "trainer": "Björn Karlsson",
+        "code": "Sä",
+        "track": "Solänget",
+        "programCode": "Sä",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "4-2": {
+        "name": "Hallsta Ludde",
+        "trainer": "Magnus O Jonsson",
+        "code": "B",
+        "track": "Bergsåker",
+        "programCode": "B",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "4-3": {
+        "name": "Mälarstens Sagari",
+        "trainer": "Hugo Lundgren",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "4-4": {
+        "name": "Haslehaugens Vår* (NO)",
+        "trainer": "Alf Einar Jörgensen",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 15
+      },
+      "4-5": {
+        "name": "Skeie Loke* (NO)",
+        "trainer": "Öystein Tjomsland",
+        "code": "B",
+        "track": "Bergsåker",
+        "programCode": "B",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "4-6": {
+        "name": "Snabb",
+        "trainer": "Ingela M Nilsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "4-7": {
+        "name": "Lynodin* (NO)",
+        "trainer": "Julianne T Carlsen",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 15
+      },
+      "4-8": {
+        "name": "Tangen Birk* (NO)",
+        "trainer": "Vesa Jokiniemi",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 15
+      },
+      "4-9": {
+        "name": "Opal Kiro",
+        "trainer": "Klas Wahlberg",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "4-10": {
+        "name": "Andarnas Patron",
+        "trainer": "Öystein Tjomsland",
+        "code": "B",
+        "track": "Bergsåker",
+        "programCode": "B",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "4-11": {
+        "name": "Tyri Leo* (NO)",
+        "trainer": "Mariann V Trudvang",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 15
+      },
+      "4-12": {
+        "name": "Eldbrand (NO)",
+        "trainer": "Christian Månsson",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "4-13": {
+        "name": "Risårigel",
+        "trainer": "Annalena Lindkvist",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "4-14": {
+        "name": "Alsaker Åstin* (NO)",
+        "trainer": "Heidi Andreassen",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 15
+      },
+      "4-15": {
+        "name": "Njord",
+        "trainer": "Micael Melander",
+        "code": "D",
+        "track": "Dannero",
+        "programCode": "D",
+        "status": "verified",
+        "sourcePage": 15
+      },
+      "5-1": {
+        "name": "Ride Away",
+        "trainer": "Lena Johansson",
+        "code": "U",
+        "track": "Umåker",
+        "programCode": "U",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-2": {
+        "name": "Eldfell",
+        "trainer": "Fredrik Wallin",
+        "code": "G",
+        "track": "Gävle",
+        "programCode": "G",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-3": {
+        "name": "Second Breakfast",
+        "trainer": "Mats Rånlund",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-4": {
+        "name": "Conrads Jessica",
+        "trainer": "Marie Anglöw",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-5": {
+        "name": "Done Deal",
+        "trainer": "Per Edström",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-6": {
+        "name": "Griffin Kronos",
+        "trainer": "Daniel Wäjersten",
+        "code": "B",
+        "track": "Bergsåker",
+        "programCode": "B",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-7": {
+        "name": "Chianti L.A.",
+        "trainer": "Hanna Olofsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-8": {
+        "name": "Seven Mounds (US)",
+        "trainer": "Ann-Catrin Frisk",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-9": {
+        "name": "Black Bourbon",
+        "trainer": "Anders Stenman",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-10": {
+        "name": "Puskas Boko",
+        "trainer": "Petter Lundberg",
+        "code": "Ro",
+        "track": "Romme",
+        "programCode": "Ro",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-11": {
+        "name": "Take Him Sober",
+        "trainer": "Fredrik Wallin",
+        "code": "G",
+        "track": "Gävle",
+        "programCode": "G",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "5-12": {
+        "name": "S.G.Dangerous",
+        "trainer": "Stefan Johansson",
+        "code": "U",
+        "track": "Umåker",
+        "programCode": "U",
+        "status": "verified",
+        "sourcePage": 16
+      },
+      "6-1": {
+        "name": "Noble Pace",
+        "trainer": "Nils Westerberg",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-2": {
+        "name": "Facit Vendil",
+        "trainer": "Josefine Beckman",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-3": {
+        "name": "Pure Dream",
+        "trainer": "Martina Vallström",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-4": {
+        "name": "Prince A'lir",
+        "trainer": "Thomas Lönn",
+        "code": "Bs",
+        "track": "Bollnäs",
+        "programCode": "Bs",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-5": {
+        "name": "Iulius Zet",
+        "trainer": "Hannah Norredahl",
+        "code": "Ös",
+        "track": "Östersund",
+        "programCode": "Ös",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-6": {
+        "name": "Ethel Face",
+        "trainer": "Petter Lundberg",
+        "code": "Ro",
+        "track": "Romme",
+        "programCode": "Ro",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-7": {
+        "name": "Born Duke Boko",
+        "trainer": "Mikael Lindqvist",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-8": {
+        "name": "Backwood Gilda",
+        "trainer": "Petri Salmela",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-9": {
+        "name": "Lupin Sisu",
+        "trainer": "Paavo Koivurova",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-10": {
+        "name": "Junko Tabei",
+        "trainer": "Lars Marklund",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-11": {
+        "name": "Nilla Spiro",
+        "trainer": "Jens Eriksson",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "6-12": {
+        "name": "Forget Me Not",
+        "trainer": "Per Edström",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 17
+      },
+      "7-1": {
+        "name": "Robinhood C.A. (CA)",
+        "trainer": "Petri Salmela",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "7-2": {
+        "name": "The Bald Eagle",
+        "trainer": "Tilda Wahlberg",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "7-3": {
+        "name": "Frank S.H.",
+        "trainer": "Marcus Schön",
+        "code": "S",
+        "track": "Solvalla",
+        "programCode": "S",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "7-4": {
+        "name": "Maserati Hall",
+        "trainer": "Fredrik Wallin",
+        "code": "G",
+        "track": "Gävle",
+        "programCode": "G",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "7-5": {
+        "name": "Shogun R.R.",
+        "trainer": "Daniel Wäjersten",
+        "code": "B",
+        "track": "Bergsåker",
+        "programCode": "B",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "7-6": {
+        "name": "Last Dying Breath",
+        "trainer": "Hanna Olofsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "7-7": {
+        "name": "Marlon Boko*",
+        "trainer": "Ari Aatsinki",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 18
+      },
+      "7-8": {
+        "name": "Drizzle",
+        "trainer": "Camilla Lund",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "7-9": {
+        "name": "The Oak L.A.",
+        "trainer": "Hanna Olofsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "7-10": {
+        "name": "Bidensky (US)",
+        "trainer": "Maria Vikström",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "7-11": {
+        "name": "Kiwi Sisu",
+        "trainer": "Sandra Eriksson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 18
+      },
+      "8-1": {
+        "name": "Enjoy Beaufort",
+        "trainer": "Hanna Olofsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-2": {
+        "name": "ChiquititaCreation* (NO)",
+        "trainer": "Silje Kristin Eilertsen",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 19
+      },
+      "8-3": {
+        "name": "Merillion",
+        "trainer": "Thelma Ragnarsson",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-4": {
+        "name": "Irwin Zet",
+        "trainer": "Roger Nilsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-5": {
+        "name": "Moni U.S.A.* (NO)",
+        "trainer": "Jan Lyng",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 19
+      },
+      "8-6": {
+        "name": "Grand Safari",
+        "trainer": "Bert Pettersson",
+        "code": "Sk",
+        "track": "Skellefteå",
+        "programCode": "Sk",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-7": {
+        "name": "Lots of Fun Sisu",
+        "trainer": "Ann Wennberg",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-8": {
+        "name": "Uno",
+        "trainer": "Hanna Olofsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-9": {
+        "name": "Super Frasse*",
+        "trainer": "Ari Aatsinki",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 19
+      },
+      "8-10": {
+        "name": "Fantastic Godiva",
+        "trainer": "Frida Simonsson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-11": {
+        "name": "Pretty Devil* (NO)",
+        "trainer": "Tone Merete Pettersen",
+        "code": "*",
+        "track": null,
+        "programCode": "*",
+        "status": "foreign-license",
+        "sourcePage": 19
+      },
+      "8-12": {
+        "name": "General Silvio",
+        "trainer": "Anna Näslund",
+        "code": "U",
+        "track": "Umåker",
+        "programCode": "U",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-13": {
+        "name": "B.Sacamano",
+        "trainer": "Sandra Eriksson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-14": {
+        "name": "Pure Atlas",
+        "trainer": "Fredrik Wallin",
+        "code": "G",
+        "track": "Gävle",
+        "programCode": "G",
+        "status": "verified",
+        "sourcePage": 19
+      },
+      "8-15": {
+        "name": "King of Djazz",
+        "trainer": "Sandra Eriksson",
+        "code": "Bo",
+        "track": "Boden",
+        "programCode": "",
+        "status": "verified",
+        "sourcePage": 19
+      }
+    }
+  }
 }
