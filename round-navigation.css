@@ -19,3 +19,20 @@
   .sidebar .nav-link small { font-size: 10px; }
   .current-round { padding: 14px; border-left-width: 5px; }
 }
+
+/* Give analysis tables the full width beside the round menu. */
+main { padding-inline: clamp(14px, 1.4vw, 28px); }
+.layout { max-width: none; margin: 0; grid-template-columns: minmax(0, 1fr); }
+.right-column { position: static; top: auto; grid-row: auto; }
+.right-column .slip { display: block; }
+.right-column .slip-body { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 20px; align-items: center; }
+.right-column .leg-summary { max-width: 320px; }
+.right-column .tip-box { display: none; }
+.score-table { min-width: 1040px; }
+@media (max-width: 1099px) {
+  .right-column .slip-body { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  main { padding-inline: 14px; }
+  .right-column .slip-body { grid-template-columns: minmax(0, 1fr); }
+}
