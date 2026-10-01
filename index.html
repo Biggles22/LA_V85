@@ -413,7 +413,7 @@
             <p class="home-track-status" id="home-track-status">Hemmabana enligt tränarens licens i Bodentravets banprogram för 3 oktober. Bodenhästar markeras Hemma.</p>
             <div class="score-scroll">
               <table class="score-table">
-                <thead><tr><th>Häst / kusk</th><th title="Hästens hemmabana enligt tränarens licens i banprogrammet">Hemmabana</th><th>V85</th><th>V-odds</th><th>Odds vs %</th><th>Dold form</th><th>Utrustning</th><th>Loppbild</th><th>Klass/dist.</th><th>Sen trend</th><th>Poäng</th><th>Bedömning</th></tr></thead>
+                <thead><tr><th>Häst / kusk / tränare</th><th title="Hästens hemmabana enligt tränarens licens i banprogrammet">Hemmabana</th><th>V85</th><th>V-odds</th><th>Odds vs %</th><th>Dold form</th><th>Utrustning</th><th>Loppbild</th><th>Klass/dist.</th><th>Sen trend</th><th>Poäng</th><th>Bedömning</th></tr></thead>
                 <tbody id="score-body"></tbody>
               </table>
             </div>
@@ -544,8 +544,9 @@
     let publishedHomeTracks = publishedSnapshot.homeTracks || {};
     let publishedMetadata = { updatedAt: publishedSnapshot.updatedAt, source: publishedSnapshot.source, sourceLabel: publishedSnapshot.sourceLabel, receivedAt: publishedSnapshot.receivedAt };
     const oddsSelect = document.querySelector("#odds-horse");
-    oddsHorses.forEach(horse => { const option = document.createElement("option"); option.value = horse.key; option.textContent = horse.label; oddsSelect.append(option); });
+    oddsHorses.forEach(horse => { const option = document.createElement("option"); option.value = horse.key; option.textContent = horseDisplayLabel(horse); oddsSelect.append(option); });
     function renderOdds() {
+      oddsHorses.forEach((horse, index) => { oddsSelect.options[index].textContent = horseDisplayLabel(horse); });
       const body = document.querySelector("#odds-history");
       body.replaceChildren();
       oddsHorses.filter(horse => document.querySelector("#odds-leg-filter").value === "all" || horse.leg === Number(document.querySelector("#odds-leg-filter").value)).forEach(horse => {
@@ -553,7 +554,7 @@
         const last = entries.at(-1), previous = entries.at(-2);
         const delta = last && previous && isExactOdds(oddsHistory[horse.key][last]) && isExactOdds(oddsHistory[horse.key][previous]) ? (oddsHistory[horse.key][last] / oddsHistory[horse.key][previous] - 1) * 100 : null;
         const row = document.createElement("tr");
-        const label = document.createElement("td"); label.textContent = horse.label; row.append(label);
+        const label = document.createElement("td"); label.textContent = horseDisplayLabel(horse); row.append(label);
         oddsDays.forEach(day => { const cell = document.createElement("td"); const value = oddsHistory[horse.key]?.[day]; cell.textContent = formatOdds(value); if (value === "EJ") cell.title = "Struken enligt ATG"; else if (isCappedOdds(value)) cell.title = "99,99 är ett tak-/visningsvärde och behandlas inte som ett exakt vinnarodds."; row.append(cell); });
         const change = document.createElement("td");
         change.textContent = delta === null ? "—" : `${delta > 0 ? "+" : ""}${delta.toLocaleString("sv-SE", { maximumFractionDigits: 1 })} %`;
@@ -663,6 +664,13 @@
       if (entry.status === "verified" && typeof entry.track === "string" && entry.track.trim()) return entry;
       if (entry.status === "foreign-license" && entry.programCode === "*" && entry.track === null) return entry;
       return null;
+    }
+    function horsePeopleLabel(horse, includeKusk = false) {
+      const trainer = homeTrackEntry(horse)?.trainer.trim() || "Ej verifierad";
+      return `${includeKusk ? "Kusk: " : ""}${horse.driver} · Tränare: ${trainer}`;
+    }
+    function horseDisplayLabel(horse) {
+      return `V85-${horse.leg} · ${horse.key.split("-")[1]} ${horse.name} · ${horsePeopleLabel(horse)}`;
     }
     function homeTrackMarkup(horse) {
       const entry = homeTrackEntry(horse);
@@ -782,7 +790,7 @@
         const pctText = Number.isFinite(m.pct) ? m.pct.toLocaleString("sv-SE") + " %" : "—";
         const oddsText = formatOdds(m.latestOdds);
         tr.innerHTML = `
-          <td><span class="score-horse">V85-${horse.leg} · ${horse.key.split("-")[1]} ${horse.name}</span><span class="score-driver">${horse.driver}</span>${commentMarkup(horse)}</td>
+          <td><span class="score-horse">V85-${horse.leg} · ${horse.key.split("-")[1]} ${horse.name}</span><span class="score-driver">${escapeHtml(horsePeopleLabel(horse))}</span>${commentMarkup(horse)}</td>
           <td class="score-home-track">${homeTrackMarkup(horse)}</td>
           <td>${pctText}</td>
           <td>${oddsText}</td>
@@ -876,7 +884,7 @@
           const label = hot ? "STARKT SKRÄLLBUD" : candidate ? "BEVAKA" : Number.isFinite(m.pct) && m.pct > 10 ? "ÖVER 10 %" : "SVAG SIGNAL";
           entry.innerHTML = `<button class="horse${selected ? " picked" : ""}" type="button" data-leg="${leg}" data-number="${number}" aria-pressed="${selected}">
             <span class="horse-number">${number}</span>
-            <span><span class="horse-name">${escapeHtml(horse.name)}</span><span class="horse-note">Kusk: ${escapeHtml(horse.driver)}</span><span class="horse-note">${signals}</span>
+            <span><span class="horse-name">${escapeHtml(horse.name)}</span><span class="horse-note">${escapeHtml(horsePeopleLabel(horse, true))}</span><span class="horse-note">${signals}</span>
               <span class="division-market"><span class="horse-percent">V85 ${pct}</span><span>V-odds ${formatOdds(m.latestOdds)}</span><span>Trend% ${trend}</span></span>
               ${selected && !candidate ? '<span class="division-retained">Vald i ditt system · utanför skrällurvalet</span>' : ""}</span>
             <span class="horse-odds"><span class="division-points${hot ? " high" : ""}" aria-label="${m.total} av 6 skrällpoäng">${m.total}/6</span><span class="rank">${label}</span></span>
@@ -1093,7 +1101,7 @@
             <span class="radar-number">${candidate.number}</span>
             <span>
               <span class="radar-line"><span class="radar-name">${candidate.name}</span><span class="radar-leg">V85-${candidate.leg}</span></span>
-              <span class="radar-note">Skrällpoäng ${m.score.total}/6 · ${scoreVerdict(m.score.total, m.percentage).text} · Kusk: ${candidate.driver}</span>
+              <span class="radar-note">Skrällpoäng ${m.score.total}/6 · ${scoreVerdict(m.score.total, m.percentage).text} · ${escapeHtml(horsePeopleLabel(candidate, true))}</span>
               <span class="radar-signals">
                 <span class="signal ${m.score.total >= 4 ? "good" : ""}">Poäng ${m.score.total}/6</span>
                 <span class="signal">V85 ${pct}</span>
