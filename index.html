@@ -233,6 +233,11 @@
     .reliability-badge.good { background:#edf4ff; color:#0057b8; }
     .reliability-badge.final { background:#e7f6ec; color:#14733a; }
     .reliability-badge.started { background:#eef1f5; color:#4e5d72; }
+    .turnover-box { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:5px 14px; margin:-5px 0 14px; padding:11px 12px; border:1px solid #d9e0e9; border-radius:6px; background:#fbfdff; }
+    .turnover-box strong { display:block; color:var(--paper); font-size:12px; }
+    .turnover-box span { color:var(--muted); font-size:10px; }
+    .turnover-box a { color:#0057b8; }
+    .turnover-amount { color:#0057b8; font:700 18px var(--display); white-space:nowrap; }
 
     .radar-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px; margin-bottom: 12px; border: 1px solid #e0e7f1; border-radius: 6px; background: #f5f8fc; }
     .radar-toolbar label { display: flex; align-items: center; gap: 6px; color: #39506e; font-size: 10px; }
@@ -374,6 +379,10 @@
               <span id="reliability-text">Beräknar hur nära första V85-starten vi är…</span>
             </div>
             <div class="reliability-badge early" id="reliability-badge">Tidigt</div>
+          </div>
+          <div class="turnover-box" aria-live="polite">
+            <div><strong>Omsättning V85 · Boden</strong><span id="turnover-status">Hämtar senast verifierade värde…</span></div>
+            <div class="turnover-amount" id="turnover-amount">—</div>
           </div>
 
           <section class="radar-shell" id="skrallradar" aria-labelledby="radar-title">
@@ -524,6 +533,33 @@
       badge.textContent = label;
       textEl.textContent = text;
     }
+    async function loadTurnover() {
+      const amountEl = document.querySelector("#turnover-amount");
+      const statusEl = document.querySelector("#turnover-status");
+      try {
+        const response = await fetch("./turnover.json?ts=" + Date.now(), { cache: "no-store" });
+        if (!response.ok) throw new Error("Kunde inte läsa omsättningen");
+        const data = await response.json();
+        const observed = new Date(data.observedAt);
+        if (data.round !== "2026-10-03" || data.track !== "Boden" || !Number.isSafeInteger(data.amountSek) || data.amountSek < 0 || !Number.isFinite(observed.getTime())) throw new Error("Ogiltigt underlag");
+        amountEl.textContent = data.amountSek.toLocaleString("sv-SE") + " kr";
+        const when = observed.toLocaleString("sv-SE", {timeZone:"Europe/Stockholm", day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"});
+        const ageHours = (Date.now() - observed.getTime()) / 3600000;
+        statusEl.textContent = (ageHours > 1.5 ? "Senast verifierad " : "ATG-notering ") + when + ". Kontrolleras varje timme. ";
+        if (data.sourceUrl) {
+          const link = document.createElement("a");
+          link.href = data.sourceUrl;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = "Se hos ATG ↗";
+          statusEl.append(link);
+        }
+      } catch {
+        statusEl.textContent = amountEl.textContent === "—" ? "Ingen verifierad omsättning tillgänglig just nu." : "Kunde inte kontrollera nyare omsättning; senast visade värde behålls.";
+      }
+    }
+    loadTurnover();
+    setInterval(loadTurnover, 3600000);
     const oddsStorageKey = "la-v85-win-odds-2026-10-03";
     const todayInSweden = new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Stockholm", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
     document.querySelector("#odds-date").value = oddsDays.includes(todayInSweden) ? todayInSweden : oddsDays[0];
