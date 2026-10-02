@@ -545,7 +545,7 @@
         amountEl.textContent = data.amountSek.toLocaleString("sv-SE") + " kr";
         const when = observed.toLocaleString("sv-SE", {timeZone:"Europe/Stockholm", day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"});
         const ageHours = (Date.now() - observed.getTime()) / 3600000;
-        statusEl.textContent = (ageHours > 1.5 ? "Senast verifierad " : "ATG-notering ") + when + ". Uppdateras vid ny verifierad ATG-notering. ";
+        statusEl.textContent = (ageHours > 1.5 ? "Senast verifierad " : "ATG-notering ") + when + ". Kontrolleras varje timme. ";
         if (data.sourceUrl) {
           const link = document.createElement("a");
           link.href = data.sourceUrl;
