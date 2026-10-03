@@ -335,6 +335,45 @@
       .score-count { width:100%; margin-left:0; }
     }
 
+  
+    /* Frozen post-race review; reusable layout for subsequent rounds. */
+    .round-analysis { margin-top:36px; padding:clamp(20px,3vw,32px); border:1px solid var(--line); border-top:5px solid var(--acid); border-radius:12px; background:var(--panel); scroll-margin-top:20px; font-size:16px; line-height:1.65; }
+    .analysis-heading { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:16px; }
+    .analysis-kicker { color:var(--acid); font:700 12px var(--mono); letter-spacing:.04em; }
+    .round-analysis h2 { margin:10px 0 0; font:700 clamp(24px,3vw,34px)/1.2 var(--display); max-width:850px; }
+    .analysis-date { color:var(--muted); font-size:13px; white-space:nowrap; }
+    .analysis-lead { max-width:1000px; margin:20px 0; font-size:18px; }
+    .analysis-metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:24px 0; }
+    .analysis-metrics > div { padding:18px; border-radius:8px; background:#edf4ff; border:1px solid #d6e6fb; }
+    .analysis-metrics strong { display:block; color:#0057b8; font:700 clamp(22px,2.2vw,30px)/1.2 var(--display); }
+    .analysis-metrics span { display:block; margin-top:8px; color:var(--muted); font-size:14px; line-height:1.45; }
+    .analysis-method,.analysis-source { color:var(--muted); font-size:14px; }
+    .analysis-table-wrap { overflow-x:auto; margin:24px 0; border:1px solid var(--line); border-radius:8px; }
+    .analysis-table { width:100%; min-width:740px; border-collapse:collapse; text-align:left; font-size:15px; }
+    .analysis-table caption { padding:14px; text-align:left; font-weight:700; background:#f0f4fa; }
+    .analysis-table th,.analysis-table td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:middle; }
+    .analysis-table thead th { font-size:13px; color:var(--muted); background:#f8fafc; }
+    .analysis-table tr:last-child > * { border-bottom:0; }
+    .analysis-table .analysis-upset { background:#edf7ef; }
+    .analysis-badge { display:inline-block; margin-left:6px; padding:2px 6px; border-radius:4px; color:#21633d; background:#d9efdf; font:700 10px var(--mono); }
+    .round-analysis h3 { margin:30px 0 14px; font:700 22px/1.3 var(--display); }
+    .analysis-causes { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .analysis-causes article { padding:20px; border:1px solid var(--line); border-radius:8px; background:#fafbfd; }
+    .analysis-number { color:var(--acid); font:700 14px var(--mono); }
+    .analysis-causes h4 { margin:8px 0 10px; font-size:18px; line-height:1.35; }
+    .analysis-causes p { margin:0; }
+    .analysis-causes .analysis-small { margin-top:12px; font-size:13px; color:var(--muted); }
+    .analysis-lessons,.analysis-next ol { padding-left:24px; }
+    .analysis-lessons li,.analysis-next li { margin-bottom:12px; padding-left:3px; }
+    .analysis-next { margin-top:24px; padding:20px 24px; border:1px solid #bdd6f4; border-radius:8px; background:#edf4ff; }
+    .analysis-next h3 { margin-top:0; }
+    .analysis-next p { margin-bottom:0; font-size:14px; color:var(--muted); }
+    .analysis-source { margin:24px 0 0; }
+    .round-analysis a { color:#0057b8; text-underline-offset:3px; }
+    .round-analysis a:focus-visible,.analysis-table-wrap:focus-visible { outline:3px solid #0057b8; outline-offset:4px; }
+    @media(max-width:1000px) { .analysis-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:640px) { .analysis-causes { grid-template-columns:1fr; } .round-analysis { padding:20px 16px; } .analysis-metrics > div { padding:14px; } .analysis-next { padding:18px; } }
+
   </style>
   <link rel="stylesheet" href="./round-navigation.css?v=20261001-wide">
 </head>
@@ -457,6 +496,51 @@
           </div>
           <p class="division-source"><span id="division-source"></span> <a href="#skrallpoang">Se hur poängen räknas ↑</a></p>
           <div class="percent-editor"><label for="percent-input">Uppdatera streck: ange avdelning, startnummer och V85-%</label><input id="percent-input" placeholder="3 12 6" aria-label="Avdelning startnummer procent"><button id="set-percent" type="button">Uppdatera</button><a href="https://www.atg.se/spel/2026-10-03/V85/boden" target="_blank" rel="noopener noreferrer">Se aktuella streck hos ATG ↗</a></div><div class="races" id="races"></div><section class="history" aria-labelledby="history-title"><div class="section-head"><div><h2 id="history-title">De tre senaste V85-omgångarna</h2><div class="section-sub">Vinnare, slutlig V85-procent och vinnarodds · 9 av 24 vinnare var streckade på högst 10 %</div></div></div><div class="history-grid"><article class="history-card"><h3>Solvalla <small>27 sep 2026</small></h3><p>Utdelning 8 rätt: <strong>16 951 kr</strong></p><div class="history-table" role="table" aria-label="Resultat Solvalla 27 sep 2026"><div class="history-row history-header" role="row"><span>Avd</span><span>Vinnare</span><span>V85</span><span>Odds</span></div><div class="history-row " role="row"><span>1</span><span>2 Steady Spender</span><strong>40 %</strong><span>2,04</span></div><div class="history-row " role="row"><span>2</span><span>10 Thai Medina</span><strong>38 %</strong><span>2,43</span></div><div class="history-row surprise" role="row"><span>3</span><span>10 Toto Tooma</span><strong>3 %</strong><span>23,68</span></div><div class="history-row " role="row"><span>4</span><span>2 I See Tail Lights</span><strong>27 %</strong><span>2,97</span></div><div class="history-row " role="row"><span>5</span><span>11 Po Tay Toes</span><strong>28 %</strong><span>3,16</span></div><div class="history-row " role="row"><span>6</span><span>4 Kodiak Zet</span><strong>76 %</strong><span>1,31</span></div><div class="history-row surprise" role="row"><span>7</span><span>6 No Hitter</span><strong>5 %</strong><span>15,29</span></div><div class="history-row " role="row"><span>8</span><span>3 Nanda Devi Cut</span><strong>22 %</strong><span>3,19</span></div></div></article><article class="history-card"><h3>Åby <small>26 sep 2026</small></h3><p>Utdelning 8 rätt: <strong>1 485 911 kr</strong></p><div class="history-table" role="table" aria-label="Resultat Åby 26 sep 2026"><div class="history-row history-header" role="row"><span>Avd</span><span>Vinnare</span><span>V85</span><span>Odds</span></div><div class="history-row " role="row"><span>1</span><span>6 La Yuca</span><strong>23 %</strong><span>3,85</span></div><div class="history-row " role="row"><span>2</span><span>1 Patton</span><strong>63 %</strong><span>1,74</span></div><div class="history-row " role="row"><span>3</span><span>9 Occam&#39;s Razor</span><strong>27 %</strong><span>3,78</span></div><div class="history-row surprise" role="row"><span>4</span><span>4 Wiener Sängerknabe</span><strong>1 %</strong><span>43,92</span></div><div class="history-row " role="row"><span>5</span><span>5 Tvingens Calippo</span><strong>56 %</strong><span>1,78</span></div><div class="history-row surprise" role="row"><span>6</span><span>1 Blixt Lane</span><strong>8 %</strong><span>8,59</span></div><div class="history-row surprise" role="row"><span>7</span><span>6 Run Rhapsody Run</span><strong>8 %</strong><span>12,10</span></div><div class="history-row surprise" role="row"><span>8</span><span>10 A Fair Day</span><strong>6 %</strong><span>11,57</span></div></div></article><article class="history-card"><h3>Färjestad <small>19 sep 2026</small></h3><p>Utdelning 8 rätt: <strong>492 890 kr</strong></p><div class="history-table" role="table" aria-label="Resultat Färjestad 19 sep 2026"><div class="history-row history-header" role="row"><span>Avd</span><span>Vinnare</span><span>V85</span><span>Odds</span></div><div class="history-row " role="row"><span>1</span><span>2 Mohawk</span><strong>55 %</strong><span>1,83</span></div><div class="history-row " role="row"><span>2</span><span>5 Nilla Lane</span><strong>46 %</strong><span>2,39</span></div><div class="history-row " role="row"><span>3</span><span>7 Lotusorchide</span><strong>21 %</strong><span>6,61</span></div><div class="history-row surprise" role="row"><span>4</span><span>9 Tordenskjold</span><strong>1 %</strong><span>23,80</span></div><div class="history-row " role="row"><span>5</span><span>1 Fedorov</span><strong>41 %</strong><span>2,43</span></div><div class="history-row " role="row"><span>6</span><span>4 Cold Blaze</span><strong>60 %</strong><span>1,91</span></div><div class="history-row surprise" role="row"><span>7</span><span>3 Barack Face</span><strong>9 %</strong><span>8,21</span></div><div class="history-row surprise" role="row"><span>8</span><span>8 Weekend Vibe</span><strong>1 %</strong><span>38,42</span></div></div></article></div><p class="history-source">Markerade rader: vinnare på högst 10 % av V85-systemen. Procentsatserna gäller de avslutade omgångarna, inte veckans Boden-tips. Källa: <a href="https://www.travet.se/v85-resultat/" target="_blank" rel="noopener noreferrer">Travet.se, V85-resultat ↗</a>.</p></section>
+
+          <section class="round-analysis" id="boden-analysis" aria-labelledby="boden-analysis-title">
+            <div class="analysis-heading"><div><span class="analysis-kicker">EFTERANALYS · BODEN 3 OKTOBER 2026</span><h2 id="boden-analysis-title">Vi hittade skrällarna – men urvalet var för brett.</h2></div><span class="analysis-date">Analyserad 4 okt 2026</span></div>
+            <p class="analysis-lead">Alla fyra vinnare under 10 % fanns i vårt skrällurval. Men 52 hästar kvalificerade sig och bara en av skrällvinnarna låg bland de två högst rankade i sin avdelning. Att fånga en vinnare i en lång lista är inte samma sak som att ge ett träffsäkert sluturval.</p>
+            <div class="analysis-metrics">
+              <div><strong>4 av 4</strong><span>Lågstreckade vinnare i urvalet</span></div>
+              <div><strong>52 av 100</strong><span>Aktiva hästar i urvalet före start</span></div>
+              <div><strong>1 av 4</strong><span>Skrällvinnare bland avdelningens topp 2</span></div>
+              <div><strong>256 598 kr</strong><span>Utdelning 8 rätt, utan Boost</span></div>
+            </div>
+            <p class="analysis-method"><strong>Fryst jämförelse:</strong> poäng och skrällrankning är återskapade med sidans dåvarande regler och ATG-noteringen 3 oktober kl. 15:01:45 (svensk tid). Resultaten användes inte i poängberäkningen. Tabellen visar slutliga streck och vinnarodds. Lokala val eller nya data ändrar inte denna efteranalys.</p>
+            <div class="analysis-table-wrap" role="region" aria-label="Bodens vinnare jämförda med förhandsrankningen" tabindex="0">
+              <table class="analysis-table"><caption>Resultat jämfört med vårt skrällurval före start</caption><thead><tr><th scope="col">Avd.</th><th scope="col">Vinnare</th><th scope="col">Slutlig V85 %</th><th scope="col">Slutodds</th><th scope="col">Poäng före start</th><th scope="col">Skrällrank i avd.</th></tr></thead><tbody>
+                <tr><th scope="row">1</th><td>8 R.K.Kiara</td><td>37,02 %</td><td>2,25</td><td>3/6</td><td>Utanför lågstrecksurvalet</td></tr>
+                <tr class="analysis-upset"><th scope="row">2</th><td>3 Andiamo <span class="analysis-badge">SKRÄLL</span></td><td>6,00 %</td><td>8,93</td><td>4/6</td><td>5:a av 6</td></tr>
+                <tr class="analysis-upset"><th scope="row">3</th><td>10 Sacrebleu <span class="analysis-badge">SKRÄLL</span></td><td>4,54 %</td><td>11,88</td><td>4/6</td><td>3:a av 8</td></tr>
+                <tr><th scope="row">4</th><td>5 Skeie Loke</td><td>15,36 %</td><td>5,15</td><td>4/6</td><td>Utanför lågstrecksurvalet</td></tr>
+                <tr class="analysis-upset"><th scope="row">5</th><td>5 Done Deal <span class="analysis-badge">SKRÄLL</span></td><td>6,41 %</td><td>11,54</td><td>4/6</td><td>2:a av 6</td></tr>
+                <tr><th scope="row">6</th><td>4 Prince A’lir</td><td>52,55 %</td><td>2,16</td><td>1/6</td><td>Utanför lågstrecksurvalet</td></tr>
+                <tr><th scope="row">7</th><td>3 Frank S.H.</td><td>46,33 %</td><td>2,49</td><td>2/6</td><td>Utanför lågstrecksurvalet</td></tr>
+                <tr class="analysis-upset"><th scope="row">8</th><td>3 Merillion <span class="analysis-badge">SKRÄLL</span></td><td>9,20 %</td><td>7,58</td><td>3/6</td><td>6:a av 6</td></tr>
+              </tbody></table>
+            </div>
+            <h3>Varför träffade vi inte mer säkert?</h3>
+            <div class="analysis-causes">
+              <article><span class="analysis-number">01</span><h4>För många hästar fick godkänt</h4><p>Gränsen högst 10 % och minst 3 av 6 poäng släppte igenom 52 % av de 100 aktiva hästarna i förhandsnoteringen. Fyra av 52 kandidater vann (7,7 %). Det mäter urvalets bredd och träffandel, inte systemets antal rätt eller lönsamhet.</p></article>
+              <article><span class="analysis-number">02</span><h4>Lägst procent vann vid lika poäng</h4><p>I skrällpoängtabellen och avdelningarna sorteras lika poäng efter lägst streckprocent. Mycket svagt spelade hästar kunde därför hamna före Andiamo och Done Deal, trots samma fyra poäng. Låg procent visar hur lite hästen är spelad, inte hur stor vinstchansen är.</p><p class="analysis-small">Radarn har dessutom marknads- och trendsignalen före procent som skiljekriterier. Rankerna i tabellen ovan avser skrällpoängtabellen och avdelningarna.</p></article>
+              <article><span class="analysis-number">03</span><h4>Grundsignaler ersatte en riktig loppbedömning</h4><p>Amerikansk vagn gav poäng även utan vagnbyte. Startnummer förenklade loppbilden, årets topp-3-statistik användes som formproxy och rekordets distanskategori som klass/distanssignal. Dessa signaler kan vara användbara, men skiljer inte säkert en aktuell vinnarchans från ett allmänt plus.</p></article>
+              <article><span class="analysis-number">04</span><h4>Viktig information gav ingen egen poäng</h4><p>De sparade ATG-kommentarerna lyfte första barfota runt om för Done Deal och första barfota för Merillion. Done Deals form fick expertstöd, men skobalans hade ingen egen poäng i modellen. Merillion stannade på 3/6 och hamnade sist av sex skrällkandidater i sin avdelning.</p></article>
+            </div>
+            <h3>Signaler som faktiskt fångade vinnarna</h3>
+            <ul class="analysis-lessons">
+              <li><strong>Positiv V85-Trend%:</strong> alla fyra lågstreckade vinnare hade positiv Trend% i sista noteringen. Det är en observation från denna omgång, inte bevis för en säker regel.</li>
+              <li><strong>Marknad plus form:</strong> Andiamo, Sacrebleu och Done Deal hade vinnarodds under modellens jämförelseodds 85/V85-%. Andiamo och Done Deal fick också formpoäng. Merillion fångades via trend, form och startläge.</li>
+              <li><strong>Kräv inte fallande vinnarodds:</strong> tre av fyra skrällvinnare hade högre odds än vid fredagens sista notering. V85-Trend% och vinnarodds kommer från olika spelpooler och kan röra sig åt olika håll.</li>
+              <li><strong>Negativ trend fäller inte en favorit:</strong> Prince A’lir och Frank S.H. vann trots negativ Trend%. Skrällpoängen är inte en generell ranking av alla hästars vinstchanser.</li>
+            </ul>
+            <div class="analysis-next"><h3>Arbetsmodell att pröva inför kommande omgångar</h3><ol>
+              <li><strong>Skilj bevakning från sluturval.</strong> Behåll den breda listan, men välj 2–3 prioriterade skrällar per avdelning med tydlig motivering.</li>
+              <li><strong>Skilj på vinstchans och spelvärde.</strong> Låt inte lägst procent avgöra lika poäng. Pröva en rangordning som väger in form, loppbild och verifierade förändringar.</li>
+              <li><strong>Registrera verkliga ändringar.</strong> Skilj första barfota och vagnbyte från utrustning som hästen redan brukar använda. Osäkra uppgifter ska anges som osäkra.</li>
+              <li><strong>Frys och följ upp.</strong> Spara noteringstid, regelversion och sluturval före start. Mät sedan kandidaternas antal, täckning av skrällvinnare och träffar bland topp 2 och topp 3 över flera omgångar.</li>
+            </ol><p>Detta är förslag att utvärdera. Efteranalysen ändrar inte Bodens poäng eller rankning i efterhand. En enda omgång räcker inte för att fastställa vilka vikter som förbättrar träffsäkerheten.</p></div>
+            <p class="analysis-source">Resultat, slutliga streck och odds: <a href="https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-03_11_5" target="_blank" rel="noopener noreferrer">ATG racinginfo · Boden 3 oktober 2026 ↗</a>. Förhandsdata: sidans sparade ATG-notering kl. 15:01:45 och dåvarande poängregler. Omsättning: 75 369 256 kr. Tre av åtta streckfavoriter vann. Skräll definieras här som vinnare med högst 10 % slutliga V85-streck.</p>
+          </section>
         </section>
         <aside class="right-column" aria-label="Systemöversikt">
           <section class="slip">
