@@ -1,8 +1,8 @@
 {
   "round": "2026-10-03",
   "track": "Boden",
-  "amountSek": 11415246,
-  "observedAt": "2026-10-03T09:57:15+02:00",
-  "source": "ATG racinginfo, V85-pool för Boden 3 oktober 2026. Poolens timestamp 2026-10-03 09:57:15; turnover i öre omräknat till kronor.",
+  "amountSek": 15691102,
+  "observedAt": "2026-10-03T11:03:15+02:00",
+  "source": "ATG racinginfo, V85-pool för Boden 3 oktober 2026. Poolens timestamp 2026-10-03 11:03:15; turnover i öre omräknat till kronor.",
   "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-03_11_5"
 }
