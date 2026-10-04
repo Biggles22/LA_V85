@@ -1,0 +1,6435 @@
+{
+  "round": "2026-10-10",
+  "track": "Solvalla",
+  "trackId": 5,
+  "gameId": "V85_2026-10-10_5_6",
+  "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-10_5_6",
+  "calendarUrl": "https://www.atg.se/services/racinginfo/v1/api/calendar/day/2026-10-10",
+  "checkedAt": "2026-10-04T22:37:20+02:00",
+  "sourceAt": "2026-10-04T19:59:03+02:00",
+  "sourceVersion": 1791136743512,
+  "races": [
+    {
+      "id": "2026-10-10_5_6",
+      "number": 6,
+      "name": "Alzheimer Life - STL Klass I, Final i Meeting 6",
+      "distance": 2140,
+      "startMethod": "auto",
+      "leg": 1,
+      "startTime": "2026-10-10T15:00:00+02:00",
+      "starts": [
+        {
+          "key": "1-1",
+          "number": 1,
+          "postPosition": 1,
+          "distance": 2140,
+          "name": "Gumshoe Sox",
+          "horseId": 790298,
+          "driver": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 5,
+            "seconds": 2,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 7
+            }
+          }
+        },
+        {
+          "key": "1-2",
+          "number": 2,
+          "postPosition": 2,
+          "distance": 2140,
+          "name": "Cold Blaze",
+          "horseId": 792133,
+          "driver": {
+            "id": 740606,
+            "name": "Magnus A Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 593763,
+            "name": "Mattias Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 3,
+            "seconds": 2,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 7
+            }
+          }
+        },
+        {
+          "key": "1-3",
+          "number": 3,
+          "postPosition": 3,
+          "distance": 2140,
+          "name": "Chaplin",
+          "horseId": 781129,
+          "driver": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 2,
+            "seconds": 2,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 3
+            }
+          }
+        },
+        {
+          "key": "1-4",
+          "number": 4,
+          "postPosition": 4,
+          "distance": 2140,
+          "name": "Herkules A'lir",
+          "horseId": 791367,
+          "driver": {
+            "id": 600062,
+            "name": "Rikard N Skoglund",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 14,
+            "wins": 4,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "1-5",
+          "number": 5,
+          "postPosition": 5,
+          "distance": 2140,
+          "name": "Digital Brodde",
+          "horseId": 791365,
+          "driver": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Halmstad",
+          "horseHome": "Halmstad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 8,
+            "wins": 1,
+            "seconds": 1,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "1-6",
+          "number": 6,
+          "postPosition": 6,
+          "distance": 2140,
+          "name": "Mastroianni",
+          "horseId": 781409,
+          "driver": {
+            "id": 816760,
+            "name": "Fredrik Plassen",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 40291,
+            "name": "Alan Shelton",
+            "homeTrack": "Bollnäs"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bollnäs",
+          "horseHome": "Bollnäs",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 1,
+            "seconds": 2,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "1-7",
+          "number": 7,
+          "postPosition": 7,
+          "distance": 2140,
+          "name": "Mr Explosive H.H.",
+          "horseId": 780431,
+          "driver": {
+            "id": 803467,
+            "name": "Julian Cordeau",
+            "homeTrack": "Åby"
+          },
+          "trainer": {
+            "id": 14985,
+            "name": "Stefan Granlund",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": true
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 8,
+            "wins": 3,
+            "seconds": 2,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 5
+            }
+          }
+        },
+        {
+          "key": "1-8",
+          "number": 8,
+          "postPosition": 8,
+          "distance": 2140,
+          "name": "Buddy Topline",
+          "horseId": 787657,
+          "driver": {
+            "id": 43521,
+            "name": "Carl Johan Jepson",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 3,
+            "seconds": 1,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 2
+            }
+          }
+        },
+        {
+          "key": "1-9",
+          "number": 9,
+          "postPosition": 9,
+          "distance": 2140,
+          "name": "Viewing Window",
+          "horseId": 785735,
+          "driver": {
+            "id": 70381,
+            "name": "Jorma Kontio",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 583281,
+            "name": "Jonathan Gustafsson",
+            "homeTrack": "Romme"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Romme",
+          "horseHome": "Romme",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 14,
+            "wins": 3,
+            "seconds": 4,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 7
+            }
+          }
+        },
+        {
+          "key": "1-10",
+          "number": 10,
+          "postPosition": 10,
+          "distance": 2140,
+          "name": "Langli",
+          "horseId": 785691,
+          "driver": {
+            "id": 171504,
+            "name": "Adrian Kolgjini",
+            "homeTrack": "Jägersro"
+          },
+          "trainer": {
+            "id": 171504,
+            "name": "Adrian Kolgjini",
+            "homeTrack": "Jägersro"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Jägersro",
+          "horseHome": "Jägersro",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 2,
+            "seconds": 2,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "1-11",
+          "number": 11,
+          "postPosition": 11,
+          "distance": 2140,
+          "name": "Don Gaagaa",
+          "horseId": 794007,
+          "driver": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 166404,
+            "name": "Ulf Stenströmer",
+            "homeTrack": "Axevalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Axevalla",
+          "horseHome": "Axevalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 1,
+            "seconds": 3,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 8
+            }
+          }
+        },
+        {
+          "key": "1-12",
+          "number": 12,
+          "postPosition": 12,
+          "distance": 2140,
+          "name": "T.Wall's Notorius",
+          "horseId": 778923,
+          "driver": {
+            "id": 9065,
+            "name": "Jomar Blekkan",
+            "homeTrack": null
+          },
+          "trainer": {
+            "id": 563115,
+            "name": "Sofia Johansson",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 12,
+            "wins": 3,
+            "seconds": 3,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 9
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-10-10_5_7",
+      "number": 7,
+      "name": "Frances Bulwarks/Olle Anderssons lopp - STL Gulddivisionen (Försök 6 i Meeting 7 - Final Solvalla 26/12)",
+      "distance": 2140,
+      "startMethod": "auto",
+      "leg": 2,
+      "startTime": "2026-10-10T15:22:00+02:00",
+      "starts": [
+        {
+          "key": "2-1",
+          "number": 1,
+          "postPosition": 1,
+          "distance": 2140,
+          "name": "Charron",
+          "horseId": 803851,
+          "driver": {
+            "id": 722458,
+            "name": "Magnus Teien Gundersen",
+            "homeTrack": null
+          },
+          "trainer": {
+            "id": 722458,
+            "name": "Magnus Teien Gundersen",
+            "homeTrack": null
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": null,
+          "horseHome": null,
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 8,
+            "wins": 3,
+            "seconds": 0,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 2
+            }
+          }
+        },
+        {
+          "key": "2-2",
+          "number": 2,
+          "postPosition": 2,
+          "distance": 2140,
+          "name": "Sourire Frö",
+          "horseId": 764388,
+          "driver": {
+            "id": 53685,
+            "name": "Ulf Ohlsson",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 533735,
+            "name": "Jonas Eriksson",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 0,
+            "seconds": 0,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "2-3",
+          "number": 3,
+          "postPosition": 3,
+          "distance": 2140,
+          "name": "Izod Zet",
+          "horseId": 785299,
+          "driver": {
+            "id": 67192,
+            "name": "Örjan Kihlström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 6,
+            "wins": 1,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "2-4",
+          "number": 4,
+          "postPosition": 4,
+          "distance": 2140,
+          "name": "Romulus Tooma",
+          "horseId": 787037,
+          "driver": {
+            "id": 502022,
+            "name": "Peter G Norman",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 502022,
+            "name": "Peter G Norman",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 0,
+            "seconds": 0,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "2-5",
+          "number": 5,
+          "postPosition": 5,
+          "distance": 2140,
+          "name": "Ready Star",
+          "horseId": 770984,
+          "driver": {
+            "id": 722626,
+            "name": "Mats E Djuse",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 92281,
+            "name": "Jörgen Westholm",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 2,
+            "seconds": 4,
+            "thirds": 4
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "2-6",
+          "number": 6,
+          "postPosition": 6,
+          "distance": 2140,
+          "name": "Boscha Diablo",
+          "horseId": 779776,
+          "driver": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Halmstad",
+          "horseHome": "Halmstad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 3,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 3
+            }
+          }
+        },
+        {
+          "key": "2-7",
+          "number": 7,
+          "postPosition": 7,
+          "distance": 2140,
+          "name": "Makalu Doc",
+          "horseId": 777942,
+          "driver": {
+            "id": 740606,
+            "name": "Magnus A Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 9921,
+            "name": "Timo Nurmos",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 3,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 5
+            }
+          }
+        },
+        {
+          "key": "2-8",
+          "number": 8,
+          "postPosition": 8,
+          "distance": 2140,
+          "name": "Call Me Gleipner",
+          "horseId": 781555,
+          "driver": {
+            "id": 600062,
+            "name": "Rikard N Skoglund",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 13,
+            "wins": 5,
+            "seconds": 2,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "2-9",
+          "number": 9,
+          "postPosition": 9,
+          "distance": 2140,
+          "name": "Jerka Sting",
+          "horseId": 757663,
+          "driver": {
+            "id": 177032,
+            "name": "Claes Sjöström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 177032,
+            "name": "Claes Sjöström",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 1,
+            "seconds": 2,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 7
+            }
+          }
+        },
+        {
+          "key": "2-10",
+          "number": 10,
+          "postPosition": 10,
+          "distance": 2140,
+          "name": "Barack Face",
+          "horseId": 774617,
+          "driver": {
+            "id": 171504,
+            "name": "Adrian Kolgjini",
+            "homeTrack": "Jägersro"
+          },
+          "trainer": {
+            "id": 43734,
+            "name": "Lutfi Kolgjini",
+            "homeTrack": "Jägersro"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Jägersro",
+          "horseHome": "Jägersro",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 2,
+            "seconds": 0,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 3
+            }
+          }
+        },
+        {
+          "key": "2-11",
+          "number": 11,
+          "postPosition": 11,
+          "distance": 2140,
+          "name": "H.C.'s Crazy Horse",
+          "horseId": 772611,
+          "driver": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 12,
+            "wins": 1,
+            "seconds": 3,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "2-12",
+          "number": 12,
+          "postPosition": 12,
+          "distance": 2140,
+          "name": "Before Takeoff",
+          "horseId": 785745,
+          "driver": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 3,
+            "seconds": 1,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-10-10_5_8",
+      "number": 8,
+      "name": "Giant Diablos lopp - Spårtrappa - STL Diamantstoet, Final i Meeting 6",
+      "distance": 2140,
+      "startMethod": "auto",
+      "leg": 3,
+      "startTime": "2026-10-10T15:44:00+02:00",
+      "starts": [
+        {
+          "key": "3-1",
+          "number": 1,
+          "postPosition": 1,
+          "distance": 2140,
+          "name": "Full Speed Forward",
+          "horseId": 777146,
+          "driver": {
+            "id": 53685,
+            "name": "Ulf Ohlsson",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 600573,
+            "name": "Jonna Irri",
+            "homeTrack": "Umåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Umåker",
+          "horseHome": "Umåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 17,
+            "wins": 1,
+            "seconds": 5,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 2
+            }
+          }
+        },
+        {
+          "key": "3-2",
+          "number": 2,
+          "postPosition": 2,
+          "distance": 2140,
+          "name": "Gosa Gosing",
+          "horseId": 783502,
+          "driver": {
+            "id": 70381,
+            "name": "Jorma Kontio",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 503386,
+            "name": "Katja Melkko",
+            "homeTrack": "Romme"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Romme",
+          "horseHome": "Romme",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 14,
+            "wins": 3,
+            "seconds": 3,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 8
+            }
+          }
+        },
+        {
+          "key": "3-3",
+          "number": 3,
+          "postPosition": 3,
+          "distance": 2140,
+          "name": "Riverdale Z.",
+          "horseId": 774845,
+          "driver": {
+            "id": 181913,
+            "name": "Conrad Lugauer",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 181913,
+            "name": "Conrad Lugauer",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 2,
+            "seconds": 1,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "3-4",
+          "number": 4,
+          "postPosition": 4,
+          "distance": 2140,
+          "name": "I'm Still Standing",
+          "horseId": 787355,
+          "driver": {
+            "id": 42633,
+            "name": "Peter Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Halmstad",
+          "horseHome": "Halmstad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 6,
+            "seconds": 2,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 8
+            }
+          }
+        },
+        {
+          "key": "3-5",
+          "number": 5,
+          "postPosition": 5,
+          "distance": 2140,
+          "name": "M.T.Tomorrows Hope",
+          "horseId": 781414,
+          "driver": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 13,
+            "wins": 4,
+            "seconds": 1,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 5
+            }
+          }
+        },
+        {
+          "key": "3-6",
+          "number": 6,
+          "postPosition": 6,
+          "distance": 2140,
+          "name": "Monkey Wine",
+          "horseId": 812572,
+          "driver": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 12,
+            "wins": 4,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aaK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 2
+            }
+          }
+        },
+        {
+          "key": "3-7",
+          "number": 7,
+          "postPosition": 7,
+          "distance": 2140,
+          "name": "Nilla Lane",
+          "horseId": 780569,
+          "driver": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Halmstad",
+          "horseHome": "Halmstad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 4,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 3
+            }
+          }
+        },
+        {
+          "key": "3-8",
+          "number": 8,
+          "postPosition": 8,
+          "distance": 2140,
+          "name": "Clarissa",
+          "horseId": 790510,
+          "driver": {
+            "id": 740606,
+            "name": "Magnus A Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 594966,
+            "name": "Alessandro Gocciadoro",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 5,
+            "wins": 2,
+            "seconds": 2,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "3-9",
+          "number": 9,
+          "postPosition": 9,
+          "distance": 2140,
+          "name": "Rya Håleryd",
+          "horseId": 786433,
+          "driver": {
+            "id": 722626,
+            "name": "Mats E Djuse",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 593763,
+            "name": "Mattias Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 15,
+            "wins": 3,
+            "seconds": 3,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 2
+            }
+          }
+        },
+        {
+          "key": "3-10",
+          "number": 10,
+          "postPosition": 10,
+          "distance": 2140,
+          "name": "Maharasha",
+          "horseId": 777482,
+          "driver": {
+            "id": 600062,
+            "name": "Rikard N Skoglund",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 639705,
+            "name": "Kjetil Helgestad",
+            "homeTrack": null
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": null,
+          "horseHome": null,
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false
+            },
+            "back": {
+              "hasShoe": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 12,
+            "wins": 4,
+            "seconds": 3,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "3-11",
+          "number": 11,
+          "postPosition": 11,
+          "distance": 2140,
+          "name": "Betting Pacer",
+          "horseId": 758390,
+          "driver": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Färjestad",
+          "horseHome": "Färjestad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 14,
+            "wins": 4,
+            "seconds": 3,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "3-12",
+          "number": 12,
+          "postPosition": 12,
+          "distance": 2140,
+          "name": "La Yuca",
+          "horseId": 788219,
+          "driver": {
+            "id": 67192,
+            "name": "Örjan Kihlström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 3,
+            "seconds": 3,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-10-10_5_9",
+      "number": 9,
+      "name": "Walter Lundbergs Memorial",
+      "distance": 3140,
+      "startMethod": "volte",
+      "leg": 4,
+      "startTime": "2026-10-10T16:06:00+02:00",
+      "starts": [
+        {
+          "key": "4-1",
+          "number": 1,
+          "postPosition": 1,
+          "distance": 3140,
+          "name": "Mister Malabar",
+          "horseId": 794737,
+          "driver": {
+            "id": 43521,
+            "name": "Carl Johan Jepson",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 3,
+            "seconds": 0,
+            "thirds": 2
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 13,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "4-2",
+          "number": 2,
+          "postPosition": 2,
+          "distance": 3140,
+          "name": "Konnässör",
+          "horseId": 786277,
+          "driver": {
+            "id": 696218,
+            "name": "Marcus Lilius",
+            "homeTrack": "Hagmyren"
+          },
+          "trainer": {
+            "id": 189098,
+            "name": "Magnus Träff",
+            "homeTrack": "Bollnäs"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bollnäs",
+          "horseHome": "Bollnäs",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 16,
+            "wins": 1,
+            "seconds": 5,
+            "thirds": 1
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 14,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "4-3",
+          "number": 3,
+          "postPosition": 3,
+          "distance": 3140,
+          "name": "Isaac Wynn",
+          "horseId": 791934,
+          "driver": {
+            "id": 600062,
+            "name": "Rikard N Skoglund",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 2,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 13,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "4-4",
+          "number": 4,
+          "postPosition": 1,
+          "distance": 3160,
+          "name": "Quattro Håleryd",
+          "horseId": 778565,
+          "driver": {
+            "id": 91416,
+            "name": "Per Lennartsson",
+            "homeTrack": "Eskilstuna"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 6,
+            "wins": 1,
+            "seconds": 2,
+            "thirds": 0
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 14,
+              "tenths": 3
+            }
+          }
+        },
+        {
+          "key": "4-5",
+          "number": 5,
+          "postPosition": 2,
+          "distance": 3160,
+          "name": "Noa Transs R.",
+          "horseId": 803618,
+          "driver": {
+            "id": 816760,
+            "name": "Fredrik Plassen",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 827728,
+            "name": "Marco Lammers",
+            "homeTrack": "Gävle"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Gävle",
+          "horseHome": "Gävle",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 1,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 13,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "4-6",
+          "number": 6,
+          "postPosition": 3,
+          "distance": 3160,
+          "name": "Ajson",
+          "horseId": 785165,
+          "driver": {
+            "id": 700523,
+            "name": "Zeb Jonasson",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 700523,
+            "name": "Zeb Jonasson",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": true
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 12,
+            "wins": 1,
+            "seconds": 1,
+            "thirds": 2
+          },
+          "record": {
+            "code": "L",
+            "startMethod": "volte",
+            "distance": "long",
+            "time": {
+              "minutes": 1,
+              "seconds": 15,
+              "tenths": 1
+            }
+          }
+        },
+        {
+          "key": "4-7",
+          "number": 7,
+          "postPosition": 4,
+          "distance": 3160,
+          "name": "Omari Boko",
+          "horseId": 785116,
+          "driver": {
+            "id": 191875,
+            "name": "Kevin Oscarsson",
+            "homeTrack": "Axevalla"
+          },
+          "trainer": {
+            "id": 191875,
+            "name": "Kevin Oscarsson",
+            "homeTrack": "Axevalla"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Axevalla",
+          "horseHome": "Axevalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 12,
+            "wins": 1,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 13,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "4-8",
+          "number": 8,
+          "postPosition": 5,
+          "distance": 3160,
+          "name": "First to Fight",
+          "horseId": 779169,
+          "driver": {
+            "id": 605915,
+            "name": "Ole Johan Östre",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 181934,
+            "name": "Beata Persson",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 18,
+            "wins": 0,
+            "seconds": 1,
+            "thirds": 5
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 13,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "4-9",
+          "number": 9,
+          "postPosition": 1,
+          "distance": 3180,
+          "name": "Monster Wine",
+          "horseId": 786646,
+          "driver": {
+            "id": 740606,
+            "name": "Magnus A Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 2,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 14,
+              "tenths": 2
+            }
+          }
+        },
+        {
+          "key": "4-10",
+          "number": 10,
+          "postPosition": 2,
+          "distance": 3180,
+          "name": "Moonshot",
+          "horseId": 790368,
+          "driver": {
+            "id": 722626,
+            "name": "Mats E Djuse",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 672787,
+            "name": "Marcus Schön",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 0,
+            "seconds": 2,
+            "thirds": 1
+          },
+          "record": {
+            "code": "L",
+            "startMethod": "volte",
+            "distance": "long",
+            "time": {
+              "minutes": 1,
+              "seconds": 15,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "4-11",
+          "number": 11,
+          "postPosition": 3,
+          "distance": 3180,
+          "name": "Eagle Rock",
+          "horseId": 767668,
+          "driver": {
+            "id": 67192,
+            "name": "Örjan Kihlström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 6,
+            "wins": 0,
+            "seconds": 2,
+            "thirds": 1
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 2
+            }
+          }
+        },
+        {
+          "key": "4-12",
+          "number": 12,
+          "postPosition": 4,
+          "distance": 3180,
+          "name": "Portofino",
+          "horseId": 774989,
+          "driver": {
+            "id": 101108,
+            "name": "Fredrik B Larsson",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 101108,
+            "name": "Fredrik B Larsson",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 16,
+            "wins": 0,
+            "seconds": 2,
+            "thirds": 3
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 7
+            }
+          }
+        },
+        {
+          "key": "4-13",
+          "number": 13,
+          "postPosition": 5,
+          "distance": 3180,
+          "name": "Cameron Hills",
+          "horseId": 778791,
+          "driver": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Färjestad",
+          "horseHome": "Färjestad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 18,
+            "wins": 2,
+            "seconds": 4,
+            "thirds": 2
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 13,
+              "tenths": 3
+            }
+          }
+        },
+        {
+          "key": "4-14",
+          "number": 14,
+          "postPosition": 6,
+          "distance": 3180,
+          "name": "Ace Wibb",
+          "horseId": 786637,
+          "driver": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 12,
+            "wins": 3,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 13,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "4-15",
+          "number": 15,
+          "postPosition": 7,
+          "distance": 3180,
+          "name": "Monsieur Chocolat",
+          "horseId": 787946,
+          "driver": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 451710,
+            "name": "Fredrik Wallin",
+            "homeTrack": "Gävle"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Gävle",
+          "horseHome": "Gävle",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 8,
+            "wins": 3,
+            "seconds": 0,
+            "thirds": 0
+          },
+          "record": {
+            "code": "M",
+            "startMethod": "volte",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 9
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-10-10_5_10",
+      "number": 10,
+      "name": "RS Mustang - Svenskt Trav-Oaks (Gr I, Nat)",
+      "distance": 2140,
+      "startMethod": "auto",
+      "leg": 5,
+      "startTime": "2026-10-10T16:28:00+02:00",
+      "starts": [
+        {
+          "key": "5-1",
+          "number": 1,
+          "postPosition": 1,
+          "distance": 2140,
+          "name": "Nelly Furtado Sisu",
+          "horseId": 799938,
+          "driver": {
+            "id": 91416,
+            "name": "Per Lennartsson",
+            "homeTrack": "Eskilstuna"
+          },
+          "trainer": {
+            "id": 53021,
+            "name": "Sören Lennartson",
+            "homeTrack": "Umåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Umåker",
+          "horseHome": "Umåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 2,
+            "seconds": 3,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 3
+            }
+          }
+        },
+        {
+          "key": "5-2",
+          "number": 2,
+          "postPosition": 2,
+          "distance": 2140,
+          "name": "Kagli Zet",
+          "horseId": 797506,
+          "driver": {
+            "id": 43521,
+            "name": "Carl Johan Jepson",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 8,
+            "wins": 4,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 8
+            }
+          }
+        },
+        {
+          "key": "5-3",
+          "number": 3,
+          "postPosition": 3,
+          "distance": 2140,
+          "name": "Global Halo",
+          "horseId": 798058,
+          "driver": {
+            "id": 11217,
+            "name": "Joakim Lövgren",
+            "homeTrack": "Jägersro"
+          },
+          "trainer": {
+            "id": 11217,
+            "name": "Joakim Lövgren",
+            "homeTrack": "Jägersro"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Jägersro",
+          "horseHome": "Jägersro",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 4,
+            "seconds": 2,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "5-4",
+          "number": 4,
+          "postPosition": 4,
+          "distance": 2140,
+          "name": "I See Tail Lights",
+          "horseId": 798591,
+          "driver": {
+            "id": 479879,
+            "name": "Markus B Svedberg",
+            "homeTrack": "Eskilstuna"
+          },
+          "trainer": {
+            "id": 479879,
+            "name": "Markus B Svedberg",
+            "homeTrack": "Eskilstuna"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Eskilstuna",
+          "horseHome": "Eskilstuna",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 3,
+            "seconds": 3,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "5-5",
+          "number": 5,
+          "postPosition": 5,
+          "distance": 2140,
+          "name": "Nightbird",
+          "horseId": 800991,
+          "driver": {
+            "id": 740606,
+            "name": "Magnus A Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 6,
+            "wins": 6,
+            "seconds": 0,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "5-6",
+          "number": 6,
+          "postPosition": 6,
+          "distance": 2140,
+          "name": "Graffiti Brodda",
+          "horseId": 799036,
+          "driver": {
+            "id": 738909,
+            "name": "Tyler Mifsud",
+            "homeTrack": "Jägersro"
+          },
+          "trainer": {
+            "id": 11217,
+            "name": "Joakim Lövgren",
+            "homeTrack": "Jägersro"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Jägersro",
+          "horseHome": "Jägersro",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 4,
+            "seconds": 4,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "5-7",
+          "number": 7,
+          "postPosition": 7,
+          "distance": 2140,
+          "name": "Zeebreeze",
+          "horseId": 798380,
+          "driver": {
+            "id": 722626,
+            "name": "Mats E Djuse",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 6,
+            "wins": 3,
+            "seconds": 2,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 5
+            }
+          }
+        },
+        {
+          "key": "5-8",
+          "number": 8,
+          "postPosition": 8,
+          "distance": 2140,
+          "name": "Miss Brighton",
+          "horseId": 799548,
+          "driver": {
+            "id": 67192,
+            "name": "Örjan Kihlström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 5,
+            "wins": 4,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "5-9",
+          "number": 9,
+          "postPosition": 9,
+          "distance": 2140,
+          "name": "Thai Medina",
+          "horseId": 799350,
+          "driver": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Färjestad",
+          "horseHome": "Färjestad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 5,
+            "seconds": 2,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 7
+            }
+          }
+        },
+        {
+          "key": "5-10",
+          "number": 10,
+          "postPosition": 10,
+          "distance": 2140,
+          "name": "Deer Hunter",
+          "horseId": 800550,
+          "driver": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 4,
+            "wins": 1,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "5-11",
+          "number": 11,
+          "postPosition": 11,
+          "distance": 2140,
+          "name": "Morning Rain",
+          "horseId": 798065,
+          "driver": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 8,
+            "wins": 3,
+            "seconds": 4,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 8
+            }
+          }
+        },
+        {
+          "key": "5-12",
+          "number": 12,
+          "postPosition": 12,
+          "distance": 2140,
+          "name": "In Tango Tempo",
+          "horseId": 801064,
+          "driver": {
+            "id": 177032,
+            "name": "Claes Sjöström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 451710,
+            "name": "Fredrik Wallin",
+            "homeTrack": "Gävle"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Gävle",
+          "horseHome": "Gävle",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 2,
+            "seconds": 1,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-10-10_5_11",
+      "number": 11,
+      "name": "FORD - STL Bronsdivisionen, Final i Meeting 6",
+      "distance": 2140,
+      "startMethod": "auto",
+      "leg": 6,
+      "startTime": "2026-10-10T16:54:00+02:00",
+      "starts": [
+        {
+          "key": "6-1",
+          "number": 1,
+          "postPosition": 1,
+          "distance": 2140,
+          "name": "Conrads Åke",
+          "horseId": 784875,
+          "driver": {
+            "id": 652663,
+            "name": "Oskar Florhed",
+            "homeTrack": "Bergsåker"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 3,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "6-2",
+          "number": 2,
+          "postPosition": 2,
+          "distance": 2140,
+          "name": "River Tooma",
+          "horseId": 786255,
+          "driver": {
+            "id": 177032,
+            "name": "Claes Sjöström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 183618,
+            "name": "Diederik Meilink",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 16,
+            "wins": 4,
+            "seconds": 3,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "6-3",
+          "number": 3,
+          "postPosition": 3,
+          "distance": 2140,
+          "name": "Elvis T.C.B.",
+          "horseId": 783639,
+          "driver": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 15,
+            "wins": 1,
+            "seconds": 5,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 7
+            }
+          }
+        },
+        {
+          "key": "6-4",
+          "number": 4,
+          "postPosition": 4,
+          "distance": 2140,
+          "name": "Flight Sequence",
+          "horseId": 785221,
+          "driver": {
+            "id": 600062,
+            "name": "Rikard N Skoglund",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 4,
+            "seconds": 2,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "6-5",
+          "number": 5,
+          "postPosition": 5,
+          "distance": 2140,
+          "name": "Iaintnoquitter",
+          "horseId": 804537,
+          "driver": {
+            "id": 722626,
+            "name": "Mats E Djuse",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 92281,
+            "name": "Jörgen Westholm",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 5,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "6-6",
+          "number": 6,
+          "postPosition": 6,
+          "distance": 2140,
+          "name": "Four White E.G.",
+          "horseId": 783935,
+          "driver": {
+            "id": 740606,
+            "name": "Magnus A Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 593763,
+            "name": "Mattias Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 12,
+            "wins": 5,
+            "seconds": 2,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "6-7",
+          "number": 7,
+          "postPosition": 7,
+          "distance": 2140,
+          "name": "Mr Carnation",
+          "horseId": 784868,
+          "driver": {
+            "id": 43521,
+            "name": "Carl Johan Jepson",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 588181,
+            "name": "Christoffer Eriksson",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 18,
+            "wins": 8,
+            "seconds": 3,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "6-8",
+          "number": 8,
+          "postPosition": 8,
+          "distance": 2140,
+          "name": "Global Dependable",
+          "horseId": 771031,
+          "driver": {
+            "id": 91416,
+            "name": "Per Lennartsson",
+            "homeTrack": "Eskilstuna"
+          },
+          "trainer": {
+            "id": 593763,
+            "name": "Mattias Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 1,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 5
+            }
+          }
+        },
+        {
+          "key": "6-9",
+          "number": 9,
+          "postPosition": 9,
+          "distance": 2140,
+          "name": "Graces Bird",
+          "horseId": 778200,
+          "driver": {
+            "id": 816760,
+            "name": "Fredrik Plassen",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 92281,
+            "name": "Jörgen Westholm",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 1,
+            "seconds": 0,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "6-10",
+          "number": 10,
+          "postPosition": 10,
+          "distance": 2140,
+          "name": "Nickel Occagnes",
+          "horseId": 797892,
+          "driver": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 6,
+            "wins": 3,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 2
+            }
+          }
+        },
+        {
+          "key": "6-11",
+          "number": 11,
+          "postPosition": 11,
+          "distance": 2140,
+          "name": "Jaguar Godiva",
+          "horseId": 794009,
+          "driver": {
+            "id": 53685,
+            "name": "Ulf Ohlsson",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 162127,
+            "name": "Markus Pihlström",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 1,
+            "seconds": 2,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "6-12",
+          "number": 12,
+          "postPosition": 12,
+          "distance": 2140,
+          "name": "Gaudi Laksmy",
+          "horseId": 814912,
+          "driver": {
+            "id": 756788,
+            "name": "Victor Rosleff",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 594966,
+            "name": "Alessandro Gocciadoro",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 5,
+            "seconds": 0,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-10-10_5_12",
+      "number": 12,
+      "name": "RS Mustang - Svenskt Trav-Kriterium (Gr I, Nat)",
+      "distance": 2640,
+      "startMethod": "auto",
+      "leg": 7,
+      "startTime": "2026-10-10T17:16:00+02:00",
+      "starts": [
+        {
+          "key": "7-1",
+          "number": 1,
+          "postPosition": 1,
+          "distance": 2640,
+          "name": "Po Tay Toes",
+          "horseId": 798764,
+          "driver": {
+            "id": 816760,
+            "name": "Fredrik Plassen",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 145744,
+            "name": "Björn Röcklinger",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 5,
+            "wins": 4,
+            "seconds": 0,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aL",
+            "startMethod": "auto",
+            "distance": "long",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 7
+            }
+          }
+        },
+        {
+          "key": "7-2",
+          "number": 2,
+          "postPosition": 2,
+          "distance": 2640,
+          "name": "Toto Tooma",
+          "horseId": 797597,
+          "driver": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 528293,
+            "name": "David Persson",
+            "homeTrack": "Axevalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Axevalla",
+          "horseHome": "Axevalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 12,
+            "wins": 3,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "7-3",
+          "number": 3,
+          "postPosition": 3,
+          "distance": 2640,
+          "name": "Nanda Devi Cut",
+          "horseId": 797125,
+          "driver": {
+            "id": 722626,
+            "name": "Mats E Djuse",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 593763,
+            "name": "Mattias Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 4,
+            "seconds": 4,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aL",
+            "startMethod": "auto",
+            "distance": "long",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "7-4",
+          "number": 4,
+          "postPosition": 4,
+          "distance": 2640,
+          "name": "Kodiak Zet",
+          "horseId": 797515,
+          "driver": {
+            "id": 67192,
+            "name": "Örjan Kihlström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 185518,
+            "name": "Daniel Redén",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 5,
+            "seconds": 2,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aL",
+            "startMethod": "auto",
+            "distance": "long",
+            "time": {
+              "minutes": 1,
+              "seconds": 13,
+              "tenths": 3
+            }
+          }
+        },
+        {
+          "key": "7-5",
+          "number": 5,
+          "postPosition": 5,
+          "distance": 2640,
+          "name": "Steady Spender",
+          "horseId": 798755,
+          "driver": {
+            "id": 43521,
+            "name": "Carl Johan Jepson",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 591841,
+            "name": "Eric Martinsson",
+            "homeTrack": "Axevalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Axevalla",
+          "horseHome": "Axevalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 6,
+            "seconds": 2,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 5
+            }
+          }
+        },
+        {
+          "key": "7-6",
+          "number": 6,
+          "postPosition": 6,
+          "distance": 2640,
+          "name": "No Hitter",
+          "horseId": 796885,
+          "driver": {
+            "id": 527494,
+            "name": "Robin Bakker",
+            "homeTrack": null
+          },
+          "trainer": {
+            "id": 525933,
+            "name": "Sabine Kagebrant",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 4,
+            "seconds": 0,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 0
+            }
+          }
+        },
+        {
+          "key": "7-7",
+          "number": 7,
+          "postPosition": 7,
+          "distance": 2640,
+          "name": "Payback River",
+          "horseId": 799335,
+          "driver": {
+            "id": 696218,
+            "name": "Marcus Lilius",
+            "homeTrack": "Hagmyren"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 8,
+            "wins": 2,
+            "seconds": 2,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aL",
+            "startMethod": "auto",
+            "distance": "long",
+            "time": {
+              "minutes": 1,
+              "seconds": 13,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "7-8",
+          "number": 8,
+          "postPosition": 8,
+          "distance": 2640,
+          "name": "Intro",
+          "horseId": 797972,
+          "driver": {
+            "id": 740606,
+            "name": "Magnus A Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 145744,
+            "name": "Björn Röcklinger",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": true
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 8,
+            "wins": 3,
+            "seconds": 4,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 8
+            }
+          }
+        },
+        {
+          "key": "7-9",
+          "number": 9,
+          "postPosition": 9,
+          "distance": 2640,
+          "name": "Court One",
+          "horseId": 798959,
+          "driver": {
+            "id": 91416,
+            "name": "Per Lennartsson",
+            "homeTrack": "Eskilstuna"
+          },
+          "trainer": {
+            "id": 9921,
+            "name": "Timo Nurmos",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 6,
+            "wins": 2,
+            "seconds": 3,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aL",
+            "startMethod": "auto",
+            "distance": "long",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 5
+            }
+          }
+        },
+        {
+          "key": "7-10",
+          "number": 10,
+          "postPosition": 10,
+          "distance": 2640,
+          "name": "Neutron Star",
+          "horseId": 797054,
+          "driver": {
+            "id": 177032,
+            "name": "Claes Sjöström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 177032,
+            "name": "Claes Sjöström",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 2,
+            "seconds": 1,
+            "thirds": 5
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "7-11",
+          "number": 11,
+          "postPosition": 11,
+          "distance": 2640,
+          "name": "Mister Nabab",
+          "horseId": 801104,
+          "driver": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 7,
+            "wins": 1,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 8
+            }
+          }
+        },
+        {
+          "key": "7-12",
+          "number": 12,
+          "postPosition": 12,
+          "distance": 2640,
+          "name": "Vancouver Tile",
+          "horseId": 797748,
+          "driver": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Färjestad",
+          "horseHome": "Färjestad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 1,
+            "seconds": 4,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 12,
+              "tenths": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-10-10_5_13",
+      "number": 13,
+      "name": "SVEA - STL Silverdivisionen, Final i Meeting 6",
+      "distance": 2140,
+      "startMethod": "auto",
+      "leg": 8,
+      "startTime": "2026-10-10T17:42:00+02:00",
+      "starts": [
+        {
+          "key": "8-1",
+          "number": 1,
+          "postPosition": 1,
+          "distance": 2140,
+          "name": "King Okay",
+          "horseId": 803522,
+          "driver": {
+            "id": 43521,
+            "name": "Carl Johan Jepson",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 530943,
+            "name": "Anders Lundström Wolden",
+            "homeTrack": null
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": null,
+          "horseHome": null,
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 14,
+            "wins": 1,
+            "seconds": 3,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 1
+            }
+          }
+        },
+        {
+          "key": "8-2",
+          "number": 2,
+          "postPosition": 2,
+          "distance": 2140,
+          "name": "X.O.Kemp",
+          "horseId": 788013,
+          "driver": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 3,
+            "seconds": 2,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "8-3",
+          "number": 3,
+          "postPosition": 3,
+          "distance": 2140,
+          "name": "Crowe Motion",
+          "horseId": 787853,
+          "driver": {
+            "id": 67192,
+            "name": "Örjan Kihlström",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 13,
+            "wins": 4,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 1
+            }
+          }
+        },
+        {
+          "key": "8-4",
+          "number": 4,
+          "postPosition": 4,
+          "distance": 2140,
+          "name": "Alvena Roy",
+          "horseId": 778655,
+          "driver": {
+            "id": 42633,
+            "name": "Peter Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Halmstad",
+          "horseHome": "Halmstad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": true,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 13,
+            "wins": 2,
+            "seconds": 3,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "8-5",
+          "number": 5,
+          "postPosition": 5,
+          "distance": 2140,
+          "name": "The Flying Eagle",
+          "horseId": 772681,
+          "driver": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "trainer": {
+            "id": 37325,
+            "name": "Robert Bergh",
+            "homeTrack": "Åby"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Åby",
+          "horseHome": "Åby",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 2,
+            "seconds": 5,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 4
+            }
+          }
+        },
+        {
+          "key": "8-6",
+          "number": 6,
+          "postPosition": 6,
+          "distance": 2140,
+          "name": "Frank S.H.",
+          "horseId": 778091,
+          "driver": {
+            "id": 722626,
+            "name": "Mats E Djuse",
+            "homeTrack": "Gävle"
+          },
+          "trainer": {
+            "id": 672787,
+            "name": "Marcus Schön",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 9,
+            "wins": 4,
+            "seconds": 1,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 9
+            }
+          }
+        },
+        {
+          "key": "8-7",
+          "number": 7,
+          "postPosition": 7,
+          "distance": 2140,
+          "name": "Great Time Trot",
+          "horseId": 768713,
+          "driver": {
+            "id": 161607,
+            "name": "Björn Goop",
+            "homeTrack": "Färjestad"
+          },
+          "trainer": {
+            "id": 166404,
+            "name": "Ulf Stenströmer",
+            "homeTrack": "Axevalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Axevalla",
+          "horseHome": "Axevalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 19,
+            "wins": 0,
+            "seconds": 3,
+            "thirds": 2
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 6
+            }
+          }
+        },
+        {
+          "key": "8-8",
+          "number": 8,
+          "postPosition": 8,
+          "distance": 2140,
+          "name": "Steady Express",
+          "horseId": 784965,
+          "driver": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "trainer": {
+            "id": 549496,
+            "name": "Johan Untersteiner",
+            "homeTrack": "Halmstad"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Halmstad",
+          "horseHome": "Halmstad",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": true,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 6,
+            "wins": 2,
+            "seconds": 0,
+            "thirds": 1
+          },
+          "record": {
+            "code": "aM",
+            "startMethod": "auto",
+            "distance": "medium",
+            "time": {
+              "minutes": 1,
+              "seconds": 11,
+              "tenths": 1
+            }
+          }
+        },
+        {
+          "key": "8-9",
+          "number": 9,
+          "postPosition": 9,
+          "distance": 2140,
+          "name": "Killer Rain",
+          "horseId": 787979,
+          "driver": {
+            "id": 527494,
+            "name": "Robin Bakker",
+            "homeTrack": null
+          },
+          "trainer": {
+            "id": 647636,
+            "name": "Paul J P Hagoort",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 8,
+            "wins": 2,
+            "seconds": 3,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 9,
+              "tenths": 2
+            }
+          }
+        },
+        {
+          "key": "8-10",
+          "number": 10,
+          "postPosition": 10,
+          "distance": 2140,
+          "name": "Summermusic'nightS",
+          "horseId": 800205,
+          "driver": {
+            "id": 740606,
+            "name": "Magnus A Djuse",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 189679,
+            "name": "Daniel Wäjersten",
+            "homeTrack": "Bergsåker"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "horseHome": "Bergsåker",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 10,
+            "wins": 2,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 5
+            }
+          }
+        },
+        {
+          "key": "8-11",
+          "number": 11,
+          "postPosition": 11,
+          "distance": 2140,
+          "name": "Västerbo Exciting",
+          "horseId": 777006,
+          "driver": {
+            "id": 4036,
+            "name": "Åke Lindblom",
+            "homeTrack": "Örebro"
+          },
+          "trainer": {
+            "id": 4036,
+            "name": "Åke Lindblom",
+            "homeTrack": "Örebro"
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Örebro",
+          "horseHome": "Örebro",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": false
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 6,
+            "wins": 3,
+            "seconds": 1,
+            "thirds": 0
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 1
+            }
+          }
+        },
+        {
+          "key": "8-12",
+          "number": 12,
+          "postPosition": 12,
+          "distance": 2140,
+          "name": "Currency Artist",
+          "horseId": 784335,
+          "driver": {
+            "id": 53685,
+            "name": "Ulf Ohlsson",
+            "homeTrack": "Solvalla"
+          },
+          "trainer": {
+            "id": 581315,
+            "name": "Ville Karhulahti",
+            "homeTrack": "Solvalla"
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "horseHome": "Solvalla",
+          "shoes": {
+            "reported": true,
+            "front": {
+              "hasShoe": false,
+              "changed": false
+            },
+            "back": {
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
+          "scratched": false,
+          "season": {
+            "starts": 11,
+            "wins": 2,
+            "seconds": 0,
+            "thirds": 3
+          },
+          "record": {
+            "code": "aK",
+            "startMethod": "auto",
+            "distance": "short",
+            "time": {
+              "minutes": 1,
+              "seconds": 10,
+              "tenths": 4
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
