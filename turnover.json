@@ -2,9 +2,9 @@
   "round": "2026-10-10",
   "track": "Solvalla",
   "gameId": "V85_2026-10-10_5_6",
-  "amountSek": 53444.0,
-  "observedAt": "2026-10-05T17:44:15+02:00",
-  "checkedAt": "2026-10-05T17:57:47+02:00",
+  "amountSek": 129558,
+  "observedAt": "2026-10-06T11:44:15+02:00",
+  "checkedAt": "2026-10-06T10:03:53.741Z",
   "source": "ATG V85-pool",
   "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-10_5_6",
   "status": "verified"
