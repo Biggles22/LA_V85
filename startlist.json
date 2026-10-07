@@ -49,7 +49,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -99,7 +113,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -149,7 +177,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -199,7 +241,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 14,
@@ -249,7 +305,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 8,
@@ -299,7 +369,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -341,15 +425,29 @@
           "shoes": {
             "reported": true,
             "front": {
-              "hasShoe": true,
-              "changed": false
+              "hasShoe": false,
+              "changed": true
             },
             "back": {
-              "hasShoe": true,
+              "hasShoe": false,
+              "changed": true
+            }
+          },
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
               "changed": false
             }
           },
-          "sulky": null,
           "scratched": false,
           "season": {
             "starts": 8,
@@ -399,7 +497,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -449,7 +561,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 14,
@@ -499,7 +625,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -549,7 +689,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -599,7 +753,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 12,
@@ -660,7 +828,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 8,
@@ -710,7 +892,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -760,7 +956,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 6,
@@ -810,7 +1020,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -860,7 +1084,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -910,7 +1148,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -960,7 +1212,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -1010,7 +1276,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 13,
@@ -1060,7 +1340,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -1110,7 +1404,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -1160,7 +1468,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 12,
@@ -1210,7 +1532,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -1271,7 +1607,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 17,
@@ -1321,7 +1671,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 14,
@@ -1371,7 +1735,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -1421,7 +1799,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -1471,7 +1863,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 13,
@@ -1521,7 +1927,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 12,
@@ -1571,7 +1991,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -1621,7 +2055,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 5,
@@ -1671,7 +2119,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 15,
@@ -1719,7 +2181,21 @@
               "hasShoe": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 12,
@@ -1769,7 +2245,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 14,
@@ -1819,7 +2309,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -1880,7 +2384,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -1930,7 +2448,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 16,
@@ -1980,7 +2512,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -2030,7 +2576,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 6,
@@ -2080,7 +2640,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -2130,7 +2704,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": true
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 12,
@@ -2180,7 +2768,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 12,
@@ -2230,7 +2832,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 18,
@@ -2280,7 +2896,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -2330,7 +2960,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -2380,7 +3024,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 6,
@@ -2430,7 +3088,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 16,
@@ -2480,7 +3152,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 18,
@@ -2530,7 +3216,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 12,
@@ -2580,7 +3280,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 8,
@@ -2641,7 +3355,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -2691,7 +3419,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 8,
@@ -2741,7 +3483,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -2791,7 +3547,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -2841,7 +3611,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 6,
@@ -2891,7 +3675,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -2941,7 +3739,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 6,
@@ -2991,7 +3803,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 5,
@@ -3041,7 +3867,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -3091,7 +3931,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 4,
@@ -3141,7 +3995,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 8,
@@ -3191,7 +4059,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -3252,7 +4134,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -3302,7 +4198,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 16,
@@ -3352,7 +4262,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 15,
@@ -3402,7 +4326,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -3452,7 +4390,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -3502,7 +4454,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 12,
@@ -3552,7 +4518,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 18,
@@ -3602,7 +4582,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -3652,7 +4646,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -3702,7 +4710,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 6,
@@ -3752,7 +4774,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -3802,7 +4838,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -3863,7 +4913,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 5,
@@ -3913,7 +4977,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 12,
@@ -3963,7 +5041,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -4013,7 +5105,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -4063,7 +5169,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -4113,7 +5233,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -4163,7 +5297,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 8,
@@ -4213,7 +5361,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 8,
@@ -4263,7 +5425,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 6,
@@ -4313,7 +5489,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -4363,7 +5553,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 7,
@@ -4413,7 +5617,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -4474,7 +5692,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": true
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 14,
@@ -4524,7 +5756,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -4574,7 +5820,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 13,
@@ -4624,7 +5884,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 13,
@@ -4674,7 +5948,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -4724,7 +6012,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 9,
@@ -4774,7 +6076,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 19,
@@ -4824,7 +6140,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 6,
@@ -4874,7 +6204,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 8,
@@ -4924,7 +6268,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "AM",
+              "text": "Amerikansk",
+              "engText": "American",
+              "changed": false
+            },
+            "colour": {
+              "code": "BL",
+              "text": "Blå",
+              "engText": "Blue",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 10,
@@ -4974,7 +6332,21 @@
               "changed": false
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 6,
@@ -5024,7 +6396,21 @@
               "changed": true
             }
           },
-          "sulky": null,
+          "sulky": {
+            "reported": true,
+            "type": {
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": false
+            },
+            "colour": {
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
+              "changed": false
+            }
+          },
           "scratched": false,
           "season": {
             "starts": 11,
@@ -5046,6 +6432,6 @@
       ]
     }
   ],
-  "gearCheckedAt": "2026-10-05T22:05:06.759Z",
+  "gearCheckedAt": "2026-10-07T14:30:12.478Z",
   "gearSourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-10_5_6"
 }
