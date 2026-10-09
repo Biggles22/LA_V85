@@ -384,7 +384,7 @@
               "changed": false
             }
           },
-          "scratched": false,
+          "scratched": true,
           "season": {
             "starts": 7,
             "wins": 1,
@@ -1663,12 +1663,12 @@
           "shoes": {
             "reported": true,
             "front": {
-              "hasShoe": true,
-              "changed": true
+              "hasShoe": false,
+              "changed": false
             },
             "back": {
-              "hasShoe": true,
-              "changed": true
+              "hasShoe": false,
+              "changed": false
             }
           },
           "sulky": {
@@ -2196,7 +2196,7 @@
               "changed": false
             }
           },
-          "scratched": false,
+          "scratched": true,
           "season": {
             "starts": 12,
             "wins": 4,
@@ -3080,12 +3080,12 @@
           "shoes": {
             "reported": true,
             "front": {
-              "hasShoe": false,
-              "changed": false
+              "hasShoe": true,
+              "changed": true
             },
             "back": {
-              "hasShoe": false,
-              "changed": false
+              "hasShoe": true,
+              "changed": true
             }
           },
           "sulky": {
@@ -5428,15 +5428,15 @@
           "sulky": {
             "reported": true,
             "type": {
-              "code": "AM",
-              "text": "Amerikansk",
-              "engText": "American",
-              "changed": false
+              "code": "VA",
+              "text": "Vanlig",
+              "engText": "Standard",
+              "changed": true
             },
             "colour": {
-              "code": "BL",
-              "text": "Blå",
-              "engText": "Blue",
+              "code": "GU",
+              "text": "Gul",
+              "engText": "Yellow",
               "changed": false
             }
           },
@@ -6432,6 +6432,6 @@
       ]
     }
   ],
-  "gearCheckedAt": "2026-10-07T14:30:12.478Z",
+  "gearCheckedAt": "2026-10-09T17:20:48.408Z",
   "gearSourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-10_5_6"
 }
