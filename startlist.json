@@ -1,0 +1,1261 @@
+{
+  "round": "2026-10-17",
+  "track": "Gävle",
+  "trackId": 16,
+  "gameId": "V85_2026-10-17_16_5",
+  "sourceUrl": "https://v85startlista.se/startlista/2026-10-17/gavle-v85-2026-10-17-16-5/?avd=1",
+  "sourceLabel": "V85 Startlista, baserat på ATG",
+  "sourceAt": "2026-10-13T07:45:00+02:00",
+  "capturedAt": "2026-10-13T08:04:00+02:00",
+  "races": [
+    {
+      "leg": 1,
+      "number": 5,
+      "name": "STL Silverdivisionen",
+      "distance": 1640,
+      "startMethod": "auto",
+      "starts": [
+        {
+          "key": "1-1",
+          "number": 1,
+          "name": "Zätamustangen",
+          "postPosition": 1,
+          "distance": 1640,
+          "driver": {
+            "name": "Mats E Djuse"
+          },
+          "scratched": false,
+          "percentage": 9.54
+        },
+        {
+          "key": "1-2",
+          "number": 2,
+          "name": "S.G.Empress",
+          "postPosition": 2,
+          "distance": 1640,
+          "driver": {
+            "name": "Rikard N Skoglund"
+          },
+          "scratched": false,
+          "percentage": 22.3
+        },
+        {
+          "key": "1-3",
+          "number": 3,
+          "name": "Cashman J.R.",
+          "postPosition": 3,
+          "distance": 1640,
+          "driver": {
+            "name": "Claes Sjöström"
+          },
+          "scratched": false,
+          "percentage": 14.35
+        },
+        {
+          "key": "1-4",
+          "number": 4,
+          "name": "Four White E.G.",
+          "postPosition": 4,
+          "distance": 1640,
+          "driver": {
+            "name": "Magnus A Djuse"
+          },
+          "scratched": false,
+          "percentage": 16.45
+        },
+        {
+          "key": "1-5",
+          "number": 5,
+          "name": "Steady Roc",
+          "postPosition": 5,
+          "distance": 1640,
+          "driver": {
+            "name": "Jimmy Dahlman"
+          },
+          "scratched": false,
+          "percentage": 2.27
+        },
+        {
+          "key": "1-6",
+          "number": 6,
+          "name": "Crowe Motion",
+          "postPosition": 6,
+          "distance": 1640,
+          "driver": {
+            "name": "Daniel Wäjersten"
+          },
+          "scratched": false,
+          "percentage": 11.35
+        },
+        {
+          "key": "1-7",
+          "number": 7,
+          "name": "Global Enjoy",
+          "postPosition": 7,
+          "distance": 1640,
+          "driver": {
+            "name": "Emilia Leo"
+          },
+          "scratched": false,
+          "percentage": 5.01
+        },
+        {
+          "key": "1-8",
+          "number": 8,
+          "name": "Kapten Nemo",
+          "postPosition": 8,
+          "distance": 1640,
+          "driver": {
+            "name": "Peter G Norman"
+          },
+          "scratched": false,
+          "percentage": 7.3
+        },
+        {
+          "key": "1-9",
+          "number": 9,
+          "name": "Dalens Elvis",
+          "postPosition": 9,
+          "distance": 1640,
+          "driver": {
+            "name": "Ludwig Wickman"
+          },
+          "scratched": false,
+          "percentage": 5.49
+        },
+        {
+          "key": "1-10",
+          "number": 10,
+          "name": "Nadal B.R.",
+          "postPosition": 10,
+          "distance": 1640,
+          "driver": {
+            "name": "Carl Johan Jepson"
+          },
+          "scratched": false,
+          "percentage": 5.94
+        }
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 6,
+      "name": "STL Diamantstoet · Stoseriefinal",
+      "distance": 2140,
+      "startMethod": "auto",
+      "starts": [
+        {
+          "key": "2-1",
+          "number": 1,
+          "name": "Ghostgirl",
+          "postPosition": 1,
+          "distance": 2140,
+          "driver": {
+            "name": "Linus Lönn"
+          },
+          "scratched": false,
+          "percentage": 1.23
+        },
+        {
+          "key": "2-2",
+          "number": 2,
+          "name": "Realize'em",
+          "postPosition": 2,
+          "distance": 2140,
+          "driver": {
+            "name": "Ulf Ohlsson"
+          },
+          "scratched": false,
+          "percentage": 2.8
+        },
+        {
+          "key": "2-3",
+          "number": 3,
+          "name": "Direction Face",
+          "postPosition": 3,
+          "distance": 2140,
+          "driver": {
+            "name": "Peter G Norman"
+          },
+          "scratched": false,
+          "percentage": 5.8
+        },
+        {
+          "key": "2-4",
+          "number": 4,
+          "name": "Good Reads",
+          "postPosition": 4,
+          "distance": 2140,
+          "driver": {
+            "name": "Rikard N Skoglund"
+          },
+          "scratched": false,
+          "percentage": 2.31
+        },
+        {
+          "key": "2-5",
+          "number": 5,
+          "name": "Geisha Road Grif",
+          "postPosition": 5,
+          "distance": 2140,
+          "driver": {
+            "name": "Jorma Kontio"
+          },
+          "scratched": false,
+          "percentage": 8.4
+        },
+        {
+          "key": "2-6",
+          "number": 6,
+          "name": "Ki Ti Vi",
+          "postPosition": 6,
+          "distance": 2140,
+          "driver": {
+            "name": "Kevin Svedlund"
+          },
+          "scratched": false,
+          "percentage": 1.16
+        },
+        {
+          "key": "2-7",
+          "number": 7,
+          "name": "Glory Forever",
+          "postPosition": 7,
+          "distance": 2140,
+          "driver": {
+            "name": "Tomas Pettersson"
+          },
+          "scratched": false,
+          "percentage": 19.77
+        },
+        {
+          "key": "2-8",
+          "number": 8,
+          "name": "Havana Heaven",
+          "postPosition": 8,
+          "distance": 2140,
+          "driver": {
+            "name": "Carl Johan Jepson"
+          },
+          "scratched": false,
+          "percentage": 8.53
+        },
+        {
+          "key": "2-9",
+          "number": 9,
+          "name": "Sweet Celebration",
+          "postPosition": 9,
+          "distance": 2140,
+          "driver": {
+            "name": "Jan Ove Olsen"
+          },
+          "scratched": false,
+          "percentage": 5.48
+        },
+        {
+          "key": "2-10",
+          "number": 10,
+          "name": "Pralines",
+          "postPosition": 10,
+          "distance": 2140,
+          "driver": {
+            "name": "Magnus A Djuse"
+          },
+          "scratched": false,
+          "percentage": 5.35
+        },
+        {
+          "key": "2-11",
+          "number": 11,
+          "name": "Ajlexes Gourmand",
+          "postPosition": 11,
+          "distance": 2140,
+          "driver": {
+            "name": "Björn Goop"
+          },
+          "scratched": false,
+          "percentage": 22.72
+        },
+        {
+          "key": "2-12",
+          "number": 12,
+          "name": "Global Deadline",
+          "postPosition": 12,
+          "distance": 2140,
+          "driver": {
+            "name": "Fredrik Plassen"
+          },
+          "scratched": false,
+          "percentage": 4.1
+        },
+        {
+          "key": "2-13",
+          "number": 13,
+          "name": "Mary Wadd",
+          "postPosition": 13,
+          "distance": 2140,
+          "driver": {
+            "name": "Claes Sjöström"
+          },
+          "scratched": false,
+          "percentage": 2.6
+        },
+        {
+          "key": "2-14",
+          "number": 14,
+          "name": "Ecuador Broline",
+          "postPosition": 14,
+          "distance": 2140,
+          "driver": {
+            "name": "Mats E Djuse"
+          },
+          "scratched": false,
+          "percentage": 4.22
+        },
+        {
+          "key": "2-15",
+          "number": 15,
+          "name": "Sonesta",
+          "postPosition": 15,
+          "distance": 2140,
+          "driver": {
+            "name": "Marcus Lilius"
+          },
+          "scratched": false,
+          "percentage": 5.52
+        }
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 7,
+      "name": "Stayerlopp",
+      "distance": 2640,
+      "startMethod": "volt",
+      "starts": [
+        {
+          "key": "3-1",
+          "number": 1,
+          "name": "Carpaccio",
+          "postPosition": 1,
+          "distance": 2640,
+          "driver": {
+            "name": "Ulf Ohlsson"
+          },
+          "scratched": false,
+          "percentage": 5.8
+        },
+        {
+          "key": "3-2",
+          "number": 2,
+          "name": "Emerald Broline",
+          "postPosition": 2,
+          "distance": 2640,
+          "driver": {
+            "name": "Magnus A Djuse"
+          },
+          "scratched": false,
+          "percentage": 4.9
+        },
+        {
+          "key": "3-3",
+          "number": 3,
+          "name": "Set it off H.C.",
+          "postPosition": 3,
+          "distance": 2640,
+          "driver": {
+            "name": "Rikard N Skoglund"
+          },
+          "scratched": false,
+          "percentage": 21.56
+        },
+        {
+          "key": "3-4",
+          "number": 4,
+          "name": "Umpteen",
+          "postPosition": 4,
+          "distance": 2640,
+          "driver": {
+            "name": "Per Linderoth"
+          },
+          "scratched": false,
+          "percentage": 4.72
+        },
+        {
+          "key": "3-5",
+          "number": 5,
+          "name": "Västerbo MagicMike",
+          "postPosition": 5,
+          "distance": 2640,
+          "driver": {
+            "name": "Fredrik Plassen"
+          },
+          "scratched": false,
+          "percentage": 3.96
+        },
+        {
+          "key": "3-6",
+          "number": 6,
+          "name": "Sensational Doc",
+          "postPosition": 6,
+          "distance": 2640,
+          "driver": {
+            "name": "Petter Karlsson"
+          },
+          "scratched": false,
+          "percentage": 10.09
+        },
+        {
+          "key": "3-7",
+          "number": 7,
+          "name": "Iulius Zet",
+          "postPosition": 7,
+          "distance": 2640,
+          "driver": {
+            "name": "Micael Melander"
+          },
+          "scratched": false,
+          "percentage": 3.18
+        },
+        {
+          "key": "3-8",
+          "number": 8,
+          "name": "You to Gangster",
+          "postPosition": 8,
+          "distance": 2640,
+          "driver": {
+            "name": "Markus B Svedberg"
+          },
+          "scratched": false,
+          "percentage": 3.18
+        },
+        {
+          "key": "3-9",
+          "number": 9,
+          "name": "Allant Express",
+          "postPosition": 9,
+          "distance": 2640,
+          "driver": {
+            "name": "Claes Sjöström"
+          },
+          "scratched": false,
+          "percentage": 16.95
+        },
+        {
+          "key": "3-10",
+          "number": 10,
+          "name": "Five Billion",
+          "postPosition": 10,
+          "distance": 2640,
+          "driver": {
+            "name": "Björn Goop"
+          },
+          "scratched": false,
+          "percentage": 15.26
+        },
+        {
+          "key": "3-11",
+          "number": 11,
+          "name": "Green Dream",
+          "postPosition": 11,
+          "distance": 2640,
+          "driver": {
+            "name": "Mats E Djuse"
+          },
+          "scratched": false,
+          "percentage": 3.25
+        },
+        {
+          "key": "3-12",
+          "number": 12,
+          "name": "Ultimate Scotch",
+          "postPosition": 12,
+          "distance": 2640,
+          "driver": {
+            "name": "Daniel Wäjersten"
+          },
+          "scratched": false,
+          "percentage": 7.14
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 8,
+      "name": "Gävle Stora Pris",
+      "distance": 2640,
+      "startMethod": "auto",
+      "starts": [
+        {
+          "key": "4-1",
+          "number": 1,
+          "name": "Borups Victory",
+          "postPosition": 1,
+          "distance": 2640,
+          "driver": {
+            "name": "Daniel Wäjersten"
+          },
+          "scratched": false,
+          "percentage": 60.5
+        },
+        {
+          "key": "4-2",
+          "number": 2,
+          "name": "Chestnut",
+          "postPosition": 2,
+          "distance": 2640,
+          "driver": {
+            "name": "Örjan Kihlström"
+          },
+          "scratched": false,
+          "percentage": 3.22
+        },
+        {
+          "key": "4-3",
+          "number": 3,
+          "name": "Global Concept",
+          "postPosition": 3,
+          "distance": 2640,
+          "driver": {
+            "name": "Mats E Djuse"
+          },
+          "scratched": false,
+          "percentage": 9.68
+        },
+        {
+          "key": "4-4",
+          "number": 4,
+          "name": "Flotilla",
+          "postPosition": 4,
+          "distance": 2640,
+          "driver": {
+            "name": "Claes Sjöström"
+          },
+          "scratched": false,
+          "percentage": 2.02
+        },
+        {
+          "key": "4-5",
+          "number": 5,
+          "name": "Caviar From Mine",
+          "postPosition": 5,
+          "distance": 2640,
+          "driver": {
+            "name": "Fredrik Plassen"
+          },
+          "scratched": false,
+          "percentage": 2.32
+        },
+        {
+          "key": "4-6",
+          "number": 6,
+          "name": "Competivo",
+          "postPosition": 6,
+          "distance": 2640,
+          "driver": {
+            "name": "Magnus A Djuse"
+          },
+          "scratched": false,
+          "percentage": 6.35
+        },
+        {
+          "key": "4-7",
+          "number": 7,
+          "name": "High on Pepper",
+          "postPosition": 7,
+          "distance": 2640,
+          "driver": {
+            "name": "Rikard N Skoglund"
+          },
+          "scratched": false,
+          "percentage": 10.17
+        },
+        {
+          "key": "4-8",
+          "number": 8,
+          "name": "Joe Dalton",
+          "postPosition": 8,
+          "distance": 2640,
+          "driver": {
+            "name": "Carl Johan Jepson"
+          },
+          "scratched": false,
+          "percentage": 1.08
+        },
+        {
+          "key": "4-9",
+          "number": 9,
+          "name": "Bengan",
+          "postPosition": 9,
+          "distance": 2640,
+          "driver": {
+            "name": "Björn Goop"
+          },
+          "scratched": false,
+          "percentage": 3.27
+        },
+        {
+          "key": "4-10",
+          "number": 10,
+          "name": "Eolo Jet",
+          "postPosition": 10,
+          "distance": 2640,
+          "driver": {
+            "name": "Petter Karlsson"
+          },
+          "scratched": false,
+          "percentage": 1.38
+        }
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 9,
+      "name": "STL Kallblodsdivisionen",
+      "distance": 2140,
+      "startMethod": "volt",
+      "starts": [
+        {
+          "key": "5-1",
+          "number": 1,
+          "name": "Sangviks Lynet",
+          "postPosition": 1,
+          "distance": 2140,
+          "driver": {
+            "name": "Oskar Kylin Blom"
+          },
+          "scratched": false,
+          "percentage": 2.26
+        },
+        {
+          "key": "5-2",
+          "number": 2,
+          "name": "Grisle Best G.L.",
+          "postPosition": 2,
+          "distance": 2140,
+          "driver": {
+            "name": "Vidar Tjomsland"
+          },
+          "scratched": false,
+          "percentage": 11.59
+        },
+        {
+          "key": "5-3",
+          "number": 3,
+          "name": "Marodin",
+          "postPosition": 3,
+          "distance": 2140,
+          "driver": {
+            "name": "Henrik Kihle"
+          },
+          "scratched": false,
+          "percentage": 1.19
+        },
+        {
+          "key": "5-4",
+          "number": 4,
+          "name": "Alm Nordstjernen",
+          "postPosition": 4,
+          "distance": 2140,
+          "driver": {
+            "name": "Boye Ölstören"
+          },
+          "scratched": false,
+          "percentage": 10.84
+        },
+        {
+          "key": "5-5",
+          "number": 5,
+          "name": "Lill Viking",
+          "postPosition": 5,
+          "distance": 2140,
+          "driver": {
+            "name": "Fredrik Plassen"
+          },
+          "scratched": false,
+          "percentage": 2.02
+        },
+        {
+          "key": "5-6",
+          "number": 6,
+          "name": "Storm Annsgal",
+          "postPosition": 6,
+          "distance": 2140,
+          "driver": {
+            "name": "Göran Antonsen"
+          },
+          "scratched": false,
+          "percentage": 3.62
+        },
+        {
+          "key": "5-7",
+          "number": 7,
+          "name": "Trollbalder",
+          "postPosition": 7,
+          "distance": 2140,
+          "driver": {
+            "name": "Tomas Pettersson"
+          },
+          "scratched": false,
+          "percentage": 2.74
+        },
+        {
+          "key": "5-8",
+          "number": 8,
+          "name": "Lannem Pär",
+          "postPosition": 8,
+          "distance": 2140,
+          "driver": {
+            "name": "Rikard N Skoglund"
+          },
+          "scratched": false,
+          "percentage": 16.98
+        },
+        {
+          "key": "5-9",
+          "number": 9,
+          "name": "Grisle Kongen G.L.",
+          "postPosition": 1,
+          "distance": 2160,
+          "driver": {
+            "name": "Robert Dunder"
+          },
+          "scratched": false,
+          "percentage": 16.47
+        },
+        {
+          "key": "5-10",
+          "number": 10,
+          "name": "Briskeby Pilen",
+          "postPosition": 2,
+          "distance": 2160,
+          "driver": {
+            "name": "Örjan Kihlström"
+          },
+          "scratched": false,
+          "percentage": 16.23
+        },
+        {
+          "key": "5-11",
+          "number": 11,
+          "name": "Ersa Frej",
+          "postPosition": 3,
+          "distance": 2160,
+          "driver": {
+            "name": "Jorma Kontio"
+          },
+          "scratched": false,
+          "percentage": 1.34
+        },
+        {
+          "key": "5-12",
+          "number": 12,
+          "name": "Eldida",
+          "postPosition": 4,
+          "distance": 2160,
+          "driver": {
+            "name": "Magnus A Djuse"
+          },
+          "scratched": false,
+          "percentage": 1.2
+        },
+        {
+          "key": "5-13",
+          "number": 13,
+          "name": "Ellbert",
+          "postPosition": 5,
+          "distance": 2160,
+          "driver": {
+            "name": "Mats E Djuse"
+          },
+          "scratched": false,
+          "percentage": 10.77
+        },
+        {
+          "key": "5-14",
+          "number": 14,
+          "name": "Hulte Sixten",
+          "postPosition": 6,
+          "distance": 2160,
+          "driver": {
+            "name": "Marcus Lilius"
+          },
+          "scratched": false,
+          "percentage": 1.3
+        },
+        {
+          "key": "5-15",
+          "number": 15,
+          "name": "Fosshaug Frasse",
+          "postPosition": 7,
+          "distance": 2160,
+          "driver": {
+            "name": "Björn Goop"
+          },
+          "scratched": false,
+          "percentage": 1.46
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 10,
+      "name": "STL",
+      "distance": 1640,
+      "startMethod": "auto",
+      "starts": [
+        {
+          "key": "6-1",
+          "number": 1,
+          "name": "Mayson",
+          "postPosition": 1,
+          "distance": 1640,
+          "driver": {
+            "name": "Fredrik Plassen"
+          },
+          "scratched": true,
+          "percentage": 2.38
+        },
+        {
+          "key": "6-2",
+          "number": 2,
+          "name": "Macarena Sisu",
+          "postPosition": 2,
+          "distance": 1640,
+          "driver": {
+            "name": "Rikard N Skoglund"
+          },
+          "scratched": false,
+          "percentage": 1.92
+        },
+        {
+          "key": "6-3",
+          "number": 3,
+          "name": "Devilish",
+          "postPosition": 3,
+          "distance": 1640,
+          "driver": {
+            "name": "Carl Johan Jepson"
+          },
+          "scratched": false,
+          "percentage": 6.79
+        },
+        {
+          "key": "6-4",
+          "number": 4,
+          "name": "Nordic Choice",
+          "postPosition": 4,
+          "distance": 1640,
+          "driver": {
+            "name": "Marcus Lilius"
+          },
+          "scratched": false,
+          "percentage": 1.42
+        },
+        {
+          "key": "6-5",
+          "number": 5,
+          "name": "Conrads Ove",
+          "postPosition": 5,
+          "distance": 1640,
+          "driver": {
+            "name": "Mats E Djuse"
+          },
+          "scratched": false,
+          "percentage": 31.56
+        },
+        {
+          "key": "6-6",
+          "number": 6,
+          "name": "Chicago News",
+          "postPosition": 6,
+          "distance": 1640,
+          "driver": {
+            "name": "Ludwig Wickman"
+          },
+          "scratched": false,
+          "percentage": 3.09
+        },
+        {
+          "key": "6-7",
+          "number": 7,
+          "name": "Haylee Eagra",
+          "postPosition": 7,
+          "distance": 1640,
+          "driver": {
+            "name": "Linus Lönn"
+          },
+          "scratched": false,
+          "percentage": 6.98
+        },
+        {
+          "key": "6-8",
+          "number": 8,
+          "name": "Valuga",
+          "postPosition": 8,
+          "distance": 1640,
+          "driver": {
+            "name": "Oskar Kylin Blom"
+          },
+          "scratched": false,
+          "percentage": 3.25
+        },
+        {
+          "key": "6-9",
+          "number": 9,
+          "name": "Rob Roy Boko",
+          "postPosition": 9,
+          "distance": 1640,
+          "driver": {
+            "name": "Björn Goop"
+          },
+          "scratched": false,
+          "percentage": 30.38
+        },
+        {
+          "key": "6-10",
+          "number": 10,
+          "name": "Atmospere",
+          "postPosition": 10,
+          "distance": 1640,
+          "driver": {
+            "name": "Claes Sjöström"
+          },
+          "scratched": false,
+          "percentage": 2.8
+        },
+        {
+          "key": "6-11",
+          "number": 11,
+          "name": "Laruns",
+          "postPosition": 11,
+          "distance": 1640,
+          "driver": {
+            "name": "Jimmy Dahlman"
+          },
+          "scratched": false,
+          "percentage": 4.36
+        },
+        {
+          "key": "6-12",
+          "number": 12,
+          "name": "Vince Wynn",
+          "postPosition": 12,
+          "distance": 1640,
+          "driver": {
+            "name": "Andreas Lövdal"
+          },
+          "scratched": false,
+          "percentage": 5.08
+        }
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 11,
+      "name": "STL",
+      "distance": 2140,
+      "startMethod": "volt",
+      "starts": [
+        {
+          "key": "7-1",
+          "number": 1,
+          "name": "My Honky Tonk Man",
+          "postPosition": 1,
+          "distance": 2140,
+          "driver": {
+            "name": "Örjan Kihlström"
+          },
+          "scratched": false,
+          "percentage": 4.02
+        },
+        {
+          "key": "7-2",
+          "number": 2,
+          "name": "Bank Angel",
+          "postPosition": 2,
+          "distance": 2140,
+          "driver": {
+            "name": "Claes Sjöström"
+          },
+          "scratched": false,
+          "percentage": 1.82
+        },
+        {
+          "key": "7-3",
+          "number": 3,
+          "name": "Any Given Sunday",
+          "postPosition": 3,
+          "distance": 2140,
+          "driver": {
+            "name": "Hanna Forslin"
+          },
+          "scratched": false,
+          "percentage": 3.43
+        },
+        {
+          "key": "7-4",
+          "number": 4,
+          "name": "Sir Tooma",
+          "postPosition": 4,
+          "distance": 2140,
+          "driver": {
+            "name": "Mats E Djuse"
+          },
+          "scratched": false,
+          "percentage": 3.35
+        },
+        {
+          "key": "7-5",
+          "number": 5,
+          "name": "Ugalli",
+          "postPosition": 5,
+          "distance": 2140,
+          "driver": {
+            "name": "Björn Goop"
+          },
+          "scratched": false,
+          "percentage": 8.85
+        },
+        {
+          "key": "7-6",
+          "number": 6,
+          "name": "Pineapple",
+          "postPosition": 6,
+          "distance": 2140,
+          "driver": {
+            "name": "Magnus A Djuse"
+          },
+          "scratched": false,
+          "percentage": 6.91
+        },
+        {
+          "key": "7-7",
+          "number": 7,
+          "name": "Great Old Dance",
+          "postPosition": 7,
+          "distance": 2140,
+          "driver": {
+            "name": "Carl Johan Jepson"
+          },
+          "scratched": false,
+          "percentage": 51.28
+        },
+        {
+          "key": "7-8",
+          "number": 8,
+          "name": "Vixi Garbo",
+          "postPosition": 8,
+          "distance": 2140,
+          "driver": {
+            "name": "Marcus Lilius"
+          },
+          "scratched": false,
+          "percentage": 0.71
+        },
+        {
+          "key": "7-9",
+          "number": 9,
+          "name": "Joker Ima",
+          "postPosition": 9,
+          "distance": 2140,
+          "driver": {
+            "name": "Peter G Norman"
+          },
+          "scratched": false,
+          "percentage": 9.21
+        },
+        {
+          "key": "7-10",
+          "number": 10,
+          "name": "Perseus Digital",
+          "postPosition": 10,
+          "distance": 2140,
+          "driver": {
+            "name": "David Nylander"
+          },
+          "scratched": false,
+          "percentage": 0.33
+        },
+        {
+          "key": "7-11",
+          "number": 11,
+          "name": "Legligin",
+          "postPosition": 11,
+          "distance": 2140,
+          "driver": {
+            "name": "Per Linderoth"
+          },
+          "scratched": false,
+          "percentage": 8.11
+        },
+        {
+          "key": "7-12",
+          "number": 12,
+          "name": "Mr Spain",
+          "postPosition": 12,
+          "distance": 2140,
+          "driver": {
+            "name": "Olle Alsén"
+          },
+          "scratched": false,
+          "percentage": 1.98
+        }
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 12,
+      "name": "STL",
+      "distance": 2140,
+      "startMethod": "auto",
+      "starts": [
+        {
+          "key": "8-1",
+          "number": 1,
+          "name": "Myrsjös Tage",
+          "postPosition": 1,
+          "distance": 2140,
+          "driver": {
+            "name": "Olle Alsén"
+          },
+          "scratched": false,
+          "percentage": 2.97
+        },
+        {
+          "key": "8-2",
+          "number": 2,
+          "name": "Justcantgetenough",
+          "postPosition": 2,
+          "distance": 2140,
+          "driver": {
+            "name": "Felicia Molin"
+          },
+          "scratched": false,
+          "percentage": 4.45
+        },
+        {
+          "key": "8-3",
+          "number": 3,
+          "name": "Timotejs Messenger",
+          "postPosition": 3,
+          "distance": 2140,
+          "driver": {
+            "name": "Markus B Svedberg"
+          },
+          "scratched": false,
+          "percentage": 2.96
+        },
+        {
+          "key": "8-4",
+          "number": 4,
+          "name": "Griffin Kronos",
+          "postPosition": 4,
+          "distance": 2140,
+          "driver": {
+            "name": "Daniel Wäjersten"
+          },
+          "scratched": false,
+          "percentage": 34.44
+        },
+        {
+          "key": "8-5",
+          "number": 5,
+          "name": "Take Him Sober",
+          "postPosition": 5,
+          "distance": 2140,
+          "driver": {
+            "name": "Carl Johan Jepson"
+          },
+          "scratched": false,
+          "percentage": 6.24
+        },
+        {
+          "key": "8-6",
+          "number": 6,
+          "name": "Kopparmärra",
+          "postPosition": 6,
+          "distance": 2140,
+          "driver": {
+            "name": "Björn Goop"
+          },
+          "scratched": false,
+          "percentage": 3.76
+        },
+        {
+          "key": "8-7",
+          "number": 7,
+          "name": "Unicum",
+          "postPosition": 7,
+          "distance": 2140,
+          "driver": {
+            "name": "Claes Sjöström"
+          },
+          "scratched": false,
+          "percentage": 12.9
+        },
+        {
+          "key": "8-8",
+          "number": 8,
+          "name": "Macho Cabrio B.B.",
+          "postPosition": 8,
+          "distance": 2140,
+          "driver": {
+            "name": "Peter G Norman"
+          },
+          "scratched": false,
+          "percentage": 10.34
+        },
+        {
+          "key": "8-9",
+          "number": 9,
+          "name": "Readly Winner",
+          "postPosition": 9,
+          "distance": 2140,
+          "driver": {
+            "name": "Magnus A Djuse"
+          },
+          "scratched": false,
+          "percentage": 4.83
+        },
+        {
+          "key": "8-10",
+          "number": 10,
+          "name": "Monte Rei",
+          "postPosition": 10,
+          "distance": 2140,
+          "driver": {
+            "name": "Mats E Djuse"
+          },
+          "scratched": false,
+          "percentage": 7.94
+        },
+        {
+          "key": "8-11",
+          "number": 11,
+          "name": "Celtic Tonga",
+          "postPosition": 11,
+          "distance": 2140,
+          "driver": {
+            "name": "Andreas Lövdal"
+          },
+          "scratched": false,
+          "percentage": 2.58
+        },
+        {
+          "key": "8-12",
+          "number": 12,
+          "name": "Florenzo",
+          "postPosition": 12,
+          "distance": 2140,
+          "driver": {
+            "name": "Örjan Kihlström"
+          },
+          "scratched": false,
+          "percentage": 6.58
+        }
+      ]
+    }
+  ],
+  "notes": "Procent är tidiga, varierar över tid. Källa saknar verifierade vinnarodds, formhistorik och kompletta ATG-häst-ID. Ej officiell slutnotering."
+}
