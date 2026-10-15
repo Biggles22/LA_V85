@@ -1098,7 +1098,7 @@
           "driver": {
             "name": "Olle Alsén"
           },
-          "scratched": false,
+          "scratched": true,
           "percentage": 1.98
         }
       ]
@@ -1257,5 +1257,8 @@
       ]
     }
   ],
-  "notes": "Procent är tidiga, varierar över tid. Källa saknar verifierade vinnarodds, formhistorik och kompletta ATG-häst-ID. Ej officiell slutnotering."
+  "notes": "Två strukna enligt publicerade listor: Mayson (V85-6) och Mr Spain (V85-7). Marknadsnotering från Tipper Trav 15 oktober.",
+  "scratchedCount": 2,
+  "activeCount": 96,
+  "lastMarketCheck": "2026-10-15"
 }
