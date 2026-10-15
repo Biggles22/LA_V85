@@ -5,3 +5,20 @@ main{max-width:1300px;padding:26px 24px}.race-grid{display:grid;grid-template-co
 .move-column h3{margin:4px 0 12px;font-size:1.05rem}
 .move-column p{display:flex;justify-content:space-between;gap:12px;margin:8px 0;border-bottom:1px solid #edf1f5;padding:0 0 7px}
 .up{color:#087653}.down{color:#b44330}
+
+/* Gävle V85 full market + source-backed commentary dashboard, 15 oktober */
+.analysis-picks-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:20px 0}
+.tip-card{background:#fff;border:1px solid #c5d7e8;border-top:4px solid #006bb6;border-radius:13px;padding:17px;display:flex;flex-direction:column;gap:8px}
+.tip-top{display:flex;justify-content:space-between;gap:10px;align-items:center;color:#16456b;font-weight:700;font-size:.88rem}
+.tip-pill{background:#e2f0fb;padding:5px 9px;border-radius:50px;font-size:.76rem}
+.tip-card h3{margin:4px 0;font-size:1.24rem;color:#143255}.tip-card p{margin:4px 0;line-height:1.52}.tip-data{font-weight:700;color:#17558b}
+.tip-card button,.secondary-pick button{cursor:pointer;border:1px solid #176db2;background:#e8f4ff;color:#164e80;border-radius:8px;padding:9px 13px;font-weight:700}
+.tip-card button{margin-top:auto;align-self:start}.risk{font-size:.89rem;color:#5c6472}
+.secondary-picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.secondary-pick{background:#fff;border:1px solid #d9e3eb;padding:13px;border-radius:10px}
+.secondary-pick p{margin:7px 0}.secondary-pick small{display:block;margin-top:6px;color:#4c6274}
+.tip-tag{display:inline-block;background:#ecf0f4;border:1px solid #ccd6df;border-radius:20px;font-size:.74rem;font-weight:700;margin:0 0 6px 9px;padding:4px 8px;white-space:nowrap}
+.tip-tag.head{background:#e5f1fa;border-color:#adcfe8;color:#154d7f}.tip-tag.counter{background:#e8f5f1;border-color:#b5d7ce;color:#11644b}.tip-tag.longshot{background:#fff5de;border-color:#efddb4;color:#785011}.tip-tag.anomaly{background:#fff0ee;border-color:#eec2bb;color:#9b422f}
+.full-race .comment-cell{min-width:260px;max-width:370px}.full-race .comment-cell p{line-height:1.5;margin:7px 0;font-size:.89rem}.comment-cell a{display:inline-block;margin:5px;font-size:.81rem}
+.full-race td{vertical-align:top;line-height:1.38}.full-race .scratched{opacity:.57}.full-race small{font-size:.76rem}.full-race .note-button{display:block;padding:5px 9px}
+@media(max-width:900px){.full-race{min-width:980px}.analysis-picks-grid{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}}
