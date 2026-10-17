@@ -22,10 +22,20 @@
           "postPosition": 1,
           "distance": 1640,
           "driver": {
-            "name": "Mats E Djuse"
+            "name": "Mats E Djuse",
+            "id": 722626
           },
           "scratched": false,
-          "percentage": 9.54
+          "percentage": 9.54,
+          "trainer": {
+            "name": "Jan-Olov Persson",
+            "id": 41304,
+            "homeTrack": "Hagmyren",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Hagmyren",
+          "homeTrackGavle": false
         },
         {
           "key": "1-2",
@@ -34,10 +44,20 @@
           "postPosition": 2,
           "distance": 1640,
           "driver": {
-            "name": "Rikard N Skoglund"
+            "name": "Rikard N Skoglund",
+            "id": 600062
           },
           "scratched": false,
-          "percentage": 22.3
+          "percentage": 22.3,
+          "trainer": {
+            "name": "Roger Walmann",
+            "id": 98798,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "1-3",
@@ -46,10 +66,20 @@
           "postPosition": 3,
           "distance": 1640,
           "driver": {
-            "name": "Claes Sjöström"
+            "name": "Claes Sjöström",
+            "id": 177032
           },
           "scratched": false,
-          "percentage": 14.35
+          "percentage": 14.35,
+          "trainer": {
+            "name": "Roger Walmann",
+            "id": 98798,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "1-4",
@@ -58,10 +88,20 @@
           "postPosition": 4,
           "distance": 1640,
           "driver": {
-            "name": "Magnus A Djuse"
+            "name": "Magnus A Djuse",
+            "id": 740606
           },
           "scratched": false,
-          "percentage": 16.45
+          "percentage": 16.45,
+          "trainer": {
+            "name": "Mattias Djuse",
+            "id": 593763,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "1-5",
@@ -70,10 +110,20 @@
           "postPosition": 5,
           "distance": 1640,
           "driver": {
-            "name": "Jimmy Dahlman"
+            "name": "Jimmy Dahlman",
+            "id": 635354
           },
           "scratched": false,
-          "percentage": 2.27
+          "percentage": 2.27,
+          "trainer": {
+            "name": "Krister Olsson",
+            "id": 810587,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "1-6",
@@ -82,10 +132,20 @@
           "postPosition": 6,
           "distance": 1640,
           "driver": {
-            "name": "Daniel Wäjersten"
+            "name": "Daniel Wäjersten",
+            "id": 189679
           },
           "scratched": false,
-          "percentage": 11.35
+          "percentage": 11.35,
+          "trainer": {
+            "name": "Daniel Wäjersten",
+            "id": 189679,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "1-7",
@@ -94,10 +154,20 @@
           "postPosition": 7,
           "distance": 1640,
           "driver": {
-            "name": "Emilia Leo"
+            "name": "Emilia Leo",
+            "id": 657235
           },
           "scratched": false,
-          "percentage": 5.01
+          "percentage": 5.01,
+          "trainer": {
+            "name": "David Persson",
+            "id": 528293,
+            "homeTrack": "Axevalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Axevalla",
+          "homeTrackGavle": false
         },
         {
           "key": "1-8",
@@ -106,10 +176,20 @@
           "postPosition": 8,
           "distance": 1640,
           "driver": {
-            "name": "Peter G Norman"
+            "name": "Peter G Norman",
+            "id": 502022
           },
           "scratched": false,
-          "percentage": 7.3
+          "percentage": 7.3,
+          "trainer": {
+            "name": "Peter G Norman",
+            "id": 502022,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "1-9",
@@ -118,10 +198,20 @@
           "postPosition": 9,
           "distance": 1640,
           "driver": {
-            "name": "Ludwig Wickman"
+            "name": "Ludwig Wickman",
+            "id": 717376
           },
           "scratched": false,
-          "percentage": 5.49
+          "percentage": 5.49,
+          "trainer": {
+            "name": "Göran Nordin",
+            "id": 122318,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "1-10",
@@ -130,10 +220,20 @@
           "postPosition": 10,
           "distance": 1640,
           "driver": {
-            "name": "Carl Johan Jepson"
+            "name": "Carl Johan Jepson",
+            "id": 43521
           },
           "scratched": false,
-          "percentage": 5.94
+          "percentage": 5.94,
+          "trainer": {
+            "name": "Magnus Teien Gundersen",
+            "id": 722458,
+            "homeTrack": null,
+            "homeTrackId": null
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": null,
+          "homeTrackGavle": null
         }
       ]
     },
@@ -151,10 +251,20 @@
           "postPosition": 1,
           "distance": 2140,
           "driver": {
-            "name": "Linus Lönn"
+            "name": "Linus Lönn",
+            "id": 578436
           },
           "scratched": false,
-          "percentage": 1.23
+          "percentage": 1.23,
+          "trainer": {
+            "name": "Thomas Lönn",
+            "id": 86677,
+            "homeTrack": "Bollnäs",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bollnäs",
+          "homeTrackGavle": false
         },
         {
           "key": "2-2",
@@ -163,10 +273,20 @@
           "postPosition": 2,
           "distance": 2140,
           "driver": {
-            "name": "Ulf Ohlsson"
+            "name": "Ulf Ohlsson",
+            "id": 53685
           },
           "scratched": false,
-          "percentage": 2.8
+          "percentage": 2.8,
+          "trainer": {
+            "name": "Markus Pihlström",
+            "id": 162127,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "2-3",
@@ -175,10 +295,20 @@
           "postPosition": 3,
           "distance": 2140,
           "driver": {
-            "name": "Peter G Norman"
+            "name": "Peter G Norman",
+            "id": 502022
           },
           "scratched": false,
-          "percentage": 5.8
+          "percentage": 5.8,
+          "trainer": {
+            "name": "Peter G Norman",
+            "id": 502022,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "2-4",
@@ -187,10 +317,20 @@
           "postPosition": 4,
           "distance": 2140,
           "driver": {
-            "name": "Rikard N Skoglund"
+            "name": "Rikard N Skoglund",
+            "id": 600062
           },
           "scratched": false,
-          "percentage": 2.31
+          "percentage": 2.31,
+          "trainer": {
+            "name": "Roger Walmann",
+            "id": 98798,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "2-5",
@@ -199,10 +339,20 @@
           "postPosition": 5,
           "distance": 2140,
           "driver": {
-            "name": "Jorma Kontio"
+            "name": "Jorma Kontio",
+            "id": 70381
           },
           "scratched": false,
-          "percentage": 8.4
+          "percentage": 8.4,
+          "trainer": {
+            "name": "Sybille Tinter",
+            "id": 641811,
+            "homeTrack": "Eskilstuna",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Eskilstuna",
+          "homeTrackGavle": false
         },
         {
           "key": "2-6",
@@ -211,10 +361,20 @@
           "postPosition": 6,
           "distance": 2140,
           "driver": {
-            "name": "Kevin Svedlund"
+            "name": "Kevin Svedlund",
+            "id": 665962
           },
           "scratched": false,
-          "percentage": 1.16
+          "percentage": 1.16,
+          "trainer": {
+            "name": "Kevin Svedlund",
+            "id": 665962,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "2-7",
@@ -223,10 +383,20 @@
           "postPosition": 7,
           "distance": 2140,
           "driver": {
-            "name": "Tomas Pettersson"
+            "name": "Tomas Pettersson",
+            "id": 110358
           },
           "scratched": false,
-          "percentage": 19.77
+          "percentage": 19.77,
+          "trainer": {
+            "name": "Tomas Pettersson",
+            "id": 110358,
+            "homeTrack": "Bollnäs",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bollnäs",
+          "homeTrackGavle": false
         },
         {
           "key": "2-8",
@@ -235,10 +405,20 @@
           "postPosition": 8,
           "distance": 2140,
           "driver": {
-            "name": "Carl Johan Jepson"
+            "name": "Carl Johan Jepson",
+            "id": 43521
           },
           "scratched": false,
-          "percentage": 8.53
+          "percentage": 8.53,
+          "trainer": {
+            "name": "Joakim Elfving",
+            "id": 575260,
+            "homeTrack": "Romme",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Romme",
+          "homeTrackGavle": false
         },
         {
           "key": "2-9",
@@ -247,10 +427,20 @@
           "postPosition": 9,
           "distance": 2140,
           "driver": {
-            "name": "Jan Ove Olsen"
+            "name": "Jan Ove Olsen",
+            "id": 188565
           },
           "scratched": false,
-          "percentage": 5.48
+          "percentage": 5.48,
+          "trainer": {
+            "name": "Jan Ove Olsen",
+            "id": 188565,
+            "homeTrack": "Hagmyren",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Hagmyren",
+          "homeTrackGavle": false
         },
         {
           "key": "2-10",
@@ -259,10 +449,20 @@
           "postPosition": 10,
           "distance": 2140,
           "driver": {
-            "name": "Magnus A Djuse"
+            "name": "Magnus A Djuse",
+            "id": 740606
           },
           "scratched": false,
-          "percentage": 5.35
+          "percentage": 5.35,
+          "trainer": {
+            "name": "Alessandro Gocciadoro",
+            "id": 594966,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "2-11",
@@ -271,10 +471,20 @@
           "postPosition": 11,
           "distance": 2140,
           "driver": {
-            "name": "Björn Goop"
+            "name": "Daniel Wäjersten",
+            "id": 189679
           },
           "scratched": false,
-          "percentage": 22.72
+          "percentage": 22.72,
+          "trainer": {
+            "name": "Tomas Pettersson",
+            "id": 110358,
+            "homeTrack": "Bollnäs",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bollnäs",
+          "homeTrackGavle": false
         },
         {
           "key": "2-12",
@@ -283,10 +493,20 @@
           "postPosition": 12,
           "distance": 2140,
           "driver": {
-            "name": "Fredrik Plassen"
+            "name": "Fredrik Plassen",
+            "id": 816760
           },
           "scratched": false,
-          "percentage": 4.1
+          "percentage": 4.1,
+          "trainer": {
+            "name": "Jevgeni Ivanov",
+            "id": 505072,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "2-13",
@@ -295,10 +515,20 @@
           "postPosition": 13,
           "distance": 2140,
           "driver": {
-            "name": "Claes Sjöström"
+            "name": "Claes Sjöström",
+            "id": 177032
           },
           "scratched": false,
-          "percentage": 2.6
+          "percentage": 2.6,
+          "trainer": {
+            "name": "Jennifer Persson",
+            "id": 684940,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "2-14",
@@ -307,10 +537,20 @@
           "postPosition": 14,
           "distance": 2140,
           "driver": {
-            "name": "Mats E Djuse"
+            "name": "Mats E Djuse",
+            "id": 722626
           },
           "scratched": false,
-          "percentage": 4.22
+          "percentage": 4.22,
+          "trainer": {
+            "name": "Mattias Djuse",
+            "id": 593763,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "2-15",
@@ -319,10 +559,20 @@
           "postPosition": 15,
           "distance": 2140,
           "driver": {
-            "name": "Marcus Lilius"
+            "name": "Marcus Lilius",
+            "id": 696218
           },
           "scratched": false,
-          "percentage": 5.52
+          "percentage": 5.52,
+          "trainer": {
+            "name": "Jörgen Westholm",
+            "id": 92281,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         }
       ]
     },
@@ -340,10 +590,20 @@
           "postPosition": 1,
           "distance": 2640,
           "driver": {
-            "name": "Ulf Ohlsson"
+            "name": "Ulf Ohlsson",
+            "id": 53685
           },
           "scratched": false,
-          "percentage": 5.8
+          "percentage": 5.8,
+          "trainer": {
+            "name": "Stefan Öhman",
+            "id": 101164,
+            "homeTrack": "Eskilstuna",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Eskilstuna",
+          "homeTrackGavle": false
         },
         {
           "key": "3-2",
@@ -352,10 +612,20 @@
           "postPosition": 2,
           "distance": 2640,
           "driver": {
-            "name": "Magnus A Djuse"
+            "name": "Magnus A Djuse",
+            "id": 740606
           },
           "scratched": false,
-          "percentage": 4.9
+          "percentage": 4.9,
+          "trainer": {
+            "name": "Mattias Djuse",
+            "id": 593763,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "3-3",
@@ -364,10 +634,20 @@
           "postPosition": 3,
           "distance": 2640,
           "driver": {
-            "name": "Rikard N Skoglund"
+            "name": "Rikard N Skoglund",
+            "id": 600062
           },
           "scratched": false,
-          "percentage": 21.56
+          "percentage": 21.56,
+          "trainer": {
+            "name": "Mattias Djuse",
+            "id": 593763,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "3-4",
@@ -376,10 +656,20 @@
           "postPosition": 4,
           "distance": 2640,
           "driver": {
-            "name": "Per Linderoth"
+            "name": "Per Linderoth",
+            "id": 188987
           },
           "scratched": false,
-          "percentage": 4.72
+          "percentage": 4.72,
+          "trainer": {
+            "name": "Anna Andersson",
+            "id": 119005,
+            "homeTrack": "Rättvik",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Rättvik",
+          "homeTrackGavle": false
         },
         {
           "key": "3-5",
@@ -388,10 +678,20 @@
           "postPosition": 5,
           "distance": 2640,
           "driver": {
-            "name": "Fredrik Plassen"
+            "name": "Fredrik Plassen",
+            "id": 816760
           },
           "scratched": false,
-          "percentage": 3.96
+          "percentage": 3.96,
+          "trainer": {
+            "name": "Gunilla Bergström",
+            "id": 502200,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "3-6",
@@ -400,10 +700,20 @@
           "postPosition": 6,
           "distance": 2640,
           "driver": {
-            "name": "Petter Karlsson"
+            "name": "Petter Karlsson",
+            "id": 185294
           },
           "scratched": false,
-          "percentage": 10.09
+          "percentage": 10.09,
+          "trainer": {
+            "name": "Petter Karlsson",
+            "id": 185294,
+            "homeTrack": "Färjestad",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Färjestad",
+          "homeTrackGavle": false
         },
         {
           "key": "3-7",
@@ -412,10 +722,20 @@
           "postPosition": 7,
           "distance": 2640,
           "driver": {
-            "name": "Micael Melander"
+            "name": "Micael Melander",
+            "id": 101112
           },
           "scratched": false,
-          "percentage": 3.18
+          "percentage": 3.18,
+          "trainer": {
+            "name": "Hannah Norredahl",
+            "id": 700524,
+            "homeTrack": "Östersund",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Östersund",
+          "homeTrackGavle": false
         },
         {
           "key": "3-8",
@@ -424,10 +744,20 @@
           "postPosition": 8,
           "distance": 2640,
           "driver": {
-            "name": "Markus B Svedberg"
+            "name": "Markus B Svedberg",
+            "id": 479879
           },
           "scratched": false,
-          "percentage": 3.18
+          "percentage": 3.18,
+          "trainer": {
+            "name": "Markus B Svedberg",
+            "id": 479879,
+            "homeTrack": "Eskilstuna",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Eskilstuna",
+          "homeTrackGavle": false
         },
         {
           "key": "3-9",
@@ -436,10 +766,20 @@
           "postPosition": 9,
           "distance": 2640,
           "driver": {
-            "name": "Claes Sjöström"
+            "name": "Claes Sjöström",
+            "id": 177032
           },
           "scratched": false,
-          "percentage": 16.95
+          "percentage": 16.95,
+          "trainer": {
+            "name": "Nicole Melberg",
+            "id": 643004,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "3-10",
@@ -448,10 +788,20 @@
           "postPosition": 10,
           "distance": 2640,
           "driver": {
-            "name": "Björn Goop"
+            "name": "Örjan Kihlström",
+            "id": 67192
           },
           "scratched": false,
-          "percentage": 15.26
+          "percentage": 15.26,
+          "trainer": {
+            "name": "Björn Goop",
+            "id": 161607,
+            "homeTrack": "Färjestad",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Färjestad",
+          "homeTrackGavle": false
         },
         {
           "key": "3-11",
@@ -460,10 +810,20 @@
           "postPosition": 11,
           "distance": 2640,
           "driver": {
-            "name": "Mats E Djuse"
+            "name": "Mats E Djuse",
+            "id": 722626
           },
           "scratched": false,
-          "percentage": 3.25
+          "percentage": 3.25,
+          "trainer": {
+            "name": "Jörgen Westholm",
+            "id": 92281,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "3-12",
@@ -472,10 +832,20 @@
           "postPosition": 12,
           "distance": 2640,
           "driver": {
-            "name": "Daniel Wäjersten"
+            "name": "Daniel Wäjersten",
+            "id": 189679
           },
           "scratched": false,
-          "percentage": 7.14
+          "percentage": 7.14,
+          "trainer": {
+            "name": "Daniel Wäjersten",
+            "id": 189679,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         }
       ]
     },
@@ -493,10 +863,20 @@
           "postPosition": 1,
           "distance": 2640,
           "driver": {
-            "name": "Daniel Wäjersten"
+            "name": "Daniel Wäjersten",
+            "id": 189679
           },
           "scratched": false,
-          "percentage": 60.5
+          "percentage": 60.5,
+          "trainer": {
+            "name": "Daniel Wäjersten",
+            "id": 189679,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "4-2",
@@ -505,10 +885,20 @@
           "postPosition": 2,
           "distance": 2640,
           "driver": {
-            "name": "Örjan Kihlström"
+            "name": "Örjan Kihlström",
+            "id": 67192
           },
           "scratched": false,
-          "percentage": 3.22
+          "percentage": 3.22,
+          "trainer": {
+            "name": "Daniel Redén",
+            "id": 185518,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "4-3",
@@ -517,10 +907,20 @@
           "postPosition": 3,
           "distance": 2640,
           "driver": {
-            "name": "Mats E Djuse"
+            "name": "Mats E Djuse",
+            "id": 722626
           },
-          "scratched": false,
-          "percentage": 9.68
+          "scratched": true,
+          "percentage": 9.68,
+          "trainer": {
+            "name": "Jörgen Westholm",
+            "id": 92281,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "4-4",
@@ -529,10 +929,20 @@
           "postPosition": 4,
           "distance": 2640,
           "driver": {
-            "name": "Claes Sjöström"
+            "name": "Claes Sjöström",
+            "id": 177032
           },
           "scratched": false,
-          "percentage": 2.02
+          "percentage": 2.02,
+          "trainer": {
+            "name": "Roger Walmann",
+            "id": 98798,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "4-5",
@@ -541,10 +951,20 @@
           "postPosition": 5,
           "distance": 2640,
           "driver": {
-            "name": "Fredrik Plassen"
+            "name": "Fredrik Plassen",
+            "id": 816760
           },
           "scratched": false,
-          "percentage": 2.32
+          "percentage": 2.32,
+          "trainer": {
+            "name": "Jörgen Westholm",
+            "id": 92281,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "4-6",
@@ -553,10 +973,20 @@
           "postPosition": 6,
           "distance": 2640,
           "driver": {
-            "name": "Magnus A Djuse"
+            "name": "Magnus A Djuse",
+            "id": 740606
           },
           "scratched": false,
-          "percentage": 6.35
+          "percentage": 6.35,
+          "trainer": {
+            "name": "Daniel Wäjersten",
+            "id": 189679,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "4-7",
@@ -565,10 +995,20 @@
           "postPosition": 7,
           "distance": 2640,
           "driver": {
-            "name": "Rikard N Skoglund"
+            "name": "Rikard N Skoglund",
+            "id": 600062
           },
           "scratched": false,
-          "percentage": 10.17
+          "percentage": 10.17,
+          "trainer": {
+            "name": "Katja Melkko",
+            "id": 503386,
+            "homeTrack": "Romme",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Romme",
+          "homeTrackGavle": false
         },
         {
           "key": "4-8",
@@ -577,10 +1017,20 @@
           "postPosition": 8,
           "distance": 2640,
           "driver": {
-            "name": "Carl Johan Jepson"
+            "name": "Carl Johan Jepson",
+            "id": 43521
           },
           "scratched": false,
-          "percentage": 1.08
+          "percentage": 1.08,
+          "trainer": {
+            "name": "Stefan P Pettersson",
+            "id": 120623,
+            "homeTrack": "Mantorp",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Mantorp",
+          "homeTrackGavle": false
         },
         {
           "key": "4-9",
@@ -589,10 +1039,20 @@
           "postPosition": 9,
           "distance": 2640,
           "driver": {
-            "name": "Björn Goop"
+            "name": "Marcus Lilius",
+            "id": 696218
           },
           "scratched": false,
-          "percentage": 3.27
+          "percentage": 3.27,
+          "trainer": {
+            "name": "Daniel Redén",
+            "id": 185518,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "4-10",
@@ -601,10 +1061,20 @@
           "postPosition": 10,
           "distance": 2640,
           "driver": {
-            "name": "Petter Karlsson"
+            "name": "Petter Karlsson",
+            "id": 185294
           },
           "scratched": false,
-          "percentage": 1.38
+          "percentage": 1.38,
+          "trainer": {
+            "name": "Petter Karlsson",
+            "id": 185294,
+            "homeTrack": "Färjestad",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Färjestad",
+          "homeTrackGavle": false
         }
       ]
     },
@@ -622,10 +1092,20 @@
           "postPosition": 1,
           "distance": 2140,
           "driver": {
-            "name": "Oskar Kylin Blom"
+            "name": "Oskar Kylin Blom",
+            "id": 568723
           },
           "scratched": false,
-          "percentage": 2.26
+          "percentage": 2.26,
+          "trainer": {
+            "name": "Filip Raihle",
+            "id": 105488,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "5-2",
@@ -634,10 +1114,20 @@
           "postPosition": 2,
           "distance": 2140,
           "driver": {
-            "name": "Vidar Tjomsland"
+            "name": "Vidar Tjomsland",
+            "id": 559764
           },
           "scratched": false,
-          "percentage": 11.59
+          "percentage": 11.59,
+          "trainer": {
+            "name": "Stine Birkeland",
+            "id": 589652,
+            "homeTrack": null,
+            "homeTrackId": null
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": null,
+          "homeTrackGavle": null
         },
         {
           "key": "5-3",
@@ -646,10 +1136,20 @@
           "postPosition": 3,
           "distance": 2140,
           "driver": {
-            "name": "Henrik Kihle"
+            "name": "Henrik Kihle",
+            "id": 813885
           },
           "scratched": false,
-          "percentage": 1.19
+          "percentage": 1.19,
+          "trainer": {
+            "name": "Tapio Ruha",
+            "id": 10804,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "5-4",
@@ -658,10 +1158,20 @@
           "postPosition": 4,
           "distance": 2140,
           "driver": {
-            "name": "Boye Ölstören"
+            "name": "Boye Ölstören",
+            "id": 9180
           },
           "scratched": false,
-          "percentage": 10.84
+          "percentage": 10.84,
+          "trainer": {
+            "name": "Karina Myren",
+            "id": 602943,
+            "homeTrack": null,
+            "homeTrackId": null
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": null,
+          "homeTrackGavle": null
         },
         {
           "key": "5-5",
@@ -670,10 +1180,20 @@
           "postPosition": 5,
           "distance": 2140,
           "driver": {
-            "name": "Fredrik Plassen"
+            "name": "Fredrik Plassen",
+            "id": 816760
           },
           "scratched": false,
-          "percentage": 2.02
+          "percentage": 2.02,
+          "trainer": {
+            "name": "Olov Brunlöf",
+            "id": 38129,
+            "homeTrack": "Bollnäs",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bollnäs",
+          "homeTrackGavle": false
         },
         {
           "key": "5-6",
@@ -682,10 +1202,20 @@
           "postPosition": 6,
           "distance": 2140,
           "driver": {
-            "name": "Göran Antonsen"
+            "name": "Göran Antonsen",
+            "id": 585156
           },
           "scratched": false,
-          "percentage": 3.62
+          "percentage": 3.62,
+          "trainer": {
+            "name": "Göran Antonsen",
+            "id": 585156,
+            "homeTrack": null,
+            "homeTrackId": null
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": null,
+          "homeTrackGavle": null
         },
         {
           "key": "5-7",
@@ -694,10 +1224,20 @@
           "postPosition": 7,
           "distance": 2140,
           "driver": {
-            "name": "Tomas Pettersson"
+            "name": "Tomas Pettersson",
+            "id": 110358
           },
           "scratched": false,
-          "percentage": 2.74
+          "percentage": 2.74,
+          "trainer": {
+            "name": "Simon Wall",
+            "id": 703289,
+            "homeTrack": "Bollnäs",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bollnäs",
+          "homeTrackGavle": false
         },
         {
           "key": "5-8",
@@ -706,10 +1246,20 @@
           "postPosition": 8,
           "distance": 2140,
           "driver": {
-            "name": "Rikard N Skoglund"
+            "name": "Rikard N Skoglund",
+            "id": 600062
           },
           "scratched": false,
-          "percentage": 16.98
+          "percentage": 16.98,
+          "trainer": {
+            "name": "Öystein Tjomsland",
+            "id": 137528,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "5-9",
@@ -718,10 +1268,20 @@
           "postPosition": 1,
           "distance": 2160,
           "driver": {
-            "name": "Robert Dunder"
+            "name": "Robert Dunder",
+            "id": 566221
           },
           "scratched": false,
-          "percentage": 16.47
+          "percentage": 16.47,
+          "trainer": {
+            "name": "Robert Dunder",
+            "id": 566221,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "5-10",
@@ -730,10 +1290,20 @@
           "postPosition": 2,
           "distance": 2160,
           "driver": {
-            "name": "Örjan Kihlström"
+            "name": "Örjan Kihlström",
+            "id": 67192
           },
           "scratched": false,
-          "percentage": 16.23
+          "percentage": 16.23,
+          "trainer": {
+            "name": "Guri Gjermundshaug",
+            "id": 593161,
+            "homeTrack": null,
+            "homeTrackId": null
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": null,
+          "homeTrackGavle": null
         },
         {
           "key": "5-11",
@@ -742,10 +1312,20 @@
           "postPosition": 3,
           "distance": 2160,
           "driver": {
-            "name": "Jorma Kontio"
+            "name": "Jorma Kontio",
+            "id": 70381
           },
           "scratched": false,
-          "percentage": 1.34
+          "percentage": 1.34,
+          "trainer": {
+            "name": "Camilla Algotsson",
+            "id": 21243,
+            "homeTrack": "Rättvik",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Rättvik",
+          "homeTrackGavle": false
         },
         {
           "key": "5-12",
@@ -754,10 +1334,20 @@
           "postPosition": 4,
           "distance": 2160,
           "driver": {
-            "name": "Magnus A Djuse"
+            "name": "Magnus A Djuse",
+            "id": 740606
           },
           "scratched": false,
-          "percentage": 1.2
+          "percentage": 1.2,
+          "trainer": {
+            "name": "Ida Eriksson",
+            "id": 573766,
+            "homeTrack": "Rättvik",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Rättvik",
+          "homeTrackGavle": false
         },
         {
           "key": "5-13",
@@ -766,10 +1356,20 @@
           "postPosition": 5,
           "distance": 2160,
           "driver": {
-            "name": "Mats E Djuse"
+            "name": "Mats E Djuse",
+            "id": 722626
           },
           "scratched": false,
-          "percentage": 10.77
+          "percentage": 10.77,
+          "trainer": {
+            "name": "Jan-Olov Persson",
+            "id": 41304,
+            "homeTrack": "Hagmyren",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Hagmyren",
+          "homeTrackGavle": false
         },
         {
           "key": "5-14",
@@ -778,10 +1378,20 @@
           "postPosition": 6,
           "distance": 2160,
           "driver": {
-            "name": "Marcus Lilius"
+            "name": "Marcus Lilius",
+            "id": 696218
           },
           "scratched": false,
-          "percentage": 1.3
+          "percentage": 1.3,
+          "trainer": {
+            "name": "Jan-Olov Persson",
+            "id": 41304,
+            "homeTrack": "Hagmyren",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Hagmyren",
+          "homeTrackGavle": false
         },
         {
           "key": "5-15",
@@ -790,10 +1400,20 @@
           "postPosition": 7,
           "distance": 2160,
           "driver": {
-            "name": "Björn Goop"
+            "name": "Ulf Ohlsson",
+            "id": 53685
           },
           "scratched": false,
-          "percentage": 1.46
+          "percentage": 1.46,
+          "trainer": {
+            "name": "Fredrik Fransson",
+            "id": 78717,
+            "homeTrack": "Bollnäs",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bollnäs",
+          "homeTrackGavle": false
         }
       ]
     },
@@ -811,10 +1431,20 @@
           "postPosition": 1,
           "distance": 1640,
           "driver": {
-            "name": "Fredrik Plassen"
+            "name": "Fredrik Plassen",
+            "id": 816760
           },
           "scratched": true,
-          "percentage": 2.38
+          "percentage": 2.38,
+          "trainer": {
+            "name": "Jonas Eriksson",
+            "id": 533735,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "6-2",
@@ -823,10 +1453,20 @@
           "postPosition": 2,
           "distance": 1640,
           "driver": {
-            "name": "Rikard N Skoglund"
+            "name": "Rikard N Skoglund",
+            "id": 600062
           },
-          "scratched": false,
-          "percentage": 1.92
+          "scratched": true,
+          "percentage": 1.92,
+          "trainer": {
+            "name": "Isto Kuisma",
+            "id": 719487,
+            "homeTrack": null,
+            "homeTrackId": null
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": null,
+          "homeTrackGavle": null
         },
         {
           "key": "6-3",
@@ -835,10 +1475,20 @@
           "postPosition": 3,
           "distance": 1640,
           "driver": {
-            "name": "Carl Johan Jepson"
+            "name": "Carl Johan Jepson",
+            "id": 43521
           },
           "scratched": false,
-          "percentage": 6.79
+          "percentage": 6.79,
+          "trainer": {
+            "name": "Jevgeni Ivanov",
+            "id": 505072,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "6-4",
@@ -847,10 +1497,20 @@
           "postPosition": 4,
           "distance": 1640,
           "driver": {
-            "name": "Marcus Lilius"
+            "name": "Marcus Lilius",
+            "id": 696218
           },
           "scratched": false,
-          "percentage": 1.42
+          "percentage": 1.42,
+          "trainer": {
+            "name": "Jörgen Westholm",
+            "id": 92281,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "6-5",
@@ -859,10 +1519,20 @@
           "postPosition": 5,
           "distance": 1640,
           "driver": {
-            "name": "Mats E Djuse"
+            "name": "Mats E Djuse",
+            "id": 722626
           },
           "scratched": false,
-          "percentage": 31.56
+          "percentage": 31.56,
+          "trainer": {
+            "name": "Jörgen Westholm",
+            "id": 92281,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "6-6",
@@ -871,10 +1541,20 @@
           "postPosition": 6,
           "distance": 1640,
           "driver": {
-            "name": "Ludwig Wickman"
+            "name": "Ludwig Wickman",
+            "id": 717376
           },
           "scratched": false,
-          "percentage": 3.09
+          "percentage": 3.09,
+          "trainer": {
+            "name": "Göran Nordin",
+            "id": 122318,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "6-7",
@@ -883,10 +1563,20 @@
           "postPosition": 7,
           "distance": 1640,
           "driver": {
-            "name": "Linus Lönn"
+            "name": "Linus Lönn",
+            "id": 578436
           },
           "scratched": false,
-          "percentage": 6.98
+          "percentage": 6.98,
+          "trainer": {
+            "name": "Viktor Lyck",
+            "id": 631581,
+            "homeTrack": "Rättvik",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Rättvik",
+          "homeTrackGavle": false
         },
         {
           "key": "6-8",
@@ -895,10 +1585,20 @@
           "postPosition": 8,
           "distance": 1640,
           "driver": {
-            "name": "Oskar Kylin Blom"
+            "name": "Oskar Kylin Blom",
+            "id": 568723
           },
           "scratched": false,
-          "percentage": 3.25
+          "percentage": 3.25,
+          "trainer": {
+            "name": "Oskar Kylin Blom",
+            "id": 568723,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "6-9",
@@ -907,10 +1607,20 @@
           "postPosition": 9,
           "distance": 1640,
           "driver": {
-            "name": "Björn Goop"
+            "name": "Magnus A Djuse",
+            "id": 740606
           },
           "scratched": false,
-          "percentage": 30.38
+          "percentage": 30.38,
+          "trainer": {
+            "name": "Paul J P Hagoort",
+            "id": 647636,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "6-10",
@@ -919,10 +1629,20 @@
           "postPosition": 10,
           "distance": 1640,
           "driver": {
-            "name": "Claes Sjöström"
+            "name": "Claes Sjöström",
+            "id": 177032
           },
           "scratched": false,
-          "percentage": 2.8
+          "percentage": 2.8,
+          "trainer": {
+            "name": "Ville Karhulahti",
+            "id": 581315,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "6-11",
@@ -931,10 +1651,20 @@
           "postPosition": 11,
           "distance": 1640,
           "driver": {
-            "name": "Jimmy Dahlman"
+            "name": "Jimmy Dahlman",
+            "id": 635354
           },
           "scratched": false,
-          "percentage": 4.36
+          "percentage": 4.36,
+          "trainer": {
+            "name": "Jimmy Dahlman",
+            "id": 635354,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "6-12",
@@ -943,10 +1673,20 @@
           "postPosition": 12,
           "distance": 1640,
           "driver": {
-            "name": "Andreas Lövdal"
+            "name": "Andreas Lövdal",
+            "id": 716340
           },
           "scratched": false,
-          "percentage": 5.08
+          "percentage": 5.08,
+          "trainer": {
+            "name": "Andreas Lövdal",
+            "id": 716340,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         }
       ]
     },
@@ -964,10 +1704,20 @@
           "postPosition": 1,
           "distance": 2140,
           "driver": {
-            "name": "Örjan Kihlström"
+            "name": "Örjan Kihlström",
+            "id": 67192
           },
           "scratched": false,
-          "percentage": 4.02
+          "percentage": 4.02,
+          "trainer": {
+            "name": "Stefan Melander",
+            "id": 7384,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "7-2",
@@ -976,10 +1726,20 @@
           "postPosition": 2,
           "distance": 2140,
           "driver": {
-            "name": "Claes Sjöström"
+            "name": "Claes Sjöström",
+            "id": 177032
           },
           "scratched": false,
-          "percentage": 1.82
+          "percentage": 1.82,
+          "trainer": {
+            "name": "Tamara Skutnabb",
+            "id": 572385,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "7-3",
@@ -988,10 +1748,20 @@
           "postPosition": 3,
           "distance": 2140,
           "driver": {
-            "name": "Hanna Forslin"
+            "name": "Hanna Forslin",
+            "id": 463293
           },
           "scratched": false,
-          "percentage": 3.43
+          "percentage": 3.43,
+          "trainer": {
+            "name": "Hanna Forslin",
+            "id": 463293,
+            "homeTrack": "Hagmyren",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Hagmyren",
+          "homeTrackGavle": false
         },
         {
           "key": "7-4",
@@ -1000,10 +1770,20 @@
           "postPosition": 4,
           "distance": 2140,
           "driver": {
-            "name": "Mats E Djuse"
+            "name": "Mats E Djuse",
+            "id": 722626
           },
           "scratched": false,
-          "percentage": 3.35
+          "percentage": 3.35,
+          "trainer": {
+            "name": "Henrik Larsson",
+            "id": 125584,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "7-5",
@@ -1012,10 +1792,20 @@
           "postPosition": 5,
           "distance": 2140,
           "driver": {
-            "name": "Björn Goop"
+            "name": "Ulf Ohlsson",
+            "id": 53685
           },
           "scratched": false,
-          "percentage": 8.85
+          "percentage": 8.85,
+          "trainer": {
+            "name": "Björn Goop",
+            "id": 161607,
+            "homeTrack": "Färjestad",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Färjestad",
+          "homeTrackGavle": false
         },
         {
           "key": "7-6",
@@ -1024,10 +1814,20 @@
           "postPosition": 6,
           "distance": 2140,
           "driver": {
-            "name": "Magnus A Djuse"
+            "name": "Magnus A Djuse",
+            "id": 740606
           },
           "scratched": false,
-          "percentage": 6.91
+          "percentage": 6.91,
+          "trainer": {
+            "name": "Henrik Larsson",
+            "id": 125584,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "7-7",
@@ -1036,10 +1836,20 @@
           "postPosition": 7,
           "distance": 2140,
           "driver": {
-            "name": "Carl Johan Jepson"
+            "name": "Carl Johan Jepson",
+            "id": 43521
           },
           "scratched": false,
-          "percentage": 51.28
+          "percentage": 51.28,
+          "trainer": {
+            "name": "Lisa Skogh",
+            "id": 542436,
+            "homeTrack": "Färjestad",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Färjestad",
+          "homeTrackGavle": false
         },
         {
           "key": "7-8",
@@ -1048,10 +1858,20 @@
           "postPosition": 8,
           "distance": 2140,
           "driver": {
-            "name": "Marcus Lilius"
+            "name": "Marcus Lilius",
+            "id": 696218
           },
           "scratched": false,
-          "percentage": 0.71
+          "percentage": 0.71,
+          "trainer": {
+            "name": "Hans Svedin",
+            "id": 3802,
+            "homeTrack": "Bollnäs",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bollnäs",
+          "homeTrackGavle": false
         },
         {
           "key": "7-9",
@@ -1060,10 +1880,20 @@
           "postPosition": 9,
           "distance": 2140,
           "driver": {
-            "name": "Peter G Norman"
+            "name": "Peter G Norman",
+            "id": 502022
           },
           "scratched": false,
-          "percentage": 9.21
+          "percentage": 9.21,
+          "trainer": {
+            "name": "Peter G Norman",
+            "id": 502022,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "7-10",
@@ -1072,10 +1902,20 @@
           "postPosition": 10,
           "distance": 2140,
           "driver": {
-            "name": "David Nylander"
+            "name": "David Nylander",
+            "id": 10205
           },
           "scratched": false,
-          "percentage": 0.33
+          "percentage": 0.33,
+          "trainer": {
+            "name": "David Nylander",
+            "id": 10205,
+            "homeTrack": "Rättvik",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Rättvik",
+          "homeTrackGavle": false
         },
         {
           "key": "7-11",
@@ -1084,10 +1924,20 @@
           "postPosition": 11,
           "distance": 2140,
           "driver": {
-            "name": "Per Linderoth"
+            "name": "Per Linderoth",
+            "id": 188987
           },
           "scratched": false,
-          "percentage": 8.11
+          "percentage": 8.11,
+          "trainer": {
+            "name": "Björn Goop",
+            "id": 161607,
+            "homeTrack": "Färjestad",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Färjestad",
+          "homeTrackGavle": false
         },
         {
           "key": "7-12",
@@ -1096,10 +1946,20 @@
           "postPosition": 12,
           "distance": 2140,
           "driver": {
-            "name": "Olle Alsén"
+            "name": "Olle Alsén",
+            "id": 161675
           },
           "scratched": true,
-          "percentage": 1.98
+          "percentage": 1.98,
+          "trainer": {
+            "name": "Olle Alsén",
+            "id": 161675,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         }
       ]
     },
@@ -1117,10 +1977,20 @@
           "postPosition": 1,
           "distance": 2140,
           "driver": {
-            "name": "Olle Alsén"
+            "name": "Olle Alsén",
+            "id": 161675
           },
           "scratched": false,
-          "percentage": 2.97
+          "percentage": 2.97,
+          "trainer": {
+            "name": "Olle Alsén",
+            "id": 161675,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "8-2",
@@ -1129,10 +1999,20 @@
           "postPosition": 2,
           "distance": 2140,
           "driver": {
-            "name": "Felicia Molin"
+            "name": "Felicia Molin",
+            "id": 556047
           },
           "scratched": false,
-          "percentage": 4.45
+          "percentage": 4.45,
+          "trainer": {
+            "name": "Jimmy Dahlman",
+            "id": 635354,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "8-3",
@@ -1141,10 +2021,20 @@
           "postPosition": 3,
           "distance": 2140,
           "driver": {
-            "name": "Markus B Svedberg"
+            "name": "Markus B Svedberg",
+            "id": 479879
           },
           "scratched": false,
-          "percentage": 2.96
+          "percentage": 2.96,
+          "trainer": {
+            "name": "Jörgen Westholm",
+            "id": 92281,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "8-4",
@@ -1153,10 +2043,20 @@
           "postPosition": 4,
           "distance": 2140,
           "driver": {
-            "name": "Daniel Wäjersten"
+            "name": "Daniel Wäjersten",
+            "id": 189679
           },
           "scratched": false,
-          "percentage": 34.44
+          "percentage": 34.44,
+          "trainer": {
+            "name": "Daniel Wäjersten",
+            "id": 189679,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "8-5",
@@ -1165,10 +2065,20 @@
           "postPosition": 5,
           "distance": 2140,
           "driver": {
-            "name": "Carl Johan Jepson"
+            "name": "Carl Johan Jepson",
+            "id": 43521
           },
           "scratched": false,
-          "percentage": 6.24
+          "percentage": 6.24,
+          "trainer": {
+            "name": "Fredrik Wallin",
+            "id": 451710,
+            "homeTrack": "Gävle",
+            "homeTrackId": 16
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Gävle",
+          "homeTrackGavle": true
         },
         {
           "key": "8-6",
@@ -1177,10 +2087,20 @@
           "postPosition": 6,
           "distance": 2140,
           "driver": {
-            "name": "Björn Goop"
+            "name": "Björn Goop",
+            "id": 161607
           },
-          "scratched": false,
-          "percentage": 3.76
+          "scratched": true,
+          "percentage": 3.76,
+          "trainer": {
+            "name": "Nathalie Blom",
+            "id": 674880,
+            "homeTrack": "Rättvik",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Rättvik",
+          "homeTrackGavle": false
         },
         {
           "key": "8-7",
@@ -1189,10 +2109,20 @@
           "postPosition": 7,
           "distance": 2140,
           "driver": {
-            "name": "Claes Sjöström"
+            "name": "Claes Sjöström",
+            "id": 177032
           },
           "scratched": false,
-          "percentage": 12.9
+          "percentage": 12.9,
+          "trainer": {
+            "name": "Jörgen Westholm",
+            "id": 92281,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "8-8",
@@ -1201,10 +2131,20 @@
           "postPosition": 8,
           "distance": 2140,
           "driver": {
-            "name": "Peter G Norman"
+            "name": "Peter G Norman",
+            "id": 502022
           },
           "scratched": false,
-          "percentage": 10.34
+          "percentage": 10.34,
+          "trainer": {
+            "name": "Peter G Norman",
+            "id": 502022,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "8-9",
@@ -1213,10 +2153,20 @@
           "postPosition": 9,
           "distance": 2140,
           "driver": {
-            "name": "Magnus A Djuse"
+            "name": "Magnus A Djuse",
+            "id": 740606
           },
           "scratched": false,
-          "percentage": 4.83
+          "percentage": 4.83,
+          "trainer": {
+            "name": "Mattias Djuse",
+            "id": 593763,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "8-10",
@@ -1225,10 +2175,20 @@
           "postPosition": 10,
           "distance": 2140,
           "driver": {
-            "name": "Mats E Djuse"
+            "name": "Mats E Djuse",
+            "id": 722626
           },
           "scratched": false,
-          "percentage": 7.94
+          "percentage": 7.94,
+          "trainer": {
+            "name": "Daniel Wäjersten",
+            "id": 189679,
+            "homeTrack": "Bergsåker",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Bergsåker",
+          "homeTrackGavle": false
         },
         {
           "key": "8-11",
@@ -1237,10 +2197,20 @@
           "postPosition": 11,
           "distance": 2140,
           "driver": {
-            "name": "Andreas Lövdal"
+            "name": "Andreas Lövdal",
+            "id": 716340
           },
           "scratched": false,
-          "percentage": 2.58
+          "percentage": 2.58,
+          "trainer": {
+            "name": "Andreas Lövdal",
+            "id": 716340,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": true,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         },
         {
           "key": "8-12",
@@ -1249,10 +2219,20 @@
           "postPosition": 12,
           "distance": 2140,
           "driver": {
-            "name": "Örjan Kihlström"
+            "name": "Örjan Kihlström",
+            "id": 67192
           },
           "scratched": false,
-          "percentage": 6.58
+          "percentage": 6.58,
+          "trainer": {
+            "name": "Daniel Redén",
+            "id": 185518,
+            "homeTrack": "Solvalla",
+            "homeTrackId": -1
+          },
+          "sameTrainerDriver": false,
+          "trainerHome": "Solvalla",
+          "homeTrackGavle": false
         }
       ]
     }

@@ -24,7 +24,7 @@
       "leg": 1,
       "number": 3,
       "pct": 24.95,
-      "odds": 5.72,
+      "odds": 5.78,
       "tipperAI": 37,
       "marketWarning": "Nu över 20 % streck – ompröva skrällvärdet"
     },
@@ -37,7 +37,7 @@
       "leg": 1,
       "number": 6,
       "pct": 11.87,
-      "odds": 5.95,
+      "odds": 5.94,
       "tipperAI": 49
     },
     {
@@ -49,7 +49,7 @@
       "leg": 1,
       "number": 8,
       "pct": 1.03,
-      "odds": 10.7,
+      "odds": 10.82,
       "tipperAI": 25
     },
     {
@@ -61,7 +61,7 @@
       "leg": 2,
       "number": 8,
       "pct": 12.43,
-      "odds": 8.33,
+      "odds": 8.18,
       "tipperAI": 74
     },
     {
@@ -73,7 +73,7 @@
       "leg": 2,
       "number": 11,
       "pct": 6.97,
-      "odds": 9.7,
+      "odds": 9.8,
       "tipperAI": 44
     },
     {
@@ -85,7 +85,7 @@
       "leg": 2,
       "number": 4,
       "pct": 2.2,
-      "odds": 9.46,
+      "odds": 9.69,
       "tipperAI": 22
     },
     {
@@ -97,9 +97,8 @@
       "leg": 3,
       "number": 12,
       "pct": 21.19,
-      "odds": 6.57,
-      "tipperAI": 47,
-      "marketWarning": "Streckningen har ökat minst 5 procentenheter sedan senaste noteringen"
+      "odds": 6.56,
+      "tipperAI": 47
     },
     {
       "key": "3-8",
@@ -110,7 +109,7 @@
       "leg": 3,
       "number": 8,
       "pct": 2.21,
-      "odds": 10.64,
+      "odds": 10.72,
       "tipperAI": 29
     },
     {
@@ -122,7 +121,7 @@
       "leg": 3,
       "number": 6,
       "pct": 5.75,
-      "odds": 4.72,
+      "odds": 4.76,
       "tipperAI": 76
     },
     {
@@ -159,7 +158,7 @@
       "leg": 5,
       "number": 4,
       "pct": 17.23,
-      "odds": 8.4,
+      "odds": 8.47,
       "tipperAI": 44
     },
     {
@@ -171,7 +170,7 @@
       "leg": 5,
       "number": 1,
       "pct": 3.35,
-      "odds": 6.59,
+      "odds": 6.64,
       "tipperAI": 70
     },
     {
@@ -183,7 +182,7 @@
       "leg": 5,
       "number": 2,
       "pct": 8.84,
-      "odds": 12.23,
+      "odds": 12.29,
       "tipperAI": 31
     },
     {
@@ -195,7 +194,7 @@
       "leg": 6,
       "number": 12,
       "pct": 5.5,
-      "odds": 10.86,
+      "odds": 10.91,
       "tipperAI": 28
     },
     {
@@ -219,7 +218,7 @@
       "leg": 6,
       "number": 11,
       "pct": 0.87,
-      "odds": 10.2,
+      "odds": 10.25,
       "tipperAI": 37
     },
     {
@@ -231,7 +230,7 @@
       "leg": 7,
       "number": 6,
       "pct": 7.18,
-      "odds": 6.76,
+      "odds": 6.81,
       "tipperAI": 32
     },
     {
@@ -243,7 +242,7 @@
       "leg": 7,
       "number": 5,
       "pct": 11.87,
-      "odds": 10.21,
+      "odds": 10.13,
       "tipperAI": 31
     },
     {
@@ -255,7 +254,7 @@
       "leg": 7,
       "number": 3,
       "pct": 2.15,
-      "odds": 14.87,
+      "odds": 14.67,
       "tipperAI": 51
     },
     {
@@ -267,7 +266,7 @@
       "leg": 8,
       "number": 2,
       "pct": 11.61,
-      "odds": 6.46,
+      "odds": 6.49,
       "tipperAI": 47
     },
     {
@@ -279,7 +278,7 @@
       "leg": 8,
       "number": 12,
       "pct": 7.36,
-      "odds": 8.0,
+      "odds": 8.06,
       "tipperAI": 41
     },
     {
@@ -291,7 +290,7 @@
       "leg": 8,
       "number": 10,
       "pct": 17.92,
-      "odds": 7.42,
+      "odds": 7.46,
       "tipperAI": 36
     }
   ],
@@ -305,12 +304,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 21,
       "percentage": 5.11,
-      "odds": 12.52,
+      "odds": 12.56,
       "selection": null,
       "originalComment": "Startspår 1, 1640 meter autostart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.11 % (-0.89 procentenheter), vinnarodds 12.52."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.11 % (+0.00 procentenheter), vinnarodds 12.56."
     },
     "1-2": {
       "name": "S.G.Empress",
@@ -321,12 +320,12 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 78,
       "percentage": 47.05,
-      "odds": 2.63,
+      "odds": 2.66,
       "selection": null,
       "originalComment": "Klassmässigt gynnsam uppgift och bra startläge. Stark favorit, men högt streckad. Högt Tipper AI-tal men också högt betrodd; kräver hög vinstchans för att vara spelvärd.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 47.05 % (-4.35 procentenheter), vinnarodds 2.63."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 47.05 % (+0.00 procentenheter), vinnarodds 2.66."
     },
     "1-3": {
       "name": "Cashman J.R.",
@@ -337,7 +336,7 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 37,
       "percentage": 24.95,
-      "odds": 5.72,
+      "odds": 5.78,
       "selection": {
         "role": "Huvudskräll",
         "why": "Kan nå ledningen och är hårt underskattad jämfört med favoriten.",
@@ -346,7 +345,7 @@
       "originalComment": "Snabb bakom bilen och mycket stark historik från ledningen. Spetsstriden avgör mycket. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 24.95 % (+6.15 procentenheter), vinnarodds 5.72."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 24.95 % (+0.00 procentenheter), vinnarodds 5.78."
     },
     "1-4": {
       "name": "Four White E.G.",
@@ -357,12 +356,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 24,
       "percentage": 3.65,
-      "odds": 9.28,
+      "odds": 9.39,
       "selection": null,
       "originalComment": "Startspår 4, 1640 meter autostart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.65 % (-0.45 procentenheter), vinnarodds 9.28."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.65 % (+0.00 procentenheter), vinnarodds 9.39."
     },
     "1-5": {
       "name": "Steady Roc",
@@ -373,12 +372,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 16,
       "percentage": 0.63,
-      "odds": 25.33,
+      "odds": 25.57,
       "selection": null,
       "originalComment": "Startspår 5, 1640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.63 % (-0.37 procentenheter), vinnarodds 25.33."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.63 % (+0.00 procentenheter), vinnarodds 25.57."
     },
     "1-6": {
       "name": "Crowe Motion",
@@ -389,7 +388,7 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 49,
       "percentage": 11.87,
-      "odds": 5.95,
+      "odds": 5.94,
       "selection": {
         "role": "Motbud",
         "why": "Dokumenterad form och stark kusk; runt 13 procent.",
@@ -398,7 +397,7 @@
       "originalComment": "Har visat stabil god form under längre tid. Kräver en passande resa från spår sex. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 11.87 % (-0.23 procentenheter), vinnarodds 5.95."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 11.87 % (+0.00 procentenheter), vinnarodds 5.94."
     },
     "1-7": {
       "name": "Global Enjoy",
@@ -409,12 +408,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 13,
       "percentage": 0.37,
-      "odds": 53.59,
+      "odds": 53.55,
       "selection": null,
       "originalComment": "Startspår 7, 1640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.37 % (-0.43 procentenheter), vinnarodds 53.59."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.37 % (+0.00 procentenheter), vinnarodds 53.55."
     },
     "1-8": {
       "name": "Kapten Nemo",
@@ -425,7 +424,7 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 25,
       "percentage": 1.03,
-      "odds": 10.7,
+      "odds": 10.82,
       "selection": {
         "role": "Högoddsare",
         "why": "Mycket låg streckandel och tidigt lågt vinnarodds gör hästen värd att granska.",
@@ -434,7 +433,7 @@
       "originalComment": "Startspår 8, 1640 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 1.03 % (-0.17 procentenheter), vinnarodds 10.70."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 1.03 % (+0.00 procentenheter), vinnarodds 10.82."
     },
     "1-9": {
       "name": "Dalens Elvis",
@@ -445,12 +444,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 17,
       "percentage": 0.29,
-      "odds": 40.07,
+      "odds": 40.18,
       "selection": null,
       "originalComment": "Startspår 9, 1640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.29 % (-0.31 procentenheter), vinnarodds 40.07."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.29 % (+0.00 procentenheter), vinnarodds 40.18."
     },
     "1-10": {
       "name": "Nadal B.R.",
@@ -461,12 +460,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 18,
       "percentage": 5.05,
-      "odds": 10.94,
+      "odds": 10.01,
       "selection": null,
       "originalComment": "Startspår 10, 1640 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.05 % (+0.95 procentenheter), vinnarodds 10.94."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.05 % (+0.00 procentenheter), vinnarodds 10.01."
     },
     "2-1": {
       "name": "Ghostgirl",
@@ -477,12 +476,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 8,
       "percentage": 0.31,
-      "odds": 60.55,
+      "odds": 58.7,
       "selection": null,
       "originalComment": "Startspår 1, 2140 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.31 % (-0.09 procentenheter), vinnarodds 60.55."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.31 % (+0.00 procentenheter), vinnarodds 58.70."
     },
     "2-2": {
       "name": "Realize'em",
@@ -493,12 +492,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 63,
       "percentage": 23.29,
-      "odds": 8.29,
+      "odds": 8.42,
       "selection": null,
       "originalComment": "Startspår 2, 2140 meter autostart. Högt Tipper AI-tal men också högt betrodd; kräver hög vinstchans för att vara spelvärd.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 23.29 % (-5.71 procentenheter), vinnarodds 8.29."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 23.29 % (+0.00 procentenheter), vinnarodds 8.42."
     },
     "2-3": {
       "name": "Direction Face",
@@ -509,12 +508,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 45,
       "percentage": 8.86,
-      "odds": 8.9,
+      "odds": 9.0,
       "selection": null,
       "originalComment": "Startspår 3, 2140 meter autostart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 8.86 % (+1.26 procentenheter), vinnarodds 8.90."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 8.86 % (+0.00 procentenheter), vinnarodds 9.00."
     },
     "2-4": {
       "name": "Good Reads",
@@ -525,7 +524,7 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/58RjBW/v85-tips-lordag-17-oktober-pa-gavle-analys-spikar-skrallar-och-system",
       "tipperAI": 22,
       "percentage": 2.2,
-      "odds": 9.46,
+      "odds": 9.69,
       "selection": {
         "role": "Högoddsare",
         "why": "Skräll med potentiell avslutning om ledarna öppnar hårt.",
@@ -534,7 +533,7 @@
       "originalComment": "Kan avsluta vasst med klaff. Kräver ryggar och fritt på upploppet. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.20 % (+0.00 procentenheter), vinnarodds 9.46."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.20 % (+0.00 procentenheter), vinnarodds 9.69."
     },
     "2-5": {
       "name": "Geisha Road Grif",
@@ -545,12 +544,12 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/58RjBW/v85-tips-lordag-17-oktober-pa-gavle-analys-spikar-skrallar-och-system",
       "tipperAI": 41,
       "percentage": 18.19,
-      "odds": 8.71,
+      "odds": 8.59,
       "selection": null,
       "originalComment": "Aktuellt spetsbud från femtespåret. Stosprint med många möjliga scenarier. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 18.19 % (+4.19 procentenheter), vinnarodds 8.71."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 18.19 % (+0.00 procentenheter), vinnarodds 8.59."
     },
     "2-6": {
       "name": "Ki Ti Vi",
@@ -561,12 +560,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 19,
       "percentage": 0.38,
-      "odds": 35.42,
+      "odds": 36.02,
       "selection": null,
       "originalComment": "Startspår 6, 2140 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.38 % (-0.22 procentenheter), vinnarodds 35.42."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.38 % (+0.00 procentenheter), vinnarodds 36.02."
     },
     "2-7": {
       "name": "Glory Forever",
@@ -577,12 +576,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 50,
       "percentage": 3.59,
-      "odds": 14.27,
+      "odds": 14.31,
       "selection": null,
       "originalComment": "Startspår 7, 2140 meter autostart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.59 % (-2.01 procentenheter), vinnarodds 14.27."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.59 % (+0.00 procentenheter), vinnarodds 14.31."
     },
     "2-8": {
       "name": "Havana Heaven",
@@ -593,7 +592,7 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/58RjBW/v85-tips-lordag-17-oktober-pa-gavle-analys-spikar-skrallar-och-system",
       "tipperAI": 74,
       "percentage": 12.43,
-      "odds": 8.33,
+      "odds": 8.18,
       "selection": {
         "role": "Huvudskräll",
         "why": "Stark senaste insats och Jepson i sulkyn till cirka nio procent.",
@@ -602,7 +601,7 @@
       "originalComment": "Stark senast och körs av Carl Johan Jepson. Ett klart motbud till favoriten. Relativt högt Tipper AI-tal på få V85-streck; extra bevakning motiverad. Lågt tidigt vinnarodds vid låg streckandel; verifiera när poolen växer.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 12.43 % (+1.63 procentenheter), vinnarodds 8.33."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 12.43 % (+0.00 procentenheter), vinnarodds 8.18."
     },
     "2-9": {
       "name": "Sweet Celebration",
@@ -613,12 +612,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 17,
       "percentage": 1.12,
-      "odds": 28.8,
+      "odds": 29.18,
       "selection": null,
       "originalComment": "Startspår 9, 2140 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 1.12 % (-0.58 procentenheter), vinnarodds 28.80."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 1.12 % (+0.00 procentenheter), vinnarodds 29.18."
     },
     "2-10": {
       "name": "Pralines",
@@ -629,12 +628,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 67,
       "percentage": 13.47,
-      "odds": 6.13,
+      "odds": 6.17,
       "selection": null,
       "originalComment": "Startspår 10, 2140 meter autostart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 13.47 % (+4.67 procentenheter), vinnarodds 6.13."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 13.47 % (+0.00 procentenheter), vinnarodds 6.17."
     },
     "2-11": {
       "name": "Ajlexes Gourmand",
@@ -645,7 +644,7 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/rMbmye/v85-tips-gavle-lordag-17-oktober-basta-skrallarna-andelssystem",
       "tipperAI": 44,
       "percentage": 6.97,
-      "odds": 9.7,
+      "odds": 9.8,
       "selection": {
         "role": "Motbud",
         "why": "Hög bedömd kapacitet och mycket låg tidig vinnaroddsnotering relativt strecken.",
@@ -654,7 +653,7 @@
       "originalComment": "Låg andel jämfört med flera förhandsbedömningar; tuff resa möjlig från bakspår. Relativt högt Tipper AI-tal på få V85-streck; extra bevakning motiverad.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 6.97 % (-3.33 procentenheter), vinnarodds 9.70."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 6.97 % (+0.00 procentenheter), vinnarodds 9.80."
     },
     "2-12": {
       "name": "Global Deadline",
@@ -665,12 +664,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 36,
       "percentage": 2.54,
-      "odds": 16.34,
+      "odds": 15.67,
       "selection": null,
       "originalComment": "Startspår 12, 2140 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.54 % (-0.06 procentenheter), vinnarodds 16.34."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.54 % (+0.00 procentenheter), vinnarodds 15.67."
     },
     "2-13": {
       "name": "Mary Wadd",
@@ -681,12 +680,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 25,
       "percentage": 0.33,
-      "odds": 42.84,
+      "odds": 41.03,
       "selection": null,
       "originalComment": "Startspår 13, 2140 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.33 % (-0.17 procentenheter), vinnarodds 42.84."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.33 % (+0.00 procentenheter), vinnarodds 41.03."
     },
     "2-14": {
       "name": "Ecuador Broline",
@@ -697,12 +696,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 20,
       "percentage": 2.02,
-      "odds": 29.49,
+      "odds": 28.61,
       "selection": null,
       "originalComment": "Startspår 14, 2140 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.02 % (-0.78 procentenheter), vinnarodds 29.49."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.02 % (+0.00 procentenheter), vinnarodds 28.61."
     },
     "2-15": {
       "name": "Sonesta",
@@ -713,12 +712,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 25,
       "percentage": 4.32,
-      "odds": 14.31,
+      "odds": 14.36,
       "selection": null,
       "originalComment": "Startspår 15, 2140 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 4.32 % (+1.22 procentenheter), vinnarodds 14.31."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 4.32 % (+0.00 procentenheter), vinnarodds 14.36."
     },
     "3-1": {
       "name": "Carpaccio",
@@ -729,12 +728,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 27,
       "percentage": 3.16,
-      "odds": 16.15,
+      "odds": 16.19,
       "selection": null,
       "originalComment": "Startspår 1, 2640 meter voltstart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.16 % (-0.64 procentenheter), vinnarodds 16.15."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.16 % (+0.00 procentenheter), vinnarodds 16.19."
     },
     "3-2": {
       "name": "Emerald Broline",
@@ -745,12 +744,12 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/58RjBW/v85-tips-lordag-17-oktober-pa-gavle-analys-spikar-skrallar-och-system",
       "tipperAI": 42,
       "percentage": 23.39,
-      "odds": 7.88,
+      "odds": 7.82,
       "selection": null,
       "originalComment": "Har många segrar bakom sig och bedöms hålla fin form, men är mer betrodd. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 23.39 % (+1.29 procentenheter), vinnarodds 7.88."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 23.39 % (+0.00 procentenheter), vinnarodds 7.82."
     },
     "3-3": {
       "name": "Set it off H.C.",
@@ -761,12 +760,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 31,
       "percentage": 7.85,
-      "odds": 8.48,
+      "odds": 8.49,
       "selection": null,
       "originalComment": "Startspår 3, 2640 meter voltstart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.85 % (-2.05 procentenheter), vinnarodds 8.48."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.85 % (+0.00 procentenheter), vinnarodds 8.49."
     },
     "3-4": {
       "name": "Umpteen",
@@ -777,12 +776,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 10,
       "percentage": 0.35,
-      "odds": 40.16,
+      "odds": 38.77,
       "selection": null,
       "originalComment": "Startspår 4, 2640 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.35 % (-0.35 procentenheter), vinnarodds 40.16."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.35 % (+0.00 procentenheter), vinnarodds 38.77."
     },
     "3-5": {
       "name": "Västerbo MagicMike",
@@ -793,12 +792,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 33,
       "percentage": 0.44,
-      "odds": 25.58,
+      "odds": 25.72,
       "selection": null,
       "originalComment": "Startspår 5, 2640 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.44 % (-0.46 procentenheter), vinnarodds 25.58."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.44 % (+0.00 procentenheter), vinnarodds 25.72."
     },
     "3-6": {
       "name": "Sensational Doc",
@@ -809,7 +808,7 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/rMbmye/v85-tips-gavle-lordag-17-oktober-basta-skrallarna-andelssystem",
       "tipperAI": 76,
       "percentage": 5.75,
-      "odds": 4.72,
+      "odds": 4.76,
       "selection": {
         "role": "Marknadsavvikelse",
         "why": "Mycket lågt tidigt vinnarodds i förhållande till 4,4 procent på V85.",
@@ -818,7 +817,7 @@
       "originalComment": "Startspår 6, 2640 meter voltstart. Relativt högt Tipper AI-tal på få V85-streck; extra bevakning motiverad. Lågt tidigt vinnarodds vid låg streckandel; verifiera när poolen växer.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.75 % (+0.85 procentenheter), vinnarodds 4.72."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.75 % (+0.00 procentenheter), vinnarodds 4.76."
     },
     "3-7": {
       "name": "Iulius Zet",
@@ -829,12 +828,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 38,
       "percentage": 0.39,
-      "odds": 23.2,
+      "odds": 23.33,
       "selection": null,
       "originalComment": "Startspår 7, 2640 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.39 % (-0.41 procentenheter), vinnarodds 23.20."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.39 % (+0.00 procentenheter), vinnarodds 23.33."
     },
     "3-8": {
       "name": "You to Gangster",
@@ -845,7 +844,7 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/58RjBW/v85-tips-lordag-17-oktober-pa-gavle-analys-spikar-skrallar-och-system",
       "tipperAI": 29,
       "percentage": 2.21,
-      "odds": 10.64,
+      "odds": 10.72,
       "selection": {
         "role": "Motbud",
         "why": "Passar långdistans och kan ha gått framåt efter senaste starten.",
@@ -854,7 +853,7 @@
       "originalComment": "Gynnas av den långa distansen. Ett nyligt lopp efter paus kan ha förbättrat dagsformen. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.21 % (+0.21 procentenheter), vinnarodds 10.64."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.21 % (+0.00 procentenheter), vinnarodds 10.72."
     },
     "3-9": {
       "name": "Allant Express",
@@ -865,12 +864,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 35,
       "percentage": 2.81,
-      "odds": 8.65,
+      "odds": 8.68,
       "selection": null,
       "originalComment": "Startspår 9, 2640 meter voltstart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.81 % (-0.99 procentenheter), vinnarodds 8.65."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.81 % (+0.00 procentenheter), vinnarodds 8.68."
     },
     "3-10": {
       "name": "Five Billion",
@@ -881,12 +880,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 65,
       "percentage": 31.67,
-      "odds": 7.14,
+      "odds": 7.12,
       "selection": null,
       "originalComment": "Startspår 10, 2640 meter voltstart. Högt Tipper AI-tal men också högt betrodd; kräver hög vinstchans för att vara spelvärd.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 31.67 % (-3.33 procentenheter), vinnarodds 7.14."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 31.67 % (+0.00 procentenheter), vinnarodds 7.12."
     },
     "3-11": {
       "name": "Green Dream",
@@ -897,12 +896,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 22,
       "percentage": 0.8,
-      "odds": 19.88,
+      "odds": 19.46,
       "selection": null,
       "originalComment": "Startspår 11, 2640 meter voltstart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.80 % (-0.30 procentenheter), vinnarodds 19.88."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.80 % (+0.00 procentenheter), vinnarodds 19.46."
     },
     "3-12": {
       "name": "Ultimate Scotch",
@@ -913,7 +912,7 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/58RjBW/v85-tips-lordag-17-oktober-pa-gavle-analys-spikar-skrallar-och-system",
       "tipperAI": 47,
       "percentage": 21.19,
-      "odds": 6.57,
+      "odds": 6.56,
       "selection": {
         "role": "Huvudskräll",
         "why": "Två raka segrar; långdistans och styrka är påtagliga plus.",
@@ -922,7 +921,7 @@
       "originalComment": "Två raka segrar och dokumenterad styrka; lång distans passar men spår tolv kräver jobb. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 21.19 % (+6.09 procentenheter), vinnarodds 6.57."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 21.19 % (+0.00 procentenheter), vinnarodds 6.56."
     },
     "4-1": {
       "name": "Borups Victory",
@@ -938,7 +937,7 @@
       "originalComment": "Kapacitetsmässigt given favorit, men comeback innebär viss osäkerhet om toppformen. Högt Tipper AI-tal men också högt betrodd; kräver hög vinstchans för att vara spelvärd.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 71.08 % (+4.38 procentenheter), vinnarodds 1.32."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 71.08 % (+0.00 procentenheter), vinnarodds 1.32."
     },
     "4-2": {
       "name": "Chestnut",
@@ -954,7 +953,7 @@
       "originalComment": "Startspår 2, 2640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.08 % (+0.18 procentenheter), vinnarodds 12.79."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.08 % (+0.00 procentenheter), vinnarodds 12.79."
     },
     "4-3": {
       "name": "Global Concept",
@@ -974,7 +973,7 @@
       "originalComment": "Startschnabb och möjlig ledare. En intressant utmanare om favoriten får en sämre resa. Relativt högt Tipper AI-tal på få V85-streck; extra bevakning motiverad. Lågt tidigt vinnarodds vid låg streckandel; verifiera när poolen växer.",
       "scratched": true,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.08 % (-3.22 procentenheter), vinnarodds saknas."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.08 % (+0.00 procentenheter), vinnarodds saknas."
     },
     "4-4": {
       "name": "Flotilla",
@@ -990,7 +989,7 @@
       "originalComment": "Startspår 4, 2640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.41 % (-0.59 procentenheter), vinnarodds 40.30."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.41 % (+0.00 procentenheter), vinnarodds 40.30."
     },
     "4-5": {
       "name": "Caviar From Mine",
@@ -1006,7 +1005,7 @@
       "originalComment": "Startspår 5, 2640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.27 % (-0.23 procentenheter), vinnarodds 37.42."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.27 % (+0.00 procentenheter), vinnarodds 37.42."
     },
     "4-6": {
       "name": "Competivo",
@@ -1026,7 +1025,7 @@
       "originalComment": "Lopp i kroppen; uppgiven barfota runt om och amerikansk vagn är intressanta faktorer. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.39 % (-0.51 procentenheter), vinnarodds 12.29."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.39 % (+0.00 procentenheter), vinnarodds 12.29."
     },
     "4-7": {
       "name": "High on Pepper",
@@ -1042,7 +1041,7 @@
       "originalComment": "Styrkan över lång distans talar för hästen, trots ett yttre utgångsläge. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 12.37 % (+1.07 procentenheter), vinnarodds 9.93."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 12.37 % (+0.00 procentenheter), vinnarodds 9.93."
     },
     "4-8": {
       "name": "Joe Dalton",
@@ -1058,7 +1057,7 @@
       "originalComment": "Startspår 8, 2640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.32 % (-0.08 procentenheter), vinnarodds 24.99."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.32 % (+0.00 procentenheter), vinnarodds 24.99."
     },
     "4-9": {
       "name": "Bengan",
@@ -1074,7 +1073,7 @@
       "originalComment": "Startspår 9, 2640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 1.78 % (-0.62 procentenheter), vinnarodds 15.38."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 1.78 % (+0.00 procentenheter), vinnarodds 15.38."
     },
     "4-10": {
       "name": "Eolo Jet",
@@ -1090,7 +1089,7 @@
       "originalComment": "Startspår 10, 2640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.23 % (-0.27 procentenheter), vinnarodds ej exakt (≥99,99)."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.23 % (+0.00 procentenheter), vinnarodds ej exakt (≥99,99)."
     },
     "5-1": {
       "name": "Sangviks Lynet",
@@ -1101,7 +1100,7 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 70,
       "percentage": 3.35,
-      "odds": 6.59,
+      "odds": 6.64,
       "selection": {
         "role": "Motbud",
         "why": "Bra utgångsläge och lovande AI-betyg på få streck.",
@@ -1110,7 +1109,7 @@
       "originalComment": "Bra utgångsläge på startvolten och travsäkerhet talar för. Tidigt vinnarodds är osäkert. Relativt högt Tipper AI-tal på få V85-streck; extra bevakning motiverad. Lågt tidigt vinnarodds vid låg streckandel; verifiera när poolen växer.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.35 % (+0.05 procentenheter), vinnarodds 6.59."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.35 % (+0.00 procentenheter), vinnarodds 6.64."
     },
     "5-2": {
       "name": "Grisle Best G.L.",
@@ -1121,7 +1120,7 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 31,
       "percentage": 8.84,
-      "odds": 12.23,
+      "odds": 12.29,
       "selection": {
         "role": "Högoddsare",
         "why": "Kapacitet för klassen men spelad under tio procent.",
@@ -1130,7 +1129,7 @@
       "originalComment": "Kapabelt kallblod som kan vara med långt framme vid rätt resa. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 8.84 % (+0.24 procentenheter), vinnarodds 12.23."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 8.84 % (+0.00 procentenheter), vinnarodds 12.29."
     },
     "5-3": {
       "name": "Marodin",
@@ -1141,12 +1140,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 17,
       "percentage": 0.3,
-      "odds": 29.25,
+      "odds": 29.46,
       "selection": null,
       "originalComment": "Startspår 3, 2140 meter voltstart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.30 % (-0.40 procentenheter), vinnarodds 29.25."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.30 % (+0.00 procentenheter), vinnarodds 29.46."
     },
     "5-4": {
       "name": "Alm Nordstjernen",
@@ -1157,7 +1156,7 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/rMbmye/v85-tips-gavle-lordag-17-oktober-basta-skrallarna-andelssystem",
       "tipperAI": 44,
       "percentage": 17.23,
-      "odds": 8.4,
+      "odds": 8.47,
       "selection": {
         "role": "Huvudskräll",
         "why": "Två raka segrar och rimlig outsiderprocent i ett öppet kallblodslopp.",
@@ -1166,7 +1165,7 @@
       "originalComment": "Två senaste starterna har slutat med seger. Risk för galopp i starten måste vägas in. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 17.23 % (+2.83 procentenheter), vinnarodds 8.40."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 17.23 % (+0.00 procentenheter), vinnarodds 8.47."
     },
     "5-5": {
       "name": "Lill Viking",
@@ -1177,12 +1176,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 17,
       "percentage": 0.52,
-      "odds": 28.44,
+      "odds": 28.5,
       "selection": null,
       "originalComment": "Startspår 5, 2140 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.52 % (-0.58 procentenheter), vinnarodds 28.44."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.52 % (+0.00 procentenheter), vinnarodds 28.50."
     },
     "5-6": {
       "name": "Storm Annsgal",
@@ -1193,12 +1192,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 25,
       "percentage": 3.8,
-      "odds": 13.73,
+      "odds": 13.83,
       "selection": null,
       "originalComment": "Startspår 6, 2140 meter voltstart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.80 % (-0.40 procentenheter), vinnarodds 13.73."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.80 % (+0.00 procentenheter), vinnarodds 13.83."
     },
     "5-7": {
       "name": "Trollbalder",
@@ -1209,12 +1208,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 46,
       "percentage": 0.44,
-      "odds": 15.08,
+      "odds": 14.89,
       "selection": null,
       "originalComment": "Startspår 7, 2140 meter voltstart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.44 % (-0.46 procentenheter), vinnarodds 15.08."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.44 % (+0.00 procentenheter), vinnarodds 14.89."
     },
     "5-8": {
       "name": "Lannem Pär",
@@ -1225,12 +1224,12 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 55,
       "percentage": 30.32,
-      "odds": 5.28,
+      "odds": 5.3,
       "selection": null,
       "originalComment": "Ung häst i utveckling med styrkan som främsta tillgång. Får inte glömmas. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 30.32 % (+4.12 procentenheter), vinnarodds 5.28."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 30.32 % (+0.00 procentenheter), vinnarodds 5.30."
     },
     "5-9": {
       "name": "Grisle Kongen G.L.",
@@ -1241,12 +1240,12 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 50,
       "percentage": 18.92,
-      "odds": 10.33,
+      "odds": 10.37,
       "selection": null,
       "originalComment": "Har visat fin form, men är mest effektiv med rätt rygglopp. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 18.92 % (-2.28 procentenheter), vinnarodds 10.33."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 18.92 % (+0.00 procentenheter), vinnarodds 10.37."
     },
     "5-10": {
       "name": "Briskeby Pilen",
@@ -1257,12 +1256,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 32,
       "percentage": 10.55,
-      "odds": 10.92,
+      "odds": 10.56,
       "selection": null,
       "originalComment": "Startspår 2, 2140 meter voltstart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 10.55 % (-1.45 procentenheter), vinnarodds 10.92."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 10.55 % (+0.00 procentenheter), vinnarodds 10.56."
     },
     "5-11": {
       "name": "Ersa Frej",
@@ -1273,12 +1272,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 13,
       "percentage": 0.58,
-      "odds": 47.2,
+      "odds": 47.55,
       "selection": null,
       "originalComment": "Startspår 3, 2140 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.58 % (-0.12 procentenheter), vinnarodds 47.20."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.58 % (+0.00 procentenheter), vinnarodds 47.55."
     },
     "5-12": {
       "name": "Eldida",
@@ -1289,12 +1288,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 15,
       "percentage": 0.49,
-      "odds": 23.35,
+      "odds": 22.91,
       "selection": null,
       "originalComment": "Startspår 4, 2140 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.49 % (-0.21 procentenheter), vinnarodds 23.35."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.49 % (+0.00 procentenheter), vinnarodds 22.91."
     },
     "5-13": {
       "name": "Ellbert",
@@ -1305,12 +1304,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 25,
       "percentage": 3.09,
-      "odds": 14.96,
+      "odds": 14.83,
       "selection": null,
       "originalComment": "Startspår 5, 2140 meter voltstart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.09 % (-1.21 procentenheter), vinnarodds 14.96."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.09 % (+0.00 procentenheter), vinnarodds 14.83."
     },
     "5-14": {
       "name": "Hulte Sixten",
@@ -1321,12 +1320,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 21,
       "percentage": 0.41,
-      "odds": 26.6,
+      "odds": 26.8,
       "selection": null,
       "originalComment": "Startspår 6, 2140 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.41 % (+0.01 procentenheter), vinnarodds 26.60."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.41 % (+0.00 procentenheter), vinnarodds 26.80."
     },
     "5-15": {
       "name": "Fosshaug Frasse",
@@ -1337,12 +1336,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 26,
       "percentage": 1.15,
-      "odds": 14.16,
+      "odds": 14.28,
       "selection": null,
       "originalComment": "Startspår 7, 2140 meter voltstart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 1.15 % (-0.25 procentenheter), vinnarodds 14.16."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 1.15 % (+0.00 procentenheter), vinnarodds 14.28."
     },
     "6-1": {
       "name": "Mayson",
@@ -1358,7 +1357,7 @@
       "originalComment": "Startspår 1, 1640 meter autostart. Struken; ska inte ingå i systemet. Struken/inget odds.",
       "scratched": true,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.09 % (-0.21 procentenheter), vinnarodds saknas."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.09 % (+0.00 procentenheter), vinnarodds saknas."
     },
     "6-2": {
       "name": "Macarena Sisu",
@@ -1374,7 +1373,7 @@
       "originalComment": "Startspår 2, 1640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": true,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.19 % (-0.61 procentenheter), vinnarodds saknas."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.19 % (+0.00 procentenheter), vinnarodds saknas."
     },
     "6-3": {
       "name": "Devilish",
@@ -1394,7 +1393,7 @@
       "originalComment": "Spetsmöjlighet över kort distans och positiv kuskförändring till Carl Johan Jepson. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.98 % (+0.28 procentenheter), vinnarodds 6.06."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.98 % (+0.00 procentenheter), vinnarodds 6.06."
     },
     "6-4": {
       "name": "Nordic Choice",
@@ -1405,12 +1404,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 10,
       "percentage": 0.62,
-      "odds": 28.91,
+      "odds": 28.21,
       "selection": null,
       "originalComment": "Startspår 4, 1640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.62 % (-0.38 procentenheter), vinnarodds 28.91."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.62 % (+0.00 procentenheter), vinnarodds 28.21."
     },
     "6-5": {
       "name": "Conrads Ove",
@@ -1421,12 +1420,12 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 70,
       "percentage": 32.93,
-      "odds": 4.59,
+      "odds": 4.6,
       "selection": null,
       "originalComment": "Mycket jämn prestationsrad och ett bra läge. En av loppets rättmätiga favoriter. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 32.93 % (-0.77 procentenheter), vinnarodds 4.59."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 32.93 % (+0.00 procentenheter), vinnarodds 4.60."
     },
     "6-6": {
       "name": "Chicago News",
@@ -1437,12 +1436,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 28,
       "percentage": 0.45,
-      "odds": 32.04,
+      "odds": 32.06,
       "selection": null,
       "originalComment": "Startspår 6, 1640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.45 % (-0.45 procentenheter), vinnarodds 32.04."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.45 % (+0.00 procentenheter), vinnarodds 32.06."
     },
     "6-7": {
       "name": "Haylee Eagra",
@@ -1453,12 +1452,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 28,
       "percentage": 12.86,
-      "odds": 3.38,
+      "odds": 3.39,
       "selection": null,
       "originalComment": "Startspår 7, 1640 meter autostart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 12.86 % (+6.56 procentenheter), vinnarodds 3.38."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 12.86 % (+0.00 procentenheter), vinnarodds 3.39."
     },
     "6-8": {
       "name": "Valuga",
@@ -1469,12 +1468,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 9,
       "percentage": 0.39,
-      "odds": 35.83,
+      "odds": 36.01,
       "selection": null,
       "originalComment": "Startspår 8, 1640 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.39 % (-0.31 procentenheter), vinnarodds 35.83."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.39 % (+0.00 procentenheter), vinnarodds 36.01."
     },
     "6-9": {
       "name": "Rob Roy Boko",
@@ -1485,12 +1484,12 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 65,
       "percentage": 37.46,
-      "odds": 5.04,
+      "odds": 5.03,
       "selection": null,
       "originalComment": "Hög kapacitet men travaktionen kan vara opålitlig. Duger när allt fungerar. Högt Tipper AI-tal men också högt betrodd; kräver hög vinstchans för att vara spelvärd.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 37.46 % (-4.04 procentenheter), vinnarodds 5.04."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 37.46 % (+0.00 procentenheter), vinnarodds 5.03."
     },
     "6-10": {
       "name": "Atmospere",
@@ -1501,12 +1500,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 16,
       "percentage": 0.66,
-      "odds": 57.93,
+      "odds": 55.42,
       "selection": null,
       "originalComment": "Startspår 10, 1640 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.66 % (-0.34 procentenheter), vinnarodds 57.93."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.66 % (+0.00 procentenheter), vinnarodds 55.42."
     },
     "6-11": {
       "name": "Laruns",
@@ -1517,7 +1516,7 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 37,
       "percentage": 0.87,
-      "odds": 10.2,
+      "odds": 10.25,
       "selection": {
         "role": "Marknadsavvikelse",
         "why": "Låg V85-procent men extremt lågt tidigt vinnarodds och högt Tipper AI-tal.",
@@ -1526,7 +1525,7 @@
       "originalComment": "Startspår 11, 1640 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument. Lågt tidigt vinnarodds vid låg streckandel; verifiera när poolen växer.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.87 % (-0.73 procentenheter), vinnarodds 10.20."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.87 % (+0.00 procentenheter), vinnarodds 10.25."
     },
     "6-12": {
       "name": "Vince Wynn",
@@ -1537,7 +1536,7 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 28,
       "percentage": 5.5,
-      "odds": 10.86,
+      "odds": 10.91,
       "selection": {
         "role": "Huvudskräll",
         "why": "TR Media lyfter hästens kapacitet och låga spelandel trots svårt läge.",
@@ -1546,7 +1545,7 @@
       "originalComment": "Kapacitet för klassen och omtalad som skrällbud, men spår tolv innebär tydligt positionsminus. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.50 % (+1.10 procentenheter), vinnarodds 10.86."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.50 % (+0.00 procentenheter), vinnarodds 10.91."
     },
     "7-1": {
       "name": "My Honky Tonk Man",
@@ -1557,12 +1556,12 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 29,
       "percentage": 5.93,
-      "odds": 10.27,
+      "odds": 10.29,
       "selection": null,
       "originalComment": "Potentiell ledningsutmanare, men loppbilden måste bli rätt för att slå favoriten. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.93 % (-1.97 procentenheter), vinnarodds 10.27."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 5.93 % (+0.00 procentenheter), vinnarodds 10.29."
     },
     "7-2": {
       "name": "Bank Angel",
@@ -1573,12 +1572,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 14,
       "percentage": 0.62,
-      "odds": 29.83,
+      "odds": 30.0,
       "selection": null,
       "originalComment": "Startspår 2, 2140 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.62 % (-0.18 procentenheter), vinnarodds 29.83."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.62 % (+0.00 procentenheter), vinnarodds 30.00."
     },
     "7-3": {
       "name": "Any Given Sunday",
@@ -1589,7 +1588,7 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 51,
       "percentage": 2.15,
-      "odds": 14.87,
+      "odds": 14.67,
       "selection": {
         "role": "Marknadsavvikelse",
         "why": "Mycket lågt vinnarodds i en tunn marknad till bara tre procent på V85.",
@@ -1598,7 +1597,7 @@
       "originalComment": "Fartresurser finns men prestationerna varierar. Mycket osäkert tidigt vinnarodds. Relativt högt Tipper AI-tal på få V85-streck; extra bevakning motiverad. Lågt tidigt vinnarodds vid låg streckandel; verifiera när poolen växer.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.15 % (-0.75 procentenheter), vinnarodds 14.87."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.15 % (+0.00 procentenheter), vinnarodds 14.67."
     },
     "7-4": {
       "name": "Sir Tooma",
@@ -1609,12 +1608,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 20,
       "percentage": 0.88,
-      "odds": 15.05,
+      "odds": 14.9,
       "selection": null,
       "originalComment": "Startspår 4, 2140 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.88 % (-0.42 procentenheter), vinnarodds 15.05."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.88 % (+0.00 procentenheter), vinnarodds 14.90."
     },
     "7-5": {
       "name": "Ugalli",
@@ -1625,7 +1624,7 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 31,
       "percentage": 11.87,
-      "odds": 10.21,
+      "odds": 10.13,
       "selection": {
         "role": "Motbud",
         "why": "Två raka segrar och god utveckling; rimlig outsiderprocent.",
@@ -1634,7 +1633,7 @@
       "originalComment": "Kommer med två raka vinster och har styrka. Måste trotsa favoritens tänkta loppbild. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 11.87 % (-1.23 procentenheter), vinnarodds 10.21."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 11.87 % (+0.00 procentenheter), vinnarodds 10.13."
     },
     "7-6": {
       "name": "Pineapple",
@@ -1645,7 +1644,7 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 32,
       "percentage": 7.18,
-      "odds": 6.76,
+      "odds": 6.81,
       "selection": {
         "role": "Huvudskräll",
         "why": "Har vunnit varje försök i ledningen enligt experttips. Låg procent.",
@@ -1654,7 +1653,7 @@
       "originalComment": "Obesegrad i ledningen enligt förhandsanalysen. Spetsstriden mot storfavoriten är nyckeln. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.18 % (+1.38 procentenheter), vinnarodds 6.76."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.18 % (+0.00 procentenheter), vinnarodds 6.81."
     },
     "7-7": {
       "name": "Great Old Dance",
@@ -1665,12 +1664,12 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 75,
       "percentage": 65.42,
-      "odds": 2.0,
+      "odds": 2.01,
       "selection": null,
       "originalComment": "Stark formutveckling och tydlig tipsetta, men galopp senast ger en risk att väga in. Högt Tipper AI-tal men också högt betrodd; kräver hög vinstchans för att vara spelvärd.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 65.42 % (+3.72 procentenheter), vinnarodds 2.00."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 65.42 % (+0.00 procentenheter), vinnarodds 2.01."
     },
     "7-8": {
       "name": "Vixi Garbo",
@@ -1681,12 +1680,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 8,
       "percentage": 0.3,
-      "odds": 42.76,
+      "odds": 43.02,
       "selection": null,
       "originalComment": "Startspår 8, 2140 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.30 % (+0.00 procentenheter), vinnarodds 42.76."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.30 % (+0.00 procentenheter), vinnarodds 43.02."
     },
     "7-9": {
       "name": "Joker Ima",
@@ -1697,12 +1696,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 32,
       "percentage": 3.12,
-      "odds": 14.39,
+      "odds": 14.38,
       "selection": null,
       "originalComment": "Startspår 9, 2140 meter voltstart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut. Lågt tidigt vinnarodds vid låg streckandel; verifiera när poolen växer.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.12 % (-0.38 procentenheter), vinnarodds 14.39."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 3.12 % (+0.00 procentenheter), vinnarodds 14.38."
     },
     "7-10": {
       "name": "Perseus Digital",
@@ -1718,7 +1717,7 @@
       "originalComment": "Startspår 10, 2140 meter voltstart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.13 % (-0.07 procentenheter), vinnarodds ej exakt (≥99,99)."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.13 % (+0.00 procentenheter), vinnarodds ej exakt (≥99,99)."
     },
     "7-11": {
       "name": "Legligin",
@@ -1729,12 +1728,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 31,
       "percentage": 2.36,
-      "odds": 14.31,
+      "odds": 14.28,
       "selection": null,
       "originalComment": "Startspår 11, 2140 meter voltstart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.36 % (+0.06 procentenheter), vinnarodds 14.31."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.36 % (+0.00 procentenheter), vinnarodds 14.28."
     },
     "7-12": {
       "name": "Mr Spain",
@@ -1750,7 +1749,7 @@
       "originalComment": "Startspår 12, 2140 meter voltstart. Struken; ska inte ingå i systemet. Struken/inget odds.",
       "scratched": true,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.03 % (-0.17 procentenheter), vinnarodds saknas."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.03 % (+0.00 procentenheter), vinnarodds saknas."
     },
     "8-1": {
       "name": "Myrsjös Tage",
@@ -1761,12 +1760,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 22,
       "percentage": 0.52,
-      "odds": 20.61,
+      "odds": 20.78,
       "selection": null,
       "originalComment": "Startspår 1, 2140 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument. Lågt tidigt vinnarodds vid låg streckandel; verifiera när poolen växer.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.52 % (-0.78 procentenheter), vinnarodds 20.61."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.52 % (+0.00 procentenheter), vinnarodds 20.78."
     },
     "8-2": {
       "name": "Justcantgetenough",
@@ -1777,7 +1776,7 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/rMbmye/v85-tips-gavle-lordag-17-oktober-basta-skrallarna-andelssystem",
       "tipperAI": 47,
       "percentage": 11.61,
-      "odds": 6.46,
+      "odds": 6.49,
       "selection": {
         "role": "Huvudskräll",
         "why": "Två raka segrar; kan nå ledningen från spår två.",
@@ -1786,7 +1785,7 @@
       "originalComment": "Två raka segrar och mycket startsnabb. Kan leda länge om hästen får bestämma. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut. Lågt tidigt vinnarodds vid låg streckandel; verifiera när poolen växer.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 11.61 % (+4.61 procentenheter), vinnarodds 6.46."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 11.61 % (+0.00 procentenheter), vinnarodds 6.49."
     },
     "8-3": {
       "name": "Timotejs Messenger",
@@ -1797,12 +1796,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 27,
       "percentage": 0.89,
-      "odds": 25.54,
+      "odds": 25.06,
       "selection": null,
       "originalComment": "Startspår 3, 2140 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.89 % (-0.31 procentenheter), vinnarodds 25.54."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.89 % (+0.00 procentenheter), vinnarodds 25.06."
     },
     "8-4": {
       "name": "Griffin Kronos",
@@ -1813,12 +1812,12 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/58RjBW/v85-tips-lordag-17-oktober-pa-gavle-analys-spikar-skrallar-och-system",
       "tipperAI": 76,
       "percentage": 41.0,
-      "odds": 4.15,
+      "odds": 4.18,
       "selection": null,
       "originalComment": "Kapabel favorit med bra spår, men senaste loppet skapade frågetecken om dagsformen. Högt Tipper AI-tal men också högt betrodd; kräver hög vinstchans för att vara spelvärd.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 41.00 % (-5.10 procentenheter), vinnarodds 4.15."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 41.00 % (+0.00 procentenheter), vinnarodds 4.18."
     },
     "8-5": {
       "name": "Take Him Sober",
@@ -1829,12 +1828,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 38,
       "percentage": 2.86,
-      "odds": 8.38,
+      "odds": 8.43,
       "selection": null,
       "originalComment": "Startspår 5, 2140 meter autostart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.86 % (-0.84 procentenheter), vinnarodds 8.38."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 2.86 % (+0.00 procentenheter), vinnarodds 8.43."
     },
     "8-6": {
       "name": "Kopparmärra",
@@ -1850,7 +1849,7 @@
       "originalComment": "Startspår 6, 2140 meter autostart. Lågt streckad, men en låg andel är inte i sig ett vinnarargument.",
       "scratched": true,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.46 % (-1.24 procentenheter), vinnarodds saknas."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.46 % (+0.00 procentenheter), vinnarodds saknas."
     },
     "8-7": {
       "name": "Unicum",
@@ -1861,12 +1860,12 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 29,
       "percentage": 8.86,
-      "odds": 9.06,
+      "odds": 9.08,
       "selection": null,
       "originalComment": "Fast med krafter kvar vid senaste starten; behöver rätt loppbild och lucka. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut. Visningstak 99,99, inget exakt pris.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 8.86 % (-1.44 procentenheter), vinnarodds 9.06."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 8.86 % (+0.00 procentenheter), vinnarodds 9.08."
     },
     "8-8": {
       "name": "Macho Cabrio B.B.",
@@ -1877,12 +1876,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 16,
       "percentage": 0.48,
-      "odds": 59.33,
+      "odds": 57.4,
       "selection": null,
       "originalComment": "Startspår 8, 2140 meter autostart. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.48 % (-0.82 procentenheter), vinnarodds 59.33."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.48 % (+0.00 procentenheter), vinnarodds 57.40."
     },
     "8-9": {
       "name": "Readly Winner",
@@ -1893,12 +1892,12 @@
       "sourceUrl": "https://tippertrav.se/",
       "tipperAI": 29,
       "percentage": 7.07,
-      "odds": 6.42,
+      "odds": 6.25,
       "selection": null,
       "originalComment": "Startspår 9, 2140 meter autostart. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.07 % (+1.47 procentenheter), vinnarodds 6.42."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.07 % (+0.00 procentenheter), vinnarodds 6.25."
     },
     "8-10": {
       "name": "Monte Rei",
@@ -1909,7 +1908,7 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 36,
       "percentage": 17.92,
-      "odds": 7.42,
+      "odds": 7.46,
       "selection": {
         "role": "Högoddsare",
         "why": "Bra senast med utrustningsändring och meriterad kusk.",
@@ -1918,7 +1917,7 @@
       "originalComment": "Starkt senast efter förändrad utrustning; bakspåret kräver tempo och positioner. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 17.92 % (+3.92 procentenheter), vinnarodds 7.42."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 17.92 % (+0.00 procentenheter), vinnarodds 7.46."
     },
     "8-11": {
       "name": "Celtic Tonga",
@@ -1929,12 +1928,12 @@
       "sourceUrl": "https://www.travmasen.com/text2_7.html",
       "tipperAI": 19,
       "percentage": 0.97,
-      "odds": 30.85,
+      "odds": 31.17,
       "selection": null,
       "originalComment": "Uppgivet bra intryck utan skor senast, men svårt utgångsläge. Lägre Tipper AI-tal i denna marknadsbild; kräver en särskild form- eller loppbildsfördel.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.97 % (-0.53 procentenheter), vinnarodds 30.85."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 0.97 % (+0.00 procentenheter), vinnarodds 31.17."
     },
     "8-12": {
       "name": "Florenzo",
@@ -1945,7 +1944,7 @@
       "sourceUrl": "https://www.aftonbladet.se/sportbladet/trav365/a/58RjBW/v85-tips-lordag-17-oktober-pa-gavle-analys-spikar-skrallar-och-system",
       "tipperAI": 41,
       "percentage": 7.36,
-      "odds": 8.0,
+      "odds": 8.06,
       "selection": {
         "role": "Motbud",
         "why": "Mycket stark för klassen och tydlig formutveckling.",
@@ -1954,7 +1953,7 @@
       "originalComment": "Bra utveckling i ny regi och imponerade senast; bakspåret innebär tydlig risk. Väg form och loppbild mot den aktuella streckandelen före slutligt beslut.",
       "scratched": false,
       "marketUpdateAt": "2026-10-17T10:30:30+02:00",
-      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.36 % (+1.06 procentenheter), vinnarodds 8.00."
+      "latestMarketNote": "ATG 2026-10-17T10:30:30+02:00: V85 7.36 % (+0.00 procentenheter), vinnarodds 8.06."
     }
   },
   "sourceUrls": [
