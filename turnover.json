@@ -12,11 +12,18 @@
       "sourceAt": "2026-10-17T10:54:30+02:00",
       "turnoverSEK": 14544470,
       "systemCount": 241075
+    },
+    {
+      "sourceAt": "2026-10-17T12:57:30+02:00",
+      "turnoverSEK": 27367258,
+      "systemCount": 404123,
+      "source": "ATG officiella spel-API",
+      "verifiedFrom": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-17_16_5"
     }
   ],
   "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-17_16_5",
   "sourceLabel": "ATG V85-pool",
-  "updatedAt": "2026-10-17T10:54:30+02:00",
-  "latestTurnoverSEK": 14544470,
-  "systemCount": 241075
+  "updatedAt": "2026-10-17T12:57:30+02:00",
+  "latestTurnoverSEK": 27367258,
+  "systemCount": 404123
 }
