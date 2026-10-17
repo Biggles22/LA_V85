@@ -75,8 +75,11 @@ def main():
         raise RuntimeError("Source timestamp is in the future")
     if market.get("gameId") != GAME_ID or start.get("gameId") != GAME_ID:
         raise RuntimeError("Local game ID mismatch")
-    if datetime.fromisoformat(market["updatedAt"]) >= datetime.fromisoformat(atg_stamp):
-        print("Already recorded or older ATG timestamp", atg_stamp)
+    latest_source=datetime.fromisoformat(market["updatedAt"])
+    current_source=datetime.fromisoformat(atg_stamp)
+    metadata_complete=all("trainer" in h and "homeTrackGavle" in h and "sameTrainerDriver" in h for r in start["races"] for h in r["starts"])
+    if latest_source > current_source or (latest_source == current_source and metadata_complete):
+        print("Already recorded and metadata complete, or older ATG timestamp", atg_stamp)
         return 0
 
     official_races = game.get("races") or []
@@ -114,7 +117,7 @@ def main():
             same=(trainer.get("id")==driver.get("id") if trainer.get("id") and driver.get("id") else None)
             trainer_track=trainer.get("homeTrack") or {}
             home=(trainer_track.get("id")==16 if trainer_track.get("id") is not None else None)
-            updates.append((horse, scratched, trainer_name, driver_name, trainer.get("id"),
+            updates.append((k, scratched, trainer_name, driver_name, trainer.get("id"),
                             driver.get("id"),trainer_track.get("name"),home,same))
             if scratched: scratch_names.append(k+" "+horse["name"])
     if len(fresh_pct)!=98:
@@ -153,7 +156,9 @@ def main():
     old_stamp=market.get("capturedAt")
     market["capturedAt"]=now.isoformat()
     market["oddsSourceRetrievedAt"]=now.isoformat()
-    for horse, scratched, trainer_name, driver_name, tid, did, trk, home, same in updates:
+    horse_by_key={h["key"]:h for r in start["races"] for h in r["starts"]}
+    for key, scratched, trainer_name, driver_name, tid, did, trk, home, same in updates:
+        horse=horse_by_key[key]
         horse["scratched"]=scratched
         horse["trainer"]={"name":trainer_name,"id":tid,"homeTrack":trk,
                           "homeTrackId":16 if home else (None if home is None else -1)}
