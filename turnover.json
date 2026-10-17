@@ -5,13 +5,18 @@
   "history": [
     {
       "sourceAt": "2026-10-17T10:30:30+02:00",
-      "turnoverSEK": 12963170.0,
+      "turnoverSEK": 12963170,
       "systemCount": 217060
+    },
+    {
+      "sourceAt": "2026-10-17T10:54:30+02:00",
+      "turnoverSEK": 14544470,
+      "systemCount": 241075
     }
   ],
   "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-17_16_5",
   "sourceLabel": "ATG V85-pool",
-  "updatedAt": "2026-10-17T10:30:30+02:00",
-  "latestTurnoverSEK": 12963170.0,
-  "systemCount": 217060
+  "updatedAt": "2026-10-17T10:54:30+02:00",
+  "latestTurnoverSEK": 14544470,
+  "systemCount": 241075
 }
