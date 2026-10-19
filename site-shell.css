@@ -1,0 +1,124 @@
+:root {
+  --site-width: 1180px;
+}
+
+.shell {
+  display: block !important;
+  min-height: 100vh;
+}
+
+.sidebar.site-header,
+.sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  min-height: 76px;
+  padding: 12px max(20px, calc((100vw - var(--site-width)) / 2)) !important;
+  border: 0 !important;
+  border-bottom: 1px solid #d9e0e9 !important;
+  background: rgba(255,255,255,.97) !important;
+  backdrop-filter: blur(12px);
+}
+
+.site-header .brand {
+  flex: 0 0 auto;
+  color: #172b4d;
+}
+
+.site-header nav {
+  display: flex !important;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.site-primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-primary-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  color: #52647c;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.site-primary-nav a:hover {
+  background: #f1f6fc;
+  color: #0057b8;
+}
+
+.site-primary-nav a[aria-current="page"] {
+  background: #dcecff;
+  color: #0057b8;
+  box-shadow: inset 0 -3px 0 #0057b8;
+}
+
+.site-primary-nav small {
+  margin-left: 7px;
+  color: inherit;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.shell > main {
+  width: min(calc(100% - 32px), var(--site-width)) !important;
+  max-width: var(--site-width) !important;
+  margin-inline: auto !important;
+  padding: 40px 0 64px !important;
+}
+
+.site-breadcrumb {
+  margin: 0 0 24px;
+  color: #60718a;
+  font-size: 13px;
+}
+
+.site-breadcrumb a {
+  color: #315b86;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .sidebar.site-header,
+  .sidebar {
+    position: static;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: auto;
+    padding: 12px 14px !important;
+  }
+
+  .site-header nav {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .site-primary-nav {
+    flex: 0 0 auto;
+  }
+
+  .site-primary-nav a {
+    white-space: nowrap;
+    padding-inline: 11px;
+  }
+
+  .site-primary-nav small {
+    display: none;
+  }
+
+  .shell > main {
+    width: min(calc(100% - 24px), var(--site-width)) !important;
+    padding: 24px 0 44px !important;
+  }
+}
