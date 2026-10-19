@@ -1,6 +1,13 @@
 :root {
   --site-width: 1180px;
+  --site-blue: #075dbd;
+  --site-navy: #122d51;
+  --site-muted: #60718a;
+  --site-line: #d9e3ee;
+  --site-bg: #f4f7fb;
 }
+
+body { background: var(--site-bg) !important; }
 
 .shell {
   display: block !important;
@@ -27,7 +34,7 @@
 
 .site-header .brand {
   flex: 0 0 auto;
-  color: #172b4d;
+  color: var(--site-navy);
 }
 
 .site-header nav {
@@ -64,6 +71,10 @@
   box-shadow: inset 0 -3px 0 #0057b8;
 }
 
+.site-header .brand-mark {
+  box-shadow: 0 7px 18px rgba(0,87,184,.18);
+}
+
 .site-primary-nav small {
   margin-left: 7px;
   color: inherit;
@@ -76,6 +87,74 @@
   max-width: var(--site-width) !important;
   margin-inline: auto !important;
   padding: 40px 0 64px !important;
+}
+
+.shell > main > h1,
+.shell > main > .page-heading h1 {
+  color: var(--site-navy);
+  letter-spacing: -.025em;
+}
+
+.round-context {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: -12px 0 34px;
+  padding: 14px 16px;
+  border: 1px solid var(--site-line);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 26px rgba(29,57,91,.06);
+}
+
+.round-context__identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.round-context__identity > a {
+  color: var(--site-muted);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.round-context__identity > span { color: #9aacbf; }
+.round-context__identity div { min-width: 0; }
+.round-context__identity strong { display: block; color: var(--site-navy); font-size: 15px; }
+.round-context__identity small { display: block; color: var(--site-muted); font-size: 12px; }
+
+.round-context__tabs {
+  display: flex;
+  gap: 5px;
+  padding: 4px;
+  border-radius: 9px;
+  background: #edf3fa;
+}
+
+.round-context__tabs a {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #52647c;
+  font-size: 13px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.round-context__tabs a[aria-current="page"] {
+  background: #fff;
+  color: var(--site-blue);
+  box-shadow: 0 2px 8px rgba(23,43,77,.12);
+}
+
+.panel,
+.cards article,
+.round,
+.result-grid article {
+  box-shadow: 0 8px 28px rgba(29,57,91,.045);
 }
 
 .site-breadcrumb {
@@ -120,5 +199,17 @@
   .shell > main {
     width: min(calc(100% - 24px), var(--site-width)) !important;
     padding: 24px 0 44px !important;
+  }
+
+  .round-context {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 0;
+  }
+
+  .round-context__tabs a {
+    flex: 1 1 0;
+    text-align: center;
   }
 }
