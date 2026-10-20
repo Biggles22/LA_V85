@@ -1,0 +1,37 @@
+name: Jägersro V85 odds and stable metadata
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/jagersro-hourly.yml"
+      - "scripts/update_jagersro.py"
+  schedule:
+    - cron: "0 7,12,18 20-22 10 *"
+    - cron: "0 6-22 23 10 *"
+    - cron: "0 0-12 24 10 *"
+permissions:
+  contents: write
+concurrency:
+  group: jagersro-v85-snapshot
+  cancel-in-progress: false
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch and validate 8 ATG races
+        run: python scripts/update_jagersro.py
+      - name: Commit changed ATG snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jagersro-20261024.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Jägersro V85 ATG startlist and odds [skip ci]"
+            git push
+          fi
