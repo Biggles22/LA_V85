@@ -1,0 +1,11 @@
+(()=>{"use strict";const host=document.getElementById("races");if(!host)return;
+const fmt=v=>v==null?"–":Number(v).toLocaleString("sv-SE",{maximumFractionDigits:2});
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+fetch("./jagersro-20261024.json?nocache="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Snapshot not yet published");return r.json()}).then(data=>{
+if(data.gameId!=="V85_2026-10-24_7_5"||data.races?.length!==8)throw Error("Incorrect data");
+let el=document.getElementById("jagersro-live-note");if(!el){el=document.createElement("p");el.id="jagersro-live-note";el.className="warn";host.parentNode.insertBefore(el,host)}
+el.textContent="ATG: komplett verifierad startlista, streck och vinnarodds. Senast hämtat "+(data.retrievedAt||"okänt")+"; källnotering "+(data.sourceAt||"okänd")+". Tidiga odds kan vara missvisande. 99,99 är ett visningstak, inte exakt odds. Ändringar i egen ranking sker separat.";
+host.innerHTML=data.races.map(r=>'<section class="race" style="overflow-x:auto"><h3>V85-'+r.leg+' · '+r.starts.length+' hästar</h3><table style="width:100%;border-collapse:collapse;font-size:.85rem"><thead><tr><th>Nr / Häst</th><th>Kusk</th><th>Tränare</th><th>Hemmabana</th><th>Kusk = tränare</th><th>V85 %</th><th>Odds</th><th>Trend</th></tr></thead><tbody>'+r.starts.map(h=>'<tr style="border-top:1px solid #e0e7ef'+(h.scratched?';opacity:.55':'')+'"><td><b>'+esc(h.number)+' '+esc(h.name)+'</b>'+(h.scratched?' (STRUKEN)':'')+'</td><td>'+esc(h.driver)+'</td><td>'+esc(h.trainer)+'</td><td>'+esc(h.trainerHome||"Ej tillgänglig")+'</td><td>'+(h.sameTrainerDriver===true?'✓ Ja':h.sameTrainerDriver===false?'Nej':'–')+'</td><td><b>'+fmt(h.pct)+' %</b></td><td>'+(h.oddsCapped?'≥99,99*':fmt(h.odds))+'</td><td>'+fmt(h.trend)+'</td></tr>').join("")+'</tbody></table></section>').join("");
+host.style.display="grid";host.style.gridTemplateColumns="1fr";host.style.gap="14px";
+}).catch(e=>{let note=document.createElement("p");note.className="warn";note.textContent="Komplett ATG-import väntar på första lyckade GitHub Actions-körningen. Den begränsade äldre listan visas tills dess. Kontrollera officiell ATG-startlista under tiden.";host.parentNode.insertBefore(note,host);console.warn(e)});
+})();
