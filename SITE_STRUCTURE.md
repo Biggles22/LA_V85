@@ -47,3 +47,10 @@ Förhandsmaterial ska aldrig skrivas om med facit i hand. Efter start arkiveras 
 ## Framgent
 
 För att undvika fortsatt specialkod bör nästa tekniska steg vara att flytta omgångsmetadata till en gemensam JSON-fil. Navigation, historikkort och omgångsflikar kan då genereras från samma källa. När den förändringen görs bör även Solvallas äldre `/resultatanalys/` flyttas till `/archive/2026-10-10-solvalla/analys/`, med en omdirigering från den gamla adressen.
+
+## Jägersro – marknadsdata
+
+- `jagersro-20261024.json` innehåller den senaste verifierade ATG-snapshoten för V85 den 24 oktober: startlistor, odds, streck, kuskar, tränare och hemmabanor.
+- `scripts/update_jagersro.py` används av GitHub Actions-flödet `.github/workflows/jagersro-hourly.yml` för att uppdatera snapshoten fram till spelstopp.
+- `jagersro-market.js` visar den verifierade snapshoten på startsidan. Källtid och eventuell brist på data måste alltid framgå; inga osäkra uppgifter ska presenteras som liveodds.
+- För ändringar från ChatGPT eller VS Code: läs alltid senaste GitHub-version och använd filens aktuella blob-SHA före uppdatering för att minska risken att skriva över parallella ändringar.
