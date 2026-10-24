@@ -122,6 +122,102 @@ const config=[
   "risk": "Spetsstrid och kort distans ger små marginaler. Senare utrustning och odds måste kontrolleras."
  }
 ];
+const finalRanking=[
+ {
+  "a": [
+   3
+  ],
+  "b": [
+   1,
+   2
+  ],
+  "note": "Spikförslag: Nilla Lane. Störst sportslig tilltro, men omkring tre fjärdedelar av strecken ger låg utdelningshävstång och stor systemrisk om hon förlorar."
+ },
+ {
+  "a": [
+   2,
+   7
+  ],
+  "b": [
+   9,
+   5,
+   8
+  ],
+  "note": "Öppet lopp. Polly Vici och Hawk Eyed Girl jämbördiga förstahästar. Gardera; Love Express W.F. är ett riskfyllt värdedrag."
+ },
+ {
+  "a": [
+   3,
+   1,
+   4
+  ],
+  "b": [
+   7,
+   6
+  ],
+  "note": "Veritas först, men Helan Går och Paleo Boko är reella hot. Charmant Dream är främsta lågprocentaren vid ledning; Rip Wheeler behöver utrustnings- och loppklaff."
+ },
+ {
+  "a": [
+   12,
+   5,
+   13
+  ],
+  "b": [
+   3,
+   8,
+   14,
+   11
+  ],
+  "note": "Chat Room kapabel men tillägg och voltstart gör spik osäker. Prince of Euro och Barkley tidiga; Ulix Turner och Indian som värdedrag. Special Ale chansskräll."
+ },
+ {
+  "a": [
+   1,
+   3,
+   12
+  ],
+  "b": [
+   6,
+   5,
+   7
+  ],
+  "note": "Omgångens främsta skrälljakt. Richmond kan bli fast; Barkov är vårt bästa värdedrag om han når spets utan galopp, Xture Rols kräver rätt tempo."
+ },
+ {
+  "a": [
+   7,
+   2,
+   10
+  ],
+  "b": [
+   1
+  ],
+  "note": "Tvingens Calippo stark favorit men svårt spår och hög streckandel. Datos Rainbow och Global Federation viktiga garderingar; Wannabe Zaz möjlig överraskning."
+ },
+ {
+  "a": [
+   3,
+   12
+  ],
+  "b": [
+   5,
+   10
+  ],
+  "note": "Diva Ek möjlig andra spik men lång distans, resa och A Fair Day som tungt motbud gör henne mindre trygg. Inga välgrundade huvudskrällar."
+ },
+ {
+  "a": [
+   6,
+   5,
+   4
+  ],
+  "b": [
+   3
+  ],
+  "note": "Nickel Occagnes först, men kort distans och spetsstrid ger risk. Gustav Simoni är ett prioriterat motbud med bantrivsel; Blixt Lane måste med på större system."
+ }
+];
 const baseline=[{n:3,p:75.42},{n:2,p:29.47},{n:3,p:40.92},{n:12,p:34.69},{n:1,p:31.13},{n:7,p:51.25},{n:3,p:49.99},{n:6,p:47.19}];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=v=>v==null?"–":Number(v).toLocaleString("sv-SE",{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -132,10 +228,11 @@ fetch(source,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("ATG-filen inte t
  const now=d.sourceAt||"okänt";
  const renderHorse=(r,n)=>{const h=r.starts.find(x=>x.number===n);if(!h)return esc(n)+" (ej verifierad)";return esc(n)+" "+esc(h.name)+" <span style='white-space:nowrap;color:#41698d'>("+fmt(h.pct)+" %, "+(h.oddsCapped?"≥99,99":fmt(h.odds))+" odds)</span>"+(h.scratched?" <strong>STRUKEN</strong>":"")};
  slot.innerHTML="<h2>Spik- och skrällradar med egen värdering · Jägersro 24 oktober</h2>"
- +"<p class='warn'><strong>ATG:s senast publicerade källnotering: "+esc(now)+".</strong> Hämtad till GitHub: "+esc(d.retrievedAt)+". Tabellen uppdateras automatiskt när nästa verifierade ATG-fil publiceras. Odds från små pooler är preliminära och kan vara missvisande. Egen spik- och skrällbedömning omvärderad 24 oktober kl. 12.57 utifrån startlägen, tänkbar loppbild, streck och risk; tidningstips är endast bakgrund. Ingen nyare fullständig ATG-notering än 09.39 har verifierats i GitHub. Kusk-/tränaruppgifter och strykningar gäller den snapshoten; sena ändringar, omsättning och slutlig utrustning är inte verifierade. Det är bedömningar, inte personliga spelval eller garanterad vinstchans.</p>"
+ +"<p class='warn'><strong>ATG:s senast publicerade källnotering: "+esc(now)+".</strong> Hämtad till GitHub: "+esc(d.retrievedAt)+". Tabellen uppdateras automatiskt när nästa verifierade ATG-fil publiceras. Odds från små pooler är preliminära och kan vara missvisande. Egen spik- och skrällbedömning slutligt preliminärt bedömd 24 oktober kl. 14.04 utifrån startlägen, tänkbar loppbild, streck och risk; tidningstips är endast bakgrund. Ingen nyare fullständig tidsstämplad ATG-notering än 09.39 har kunnat verifieras vid slutkontrollen kl. 14.04. Ändra inte streck eller odds utifrån odaterade webbutdrag. Kusk-/tränaruppgifter och strykningar gäller den snapshoten; sena ändringar, omsättning och slutlig utrustning är inte verifierade. Det är bedömningar, inte personliga spelval eller garanterad vinstchans.</p>"
  +"<p class='metric'>Lägesförändring jämförs med verifierad ATG-notering <strong>24 oktober kl. 04.21</strong> (föregående verifierade jämförelsenotering), inte automatiskt med föregående timme. V85-procent är marknadsstreck, inte uppskattad segerchans. ATG:s 99,99-visning är ett tak och ska inte tolkas som exakt vinnarodds.</p>"
  +"<div class='cards'><article><small>ATG-startande</small><strong>"+(all.length-scratched.length)+" / "+all.length+"</strong></article><article><small>Registrerade strykningar</small><strong>"+scratched.length+"</strong></article><article><small>Lopp analyserade</small><strong>8 / 8</strong></article></div>"
- +"<div class='panes'>"+d.races.map((r,i)=>{const c=config[i];const m=r.starts.find(h=>h.number===c.main);
+ +"<section class='panel'><h2>Slutlig preliminär ranking inför V85-start kl. 15.00</h2><p class='warn'><strong>Slutkontroll 24 oktober kl. 14.04.</strong> Senaste verifierade fullständiga ATG-källnotering: "+esc(now)+" (hämtad "+esc(d.retrievedAt)+"). Ingen nyare komplett tidsstämplad ATG-snapshot har kunnat verifieras. Alla streck och odds nedan är därför preliminära. Kontrollera sena strykningar, skor, vagn, kuskändringar och odds direkt hos ATG innan inlämning.</p><p><strong>Prioriterade spikprövningar:</strong> V85-1 nr 3 Nilla Lane och V85-7 nr 3 Diva Ek (högre risk). <strong>Främsta värdedrag:</strong> V85-5 nr 6 Barkov, V85-3 nr 7 Charmant Dream, V85-8 nr 5 Gustav Simoni, V85-5 nr 5 Xture Rols och V85-6 nr 2 Datos Rainbow. V85-streck är inte vår beräknade segerchans.</p><div class='panes'>"+d.races.map((r,i)=>{const f=finalRanking[i];return "<article class='race'><h3>V85-"+(i+1)+" · slutranking</h3><p><strong>A:</strong> "+f.a.map(n=>renderHorse(r,n)).join("; ")+"</p><p><strong>B:</strong> "+f.b.map(n=>renderHorse(r,n)).join("; ")+"</p><p>"+esc(f.note)+"</p></article>"}).join("")+"</div></section>"
++"<div class='panes'>"+d.races.map((r,i)=>{const c=config[i];const m=r.starts.find(h=>h.number===c.main);
  const diff=m&&baseline[i].n===c.main?(m.pct-baseline[i].p):null;
  return "<article class='race'><h3>V85-"+(i+1)+"</h3><p><strong>Förstahäst / spikprövning:</strong> "+renderHorse(r,c.main)+"</p><p class='metric'>Förändring i streck sedan 24/10 kl. 04.21: <strong>"+(diff==null?"–":(diff>=0?"+":"")+fmt(diff)+" procentenheter")+"</strong></p><p><strong>Motbud:</strong> "+c.alt.map(n=>renderHorse(r,n)).join("; ")+"</p><p><strong>Prioriterade värdedrag:</strong> "+(c.outs.length?c.outs.map(n=>renderHorse(r,n)).join("; "):"Inget tillräckligt underbyggt huvuddrag i detta lopp")+"</p>"+(c.longshots.length?"<p class='metric'><strong>Chansskrällar (hög risk):</strong> "+c.longshots.map(n=>renderHorse(r,n)).join("; ")+"</p>":"")+"<p>"+esc(c.why)+"</p><p class='warn'><strong>Risk:</strong> "+esc(c.risk)+"</p></article>"}).join("")+"</div>"
  +"<p class='source'>Källor: <a target='_blank' rel='noopener' href='https://www.atg.se/spel/2026-10-24/V85/jagersro'>ATG:s spel och marknadsdata</a> · <a target='_blank' rel='noopener' href='https://www.atg.se/V85/tips/261020-lordag-2410-tips-till-v85-pa-jagersro'>TR Media/ATG, expertanalys 21 oktober</a> · <a target='_blank' rel='noopener' href='https://www.aftonbladet.se/sportbladet/trav365/a/ElA39o/v85-tips-jagersro-lordag-24-oktober-basta-skrallarna-andelssystem'>Sportbladets skrällkoll 23 oktober</a> · <a target='_blank' rel='noopener' href='https://svenskatrav.n.nu/v85-tips-jagersro-24-oktober-2026'>SvenskaTrav, ranking 23 oktober</a> · <a target='_blank' rel='noopener' href='https://travia.se/v85/jagersro-2026-10-24'>Travia, modellranking</a> · <a target='_blank' rel='noopener' href='https://www.guiden.se/artiklar/guiden-expressv75/20261023/guiden-express-v85-jagersro-24-oktober/'>Guiden Express, expertanalys och tränarintervjuer 23 oktober</a>. Utrustningsuppgifter från tipskällor måste bekräftas med aktuell startinformation före spel.</p>";
