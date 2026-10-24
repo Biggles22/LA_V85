@@ -3,14 +3,124 @@
 const slot=document.getElementById("jagersro-radar-live");if(!slot)return;
 const source="./jagersro-20261024.json?atg="+Date.now();
 const config=[
- {main:3,alt:[1,2],outs:[10],why:"Nilla Lane har spetsläge och starkt stöd: både Micke Quist och Nils Larsson spikar i Sportbladets Skrällkollen 23/10. Hon har nu stärkts till 76,59 % i ATG:s notering 09.39, vilket höjer systemrisken vid spik. Panthere d'Inverne och Fantastica Doda är närmaste motbud; Nikki Lane är ett spekulativt tempoalternativ.",risk:"Mycket hög streckandel; stark vinstchans betyder inte automatiskt spelvärde."},
- {main:2,alt:[7,5,14],outs:[8,15],why:"Öppet stolopp: Polly Vici har fallit till 27,63 % medan Hawk Eyed Girl stigit till 23,36 % (ATG 09.39). Hawk Eyed Girl höjs till jämbördig A-kandidat i vår spikprövning; SvenskaTrav rankar henne först (extern expertbedömning). Guiden Express 23/10 pekar ut henne som möjlig ledare och utgångshäst, med planerad barfotabalans. Sportbladets experter 23/10 varnar för lågstreckade Love Express W.F. (Mario Lipovac) och Anna K.J. (Robert Lipovac/Kim Brask).",risk:"Love Express W.F. har haft paus och Anna K.J. har svårt utgångsläge. Guidens barfotauppgift om Hawk Eyed Girl är ännu inte bekräftad i detta ATG-uttag. Gardering snarare än spik."},
- {main:3,alt:[4,1,7],outs:[6,5],why:"Veritas är förstahäst och Robert Lipovacs spik 23/10. Nils Larsson föredrar däremot Helan Går. Guiden Express 23/10 bedömer 7 Charmant Dream som spetsfavorit och möjlig utmanare; 6 Rip Wheeler är tidigare outsider; Micke Quist lyfter Forest Wood och uppger planerat norskt huvudlag första gången.",risk:"Expertbedömningarna skiljer sig. Bekräfta utrustning på ATG; Forest Woods huvudlag är ännu inte verifierat. André Eklundh uppger i Guiden att Rip Wheeler planeras barfota runt om och med rycktussar, eventuellt open eye. Det är tränaruppgifter, inte bekräftade genomförda ändringar."},
- {main:12,alt:[5,13,3],outs:[3,14,8],why:"Chat Room är Micke Quists spik 23/10 men debuterar enligt honom i voltstart. Prince of Euro och Barkley är huvudmotbud. Sportbladet lyfter Ulix Turner, Geiles Leben Home och Indian som outsiders. Guiden Express bedömer Ulix Turner som tänkbar ledare om han klarar voltstarten och uppger planerad barfotabalans.",risk:"Voltstart och tillägg ökar osäkerheten. Uppgivna barfotauppgifter för Indian och Ulix Turner är expertuppgifter som måste kontrolleras mot ATG."},
- {main:1,alt:[3,12],outs:[5,6,8],why:"Richmond leder fortfarande strecken men har sjunkit till 30,06 %; Elroy Face är ett starkt A-motbud på 24,87 %. Barkov har ökat till 6,62 % och är en tydlig skrällidé med positiv marknadstrend, även uppmärksammad hos SvenskaTrav. Xture Rols lyfts av Mario Lipovac och Kim Brask; Barkov av Micke Quist; Konstapel Sisu av Robert Lipovac i Sportbladet 23/10. I Guidens intervju 23/10 anser Barkovs tränare Eric Martinsson att hästen är för lågt streckad och aviserar norskt huvudlag.",risk:"Öppet lopp med flera tänkbara vinnare. Möjlig jänkarvagn för Xture Rols och norskt huvudlag för Barkov är ännu obekräftade utrustningsuppgifter. Barkov är en skrällidé, inte en verifierad sannolikhetsfördel."},
- {main:7,alt:[10,1,2],outs:[1,2],why:"Tvingens Calippo är tydlig streckfavorit men har ett svårare startspår än Wannabe Zaz. SvenskaTrav rankar Wannabe Zaz först; Global Federation och Datos Rainbow är också motbud. Den höga streckandelen talar för att pröva gardering. Extern ranking är inte verifierad vinstsannolikhet.",risk:"Vinnarodds och V85-streck avser olika pooler; jämför inte dem som exakta vinstsannolikheter."},
- {main:3,alt:[12,5],outs:[11,4],why:"Diva Ek är Kim Brasks spik i Sportbladets Skrällkollen 23/10. A Fair Day och Kentucky River är huvudmotbud. Travia lyfter 11 Fighter Kronos som underspelad, men främst som platsskräll; Harpy är ett ännu mer spekulativt lågprocentigt alternativ.",risk:"A Fair Day är starkt motbud på lång distans. Guiden Express påminner om Diva Eks långa USA-resa och begränsade färska långdistansmeriter. Nr 8 Kaxig In är struken enligt ATG-snapshoten."},
- {main:6,alt:[4,5],outs:[3],why:"Nickel Occagnes är Mario Lipovacs spik 23/10 och har stigit till 48,92 % i ATG:s notering 09.39. SvenskaTrav rankar däremot Gustav Simoni före favoriten; Guiden Express föreslår ett lås på Nickel Occagnes och Gustav Simoni. Blixt Lane är också ett motbud. Look at Me Sisu bevakas som lågstreckat alternativ.",risk:"Kort distans och spetsstrid kan fälla favoriten; odds och streck är preliminära."}
+ {
+  "main": 3,
+  "alt": [
+   1,
+   2
+  ],
+  "outs": [],
+  "longshots": [
+   10
+  ],
+  "why": "Egen värdering: Nilla Lane har ett tydligt tänkbart spetslopp och högst segerchans i avdelningen. Panthere d'Inverne och Fantastica Doda är mer realistiska garderingar än en slumpmässig lågprocentare. Nikki Lane är endast chansskräll, inte huvuddrag.",
+  "risk": "Mycket hög streckandel: spiken kan vara sportsligt stark utan att ge bra spelvärde."
+ },
+ {
+  "main": 2,
+  "alt": [
+   7,
+   9,
+   5
+  ],
+  "outs": [
+   8
+  ],
+  "longshots": [
+   15
+  ],
+  "why": "Egen värdering: Polly Vici och Hawk Eyed Girl är jämna förstahästar; Hawk Eyed Girl kan nå en bra position tidigt. Mahakala och Job Girl är rimliga garderingar. Love Express W.F. är lågstreckad outsider, men pausen drar ned säkerheten. Anna K.J. är chansskräll från svårt läge.",
+  "risk": "Spår 15 för Anna K.J. och obekräftad barfotauppgift för Hawk Eyed Girl. Ingen given spik."
+ },
+ {
+  "main": 3,
+  "alt": [
+   1,
+   4
+  ],
+  "outs": [
+   7,
+   6
+  ],
+  "longshots": [
+   5
+  ],
+  "why": "Egen värdering: Veritas är förstahäst men Helan Går och Paleo Boko är starka motbud. Charmant Dream har ett konkret segerupplägg om hästen når ledningen. Rip Wheeler kan gynnas av aviserade utrustningsändringar. Forest Wood kräver mer klaff och räknas som chansskräll.",
+  "risk": "Spetsstrid och tempo avgör mycket. Uppgivna utrustningsändringar är inte verifierade som genomförda."
+ },
+ {
+  "main": 12,
+  "alt": [
+   5,
+   13
+  ],
+  "outs": [
+   3,
+   14,
+   8
+  ],
+  "longshots": [
+   11
+  ],
+  "why": "Egen värdering: Chat Room har hög kapacitet men tillägg och voltstart skapar osäkerhet. Prince of Euro och Barkley är tidiga motbud. Ulix Turner har tänkbart spetsläge men galopprisk; Geiles Leben Home och Indian är lågstreckade alternativ. Special Ale är en mer spekulativ voltstartsidé.",
+  "risk": "Voltstart, tillägg och galopprisk. Utrustningsuppgifter från intervjuer är inte slutligt bekräftade."
+ },
+ {
+  "main": 1,
+  "alt": [
+   3,
+   12
+  ],
+  "outs": [
+   6,
+   5
+  ],
+  "longshots": [
+   8
+  ],
+  "why": "Egen värdering: V85-5 är främsta skrälljakten. Richmond riskerar trafikproblem från innerspåret; Elroy Face och Hard Rock är riktiga motbud. Barkov prioriteras som huvudskräll tack vare möjlig spets och låg streckandel. Xture Rols har form men kan behöva tempo. Konstapel Sisu är endast chansskräll.",
+  "risk": "Barkov har galopprisk; huvudlagsuppgift obekräftad. Xture Rols kan hamna långt bak."
+ },
+ {
+  "main": 7,
+  "alt": [
+   10
+  ],
+  "outs": [
+   2,
+   1
+  ],
+  "longshots": [],
+  "why": "Egen värdering: Tvingens Calippo är kapabel men spår 7 och hög streckandel motiverar gardering. Datos Rainbow har ett gynnsamt startläge och är ett intressant motbud; Wannabe Zaz kan också få en bättre resa än favoriten. Global Federation är ett starkt garderingsbud.",
+  "risk": "Vinnarodds kommer från annan pool än V85-streck och är ingen direkt sannolikhetsmodell."
+ },
+ {
+  "main": 3,
+  "alt": [
+   12,
+   5
+  ],
+  "outs": [],
+  "longshots": [
+   11,
+   4
+  ],
+  "why": "Egen värdering: Diva Ek är en rimlig spikprövning men A Fair Day och Kentucky River är betydligt mer realistiska motbud än de allra lägst streckade. Här finns ingen tillräckligt underbyggd huvudskräll just nu. Fighter Kronos och Harpy får endast chansskrällstatus.",
+  "risk": "A Fair Day har styrka för distansen; Diva Eks långdistansform behöver vägas in. Nummer 8 Kaxig In är struken i senast verifierade snapshot."
+ },
+ {
+  "main": 6,
+  "alt": [
+   4
+  ],
+  "outs": [
+   5,
+   3
+  ],
+  "longshots": [],
+  "why": "Egen värdering: Nickel Occagnes är förstahäst, men på kort distans kan spetsstriden bli avgörande. Gustav Simoni har dokumenterad bantrivsel och är ett prioriterat motbud trots att han inte är extremt lågt streckad. Blixt Lane har bra utgångsläge; Look at Me Sisu är en mer lågstreckad utmanare.",
+  "risk": "Spetsstrid och kort distans ger små marginaler. Senare utrustning och odds måste kontrolleras."
+ }
 ];
 const baseline=[{n:3,p:75.42},{n:2,p:29.47},{n:3,p:40.92},{n:12,p:34.69},{n:1,p:31.13},{n:7,p:51.25},{n:3,p:49.99},{n:6,p:47.19}];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -21,13 +131,13 @@ fetch(source,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("ATG-filen inte t
  const scratched=all.filter(x=>x.scratched);
  const now=d.sourceAt||"okänt";
  const renderHorse=(r,n)=>{const h=r.starts.find(x=>x.number===n);if(!h)return esc(n)+" (ej verifierad)";return esc(n)+" "+esc(h.name)+" <span style='white-space:nowrap;color:#41698d'>("+fmt(h.pct)+" %, "+(h.oddsCapped?"≥99,99":fmt(h.odds))+" odds)</span>"+(h.scratched?" <strong>STRUKEN</strong>":"")};
- slot.innerHTML="<h2>Senaste spik- och skrällradar · Jägersro 24 oktober</h2>"
- +"<p class='warn'><strong>ATG:s senast publicerade källnotering: "+esc(now)+".</strong> Hämtad till GitHub: "+esc(d.retrievedAt)+". Tabellen uppdateras automatiskt när nästa verifierade ATG-fil publiceras. Odds från små pooler är preliminära och kan vara missvisande. Analysen bygger på expertunderlag från 23 oktober, inklusive Guiden Express, och har omvärderats 24 oktober kl. 10.03 mot ATG:s källnotering 09.39. Det finns inga verifierade nya kusk-/tränarändringar eller ytterligare strykningar jämfört med 04.21. Omsättning och slutliga utrustningsändringar är inte verifierade. Det är bedömningar, inte personliga spelval eller garanterad vinstchans.</p>"
+ slot.innerHTML="<h2>Spik- och skrällradar med egen värdering · Jägersro 24 oktober</h2>"
+ +"<p class='warn'><strong>ATG:s senast publicerade källnotering: "+esc(now)+".</strong> Hämtad till GitHub: "+esc(d.retrievedAt)+". Tabellen uppdateras automatiskt när nästa verifierade ATG-fil publiceras. Odds från små pooler är preliminära och kan vara missvisande. Egen spik- och skrällbedömning omvärderad 24 oktober kl. 12.57 utifrån startlägen, tänkbar loppbild, streck och risk; tidningstips är endast bakgrund. Ingen nyare fullständig ATG-notering än 09.39 har verifierats i GitHub. Kusk-/tränaruppgifter och strykningar gäller den snapshoten; sena ändringar, omsättning och slutlig utrustning är inte verifierade. Det är bedömningar, inte personliga spelval eller garanterad vinstchans.</p>"
  +"<p class='metric'>Lägesförändring jämförs med verifierad ATG-notering <strong>24 oktober kl. 04.21</strong> (föregående verifierade jämförelsenotering), inte automatiskt med föregående timme. V85-procent är marknadsstreck, inte uppskattad segerchans. ATG:s 99,99-visning är ett tak och ska inte tolkas som exakt vinnarodds.</p>"
  +"<div class='cards'><article><small>ATG-startande</small><strong>"+(all.length-scratched.length)+" / "+all.length+"</strong></article><article><small>Registrerade strykningar</small><strong>"+scratched.length+"</strong></article><article><small>Lopp analyserade</small><strong>8 / 8</strong></article></div>"
  +"<div class='panes'>"+d.races.map((r,i)=>{const c=config[i];const m=r.starts.find(h=>h.number===c.main);
  const diff=m&&baseline[i].n===c.main?(m.pct-baseline[i].p):null;
- return "<article class='race'><h3>V85-"+(i+1)+"</h3><p><strong>Förstahäst / spikprövning:</strong> "+renderHorse(r,c.main)+"</p><p class='metric'>Förändring i streck sedan 24/10 kl. 04.21: <strong>"+(diff==null?"–":(diff>=0?"+":"")+fmt(diff)+" procentenheter")+"</strong></p><p><strong>Motbud:</strong> "+c.alt.map(n=>renderHorse(r,n)).join("; ")+"</p><p><strong>Skrällradar:</strong> "+c.outs.map(n=>renderHorse(r,n)).join("; ")+"</p><p>"+esc(c.why)+"</p><p class='warn'><strong>Risk:</strong> "+esc(c.risk)+"</p></article>"}).join("")+"</div>"
+ return "<article class='race'><h3>V85-"+(i+1)+"</h3><p><strong>Förstahäst / spikprövning:</strong> "+renderHorse(r,c.main)+"</p><p class='metric'>Förändring i streck sedan 24/10 kl. 04.21: <strong>"+(diff==null?"–":(diff>=0?"+":"")+fmt(diff)+" procentenheter")+"</strong></p><p><strong>Motbud:</strong> "+c.alt.map(n=>renderHorse(r,n)).join("; ")+"</p><p><strong>Prioriterade värdedrag:</strong> "+(c.outs.length?c.outs.map(n=>renderHorse(r,n)).join("; "):"Inget tillräckligt underbyggt huvuddrag i detta lopp")+"</p>"+(c.longshots.length?"<p class='metric'><strong>Chansskrällar (hög risk):</strong> "+c.longshots.map(n=>renderHorse(r,n)).join("; ")+"</p>":"")+"<p>"+esc(c.why)+"</p><p class='warn'><strong>Risk:</strong> "+esc(c.risk)+"</p></article>"}).join("")+"</div>"
  +"<p class='source'>Källor: <a target='_blank' rel='noopener' href='https://www.atg.se/spel/2026-10-24/V85/jagersro'>ATG:s spel och marknadsdata</a> · <a target='_blank' rel='noopener' href='https://www.atg.se/V85/tips/261020-lordag-2410-tips-till-v85-pa-jagersro'>TR Media/ATG, expertanalys 21 oktober</a> · <a target='_blank' rel='noopener' href='https://www.aftonbladet.se/sportbladet/trav365/a/ElA39o/v85-tips-jagersro-lordag-24-oktober-basta-skrallarna-andelssystem'>Sportbladets skrällkoll 23 oktober</a> · <a target='_blank' rel='noopener' href='https://svenskatrav.n.nu/v85-tips-jagersro-24-oktober-2026'>SvenskaTrav, ranking 23 oktober</a> · <a target='_blank' rel='noopener' href='https://travia.se/v85/jagersro-2026-10-24'>Travia, modellranking</a> · <a target='_blank' rel='noopener' href='https://www.guiden.se/artiklar/guiden-expressv75/20261023/guiden-express-v85-jagersro-24-oktober/'>Guiden Express, expertanalys och tränarintervjuer 23 oktober</a>. Utrustningsuppgifter från tipskällor måste bekräftas med aktuell startinformation före spel.</p>";
 }).catch(e=>{slot.innerHTML="<h2>Senaste spik- och skrällradar</h2><p class='warn'>ATG-underlaget kunde inte läsas just nu. Tidigare publicerade startlistor finns nedan; inga nya procenttal kan bekräftas.</p>";console.warn(e)});
 })();
