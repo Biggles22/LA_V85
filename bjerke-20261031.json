@@ -1,9 +1,11 @@
 {
   "gameId": "V85_2026-10-31_78_5",
   "track": "Bjerke",
-  "retrievedAt": "2026-10-26T20:17:55.468285+01:00",
+  "retrievedAt": "2026-10-26T20:23:10.684366+01:00",
   "source": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-31_78_5",
   "sourceAt": "2026-10-26 20:01:30",
+  "turnoverSEK": 7470500,
+  "systemCount": 1525,
   "races": [
     {
       "leg": 1,

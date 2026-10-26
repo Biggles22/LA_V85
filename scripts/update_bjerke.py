@@ -21,8 +21,10 @@ def main():
     previous=json.loads(DEST.read_text()) if DEST.exists() else {}
     track=(races[0].get("track") or {}).get("name")
     if track != "Bjerke": raise ValueError("Wrong track: "+str(track))
+    v85pool=game.get("pools",{}).get("V85",{})
     record={"gameId":ID,"track":track,"retrievedAt":now.isoformat(),"source":URL,
-            "sourceAt":game.get("pools",{}).get("V85",{}).get("timestamp"),"races":[]}
+            "sourceAt":v85pool.get("timestamp"),"turnoverSEK":v85pool.get("turnover"),
+            "systemCount":v85pool.get("systemCount"),"races":[]}
     total=0
     for i,r in enumerate(races,1):
         entries=[]
@@ -50,7 +52,8 @@ def main():
     if total<90 or total>120:raise ValueError("Unexpected runner count "+str(total))
     if previous.get("sourceAt") and record["sourceAt"] and str(record["sourceAt"])<str(previous["sourceAt"]):
         print("Older snapshot; skipped");return
-    if previous.get("sourceAt")==record["sourceAt"] and previous.get("races")==record["races"]:
+    if (previous.get("sourceAt")==record["sourceAt"] and previous.get("turnoverSEK")==record["turnoverSEK"]
+            and previous.get("systemCount")==record["systemCount"] and previous.get("races")==record["races"]):
         print("No new ATG source data");return
     DEST.write_text(json.dumps(record,ensure_ascii=False,indent=2)+"\n")
     print("Updated",total,"horses",record["sourceAt"])
