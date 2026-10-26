@@ -99,21 +99,23 @@ def parse_record(record):
 
 
 def performance(place, galloped):
-    if galloped is True:
-        return 0.2
+    # A horse can gallop, recover and still WIN. Never turn a confirmed
+    # first place into a bottom performance solely because gallop=True.
     if place is None:
-        return None
+        return 0.2 if galloped is True else None
     if place == 1:
-        return 5.0
-    if place == 2:
-        return 4.0
-    if place == 3:
-        return 3.3
-    if place <= 5:
-        return 2.5
-    if place <= 8:
-        return 1.5
-    return 0.7
+        base = 5.0
+    elif place == 2:
+        base = 4.0
+    elif place == 3:
+        base = 3.3
+    elif place <= 5:
+        base = 2.5
+    elif place <= 8:
+        base = 1.5
+    else:
+        base = 0.7
+    return max(0.2, base - 0.4) if galloped is True else base
 
 
 def score_form(rows):
