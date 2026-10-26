@@ -183,7 +183,7 @@
             }
           ],
           "scores": {
-            "form": 3.22,
+            "form": 3.44,
             "pace": null,
             "class": null,
             "gear": null,
@@ -423,7 +423,7 @@
             }
           ],
           "scores": {
-            "form": 2.05,
+            "form": 2.29,
             "pace": null,
             "class": null,
             "gear": null,
@@ -723,7 +723,7 @@
             }
           ],
           "scores": {
-            "form": 3.57,
+            "form": 3.8,
             "pace": null,
             "class": null,
             "gear": null,
@@ -790,7 +790,7 @@
             }
           ],
           "scores": {
-            "form": 1.98,
+            "form": 2.86,
             "pace": null,
             "class": null,
             "gear": null,
@@ -850,13 +850,13 @@
             }
           ],
           "scores": {
-            "form": 3.04,
+            "form": 4.27,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": 2.6,
+          "distanceOnlyScore": 4.8,
           "coverage": {
             "form": true,
             "risk": false,
@@ -970,7 +970,7 @@
             }
           ],
           "scores": {
-            "form": 3.82,
+            "form": 4.13,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1090,7 +1090,7 @@
             }
           ],
           "scores": {
-            "form": 3.79,
+            "form": 4.09,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1150,7 +1150,7 @@
             }
           ],
           "scores": {
-            "form": 1.89,
+            "form": 2.42,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1390,7 +1390,7 @@
             }
           ],
           "scores": {
-            "form": 1.5,
+            "form": 2.03,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1577,13 +1577,13 @@
             }
           ],
           "scores": {
-            "form": 2.61,
+            "form": 3.44,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": 2.0
           },
-          "distanceOnlyScore": 2.68,
+          "distanceOnlyScore": 3.44,
           "coverage": {
             "form": true,
             "risk": true,
@@ -1697,13 +1697,13 @@
             }
           ],
           "scores": {
-            "form": 2.46,
+            "form": 3.4,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": 2.55,
+          "distanceOnlyScore": 3.4,
           "coverage": {
             "form": true,
             "risk": false,
@@ -1757,13 +1757,13 @@
             }
           ],
           "scores": {
-            "form": 3.2,
+            "form": 3.43,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": 2.0
           },
-          "distanceOnlyScore": 2.68,
+          "distanceOnlyScore": 3.06,
           "coverage": {
             "form": true,
             "risk": true,
@@ -1817,13 +1817,13 @@
             }
           ],
           "scores": {
-            "form": 2.99,
+            "form": 3.48,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": 2.0
           },
-          "distanceOnlyScore": 3.55,
+          "distanceOnlyScore": 4.03,
           "coverage": {
             "form": true,
             "risk": true,
@@ -1877,7 +1877,7 @@
             }
           ],
           "scores": {
-            "form": 2.31,
+            "form": 2.54,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1937,13 +1937,13 @@
             }
           ],
           "scores": {
-            "form": 2.14,
+            "form": 2.52,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": 2.0
           },
-          "distanceOnlyScore": 2.38,
+          "distanceOnlyScore": 2.76,
           "coverage": {
             "form": true,
             "risk": true,
@@ -2057,13 +2057,13 @@
             }
           ],
           "scores": {
-            "form": 3.92,
+            "form": 4.3,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": 3.84,
+          "distanceOnlyScore": 4.22,
           "coverage": {
             "form": true,
             "risk": false,
@@ -2117,13 +2117,13 @@
             }
           ],
           "scores": {
-            "form": 2.77,
+            "form": 3.53,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": 2.0
           },
-          "distanceOnlyScore": 2.6,
+          "distanceOnlyScore": 3.55,
           "coverage": {
             "form": true,
             "risk": true,
@@ -2184,7 +2184,7 @@
             }
           ],
           "scores": {
-            "form": 2.0,
+            "form": 2.38,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2424,7 +2424,7 @@
             }
           ],
           "scores": {
-            "form": 2.12,
+            "form": 2.66,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2911,7 +2911,7 @@
             }
           ],
           "scores": {
-            "form": 2.98,
+            "form": 3.51,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2971,7 +2971,7 @@
             }
           ],
           "scores": {
-            "form": 4.14,
+            "form": 4.37,
             "pace": null,
             "class": null,
             "gear": null,
@@ -3211,7 +3211,7 @@
             }
           ],
           "scores": {
-            "form": 2.74,
+            "form": 3.12,
             "pace": null,
             "class": null,
             "gear": null,
@@ -3631,7 +3631,7 @@
             }
           ],
           "scores": {
-            "form": 3.55,
+            "form": 4.0,
             "pace": null,
             "class": null,
             "gear": null,
@@ -3698,13 +3698,13 @@
             }
           ],
           "scores": {
-            "form": 2.42,
+            "form": 2.87,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": 1.67,
+          "distanceOnlyScore": 2.3,
           "coverage": {
             "form": true,
             "risk": false,
@@ -3938,13 +3938,13 @@
             }
           ],
           "scores": {
-            "form": 3.03,
+            "form": 3.85,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": 2.0
           },
-          "distanceOnlyScore": 2.88,
+          "distanceOnlyScore": 3.74,
           "coverage": {
             "form": true,
             "risk": true,
@@ -4058,13 +4058,13 @@
             }
           ],
           "scores": {
-            "form": 2.77,
+            "form": 3.45,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": 2.0
           },
-          "distanceOnlyScore": 2.57,
+          "distanceOnlyScore": 3.2,
           "coverage": {
             "form": true,
             "risk": true,
@@ -4425,7 +4425,7 @@
             }
           ],
           "scores": {
-            "form": 2.31,
+            "form": 2.84,
             "pace": null,
             "class": null,
             "gear": null,
@@ -4485,7 +4485,7 @@
             }
           ],
           "scores": {
-            "form": 2.17,
+            "form": 3.01,
             "pace": null,
             "class": null,
             "gear": null,
@@ -4665,7 +4665,7 @@
             }
           ],
           "scores": {
-            "form": 3.33,
+            "form": 3.71,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5032,7 +5032,7 @@
             }
           ],
           "scores": {
-            "form": 3.02,
+            "form": 3.77,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5092,7 +5092,7 @@
             }
           ],
           "scores": {
-            "form": 4.01,
+            "form": 4.25,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5212,7 +5212,7 @@
             }
           ],
           "scores": {
-            "form": 2.51,
+            "form": 2.94,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5272,7 +5272,7 @@
             }
           ],
           "scores": {
-            "form": 3.28,
+            "form": 3.59,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5332,7 +5332,7 @@
             }
           ],
           "scores": {
-            "form": 2.88,
+            "form": 3.42,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5392,7 +5392,7 @@
             }
           ],
           "scores": {
-            "form": 2.52,
+            "form": 3.72,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5452,7 +5452,7 @@
             }
           ],
           "scores": {
-            "form": 2.79,
+            "form": 2.9,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5572,7 +5572,7 @@
             }
           ],
           "scores": {
-            "form": 1.75,
+            "form": 2.73,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5812,7 +5812,7 @@
             }
           ],
           "scores": {
-            "form": 3.32,
+            "form": 3.55,
             "pace": null,
             "class": null,
             "gear": null,
@@ -5892,5 +5892,5 @@
       ]
     }
   ],
-  "retrievedAt": "2026-10-27T00:22:01.844791+01:00"
+  "retrievedAt": "2026-10-27T00:23:52.890569+01:00"
 }
