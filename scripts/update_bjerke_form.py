@@ -202,6 +202,15 @@ def main():
         try:
             payload, url = fetch_extended(race_number)
             starts = payload["starts"]
+            if leg == 1 and starts:
+                first = starts[0]
+                hf = first.get("horse") if isinstance(first.get("horse"), dict) else {}
+                print("PROBE top keys:", list(payload.keys()), flush=True)
+                print("PROBE first start keys:", list(first.keys()), flush=True)
+                print("PROBE horse keys:", list(hf.keys()), flush=True)
+                print("PROBE start.results:", repr(first.get("results"))[:1100], flush=True)
+                print("PROBE horse.results:", repr(hf.get("results"))[:800], flush=True)
+                print("PROBE first number:", repr(first.get("number")), "horse name:", repr(hf.get("name")), flush=True)
             # Match BOTH number and horse name. If an API race doesn't align, do not mislabel history.
             found = {}
             for s in starts:
