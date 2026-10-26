@@ -15,7 +15,7 @@
     <a class="brand" href="${root.href}"><span class="brand-mark">LA</span><span>LA_V85</span></a>
     <nav aria-label="Huvudnavigering">
       <div class="site-primary-nav">
-        <a href="${root.href}" ${onCurrent ? 'aria-current="page"' : ''}>Aktuell omgång <small>Jägersro · 24 okt</small></a>
+        <a href="${root.href}" ${onCurrent ? 'aria-current="page"' : ''}>Aktuell omgång <small>Bjerke · 31 okt</small></a>
         <a href="${url('history/')}" ${onHistory ? 'aria-current="page"' : ''}>Historik <small>Omgångar &amp; analyser</small></a>
       </div>
     </nav>`;
@@ -26,6 +26,11 @@
   document.body.classList.toggle('is-history', onHistory);
 
   const rounds = [
+    {
+      match: '2026-10-24-jagersro',
+      track: 'Jägersro', date: '24 oktober 2026', status: 'Avslutad',
+      overview: 'archive/2026-10-24-jagersro/', analysis: 'archive/2026-10-24-jagersro/#efteranalys'
+    },
     {
       match: '2026-10-17-gavle',
       track: 'Gävle', date: '17 oktober 2026', status: 'Avslutad',

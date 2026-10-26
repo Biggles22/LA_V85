@@ -1,0 +1,23 @@
+(() => {
+  'use strict';
+  const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const fmt=v=>typeof v==='number'?v.toLocaleString('sv-SE',{minimumFractionDigits:2,maximumFractionDigits:2}):'–';
+  const trend=v=>typeof v==='number'?`${v>0?'+':''}${fmt(v)}`:'–';
+  const trendClass=v=>v>0?'trend-up':v<0?'trend-down':'';
+  const asTime=value=>value?String(value).replace('T',' ').slice(0,16):'Okänd';
+  function renderStatus(d){
+    const horses=d.races.flatMap(r=>r.starts),active=horses.filter(h=>!h.scratched).length;
+    document.querySelector('#round-status').innerHTML=`<div><span>Första V85-start</span><strong>15.00</strong><small>Lördag 31 oktober</small></div><div><span>Startande</span><strong>${active} / ${horses.length}</strong><small>${horses.length-active} registrerade strykningar</small></div><div><span>Senaste marknadsnotering</span><strong>${esc(asTime(d.sourceAt))}</strong><small>ATG-snapshot · inte live</small></div>`;
+  }
+  function renderRaces(d){
+    document.querySelector('#race-jumps').innerHTML=d.races.map(r=>`<a href="#v85-${r.leg}">V85-${r.leg}</a>`).join('');
+    document.querySelector('#race-lists').innerHTML=d.races.map(r=>`<article class="race-block" id="v85-${r.leg}"><div class="race-title"><div><span>Avdelning ${r.leg}</span><h3>V85-${r.leg}</h3></div><p>${r.starts[0]?.distance||'–'} m · ${r.starts.length} hästar</p></div><div class="table-scroll" tabindex="0" aria-label="Startlista V85-${r.leg}"><table class="overview-table"><thead><tr><th>Nr / häst</th><th>Kusk</th><th>Tränare</th><th>Hemmabana</th><th>V85 %</th><th>Trend</th><th>V-odds</th></tr></thead><tbody>${r.starts.map(h=>`<tr${h.scratched?' class="withdrawn"':''}><td><strong class="horse-name">${h.number} ${esc(h.name)}</strong><small>${h.scratched?'STRUKEN':`Spår ${h.postPosition??'–'}`}</small></td><td>${esc(h.driver||'–')}</td><td>${esc(h.trainer||'–')}</td><td>${esc(h.trainerHome||'Ej angiven')}</td><td class="number-cell"><strong>${fmt(h.pct)} %</strong></td><td class="number-cell ${trendClass(h.trend)}">${trend(h.trend)}</td><td class="number-cell">${h.oddsCapped?'≥99,99':fmt(h.odds)}</td></tr>`).join('')}</tbody></table></div></article>`).join('');
+  }
+  function renderMarketWork(d){
+    const favorites=d.races.map(r=>({leg:r.leg,horse:r.starts.filter(h=>!h.scratched&&typeof h.pct==='number').sort((a,b)=>b.pct-a.pct)[0]})).filter(x=>x.horse).sort((a,b)=>b.horse.pct-a.horse.pct).slice(0,3);
+    document.querySelector('#spike-list').innerHTML=favorites.map(x=>`<article class="pick-card"><div class="pick-top"><span>V85-${x.leg}</span><span class="pick-level">Marknadsfavorit</span></div><h3>${x.horse.number} ${esc(x.horse.name)}</h3><p>Tidig marknadsledare. Detta är en bevakningspunkt, inte ett färdigt spikförslag.</p><div class="pick-metrics"><span>${fmt(x.horse.pct)} %</span><span>${x.horse.oddsCapped?'≥99,99':fmt(x.horse.odds)} i odds</span></div></article>`).join('');
+    const outsiders=d.races.flatMap(r=>r.starts.filter(h=>!h.scratched&&typeof h.pct==='number'&&h.pct>=2&&h.pct<=10).map(h=>({leg:r.leg,horse:h}))).sort((a,b)=>(b.horse.trend??-999)-(a.horse.trend??-999)).slice(0,5);
+    document.querySelector('#outsider-list').innerHTML=outsiders.length?outsiders.map(x=>`<article class="pick-card"><div class="pick-top"><span>V85-${x.leg}</span><span class="pick-level">Bevakas</span></div><h3>${x.horse.number} ${esc(x.horse.name)}</h3><p>Låg tidig streckandel och relativt stark trend. Kräver form- och loppbildsanalys före eventuell rekommendation.</p><div class="pick-metrics"><span>${fmt(x.horse.pct)} %</span><span class="${trendClass(x.horse.trend)}">${trend(x.horse.trend)} trend</span></div></article>`).join(''):'<p class="work-note">Inga kandidater går ännu att sortera fram ur den tidiga marknaden. Analysen uppdateras när speldata finns.</p>';
+  }
+  fetch('./bjerke-20261031.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Datafel');return r.json()}).then(d=>{if(d.gameId!=='V85_2026-10-31_78_5'||d.track!=='Bjerke'||d.races?.length!==8)throw Error('Fel omgång');renderStatus(d);renderRaces(d);renderMarketWork(d)}).catch(e=>{document.querySelector('#round-status').innerHTML='<p class="work-note">Status kunde inte hämtas.</p>';document.querySelector('#race-lists').innerHTML='<p class="work-note">Startlistorna kunde inte läsas. Försök ladda om sidan.</p>';document.querySelector('#spike-list').innerHTML='<p class="work-note">Analysen är ännu inte publicerad.</p>';document.querySelector('#outsider-list').innerHTML='<p class="work-note">Analysen är ännu inte publicerad.</p>';console.warn(e)});
+})();

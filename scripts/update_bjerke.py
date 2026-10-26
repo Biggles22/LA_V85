@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Verified ATG Jägersro V85 snapshot; keeps all 102 starters and trainer metadata."""
+"""Capture and validate the current Bjerke V85 snapshot from ATG."""
 import json,urllib.request,datetime,pathlib,sys
 from zoneinfo import ZoneInfo
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-ID="V85_2026-10-24_7_5"
+ID="V85_2026-10-31_78_5"
 URL="https://www.atg.se/services/racinginfo/v1/api/games/"+ID
-DEST=ROOT/"jagersro-20261024.json"
+DEST=ROOT/"bjerke-20261031.json"
 tz=ZoneInfo("Europe/Stockholm")
 def person(p):
     return " ".join(x for x in [p.get("firstName"),p.get("lastName")] if x)
 def main():
     now=datetime.datetime.now(tz)
-    if now>=datetime.datetime(2026,10,24,15,tzinfo=tz):
+    if now>=datetime.datetime(2026,10,31,15,tzinfo=tz):
         print("Round started; do not overwrite historical snapshot");return
     req=urllib.request.Request(URL,headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
     with urllib.request.urlopen(req,timeout=35) as r: game=json.load(r)
@@ -19,7 +19,9 @@ def main():
     races=game.get("races",[])
     if len(races)!=8:raise ValueError("Expected 8 races")
     previous=json.loads(DEST.read_text()) if DEST.exists() else {}
-    record={"gameId":ID,"track":"Jägersro","retrievedAt":now.isoformat(),"source":URL,
+    track=(races[0].get("track") or {}).get("name")
+    if track != "Bjerke": raise ValueError("Wrong track: "+str(track))
+    record={"gameId":ID,"track":track,"retrievedAt":now.isoformat(),"source":URL,
             "sourceAt":game.get("pools",{}).get("V85",{}).get("timestamp"),"races":[]}
     total=0
     for i,r in enumerate(races,1):

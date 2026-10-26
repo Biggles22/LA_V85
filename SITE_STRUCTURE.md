@@ -18,8 +18,9 @@ Förhandsmaterial ska aldrig skrivas om med facit i hand. Efter start arkiveras 
 
 | Nivå | Sida | Syfte |
 | --- | --- | --- |
-| Aktuell | `/` | Jägersro 24 oktober, startlista och arbetsranking |
+| Aktuell | `/` | Bjerke 31 oktober, startlista och arbetsyta |
 | Master | `/history/` | Samlad ingång till alla avslutade omgångar |
+| Omgång | `/archive/2026-10-24-jagersro/` | Jägersros förhandsmaterial och efteranalys |
 | Omgång | `/archive/2026-10-17-gavle/` | Gävles frysta förhandsmaterial |
 | Analys | `/archive/2026-10-17-gavle/analys/` | Gävles efteranalys |
 | Omgång | `/archive/2026-10-10-solvalla/` | Solvallas frysta förhandsmaterial |
@@ -48,9 +49,9 @@ Förhandsmaterial ska aldrig skrivas om med facit i hand. Efter start arkiveras 
 
 För att undvika fortsatt specialkod bör nästa tekniska steg vara att flytta omgångsmetadata till en gemensam JSON-fil. Navigation, historikkort och omgångsflikar kan då genereras från samma källa. När den förändringen görs bör även Solvallas äldre `/resultatanalys/` flyttas till `/archive/2026-10-10-solvalla/analys/`, med en omdirigering från den gamla adressen.
 
-## Jägersro – marknadsdata
+## Bjerke – marknadsdata
 
-- `jagersro-20261024.json` innehåller den senaste verifierade ATG-snapshoten för V85 den 24 oktober: startlistor, odds, streck, kuskar, tränare och hemmabanor.
-- `scripts/update_jagersro.py` används av GitHub Actions-flödet `.github/workflows/jagersro-hourly.yml` för att uppdatera snapshoten fram till spelstopp.
-- `jagersro-market.js` visar den verifierade snapshoten på startsidan. Källtid och eventuell brist på data måste alltid framgå; inga osäkra uppgifter ska presenteras som liveodds.
+- `bjerke-20261031.json` innehåller den senaste verifierade ATG-snapshoten för V85 den 31 oktober: startlistor, odds, streck, kuskar, tränare och hemmabanor.
+- `scripts/update_bjerke.py` används av GitHub Actions-flödet `.github/workflows/bjerke-hourly.yml` för att uppdatera snapshoten fram till spelstopp.
+- `bjerke-dashboard.js` visar snapshoten på startsidan. Källtid och eventuell brist på data måste alltid framgå; inga uppgifter ska presenteras som liveodds.
 - För ändringar från ChatGPT eller VS Code: läs alltid senaste GitHub-version och använd filens aktuella blob-SHA före uppdatering för att minska risken att skriva över parallella ändringar.

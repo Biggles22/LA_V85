@@ -1,19 +1,19 @@
-name: Jägersro V85 odds and stable metadata
+name: Bjerke V85 startlist and market snapshot
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - ".github/workflows/jagersro-hourly.yml"
-      - "scripts/update_jagersro.py"
+      - ".github/workflows/bjerke-hourly.yml"
+      - "scripts/update_bjerke.py"
   schedule:
-    - cron: "0 7,12,18 20-22 10 *"
-    - cron: "0 6-22 23 10 *"
-    - cron: "0 0-12 24 10 *"
+    - cron: "0 7,12,18 27-29 10 *"
+    - cron: "0 6-22 30 10 *"
+    - cron: "0 0-12 31 10 *"
 permissions:
   contents: write
 concurrency:
-  group: jagersro-v85-snapshot
+  group: bjerke-v85-snapshot
   cancel-in-progress: false
 jobs:
   capture:
@@ -25,13 +25,13 @@ jobs:
         with:
           python-version: "3.12"
       - name: Fetch and validate 8 ATG races
-        run: python scripts/update_jagersro.py
+        run: python scripts/update_bjerke.py
       - name: Commit changed ATG snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add jagersro-20261024.json
+          git add bjerke-20261031.json
           if ! git diff --cached --quiet; then
-            git commit -m "Update Jägersro V85 ATG startlist and odds [skip ci]"
+            git commit -m "Update Bjerke V85 ATG startlist and odds [skip ci]"
             git push
           fi
