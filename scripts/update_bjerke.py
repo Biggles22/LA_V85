@@ -22,8 +22,10 @@ def main():
     track=(races[0].get("track") or {}).get("name")
     if track != "Bjerke": raise ValueError("Wrong track: "+str(track))
     v85pool=game.get("pools",{}).get("V85",{})
+    turnover=v85pool.get("turnover")
+    turnover_sek=round(turnover/100,2) if isinstance(turnover,(int,float)) else None
     record={"gameId":ID,"track":track,"retrievedAt":now.isoformat(),"source":URL,
-            "sourceAt":v85pool.get("timestamp"),"turnoverSEK":v85pool.get("turnover"),
+            "sourceAt":v85pool.get("timestamp"),"turnoverSEK":turnover_sek,
             "systemCount":v85pool.get("systemCount"),"races":[]}
     total=0
     for i,r in enumerate(races,1):
