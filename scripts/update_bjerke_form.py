@@ -42,7 +42,11 @@ def as_date(value):
 
 
 def number(value):
-    return float(value) if type(value) in (int, float) else None
+    if type(value) in (int, float):
+        return float(value)
+    if isinstance(value, str) and re.fullmatch(r"\d+(?:\.\d+)?", value.strip()):
+        return float(value.strip())
+    return None
 
 
 def fetch_extended(race_number):
@@ -57,9 +61,10 @@ def fetch_extended(race_number):
 
 def records_of(start):
     # Published reference: results.records; tolerate missing/alternate wrappers.
-    results = start.get("results")
-    if isinstance(results, dict) and isinstance(results.get("records"), list):
-        return results["records"]
+    horse = start.get("horse") if isinstance(start.get("horse"), dict) else {}
+    for source in (horse.get("results"), start.get("results")):
+        if isinstance(source, dict) and isinstance(source.get("records"), list):
+            return source["records"]
     if isinstance(start.get("records"), list):
         return start["records"]
     return []
@@ -89,7 +94,7 @@ def parse_record(record):
         "place": int(placed) if placed is not None else None,
         "galloped": has_gallop if galloped is not None or disqualified is not None else None,
         "distance": int(distance) if distance is not None and 800 <= distance <= 6000 else None,
-        "raceId": race.get("id") or record.get("link"),
+        "raceId": race.get("id") or None,
     }
 
 
@@ -202,15 +207,6 @@ def main():
         try:
             payload, url = fetch_extended(race_number)
             starts = payload["starts"]
-            if leg == 1 and starts:
-                first = starts[0]
-                hf = first.get("horse") if isinstance(first.get("horse"), dict) else {}
-                print("PROBE top keys:", list(payload.keys()), flush=True)
-                print("PROBE first start keys:", list(first.keys()), flush=True)
-                print("PROBE horse keys:", list(hf.keys()), flush=True)
-                print("PROBE start.results:", repr(first.get("results"))[:1100], flush=True)
-                print("PROBE horse.results:", repr(hf.get("results"))[:800], flush=True)
-                print("PROBE first number:", repr(first.get("number")), "horse name:", repr(hf.get("name")), flush=True)
             # Match BOTH number and horse name. If an API race doesn't align, do not mislabel history.
             found = {}
             for s in starts:
