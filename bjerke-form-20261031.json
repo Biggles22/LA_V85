@@ -1,0 +1,2404 @@
+{
+  "schemaVersion": 1,
+  "gameId": "V85_2026-10-31_78_5",
+  "track": "Bjerke",
+  "raceDate": "2026-10-31",
+  "atgSourceAt": "2026-10-26 20:31:30",
+  "method": "Backward-only last-five form score; NOT a calibrated win probability.",
+  "limitations": "Pace, class and equipment are not inferred from odds, popularity or start number. No full 100-point automatic ranking.",
+  "coverage": {
+    "activeHorses": 97,
+    "horsesWithHistory": 0,
+    "formRated": 0,
+    "riskRated": 0,
+    "failedRaces": 0
+  },
+  "failures": [],
+  "races": [
+    {
+      "leg": 1,
+      "raceNumber": 5,
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-10-31_78_5/extended",
+      "horses": [
+        {
+          "number": 1,
+          "name": "Jaguar Godiva",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 2,
+          "name": "Hickovelocissimo",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 3,
+          "name": "Great Old Dance",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 4,
+          "name": "J.C.",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 5,
+          "name": "Leverage",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 6,
+          "name": "Jackson Trot",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 7,
+          "name": "Hercules Godiva",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 8,
+          "name": "Legligin",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 9,
+          "name": "Tayno B.B.",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 10,
+          "name": "Fly Express",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 11,
+          "name": "Ulaya",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 12,
+          "name": "Zigzag Zagazoo",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        }
+      ]
+    },
+    {
+      "leg": 2,
+      "raceNumber": 6,
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-10-31_78_6/extended",
+      "horses": [
+        {
+          "number": 1,
+          "name": "Baias",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 2,
+          "name": "Gigant Tider",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 3,
+          "name": "Tordenskjold",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 4,
+          "name": "Voje Lotta",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 5,
+          "name": "Bare Mattis",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 6,
+          "name": "Grisle Tore G.L.",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 7,
+          "name": "Holter Odin",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 8,
+          "name": "Tangen Nils",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 9,
+          "name": "Prinsesse Ness Tjo",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 10,
+          "name": "Tripsson Ø.K.",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 11,
+          "name": "Alm Kevin",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        }
+      ]
+    },
+    {
+      "leg": 3,
+      "raceNumber": 7,
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-10-31_78_7/extended",
+      "horses": [
+        {
+          "number": 1,
+          "name": "Lilli Kentucky S.F.",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 2,
+          "name": "Pauhunri Boko",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 3,
+          "name": "Moor Jeting",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 4,
+          "name": "Daisy Love",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 5,
+          "name": "Lapin Kulta Sox",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 6,
+          "name": "Sauron Zon",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 7,
+          "name": "S.B.'sPeakyBlinder",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 8,
+          "name": "Surpriced Tooma",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 9,
+          "name": "Man of Means",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 10,
+          "name": "Chasse Artist",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 11,
+          "name": "Urban Tile",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 12,
+          "name": "Gobsmacked",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "raceNumber": 8,
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-10-31_78_8/extended",
+      "horses": [
+        {
+          "number": 1,
+          "name": "Baron Tilly",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 2,
+          "name": "Daim Brodda",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 3,
+          "name": "Before Takeoff",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 4,
+          "name": "Xanthis Harvey",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 5,
+          "name": "Charron",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 6,
+          "name": "Powwow",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 7,
+          "name": "Crown",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 8,
+          "name": "Clarissa",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 9,
+          "name": "Lando Mearas",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 10,
+          "name": "Castor the Star",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        }
+      ]
+    },
+    {
+      "leg": 5,
+      "raceNumber": 9,
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-10-31_78_9/extended",
+      "horses": [
+        {
+          "number": 1,
+          "name": "Yellowstone Doc",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 2,
+          "name": "Peacekeeper",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 3,
+          "name": "Paleo Boko",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 4,
+          "name": "Orazi Cesare",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 5,
+          "name": "Fabulous Gent",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 6,
+          "name": "Neil Jung",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 7,
+          "name": "Hans Palema",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 8,
+          "name": "Chantecler",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 9,
+          "name": "Mattex",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 10,
+          "name": "Livorno",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 11,
+          "name": "Eldfell",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 12,
+          "name": "Firedup",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 13,
+          "name": "Ready For Cash",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 14,
+          "name": "Burn",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 15,
+          "name": "Lippi",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "raceNumber": 10,
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-10-31_78_10/extended",
+      "horses": [
+        {
+          "number": 1,
+          "name": "Mimosa to Martini",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 2,
+          "name": "Stella Ammik",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 3,
+          "name": "Peggy Boko",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 4,
+          "name": "Catchagaga Volo",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 5,
+          "name": "Lipa Wee",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 6,
+          "name": "G.G. Golden Power",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 7,
+          "name": "Rihanna T.G.",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 8,
+          "name": "G.G. Gentil",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 9,
+          "name": "Sherburne S.",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 10,
+          "name": "Leonora by Hans",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 11,
+          "name": "Day Time Trot",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 12,
+          "name": "Goldie Home",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        }
+      ]
+    },
+    {
+      "leg": 7,
+      "raceNumber": 11,
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-10-31_78_11/extended",
+      "horses": [
+        {
+          "number": 1,
+          "name": "Goodbye Kiss",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 2,
+          "name": "Blank",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 3,
+          "name": "Blizzard Diamant",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 4,
+          "name": "Variegated",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 5,
+          "name": "Muzan Kibutsuji",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 6,
+          "name": "Bully Pepper",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 7,
+          "name": "Giotto Grif",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 8,
+          "name": "Wise Guy",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 9,
+          "name": "Ludvig Cash",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 10,
+          "name": "Onyx B.R.",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        }
+      ]
+    },
+    {
+      "leg": 8,
+      "raceNumber": 12,
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-10-31_78_12/extended",
+      "horses": [
+        {
+          "number": 1,
+          "name": "Eye to Eye",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 2,
+          "name": "Sanctuaire",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 3,
+          "name": "Raina Schermer",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 4,
+          "name": "Kollund Møbler",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 5,
+          "name": "Luxury Rain",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 6,
+          "name": "Mellby Maybe",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 7,
+          "name": "Jealous Rain",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 8,
+          "name": "Good Guessing",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 9,
+          "name": "Normaal",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 10,
+          "name": "Hankypanky Leonie",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 11,
+          "name": "Zero Hugs'n Kisses",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 12,
+          "name": "Nore'n",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 13,
+          "name": "Sparkling Power",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 14,
+          "name": "Gaga Lady",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        },
+        {
+          "number": 15,
+          "name": "Bella Yankee",
+          "scratched": false,
+          "previousStarts": 0,
+          "lastFive": [],
+          "scores": {
+            "form": null,
+            "pace": null,
+            "class": null,
+            "gear": null,
+            "risk": null
+          },
+          "distanceOnlyScore": null,
+          "coverage": {
+            "form": false,
+            "risk": false,
+            "pace": false,
+            "class": false,
+            "gear": false
+          },
+          "status": "no_history",
+          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+        }
+      ]
+    }
+  ],
+  "retrievedAt": "2026-10-27T00:17:12.646218+01:00"
+}
