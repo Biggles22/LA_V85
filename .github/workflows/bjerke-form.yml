@@ -1,0 +1,42 @@
+name: Bjerke V85 - verified historical form
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/bjerke-form.yml"
+      - "scripts/update_bjerke_form.py"
+  schedule:
+    # Swedish winter time CET (UTC+1); 2026-10-31 start 15:00 CET.
+    - cron: "30 6,18 27-30 10 *"
+    - cron: "15 6-12 31 10 *"
+permissions:
+  contents: write
+concurrency:
+  group: bjerke-v85-form
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch previous starts and calculate evidence-limited form scores
+        run: python scripts/update_bjerke_form.py
+      - name: Commit form evidence only if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if test -f bjerke-form-20261031.json; then
+            git add bjerke-form-20261031.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Update Bjerke verified historical form evidence [skip ci]"
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          else
+            echo "Form file not generated; nothing to publish."
+          fi
