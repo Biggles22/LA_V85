@@ -8,9 +8,9 @@
   "limitations": "Pace, class and equipment are not inferred from odds, popularity or start number. No full 100-point automatic ranking.",
   "coverage": {
     "activeHorses": 97,
-    "horsesWithHistory": 0,
-    "formRated": 0,
-    "riskRated": 0,
+    "horsesWithHistory": 97,
+    "formRated": 97,
+    "riskRated": 16,
     "failedRaces": 0
   },
   "failures": [],
@@ -24,10 +24,46 @@
           "number": 1,
           "name": "Jaguar Godiva",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-10",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-10_5_11"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-12_17_11"
+            },
+            {
+              "date": "2026-08-29",
+              "place": 3,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-08-29_9_11"
+            },
+            {
+              "date": "2026-08-07",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-07_33_8"
+            },
+            {
+              "date": "2026-07-23",
+              "place": 6,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-23_9_4"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.5,
             "pace": null,
             "class": null,
             "gear": null,
@@ -35,23 +71,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 2,
           "name": "Hickovelocissimo",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-18",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-18_31_10"
+            },
+            {
+              "date": "2026-09-30",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-30_5_8"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 0,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-09-19_15_10"
+            },
+            {
+              "date": "2026-08-15",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-15_6_11"
+            },
+            {
+              "date": "2026-07-26",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-26_21_9"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.5,
             "pace": null,
             "class": null,
             "gear": null,
@@ -59,23 +131,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 3,
           "name": "Great Old Dance",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-17",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-17_16_11"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 7,
+              "galloped": true,
+              "distance": 3140,
+              "raceId": "2026-09-19_15_12"
+            },
+            {
+              "date": "2026-08-19",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-19_5_11"
+            },
+            {
+              "date": "2026-07-18",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-18_8_6"
+            },
+            {
+              "date": "2026-07-01",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-07-01_21_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.22,
             "pace": null,
             "class": null,
             "gear": null,
@@ -83,47 +191,119 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 4,
           "name": "J.C.",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-19",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-19_22_4"
+            },
+            {
+              "date": "2026-09-26",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-26_6_10"
+            },
+            {
+              "date": "2026-09-06",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-06_7_10"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-08-25_8_3"
+            },
+            {
+              "date": "2026-08-11",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-11_78_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.3,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 5.0,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 5,
           "name": "Leverage",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-04-02",
+              "place": 0,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-04-02_16_12"
+            },
+            {
+              "date": "2026-03-04",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-03-04_5_9"
+            },
+            {
+              "date": "2026-02-14",
+              "place": 8,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-02-14_6_12"
+            },
+            {
+              "date": "2026-02-04",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-02-04_5_5"
+            },
+            {
+              "date": "2025-12-26",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2025-12-26_5_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.77,
             "pace": null,
             "class": null,
             "gear": null,
@@ -131,71 +311,179 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 6,
           "name": "Jackson Trot",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-20",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-20_78_7"
+            },
+            {
+              "date": "2026-09-29",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-09-29_78_8"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 0,
+              "galloped": null,
+              "distance": 2040,
+              "raceId": "2026-09-19_81_9"
+            },
+            {
+              "date": "2026-08-31",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-31_15_9"
+            },
+            {
+              "date": "2026-08-02",
+              "place": 4,
+              "galloped": null,
+              "distance": 1700,
+              "raceId": "2026-08-02_36_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.79,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.25,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 7,
           "name": "Hercules Godiva",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-02",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-10-02_12_5"
+            },
+            {
+              "date": "2026-08-02",
+              "place": 6,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-08-02_13_5"
+            },
+            {
+              "date": "2026-07-22",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-07-22_25_9"
+            },
+            {
+              "date": "2026-07-08",
+              "place": 8,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-08_26_6"
+            },
+            {
+              "date": "2026-06-10",
+              "place": 0,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-06-10_23_10"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.05,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 8,
           "name": "Legligin",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-17",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-17_16_11"
+            },
+            {
+              "date": "2026-09-05",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-05_7_5"
+            },
+            {
+              "date": "2026-08-19",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-19_5_9"
+            },
+            {
+              "date": "2026-08-01",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-01_24_12"
+            },
+            {
+              "date": "2026-07-04",
+              "place": 3,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-04_18_9"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.75,
             "pace": null,
             "class": null,
             "gear": null,
@@ -203,71 +491,179 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 9,
           "name": "Tayno B.B.",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-20",
+              "place": 3,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-20_78_7"
+            },
+            {
+              "date": "2026-10-06",
+              "place": 3,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-06_78_6"
+            },
+            {
+              "date": "2026-09-29",
+              "place": 0,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-09-29_78_8"
+            },
+            {
+              "date": "2026-09-06",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-06_7_10"
+            },
+            {
+              "date": "2026-08-11",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-11_78_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.22,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.9,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 10,
           "name": "Fly Express",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-19",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-19_22_9"
+            },
+            {
+              "date": "2026-10-07",
+              "place": 2,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-07_8_9"
+            },
+            {
+              "date": "2026-09-26",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-26_6_10"
+            },
+            {
+              "date": "2026-09-05",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-05_7_5"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 4,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-08-25_8_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.35,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.25,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 11,
           "name": "Ulaya",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-30",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-09-30_7_9"
+            },
+            {
+              "date": "2026-08-15",
+              "place": 6,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-08-15_6_8"
+            },
+            {
+              "date": "2026-07-21",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-07-21_7_7"
+            },
+            {
+              "date": "2026-06-01",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-01_18_4"
+            },
+            {
+              "date": "2026-04-08",
+              "place": 4,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-04-08_18_8"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.46,
             "pace": null,
             "class": null,
             "gear": null,
@@ -275,23 +671,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 12,
           "name": "Zigzag Zagazoo",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-07",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-07_5_9"
+            },
+            {
+              "date": "2026-09-17",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-17_6_9"
+            },
+            {
+              "date": "2026-09-02",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-02_8_9"
+            },
+            {
+              "date": "2026-07-19",
+              "place": 4,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-07-19_8_7"
+            },
+            {
+              "date": "2026-07-10",
+              "place": 5,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-07-10_31_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.57,
             "pace": null,
             "class": null,
             "gear": null,
@@ -299,14 +731,14 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         }
       ]
     },
@@ -319,10 +751,46 @@
           "number": 1,
           "name": "Baias",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-19",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-19_15_8"
+            },
+            {
+              "date": "2026-09-05",
+              "place": 7,
+              "galloped": null,
+              "distance": 1600,
+              "raceId": "2026-09-05_77_8"
+            },
+            {
+              "date": "2026-08-22",
+              "place": 1,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-08-22_82_7"
+            },
+            {
+              "date": "2026-08-08",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-08_33_7"
+            },
+            {
+              "date": "2026-07-18",
+              "place": 2,
+              "galloped": null,
+              "distance": 2609,
+              "raceId": "2026-07-18_99_8"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 1.98,
             "pace": null,
             "class": null,
             "gear": null,
@@ -330,71 +798,179 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 2,
           "name": "Gigant Tider",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-15",
+              "place": 1,
+              "galloped": true,
+              "distance": 1620,
+              "raceId": "2026-10-15_81_3"
+            },
+            {
+              "date": "2026-09-30",
+              "place": 1,
+              "galloped": null,
+              "distance": 2040,
+              "raceId": "2026-09-30_81_2"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-19_15_8"
+            },
+            {
+              "date": "2026-09-05",
+              "place": 1,
+              "galloped": null,
+              "distance": 1600,
+              "raceId": "2026-09-05_77_8"
+            },
+            {
+              "date": "2026-08-19",
+              "place": 2,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-08-19_5_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.04,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.6,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 3,
           "name": "Tordenskjold",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-20",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-20_78_2"
+            },
+            {
+              "date": "2026-10-06",
+              "place": 4,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-06_78_5"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-19_15_8"
+            },
+            {
+              "date": "2026-09-05",
+              "place": 2,
+              "galloped": null,
+              "distance": 1600,
+              "raceId": "2026-09-05_77_8"
+            },
+            {
+              "date": "2026-08-22",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-22_82_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.84,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.25,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 4,
           "name": "Voje Lotta",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-06",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-06_78_5"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-19_15_8"
+            },
+            {
+              "date": "2026-08-29",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-29_85_8"
+            },
+            {
+              "date": "2026-08-19",
+              "place": 4,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-08-19_5_3"
+            },
+            {
+              "date": "2026-07-18",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-18_99_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.82,
             "pace": null,
             "class": null,
             "gear": null,
@@ -402,23 +978,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 5,
           "name": "Bare Mattis",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-19",
+              "place": 1,
+              "galloped": null,
+              "distance": 2040,
+              "raceId": "2026-09-19_81_6"
+            },
+            {
+              "date": "2026-08-22",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-08-22_82_5"
+            },
+            {
+              "date": "2026-08-01",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-01_80_7"
+            },
+            {
+              "date": "2026-07-18",
+              "place": 4,
+              "galloped": null,
+              "distance": 2609,
+              "raceId": "2026-07-18_99_8"
+            },
+            {
+              "date": "2026-06-13",
+              "place": 2,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-06-13_78_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.28,
             "pace": null,
             "class": null,
             "gear": null,
@@ -426,23 +1038,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 6,
           "name": "Grisle Tore G.L.",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-20",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-20_78_2"
+            },
+            {
+              "date": "2026-10-06",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-06_78_5"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-19_15_8"
+            },
+            {
+              "date": "2026-08-22",
+              "place": 0,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-08-22_82_7"
+            },
+            {
+              "date": "2026-08-08",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-08_33_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.79,
             "pace": null,
             "class": null,
             "gear": null,
@@ -450,47 +1098,119 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 7,
           "name": "Holter Odin",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-20",
+              "place": 4,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-10-20_78_2"
+            },
+            {
+              "date": "2026-10-06",
+              "place": 3,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-06_78_5"
+            },
+            {
+              "date": "2026-09-26",
+              "place": 0,
+              "galloped": null,
+              "distance": 1660,
+              "raceId": "2026-09-26_96_1"
+            },
+            {
+              "date": "2026-09-05",
+              "place": 6,
+              "galloped": null,
+              "distance": 1600,
+              "raceId": "2026-09-05_77_8"
+            },
+            {
+              "date": "2026-08-22",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-22_82_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 1.89,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.43,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 8,
           "name": "Tangen Nils",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-13",
+              "place": 1,
+              "galloped": null,
+              "distance": 2600,
+              "raceId": "2026-09-13_78_9"
+            },
+            {
+              "date": "2026-08-28",
+              "place": 1,
+              "galloped": null,
+              "distance": 2600,
+              "raceId": "2026-08-28_78_7"
+            },
+            {
+              "date": "2026-08-08",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-08_33_9"
+            },
+            {
+              "date": "2026-07-27",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-27_33_3"
+            },
+            {
+              "date": "2026-06-30",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-30_17_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.59,
             "pace": null,
             "class": null,
             "gear": null,
@@ -498,23 +1218,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 9,
           "name": "Prinsesse Ness Tjo",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-26",
+              "place": 1,
+              "galloped": null,
+              "distance": 2620,
+              "raceId": "2026-09-26_96_4"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-12_17_9"
+            },
+            {
+              "date": "2026-08-19",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-19_5_3"
+            },
+            {
+              "date": "2026-08-01",
+              "place": 3,
+              "galloped": null,
+              "distance": 2180,
+              "raceId": "2026-08-01_24_8"
+            },
+            {
+              "date": "2026-07-25",
+              "place": 0,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-07-25_12_10"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.42,
             "pace": null,
             "class": null,
             "gear": null,
@@ -522,62 +1278,134 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 10,
           "name": "Tripsson Ø.K.",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-20",
+              "place": 0,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-20_78_2"
+            },
+            {
+              "date": "2026-09-01",
+              "place": 4,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-09-01_78_8"
+            },
+            {
+              "date": "2026-08-11",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-11_78_10"
+            },
+            {
+              "date": "2026-07-31",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-31_80_5"
+            },
+            {
+              "date": "2026-07-10",
+              "place": 3,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-07-10_85_1"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.0,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.75,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 11,
           "name": "Alm Kevin",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-18",
+              "place": 0,
+              "galloped": true,
+              "distance": 1800,
+              "raceId": "2026-10-18_83_11"
+            },
+            {
+              "date": "2026-10-06",
+              "place": 5,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-06_78_5"
+            },
+            {
+              "date": "2026-09-26",
+              "place": 6,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-09-26_96_4"
+            },
+            {
+              "date": "2026-06-20",
+              "place": 7,
+              "galloped": null,
+              "distance": 2320,
+              "raceId": "2026-06-20_83_6"
+            },
+            {
+              "date": "2026-06-10",
+              "place": 5,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-06-10_23_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 1.5,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.5,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         }
       ]
     },
@@ -590,289 +1418,721 @@
           "number": 1,
           "name": "Lilli Kentucky S.F.",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-08",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-08_99_6"
+            },
+            {
+              "date": "2026-09-24",
+              "place": 2,
+              "galloped": null,
+              "distance": 2120,
+              "raceId": "2026-09-24_85_6"
+            },
+            {
+              "date": "2026-09-10",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-10_85_4"
+            },
+            {
+              "date": "2026-08-27",
+              "place": 5,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-27_78_7"
+            },
+            {
+              "date": "2026-05-22",
+              "place": 0,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-05-22_85_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.78,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.6,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 2,
           "name": "Pauhunri Boko",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-08-26",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-26_6_6"
+            },
+            {
+              "date": "2026-07-29",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-29_82_1"
+            },
+            {
+              "date": "2026-06-06",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-06-06_85_6"
+            },
+            {
+              "date": "2026-05-29",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-05-29_85_6"
+            },
+            {
+              "date": "2026-05-15",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-05-15_80_2"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.8,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 4.75,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 3,
           "name": "Moor Jeting",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-11",
+              "place": 1,
+              "galloped": null,
+              "distance": 2000,
+              "raceId": "2026-10-11_55_3"
+            },
+            {
+              "date": "2026-09-23",
+              "place": 0,
+              "galloped": true,
+              "distance": 2000,
+              "raceId": "2026-09-23_55_6"
+            },
+            {
+              "date": "2026-07-10",
+              "place": 0,
+              "galloped": true,
+              "distance": 2060,
+              "raceId": "2026-07-10_54_6"
+            },
+            {
+              "date": "2026-06-24",
+              "place": 2,
+              "galloped": null,
+              "distance": 2060,
+              "raceId": "2026-06-24_54_1"
+            },
+            {
+              "date": "2026-06-03",
+              "place": 2,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-06-03_54_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.61,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.68,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 4,
           "name": "Daisy Love",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-23",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-23_96_6"
+            },
+            {
+              "date": "2026-10-09",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-09_96_5"
+            },
+            {
+              "date": "2026-07-24",
+              "place": 7,
+              "galloped": null,
+              "distance": 2620,
+              "raceId": "2026-07-24_96_6"
+            },
+            {
+              "date": "2026-07-15",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-07-15_82_1"
+            },
+            {
+              "date": "2026-06-26",
+              "place": 3,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-06-26_96_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.93,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 4.1,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 5,
           "name": "Lapin Kulta Sox",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-20",
+              "place": 2,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-20_14_9"
+            },
+            {
+              "date": "2026-10-04",
+              "place": 3,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-10-04_14_5"
+            },
+            {
+              "date": "2026-09-21",
+              "place": 0,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-21_12_9"
+            },
+            {
+              "date": "2026-09-06",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-06_21_7"
+            },
+            {
+              "date": "2026-08-27",
+              "place": 4,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-08-27_16_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.46,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.55,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 6,
           "name": "Sauron Zon",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-21",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-21_5_4"
+            },
+            {
+              "date": "2026-04-27",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-04-27_15_3"
+            },
+            {
+              "date": "2026-02-19",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-02-19_6_5"
+            },
+            {
+              "date": "2026-02-11",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-02-11_5_1"
+            },
+            {
+              "date": "2025-12-19",
+              "place": 0,
+              "galloped": true,
+              "distance": 2160,
+              "raceId": "2025-12-19_15_1"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.2,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.68,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 7,
           "name": "S.B.'sPeakyBlinder",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-18",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-18_31_6"
+            },
+            {
+              "date": "2026-09-29",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-29_8_5"
+            },
+            {
+              "date": "2026-08-31",
+              "place": 7,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-08-31_15_10"
+            },
+            {
+              "date": "2026-08-09",
+              "place": 5,
+              "galloped": true,
+              "distance": 2080,
+              "raceId": "2026-08-09_29_5"
+            },
+            {
+              "date": "2026-07-19",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-19_21_4"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.99,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.55,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 8,
           "name": "Surpriced Tooma",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-09",
+              "place": null,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-10-09_5_5"
+            },
+            {
+              "date": "2026-09-20",
+              "place": 1,
+              "galloped": null,
+              "distance": 2660,
+              "raceId": "2026-09-20_17_6"
+            },
+            {
+              "date": "2026-09-03",
+              "place": 1,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-09-03_32_7"
+            },
+            {
+              "date": "2026-08-24",
+              "place": null,
+              "galloped": true,
+              "distance": 2160,
+              "raceId": "2026-08-24_14_4"
+            },
+            {
+              "date": "2026-08-01",
+              "place": 0,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-08-01_24_11"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.31,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.6,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 9,
           "name": "Man of Means",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-21",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-21_6_2"
+            },
+            {
+              "date": "2026-09-29",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-29_8_2"
+            },
+            {
+              "date": "2026-08-28",
+              "place": 0,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-08-28_78_4"
+            },
+            {
+              "date": "2026-08-06",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-06_6_7"
+            },
+            {
+              "date": "2026-07-20",
+              "place": 1,
+              "galloped": null,
+              "distance": 2148,
+              "raceId": "2026-07-20_43_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.14,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.38,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 10,
           "name": "Chasse Artist",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-17",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-17_80_9"
+            },
+            {
+              "date": "2026-10-02",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-02_80_7"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 6,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-12_78_4"
+            },
+            {
+              "date": "2026-08-27",
+              "place": 3,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-27_78_3"
+            },
+            {
+              "date": "2026-06-07",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-07_8_2"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 1.88,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.0,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 11,
           "name": "Urban Tile",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-06",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-06_78_7"
+            },
+            {
+              "date": "2026-09-21",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-21_82_4"
+            },
+            {
+              "date": "2026-08-17",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-08-17_15_4"
+            },
+            {
+              "date": "2026-07-31",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-31_80_1"
+            },
+            {
+              "date": "2026-07-10",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-10_31_4"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.92,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.84,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 12,
           "name": "Gobsmacked",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-28",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-28_15_2"
+            },
+            {
+              "date": "2026-09-18",
+              "place": 0,
+              "galloped": true,
+              "distance": 2160,
+              "raceId": "2026-09-18_31_4"
+            },
+            {
+              "date": "2026-09-05",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-05_31_3"
+            },
+            {
+              "date": "2026-08-10",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-08-10_80_6"
+            },
+            {
+              "date": "2026-07-31",
+              "place": 0,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-31_15_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.77,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.6,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         }
       ]
     },
@@ -885,34 +2145,106 @@
           "number": 1,
           "name": "Baron Tilly",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-08-15",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-08-15_6_10"
+            },
+            {
+              "date": "2026-07-18",
+              "place": null,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-07-18_8_7"
+            },
+            {
+              "date": "2026-06-24",
+              "place": 0,
+              "galloped": true,
+              "distance": 3714,
+              "raceId": "2026-06-24_43_6"
+            },
+            {
+              "date": "2026-06-14",
+              "place": null,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-06-14_78_11"
+            },
+            {
+              "date": "2026-05-30",
+              "place": 2,
+              "galloped": null,
+              "distance": 3160,
+              "raceId": "2026-05-30_5_12"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.0,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 1.0
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 2,
           "name": "Daim Brodda",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-11",
+              "place": null,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-10-11_70_6"
+            },
+            {
+              "date": "2026-10-03",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-03_78_1"
+            },
+            {
+              "date": "2026-09-26",
+              "place": 0,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-26_6_5"
+            },
+            {
+              "date": "2026-08-19",
+              "place": 8,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-19_5_6"
+            },
+            {
+              "date": "2026-07-28",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-28_7_10"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.24,
             "pace": null,
             "class": null,
             "gear": null,
@@ -920,95 +2252,239 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 3,
           "name": "Before Takeoff",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-10",
+              "place": 0,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-10_5_7"
+            },
+            {
+              "date": "2026-10-02",
+              "place": 3,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-02_12_10"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 3,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-09-12_17_7"
+            },
+            {
+              "date": "2026-08-19",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-19_5_10"
+            },
+            {
+              "date": "2026-07-22",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-07-22_25_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.16,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.3,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 4,
           "name": "Xanthis Harvey",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-05",
+              "place": 7,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-09-05_7_7"
+            },
+            {
+              "date": "2026-08-22",
+              "place": 0,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-22_59_9"
+            },
+            {
+              "date": "2026-07-25",
+              "place": 6,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-25_12_8"
+            },
+            {
+              "date": "2026-07-11",
+              "place": 2,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-11_31_10"
+            },
+            {
+              "date": "2026-07-01",
+              "place": 5,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-01_21_9"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.26,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.38,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 5,
           "name": "Charron",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-10",
+              "place": 8,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-10_5_7"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-13_78_8"
+            },
+            {
+              "date": "2026-08-15",
+              "place": 7,
+              "galloped": true,
+              "distance": 3140,
+              "raceId": "2026-08-15_6_12"
+            },
+            {
+              "date": "2026-07-25",
+              "place": 1,
+              "galloped": null,
+              "distance": 2600,
+              "raceId": "2026-07-25_96_7"
+            },
+            {
+              "date": "2026-07-05",
+              "place": 8,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-07-05_82_11"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.12,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 6,
           "name": "Powwow",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-11",
+              "place": 0,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-11_70_6"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 5,
+              "galloped": null,
+              "distance": 2011,
+              "raceId": "2026-09-12_91_8"
+            },
+            {
+              "date": "2026-08-15",
+              "place": 0,
+              "galloped": null,
+              "distance": 3140,
+              "raceId": "2026-08-15_6_12"
+            },
+            {
+              "date": "2026-07-28",
+              "place": 5,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-28_7_10"
+            },
+            {
+              "date": "2026-07-05",
+              "place": 3,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-07-05_82_11"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.6,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1016,47 +2492,119 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 7,
           "name": "Crown",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-05",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-05_15_5"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 0,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-13_78_8"
+            },
+            {
+              "date": "2026-05-30",
+              "place": 2,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-05-30_5_7"
+            },
+            {
+              "date": "2026-05-30",
+              "place": 3,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-05-30_5_3"
+            },
+            {
+              "date": "2026-05-17",
+              "place": 1,
+              "galloped": null,
+              "distance": 1600,
+              "raceId": "2026-05-17_55_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.23,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 4.1,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 8,
           "name": "Clarissa",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-10",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-10_5_8"
+            },
+            {
+              "date": "2026-08-19",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-19_5_6"
+            },
+            {
+              "date": "2026-06-21",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-21_19_6"
+            },
+            {
+              "date": "2026-05-30",
+              "place": 5,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-05-30_5_5"
+            },
+            {
+              "date": "2026-04-25",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-04-25_32_10"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.83,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1064,62 +2612,134 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 9,
           "name": "Lando Mearas",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-02",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-02_12_10"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-09-12_17_7"
+            },
+            {
+              "date": "2026-08-22",
+              "place": 6,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-22_23_8"
+            },
+            {
+              "date": "2026-07-30",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-30_5_7"
+            },
+            {
+              "date": "2026-07-17",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-17_8_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.03,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 5.0,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 10,
           "name": "Castor the Star",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-08-29",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-29_9_12"
+            },
+            {
+              "date": "2026-07-28",
+              "place": 0,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-28_7_10"
+            },
+            {
+              "date": "2026-07-19",
+              "place": 6,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-19_61_9"
+            },
+            {
+              "date": "2026-07-01",
+              "place": 3,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-01_21_9"
+            },
+            {
+              "date": "2026-06-13",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-13_11_12"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.46,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.43,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         }
       ]
     },
@@ -1132,34 +2752,106 @@
           "number": 1,
           "name": "Yellowstone Doc",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-05",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-10-05_15_2"
+            },
+            {
+              "date": "2026-09-25",
+              "place": 1,
+              "galloped": null,
+              "distance": 2609,
+              "raceId": "2026-09-25_32_5"
+            },
+            {
+              "date": "2026-09-07",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-07_15_8"
+            },
+            {
+              "date": "2026-08-27",
+              "place": 0,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-27_32_5"
+            },
+            {
+              "date": "2026-05-24",
+              "place": 0,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-05-24_32_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.29,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 5.0,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 2,
           "name": "Peacekeeper",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-23",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-23_96_3"
+            },
+            {
+              "date": "2026-10-06",
+              "place": 2,
+              "galloped": null,
+              "distance": 2600,
+              "raceId": "2026-10-06_78_9"
+            },
+            {
+              "date": "2026-09-22",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-09-22_78_2"
+            },
+            {
+              "date": "2026-09-05",
+              "place": 6,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-05_7_10"
+            },
+            {
+              "date": "2026-08-18",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-18_78_8"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.2,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1167,23 +2859,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 3,
           "name": "Paleo Boko",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-24",
+              "place": 4,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-24_7_7"
+            },
+            {
+              "date": "2026-10-12",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-12_8_2"
+            },
+            {
+              "date": "2026-10-03",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-03_6_4"
+            },
+            {
+              "date": "2026-09-29",
+              "place": 6,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-29_8_9"
+            },
+            {
+              "date": "2026-09-22",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-22_8_8"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.98,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1191,119 +2919,299 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 4,
           "name": "Orazi Cesare",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-21",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-21_5_3"
+            },
+            {
+              "date": "2026-10-07",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-10-07_8_7"
+            },
+            {
+              "date": "2026-09-22",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-22_8_5"
+            },
+            {
+              "date": "2026-09-01",
+              "place": 3,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-09-01_14_6"
+            },
+            {
+              "date": "2026-08-22",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-08-22_23_12"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.14,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 4.15,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 5,
           "name": "Fabulous Gent",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-10",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-10_5_2"
+            },
+            {
+              "date": "2026-09-30",
+              "place": 6,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-30_5_8"
+            },
+            {
+              "date": "2026-09-11",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-09-11_5_10"
+            },
+            {
+              "date": "2026-08-26",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-26_5_9"
+            },
+            {
+              "date": "2026-08-08",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-08-08_33_8"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 1.31,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 6,
           "name": "Neil Jung",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-08-05",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-08-05_22_7"
+            },
+            {
+              "date": "2026-07-08",
+              "place": 2,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-07-08_26_4"
+            },
+            {
+              "date": "2026-06-18",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-06-18_22_4"
+            },
+            {
+              "date": "2026-06-01",
+              "place": 2,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-06-01_15_7"
+            },
+            {
+              "date": "2026-05-24",
+              "place": null,
+              "galloped": true,
+              "distance": 2609,
+              "raceId": "2026-05-24_32_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.01,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.64,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 7,
           "name": "Hans Palema",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-15",
+              "place": 6,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-15_5_4"
+            },
+            {
+              "date": "2026-09-26",
+              "place": null,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-09-26_6_7"
+            },
+            {
+              "date": "2026-08-26",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-26_6_7"
+            },
+            {
+              "date": "2026-08-05",
+              "place": 6,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-05_22_10"
+            },
+            {
+              "date": "2026-07-11",
+              "place": 3,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-07-11_31_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.11,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 1.75,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 8,
           "name": "Chantecler",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-22",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-22_78_7"
+            },
+            {
+              "date": "2026-08-19",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-19_5_11"
+            },
+            {
+              "date": "2026-07-25",
+              "place": 0,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-07-25_12_11"
+            },
+            {
+              "date": "2026-07-11",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-11_31_11"
+            },
+            {
+              "date": "2026-06-26",
+              "place": 0,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-06-26_96_21"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.74,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1311,23 +3219,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 9,
           "name": "Mattex",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-10",
+              "place": 1,
+              "galloped": null,
+              "distance": 1600,
+              "raceId": "2026-10-10_77_9"
+            },
+            {
+              "date": "2026-09-23",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-23_99_3"
+            },
+            {
+              "date": "2026-09-15",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-15_82_5"
+            },
+            {
+              "date": "2026-08-29",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-29_85_7"
+            },
+            {
+              "date": "2026-08-22",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-22_82_8"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.98,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1335,23 +3279,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 10,
           "name": "Livorno",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-02",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-02_19_9"
+            },
+            {
+              "date": "2026-09-03",
+              "place": 6,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-09-03_6_8"
+            },
+            {
+              "date": "2026-08-12",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-12_32_10"
+            },
+            {
+              "date": "2026-07-18",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-18_8_4"
+            },
+            {
+              "date": "2026-06-30",
+              "place": 6,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-30_8_1"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.24,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1359,23 +3339,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 11,
           "name": "Eldfell",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-03",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-03_11_9"
+            },
+            {
+              "date": "2026-09-06",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-06_7_12"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 0,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-08-25_7_7"
+            },
+            {
+              "date": "2026-07-31",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-31_16_10"
+            },
+            {
+              "date": "2026-06-28",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-28_5_10"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 1.8,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1383,23 +3399,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 12,
           "name": "Firedup",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-16",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-16_82_5"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 1,
+              "galloped": null,
+              "distance": 2040,
+              "raceId": "2026-09-19_81_10"
+            },
+            {
+              "date": "2026-07-31",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-31_15_7"
+            },
+            {
+              "date": "2026-07-07",
+              "place": 1,
+              "galloped": null,
+              "distance": 2040,
+              "raceId": "2026-07-07_81_5"
+            },
+            {
+              "date": "2026-06-27",
+              "place": 2,
+              "galloped": null,
+              "distance": 2040,
+              "raceId": "2026-06-27_81_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.1,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1407,23 +3459,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 13,
           "name": "Ready For Cash",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-06-13",
+              "place": 5,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-06-13_78_8"
+            },
+            {
+              "date": "2026-06-03",
+              "place": 7,
+              "galloped": null,
+              "distance": 2080,
+              "raceId": "2026-06-03_29_9"
+            },
+            {
+              "date": "2026-05-16",
+              "place": 3,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-05-16_78_9"
+            },
+            {
+              "date": "2026-05-02",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-05-02_96_9"
+            },
+            {
+              "date": "2026-03-28",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-03-28_5_9"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.97,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1431,23 +3519,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 14,
           "name": "Burn",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-16",
+              "place": 4,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-16_82_5"
+            },
+            {
+              "date": "2026-09-24",
+              "place": 1,
+              "galloped": null,
+              "distance": 1700,
+              "raceId": "2026-09-24_85_7"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 4,
+              "galloped": null,
+              "distance": 3140,
+              "raceId": "2026-09-13_78_12"
+            },
+            {
+              "date": "2026-08-29",
+              "place": 2,
+              "galloped": null,
+              "distance": 1700,
+              "raceId": "2026-08-29_85_4"
+            },
+            {
+              "date": "2026-07-18",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-18_99_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.64,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1455,23 +3579,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 15,
           "name": "Lippi",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-06",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-06_78_6"
+            },
+            {
+              "date": "2026-09-26",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-09-26_6_1"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-09-13_78_1"
+            },
+            {
+              "date": "2026-08-18",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-18_78_5"
+            },
+            {
+              "date": "2026-08-11",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-11_78_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.55,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1479,14 +3639,14 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         }
       ]
     },
@@ -1499,130 +3659,346 @@
           "number": 1,
           "name": "Mimosa to Martini",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-26",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-26_6_5"
+            },
+            {
+              "date": "2026-09-06",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-09-06_7_7"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-25_7_2"
+            },
+            {
+              "date": "2026-07-28",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-28_7_7"
+            },
+            {
+              "date": "2026-07-02",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-02_18_10"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.42,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 1.67,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 2,
           "name": "Stella Ammik",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-17",
+              "place": 2,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-17_80_10"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-12_78_8"
+            },
+            {
+              "date": "2026-08-27",
+              "place": 3,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-27_78_9"
+            },
+            {
+              "date": "2026-07-25",
+              "place": 6,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-07-25_96_2"
+            },
+            {
+              "date": "2026-07-04",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-04_82_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.1,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.43,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 3,
           "name": "Peggy Boko",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-11",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-11_70_4"
+            },
+            {
+              "date": "2026-09-26",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-26_6_2"
+            },
+            {
+              "date": "2026-09-06",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-09-06_7_9"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-25_7_8"
+            },
+            {
+              "date": "2026-07-19",
+              "place": 3,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-07-19_8_11"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.9,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.92,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 4,
           "name": "Catchagaga Volo",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-17",
+              "place": 4,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-17_80_10"
+            },
+            {
+              "date": "2026-10-03",
+              "place": 3,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-03_78_3"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-12_78_8"
+            },
+            {
+              "date": "2026-08-27",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-27_78_7"
+            },
+            {
+              "date": "2026-08-11",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-11_78_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.39,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.7,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 5,
           "name": "Lipa Wee",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-23",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-23_54_4"
+            },
+            {
+              "date": "2026-10-02",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-02_54_6"
+            },
+            {
+              "date": "2026-09-18",
+              "place": 2,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-09-18_54_6"
+            },
+            {
+              "date": "2026-08-29",
+              "place": 6,
+              "galloped": true,
+              "distance": 2000,
+              "raceId": "2026-08-29_55_8"
+            },
+            {
+              "date": "2026-08-12",
+              "place": 1,
+              "galloped": null,
+              "distance": 2000,
+              "raceId": "2026-08-12_55_4"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.03,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.88,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 6,
           "name": "G.G. Golden Power",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-17",
+              "place": 3,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-17_80_10"
+            },
+            {
+              "date": "2026-09-28",
+              "place": 0,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-09-28_15_9"
+            },
+            {
+              "date": "2026-07-04",
+              "place": 8,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-04_82_6"
+            },
+            {
+              "date": "2026-06-23",
+              "place": 5,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-06-23_82_6"
+            },
+            {
+              "date": "2025-10-11",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2025-10-11_80_8"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.71,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1630,143 +4006,359 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 7,
           "name": "Rihanna T.G.",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-17",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-17_80_10"
+            },
+            {
+              "date": "2026-10-03",
+              "place": 0,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-10-03_78_8"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 5,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-12_78_8"
+            },
+            {
+              "date": "2026-08-27",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-27_78_9"
+            },
+            {
+              "date": "2026-08-07",
+              "place": 4,
+              "galloped": true,
+              "distance": 1640,
+              "raceId": "2026-08-07_31_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.77,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.57,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 8,
           "name": "G.G. Gentil",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-17",
+              "place": 0,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-10-17_80_10"
+            },
+            {
+              "date": "2026-09-28",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-09-28_15_9"
+            },
+            {
+              "date": "2026-09-12",
+              "place": 3,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-12_78_8"
+            },
+            {
+              "date": "2026-08-27",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-27_78_9"
+            },
+            {
+              "date": "2026-07-18",
+              "place": 6,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-07-18_99_9"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.38,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.93,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 9,
           "name": "Sherburne S.",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-14",
+              "place": 8,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-14_6_7"
+            },
+            {
+              "date": "2026-09-23",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-23_5_7"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 1,
+              "galloped": null,
+              "distance": 2080,
+              "raceId": "2026-09-13_29_7"
+            },
+            {
+              "date": "2026-08-30",
+              "place": 3,
+              "galloped": null,
+              "distance": 2000,
+              "raceId": "2026-08-30_55_10"
+            },
+            {
+              "date": "2026-08-24",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-08-24_18_4"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.52,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.45,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 10,
           "name": "Leonora by Hans",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-23",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-23_54_4"
+            },
+            {
+              "date": "2026-09-18",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-18_54_6"
+            },
+            {
+              "date": "2026-08-29",
+              "place": 4,
+              "galloped": null,
+              "distance": 2000,
+              "raceId": "2026-08-29_55_8"
+            },
+            {
+              "date": "2026-08-12",
+              "place": 3,
+              "galloped": null,
+              "distance": 2000,
+              "raceId": "2026-08-12_55_7"
+            },
+            {
+              "date": "2026-07-29",
+              "place": 0,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-29_54_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.05,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.96,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 11,
           "name": "Day Time Trot",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-14",
+              "place": 8,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-14_9_8"
+            },
+            {
+              "date": "2026-09-09",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-09_11_10"
+            },
+            {
+              "date": "2026-08-29",
+              "place": 8,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-29_9_7"
+            },
+            {
+              "date": "2026-08-08",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-08_33_10"
+            },
+            {
+              "date": "2026-07-29",
+              "place": 7,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-29_28_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.3,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 2.4,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 12,
           "name": "Goldie Home",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-05",
+              "place": 0,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-09-05_7_9"
+            },
+            {
+              "date": "2026-08-15",
+              "place": 4,
+              "galloped": null,
+              "distance": 2500,
+              "raceId": "2026-08-15_88_9"
+            },
+            {
+              "date": "2026-07-28",
+              "place": 5,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-28_7_5"
+            },
+            {
+              "date": "2026-07-05",
+              "place": 1,
+              "galloped": null,
+              "distance": 1900,
+              "raceId": "2026-07-05_88_7"
+            },
+            {
+              "date": "2026-06-22",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-06-22_18_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.09,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1774,14 +4366,14 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         }
       ]
     },
@@ -1794,58 +4386,166 @@
           "number": 1,
           "name": "Goodbye Kiss",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-16",
+              "place": 5,
+              "galloped": true,
+              "distance": 2200,
+              "raceId": "2026-10-16_18_8"
+            },
+            {
+              "date": "2026-07-28",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-07-28_7_12"
+            },
+            {
+              "date": "2026-07-11",
+              "place": 1,
+              "galloped": null,
+              "distance": 2040,
+              "raceId": "2026-07-11_70_7"
+            },
+            {
+              "date": "2026-06-12",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-06-12_70_6"
+            },
+            {
+              "date": "2026-05-17",
+              "place": 3,
+              "galloped": null,
+              "distance": 2080,
+              "raceId": "2026-05-17_70_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.31,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 2,
           "name": "Blank",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-01",
+              "place": 0,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-10-01_32_7"
+            },
+            {
+              "date": "2026-08-12",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-12_32_5"
+            },
+            {
+              "date": "2026-07-23",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-23_9_4"
+            },
+            {
+              "date": "2026-07-02",
+              "place": 0,
+              "galloped": true,
+              "distance": 1609,
+              "raceId": "2026-07-02_18_6"
+            },
+            {
+              "date": "2026-05-09",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-05-09_6_9"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.17,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 3,
           "name": "Blizzard Diamant",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-03",
+              "place": 1,
+              "galloped": null,
+              "distance": 2200,
+              "raceId": "2026-10-03_87_10"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 1,
+              "galloped": null,
+              "distance": 1900,
+              "raceId": "2026-09-13_88_3"
+            },
+            {
+              "date": "2026-08-30",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-30_86_12"
+            },
+            {
+              "date": "2026-08-16",
+              "place": 2,
+              "galloped": null,
+              "distance": 1900,
+              "raceId": "2026-08-16_88_12"
+            },
+            {
+              "date": "2026-08-02",
+              "place": 1,
+              "galloped": null,
+              "distance": 1900,
+              "raceId": "2026-08-02_88_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.84,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1853,71 +4553,179 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 4,
           "name": "Variegated",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-01",
+              "place": 7,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-01_32_7"
+            },
+            {
+              "date": "2026-07-19",
+              "place": 4,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-19_61_6"
+            },
+            {
+              "date": "2026-07-02",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-02_18_12"
+            },
+            {
+              "date": "2026-07-02",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-02_18_4"
+            },
+            {
+              "date": "2026-06-11",
+              "place": 2,
+              "galloped": null,
+              "distance": 1620,
+              "raceId": "2026-06-11_28_4"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.11,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.88,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 5,
           "name": "Muzan Kibutsuji",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-02",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-02_54_3"
+            },
+            {
+              "date": "2026-09-18",
+              "place": 1,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-09-18_54_5"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 0,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-08-25_7_12"
+            },
+            {
+              "date": "2026-07-28",
+              "place": 4,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-07-28_7_5"
+            },
+            {
+              "date": "2026-07-04",
+              "place": 5,
+              "galloped": null,
+              "distance": 2600,
+              "raceId": "2026-07-04_76_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.33,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.75,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 6,
           "name": "Bully Pepper",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-03",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-03_78_3"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 5,
+              "galloped": null,
+              "distance": 2600,
+              "raceId": "2026-09-13_78_11"
+            },
+            {
+              "date": "2026-08-28",
+              "place": 1,
+              "galloped": null,
+              "distance": 2600,
+              "raceId": "2026-08-28_78_10"
+            },
+            {
+              "date": "2026-07-24",
+              "place": 4,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-07-24_96_4"
+            },
+            {
+              "date": "2026-07-18",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-18_99_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.88,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1925,23 +4733,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 7,
           "name": "Giotto Grif",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-01",
+              "place": 5,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-01_32_7"
+            },
+            {
+              "date": "2026-08-22",
+              "place": null,
+              "galloped": true,
+              "distance": 2100,
+              "raceId": "2026-08-22_59_8"
+            },
+            {
+              "date": "2026-08-12",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-12_32_5"
+            },
+            {
+              "date": "2026-07-19",
+              "place": 3,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-19_61_6"
+            },
+            {
+              "date": "2026-06-23",
+              "place": null,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-23_14_13"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.59,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1949,47 +4793,119 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 8,
           "name": "Wise Guy",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-06",
+              "place": null,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-09-06_7_11"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 1,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-08-25_7_6"
+            },
+            {
+              "date": "2026-07-02",
+              "place": 4,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-02_18_12"
+            },
+            {
+              "date": "2026-07-02",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-02_18_5"
+            },
+            {
+              "date": "2026-06-17",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-17_5_10"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.01,
             "pace": null,
             "class": null,
             "gear": null,
             "risk": null
           },
-          "distanceOnlyScore": null,
+          "distanceOnlyScore": 3.25,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 9,
           "name": "Ludvig Cash",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-23",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-23_54_6"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-19_54_7"
+            },
+            {
+              "date": "2026-08-30",
+              "place": 3,
+              "galloped": null,
+              "distance": 3000,
+              "raceId": "2026-08-30_55_11"
+            },
+            {
+              "date": "2026-08-12",
+              "place": 2,
+              "galloped": null,
+              "distance": 2500,
+              "raceId": "2026-08-12_55_3"
+            },
+            {
+              "date": "2026-07-28",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-28_7_1"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.32,
             "pace": null,
             "class": null,
             "gear": null,
@@ -1997,23 +4913,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 10,
           "name": "Onyx B.R.",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-03",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-03_78_3"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 4,
+              "galloped": null,
+              "distance": 2600,
+              "raceId": "2026-09-13_78_11"
+            },
+            {
+              "date": "2026-08-28",
+              "place": 2,
+              "galloped": null,
+              "distance": 2600,
+              "raceId": "2026-08-28_78_10"
+            },
+            {
+              "date": "2026-07-24",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-07-24_96_4"
+            },
+            {
+              "date": "2026-07-03",
+              "place": 4,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-03_82_12"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.46,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2021,14 +4973,14 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         }
       ]
     },
@@ -2041,10 +4993,46 @@
           "number": 1,
           "name": "Eye to Eye",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-16",
+              "place": 3,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-16_18_9"
+            },
+            {
+              "date": "2026-09-28",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-28_18_7"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-25_7_3"
+            },
+            {
+              "date": "2026-08-09",
+              "place": 1,
+              "galloped": null,
+              "distance": 2080,
+              "raceId": "2026-08-09_29_3"
+            },
+            {
+              "date": "2026-07-19",
+              "place": 0,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-19_8_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.02,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2052,23 +5040,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 2,
           "name": "Sanctuaire",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-20",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-20_78_5"
+            },
+            {
+              "date": "2026-10-03",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-03_78_8"
+            },
+            {
+              "date": "2026-09-21",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-09-21_82_5"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-13_78_6"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-08-25_7_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.01,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2076,23 +5100,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 3,
           "name": "Raina Schermer",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-10",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-10_5_3"
+            },
+            {
+              "date": "2026-09-27",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-27_5_1"
+            },
+            {
+              "date": "2026-09-11",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-11_12_7"
+            },
+            {
+              "date": "2026-09-02",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-02_5_6"
+            },
+            {
+              "date": "2026-08-26",
+              "place": null,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-08-26_5_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.94,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2100,23 +5160,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 4,
           "name": "Kollund Møbler",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-18",
+              "place": 0,
+              "galloped": null,
+              "distance": 2180,
+              "raceId": "2026-09-18_54_4"
+            },
+            {
+              "date": "2026-07-05",
+              "place": 0,
+              "galloped": null,
+              "distance": 2000,
+              "raceId": "2026-07-05_55_6"
+            },
+            {
+              "date": "2026-06-20",
+              "place": 1,
+              "galloped": null,
+              "distance": 2320,
+              "raceId": "2026-06-20_54_3"
+            },
+            {
+              "date": "2026-06-04",
+              "place": 3,
+              "galloped": true,
+              "distance": 1800,
+              "raceId": "2026-06-04_54_9"
+            },
+            {
+              "date": "2026-04-05",
+              "place": 6,
+              "galloped": null,
+              "distance": 2000,
+              "raceId": "2026-04-05_55_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.51,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2124,23 +5220,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 5,
           "name": "Luxury Rain",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-29",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-29_8_4"
+            },
+            {
+              "date": "2026-09-09",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-09_6_9"
+            },
+            {
+              "date": "2026-08-06",
+              "place": 0,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-06_6_9"
+            },
+            {
+              "date": "2026-07-19",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-07-19_8_6"
+            },
+            {
+              "date": "2026-07-02",
+              "place": 3,
+              "galloped": null,
+              "distance": 2640,
+              "raceId": "2026-07-02_18_2"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.28,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2148,23 +5280,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 6,
           "name": "Mellby Maybe",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-01",
+              "place": 2,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-01_32_8"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 5,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-09-19_15_3"
+            },
+            {
+              "date": "2026-09-07",
+              "place": 3,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-09-07_15_4"
+            },
+            {
+              "date": "2026-08-10",
+              "place": 2,
+              "galloped": null,
+              "distance": 2660,
+              "raceId": "2026-08-10_5_5"
+            },
+            {
+              "date": "2026-07-31",
+              "place": 2,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-07-31_15_2"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.88,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2172,47 +5340,119 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 7,
           "name": "Jealous Rain",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-17",
+              "place": 3,
+              "galloped": true,
+              "distance": 4180,
+              "raceId": "2026-10-17_80_7"
+            },
+            {
+              "date": "2026-10-07",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-07_8_3"
+            },
+            {
+              "date": "2026-09-02",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-02_8_3"
+            },
+            {
+              "date": "2026-08-18",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-18_78_4"
+            },
+            {
+              "date": "2026-07-31",
+              "place": 1,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-07-31_80_3"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.52,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 8,
           "name": "Good Guessing",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-18",
+              "place": 2,
+              "galloped": null,
+              "distance": 2680,
+              "raceId": "2026-10-18_31_9"
+            },
+            {
+              "date": "2026-09-28",
+              "place": 2,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-09-28_15_9"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 7,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-09-19_15_7"
+            },
+            {
+              "date": "2026-09-02",
+              "place": 4,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-02_5_4"
+            },
+            {
+              "date": "2026-07-31",
+              "place": 6,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-07-31_15_7"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 2.79,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2220,23 +5460,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 9,
           "name": "Normaal",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-03",
+              "place": 7,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-03_78_8"
+            },
+            {
+              "date": "2026-09-13",
+              "place": 2,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-09-13_78_1"
+            },
+            {
+              "date": "2026-08-08",
+              "place": 1,
+              "galloped": null,
+              "distance": 1600,
+              "raceId": "2026-08-08_77_5"
+            },
+            {
+              "date": "2026-07-18",
+              "place": 2,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-07-18_99_9"
+            },
+            {
+              "date": "2026-06-27",
+              "place": 1,
+              "galloped": null,
+              "distance": 1600,
+              "raceId": "2026-06-27_81_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.63,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2244,47 +5520,119 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 10,
           "name": "Hankypanky Leonie",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-14",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-10-14_9_8"
+            },
+            {
+              "date": "2026-09-06",
+              "place": 0,
+              "galloped": true,
+              "distance": 2140,
+              "raceId": "2026-09-06_7_9"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-25_7_2"
+            },
+            {
+              "date": "2026-08-01",
+              "place": null,
+              "galloped": true,
+              "distance": 2640,
+              "raceId": "2026-08-01_24_5"
+            },
+            {
+              "date": "2026-07-11",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-11_31_5"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 1.75,
             "pace": null,
             "class": null,
             "gear": null,
-            "risk": null
+            "risk": 2.0
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
-            "risk": false,
+            "form": true,
+            "risk": true,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 11,
           "name": "Zero Hugs'n Kisses",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-03",
+              "place": 5,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-10-03_78_1"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 1,
+              "galloped": null,
+              "distance": 1600,
+              "raceId": "2026-09-19_81_7"
+            },
+            {
+              "date": "2026-08-29",
+              "place": 3,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-08-29_85_7"
+            },
+            {
+              "date": "2026-08-15",
+              "place": 8,
+              "galloped": null,
+              "distance": 2300,
+              "raceId": "2026-08-15_83_9"
+            },
+            {
+              "date": "2026-08-09",
+              "place": 1,
+              "galloped": null,
+              "distance": 1700,
+              "raceId": "2026-08-09_85_1"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.4,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2292,23 +5640,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 12,
           "name": "Nore'n",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-16",
+              "place": 1,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-10-16_82_5"
+            },
+            {
+              "date": "2026-09-21",
+              "place": 1,
+              "galloped": null,
+              "distance": 2100,
+              "raceId": "2026-09-21_82_6"
+            },
+            {
+              "date": "2026-07-05",
+              "place": 7,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-05_82_6"
+            },
+            {
+              "date": "2026-06-13",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-06-13_78_9"
+            },
+            {
+              "date": "2026-05-16",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-05-16_78_4"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 4.3,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2316,23 +5700,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 13,
           "name": "Sparkling Power",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-14",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-14_9_8"
+            },
+            {
+              "date": "2026-09-19",
+              "place": 2,
+              "galloped": null,
+              "distance": 2160,
+              "raceId": "2026-09-19_15_7"
+            },
+            {
+              "date": "2026-08-25",
+              "place": 5,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-25_7_3"
+            },
+            {
+              "date": "2026-07-29",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-29_28_3"
+            },
+            {
+              "date": "2026-07-19",
+              "place": 3,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-07-19_8_10"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.2,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2340,23 +5760,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 14,
           "name": "Gaga Lady",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-09-26",
+              "place": 0,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-26_6_1"
+            },
+            {
+              "date": "2026-09-03",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-03_12_2"
+            },
+            {
+              "date": "2026-08-20",
+              "place": 1,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-08-20_22_4"
+            },
+            {
+              "date": "2026-08-14",
+              "place": 0,
+              "galloped": null,
+              "distance": 1640,
+              "raceId": "2026-08-14_14_6"
+            },
+            {
+              "date": "2026-08-01",
+              "place": 0,
+              "galloped": true,
+              "distance": 1640,
+              "raceId": "2026-08-01_24_9"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.32,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2364,23 +5820,59 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         },
         {
           "number": 15,
           "name": "Bella Yankee",
           "scratched": false,
-          "previousStarts": 0,
-          "lastFive": [],
+          "previousStarts": 5,
+          "lastFive": [
+            {
+              "date": "2026-10-24",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-10-24_7_6"
+            },
+            {
+              "date": "2026-09-08",
+              "place": 2,
+              "galloped": null,
+              "distance": 2140,
+              "raceId": "2026-09-08_14_9"
+            },
+            {
+              "date": "2026-08-23",
+              "place": 3,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-08-23_46_9"
+            },
+            {
+              "date": "2026-08-16",
+              "place": 1,
+              "galloped": null,
+              "distance": 1646,
+              "raceId": "2026-08-16_43_6"
+            },
+            {
+              "date": "2026-07-05",
+              "place": 4,
+              "galloped": null,
+              "distance": 1609,
+              "raceId": "2026-07-05_82_6"
+            }
+          ],
           "scores": {
-            "form": null,
+            "form": 3.84,
             "pace": null,
             "class": null,
             "gear": null,
@@ -2388,17 +5880,17 @@
           },
           "distanceOnlyScore": null,
           "coverage": {
-            "form": false,
+            "form": true,
             "risk": false,
             "pace": false,
             "class": false,
             "gear": false
           },
-          "status": "no_history",
-          "note": "Otillräcklig verifierad historik för automatisk bedömning."
+          "status": "partial",
+          "note": "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
         }
       ]
     }
   ],
-  "retrievedAt": "2026-10-27T00:17:12.646218+01:00"
+  "retrievedAt": "2026-10-27T00:22:01.844791+01:00"
 }
