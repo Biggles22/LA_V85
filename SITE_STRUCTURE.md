@@ -82,3 +82,13 @@ Vägd poäng = summan av delbetyg/5 × vikt; intervallet är 0–100. **Poängen
 - Den automatiska `bjerke-20261031.json`-filens `recommendations` är fortfarande **endast streck-/trendbaserade marknadssignaler**. De får inte beskrivas som resultat från tvåstegsmodellen.
 - Vikterna och etiketternas gränser är **hypoteser för framtida utvärdering**. Frys urval och bedömningar före start och jämför mot verkliga resultat utan efterhandsjustering.
 
+
+## Bjerke – automatisk formhistorik inför 31 oktober
+
+- `scripts/update_bjerke_form.py` hämtar de åtta loppens utökade ATG-data med `/races/{raceId}/extended` och avläser historik ur `starts[].horse.results.records`. Detta format verifierades på Bjerkes verkliga lopp den 27 oktober 2026; det är inte ett officiellt versionsgaranterat API.
+- GitHub Actions `.github/workflows/bjerke-form.yml` kör separat från ordinarie marknadsbevakning och skriver endast `bjerke-form-20261031.json` om underlaget förändrats. Ingen uppdatering sker efter lördagens start.
+- `bjerke-form.js` redovisar fem senaste starter, antal användbara formrader, poäng för form och separat distansprov, risk om verifierbart, datatäckning och källtid. Saknade uppgifter redovisas som saknade – aldrig som noll.
+- `bjerke-model.js` kan förifylla de två verifierade delpoängen `form` och `risk`, men ändrar **inte** användarens befintliga egna poäng eller vinstprognoser i webbläsaren. Formpoäng sätts bara när minst två användbara historiska prestationer finns. En fullständig ranking kräver fortfarande övriga kategorier.
+- Uträkningen bygger på **föregående lopp**, aldrig på framtida resultat eller bettingmarknad. `form` är en första oviktad klass-/motståndsjustering och ska inte beskrivas som en kalibrerad vinstchans. `distanceOnlyScore` är ett separat mått och fyller **inte** automatiskt den bredare kategorin `class`.
+- API-fel som drabbar alla åtta lopp gör att föregående giltiga formrapport behålls. Fel i enskilda lopp syns i `failures` och saknade hästar får inga fabricerade data. Publicerade procenttal är alltid ATG-streck, inte modellprognoser.
+- **Nästa utvecklingssteg:** uppskatta hästens klass mot motstånd (historisk prissumma/resultat), undersök loppbildens historiska positioner och skapa ett tidskorrekt, testat förhandsprognosmått över fler avslutade omgångar. Inga sådana kompletteringar har ännu påståtts vara automatiserade.
