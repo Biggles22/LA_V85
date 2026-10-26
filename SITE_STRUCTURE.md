@@ -55,3 +55,30 @@ För att undvika fortsatt specialkod bör nästa tekniska steg vara att flytta o
 - `scripts/update_bjerke.py` används av GitHub Actions-flödet `.github/workflows/bjerke-hourly.yml` för att uppdatera snapshoten fram till spelstopp.
 - `bjerke-dashboard.js` visar snapshoten på startsidan. Källtid och eventuell brist på data måste alltid framgå; inga uppgifter ska presenteras som liveodds.
 - För ändringar från ChatGPT eller VS Code: läs alltid senaste GitHub-version och använd filens aktuella blob-SHA före uppdatering för att minska risken att skriva över parallella ändringar.
+
+## Bjerke – tvåstegsmodell för spikar och skrällar
+
+Sidan för den aktuella omgången visar nu en **separat manuell vinnarmodell** utöver den automatiska marknadsbevakningen. Den påverkar inte ATG-importen eller historiken.
+
+**Steg A: rangordna hela startfältet.** Använd fem verifierade delbedömningar per häst på skalan 0–5:
+
+| Delbedömning | Vikt | Obs |
+| --- | ---: | --- |
+| Aktuell form och kapacitet | 30 % | Senaste prestationer och konkurrens |
+| Loppbild och startspår | 25 % | Spets/tempo/trafik och positionschans |
+| Distans, klass och bana | 20 % | Relevant dokumenterad förmåga |
+| Kusk, utrustning, verkliga förändringar | 15 % | Förändring jämfört med tidigare starter |
+| Dagsform, osäkerhet och risk | 10 % | 5 poäng betyder låg risk |
+
+Vägd poäng = summan av delbetyg/5 × vikt; intervallet är 0–100. **Poängen är inte en sannolikhet**. Ingen fullständig inbördes ranking visas innan samtliga icke strukna hästar fått fem betyg.
+
+**Steg B: bedöm och jämför vinstchanser.** Ange separat en *egen preliminär* vinstchans 0–100 % för varje aktiv häst. Summan för ett lopp ska bli 100 % (±0,5 procentenheter). Först då visar sidan differensen mellan den egna bedömningen och aktuell V85-streckprocent. Positiv differens och minst 20 % relativ övervikt (och +2 procentenheter) markeras som möjlig värdesignal; negativ differens och minst 15 % relativ undervikt (och −3 procentenheter) som möjlig överstreckning. Gränserna är oprövade arbetsregler, **inte validerade lönsamhetsgarantier**.
+
+- Spikförslag kräver separat motbuds-, form- och startmomentskontroll; högst streckprocent räcker inte.
+- Skrällar kan finnas även över 10 % streck. En låg streckandel i sig är inget vinnarargument.
+- Tidiga vinnarodds med låg omsättning och censurerat odds 99,99 får inte behandlas som exakt vinstsannolikhet.
+- `bjerke-model.js` sköter den manuella tvåstegsarbetsytan på `/`; `bjerke-model.css` dess stilar.
+- Betyg och egna vinstchanser sparas i **webbläsarens localStorage**, inte i GitHub. De följer därför inte med till andra enheter, och de är inte en fryst publicerad förhandsanalys.
+- Den automatiska `bjerke-20261031.json`-filens `recommendations` är fortfarande **endast streck-/trendbaserade marknadssignaler**. De får inte beskrivas som resultat från tvåstegsmodellen.
+- Vikterna och etiketternas gränser är **hypoteser för framtida utvärdering**. Frys urval och bedömningar före start och jämför mot verkliga resultat utan efterhandsjustering.
+
