@@ -9,6 +9,27 @@ DEST=ROOT/"bjerke-20261031.json"
 tz=ZoneInfo("Europe/Stockholm")
 def person(p):
     return " ".join(x for x in [p.get("firstName"),p.get("lastName")] if x)
+def market_recommendations(races,source_at):
+    """Create transparent market signals; these are not form-based betting advice."""
+    leaders=[]
+    outsiders=[]
+    for race in races:
+        active=[h for h in race["starts"] if not h["scratched"] and isinstance(h["pct"],(int,float))]
+        if not active: continue
+        leader=max(active,key=lambda h:h["pct"])
+        leaders.append({"leg":race["leg"],"number":leader["number"],"name":leader["name"],
+            "pct":leader["pct"],"trend":leader["trend"],"odds":leader["odds"],
+            "level":"Stark marknadsfavorit" if leader["pct"]>=50 else "Spik att utreda",
+            "reason":"Avdelningens mest streckade häst i aktuell snapshot."})
+        for horse in active:
+            if 2<=horse["pct"]<=10 and isinstance(horse["trend"],(int,float)) and horse["trend"]>0:
+                outsiders.append({"leg":race["leg"],"number":horse["number"],"name":horse["name"],
+                    "pct":horse["pct"],"trend":horse["trend"],"odds":horse["odds"],
+                    "level":"Stigande lågprocentare","reason":"2–10 procent och positiv strecktrend i aktuell snapshot."})
+    leaders.sort(key=lambda x:x["pct"],reverse=True)
+    outsiders.sort(key=lambda x:(x["trend"],-x["pct"]),reverse=True)
+    return {"updatedAt":source_at,"method":"Automatiska marknadssignaler från V85-procent och trend; ingen formanalys.",
+        "spikes":leaders[:3],"outsiders":outsiders[:5]}
 def main():
     now=datetime.datetime.now(tz)
     if now>=datetime.datetime(2026,10,31,15,tzinfo=tz):
@@ -52,10 +73,12 @@ def main():
         total+=len(entries)
         record["races"].append({"leg":i,"raceNumber":r.get("number"),"starts":entries})
     if total<90 or total>120:raise ValueError("Unexpected runner count "+str(total))
+    record["recommendations"]=market_recommendations(record["races"],record["sourceAt"])
     if previous.get("sourceAt") and record["sourceAt"] and str(record["sourceAt"])<str(previous["sourceAt"]):
         print("Older snapshot; skipped");return
     if (previous.get("sourceAt")==record["sourceAt"] and previous.get("turnoverSEK")==record["turnoverSEK"]
-            and previous.get("systemCount")==record["systemCount"] and previous.get("races")==record["races"]):
+            and previous.get("systemCount")==record["systemCount"] and previous.get("races")==record["races"]
+            and previous.get("recommendations")==record["recommendations"]):
         print("No new ATG source data");return
     DEST.write_text(json.dumps(record,ensure_ascii=False,indent=2)+"\n")
     print("Updated",total,"horses",record["sourceAt"])
