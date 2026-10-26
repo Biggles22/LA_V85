@@ -7,9 +7,8 @@ on:
       - ".github/workflows/bjerke-hourly.yml"
       - "scripts/update_bjerke.py"
   schedule:
-    - cron: "0 7,12,18 27-29 10 *"
-    - cron: "0 6-22 30 10 *"
-    - cron: "0 0-12 31 10 *"
+    # GitHub Actions uses UTC. Sweden is UTC+1 during this Bjerke week.
+    - cron: "0 6,18 * 10 *"
 permissions:
   contents: write
 concurrency:
