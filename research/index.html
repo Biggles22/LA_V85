@@ -33,7 +33,7 @@ if(d.reportType!=='EXPLORATORY_BACKTEST_NOT_VALIDATED'||!d.modelMetrics)throw ne
 const benchmark=d.marketFinalPoolBaseline||{};
 el.innerHTML='<h2>Första tidsseparerade testet</h2>'+
 '<p class="muted">Träning: '+esc(d.trainDates?.join(' – '))+' ('+(d.trainRaces??0)+' lopp). Osedd testperiod: '+esc(d.heldOutDates?.join(' – '))+' ('+(d.testRaces??0)+' lopp).</p>'+
-'<div class="cards">'+metric('XGBoost – topp 3',d.modelMetrics)+metric('ATG:s slutstreck – topp 3',benchmark)+'</div>'+
+'<div class="cards">'+metric('XGBoost – topp 3 (samma lopp)',d.modelOnIdenticalMarketRaces||d.modelMetrics)+metric('ATG:s slutstreck – topp 3 (samma lopp)',benchmark)+'</div>'+
 '<p class="muted">Topp 1 och topp 3 är rena träffmått på dessa testlopp. Skillnaderna kan bero på slump eller datatäckning. Här görs inga påståenden om lönsamhet.</p>'+
 '<h2>Testlopp och rangordning</h2><div class="table-scroll"><table><thead><tr><th>Datum</th><th>Lopp</th><th>Modellens topp 3</th><th>Faktisk vinnare</th><th>Träff topp 3?</th></tr></thead><tbody>'+
 (d.racePredictions||[]).map(r=>'<tr><td>'+esc(r.date)+'</td><td>'+esc(r.raceId)+'</td><td>'+r.topModel.map(x=>esc(x.number+' '+x.horse)).join(' / ')+'</td><td>'+esc((r.winnerNumbers||[]).join(','))+'</td><td>'+(r.winnerInTop3?'Ja':'Nej')+'</td></tr>').join('')+'</tbody></table></div>';
