@@ -219,7 +219,11 @@ def parse_historical_race(race,game,date):
         if place is None or not (0<=place<=30):
             failed+=1;continue
         entries.append((start,horse,place))
-    if failed or not 6<=len(entries)<=20:
+    # A historical result card may have an empty placing for a few runners.
+    # Never call these unknown runners losers. Exclude entire race if coverage poor.
+    all_count=len(race["starts"])
+    if (not 6<=len(entries)<=20 or len(entries)<all_count*0.75
+            or failed>3):
         return None
     winners=[x for x in entries if x[2]==1]
     if len(winners)!=1:
@@ -233,6 +237,7 @@ def parse_historical_race(race,game,date):
             "gameId":game.get("id"),"number":start["number"],"horse":horse["name"],
             "winner":int(place==1),"prestartFeatures":features_from_history(start,race,day,field_size),
             "marketFinalPct":market.get(start["number"]),
+            "resultCoverage":round(len(entries)/len(race["starts"]),3),
         })
     return rows
 
