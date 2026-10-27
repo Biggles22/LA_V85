@@ -215,6 +215,14 @@ def build(slot,now=None,game=None,extended=None,historical=None,opponent_histori
     opponent_historical=opponent_historical or json.loads(OPPONENT_HIST.read_text(encoding="utf8"))
     coverage=coverage or json.loads(OLD_CURRENT.read_text(encoding="utf8"))
     report=compute_predictions(rows,historical,opponent_historical,coverage)
+    # Provenance: file content digests make Friday/Saturday scores reproducible
+    # even if other research files get new data later.
+    input_hashes={
+        "historicalStartsSha256":hashlib.sha256(HIST.read_bytes()).hexdigest(),
+        "historicalOpponentsSha256":hashlib.sha256(OPPONENT_HIST.read_bytes()).hexdigest(),
+        "currentOpponentsSha256":hashlib.sha256(OLD_CURRENT.read_bytes()).hexdigest(),
+        "forecastCodeSha256":hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest(),
+    }
     observed=now.astimezone(TZ).isoformat()
     return {
         "schemaVersion":1,"kind":"FROZEN_PROSPECTIVE_RESEARCH_NOT_BETTING_ADVICE",
@@ -222,6 +230,7 @@ def build(slot,now=None,game=None,extended=None,historical=None,opponent_histori
         "frozenAt":observed,"marketSourceAt":market["sourceAt"],
         "marketObservedAt":market["observedAt"],"marketLagSeconds":market["lagSeconds"],
         "marketSource":market["source"],
+        "inputFileHashesSha256":input_hashes,
         "trainingRaces":len({x["raceId"] for x in historical["rows"] if x["date"]<DATE.isoformat()}),
         "trainingStarts":sum(x["date"]<DATE.isoformat() for x in historical["rows"]),
         "dataProvenance":"Both XGBoost models were trained on historic starts strictly before 2026-10-31. All Bjerke inputs were obtained live BEFORE start; both share identical horse list and ATG source time.",
