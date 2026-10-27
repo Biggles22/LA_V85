@@ -1,0 +1,651 @@
+{
+  "schemaVersion": 1,
+  "gameId": "V85_2026-10-31_78_5",
+  "raceDate": "2026-10-31",
+  "source": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-31_78_5",
+  "sourceAt": "2026-10-27T22:43:00+01:00",
+  "observedAt": "2026-10-27T23:11:08.765223+01:00",
+  "lagSeconds": 1689,
+  "snapshotKind": "OBSERVED_PRESTART_NOT_FINAL_POOL",
+  "note": "ATG V85 betDistribution from live API before scheduled start; not a predicted win probability.",
+  "races": [
+    {
+      "leg": 1,
+      "raceId": "2026-10-31_78_5",
+      "raceNumber": 5,
+      "starts": [
+        {
+          "number": 1,
+          "horse": "Jaguar Godiva",
+          "pct": 6.4,
+          "scratched": false
+        },
+        {
+          "number": 2,
+          "horse": "Hickovelocissimo",
+          "pct": 3.42,
+          "scratched": false
+        },
+        {
+          "number": 3,
+          "horse": "Great Old Dance",
+          "pct": 46.39,
+          "scratched": false
+        },
+        {
+          "number": 4,
+          "horse": "J.C.",
+          "pct": 12.97,
+          "scratched": false
+        },
+        {
+          "number": 5,
+          "horse": "Leverage",
+          "pct": 10.64,
+          "scratched": false
+        },
+        {
+          "number": 6,
+          "horse": "Jackson Trot",
+          "pct": 1.08,
+          "scratched": false
+        },
+        {
+          "number": 7,
+          "horse": "Hercules Godiva",
+          "pct": 0.38,
+          "scratched": false
+        },
+        {
+          "number": 8,
+          "horse": "Legligin",
+          "pct": 6.03,
+          "scratched": false
+        },
+        {
+          "number": 9,
+          "horse": "Tayno B.B.",
+          "pct": 0.39,
+          "scratched": false
+        },
+        {
+          "number": 10,
+          "horse": "Fly Express",
+          "pct": 6.91,
+          "scratched": false
+        },
+        {
+          "number": 11,
+          "horse": "Ulaya",
+          "pct": 3.36,
+          "scratched": false
+        },
+        {
+          "number": 12,
+          "horse": "Zigzag Zagazoo",
+          "pct": 2.02,
+          "scratched": false
+        }
+      ]
+    },
+    {
+      "leg": 2,
+      "raceId": "2026-10-31_78_6",
+      "raceNumber": 6,
+      "starts": [
+        {
+          "number": 1,
+          "horse": "Baias",
+          "pct": 3.05,
+          "scratched": false
+        },
+        {
+          "number": 2,
+          "horse": "Gigant Tider",
+          "pct": 16.58,
+          "scratched": false
+        },
+        {
+          "number": 3,
+          "horse": "Tordenskjold",
+          "pct": 7.19,
+          "scratched": false
+        },
+        {
+          "number": 4,
+          "horse": "Voje Lotta",
+          "pct": 10.11,
+          "scratched": false
+        },
+        {
+          "number": 5,
+          "horse": "Bare Mattis",
+          "pct": 2.83,
+          "scratched": false
+        },
+        {
+          "number": 6,
+          "horse": "Grisle Tore G.L.",
+          "pct": 42.15,
+          "scratched": false
+        },
+        {
+          "number": 7,
+          "horse": "Holter Odin",
+          "pct": 1.08,
+          "scratched": false
+        },
+        {
+          "number": 8,
+          "horse": "Tangen Nils",
+          "pct": 7.69,
+          "scratched": false
+        },
+        {
+          "number": 9,
+          "horse": "Prinsesse Ness Tjo",
+          "pct": 8.21,
+          "scratched": false
+        },
+        {
+          "number": 10,
+          "horse": "Tripsson Ø.K.",
+          "pct": 0.57,
+          "scratched": false
+        },
+        {
+          "number": 11,
+          "horse": "Alm Kevin",
+          "pct": 0.52,
+          "scratched": false
+        }
+      ]
+    },
+    {
+      "leg": 3,
+      "raceId": "2026-10-31_78_7",
+      "raceNumber": 7,
+      "starts": [
+        {
+          "number": 1,
+          "horse": "Lilli Kentucky S.F.",
+          "pct": 1.67,
+          "scratched": false
+        },
+        {
+          "number": 2,
+          "horse": "Pauhunri Boko",
+          "pct": 38.78,
+          "scratched": false
+        },
+        {
+          "number": 3,
+          "horse": "Moor Jeting",
+          "pct": 4.24,
+          "scratched": false
+        },
+        {
+          "number": 4,
+          "horse": "Daisy Love",
+          "pct": 0.98,
+          "scratched": false
+        },
+        {
+          "number": 5,
+          "horse": "Lapin Kulta Sox",
+          "pct": 4.74,
+          "scratched": false
+        },
+        {
+          "number": 6,
+          "horse": "Sauron Zon",
+          "pct": 18.28,
+          "scratched": false
+        },
+        {
+          "number": 7,
+          "horse": "S.B.'sPeakyBlinder",
+          "pct": 7.1,
+          "scratched": false
+        },
+        {
+          "number": 8,
+          "horse": "Surpriced Tooma",
+          "pct": 2.9,
+          "scratched": false
+        },
+        {
+          "number": 9,
+          "horse": "Man of Means",
+          "pct": 2.26,
+          "scratched": false
+        },
+        {
+          "number": 10,
+          "horse": "Chasse Artist",
+          "pct": 1.01,
+          "scratched": false
+        },
+        {
+          "number": 11,
+          "horse": "Urban Tile",
+          "pct": 17.05,
+          "scratched": false
+        },
+        {
+          "number": 12,
+          "horse": "Gobsmacked",
+          "pct": 1.01,
+          "scratched": false
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "raceId": "2026-10-31_78_8",
+      "raceNumber": 8,
+      "starts": [
+        {
+          "number": 1,
+          "horse": "Baron Tilly",
+          "pct": 17.19,
+          "scratched": false
+        },
+        {
+          "number": 2,
+          "horse": "Daim Brodda",
+          "pct": 37.75,
+          "scratched": false
+        },
+        {
+          "number": 3,
+          "horse": "Before Takeoff",
+          "pct": 3.48,
+          "scratched": false
+        },
+        {
+          "number": 4,
+          "horse": "Xanthis Harvey",
+          "pct": 1.59,
+          "scratched": false
+        },
+        {
+          "number": 5,
+          "horse": "Charron",
+          "pct": 8.53,
+          "scratched": false
+        },
+        {
+          "number": 6,
+          "horse": "Powwow",
+          "pct": 2.18,
+          "scratched": true
+        },
+        {
+          "number": 7,
+          "horse": "Crown",
+          "pct": 1.54,
+          "scratched": false
+        },
+        {
+          "number": 8,
+          "horse": "Clarissa",
+          "pct": 8.82,
+          "scratched": false
+        },
+        {
+          "number": 9,
+          "horse": "Lando Mearas",
+          "pct": 7.99,
+          "scratched": false
+        },
+        {
+          "number": 10,
+          "horse": "Castor the Star",
+          "pct": 10.92,
+          "scratched": false
+        }
+      ]
+    },
+    {
+      "leg": 5,
+      "raceId": "2026-10-31_78_9",
+      "raceNumber": 9,
+      "starts": [
+        {
+          "number": 1,
+          "horse": "Yellowstone Doc",
+          "pct": 3.59,
+          "scratched": false
+        },
+        {
+          "number": 2,
+          "horse": "Peacekeeper",
+          "pct": 3.32,
+          "scratched": false
+        },
+        {
+          "number": 3,
+          "horse": "Paleo Boko",
+          "pct": 30.21,
+          "scratched": false
+        },
+        {
+          "number": 4,
+          "horse": "Orazi Cesare",
+          "pct": 22.68,
+          "scratched": false
+        },
+        {
+          "number": 5,
+          "horse": "Fabulous Gent",
+          "pct": 3.84,
+          "scratched": false
+        },
+        {
+          "number": 6,
+          "horse": "Neil Jung",
+          "pct": 11.57,
+          "scratched": false
+        },
+        {
+          "number": 7,
+          "horse": "Hans Palema",
+          "pct": 2.06,
+          "scratched": false
+        },
+        {
+          "number": 8,
+          "horse": "Chantecler",
+          "pct": 1.22,
+          "scratched": false
+        },
+        {
+          "number": 9,
+          "horse": "Mattex",
+          "pct": 1.57,
+          "scratched": false
+        },
+        {
+          "number": 10,
+          "horse": "Livorno",
+          "pct": 6.67,
+          "scratched": false
+        },
+        {
+          "number": 11,
+          "horse": "Eldfell",
+          "pct": 3.04,
+          "scratched": false
+        },
+        {
+          "number": 12,
+          "horse": "Firedup",
+          "pct": 2.47,
+          "scratched": false
+        },
+        {
+          "number": 13,
+          "horse": "Ready For Cash",
+          "pct": 5.84,
+          "scratched": false
+        },
+        {
+          "number": 14,
+          "horse": "Burn",
+          "pct": 1.01,
+          "scratched": false
+        },
+        {
+          "number": 15,
+          "horse": "Lippi",
+          "pct": 0.91,
+          "scratched": false
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "raceId": "2026-10-31_78_10",
+      "raceNumber": 10,
+      "starts": [
+        {
+          "number": 1,
+          "horse": "Mimosa to Martini",
+          "pct": 23.36,
+          "scratched": false
+        },
+        {
+          "number": 2,
+          "horse": "Stella Ammik",
+          "pct": 1.81,
+          "scratched": false
+        },
+        {
+          "number": 3,
+          "horse": "Peggy Boko",
+          "pct": 56.61,
+          "scratched": false
+        },
+        {
+          "number": 4,
+          "horse": "Catchagaga Volo",
+          "pct": 2.56,
+          "scratched": false
+        },
+        {
+          "number": 5,
+          "horse": "Lipa Wee",
+          "pct": 6.83,
+          "scratched": false
+        },
+        {
+          "number": 6,
+          "horse": "G.G. Golden Power",
+          "pct": 0.86,
+          "scratched": false
+        },
+        {
+          "number": 7,
+          "horse": "Rihanna T.G.",
+          "pct": 0.94,
+          "scratched": false
+        },
+        {
+          "number": 8,
+          "horse": "G.G. Gentil",
+          "pct": 1.1,
+          "scratched": false
+        },
+        {
+          "number": 9,
+          "horse": "Sherburne S.",
+          "pct": 2.33,
+          "scratched": false
+        },
+        {
+          "number": 10,
+          "horse": "Leonora by Hans",
+          "pct": 0.73,
+          "scratched": false
+        },
+        {
+          "number": 11,
+          "horse": "Day Time Trot",
+          "pct": 0.84,
+          "scratched": false
+        },
+        {
+          "number": 12,
+          "horse": "Goldie Home",
+          "pct": 2.02,
+          "scratched": false
+        }
+      ]
+    },
+    {
+      "leg": 7,
+      "raceId": "2026-10-31_78_11",
+      "raceNumber": 11,
+      "starts": [
+        {
+          "number": 1,
+          "horse": "Goodbye Kiss",
+          "pct": 2.74,
+          "scratched": false
+        },
+        {
+          "number": 2,
+          "horse": "Blank",
+          "pct": 17.52,
+          "scratched": false
+        },
+        {
+          "number": 3,
+          "horse": "Blizzard Diamant",
+          "pct": 54.11,
+          "scratched": false
+        },
+        {
+          "number": 4,
+          "horse": "Variegated",
+          "pct": 2.95,
+          "scratched": false
+        },
+        {
+          "number": 5,
+          "horse": "Muzan Kibutsuji",
+          "pct": 2.55,
+          "scratched": false
+        },
+        {
+          "number": 6,
+          "horse": "Bully Pepper",
+          "pct": 1.13,
+          "scratched": false
+        },
+        {
+          "number": 7,
+          "horse": "Giotto Grif",
+          "pct": 3.34,
+          "scratched": false
+        },
+        {
+          "number": 8,
+          "horse": "Wise Guy",
+          "pct": 12.78,
+          "scratched": false
+        },
+        {
+          "number": 9,
+          "horse": "Ludvig Cash",
+          "pct": 2.05,
+          "scratched": false
+        },
+        {
+          "number": 10,
+          "horse": "Onyx B.R.",
+          "pct": 0.83,
+          "scratched": false
+        }
+      ]
+    },
+    {
+      "leg": 8,
+      "raceId": "2026-10-31_78_12",
+      "raceNumber": 12,
+      "starts": [
+        {
+          "number": 1,
+          "horse": "Eye to Eye",
+          "pct": 2.89,
+          "scratched": false
+        },
+        {
+          "number": 2,
+          "horse": "Sanctuaire",
+          "pct": 4.96,
+          "scratched": false
+        },
+        {
+          "number": 3,
+          "horse": "Raina Schermer",
+          "pct": 1.39,
+          "scratched": false
+        },
+        {
+          "number": 4,
+          "horse": "Kollund Møbler",
+          "pct": 1.44,
+          "scratched": false
+        },
+        {
+          "number": 5,
+          "horse": "Luxury Rain",
+          "pct": 8.62,
+          "scratched": false
+        },
+        {
+          "number": 6,
+          "horse": "Mellby Maybe",
+          "pct": 3.61,
+          "scratched": false
+        },
+        {
+          "number": 7,
+          "horse": "Jealous Rain",
+          "pct": 1.76,
+          "scratched": false
+        },
+        {
+          "number": 8,
+          "horse": "Good Guessing",
+          "pct": 4.02,
+          "scratched": false
+        },
+        {
+          "number": 9,
+          "horse": "Normaal",
+          "pct": 1.57,
+          "scratched": false
+        },
+        {
+          "number": 10,
+          "horse": "Hankypanky Leonie",
+          "pct": 47.66,
+          "scratched": false
+        },
+        {
+          "number": 11,
+          "horse": "Zero Hugs'n Kisses",
+          "pct": 1.03,
+          "scratched": false
+        },
+        {
+          "number": 12,
+          "horse": "Nore'n",
+          "pct": 11.38,
+          "scratched": false
+        },
+        {
+          "number": 13,
+          "horse": "Sparkling Power",
+          "pct": 4.85,
+          "scratched": false
+        },
+        {
+          "number": 14,
+          "horse": "Gaga Lady",
+          "pct": 1.83,
+          "scratched": false
+        },
+        {
+          "number": 15,
+          "horse": "Bella Yankee",
+          "pct": 2.99,
+          "scratched": false
+        }
+      ]
+    }
+  ]
+}
