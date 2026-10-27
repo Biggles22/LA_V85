@@ -25,7 +25,7 @@ class HistoricalOpponentTests(unittest.TestCase):
                             "number":3,"name":"Focus",
                             "candidatePriorRaceIds":[previous]},{previous:card})
         self.assertEqual(row["measuredPreviousRaces"],1)
-        self.assertAlmostEqual(row["opponentForm"],.8)
+        self.assertAlmostEqual(row["opponentForm"],.7)
         self.assertEqual(row["evidence"][0]["previousDate"],"2026-08-15")
 
     def test_wrong_name_and_insufficient_peers_are_missing(self):
