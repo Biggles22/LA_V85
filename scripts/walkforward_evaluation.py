@@ -14,7 +14,11 @@ import pathlib
 import statistics
 import sys
 
-from scripts.train_historical_pilot import FEATURES, normalized_per_race, evaluate
+try:
+    from scripts.train_historical_pilot import FEATURES, normalized_per_race, evaluate
+except ModuleNotFoundError:
+    # Direct execution from scripts/ and package-style execution from project root.
+    from train_historical_pilot import FEATURES, normalized_per_race, evaluate
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 INPUT=ROOT/"research/historical_pilot_2026.json"
