@@ -56,3 +56,23 @@ ATG:s kalenderfunktion gav upprepade HTTP 500. Vi återhämtade identifierbara �
 För att påstå bättre spelvärde behövs en större serie, jämförbar förhandsmarknad och återkommande tidsseparerade testperioder. Vi gör ingen Benter-blend och publicerar inga automatiska AI-spikar baserat på detta resultat.
 
 [Läs rapporten på webbplatsen](https://biggles22.github.io/LA_V85/research/) · [Källdata](https://github.com/Biggles22/LA_V85/blob/main/research/historical_pilot_2026.json) · [Modellresultat](https://github.com/Biggles22/LA_V85/blob/main/research/model_report_2026.json).
+
+## Andra etappen 27 oktober – utökad historik och upprepade tester
+
+GitHub Actions har hämtat och verifierat **178 V85-lopp med 1 931 häststarter från 25 tävlingsdatum**. Insamlingen omfattar delar av perioden november 2025–oktober 2026. Datakällan är det ej officiellt versionsgaranterade ATG Racinginfo-gränssnittet. Historiska spel-ID har kontrollerats mot åtta lopp per V85-omgång. Några lopp och datum är fortfarande otillgängliga.
+
+Nu finns ett andra testsätt i `scripts/walkforward_evaluation.py`:
+
+- **21 kronologiska testfönster:** varje modell tränas bara på tidigare tävlingsdatum, därefter bedöms nästa datum.
+- **151 osedda lopp:** modellen rankade vinnaren först i 39 lopp (25,8 %) och inom topp tre i 82 lopp (54,3 %).
+- **Strikt marknadsjämförelse:** bara lopp med en entydig vinnare, nära 100 % registrerade resultat och en någorlunda komplett ATG-slutpool (95–105 % totalt) får jämföras.
+- **25 jämförbara lopp:** XGBoost träffade topp 1 i 7/25 (28 %) och topp 3 i 15/25 (60 %). ATG:s slutstreck träffade topp 1 i 12/25 (48 %) och topp 3 i 20/25 (80 %).
+- **Skydd:** den nya rapporten är skild från äldre experimentrapport, och redan verifierad historik behålls vid nya API-fel. Eget VS Code-arbete och Bjerkes livefiler lämnas orörda.
+
+Dessa 25 lopp är **ett selekterat kvalitetsurval** och ger ännu inget påstående om att någon modell fungerar bättre generellt eller kan generera positivt spelvärde. Eftersom ATG-kolumnen innehåller historiska **slutstreck** är jämförelsen inte en fullständig förhandssimulering. Några träningslopp har partiellt okända placeringar; okända hästar behandlas inte som förlorare, men urvalet kan fortfarande ge bias.
+
+**Resultat:** vår första AI-modell är i nuläget tydligt sämre än streckrankingen i kvalitetsurvalet. Vi använder därför inte automatisk AI-spik eller AI-skräll i lördagens rekommendationer.
+
+[Läs de nya testfönstren](https://biggles22.github.io/LA_V85/research/) · [Walk-forward-rapport](https://github.com/Biggles22/LA_V85/blob/main/research/walkforward_report_2026.json).
+
+**Fortsatt utveckling:** utöka med verifierbara lopp från fler månader och speltyper; arbeta med mer rättvis form-/motståndsklassning och startmoment; analysera dataläckage och urvalsbias; samla tidsstämplade *förhandsstreck* och utvärdera på separata kommande omgångar innan någon kalibrering eller Benter-blend.
