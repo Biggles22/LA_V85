@@ -1,0 +1,59 @@
+name: LA V85 – historical actual-opponent as-of pilot
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/historical-opponent-asof.yml"
+      - "scripts/historical_opponent_asof.py"
+      - "tests/test_historical_opponent_asof.py"
+permissions:
+  contents: write
+concurrency:
+  group: la-v85-historical-opponent-asof
+  cancel-in-progress: false
+jobs:
+  asof-history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regression tests for two historical time cutoffs
+        run: python -m unittest discover -s tests -p "test_historical_opponent_asof.py"
+      - name: Collect bounded historical previous-opponent evidence
+        run: python scripts/historical_opponent_asof.py
+      - name: Safely publish only validated research evidence
+        run: |
+          cp research/historical_opponent_asof_2026.json "$RUNNER_TEMP/historical_opponent_candidate.json"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python - <<'PY'
+          import json,os,pathlib,shutil
+          candidate=pathlib.Path(os.environ["RUNNER_TEMP"])/"historical_opponent_candidate.json"
+          new=json.loads(candidate.read_text())
+          target=pathlib.Path("research/historical_opponent_asof_2026.json")
+          if target.exists():
+              old=json.loads(target.read_text())
+              if old==new or old.get("ratedCurrentHorseStarts",0)>new["ratedCurrentHorseStarts"]:
+                  print("Retain newer or richer existing research.")
+                  raise SystemExit(0)
+          target.parent.mkdir(parents=True,exist_ok=True)
+          shutil.copy2(candidate,target)
+          PY
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add research/historical_opponent_asof_2026.json
+            if git diff --cached --quiet; then
+              echo "No verified update; no commit."
+              exit 0
+            fi
+            git commit -m "Record two-cutoff historical opponent evidence [skip ci]"
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Concurrent push; retry from new main."
+          done
+          echo "Publish blocked after safe retries."
+          exit 1
