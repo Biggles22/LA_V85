@@ -62,6 +62,17 @@ class FreezeTests(unittest.TestCase):
         self.assertEqual(len(result),64)
         self.assertAlmostEqual(sum(result[(1,k)] for k in range(1,9)),100,places=2)
 
+    def test_build_includes_verifiable_input_file_digests(self):
+        game,extended=market_and_ext()
+        now=dt.datetime(2026,10,30,18,2,tzinfo=TZ)
+        with mock.patch.object(f,"compute_predictions",return_value=[{"leg":i,"runners":[]}
+                                                                     for i in range(1,9)]):
+            result=f.build("friday",now,game=game,extended=extended,
+                  historical={"rows":[]},opponent_historical={},coverage={})
+        self.assertEqual(result["marketSourceAt"],"2026-10-30T17:55:00+01:00")
+        self.assertEqual(len(result["inputFileHashesSha256"]),4)
+        self.assertEqual(result["slot"],"friday")
+
     def test_build_rejects_out_of_slot_before_network(self):
         with mock.patch.object(f,"get_json",side_effect=AssertionError("Never access network")):
             with self.assertRaisesRegex(ValueError,"prestart"):
