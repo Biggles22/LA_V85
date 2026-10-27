@@ -76,3 +76,25 @@ Dessa 25 lopp är **ett selekterat kvalitetsurval** och ger ännu inget påståe
 [Läs de nya testfönstren](https://biggles22.github.io/LA_V85/research/) · [Walk-forward-rapport](https://github.com/Biggles22/LA_V85/blob/main/research/walkforward_report_2026.json).
 
 **Fortsatt utveckling:** utöka med verifierbara lopp från fler månader och speltyper; arbeta med mer rättvis form-/motståndsklassning och startmoment; analysera dataläckage och urvalsbias; samla tidsstämplade *förhandsstreck* och utvärdera på separata kommande omgångar innan någon kalibrering eller Benter-blend.
+
+## Tredje etappen – historiska marknadssnapshots och faktorjämförelse
+
+**Förhandsmarknad.** Vi sparar nu oföränderliga snapshots från ATG:s **faktiska observationsperiod före tävlingsstart** under `research/prestart/2026-10-31/`. Varje fil innehåller källtid, observationstid, tidsfördröjning, åtta lopp, startnummer, hästnamn, ATG-streck och strykningar. Programmet `scripts/capture_prestart_market.py` kontrollerar att procentsumman blir cirka 100 % per lopp och vägrar förhandsarkivering efter spelstart. Filnamnet baseras på källtid och innehållshash, vilket förebygger dubbla commits med identiska data. `.github/workflows/bjerke-prestart-history.yml` kör schemalagt och separat från ordinarie Bjerke-fil. **ATG:s källa är inofficiell och kan sluta fungera.** Omedelbar snapshot efter senaste ändring garanteras inte, eftersom GitHub Actions tidsschema kan försenas.
+
+Den första verkliga snapshoten sparades med **ATG-källtid 27 oktober 2026 kl. 09.01.30 svensk tid** och **observation kl. 09.24.59**, 23 minuter och 30 sekunder senare. Åtta lopp, 97 hästar. Den äldre historikens ATG-slutstreck får **inte** beskrivas som om de varit observerade i förväg.
+
+**Faktorförsök v2.** `scripts/feature_trial.py` lägger till tolv fasta förhandsvariabler på samma 1 931 historiska häststarter och samma 21 walk-forward-fönster som grundmodellen. Experimentet tränar två XGBoost-modeller med identiska hyperparametrar och daterad holdout. Inga slutresultat, odds eller streck får ingå i input-matriserna. Proxyn för loppklass baseras på tidigare lopps prissumma och hästens form, **inte** på verifierade tidigare motståndares förmåga. Äkta bananpassning och första-500-meters-tider saknas fortfarande.
+
+| Samma testlopp | Grundmodell | Faktorvariant | ATG-slutstreck |
+| --- | ---: | ---: | ---: |
+| Topp 1, 151 lopp | 39/151 (25,8 %) | 36/151 (23,8 %) | – |
+| Topp 3, 151 lopp | 82/151 (54,3 %) | 81/151 (53,6 %) | – |
+| Log loss, 151 lopp | 2,1671 | 2,1455 | – |
+| Topp 1, strikt 25 lopp | 7/25 | 8/25 | 12/25 |
+| Topp 3, strikt 25 lopp | 15/25 | 15/25 | 20/25 |
+
+Resultatet visar **ingen robust förbättring i antal rätt**; log loss och Brier blev något bättre. Variationen kan vara slumpmässig och databasen har fortfarande kvalitets- och urvalsbegränsningar. **Vi byter därför inte modell för den aktuella V85-omgången** och använder inte dessa poäng för automatiskt genererade spikar eller skrällar.
+
+Nästa tekniska uppgift för att faktiskt modellera **motståndets styrka** är ett sparsamt, källverifierat register över deltagare och deras **historiska rating vid datumet för ett tidigare lopp**. Det kräver fullständiga äldre startfält och datumsäker as-of-join; historiskt förstapris är inte tillräckligt. En sådan faktisk motståndsmodell är **inte** implementerad ännu.
+
+[Faktortestets rapport](https://github.com/Biggles22/LA_V85/blob/main/research/feature_trial_2026.json) · [Förhandsarkivet](https://github.com/Biggles22/LA_V85/tree/main/research/prestart/2026-10-31) · [GitHub-körningar](https://github.com/Biggles22/LA_V85/actions).
