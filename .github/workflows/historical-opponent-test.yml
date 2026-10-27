@@ -1,0 +1,61 @@
+name: LA V85 – actual past-opponent walkforward test
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/historical-opponent-test.yml"
+      - "scripts/historical_opponent_test.py"
+      - "tests/test_historical_opponent_test.py"
+permissions:
+  contents: write
+concurrency:
+  group: la-v85-historical-opponent-evaluation
+  cancel-in-progress: false
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install model dependencies
+        run: python -m pip install "xgboost>=2.1,<4" "scikit-learn>=1.5,<2"
+      - name: Validate time-independent identity and missing data behavior
+        run: python -m unittest discover -s tests -p "test_historical_opponent_test.py"
+      - name: Walk-forward compare baseline with actual previous opponents
+        run: python scripts/historical_opponent_test.py
+      - name: Publish only the verified standalone research report
+        run: |
+          cp research/historical_opponent_test_2026.json "$RUNNER_TEMP/opponent_test_candidate.json"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python - <<'PY'
+          import json,os,pathlib,shutil
+          source=pathlib.Path(os.environ["RUNNER_TEMP"])/"opponent_test_candidate.json"
+          incoming=json.loads(source.read_text())
+          target=pathlib.Path("research/historical_opponent_test_2026.json")
+          if target.exists():
+              old=json.loads(target.read_text())
+              if old==incoming or old.get("ratedHeldOutRaces",0)>incoming["ratedHeldOutRaces"]:
+                  print("Existing research retained.")
+                  raise SystemExit(0)
+          target.parent.mkdir(parents=True,exist_ok=True)
+          shutil.copy2(source,target)
+          PY
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add research/historical_opponent_test_2026.json
+            if git diff --cached --quiet; then
+              echo "No validated new report."
+              exit 0
+            fi
+            git commit -m "Record actual past-opponent walkforward experiment [skip ci]"
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Main changed; safe retry."
+          done
+          echo "Could not publish without conflict."
+          exit 1
