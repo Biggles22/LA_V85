@@ -10,6 +10,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import pathlib
+import statistics
 import re
 import sys
 import time
@@ -89,9 +90,25 @@ def parse_record(record):
     galloped = record.get("galloped")
     disqualified = record.get("disqualified")
     has_gallop = galloped is True or disqualified is True
+    prize = number(race.get("firstPrize"))
+    country = (record.get("track") or {}).get("countryCode") if isinstance(record.get("track"), dict) else None
+    method = race.get("startMethod")
+    post = number(start.get("postPosition"))
+    raw_time = record.get("kmTime") if isinstance(record.get("kmTime"), dict) else {}
+    mins, secs, tenths = (number(raw_time.get(k)) for k in ("minutes", "seconds", "tenths"))
+    kilometre_seconds = None
+    if mins is not None and secs is not None:
+        candidate_time = 60 * mins + secs + (tenths or 0) / 10
+        if 60 <= candidate_time <= 160:
+            kilometre_seconds = round(candidate_time, 2)
     return {
         "date": when.isoformat(),
         "place": int(placed) if placed is not None else None,
+        "country": country if country in ("SE", "NO", "DK", "FI") else None,
+        "pastFirstPrize": prize if prize is not None and prize > 0 else None,
+        "postPosition": int(post) if post is not None and 1 <= post <= 20 else None,
+        "startMethod": method if method in ("auto", "volte") else None,
+        "kmSeconds": kilometre_seconds,
         "galloped": has_gallop if galloped is not None or disqualified is not None else None,
         "distance": int(distance) if distance is not None and 800 <= distance <= 6000 else None,
         "raceId": race.get("id") or None,
@@ -181,17 +198,120 @@ def analysis_entry(horse, extended_start):
             "form": f, "pace": None, "class": None, "gear": None, "risk": risk
         },
         "distanceOnlyScore": dist,
+        "evidence": {"classStarts": 0, "paceStarts": 0, "classCountries": [],
+                     "modelCoverageWeight": 0, "partialRankScore": None},
         "coverage": {
             "form": f is not None, "risk": risk is not None,
             "pace": False, "class": False, "gear": False
         },
         "status": "partial" if known else ("history_only" if recent else "no_history"),
         "note": (
-            "Form från senaste lopp; distansprov separat. Loppbild, klass och utrustning kräver verifiering."
+            "Form från tidigare starter; spår/tempo och klass beräknas först när jämförbar historik räcker."
             if known else "Otillräcklig verifierad historik för automatisk bedömning."
         ),
     }
 
+
+
+def percentile(value, samples):
+    """0-1 empirical midrank; robust to tied samples."""
+    if not samples:
+        return None
+    below = sum(x < value for x in samples)
+    equal = sum(x == value for x in samples)
+    return (below + equal / 2) / len(samples)
+
+
+def score_draw(post, method):
+    """Only a rough current gate-position indicator: never an inferred lead chance."""
+    if method != "auto" or not isinstance(post, int) or post < 1:
+        return None
+    gates = {1: 4.3, 2: 4.7, 3: 4.7, 4: 4.5, 5: 4.1, 6: 3.4, 7: 2.8, 8: 2.2}
+    return gates.get(post, max(0.8, 2.0 - 0.13 * (post - 9)))
+
+
+def add_contextual_scores(results, market_races):
+    """Intra-field, prestart evidence only. Do not use betting/odds or future races.
+
+    Class proxy: prior first-prize tiers normalized within past-race country.
+    Pace proxy: past comparable-km times (not sectional speed) and draw, auto only.
+    We leave these scores missing when evidence does not justify a comparison.
+    """
+    for race, market in zip(results, market_races):
+        current = {h["number"]: h for h in market["starts"]}
+        horses = [h for h in race["horses"] if not h["scratched"]]
+        # Compare horse history only with runners in the same upcoming leg.
+        prize_by_country = {}
+        for h in horses:
+            for past in h["lastFive"]:
+                country, prize = past.get("country"), past.get("pastFirstPrize")
+                if country is not None and isinstance(prize, (int, float)):
+                    prize_by_country.setdefault(country, []).append(prize)
+        valid_countries = {
+            country: values for country, values in prize_by_country.items()
+            if len(values) >= 9 and len(set(values)) >= 3
+        }
+        for h in horses:
+            relevant = []
+            for past in h["lastFive"]:
+                country = past.get("country")
+                prize = past.get("pastFirstPrize")
+                if country not in valid_countries or not isinstance(prize, (int, float)):
+                    continue
+                p = performance(past.get("place"), past.get("galloped"))
+                if p is not None:
+                    relevant.append((percentile(prize, valid_countries[country]), p))
+            if len(relevant) >= 2:
+                tier = statistics.mean(x[0] for x in relevant[:5])
+                achieved = statistics.mean(x[1] for x in relevant[:5]) / 5
+                # Thresholds are heuristic; not trained or probability calibrated.
+                h["scores"]["class"] = round(min(5, max(0, 5 * (0.65 * tier + 0.35 * achieved))), 2)
+                h["evidence"]["classStarts"] = len(relevant)
+                h["evidence"]["classCountries"] = sorted({p["country"] for p in h["lastFive"]
+                    if p.get("country") in valid_countries and isinstance(p.get("pastFirstPrize"), (int, float))})
+                h["coverage"]["class"] = True
+
+        method = race.get("startMethod")
+        if method == "auto":
+            times = {}
+            # Normalized timing is only comparable within approximately matching distances.
+            for h in horses:
+                current_dist = current[h["number"]].get("distance")
+                values = [x["kmSeconds"] for x in h["lastFive"]
+                    if x.get("kmSeconds") is not None and x.get("startMethod") == "auto"
+                    and x.get("galloped") is not True and x.get("distance") is not None
+                    and isinstance(current_dist, (int, float))
+                    and abs(x["distance"] - current_dist) <= 170]
+                if len(values) >= 2:
+                    times[h["number"]] = round(statistics.median(values), 2)
+            if len(times) >= 5 and len(set(times.values())) >= 3:
+                sample = list(times.values())
+                for h in horses:
+                    if h["number"] not in times:
+                        continue
+                    post = current[h["number"]].get("postPosition")
+                    draw = score_draw(post, method)
+                    if draw is None:
+                        continue
+                    fast_pct = 1 - percentile(times[h["number"]], sample)
+                    h["scores"]["pace"] = round(0.65 * fast_pct * 5 + 0.35 * draw, 2)
+                    h["evidence"]["paceStarts"] = sum(
+                        x.get("kmSeconds") is not None and x.get("startMethod") == "auto"
+                        and x.get("galloped") is not True and x.get("distance") is not None
+                        and abs(x["distance"] - current[h["number"]]["distance"]) <= 170
+                        for x in h["lastFive"])
+                    h["coverage"]["pace"] = True
+        for h in horses:
+            known = [(h["scores"][k], w) for k, w in (("form", 30), ("pace", 25), ("class", 20),
+                     ("gear", 15), ("risk", 10)) if h["scores"][k] is not None]
+            total = sum(w for _, w in known)
+            h["evidence"]["modelCoverageWeight"] = total
+            # At least two independent evidence dimensions; never a complete 100-point ranking.
+            if len(known) >= 2 and total >= 45:
+                h["evidence"]["partialRankScore"] = round(sum(v / 5 * w for v, w in known) / total * 100, 1)
+            if h["scores"]["pace"] is not None or h["scores"]["class"] is not None:
+                h["status"] = "partial"
+                h["note"] = "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
 
 def main():
     now = dt.datetime.now(dt.timezone(dt.timedelta(hours=1)))
@@ -223,19 +343,24 @@ def main():
                 candidate = found.get(h["number"])
                 item = candidate[1] if candidate and candidate[0] == normalize(h["name"]) else None
                 parsed.append(analysis_entry(h, item))
-            results.append({"leg": leg, "raceNumber": race_number, "sourceUrl": url, "horses": parsed})
+            results.append({"leg": leg, "raceNumber": race_number, "startMethod": payload.get("startMethod"),
+                            "sourceUrl": url, "horses": parsed})
         except (urllib.error.URLError, TimeoutError, ValueError, KeyError, json.JSONDecodeError) as err:
             failures.append({"leg": leg, "error": type(err).__name__ + ": " + str(err)[:160]})
             results.append({
-                "leg": leg, "raceNumber": race_number,
+                "leg": leg, "raceNumber": race_number, "startMethod": None,
                 "sourceUrl": f"{API}2026-10-31_78_{race_number}/extended",
                 "horses": [analysis_entry(h, None) for h in race["starts"]],
             })
         time.sleep(0.25)
+    add_contextual_scores(results, original["races"])
     flat = [h for r in results for h in r["horses"] if not h["scratched"]]
     with_history = sum(h["previousStarts"] >= 1 for h in flat)
     rated = sum(h["scores"]["form"] is not None for h in flat)
     rated_risk = sum(h["scores"]["risk"] is not None for h in flat)
+    rated_pace = sum(h["scores"]["pace"] is not None for h in flat)
+    rated_class = sum(h["scores"]["class"] is not None for h in flat)
+    partial = sum(h["evidence"]["partialRankScore"] is not None for h in flat)
     if not flat or len(results) != 8:
         raise ValueError("Bad analysis output")
     if len(failures) == 8:
@@ -244,13 +369,15 @@ def main():
         print(json.dumps(failures, ensure_ascii=False))
         return 1
     result = {
-        "schemaVersion": 1, "gameId": ID, "track": "Bjerke",
+        "schemaVersion": 2, "gameId": ID, "track": "Bjerke",
         "raceDate": DAY.isoformat(), "atgSourceAt": original.get("sourceAt"),
-        "method": "Backward-only last-five form score; NOT a calibrated win probability.",
-        "limitations": "Pace, class and equipment are not inferred from odds, popularity or start number. No full 100-point automatic ranking.",
+        "method": "Backward-only performance, pace/draw proxy, and past purse-tier class proxy; NOT a calibrated win probability.",
+        "limitations": "Pace approximates pace suitability using recorded km times and the current draw (NOT verified lead probability). Class compares previous first prizes ONLY within the same country and field, with past finishing performance. Not a calibrated prediction. Gear and many risks remain unknown. Scores never use odds or V85 betting percentages.",
         "coverage": {
             "activeHorses": len(flat), "horsesWithHistory": with_history,
             "formRated": rated, "riskRated": rated_risk,
+            "paceRated": rated_pace, "classRated": rated_class,
+            "partialRanked": partial,
             "failedRaces": len(failures),
         },
         "failures": failures, "races": results,
@@ -262,7 +389,8 @@ def main():
         return 0
     result["retrievedAt"] = now.isoformat()
     DEST.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Form: {rated}/{len(flat)}, histories: {with_history}, risk: {rated_risk}, failures: {len(failures)}.")
+    print(f"Form: {rated}/{len(flat)}, class: {rated_class}, pace: {rated_pace}, "
+          f"partial: {partial}, histories: {with_history}, risk: {rated_risk}, failures: {len(failures)}.")
     return 0
 
 
