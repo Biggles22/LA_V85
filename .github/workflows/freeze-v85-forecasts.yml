@@ -68,14 +68,16 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             mkdir -p research/frozen/2026-10-31
-            if test -e "$target"; then
+            # git reset does NOT remove the untracked file created in this run.
+            # Check the REMOTE COMMIT, not whether the runner filesystem has it.
+            if git cat-file -e "origin/main:$target" 2>/dev/null; then
               echo "Immutable slot already published; never overwrite."
               exit 0
             fi
             cp "$RUNNER_TEMP/frozen_candidate.json" "$target"
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add "$target"
+            git add -f "$target"
             if git diff --cached --quiet; then
               echo "Unchanged; no commit."
               exit 0
