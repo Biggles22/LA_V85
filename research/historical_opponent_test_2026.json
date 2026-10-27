@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "reportType": "ACTUAL_PAST_OPPONENT_FORM_EXPLORATORY_NOT_VALIDATED",
+  "historicalRaceCount": 178,
+  "historicalStarterCount": 1931,
+  "datedFeatureRows": 452,
+  "ratedAllStarts": 441,
+  "heldOutRaces": 151,
+  "ratedHeldOutRaces": 35,
+  "ratedHeldOutDates": 21,
+  "strictPairedMarketRaces": 4,
+  "baselineAll": {
+    "races": 151,
+    "top1Count": 39,
+    "top3Count": 82,
+    "top1Rate": 0.2583,
+    "top3Rate": 0.543,
+    "raceLogLoss": 2.1671,
+    "horseBrier": 0.08134
+  },
+  "withHistoricalOpponentsAll": {
+    "races": 151,
+    "top1Count": 35,
+    "top3Count": 84,
+    "top1Rate": 0.2318,
+    "top3Rate": 0.5563,
+    "raceLogLoss": 2.1563,
+    "horseBrier": 0.08088
+  },
+  "baselineOnRatedRaces": {
+    "races": 35,
+    "top1Count": 9,
+    "top3Count": 20,
+    "top1Rate": 0.2571,
+    "top3Rate": 0.5714,
+    "raceLogLoss": 2.1247,
+    "horseBrier": 0.08099
+  },
+  "withHistoricalOpponentsOnRatedRaces": {
+    "races": 35,
+    "top1Count": 7,
+    "top3Count": 22,
+    "top1Rate": 0.2,
+    "top3Rate": 0.6286,
+    "raceLogLoss": 2.0631,
+    "horseBrier": 0.07986
+  },
+  "baselineOnRatedAndCompleteMarket": {
+    "races": 4,
+    "top1Count": 1,
+    "top3Count": 1,
+    "top1Rate": 0.25,
+    "top3Rate": 0.25,
+    "raceLogLoss": 2.6226,
+    "horseBrier": 0.08045
+  },
+  "withHistoricalOpponentsOnRatedAndCompleteMarket": {
+    "races": 4,
+    "top1Count": 1,
+    "top3Count": 1,
+    "top1Rate": 0.25,
+    "top3Rate": 0.25,
+    "raceLogLoss": 2.802,
+    "horseBrier": 0.08284
+  },
+  "marketFinalPoolOnRatedAndCompleteMarket": {
+    "races": 4,
+    "top1Count": 1,
+    "top3Count": 2,
+    "top1Rate": 0.25,
+    "top3Rate": 0.5,
+    "raceLogLoss": 2.6262,
+    "horseBrier": 0.07927
+  },
+  "folds": [
+    {
+      "date": "2026-01-03",
+      "trainStarters": 302,
+      "testRaces": 8
+    },
+    {
+      "date": "2026-02-07",
+      "trainStarters": 385,
+      "testRaces": 8
+    },
+    {
+      "date": "2026-02-14",
+      "trainStarters": 468,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-02-21",
+      "trainStarters": 538,
+      "testRaces": 8
+    },
+    {
+      "date": "2026-02-28",
+      "trainStarters": 624,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-03-14",
+      "trainStarters": 703,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-03-21",
+      "trainStarters": 777,
+      "testRaces": 6
+    },
+    {
+      "date": "2026-03-28",
+      "trainStarters": 842,
+      "testRaces": 8
+    },
+    {
+      "date": "2026-04-11",
+      "trainStarters": 930,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-04-18",
+      "trainStarters": 999,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-04-25",
+      "trainStarters": 1076,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-05-02",
+      "trainStarters": 1157,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-05-09",
+      "trainStarters": 1233,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-05-23",
+      "trainStarters": 1308,
+      "testRaces": 8
+    },
+    {
+      "date": "2026-05-30",
+      "trainStarters": 1394,
+      "testRaces": 8
+    },
+    {
+      "date": "2026-06-13",
+      "trainStarters": 1475,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-06-27",
+      "trainStarters": 1553,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-07-25",
+      "trainStarters": 1632,
+      "testRaces": 8
+    },
+    {
+      "date": "2026-10-10",
+      "trainStarters": 1722,
+      "testRaces": 8
+    },
+    {
+      "date": "2026-10-17",
+      "trainStarters": 1811,
+      "testRaces": 7
+    },
+    {
+      "date": "2026-10-24",
+      "trainStarters": 1886,
+      "testRaces": 4
+    }
+  ],
+  "method": "Each runner's ACTUAL previous race opponents are rated strictly BEFORE that previous race. Models trained on earlier V85 dates only. Scores missing on unmatched runner remain NaN.",
+  "limitations": "Researcher has already tested alternatives on overlapping historical periods; these metrics are hypothesis-generating, not untouched final validation. Many historical starts lack opponent fields, and selection coverage may bias the subset. Betting baseline uses retrospective final market, not archived prestart snapshots.",
+  "decision": "No change to live Bjerke tips or production model regardless of result; require independent future dated holdout."
+}
