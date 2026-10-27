@@ -1,0 +1,537 @@
+{
+  "reportType": "EXPLORATORY_BACKTEST_NOT_VALIDATED",
+  "createdAt": "2026-10-27T06:56:14.462292+00:00",
+  "trainDates": [
+    "2026-03-14",
+    "2026-04-11"
+  ],
+  "heldOutDates": [
+    "2026-10-10",
+    "2026-10-24"
+  ],
+  "trainStarts": 296,
+  "testStarts": 209,
+  "trainRaces": 28,
+  "testRaces": 19,
+  "model": "XGBClassifier, 135 trees, depth 3, time-ordered date holdout",
+  "features": [
+    "post",
+    "distance",
+    "field",
+    "auto",
+    "starts5",
+    "form_place_mean",
+    "win5",
+    "top3_5",
+    "days_off",
+    "gallop5",
+    "km_median",
+    "past_purse_log"
+  ],
+  "modelMetrics": {
+    "races": 19,
+    "top1Count": 4,
+    "top3Count": 10,
+    "top1Rate": 0.2105,
+    "top3Rate": 0.5263,
+    "raceLogLoss": 2.0879,
+    "horseBrier": 0.07882
+  },
+  "modelOnIdenticalMarketRaces": {
+    "races": 9,
+    "top1Count": 1,
+    "top3Count": 5,
+    "top1Rate": 0.1111,
+    "top3Rate": 0.5556,
+    "raceLogLoss": 2.077,
+    "horseBrier": 0.07975
+  },
+  "marketFinalPoolBaseline": {
+    "races": 9,
+    "top1Count": 5,
+    "top3Count": 8,
+    "top1Rate": 0.5556,
+    "top3Rate": 0.8889,
+    "raceLogLoss": 1.4056,
+    "horseBrier": 0.06487
+  },
+  "baselineCaveat": "Market uses retrospective final V85 pool percentages, NOT independently archived prestart snapshots. Cross-pool timing may not be independently verified.",
+  "validationCaveat": "Small pilot, one chronological holdout, no hyperparameter search or robust confidence intervals. Do not interpret as profit, actionable spik/skrall recommendations or proven independent probabilities.",
+  "racePredictions": [
+    {
+      "raceId": "2026-10-10_5_6",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Gumshoe Sox",
+          "modelProb": 0.1913
+        },
+        {
+          "number": 2,
+          "horse": "Cold Blaze",
+          "modelProb": 0.1655
+        },
+        {
+          "number": 5,
+          "horse": "Digital Brodde",
+          "modelProb": 0.145
+        }
+      ],
+      "winnerNumbers": [
+        1
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-10_5_7",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 6,
+          "horse": "Boscha Diablo",
+          "modelProb": 0.2255
+        },
+        {
+          "number": 5,
+          "horse": "Ready Star",
+          "modelProb": 0.2106
+        },
+        {
+          "number": 10,
+          "horse": "Barack Face",
+          "modelProb": 0.168
+        }
+      ],
+      "winnerNumbers": [
+        5
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-10_5_8",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 12,
+          "horse": "La Yuca",
+          "modelProb": 0.2401
+        },
+        {
+          "number": 3,
+          "horse": "Riverdale Z.",
+          "modelProb": 0.1972
+        },
+        {
+          "number": 11,
+          "horse": "Betting Pacer",
+          "modelProb": 0.1367
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-10_5_9",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Isaac Wynn",
+          "modelProb": 0.1833
+        },
+        {
+          "number": 9,
+          "horse": "Monster Wine",
+          "modelProb": 0.1455
+        },
+        {
+          "number": 11,
+          "horse": "Eagle Rock",
+          "modelProb": 0.1162
+        }
+      ],
+      "winnerNumbers": [
+        15
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-10_5_10",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 7,
+          "horse": "Zeebreeze",
+          "modelProb": 0.2193
+        },
+        {
+          "number": 6,
+          "horse": "Graffiti Brodda",
+          "modelProb": 0.1578
+        },
+        {
+          "number": 9,
+          "horse": "Thai Medina",
+          "modelProb": 0.118
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-10_5_11",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Conrads Åke",
+          "modelProb": 0.207
+        },
+        {
+          "number": 8,
+          "horse": "Global Dependable",
+          "modelProb": 0.1689
+        },
+        {
+          "number": 3,
+          "horse": "Elvis T.C.B.",
+          "modelProb": 0.1374
+        }
+      ],
+      "winnerNumbers": [
+        5
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-10_5_12",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 10,
+          "horse": "Neutron Star",
+          "modelProb": 0.1356
+        },
+        {
+          "number": 3,
+          "horse": "Nanda Devi Cut",
+          "modelProb": 0.1263
+        },
+        {
+          "number": 7,
+          "horse": "Payback River",
+          "modelProb": 0.1173
+        }
+      ],
+      "winnerNumbers": [
+        3
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-10_5_13",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "King Okay",
+          "modelProb": 0.2167
+        },
+        {
+          "number": 11,
+          "horse": "Västerbo Exciting",
+          "modelProb": 0.1407
+        },
+        {
+          "number": 2,
+          "horse": "X.O.Kemp",
+          "modelProb": 0.1354
+        }
+      ],
+      "winnerNumbers": [
+        9
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-17_16_5",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 2,
+          "horse": "S.G.Empress",
+          "modelProb": 0.4072
+        },
+        {
+          "number": 7,
+          "horse": "Global Enjoy",
+          "modelProb": 0.125
+        },
+        {
+          "number": 10,
+          "horse": "Nadal B.R.",
+          "modelProb": 0.1054
+        }
+      ],
+      "winnerNumbers": [
+        6
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-17_16_6",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 2,
+          "horse": "Realize'em",
+          "modelProb": 0.164
+        },
+        {
+          "number": 6,
+          "horse": "Ki Ti Vi",
+          "modelProb": 0.1485
+        },
+        {
+          "number": 8,
+          "horse": "Havana Heaven",
+          "modelProb": 0.1097
+        }
+      ],
+      "winnerNumbers": [
+        5
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-17_16_7",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Set it off H.C.",
+          "modelProb": 0.2685
+        },
+        {
+          "number": 2,
+          "horse": "Emerald Broline",
+          "modelProb": 0.2035
+        },
+        {
+          "number": 11,
+          "horse": "Green Dream",
+          "modelProb": 0.1415
+        }
+      ],
+      "winnerNumbers": [
+        8
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-17_16_8",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Borups Victory",
+          "modelProb": 0.2527
+        },
+        {
+          "number": 9,
+          "horse": "Bengan",
+          "modelProb": 0.2026
+        },
+        {
+          "number": 7,
+          "horse": "High on Pepper",
+          "modelProb": 0.1391
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-17_16_9",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 8,
+          "horse": "Lannem Pär",
+          "modelProb": 0.1651
+        },
+        {
+          "number": 4,
+          "horse": "Alm Nordstjernen",
+          "modelProb": 0.165
+        },
+        {
+          "number": 13,
+          "horse": "Ellbert",
+          "modelProb": 0.1075
+        }
+      ],
+      "winnerNumbers": [
+        1
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-17_16_11",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Any Given Sunday",
+          "modelProb": 0.2294
+        },
+        {
+          "number": 7,
+          "horse": "Great Old Dance",
+          "modelProb": 0.1455
+        },
+        {
+          "number": 9,
+          "horse": "Joker Ima",
+          "modelProb": 0.1148
+        }
+      ],
+      "winnerNumbers": [
+        6
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-17_16_12",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 9,
+          "horse": "Readly Winner",
+          "modelProb": 0.2424
+        },
+        {
+          "number": 7,
+          "horse": "Unicum",
+          "modelProb": 0.1918
+        },
+        {
+          "number": 4,
+          "horse": "Griffin Kronos",
+          "modelProb": 0.1537
+        }
+      ],
+      "winnerNumbers": [
+        4
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-24_7_5",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 8,
+          "horse": "M.T.Tomorrows Hope",
+          "modelProb": 0.2444
+        },
+        {
+          "number": 3,
+          "horse": "Nilla Lane",
+          "modelProb": 0.2211
+        },
+        {
+          "number": 4,
+          "horse": "Be My Baby",
+          "modelProb": 0.1032
+        }
+      ],
+      "winnerNumbers": [
+        3
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-24_7_6",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 6,
+          "horse": "Run Rhapsody Run",
+          "modelProb": 0.1687
+        },
+        {
+          "number": 12,
+          "horse": "Call Me Ottilia",
+          "modelProb": 0.1407
+        },
+        {
+          "number": 14,
+          "horse": "Bella Yankee",
+          "modelProb": 0.14
+        }
+      ],
+      "winnerNumbers": [
+        12
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-24_7_10",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 7,
+          "horse": "Tvingens Calippo",
+          "modelProb": 0.42
+        },
+        {
+          "number": 9,
+          "horse": "Fantasy Sensation",
+          "modelProb": 0.124
+        },
+        {
+          "number": 5,
+          "horse": "Superstitious",
+          "modelProb": 0.1115
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-24_7_12",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 4,
+          "horse": "Blixt Lane",
+          "modelProb": 0.2095
+        },
+        {
+          "number": 6,
+          "horse": "Nickel Occagnes",
+          "modelProb": 0.1966
+        },
+        {
+          "number": 8,
+          "horse": "Golden Sunrise",
+          "modelProb": 0.1353
+        }
+      ],
+      "winnerNumbers": [
+        4
+      ],
+      "winnerInTop3": true
+    }
+  ]
+}
