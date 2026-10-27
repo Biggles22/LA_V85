@@ -1,0 +1,56 @@
+name: LA V85 – time-safe previous-opponent research probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/opponent-probe.yml"
+      - "scripts/opponent_probe.py"
+      - "tests/test_opponent_probe.py"
+permissions:
+  contents: write
+concurrency:
+  group: la-v85-opponent-probe
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check chronology and missing-data behavior
+        run: python -m unittest discover -s tests -p "test_opponent_probe.py"
+      - name: Query only bounded historical races
+        run: python scripts/opponent_probe.py
+      - name: Publish research only if verified and changed
+        run: |
+          cp research/opponent_probe_2026.json "$RUNNER_TEMP/opponent_candidate.json"
+          git fetch origin main
+          git reset --hard origin/main
+          python - <<'PY'
+          import json,os,pathlib,shutil
+          candidate=pathlib.Path(os.environ["RUNNER_TEMP"])/"opponent_candidate.json"
+          new=json.loads(candidate.read_text())
+          target=pathlib.Path("research/opponent_probe_2026.json")
+          if target.exists():
+              previous=json.loads(target.read_text())
+              if new==previous or (new["sufficientCoverage"]<previous.get("sufficientCoverage",0)):
+                  print("Preserving previous verified research result.")
+                  raise SystemExit(0)
+          target.parent.mkdir(parents=True,exist_ok=True)
+          shutil.copy2(candidate,target)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/opponent_probe_2026.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive dated previous-opponent research probe [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          else
+            echo "No changes to previous-opponent pilot."
+          fi
