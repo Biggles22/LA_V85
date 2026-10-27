@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "sampledPreviousRaces": 16,
+  "readableRaces": 14,
+  "observedFocusStarts": 14,
+  "sufficientCoverage": 13,
+  "method": "Form of actual other runners as it stood before each sampled previous race, without post-race records. A bounded proof of concept only.",
+  "noMarketOrResultLeakage": true,
+  "limits": "Only a small deterministic sample of previous races; no verified lead positions, track condition or opponent-class correction. Not a predictor.",
+  "source": "ATG racinginfo extended, unofficial",
+  "failures": [
+    {
+      "raceId": "2026-10-15_81_3",
+      "type": "HTTPError",
+      "detail": "HTTP Error 404: Not Found"
+    },
+    {
+      "raceId": "2026-10-23_96_3",
+      "type": "HTTPError",
+      "detail": "HTTP Error 404: Not Found"
+    }
+  ],
+  "rows": [
+    {
+      "leg": 1,
+      "number": 1,
+      "name": "Jaguar Godiva",
+      "previousRaceId": "2026-10-10_5_11",
+      "cutoff": "2026-10-10",
+      "focusFound": true,
+      "otherStarters": 11,
+      "ratedOpponents": 11,
+      "opponentRecentFormMean": 0.4855,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 1,
+      "number": 2,
+      "name": "Hickovelocissimo",
+      "previousRaceId": "2026-10-18_31_10",
+      "cutoff": "2026-10-18",
+      "focusFound": true,
+      "otherStarters": 9,
+      "ratedOpponents": 9,
+      "opponentRecentFormMean": 0.3052,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 2,
+      "number": 1,
+      "name": "Baias",
+      "previousRaceId": "2026-09-19_15_8",
+      "cutoff": "2026-09-19",
+      "focusFound": true,
+      "otherStarters": 9,
+      "ratedOpponents": 9,
+      "opponentRecentFormMean": 0.5007,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 3,
+      "number": 1,
+      "name": "Lilli Kentucky S.F.",
+      "previousRaceId": "2026-10-08_99_6",
+      "cutoff": "2026-10-08",
+      "focusFound": true,
+      "otherStarters": 8,
+      "ratedOpponents": 7,
+      "opponentRecentFormMean": 0.3343,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 3,
+      "number": 2,
+      "name": "Pauhunri Boko",
+      "previousRaceId": "2026-08-26_6_6",
+      "cutoff": "2026-08-26",
+      "focusFound": true,
+      "otherStarters": 8,
+      "ratedOpponents": 8,
+      "opponentRecentFormMean": 0.4192,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 4,
+      "number": 1,
+      "name": "Baron Tilly",
+      "previousRaceId": "2026-08-15_6_10",
+      "cutoff": "2026-08-15",
+      "focusFound": true,
+      "otherStarters": 9,
+      "ratedOpponents": 9,
+      "opponentRecentFormMean": 0.4096,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 4,
+      "number": 2,
+      "name": "Daim Brodda",
+      "previousRaceId": "2026-10-11_70_6",
+      "cutoff": "2026-10-11",
+      "focusFound": true,
+      "otherStarters": 11,
+      "ratedOpponents": 0,
+      "opponentRecentFormMean": null,
+      "coverageSufficient": false
+    },
+    {
+      "leg": 5,
+      "number": 1,
+      "name": "Yellowstone Doc",
+      "previousRaceId": "2026-10-05_15_2",
+      "cutoff": "2026-10-05",
+      "focusFound": true,
+      "otherStarters": 9,
+      "ratedOpponents": 9,
+      "opponentRecentFormMean": 0.2941,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 6,
+      "number": 1,
+      "name": "Mimosa to Martini",
+      "previousRaceId": "2026-09-26_6_5",
+      "cutoff": "2026-09-26",
+      "focusFound": true,
+      "otherStarters": 11,
+      "ratedOpponents": 11,
+      "opponentRecentFormMean": 0.5091,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 6,
+      "number": 2,
+      "name": "Stella Ammik",
+      "previousRaceId": "2026-10-17_80_10",
+      "cutoff": "2026-10-17",
+      "focusFound": true,
+      "otherStarters": 10,
+      "ratedOpponents": 10,
+      "opponentRecentFormMean": 0.2827,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 7,
+      "number": 1,
+      "name": "Goodbye Kiss",
+      "previousRaceId": "2026-10-16_18_8",
+      "cutoff": "2026-10-16",
+      "focusFound": true,
+      "otherStarters": 14,
+      "ratedOpponents": 12,
+      "opponentRecentFormMean": 0.2131,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 7,
+      "number": 2,
+      "name": "Blank",
+      "previousRaceId": "2026-10-01_32_7",
+      "cutoff": "2026-10-01",
+      "focusFound": true,
+      "otherStarters": 7,
+      "ratedOpponents": 7,
+      "opponentRecentFormMean": 0.3629,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 8,
+      "number": 1,
+      "name": "Eye to Eye",
+      "previousRaceId": "2026-10-16_18_9",
+      "cutoff": "2026-10-16",
+      "focusFound": true,
+      "otherStarters": 11,
+      "ratedOpponents": 9,
+      "opponentRecentFormMean": 0.4385,
+      "coverageSufficient": true
+    },
+    {
+      "leg": 8,
+      "number": 2,
+      "name": "Sanctuaire",
+      "previousRaceId": "2026-10-20_78_5",
+      "cutoff": "2026-10-20",
+      "focusFound": true,
+      "otherStarters": 9,
+      "ratedOpponents": 8,
+      "opponentRecentFormMean": 0.3633,
+      "coverageSufficient": true
+    }
+  ]
+}
