@@ -30,7 +30,7 @@ OUT=ROOT/"research/historical_opponent_asof_2026.json"
 BASE="https://www.atg.se/services/racinginfo/v1/api/races/"
 RE_RACE=re.compile(r"^(\d{4}-\d{2}-\d{2})_\d+_\d+$")
 MAX_TARGETS=42
-MAX_PRIOR_CARDS=210
+MAX_PRIOR_CARDS=380
 WORKERS=3
 
 
@@ -99,18 +99,29 @@ def make_focus(extended, historical_rows, target_date):
     return available
 
 
-def bounded_plan(targets,max_cards=MAX_PRIOR_CARDS):
-    """Rotate selection across horse numbers; never select based on outcome."""
+def bounded_plan(targets,max_cards=MAX_PRIOR_CARDS,cached_ids=()):
+    """Keep published research, extending the sample to newer test dates.
+
+    The initial bounded pilot had concentrated on earlier dates. Never
+    silently drop validated source cards; prioritize later dates next.
+    """
+    existing=set(cached_ids)
     selected={}
+    for target in targets:
+        for rid in target["candidatePriorRaceIds"]:
+            if rid in existing:
+                selected.setdefault(rid,set()).add((target["raceId"],target["number"]))
+    if len(selected)>max_cards:
+        raise ValueError("More verified cards than request budget")
     for depth in range(3):
-        for target in targets:
+        for target in reversed(targets):
             history=target["candidatePriorRaceIds"]
             if depth>=len(history):continue
             rid=history[depth]
-            if rid not in selected and len(selected)>=max_cards:continue
+            if rid not in selected and len(selected)>=max_cards:
+                continue
             selected.setdefault(rid,set()).add((target["raceId"],target["number"]))
     return selected
-
 
 def historical_card(data,rid):
     """Only historical rivals' form before the previous race, no result label."""
@@ -181,7 +192,7 @@ def main():
             found=make_focus(fetched[rid],historical[rid],date)
             target_cache[rid]=found
             targets.extend(found)
-    plan=bounded_plan(targets)
+    plan=bounded_plan(targets,cached_ids=all_cards)
     prior_failures={}
     needed=[rid for rid in plan if rid not in all_cards]
     with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
