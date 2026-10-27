@@ -20,6 +20,7 @@ a{color:#075ba5}.muted{color:#52647c}footer{margin-top:20px;font-size:13px;color
 <h1>Historiska V85-lopp och vår AI-testmodell</h1>
 <p class="lead">Denna experimentyta hämtar en rapport som skapats från äldre V85-lopp. Modellen tränas på tidigare tävlingsdatum och testas på senare, osedda lopp. Hästarnas indata hämtas enbart från starter före respektive lopp.</p>
 <div class="notice"><strong>Observera:</strong> En första XGBoost-pilot kan inte bevisa långsiktigt spelvärde. Jämförelsen mot ATG använder, där uppgifterna finns, historiskt hämtade slutstreck och inte självständigt tidsstämplade marknadssnapshots före start. Modellens sannolikheter är ännu inte kalibrerade.</div>
+<div id="historical-actual-opponent"><p>Kontrollerar historiskt test av faktiska tidigare motståndare …</p></div>
 <div id="expanded-opponent-results"><p>Hämtar de utökade motståndsundersökningarna …</p></div>
 <div id="feature-trial"><p>Kontrollerar den nya faktorjämförelsen …</p></div>
 <div id="walkforward-report"><p>Hämtar den utökade kronologiska utvärderingen …</p></div>
@@ -42,4 +43,4 @@ el.innerHTML='<h2>Första tidsseparerade testet</h2>'+
 (d.racePredictions||[]).map(r=>'<tr><td>'+esc(r.date)+'</td><td>'+esc(r.raceId)+'</td><td>'+r.topModel.map(x=>esc(x.number+' '+x.horse)).join(' / ')+'</td><td>'+esc((r.winnerNumbers||[]).join(','))+'</td><td>'+(r.winnerInTop3?'Ja':'Nej')+'</td></tr>').join('')+'</tbody></table></div>';
 }).catch(()=>{el.innerHTML='<div class="notice"><strong>Ingen verifierad modellrapport ännu.</strong> Historikinsamlingen eller valideringen är inte klar, eller har misslyckats. Vi visar inte påhittad statistik. Se <a href="https://github.com/Biggles22/LA_V85/actions/workflows/historical-pilot.yml">GitHub Actions</a> för exakt status.</div>'});
 })();
-</script><script src="./walkforward.js?v=20261027-v1" defer></script><script src="./feature-trial.js?v=20261027-v1" defer></script><script src="./opposition-expanded.js?v=20261027-v1" defer></script></body></html>
+</script><script src="./walkforward.js?v=20261027-v1" defer></script><script src="./feature-trial.js?v=20261027-v1" defer></script><script src="./opposition-expanded.js?v=20261027-v1" defer></script><script src="./actual-opponent.js?v=20261027-v1" defer></script></body></html>
