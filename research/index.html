@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LA_V85 · Historisk AI-pilot</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#1e3045;background:#f4f7fb}
+*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:clamp(28px,4vw,43px);margin:8px 0}h2{margin:30px 0 12px}.eyebrow{color:#075ba5;font-weight:800;letter-spacing:.08em;font-size:12px}
+.lead{font-size:17px;color:#485d73;max-width:850px;line-height:1.55}.notice{border-left:4px solid #bd7728;padding:15px 18px;border-radius:6px;background:#fff7ed;margin:20px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:12px;margin:18px 0}.card{border:1px solid #d8e2ed;background:white;padding:20px;border-radius:12px}
+.card strong{display:block;font-size:29px;color:#0057b8;margin:9px 0}.card small{color:#52647c}.table-scroll{overflow:auto;background:white;border:1px solid #d8e2ed;border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:700px}th,td{padding:11px 14px;text-align:left;border-bottom:1px solid #d8e2ed;vertical-align:top;font-size:13px}th{background:#eaf1f9}td small{display:block;color:#60718a}
+a{color:#075ba5}.muted{color:#52647c}footer{margin-top:20px;font-size:13px;color:#52647c}
+</style>
+</head><body><main>
+<a href="../">← Till LA_V85</a>
+<p class="eyebrow">FORSKNING · INTE SPELRÅD</p>
+<h1>Historiska lopp och första AI-testet</h1>
+<p class="lead">Denna experimentyta hämtar en rapport som skapats från äldre V85-lopp. Modellen tränas på tidigare tävlingsdatum och testas på senare, osedda lopp. Hästarnas indata hämtas enbart från starter före respektive lopp.</p>
+<div class="notice"><strong>Observera:</strong> En första XGBoost-pilot kan inte bevisa långsiktigt spelvärde. Jämförelsen mot ATG använder, där uppgifterna finns, historiskt hämtade slutstreck och inte självständigt tidsstämplade marknadssnapshots före start. Modellens sannolikheter är ännu inte kalibrerade.</div>
+<div id="report"><p>Kontrollerar om den första verifierade testomgången har publicerats …</p></div>
+<footer>Insamlingsmetod och begränsningar: <a href="./README.md">research/README.md</a>. Källsystem: ATG racinginfo (ej officiellt dokumenterat öppet API).</footer>
+</main><script>
+(() => {
+const el=document.querySelector('#report');
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct=x=>typeof x==='number'?(x*100).toFixed(1).replace('.',',')+' %':'Ej beräknat';
+const metric=(name,data)=>'<article class="card"><small>'+esc(name)+'</small><strong>'+pct(data?.top3Rate)+'</strong><small>Förstahäst: '+pct(data?.top1Rate)+' · '+(data?.races??0)+' testlopp</small></article>';
+fetch('./model_report_2026.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('No report');return r.json()}).then(d=>{
+if(d.reportType!=='EXPLORATORY_BACKTEST_NOT_VALIDATED'||!d.modelMetrics)throw new Error('Invalid report');
+const benchmark=d.marketFinalPoolBaseline||{};
+el.innerHTML='<h2>Första tidsseparerade testet</h2>'+
+'<p class="muted">Träning: '+esc(d.trainDates?.join(' – '))+' ('+(d.trainRaces??0)+' lopp). Osedd testperiod: '+esc(d.heldOutDates?.join(' – '))+' ('+(d.testRaces??0)+' lopp).</p>'+
+'<div class="cards">'+metric('XGBoost – topp 3',d.modelMetrics)+metric('ATG:s slutstreck – topp 3',benchmark)+'</div>'+
+'<p class="muted">Topp 1 och topp 3 är rena träffmått på dessa testlopp. Skillnaderna kan bero på slump eller datatäckning. Här görs inga påståenden om lönsamhet.</p>'+
+'<h2>Testlopp och rangordning</h2><div class="table-scroll"><table><thead><tr><th>Datum</th><th>Lopp</th><th>Modellens topp 3</th><th>Faktisk vinnare</th><th>Träff topp 3?</th></tr></thead><tbody>'+
+(d.racePredictions||[]).map(r=>'<tr><td>'+esc(r.date)+'</td><td>'+esc(r.raceId)+'</td><td>'+r.topModel.map(x=>esc(x.number+' '+x.horse)).join(' / ')+'</td><td>'+esc((r.winnerNumbers||[]).join(','))+'</td><td>'+(r.winnerInTop3?'Ja':'Nej')+'</td></tr>').join('')+'</tbody></table></div>';
+}).catch(()=>{el.innerHTML='<div class="notice"><strong>Ingen verifierad modellrapport ännu.</strong> Historikinsamlingen eller valideringen är inte klar, eller har misslyckats. Vi visar inte påhittad statistik. Se <a href="https://github.com/Biggles22/LA_V85/actions/workflows/historical-pilot.yml">GitHub Actions</a> för exakt status.</div>'});
+})();
+</script></body></html>
