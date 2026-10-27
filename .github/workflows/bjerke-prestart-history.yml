@@ -1,0 +1,51 @@
+name: Bjerke V85 – immutable prestart market history
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/bjerke-prestart-history.yml"
+      - "scripts/capture_prestart_market.py"
+      - "tests/test_capture_prestart_market.py"
+  schedule:
+    # All times UTC; Swedish winter time = UTC+1.
+    - cron: "15 6,18 27-30 10 *"
+    - cron: "15 6,9,11,12,13 31 10 *"
+permissions:
+  contents: write
+concurrency:
+  group: bjerke-v85-immutable-market
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate capture and cutoff behavior
+        run: python -m unittest discover -s tests -p "test_capture_prestart_market.py"
+      - name: Capture validated, timestamped prestart market
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/capture_prestart_market.py
+      - name: Commit archive only if new information exists
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if test -d research/prestart/2026-10-31; then
+            git add research/prestart/2026-10-31/
+            if ! git diff --cached --quiet; then
+              git commit -m "Archive independent prestart V85 market evidence [skip ci]"
+              git fetch origin main
+              git rebase origin/main
+              git push origin HEAD:main
+            else
+              echo "Market unchanged; no commit."
+            fi
+          else
+            echo "No verified snapshot to archive."
+          fi
