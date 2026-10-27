@@ -256,6 +256,12 @@ def collect(dates):
                         raise ValueError("Race ID mismatch")
                     parsed=parse_historical_race(extended,game,date)
                     eligible+=1
+                    if parsed is None:
+                        starters=extended.get("starts") or []
+                        known=sum(isinstance((h.get("result") or {}),dict) and number((h.get("result") or {}).get("place")) is not None for h in starters if isinstance(h,dict))
+                        winners=sum(number((h.get("result") or {}).get("place"))==1 for h in starters if isinstance(h,dict))
+                        print("RACE_FILTER",rid,"status",extended.get("status"),"starts",len(starters),
+                              "placed",known,"winnerMarkers",winners,flush=True)
                     if parsed and rid not in included:
                         output.extend(parsed);included.add(rid);count+=1
                 except (urllib.error.URLError,ValueError,TimeoutError,KeyError) as ex:
