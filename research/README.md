@@ -110,3 +110,25 @@ För att undvika att likställa förstapris med verklig motståndsnivå provar v
 - `.github/workflows/opponent-probe.yml` har egna regressionstester och producerar endast `research/opponent_probe_2026.json`; inga livefiler eller tips skrivs om.
 
 [Rapport från motståndsprovet](https://github.com/Biggles22/LA_V85/blob/main/research/opponent_probe_2026.json).
+
+
+## Fjärde etappen – större prov av faktiska motståndare och historiskt formtest
+
+**Utökad Bjerkeinsamling:** `scripts/opponent_coverage.py` utgår från **alla 97 aktiva hästar** i `bjerke-form-20261031.json`, i stället för de två första hästarna per avdelning. Tidigare lopp dedupliceras och högst 100 distinkta äldre lopp hämtas, med högst två samtidiga nätverksanrop. Godkända historiska lopps startfält och deras före-lopp-form cacheas i `research/opponent_coverage_2026.json`. Historiska resultat från **det studerade loppet och senare** får aldrig ingå i motståndarnas formmått. När för få motståndare har tidigare resultat lämnas ratingen tom, inte noll. Detta är inte ett tränat spelprognosmått.
+
+Första verifierade körningen: **100 tidigare lopp planerade; 94 läsbara; 90 av 97 Bjerkehästar hade minst en tidigare prestation med tillräckligt dokumenterade motståndare**. Sex gamla lopp gav HTTP 404 och deras information fabricerades inte. `.github/workflows/opponent-coverage.yml` testar före-lopp-tid och urval och skriver bara forskning, aldrig Bjerkes publika tips.
+
+**Separat historiskt formexperiment:** `scripts/opposition_field_trial.py` använder **de andra startande i samma historiska V85-lopp** och deras daterade förhandsform. Detta är ett närliggande men **annat mått** än motståndarna i en hästs äldre lopp. Det senare har inte backtestats ännu. De två XGBoost-modellerna i detta experiment tränas på samma tidigare tävlingsdatum med identiska hyperparametrar, och jämförs på samma **151 senare lopp** från 21 walk-forward-testfönster.
+
+| Mått | Grundmodell | Motståndarnas förhandsform i fältet |
+| --- | ---: | ---: |
+| Topp 1, 151 lopp | 39/151 (25,8 %) | 38/151 (25,2 %) |
+| Topp 3, 151 lopp | 82/151 (54,3 %) | 79/151 (52,3 %) |
+| Log loss, 151 lopp | 2,1671 | 2,1276 |
+| Brier score, 151 lopp | 0,08134 | 0,08035 |
+
+Detta ger en marginell förbättring av sannolikhetsmåtten, **men sämre vinnarranking**. Resultatet kan påverkas av selektion och att samma historiska data använts i flera utvecklingsförsök. Inga automatiska spikar eller skrällar från denna experimentmodell ska användas. Historiska ATG-jämförelser är retrospektiva slutstreck, inte samtidiga förhandssnapshots.
+
+**Nästa experiment** är en äkta historisk före-lopp-join som mäter kvaliteten på **de faktiska motståndarna i hästarnas egna tidigare lopp** i tillräckligt många redan avgjorda V85-lopp. Först då går det att testa den nya 90/97-datakällans motsvarighet i ett osett utfall. Det kräver fler kontrollerade äldre lopps startfält och tillhörande förhandsform samt tydlig hantering av saknad historik.
+
+[Källspår för bred motståndsinsamling](https://github.com/Biggles22/LA_V85/blob/main/research/opponent_coverage_2026.json) · [Historiskt experiment](https://github.com/Biggles22/LA_V85/blob/main/research/opposition_field_trial_2026.json).
