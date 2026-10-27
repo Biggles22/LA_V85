@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "reportType": "HISTORIC_UPCOMING_FIELD_OPPOSITION_ABLATION_NOT_VALIDATED",
+  "sourceRaces": 178,
+  "sourceStarts": 1931,
+  "foldCount": 21,
+  "heldOutRaces": 151,
+  "oppositionFeatures": [
+    "rival_win5_mean",
+    "rival_top3_5_mean",
+    "rival_place_mean",
+    "horse_vs_rival_win5",
+    "horse_vs_rival_top3_5",
+    "rated_rivals"
+  ],
+  "runnersWithRatedRivals": 1931,
+  "measureDefinition": "Rivals are other horses in the SAME upcoming historical race, rated solely from their previous starts. This is NOT previous races' opponent strength.",
+  "baselineAll": {
+    "races": 151,
+    "top1Count": 39,
+    "top3Count": 82,
+    "top1Rate": 0.2583,
+    "top3Rate": 0.543,
+    "raceLogLoss": 2.1671,
+    "horseBrier": 0.08134
+  },
+  "oppositionAll": {
+    "races": 151,
+    "top1Count": 38,
+    "top3Count": 79,
+    "top1Rate": 0.2517,
+    "top3Rate": 0.5232,
+    "raceLogLoss": 2.1276,
+    "horseBrier": 0.08035
+  },
+  "pairedCount": 25,
+  "baselinePaired": {
+    "races": 25,
+    "top1Count": 7,
+    "top3Count": 15,
+    "top1Rate": 0.28,
+    "top3Rate": 0.6,
+    "raceLogLoss": 2.0654,
+    "horseBrier": 0.07609
+  },
+  "oppositionPaired": {
+    "races": 25,
+    "top1Count": 8,
+    "top3Count": 15,
+    "top1Rate": 0.32,
+    "top3Rate": 0.6,
+    "raceLogLoss": 1.9631,
+    "horseBrier": 0.07261
+  },
+  "atgFinalPoolPaired": {
+    "races": 25,
+    "top1Count": 12,
+    "top3Count": 20,
+    "top1Rate": 0.48,
+    "top3Rate": 0.8,
+    "raceLogLoss": 1.605,
+    "horseBrier": 0.06297
+  },
+  "caveats": "Same historical dates repeatedly reused during feature development; possible researcher overfitting. End-of-pool ATG comparisons are retrospective, not verified prestart market. Incomplete-result races can bias evaluation. No validated profit or win chances.",
+  "folds": [
+    {
+      "testDate": "2026-01-03",
+      "trainedBefore": "2026-01-03",
+      "trainRunners": 302,
+      "testRaces": 8
+    },
+    {
+      "testDate": "2026-02-07",
+      "trainedBefore": "2026-02-07",
+      "trainRunners": 385,
+      "testRaces": 8
+    },
+    {
+      "testDate": "2026-02-14",
+      "trainedBefore": "2026-02-14",
+      "trainRunners": 468,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-02-21",
+      "trainedBefore": "2026-02-21",
+      "trainRunners": 538,
+      "testRaces": 8
+    },
+    {
+      "testDate": "2026-02-28",
+      "trainedBefore": "2026-02-28",
+      "trainRunners": 624,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-03-14",
+      "trainedBefore": "2026-03-14",
+      "trainRunners": 703,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-03-21",
+      "trainedBefore": "2026-03-21",
+      "trainRunners": 777,
+      "testRaces": 6
+    },
+    {
+      "testDate": "2026-03-28",
+      "trainedBefore": "2026-03-28",
+      "trainRunners": 842,
+      "testRaces": 8
+    },
+    {
+      "testDate": "2026-04-11",
+      "trainedBefore": "2026-04-11",
+      "trainRunners": 930,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-04-18",
+      "trainedBefore": "2026-04-18",
+      "trainRunners": 999,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-04-25",
+      "trainedBefore": "2026-04-25",
+      "trainRunners": 1076,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-05-02",
+      "trainedBefore": "2026-05-02",
+      "trainRunners": 1157,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-05-09",
+      "trainedBefore": "2026-05-09",
+      "trainRunners": 1233,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-05-23",
+      "trainedBefore": "2026-05-23",
+      "trainRunners": 1308,
+      "testRaces": 8
+    },
+    {
+      "testDate": "2026-05-30",
+      "trainedBefore": "2026-05-30",
+      "trainRunners": 1394,
+      "testRaces": 8
+    },
+    {
+      "testDate": "2026-06-13",
+      "trainedBefore": "2026-06-13",
+      "trainRunners": 1475,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-06-27",
+      "trainedBefore": "2026-06-27",
+      "trainRunners": 1553,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-07-25",
+      "trainedBefore": "2026-07-25",
+      "trainRunners": 1632,
+      "testRaces": 8
+    },
+    {
+      "testDate": "2026-10-10",
+      "trainedBefore": "2026-10-10",
+      "trainRunners": 1722,
+      "testRaces": 8
+    },
+    {
+      "testDate": "2026-10-17",
+      "trainedBefore": "2026-10-17",
+      "trainRunners": 1811,
+      "testRaces": 7
+    },
+    {
+      "testDate": "2026-10-24",
+      "trainedBefore": "2026-10-24",
+      "trainRunners": 1886,
+      "testRaces": 4
+    }
+  ]
+}
