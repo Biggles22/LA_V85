@@ -1,6 +1,16 @@
 name: LA V85 - freeze independent prestart AI forecasts
 on:
   workflow_dispatch:
+    inputs:
+      slot:
+        description: "Research freeze window (only allowed at its actual time)"
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - friday
+          - saturday
   push:
     branches: [main]
     paths:
@@ -32,12 +42,18 @@ jobs:
       - name: Freeze identical market and both independent forecasts
         env:
           GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          MANUAL_SLOT: ${{ inputs.slot }}
         run: |
-          case "$GITHUB_EVENT_SCHEDULE" in
-            "0 17 30 10 *") SLOT=friday;;
-            "15 13 31 10 *") SLOT=saturday;;
-            *) SLOT=preview;;
-          esac
+          if test "$GITHUB_EVENT_NAME" = "workflow_dispatch"; then
+            SLOT="${MANUAL_SLOT:-preview}"
+          else
+            case "$GITHUB_EVENT_SCHEDULE" in
+              "0 17 30 10 *") SLOT=friday;;
+              "15 13 31 10 *") SLOT=saturday;;
+              *) SLOT=preview;;
+            esac
+          fi
           echo "SLOT=$SLOT" >> "$GITHUB_ENV"
           python scripts/freeze_v85_forecasts.py --slot "$SLOT"
       - name: Publish one immutable result per slot on latest main
