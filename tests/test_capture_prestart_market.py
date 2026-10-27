@@ -38,7 +38,7 @@ class Tests(unittest.TestCase):
     def test_source_timestamp_future_rejected(self):
         bad=game()
         bad["pools"]["V85"]["timestamp"]="2026-10-28 12:00:00"
-        with self.assertRaisesRegex(ValueError,"timestamp"):
+        with self.assertRaisesRegex(ValueError,"source time"):
             m.checked_snapshot(bad,NOW)
 
     def test_source_is_not_altered(self):
