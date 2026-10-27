@@ -39,7 +39,9 @@ jobs:
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
-            if test -e "$target"; then
+            # git reset does NOT remove the untracked file created in this run.
+            # Check the REMOTE COMMIT, not whether the runner filesystem has it.
+            if git cat-file -e "origin/main:$target" 2>/dev/null; then
               echo "Report already frozen on main; never overwrite."
               exit 0
             fi
@@ -47,7 +49,7 @@ jobs:
             cp "$RUNNER_TEMP/outcome_candidate.json" "$target"
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add "$target"
+            git add -f "$target"
             git commit -m "Score original frozen Bjerke predictions after official results [skip ci]"
             if git push origin HEAD:main; then
               echo "Result comparison verified and published."
