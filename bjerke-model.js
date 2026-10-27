@@ -23,7 +23,7 @@
     const item=rr?.horses?.find(x=>x.number===h.number&&x.name===h.name);
     if(!item||item.scratched)return {};
     const found={};
-    for(const cat of ['form','risk'])if(validScore(item.scores?.[cat]))found[cat]=item.scores[cat];
+    for(const cat of ['form','pace','class','risk'])if(validScore(item.scores?.[cat]))found[cat]=item.scores[cat];
     return found;
   }
   function effective(r,h){return {...automatic(r,h),...(answers[key(r,h)]||{})};}
