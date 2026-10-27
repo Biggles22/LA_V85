@@ -3,17 +3,17 @@
   "gameId": "V85_2026-10-31_78_5",
   "track": "Bjerke",
   "raceDate": "2026-10-31",
-  "atgSourceAt": "2026-10-27 12:31:30",
+  "atgSourceAt": "2026-10-27 22:43:00",
   "method": "Backward-only performance, pace/draw proxy, and past purse-tier class proxy; NOT a calibrated win probability.",
   "limitations": "Pace approximates pace suitability using recorded km times and the current draw (NOT verified lead probability). Class compares previous first prizes ONLY within the same country and field, with past finishing performance. Not a calibrated prediction. Gear and many risks remain unknown. Scores never use odds or V85 betting percentages.",
   "coverage": {
-    "activeHorses": 97,
-    "horsesWithHistory": 97,
-    "formRated": 97,
+    "activeHorses": 96,
+    "horsesWithHistory": 96,
+    "formRated": 96,
     "riskRated": 16,
     "paceRated": 25,
-    "classRated": 90,
-    "partialRanked": 93,
+    "classRated": 89,
+    "partialRanked": 92,
     "failedRaces": 0
   },
   "failures": [],
@@ -3417,7 +3417,7 @@
           "scores": {
             "form": 2.38,
             "pace": null,
-            "class": 2.55,
+            "class": 2.64,
             "gear": null,
             "risk": 1.0
           },
@@ -3429,7 +3429,7 @@
               "SE"
             ],
             "modelCoverageWeight": 60,
-            "partialRankScore": 44.1
+            "partialRankScore": 44.7
           },
           "coverage": {
             "form": true,
@@ -3511,7 +3511,7 @@
           "scores": {
             "form": 2.24,
             "pace": null,
-            "class": 3.5,
+            "class": 3.6,
             "gear": null,
             "risk": null
           },
@@ -3523,7 +3523,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 54.9
+            "partialRankScore": 55.7
           },
           "coverage": {
             "form": true,
@@ -3605,7 +3605,7 @@
           "scores": {
             "form": 3.16,
             "pace": 3.92,
-            "class": 2.57,
+            "class": 2.64,
             "gear": null,
             "risk": null
           },
@@ -3617,7 +3617,7 @@
               "SE"
             ],
             "modelCoverageWeight": 75,
-            "partialRankScore": 65.1
+            "partialRankScore": 65.5
           },
           "coverage": {
             "form": true,
@@ -3699,7 +3699,7 @@
           "scores": {
             "form": 2.26,
             "pace": 2.55,
-            "class": 2.14,
+            "class": 2.21,
             "gear": null,
             "risk": null
           },
@@ -3711,7 +3711,7 @@
               "SE"
             ],
             "modelCoverageWeight": 75,
-            "partialRankScore": 46.5
+            "partialRankScore": 46.9
           },
           "coverage": {
             "form": true,
@@ -3793,7 +3793,7 @@
           "scores": {
             "form": 2.66,
             "pace": null,
-            "class": 2.69,
+            "class": 2.8,
             "gear": null,
             "risk": 2.0
           },
@@ -3805,7 +3805,7 @@
               "SE"
             ],
             "modelCoverageWeight": 60,
-            "partialRankScore": 51.2
+            "partialRankScore": 51.9
           },
           "coverage": {
             "form": true,
@@ -3820,7 +3820,7 @@
         {
           "number": 6,
           "name": "Powwow",
-          "scratched": false,
+          "scratched": true,
           "previousStarts": 5,
           "lastFive": [
             {
@@ -3887,29 +3887,27 @@
           "scores": {
             "form": 2.6,
             "pace": null,
-            "class": 3.86,
+            "class": null,
             "gear": null,
             "risk": null
           },
           "distanceOnlyScore": null,
           "evidence": {
-            "classStarts": 2,
+            "classStarts": 0,
             "paceStarts": 0,
-            "classCountries": [
-              "SE"
-            ],
-            "modelCoverageWeight": 50,
-            "partialRankScore": 62.1
+            "classCountries": [],
+            "modelCoverageWeight": 0,
+            "partialRankScore": null
           },
           "coverage": {
             "form": true,
             "risk": false,
             "pace": false,
-            "class": true,
+            "class": false,
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
+          "note": "Form från tidigare starter; spår/tempo och klass beräknas först när jämförbar historik räcker."
         },
         {
           "number": 7,
@@ -3981,7 +3979,7 @@
           "scores": {
             "form": 3.23,
             "pace": 1.3,
-            "class": 2.01,
+            "class": 2.06,
             "gear": null,
             "risk": null
           },
@@ -3993,7 +3991,7 @@
               "SE"
             ],
             "modelCoverageWeight": 75,
-            "partialRankScore": 45.2
+            "partialRankScore": 45.5
           },
           "coverage": {
             "form": true,
@@ -4075,7 +4073,7 @@
           "scores": {
             "form": 2.83,
             "pace": null,
-            "class": 2.81,
+            "class": 2.91,
             "gear": null,
             "risk": null
           },
@@ -4087,7 +4085,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 56.4
+            "partialRankScore": 57.2
           },
           "coverage": {
             "form": true,
@@ -4169,7 +4167,7 @@
           "scores": {
             "form": 4.03,
             "pace": 3.62,
-            "class": 1.99,
+            "class": 2.03,
             "gear": null,
             "risk": null
           },
@@ -4181,7 +4179,7 @@
               "SE"
             ],
             "modelCoverageWeight": 75,
-            "partialRankScore": 67.0
+            "partialRankScore": 67.2
           },
           "coverage": {
             "form": true,
@@ -4263,7 +4261,7 @@
           "scores": {
             "form": 2.46,
             "pace": 2.28,
-            "class": 3.37,
+            "class": 3.47,
             "gear": null,
             "risk": null
           },
@@ -4275,7 +4273,7 @@
               "SE"
             ],
             "modelCoverageWeight": 75,
-            "partialRankScore": 52.9
+            "partialRankScore": 53.4
           },
           "coverage": {
             "form": true,
@@ -9210,5 +9208,5 @@
       ]
     }
   ],
-  "retrievedAt": "2026-10-27T13:35:38.748527+01:00"
+  "retrievedAt": "2026-10-27T23:31:36.787282+01:00"
 }
