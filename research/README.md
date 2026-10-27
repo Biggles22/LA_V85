@@ -155,3 +155,31 @@ På **samtliga 151 walk-forward-testlopp**, inklusive lopp där motståndarvaria
 **Beslut:** behåll nuvarande liveanalys och befintlig modell. Nästa validering måste använda nya, tidsstämplade V85-omgångar och förhandsstreck som sparas *före* spelstopp. Endast modellen med bevisad förbättring på osedd data bör få påverka råd eller kupong.
 
 [Läs forskningssidan](https://biggles22.github.io/LA_V85/research/) · [Historiska as-of-källdata](https://github.com/Biggles22/LA_V85/blob/main/research/historical_opponent_asof_2026.json) · [Walk-forward-test](https://github.com/Biggles22/LA_V85/blob/main/research/historical_opponent_test_2026.json).
+
+
+## Sjätte etappen – prospektivt frysta AI-prognoser
+
+Nu har vi för första gången en **verkligt prospektiv AI-prognos**, inte en efterhandskonstruerad historisk modell. `scripts/freeze_v85_forecasts.py` läser ATG:s Bjerke-V85 och samtliga åtta utökade lopp med källa vid körtillfället. Före frysning måste exakt samma hästar och startnummer återfinnas i ATG:s marknad och loppdata. Frysta filer sparar samma **källtid och observationstid** som ATG-marknaden.
+
+Två modeller tränas om separat på `research/historical_pilot_2026.json` (alla lopp strikt före 31 oktober), med identiska XGBoost-inställningar:
+- Grundmodell: tidigare form-, spår-, distans- och klassproxier från historiska tidigare starter.
+- Motståndsmodell: samma grundmodell samt historik över de faktiska tidigare motståndarna från `research/historical_opponent_asof_2026.json`. För Bjerke används `research/opponent_coverage_2026.json`; saknad motståndshistorik är null, inte noll.
+
+**Viktigt:** de två modellernas procentkolumner (`baseModelShare` och `previousOpponentsModelShare`) är normaliserade **okallibrerade klassificeringspoäng**, inte verifierade vinstsannolikheter. De får inte marknadsföras som spelvärde, odds eller automatisk spik. `marketPct` och `marketTop3` är den dokumenterade ATG-marknadens förhandsstreck och ranking.
+
+### Fryst körplan för Bjerke 31 oktober 2026 (Stockholmstid)
+
+| Datum | GitHub Actions | Skriven fil |
+| --- | --- | --- |
+| 27 oktober, första lyckade körning kl. 11.01 | `freeze-v85-forecasts.yml` push-test | `research/frozen/2026-10-31/preview.json` |
+| Fredag 30 oktober kl. 18.00 | Schemalagd AI/ATG-frysning | `research/frozen/2026-10-31/friday.json` |
+| Lördag 31 oktober kl. 14.15 | Schemalagd, sista förhandsfrysningen | `research/frozen/2026-10-31/saturday.json` |
+| Söndag 1 november kl. 09.00, 12.00 och 16.00 | Om försöken tidigare saknat officiellt facit, automatiska omförsök | `research/frozen/2026-10-31/evaluation.json` |
+
+GitHub Actions-scheman kan **försenas eller utebli**. Skripten är fail-closed: de vägrar skriva om den aktuella tidsluckan passerats, vid saknade startfält eller om ATG-källtiden är mer än sex timmar gammal. Inga prognosfiler skapas i efterhand eller skrivs över. Redan befintliga GitHub-/VS Code-filer bevaras genom att endast den nya forskningfilen läggs till utifrån senaste `main`.
+
+`scripts/evaluate_frozen_v85.py` hämtar först **efter midnatt 1 november** ATG:s slutresultat för åtta lopp, kräver en entydig vinnare i varje och jämför de tre **ursprungligen frysta** rankningarna (AI-bas, AI-motstånd och ATG) på samma åtta lopp. Den läser originalfilerna och tränar aldrig om någon modell på facit. Rapporten blir bara till när ATG:s resultat är tillräckligt fullständiga. En omgång ger inte statistiskt bevis på lönsamhet.
+
+**Utökning till följande lördagar:** den nuvarande automatiken är avsiktligt knuten till verifierat Bjerke-spel-ID `V85_2026-10-31_78_5` och Bjerkes faktiska starttid. En ny omgång måste först ha sitt verifierade spel-ID och starttid anslutna till det allmänna schemaflödet. Ingen framtida spelomgång eller tid ska antas av kod som saknar officiell källa. Forskningsmodellerna förblir separata från hemsidans spikar och skrällar.
+
+[Öppna de frysta forskningsprognoserna](https://biggles22.github.io/LA_V85/research/) · [Prognosarbetets GitHub Actions](https://github.com/Biggles22/LA_V85/actions/workflows/freeze-v85-forecasts.yml) · [Söndagens facitkontroll](https://github.com/Biggles22/LA_V85/actions/workflows/evaluate-frozen-v85.yml).
