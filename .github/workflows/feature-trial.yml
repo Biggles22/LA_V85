@@ -1,0 +1,61 @@
+name: LA V85 – historical feature comparison (research)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/feature-trial.yml"
+      - "scripts/feature_trial.py"
+      - "tests/test_feature_trial.py"
+permissions:
+  contents: write
+concurrency:
+  group: la-v85-feature-trial
+  cancel-in-progress: false
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install reproducible model dependencies
+        run: python -m pip install "xgboost>=2.1,<4" "scikit-learn>=1.5,<2"
+      - name: Verify features do not leak outcomes or market
+        run: python -m unittest discover -s tests -p "test_feature_trial.py"
+      - name: Evaluate old and new features on identical chronological races
+        run: python scripts/feature_trial.py
+      - name: Publish only an independently validated research result
+        run: |
+          cp research/feature_trial_2026.json "$RUNNER_TEMP/feature_trial_candidate.json"
+          git fetch origin main
+          git reset --hard origin/main
+          python - <<'PY'
+          import json,os,pathlib,shutil
+          incoming=pathlib.Path(os.environ["RUNNER_TEMP"])/"feature_trial_candidate.json"
+          candidate=json.loads(incoming.read_text())
+          current_file=pathlib.Path("research/feature_trial_2026.json")
+          if current_file.exists():
+              old=json.loads(current_file.read_text())
+              if candidate["raceCount"]<old.get("raceCount",0):
+                  print("Refusing smaller historical dataset.")
+                  raise SystemExit(0)
+              ignore_stamp=lambda d:{k:v for k,v in d.items() if k!="generatedAt"}
+              if ignore_stamp(candidate)==ignore_stamp(old):
+                  print("Unchanged feature trial.");raise SystemExit(0)
+          current_file.parent.mkdir(parents=True,exist_ok=True)
+          shutil.copy2(incoming,current_file)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/feature_trial_2026.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record prestart-only feature comparison [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          else
+            echo "Nothing new to commit."
+          fi
