@@ -80,7 +80,14 @@ def train():
         x={**row,"pred":float(pred)}
         groups.setdefault(x["raceId"],[]).append(x)
     metrics=evaluate(groups,"pred")
-    baseline=evaluate(groups,"marketFinalPct",market=True)
+    # Compare on IDENTICAL races; otherwise differing market coverage biases the headline.
+    paired={}
+    for rid,items in groups.items():
+        values=[r.get("marketFinalPct") for r in items]
+        if all(v is not None for v in values) and 90<=sum(values)<=110:
+            paired[rid]=items
+    paired_model=evaluate(paired,"pred")
+    baseline=evaluate(paired,"marketFinalPct",market=True)
     if metrics["races"]<12:
         raise RuntimeError("Test contains fewer than 12 eligible races")
     ranked=[]
@@ -104,6 +111,7 @@ def train():
         "model":"XGBClassifier, 135 trees, depth 3, time-ordered date holdout",
         "features":list(FEATURES),
         "modelMetrics":metrics,
+        "modelOnIdenticalMarketRaces":paired_model,
         "marketFinalPoolBaseline":baseline,
         "baselineCaveat":"Market uses retrospective final V85 pool percentages, NOT independently archived prestart snapshots. Cross-pool timing may not be independently verified.",
         "validationCaveat":"Small pilot, one chronological holdout, no hyperparameter search or robust confidence intervals. Do not interpret as profit, actionable spik/skrall recommendations or proven independent probabilities.",
