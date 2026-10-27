@@ -98,3 +98,15 @@ Resultatet visar **ingen robust förbättring i antal rätt**; log loss och Brie
 Nästa tekniska uppgift för att faktiskt modellera **motståndets styrka** är ett sparsamt, källverifierat register över deltagare och deras **historiska rating vid datumet för ett tidigare lopp**. Det kräver fullständiga äldre startfält och datumsäker as-of-join; historiskt förstapris är inte tillräckligt. En sådan faktisk motståndsmodell är **inte** implementerad ännu.
 
 [Faktortestets rapport](https://github.com/Biggles22/LA_V85/blob/main/research/feature_trial_2026.json) · [Förhandsarkivet](https://github.com/Biggles22/LA_V85/tree/main/research/prestart/2026-10-31) · [GitHub-körningar](https://github.com/Biggles22/LA_V85/actions).
+
+## Tidskorrekt prov av faktiska tidigare motståndare
+
+För att undvika att likställa förstapris med verklig motståndsnivå provar vi nu `scripts/opponent_probe.py`: högst **16 distinkta tidigare lopp** (för hästar på Bjerkes nuvarande startlista). Programmet hämtar det tidigare startfältet och beräknar motståndarnas vinst-/topp-3-form från enbart starter med datum **strikt före det tidigare loppet**. Hästen som utvärderas tas bort ur den egna motståndarsammanställningen. Saknade placeringar räknas inte som förluster. Minst fyra, eller hälften av rivalerna, måste ha tillräcklig tidigare historik.
+
+- 16 olika äldre lopp försöktes; 14 kunde hämtas; 13 av 14 bedömda referenser fick tillräckligt underlag.
+- Två historiska API-anrop gav HTTP 404 och avgränsades bort.
+- Måttet `opponentRecentFormMean` (0–1) är ett dokumenterat *historiskt prestationsmått* för tidigare motståndare, inte en kalibrerad vinstprocent för vår häst.
+- Denna studie är **ännu inte inkluderad i XGBoost- eller Bjerke-rankingen**. Den är för liten och för ojämnt täckt. Nästa steg kräver större, källverifierat datastöd och test av om variabeln tillför signal på osedda lopp.
+- `.github/workflows/opponent-probe.yml` har egna regressionstester och producerar endast `research/opponent_probe_2026.json`; inga livefiler eller tips skrivs om.
+
+[Rapport från motståndsprovet](https://github.com/Biggles22/LA_V85/blob/main/research/opponent_probe_2026.json).
