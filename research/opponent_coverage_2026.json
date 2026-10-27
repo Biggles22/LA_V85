@@ -1,0 +1,7235 @@
+{
+  "schemaVersion": 2,
+  "gameId": "V85_2026-10-31_78_5",
+  "currentRaceDate": "2026-10-31",
+  "method": "Prior results of actual opponents BEFORE each sampled historical race; never outcomes or data from/after the sampled race.",
+  "limitations": "Not validated as predictive. Incomplete records and historical API revisions can reduce reliable coverage. Uses 0-1 proxy of past wins/top-3, not opponent ratings calibrated to race class.",
+  "plannedDistinctRaces": 100,
+  "readableDistinctRaces": 94,
+  "activeHorses": 97,
+  "horsesWithAnyReference": 92,
+  "horsesWithValidForm": 90,
+  "failures": [
+    {
+      "raceId": "2026-09-30_81_2",
+      "type": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "raceId": "2026-10-03_87_10",
+      "type": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "raceId": "2026-10-15_81_3",
+      "type": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "raceId": "2026-10-16_82_5",
+      "type": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "raceId": "2026-10-23_96_3",
+      "type": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "raceId": "2026-10-23_96_6",
+      "type": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "historicalCards": {
+    "2026-10-10_5_11": {
+      "raceId": "2026-10-10_5_11",
+      "cutoff": "2026-10-10",
+      "peers": [
+        {
+          "name": "Conrads Åke",
+          "form": 0.6
+        },
+        {
+          "name": "River Tooma",
+          "form": 0.16
+        },
+        {
+          "name": "Elvis T.C.B.",
+          "form": 0.45
+        },
+        {
+          "name": "Flight Sequence",
+          "form": 0.36
+        },
+        {
+          "name": "Iaintnoquitter",
+          "form": 0.5
+        },
+        {
+          "name": "Four White E.G.",
+          "form": 0.28
+        },
+        {
+          "name": "Mr Carnation",
+          "form": 0.76
+        },
+        {
+          "name": "Global Dependable",
+          "form": 0.7
+        },
+        {
+          "name": "Graces Bird",
+          "form": 0.28
+        },
+        {
+          "name": "Nickel Occagnes",
+          "form": 0.85
+        },
+        {
+          "name": "Jaguar Godiva",
+          "form": 0.16
+        },
+        {
+          "name": "Gaudi Laksmy",
+          "form": 0.4
+        }
+      ]
+    },
+    "2026-10-18_31_10": {
+      "raceId": "2026-10-18_31_10",
+      "cutoff": "2026-10-18",
+      "peers": [
+        {
+          "name": "Fossens Wilma",
+          "form": 0.3
+        },
+        {
+          "name": "Quantum Tile",
+          "form": 0.3333
+        },
+        {
+          "name": "Tiberius",
+          "form": 0.2667
+        },
+        {
+          "name": "Lucia di Quattro",
+          "form": 0.4667
+        },
+        {
+          "name": "Wilhelm Tell",
+          "form": 0.7
+        },
+        {
+          "name": "M.H.Harderthancash",
+          "form": 0.2
+        },
+        {
+          "name": "Hickovelocissimo",
+          "form": 0.25
+        },
+        {
+          "name": "Mix the Booze",
+          "form": 0.0
+        },
+        {
+          "name": "Dencos T.D.",
+          "form": 0.08
+        },
+        {
+          "name": "Sweet Johanna S.C.",
+          "form": 0.4
+        }
+      ]
+    },
+    "2026-10-17_16_11": {
+      "raceId": "2026-10-17_16_11",
+      "cutoff": "2026-10-17",
+      "peers": [
+        {
+          "name": "My Honky Tonk Man",
+          "form": 0.5
+        },
+        {
+          "name": "Bank Angel",
+          "form": 0.28
+        },
+        {
+          "name": "Any Given Sunday",
+          "form": 0.6
+        },
+        {
+          "name": "Sir Tooma",
+          "form": 0.28
+        },
+        {
+          "name": "Ugalli",
+          "form": 0.48
+        },
+        {
+          "name": "Pineapple",
+          "form": 0.25
+        },
+        {
+          "name": "Great Old Dance",
+          "form": 0.56
+        },
+        {
+          "name": "Vixi Garbo",
+          "form": 0.5
+        },
+        {
+          "name": "Joker Ima",
+          "form": 0.48
+        },
+        {
+          "name": "Perseus Digital",
+          "form": 0.28
+        },
+        {
+          "name": "Legligin",
+          "form": 0.44
+        }
+      ]
+    },
+    "2026-10-19_22_4": {
+      "raceId": "2026-10-19_22_4",
+      "cutoff": "2026-10-19",
+      "peers": [
+        {
+          "name": "Budets Hildur",
+          "form": 0.3
+        },
+        {
+          "name": "Phantom le Soleil",
+          "form": 0.3333
+        },
+        {
+          "name": "Julius Cortina",
+          "form": 0.4667
+        },
+        {
+          "name": "Bourbon Hill",
+          "form": 0.5
+        },
+        {
+          "name": "Fearless Flier",
+          "form": null
+        },
+        {
+          "name": "J.C.",
+          "form": 0.55
+        },
+        {
+          "name": "Oracle Vixi",
+          "form": 0.25
+        },
+        {
+          "name": "Jeriko Brick",
+          "form": 0.6
+        }
+      ]
+    },
+    "2026-04-02_16_12": {
+      "raceId": "2026-04-02_16_12",
+      "cutoff": "2026-04-02",
+      "peers": [
+        {
+          "name": "Observe'em",
+          "form": 0.2667
+        },
+        {
+          "name": "Jay Jay Zet",
+          "form": 0.44
+        },
+        {
+          "name": "Imperator Godiva",
+          "form": 0.7
+        },
+        {
+          "name": "Elmer Wibb",
+          "form": 0.36
+        },
+        {
+          "name": "Fantom Jet",
+          "form": 0.2
+        },
+        {
+          "name": "Crowe Motion",
+          "form": 0.5
+        },
+        {
+          "name": "Leverage",
+          "form": 0.6
+        },
+        {
+          "name": "Nils Zonett",
+          "form": 0.4
+        },
+        {
+          "name": "Bollinger N.O.",
+          "form": 0.48
+        },
+        {
+          "name": "Kentucky Colonel",
+          "form": 0.2667
+        },
+        {
+          "name": "Vichel J.C.",
+          "form": 0.2
+        }
+      ]
+    },
+    "2026-10-20_78_7": {
+      "raceId": "2026-10-20_78_7",
+      "cutoff": "2026-10-20",
+      "peers": [
+        {
+          "name": "Tayno B.B.",
+          "form": 0.4667
+        },
+        {
+          "name": "Look Like Gaagaa",
+          "form": 0.7
+        },
+        {
+          "name": "Son Of Sizzling",
+          "form": 0.2
+        },
+        {
+          "name": "Explosive Axe",
+          "form": 0.0
+        },
+        {
+          "name": "Noah B.R.",
+          "form": 0.55
+        },
+        {
+          "name": "Odd Viking",
+          "form": 0.4667
+        },
+        {
+          "name": "Jackson Trot",
+          "form": 0.45
+        },
+        {
+          "name": "Cool Hand Energy",
+          "form": 0.45
+        },
+        {
+          "name": "Broker Artist",
+          "form": 0.1333
+        },
+        {
+          "name": "Timetoshine Bonanza",
+          "form": 0.45
+        }
+      ]
+    },
+    "2026-10-02_12_5": {
+      "raceId": "2026-10-02_12_5",
+      "cutoff": "2026-10-02",
+      "peers": [
+        {
+          "name": "Massaj Käll",
+          "form": 0.2
+        },
+        {
+          "name": "Max Orlando",
+          "form": 0.1333
+        },
+        {
+          "name": "Gibson Brick",
+          "form": 0.1
+        },
+        {
+          "name": "Oryx Håleryd",
+          "form": 0.1
+        },
+        {
+          "name": "Global Education",
+          "form": 0.1333
+        },
+        {
+          "name": "Patrick Hangover",
+          "form": 0.2667
+        },
+        {
+          "name": "Bältra Selene",
+          "form": 0.7
+        },
+        {
+          "name": "Olympia Sting",
+          "form": 0.3333
+        },
+        {
+          "name": "Hercules Godiva",
+          "form": 0.3333
+        },
+        {
+          "name": "You to Ezme",
+          "form": 0.08
+        },
+        {
+          "name": "Blu Warlock",
+          "form": 0.2
+        }
+      ]
+    },
+    "2026-10-19_22_9": {
+      "raceId": "2026-10-19_22_9",
+      "cutoff": "2026-10-19",
+      "peers": [
+        {
+          "name": "Zofin Thobo",
+          "form": 0.7
+        },
+        {
+          "name": "Blyger S.R.P.",
+          "form": 0.32
+        },
+        {
+          "name": "Heavenly Flavours",
+          "form": 0.45
+        },
+        {
+          "name": "Patriot Zon",
+          "form": 0.44
+        },
+        {
+          "name": "Esteban Bar",
+          "form": 0.3
+        },
+        {
+          "name": "Efrem",
+          "form": 0.5
+        },
+        {
+          "name": "Yantra Slave Cal",
+          "form": 0.25
+        },
+        {
+          "name": "C.R.Nobless",
+          "form": 0.0
+        },
+        {
+          "name": "Fly Express",
+          "form": 0.28
+        },
+        {
+          "name": "Sven Kuce",
+          "form": 1.0
+        },
+        {
+          "name": "Slivovitz Lover",
+          "form": 0.36
+        }
+      ]
+    },
+    "2026-09-30_7_9": {
+      "raceId": "2026-09-30_7_9",
+      "cutoff": "2026-09-30",
+      "peers": [
+        {
+          "name": "Ulaya",
+          "form": 0.25
+        },
+        {
+          "name": "Kalithea",
+          "form": 0.25
+        },
+        {
+          "name": "Brigo",
+          "form": 0.44
+        },
+        {
+          "name": "Boutique Garde",
+          "form": 0.3333
+        },
+        {
+          "name": "Zofin Thobo",
+          "form": 0.6
+        },
+        {
+          "name": "Vikens HayBar",
+          "form": 0.2
+        },
+        {
+          "name": "Call Out My Name",
+          "form": 0.3333
+        },
+        {
+          "name": "Aurelio",
+          "form": 0.56
+        },
+        {
+          "name": "Leader Wood",
+          "form": 0.85
+        },
+        {
+          "name": "Mister Who",
+          "form": 0.1333
+        },
+        {
+          "name": "Glorious Art",
+          "form": 0.2
+        },
+        {
+          "name": "Habibii",
+          "form": 0.5
+        }
+      ]
+    },
+    "2026-10-07_5_9": {
+      "raceId": "2026-10-07_5_9",
+      "cutoff": "2026-10-07",
+      "peers": [
+        {
+          "name": "Amazing Dream N.O.",
+          "form": 0.0
+        },
+        {
+          "name": "Zigzag Zagazoo",
+          "form": 0.16
+        },
+        {
+          "name": "Thai Face Time",
+          "form": 0.24
+        },
+        {
+          "name": "Kattens Aladin",
+          "form": 0.3333
+        },
+        {
+          "name": "S.G.Edison",
+          "form": 0.25
+        },
+        {
+          "name": "Scarybeary Lixarve",
+          "form": 0.25
+        },
+        {
+          "name": "Midas Mana",
+          "form": null
+        },
+        {
+          "name": "Julius Cortina",
+          "form": 0.6
+        },
+        {
+          "name": "Ivanisevic",
+          "form": 0.2667
+        },
+        {
+          "name": "Global Deadline",
+          "form": 0.76
+        },
+        {
+          "name": "Fancy Free",
+          "form": 0.36
+        }
+      ]
+    },
+    "2026-09-19_15_8": {
+      "raceId": "2026-09-19_15_8",
+      "cutoff": "2026-09-19",
+      "peers": [
+        {
+          "name": "B.W.Sture",
+          "form": 0.28
+        },
+        {
+          "name": "Reime Kongen",
+          "form": 0.24
+        },
+        {
+          "name": "Grisle Tore G.L.",
+          "form": 0.6
+        },
+        {
+          "name": "Gigant Tider",
+          "form": 0.6
+        },
+        {
+          "name": "Nordby Elde",
+          "form": 0.2667
+        },
+        {
+          "name": "Baias",
+          "form": 0.28
+        },
+        {
+          "name": "Tangen Bork",
+          "form": 0.8
+        },
+        {
+          "name": "Soldhöjdens Drake",
+          "form": 0.28
+        },
+        {
+          "name": "Tordenskjold",
+          "form": 0.64
+        },
+        {
+          "name": "Voje Lotta",
+          "form": 0.8
+        }
+      ]
+    },
+    "2026-10-20_78_2": {
+      "raceId": "2026-10-20_78_2",
+      "cutoff": "2026-10-20",
+      "peers": [
+        {
+          "name": "Kinge Svarten",
+          "form": null
+        },
+        {
+          "name": "Åls Faksen",
+          "form": 0.1333
+        },
+        {
+          "name": "Vital Vinter",
+          "form": 0.2
+        },
+        {
+          "name": "Jerven Junior",
+          "form": 0.1
+        },
+        {
+          "name": "Holter Odin",
+          "form": 0.2
+        },
+        {
+          "name": "Tripsson Ø.K.",
+          "form": 0.35
+        },
+        {
+          "name": "Tordenskjold",
+          "form": 0.56
+        },
+        {
+          "name": "Grisle Tore G.L.",
+          "form": 0.7
+        },
+        {
+          "name": "Will Nick",
+          "form": 0.35
+        }
+      ]
+    },
+    "2026-10-06_78_5": {
+      "raceId": "2026-10-06_78_5",
+      "cutoff": "2026-10-06",
+      "peers": [
+        {
+          "name": "Tordenskjold",
+          "form": 0.64
+        },
+        {
+          "name": "Holter Odin",
+          "form": 0.1333
+        },
+        {
+          "name": "Kinge Svarten",
+          "form": 0.0
+        },
+        {
+          "name": "Grisle Tore G.L.",
+          "form": 0.6
+        },
+        {
+          "name": "Alm Kevin",
+          "form": 0.0
+        },
+        {
+          "name": "Voje Lotta",
+          "form": 0.68
+        }
+      ]
+    },
+    "2026-09-19_81_6": {
+      "raceId": "2026-09-19_81_6",
+      "cutoff": "2026-09-19",
+      "peers": [
+        {
+          "name": "Frekke Frida",
+          "form": 0.16
+        },
+        {
+          "name": "B.B. Terje T.",
+          "form": 0.55
+        },
+        {
+          "name": "Kringelandisak",
+          "form": 0.45
+        },
+        {
+          "name": "Hauk Viktor",
+          "form": 0.1333
+        },
+        {
+          "name": "Bare Mattis",
+          "form": 0.56
+        },
+        {
+          "name": "Lættis",
+          "form": 0.08
+        },
+        {
+          "name": "Flytin",
+          "form": 0.2667
+        },
+        {
+          "name": "Stå Stille",
+          "form": 0.2
+        },
+        {
+          "name": "Eld Vide C.G.",
+          "form": 0.1333
+        }
+      ]
+    },
+    "2026-09-13_78_9": {
+      "raceId": "2026-09-13_78_9",
+      "cutoff": "2026-09-13",
+      "peers": [
+        {
+          "name": "Ängsrask",
+          "form": 0.76
+        },
+        {
+          "name": "Lannem Pær",
+          "form": 0.55
+        },
+        {
+          "name": "Tangen Nils",
+          "form": 0.7
+        },
+        {
+          "name": "Järvsö Robert",
+          "form": 0.52
+        },
+        {
+          "name": "Kagge Ty",
+          "form": 0.56
+        },
+        {
+          "name": "Valdorf Rubin",
+          "form": 0.6
+        },
+        {
+          "name": "Skeie Loke",
+          "form": 0.28
+        },
+        {
+          "name": "Norheim Tor",
+          "form": 0.1333
+        },
+        {
+          "name": "Spang Tix",
+          "form": 0.56
+        },
+        {
+          "name": "Ry Prinsen",
+          "form": 0.64
+        },
+        {
+          "name": "Bato Prinsen",
+          "form": 0.28
+        },
+        {
+          "name": "Troll Rapp",
+          "form": 0.1
+        }
+      ]
+    },
+    "2026-09-26_96_4": {
+      "raceId": "2026-09-26_96_4",
+      "cutoff": "2026-09-26",
+      "peers": [
+        {
+          "name": "Rina C.K.",
+          "form": 0.16
+        },
+        {
+          "name": "Langlands Ballerina",
+          "form": 0.0
+        },
+        {
+          "name": "Troll Sterk Faksine",
+          "form": 0.4
+        },
+        {
+          "name": "Voje Hero",
+          "form": 0.2
+        },
+        {
+          "name": "Briskeby Pilen",
+          "form": 0.1333
+        },
+        {
+          "name": "Prinsesse Ness Tjo",
+          "form": 0.6
+        },
+        {
+          "name": "Will Nick",
+          "form": 0.4667
+        },
+        {
+          "name": "Tangen Martin",
+          "form": 0.68
+        },
+        {
+          "name": "Reime Kongen",
+          "form": 0.16
+        },
+        {
+          "name": "Vetle Petter",
+          "form": 0.0
+        },
+        {
+          "name": "Balder Odin",
+          "form": 0.2667
+        },
+        {
+          "name": "Alm Kevin",
+          "form": 0.0
+        },
+        {
+          "name": "Grislefaksen G.L.",
+          "form": 0.1
+        }
+      ]
+    },
+    "2026-10-18_83_11": {
+      "raceId": "2026-10-18_83_11",
+      "cutoff": "2026-10-18",
+      "peers": [
+        {
+          "name": "Pave Faksa T.M.",
+          "form": 0.1333
+        },
+        {
+          "name": "Alm Kevin",
+          "form": 0.0
+        },
+        {
+          "name": "Skeie Max",
+          "form": 0.25
+        },
+        {
+          "name": "Il Salvador",
+          "form": 0.4
+        },
+        {
+          "name": "Rygval",
+          "form": 0.35
+        },
+        {
+          "name": "Terne Pil",
+          "form": 0.36
+        },
+        {
+          "name": "Alma Prins",
+          "form": 0.45
+        }
+      ]
+    },
+    "2026-10-08_99_6": {
+      "raceId": "2026-10-08_99_6",
+      "cutoff": "2026-10-08",
+      "peers": [
+        {
+          "name": "Country Sound",
+          "form": 0.3333
+        },
+        {
+          "name": "Lilli Kentucky S.F.",
+          "form": 0.4667
+        },
+        {
+          "name": "Don't Read This",
+          "form": 0.2667
+        },
+        {
+          "name": "Let It Be T.J.",
+          "form": 0.0
+        },
+        {
+          "name": "Behind The Kop",
+          "form": 0.7
+        },
+        {
+          "name": "Brostile R.",
+          "form": 0.24
+        },
+        {
+          "name": "Fabulous d'Arc",
+          "form": 0.35
+        },
+        {
+          "name": "Ramos",
+          "form": null
+        },
+        {
+          "name": "Mo Salah",
+          "form": 0.45
+        }
+      ]
+    },
+    "2026-08-26_6_6": {
+      "raceId": "2026-08-26_6_6",
+      "cutoff": "2026-08-26",
+      "peers": [
+        {
+          "name": "Sparkling Wine",
+          "form": 1.0
+        },
+        {
+          "name": "Timotejs Oki",
+          "form": 0.25
+        },
+        {
+          "name": "Luxury Belief",
+          "form": 0.45
+        },
+        {
+          "name": "Tortilla Tile",
+          "form": 0.52
+        },
+        {
+          "name": "Ballerina",
+          "form": 0.2
+        },
+        {
+          "name": "Midnight Rhyme",
+          "form": 0.44
+        },
+        {
+          "name": "La Bamba Diablo",
+          "form": 0.1333
+        },
+        {
+          "name": "Beautiful Mind S.",
+          "form": 0.36
+        },
+        {
+          "name": "Pauhunri Boko",
+          "form": 0.85
+        }
+      ]
+    },
+    "2026-10-11_55_3": {
+      "raceId": "2026-10-11_55_3",
+      "cutoff": "2026-10-11",
+      "peers": [
+        {
+          "name": "Monark Lund",
+          "form": 0.6
+        },
+        {
+          "name": "Monkey Osted Antik",
+          "form": null
+        },
+        {
+          "name": "Moor Jeting",
+          "form": 0.4
+        },
+        {
+          "name": "Mindy",
+          "form": 0.28
+        },
+        {
+          "name": "Morgan Cash",
+          "form": 0.0
+        },
+        {
+          "name": "Marabou",
+          "form": 0.35
+        },
+        {
+          "name": "Mill Iwujii",
+          "form": 0.5
+        },
+        {
+          "name": "Margrethe",
+          "form": 0.6
+        },
+        {
+          "name": "My Player",
+          "form": 0.25
+        },
+        {
+          "name": "Mynte Moseby",
+          "form": 0.5
+        }
+      ]
+    },
+    "2026-10-20_14_9": {
+      "raceId": "2026-10-20_14_9",
+      "cutoff": "2026-10-20",
+      "peers": [
+        {
+          "name": "Mellby Onyx",
+          "form": 0.6
+        },
+        {
+          "name": "Lovely Nish",
+          "form": 0.3333
+        },
+        {
+          "name": "Heartbeat Rose",
+          "form": 0.25
+        },
+        {
+          "name": "Corniglia Doc",
+          "form": 0.16
+        },
+        {
+          "name": "Lapin Kulta Sox",
+          "form": 0.4667
+        },
+        {
+          "name": "John Daly",
+          "form": 0.6
+        },
+        {
+          "name": "Electric Grace",
+          "form": 0.3333
+        },
+        {
+          "name": "Budets Arne",
+          "form": 0.44
+        },
+        {
+          "name": "Optimum Rambo",
+          "form": 0.0
+        },
+        {
+          "name": "Please Thell Me",
+          "form": 0.0
+        },
+        {
+          "name": "Cujo",
+          "form": 0.1333
+        },
+        {
+          "name": "Mijanou",
+          "form": 0.0
+        },
+        {
+          "name": "God Only Knows",
+          "form": 0.1
+        }
+      ]
+    },
+    "2026-10-21_5_4": {
+      "raceId": "2026-10-21_5_4",
+      "cutoff": "2026-10-21",
+      "peers": [
+        {
+          "name": "Xanthis Kajsa",
+          "form": 0.0
+        },
+        {
+          "name": "Norseman",
+          "form": 0.5
+        },
+        {
+          "name": "Vanita",
+          "form": 0.8
+        },
+        {
+          "name": "International Trap",
+          "form": 0.3
+        },
+        {
+          "name": "Sauron Zon",
+          "form": 0.6
+        },
+        {
+          "name": "Sunny Tooma",
+          "form": 0.35
+        },
+        {
+          "name": "Intern",
+          "form": 0.6
+        },
+        {
+          "name": "Bullseye",
+          "form": 0.1
+        }
+      ]
+    },
+    "2026-10-18_31_6": {
+      "raceId": "2026-10-18_31_6",
+      "cutoff": "2026-10-18",
+      "peers": [
+        {
+          "name": "S.B.'sPeakyBlinder",
+          "form": 0.6
+        },
+        {
+          "name": "Will to Run",
+          "form": 0.28
+        },
+        {
+          "name": "Fama Victory",
+          "form": 0.2
+        },
+        {
+          "name": "Sandsjöns Avicii",
+          "form": 0.0
+        },
+        {
+          "name": "I Choose You",
+          "form": 0.2
+        },
+        {
+          "name": "Marcia Griffiths",
+          "form": 0.16
+        },
+        {
+          "name": "Shakeitoff",
+          "form": 0.6
+        },
+        {
+          "name": "Vincitrice",
+          "form": 0.16
+        },
+        {
+          "name": "Dea Orientis W.H.",
+          "form": 0.1
+        },
+        {
+          "name": "Pronto",
+          "form": 0.3
+        },
+        {
+          "name": "Let's Do It N.O.",
+          "form": 0.2
+        },
+        {
+          "name": "Keep Flying Rapida",
+          "form": 0.2
+        },
+        {
+          "name": "Jessie",
+          "form": 0.2
+        },
+        {
+          "name": "Dirty Sweet",
+          "form": 0.35
+        },
+        {
+          "name": "G.R.Tintin",
+          "form": 0.0
+        }
+      ]
+    },
+    "2026-10-09_5_5": {
+      "raceId": "2026-10-09_5_5",
+      "cutoff": "2026-10-09",
+      "peers": [
+        {
+          "name": "Pure Vanessa",
+          "form": 0.4667
+        },
+        {
+          "name": "Gaby Love Winner",
+          "form": 0.7
+        },
+        {
+          "name": "Surpriced Tooma",
+          "form": 0.6667
+        },
+        {
+          "name": "Jula Sweet Success",
+          "form": 0.4
+        },
+        {
+          "name": "Kommendör Baltazar",
+          "form": 0.2
+        },
+        {
+          "name": "J.K.Fortuna",
+          "form": 0.16
+        },
+        {
+          "name": "Halflight Spark",
+          "form": 0.44
+        },
+        {
+          "name": "Highclere",
+          "form": 0.1
+        },
+        {
+          "name": "Fleur",
+          "form": 0.2667
+        },
+        {
+          "name": "La Fiesta Pellini",
+          "form": 0.8
+        },
+        {
+          "name": "Justice for All",
+          "form": 0.8
+        }
+      ]
+    },
+    "2026-10-21_6_2": {
+      "raceId": "2026-10-21_6_2",
+      "cutoff": "2026-10-21",
+      "peers": [
+        {
+          "name": "Omark",
+          "form": 0.3
+        },
+        {
+          "name": "Man of Means",
+          "form": 0.5
+        },
+        {
+          "name": "Calmin",
+          "form": 0.6
+        },
+        {
+          "name": "Clog",
+          "form": 0.3
+        },
+        {
+          "name": "Strauss",
+          "form": 0.1333
+        },
+        {
+          "name": "Never Ending Pace",
+          "form": 0.55
+        },
+        {
+          "name": "Gordon Gekko",
+          "form": 0.1
+        }
+      ]
+    },
+    "2026-10-17_80_9": {
+      "raceId": "2026-10-17_80_9",
+      "cutoff": "2026-10-17",
+      "peers": [
+        {
+          "name": "Sister Soozie",
+          "form": 0.16
+        },
+        {
+          "name": "Nora Scot",
+          "form": 0.16
+        },
+        {
+          "name": "Unique Passion",
+          "form": 0.48
+        },
+        {
+          "name": "Good Gal",
+          "form": 0.4
+        },
+        {
+          "name": "Come Athena",
+          "form": 0.6667
+        },
+        {
+          "name": "Brooke Davis",
+          "form": 0.1333
+        },
+        {
+          "name": "Chasse Artist",
+          "form": 0.2
+        },
+        {
+          "name": "Pearl Of Dodo",
+          "form": 0.2
+        },
+        {
+          "name": "Beth Dutton",
+          "form": 0.45
+        }
+      ]
+    },
+    "2026-10-06_78_7": {
+      "raceId": "2026-10-06_78_7",
+      "cutoff": "2026-10-06",
+      "peers": [
+        {
+          "name": "Fillip O'Brian",
+          "form": 0.24
+        },
+        {
+          "name": "Ozzy B.R.",
+          "form": 0.4
+        },
+        {
+          "name": "Sålett",
+          "form": 0.2
+        },
+        {
+          "name": "Continuity",
+          "form": 0.35
+        },
+        {
+          "name": "I.D. Jive",
+          "form": 0.16
+        },
+        {
+          "name": "Hermine Scot",
+          "form": 0.35
+        },
+        {
+          "name": "Zero Pepper",
+          "form": 0.2
+        },
+        {
+          "name": "Bourbons Amara",
+          "form": 0.45
+        },
+        {
+          "name": "Valla d'Primadonna",
+          "form": 0.64
+        },
+        {
+          "name": "Urban Tile",
+          "form": 0.7
+        },
+        {
+          "name": "Nicole B.R.",
+          "form": 0.45
+        }
+      ]
+    },
+    "2026-09-28_15_2": {
+      "raceId": "2026-09-28_15_2",
+      "cutoff": "2026-09-28",
+      "peers": [
+        {
+          "name": "Dontuworry",
+          "form": 0.2667
+        },
+        {
+          "name": "Fama Victory",
+          "form": null
+        },
+        {
+          "name": "Com Valentin",
+          "form": 0.2
+        },
+        {
+          "name": "Paparazzi N.L.",
+          "form": 0.28
+        },
+        {
+          "name": "Runner Lobell",
+          "form": 0.0
+        },
+        {
+          "name": "Komando Simoni",
+          "form": 0.4667
+        },
+        {
+          "name": "Capo Lane",
+          "form": 0.1
+        },
+        {
+          "name": "Garpen S.I.R.",
+          "form": 0.1
+        },
+        {
+          "name": "Aviation",
+          "form": 0.1
+        },
+        {
+          "name": "Baiae",
+          "form": 0.2
+        },
+        {
+          "name": "Tres Chic",
+          "form": 0.2667
+        },
+        {
+          "name": "Gobsmacked",
+          "form": null
+        }
+      ]
+    },
+    "2026-08-15_6_10": {
+      "raceId": "2026-08-15_6_10",
+      "cutoff": "2026-08-15",
+      "peers": [
+        {
+          "name": "Eldorado Jet",
+          "form": 0.4
+        },
+        {
+          "name": "Boscha Diablo",
+          "form": 0.6667
+        },
+        {
+          "name": "Just Hans",
+          "form": 0.56
+        },
+        {
+          "name": "Schampus",
+          "form": 0.0
+        },
+        {
+          "name": "Baron Tilly",
+          "form": 0.7
+        },
+        {
+          "name": "Caviar From Mine",
+          "form": 0.5
+        },
+        {
+          "name": "Call Me Gleipner",
+          "form": 0.8
+        },
+        {
+          "name": "Jerka Sting",
+          "form": 0.28
+        },
+        {
+          "name": "Parveny",
+          "form": 0.2
+        },
+        {
+          "name": "Epsom As",
+          "form": 0.28
+        }
+      ]
+    },
+    "2026-10-11_70_6": {
+      "raceId": "2026-10-11_70_6",
+      "cutoff": "2026-10-11",
+      "peers": [
+        {
+          "name": "HARLEY GEMA ",
+          "form": null
+        },
+        {
+          "name": "GO ON BOY",
+          "form": null
+        },
+        {
+          "name": "DON FANUCCI ZET",
+          "form": null
+        },
+        {
+          "name": " FREE TIME JEPSON ",
+          "form": null
+        },
+        {
+          "name": "FRANK GIO ",
+          "form": null
+        },
+        {
+          "name": "KRACK TIME ATOUT",
+          "form": null
+        },
+        {
+          "name": "DAIM BRODDA ",
+          "form": null
+        },
+        {
+          "name": "ALWAYS EK",
+          "form": null
+        },
+        {
+          "name": "POWWOW",
+          "form": null
+        },
+        {
+          "name": "LUKE THE SPOOK",
+          "form": null
+        },
+        {
+          "name": "DUBHE PRAV",
+          "form": null
+        },
+        {
+          "name": "KENTUCKY RIVER",
+          "form": null
+        }
+      ]
+    },
+    "2026-10-10_5_7": {
+      "raceId": "2026-10-10_5_7",
+      "cutoff": "2026-10-10",
+      "peers": [
+        {
+          "name": "Charron",
+          "form": 0.48
+        },
+        {
+          "name": "Sourire Frö",
+          "form": 0.1333
+        },
+        {
+          "name": "Izod Zet",
+          "form": 0.35
+        },
+        {
+          "name": "Romulus Tooma",
+          "form": 0.2667
+        },
+        {
+          "name": "Ready Star",
+          "form": 0.52
+        },
+        {
+          "name": "Boscha Diablo",
+          "form": 0.28
+        },
+        {
+          "name": "Makalu Doc",
+          "form": 0.6
+        },
+        {
+          "name": "Call Me Gleipner",
+          "form": 0.45
+        },
+        {
+          "name": "Jerka Sting",
+          "form": 0.24
+        },
+        {
+          "name": "Barack Face",
+          "form": 0.25
+        },
+        {
+          "name": "H.C.'s Crazy Horse",
+          "form": 0.1
+        },
+        {
+          "name": "Before Takeoff",
+          "form": 0.36
+        }
+      ]
+    },
+    "2026-09-05_7_7": {
+      "raceId": "2026-09-05_7_7",
+      "cutoff": "2026-09-05",
+      "peers": [
+        {
+          "name": "Xanthis Harvey",
+          "form": 0.1333
+        },
+        {
+          "name": "Y.Not Diamant",
+          "form": 0.8
+        },
+        {
+          "name": "Great Time Trot",
+          "form": 0.0
+        },
+        {
+          "name": "Boscha Diablo",
+          "form": 0.5
+        },
+        {
+          "name": "Luke the Spook",
+          "form": 0.08
+        },
+        {
+          "name": "Barack Face",
+          "form": 0.3333
+        },
+        {
+          "name": "Stens Rubin",
+          "form": 0.56
+        },
+        {
+          "name": "Ernest Jet",
+          "form": 0.35
+        },
+        {
+          "name": "Olly Håleryd",
+          "form": 0.35
+        }
+      ]
+    },
+    "2026-10-05_15_5": {
+      "raceId": "2026-10-05_15_5",
+      "cutoff": "2026-10-05",
+      "peers": [
+        {
+          "name": "Gatling",
+          "form": null
+        },
+        {
+          "name": "Double Deceiver",
+          "form": 0.56
+        },
+        {
+          "name": "Eolo Jet",
+          "form": 0.28
+        },
+        {
+          "name": "Super Nice",
+          "form": 0.1333
+        },
+        {
+          "name": "Crown",
+          "form": 0.7
+        },
+        {
+          "name": "Bengan",
+          "form": 0.4667
+        }
+      ]
+    },
+    "2026-10-10_5_8": {
+      "raceId": "2026-10-10_5_8",
+      "cutoff": "2026-10-10",
+      "peers": [
+        {
+          "name": "Full Speed Forward",
+          "form": 0.2667
+        },
+        {
+          "name": "Gosa Gosing",
+          "form": 0.28
+        },
+        {
+          "name": "Riverdale Z.",
+          "form": 0.6
+        },
+        {
+          "name": "I'm Still Standing",
+          "form": 0.6
+        },
+        {
+          "name": "M.T.Tomorrows Hope",
+          "form": 0.7
+        },
+        {
+          "name": "Monkey Wine",
+          "form": 0.6
+        },
+        {
+          "name": "Nilla Lane",
+          "form": 0.48
+        },
+        {
+          "name": "Clarissa",
+          "form": 0.56
+        },
+        {
+          "name": "Rya Håleryd",
+          "form": 0.2667
+        },
+        {
+          "name": "Betting Pacer",
+          "form": 0.35
+        },
+        {
+          "name": "La Yuca",
+          "form": 0.36
+        }
+      ]
+    },
+    "2026-10-02_12_10": {
+      "raceId": "2026-10-02_12_10",
+      "cutoff": "2026-10-02",
+      "peers": [
+        {
+          "name": "Parveny",
+          "form": 0.45
+        },
+        {
+          "name": "Before Takeoff",
+          "form": 0.48
+        },
+        {
+          "name": "Y.Not Diamant",
+          "form": 0.7
+        },
+        {
+          "name": "Lando Mearas",
+          "form": 0.48
+        },
+        {
+          "name": "From the Mine",
+          "form": 0.3333
+        },
+        {
+          "name": "Chestnut",
+          "form": 0.36
+        },
+        {
+          "name": "Meghan B.R.",
+          "form": 0.3
+        }
+      ]
+    },
+    "2026-08-29_9_12": {
+      "raceId": "2026-08-29_9_12",
+      "cutoff": "2026-08-29",
+      "peers": [
+        {
+          "name": "H.C.'s Crazy Horse",
+          "form": 0.16
+        },
+        {
+          "name": "Global Etalon",
+          "form": 0.45
+        },
+        {
+          "name": "Get A Wish",
+          "form": 0.5
+        },
+        {
+          "name": "Kuiper",
+          "form": 0.56
+        },
+        {
+          "name": "Kentucky River",
+          "form": 0.08
+        },
+        {
+          "name": "Epic Kronos",
+          "form": 0.44
+        },
+        {
+          "name": "High on Pepper",
+          "form": 0.45
+        },
+        {
+          "name": "Castor the Star",
+          "form": 0.6
+        },
+        {
+          "name": "Laredo Boko",
+          "form": 0.16
+        }
+      ]
+    },
+    "2026-10-05_15_2": {
+      "raceId": "2026-10-05_15_2",
+      "cutoff": "2026-10-05",
+      "peers": [
+        {
+          "name": "Andy Field",
+          "form": 0.4
+        },
+        {
+          "name": "Dencos Golden Eye",
+          "form": 0.0
+        },
+        {
+          "name": "King Kobra H.H.",
+          "form": 0.7
+        },
+        {
+          "name": "Optimum Rambo",
+          "form": 0.2
+        },
+        {
+          "name": "Bank's Crown",
+          "form": 0.24
+        },
+        {
+          "name": "Umpteen",
+          "form": 0.6
+        },
+        {
+          "name": "Simb Soulman",
+          "form": 0.2667
+        },
+        {
+          "name": "Fama Victory",
+          "form": 0.0
+        },
+        {
+          "name": "Yellowstone Doc",
+          "form": 0.6667
+        },
+        {
+          "name": "Måneskin",
+          "form": 0.24
+        }
+      ]
+    },
+    "2026-10-24_7_7": {
+      "raceId": "2026-10-24_7_7",
+      "cutoff": "2026-10-24",
+      "peers": [
+        {
+          "name": "Helan Går",
+          "form": 0.25
+        },
+        {
+          "name": "Wiener Sängerknabe",
+          "form": 0.6
+        },
+        {
+          "name": "Veritas",
+          "form": 1.0
+        },
+        {
+          "name": "Paleo Boko",
+          "form": 0.6
+        },
+        {
+          "name": "Forest Wood",
+          "form": 0.35
+        },
+        {
+          "name": "Rip Wheeler",
+          "form": 0.44
+        },
+        {
+          "name": "Charmant Dream",
+          "form": 0.48
+        },
+        {
+          "name": "Carltex",
+          "form": 0.2
+        },
+        {
+          "name": "Mondavi",
+          "form": 0.6
+        },
+        {
+          "name": "Zazza Zizzy Zack",
+          "form": 0.48
+        },
+        {
+          "name": "Snack",
+          "form": 0.4667
+        },
+        {
+          "name": "Global Giant",
+          "form": 0.68
+        }
+      ]
+    },
+    "2026-10-21_5_3": {
+      "raceId": "2026-10-21_5_3",
+      "cutoff": "2026-10-21",
+      "peers": [
+        {
+          "name": "Rocket",
+          "form": 0.1333
+        },
+        {
+          "name": "Likearollingstone",
+          "form": 0.5
+        },
+        {
+          "name": "Krystal Cass",
+          "form": 0.56
+        },
+        {
+          "name": "Astrid Ruda",
+          "form": 0.1333
+        },
+        {
+          "name": "Coins Glenn",
+          "form": 0.2
+        },
+        {
+          "name": "Fibonacci Font",
+          "form": 0.6
+        },
+        {
+          "name": "Uristo",
+          "form": 0.7
+        },
+        {
+          "name": "Prince A'lir",
+          "form": 0.6
+        },
+        {
+          "name": "Orazi Cesare",
+          "form": 0.6
+        },
+        {
+          "name": "Global Evidence",
+          "form": 0.7
+        }
+      ]
+    },
+    "2026-10-10_5_2": {
+      "raceId": "2026-10-10_5_2",
+      "cutoff": "2026-10-10",
+      "peers": [
+        {
+          "name": "Mohawk",
+          "form": 0.88
+        },
+        {
+          "name": "Macho Cabrio B.B.",
+          "form": 0.6
+        },
+        {
+          "name": "Takter",
+          "form": 0.8
+        },
+        {
+          "name": "Montanaro",
+          "form": 0.52
+        },
+        {
+          "name": "Fabulous Gent",
+          "form": 0.35
+        },
+        {
+          "name": "Meydan Silver",
+          "form": 0.56
+        },
+        {
+          "name": "Licorice Sisu",
+          "form": 0.48
+        },
+        {
+          "name": "Gunpoint",
+          "form": 0.28
+        },
+        {
+          "name": "Luna Lane",
+          "form": 0.8
+        },
+        {
+          "name": "Headstrong",
+          "form": 0.7
+        },
+        {
+          "name": "Global Gravity",
+          "form": 0.16
+        },
+        {
+          "name": "Uno",
+          "form": 0.48
+        }
+      ]
+    },
+    "2026-08-05_22_7": {
+      "raceId": "2026-08-05_22_7",
+      "cutoff": "2026-08-05",
+      "peers": [
+        {
+          "name": "Neil Jung",
+          "form": 0.6
+        },
+        {
+          "name": "Global Gravity",
+          "form": 0.16
+        },
+        {
+          "name": "Lauser",
+          "form": 0.2667
+        },
+        {
+          "name": "Mr Gaagaa",
+          "form": 0.1
+        },
+        {
+          "name": "Porter",
+          "form": 0.6667
+        },
+        {
+          "name": "Dream Loverboy",
+          "form": 0.5
+        },
+        {
+          "name": "Pato Boko",
+          "form": 0.4667
+        },
+        {
+          "name": "Sky Brigadoon",
+          "form": 1.0
+        },
+        {
+          "name": "Pace Marke",
+          "form": 0.2
+        },
+        {
+          "name": "Secret Brigadoon",
+          "form": 0.45
+        },
+        {
+          "name": "Surveillance",
+          "form": 0.2
+        },
+        {
+          "name": "Walking inthe Park",
+          "form": 0.48
+        }
+      ]
+    },
+    "2026-10-15_5_4": {
+      "raceId": "2026-10-15_5_4",
+      "cutoff": "2026-10-15",
+      "peers": [
+        {
+          "name": "Global Gangbuster",
+          "form": 0.55
+        },
+        {
+          "name": "Laststarinheaven",
+          "form": 0.48
+        },
+        {
+          "name": "Banko la Luna",
+          "form": 0.45
+        },
+        {
+          "name": "Kohkahycumest",
+          "form": 0.2
+        },
+        {
+          "name": "Hans Palema",
+          "form": 0.45
+        },
+        {
+          "name": "Mogas Ballerina",
+          "form": 0.4
+        },
+        {
+          "name": "Mansa Musa Mearas",
+          "form": 0.7
+        },
+        {
+          "name": "Peter Tooma",
+          "form": 0.0
+        },
+        {
+          "name": "Raphael",
+          "form": 0.28
+        },
+        {
+          "name": "Timotejs Märta",
+          "form": 0.08
+        },
+        {
+          "name": "Chico de Calamar",
+          "form": 0.1
+        }
+      ]
+    },
+    "2026-09-22_78_7": {
+      "raceId": "2026-09-22_78_7",
+      "cutoff": "2026-09-22",
+      "peers": [
+        {
+          "name": "Burmas King",
+          "form": 0.0
+        },
+        {
+          "name": "Maserati Salt",
+          "form": 0.2667
+        },
+        {
+          "name": "Macbeth B.R.",
+          "form": 0.1
+        },
+        {
+          "name": "G.G. Egri",
+          "form": 0.08
+        },
+        {
+          "name": "King Size",
+          "form": 0.4667
+        },
+        {
+          "name": "Chantecler",
+          "form": 0.1333
+        },
+        {
+          "name": "Oh U. Handsomeboy",
+          "form": 0.68
+        },
+        {
+          "name": "Mister Mustache",
+          "form": 0.7
+        },
+        {
+          "name": "Oksamit W.H.",
+          "form": 0.4667
+        },
+        {
+          "name": "Casanova Dream",
+          "form": 0.4
+        }
+      ]
+    },
+    "2026-10-10_77_9": {
+      "raceId": "2026-10-10_77_9",
+      "cutoff": "2026-10-10",
+      "peers": [
+        {
+          "name": "Hillary Hei",
+          "form": 0.36
+        },
+        {
+          "name": "Nonstop Bonanza",
+          "form": 0.6
+        },
+        {
+          "name": "Gaagaa Classic",
+          "form": 0.16
+        },
+        {
+          "name": "Jolin Southwind",
+          "form": 0.44
+        },
+        {
+          "name": "Lion's Roar",
+          "form": 0.45
+        },
+        {
+          "name": "A Perfect Match",
+          "form": 0.64
+        },
+        {
+          "name": "Mattex",
+          "form": 0.36
+        },
+        {
+          "name": "Athletic Sun",
+          "form": 0.4667
+        },
+        {
+          "name": "Kickback",
+          "form": 0.25
+        }
+      ]
+    },
+    "2026-10-02_19_9": {
+      "raceId": "2026-10-02_19_9",
+      "cutoff": "2026-10-02",
+      "peers": [
+        {
+          "name": "Cayenne Gel",
+          "form": 0.2
+        },
+        {
+          "name": "Piccadilly Pellini",
+          "form": 0.2667
+        },
+        {
+          "name": "Forest Wood",
+          "form": 0.5
+        },
+        {
+          "name": "Zickzack Zack",
+          "form": 0.3333
+        },
+        {
+          "name": "Beart",
+          "form": 0.4667
+        },
+        {
+          "name": "Howtoreach W.F.",
+          "form": 0.28
+        },
+        {
+          "name": "Rip Wheeler",
+          "form": 0.44
+        },
+        {
+          "name": "Nicolai Hanover",
+          "form": 0.2
+        },
+        {
+          "name": "Mondavi",
+          "form": 0.8
+        },
+        {
+          "name": "Livorno",
+          "form": 0.25
+        },
+        {
+          "name": "Niras Inachis",
+          "form": 0.2
+        },
+        {
+          "name": "Lucky Treize",
+          "form": 0.4667
+        }
+      ]
+    },
+    "2026-10-03_11_9": {
+      "raceId": "2026-10-03_11_9",
+      "cutoff": "2026-10-03",
+      "peers": [
+        {
+          "name": "Ride Away",
+          "form": 0.4
+        },
+        {
+          "name": "Eldfell",
+          "form": 0.1333
+        },
+        {
+          "name": "Second Breakfast",
+          "form": 0.35
+        },
+        {
+          "name": "Conrads Jessica",
+          "form": 0.56
+        },
+        {
+          "name": "Done Deal",
+          "form": 0.6
+        },
+        {
+          "name": "Griffin Kronos",
+          "form": 0.6
+        },
+        {
+          "name": "Chianti L.A.",
+          "form": 0.5
+        },
+        {
+          "name": "Seven Mounds",
+          "form": 0.68
+        },
+        {
+          "name": "Black Bourbon",
+          "form": 0.6667
+        },
+        {
+          "name": "Puskas Boko",
+          "form": 0.4
+        },
+        {
+          "name": "Take Him Sober",
+          "form": 0.6
+        },
+        {
+          "name": "S.G.Dangerous",
+          "form": 0.44
+        }
+      ]
+    },
+    "2026-06-13_78_8": {
+      "raceId": "2026-06-13_78_8",
+      "cutoff": "2026-06-13",
+      "peers": [
+        {
+          "name": "Last Story",
+          "form": 0.85
+        },
+        {
+          "name": "Ready For Cash",
+          "form": 0.44
+        },
+        {
+          "name": "Yukon Töll",
+          "form": 0.7
+        },
+        {
+          "name": "Tayno B.B.",
+          "form": 0.5
+        },
+        {
+          "name": "Followthatdream E.P.",
+          "form": 0.3
+        },
+        {
+          "name": "Macbeth B.R.",
+          "form": 0.36
+        },
+        {
+          "name": "Genius",
+          "form": 0.85
+        },
+        {
+          "name": "Cool Hand Energy",
+          "form": 0.75
+        },
+        {
+          "name": "G.G. Garzon",
+          "form": 0.28
+        },
+        {
+          "name": "Nikki B.R.",
+          "form": 0.35
+        },
+        {
+          "name": "Zero Hugs'n Kisses",
+          "form": 0.5
+        }
+      ]
+    },
+    "2026-10-06_78_6": {
+      "raceId": "2026-10-06_78_6",
+      "cutoff": "2026-10-06",
+      "peers": [
+        {
+          "name": "Hero Boom Bay",
+          "form": 0.4667
+        },
+        {
+          "name": "Followthatdream E.P.",
+          "form": 0.45
+        },
+        {
+          "name": "Lippi",
+          "form": 0.5
+        },
+        {
+          "name": "Quantum Tile",
+          "form": 0.35
+        },
+        {
+          "name": "Visconti",
+          "form": 0.0
+        },
+        {
+          "name": "Explosive Axe",
+          "form": 0.0
+        },
+        {
+          "name": "Good Gal",
+          "form": 0.3
+        },
+        {
+          "name": "Tayno B.B.",
+          "form": 0.3333
+        },
+        {
+          "name": "Thai Mississippi",
+          "form": 0.1
+        },
+        {
+          "name": "Cadillac Star",
+          "form": 0.35
+        }
+      ]
+    },
+    "2026-09-26_6_5": {
+      "raceId": "2026-09-26_6_5",
+      "cutoff": "2026-09-26",
+      "peers": [
+        {
+          "name": "Daim Brodda",
+          "form": 0.36
+        },
+        {
+          "name": "Gosa Gosing",
+          "form": 0.48
+        },
+        {
+          "name": "Solo Traveler",
+          "form": 0.16
+        },
+        {
+          "name": "Mimosa to Martini",
+          "form": 0.7
+        },
+        {
+          "name": "Maharasha",
+          "form": 0.44
+        },
+        {
+          "name": "La Yuca",
+          "form": 0.24
+        },
+        {
+          "name": "Unforgettable A.Y.",
+          "form": 1.0
+        },
+        {
+          "name": "S.G.Empress",
+          "form": 0.5
+        },
+        {
+          "name": "Dats Bella",
+          "form": 0.52
+        },
+        {
+          "name": "Betting Pacer",
+          "form": 0.6
+        },
+        {
+          "name": "Jennifer Sisu",
+          "form": 0.85
+        },
+        {
+          "name": "M.T.Tomorrows Hope",
+          "form": 0.45
+        }
+      ]
+    },
+    "2026-10-17_80_10": {
+      "raceId": "2026-10-17_80_10",
+      "cutoff": "2026-10-17",
+      "peers": [
+        {
+          "name": "Shiffrin",
+          "form": 0.08
+        },
+        {
+          "name": "Lucky Legs Sun",
+          "form": 0.28
+        },
+        {
+          "name": "G.G. Golden Power",
+          "form": 0.1
+        },
+        {
+          "name": "Rihanna T.G.",
+          "form": 0.35
+        },
+        {
+          "name": "Macy Mahara's R.T.",
+          "form": 0.35
+        },
+        {
+          "name": "A.V.'s Shannon",
+          "form": 0.1
+        },
+        {
+          "name": "Stella Ammik",
+          "form": 0.36
+        },
+        {
+          "name": "Catchagaga Volo",
+          "form": 0.36
+        },
+        {
+          "name": "G.G. Gentil",
+          "form": 0.44
+        },
+        {
+          "name": "Trixie Sun",
+          "form": 0.4667
+        },
+        {
+          "name": "Loreley",
+          "form": 0.3
+        }
+      ]
+    },
+    "2026-10-11_70_4": {
+      "raceId": "2026-10-11_70_4",
+      "cutoff": "2026-10-11",
+      "peers": [
+        {
+          "name": "MILADY JOSSELYN",
+          "form": null
+        },
+        {
+          "name": "GUGLIELMO JET",
+          "form": null
+        },
+        {
+          "name": "MAESTRO VRIE",
+          "form": null
+        },
+        {
+          "name": "MELLBY NARROW",
+          "form": null
+        },
+        {
+          "name": "FRAGOLINO ROSSO",
+          "form": null
+        },
+        {
+          "name": "PEGGY BOKO",
+          "form": null
+        },
+        {
+          "name": "MISS MATTERS",
+          "form": null
+        },
+        {
+          "name": "MY QUALITA PIYA",
+          "form": null
+        },
+        {
+          "name": "GINGER GIO",
+          "form": null
+        },
+        {
+          "name": "RECYCLE CASH ",
+          "form": null
+        },
+        {
+          "name": "MOSTRA DE BANVILLE",
+          "form": null
+        },
+        {
+          "name": "GANGSTER VENDIL",
+          "form": null
+        }
+      ]
+    },
+    "2026-10-23_54_4": {
+      "raceId": "2026-10-23_54_4",
+      "cutoff": "2026-10-23",
+      "peers": [
+        {
+          "name": "Lipstick Lies",
+          "form": 0.3
+        },
+        {
+          "name": "Leonora by Hans",
+          "form": 0.1
+        },
+        {
+          "name": "Lust for Life",
+          "form": 0.32
+        },
+        {
+          "name": "Lipa Wee",
+          "form": 0.56
+        },
+        {
+          "name": "Love Caviar",
+          "form": 0.25
+        },
+        {
+          "name": "Leonora",
+          "form": 0.64
+        },
+        {
+          "name": "Lets go Ostedantik",
+          "form": 0.4667
+        },
+        {
+          "name": "Laurentia Mosebo",
+          "form": 0.1333
+        },
+        {
+          "name": "Lorraine",
+          "form": 0.2
+        },
+        {
+          "name": "Lady Trize",
+          "form": 0.36
+        },
+        {
+          "name": "Luna Vang",
+          "form": 0.7
+        },
+        {
+          "name": "Late Night",
+          "form": 0.76
+        }
+      ]
+    },
+    "2026-10-14_6_7": {
+      "raceId": "2026-10-14_6_7",
+      "cutoff": "2026-10-14",
+      "peers": [
+        {
+          "name": "Divora",
+          "form": 0.75
+        },
+        {
+          "name": "Nyharajah",
+          "form": 0.28
+        },
+        {
+          "name": "Meditate",
+          "form": 0.48
+        },
+        {
+          "name": "Love to the Limit",
+          "form": 0.4667
+        },
+        {
+          "name": "Caribbean Lemon",
+          "form": 0.56
+        },
+        {
+          "name": "Sherburne S.",
+          "form": 0.56
+        },
+        {
+          "name": "Showtime Zon",
+          "form": 0.6667
+        },
+        {
+          "name": "Ursula",
+          "form": 0.5
+        },
+        {
+          "name": "May Day",
+          "form": 0.4
+        },
+        {
+          "name": "PrincessoftheDawn",
+          "form": 0.44
+        },
+        {
+          "name": "Fleetfoot S.S.",
+          "form": 1.0
+        },
+        {
+          "name": "Madame Mearas",
+          "form": 1.0
+        }
+      ]
+    },
+    "2026-10-14_9_8": {
+      "raceId": "2026-10-14_9_8",
+      "cutoff": "2026-10-14",
+      "peers": [
+        {
+          "name": "Tupelo Honey",
+          "form": 0.5
+        },
+        {
+          "name": "Day Time Trot",
+          "form": 0.28
+        },
+        {
+          "name": "Hankypanky Leonie",
+          "form": 1.0
+        },
+        {
+          "name": "Queen Montana",
+          "form": 0.4667
+        },
+        {
+          "name": "Chamberi",
+          "form": 0.8
+        },
+        {
+          "name": "R.K.Kiara",
+          "form": 0.6
+        },
+        {
+          "name": "Jiovanha Falkone",
+          "form": 0.45
+        },
+        {
+          "name": "Lotusorchide",
+          "form": 0.55
+        },
+        {
+          "name": "Sparkling Power",
+          "form": 0.3
+        },
+        {
+          "name": "A View to a Kill",
+          "form": 0.6
+        },
+        {
+          "name": "Brunet Garde",
+          "form": 0.48
+        },
+        {
+          "name": "Housekeeper",
+          "form": 0.4667
+        }
+      ]
+    },
+    "2026-09-05_7_9": {
+      "raceId": "2026-09-05_7_9",
+      "cutoff": "2026-09-05",
+      "peers": [
+        {
+          "name": "Merlene Boko",
+          "form": 0.3333
+        },
+        {
+          "name": "Just for Show",
+          "form": 0.56
+        },
+        {
+          "name": "Kind of Magic F.R.",
+          "form": 0.6
+        },
+        {
+          "name": "Captiva",
+          "form": 0.35
+        },
+        {
+          "name": "Queen",
+          "form": 0.6667
+        },
+        {
+          "name": "Riverdale Z.",
+          "form": 0.35
+        },
+        {
+          "name": "I'm Still Standing",
+          "form": 0.85
+        },
+        {
+          "name": "Goldie Home",
+          "form": 0.48
+        },
+        {
+          "name": "Gudrid Face",
+          "form": null
+        },
+        {
+          "name": "Ebba Kuce",
+          "form": 0.44
+        },
+        {
+          "name": "Rya Håleryd",
+          "form": 0.32
+        },
+        {
+          "name": "Nikki Lane",
+          "form": 0.6667
+        }
+      ]
+    },
+    "2026-10-16_18_8": {
+      "raceId": "2026-10-16_18_8",
+      "cutoff": "2026-10-16",
+      "peers": [
+        {
+          "name": "Hereisjohnny",
+          "form": 0.2
+        },
+        {
+          "name": "Iaminmiami",
+          "form": 0.4667
+        },
+        {
+          "name": "Mystic des Thuyas",
+          "form": null
+        },
+        {
+          "name": "Rauie",
+          "form": 0.4
+        },
+        {
+          "name": "Vikkan Pop",
+          "form": 0.1
+        },
+        {
+          "name": "Murena",
+          "form": 0.0
+        },
+        {
+          "name": "Mitzy Power",
+          "form": 0.0
+        },
+        {
+          "name": "Luke Diablo",
+          "form": 0.32
+        },
+        {
+          "name": "DencoLicensetokill",
+          "form": 0.3
+        },
+        {
+          "name": "Prince Ixi",
+          "form": null
+        },
+        {
+          "name": "Have a Drink on Me",
+          "form": 0.16
+        },
+        {
+          "name": "Jist on Light Boy",
+          "form": 0.28
+        },
+        {
+          "name": "Best I Walk",
+          "form": 0.25
+        },
+        {
+          "name": "Tuppen",
+          "form": 0.08
+        },
+        {
+          "name": "Goodbye Kiss",
+          "form": 0.6
+        }
+      ]
+    },
+    "2026-10-01_32_7": {
+      "raceId": "2026-10-01_32_7",
+      "cutoff": "2026-10-01",
+      "peers": [
+        {
+          "name": "Blank",
+          "form": 0.45
+        },
+        {
+          "name": "You Bow to No One",
+          "form": 0.2
+        },
+        {
+          "name": "Giotto Grif",
+          "form": 0.7
+        },
+        {
+          "name": "Chat Room",
+          "form": 0.55
+        },
+        {
+          "name": "Jula Redmile Champ",
+          "form": 0.2
+        },
+        {
+          "name": "Gimbo Grif",
+          "form": 0.16
+        },
+        {
+          "name": "Variegated",
+          "form": 0.45
+        },
+        {
+          "name": "Gap Kronos",
+          "form": 0.28
+        }
+      ]
+    },
+    "2026-10-02_54_3": {
+      "raceId": "2026-10-02_54_3",
+      "cutoff": "2026-10-02",
+      "peers": [
+        {
+          "name": "Jackson La Marc",
+          "form": 0.0
+        },
+        {
+          "name": "Kombardo Skov",
+          "form": 0.7
+        },
+        {
+          "name": "Eik Hindø",
+          "form": 0.36
+        },
+        {
+          "name": "Henri Cloc",
+          "form": 0.16
+        },
+        {
+          "name": "Hurricane P",
+          "form": 0.64
+        },
+        {
+          "name": "Muzan Kibutsuji",
+          "form": 0.3333
+        },
+        {
+          "name": "L'Amiral Propul",
+          "form": 0.2
+        },
+        {
+          "name": "Kit Kat Mearas",
+          "form": 0.28
+        },
+        {
+          "name": "Houdini Shadow",
+          "form": 0.36
+        },
+        {
+          "name": "Cardolan Byd",
+          "form": 0.56
+        }
+      ]
+    },
+    "2026-10-03_78_3": {
+      "raceId": "2026-10-03_78_3",
+      "cutoff": "2026-10-03",
+      "peers": [
+        {
+          "name": "Shiffrin",
+          "form": 0.16
+        },
+        {
+          "name": "Megatron",
+          "form": 0.36
+        },
+        {
+          "name": "Dani's Queen",
+          "form": 0.08
+        },
+        {
+          "name": "Casanova Dream",
+          "form": 0.4
+        },
+        {
+          "name": "Bully Pepper",
+          "form": 0.36
+        },
+        {
+          "name": "Onyx B.R.",
+          "form": 0.24
+        },
+        {
+          "name": "Catchagaga Volo",
+          "form": 0.28
+        }
+      ]
+    },
+    "2026-09-06_7_11": {
+      "raceId": "2026-09-06_7_11",
+      "cutoff": "2026-09-06",
+      "peers": [
+        {
+          "name": "Readly Brodde",
+          "form": 0.48
+        },
+        {
+          "name": "Zarex",
+          "form": 0.85
+        },
+        {
+          "name": "Carros First King",
+          "form": 0.76
+        },
+        {
+          "name": "Mellby Narrow",
+          "form": 0.28
+        },
+        {
+          "name": "Wise Guy",
+          "form": 0.6
+        },
+        {
+          "name": "Golden Kronos",
+          "form": 0.88
+        },
+        {
+          "name": "Rosso Rubino",
+          "form": 0.56
+        },
+        {
+          "name": "Special Ale",
+          "form": 0.7
+        },
+        {
+          "name": "Ejnar Face",
+          "form": 0.4667
+        },
+        {
+          "name": "Nightlife In",
+          "form": 0.56
+        },
+        {
+          "name": "Iamthesun",
+          "form": 0.3
+        },
+        {
+          "name": "Moonshot",
+          "form": 0.24
+        }
+      ]
+    },
+    "2026-10-23_54_6": {
+      "raceId": "2026-10-23_54_6",
+      "cutoff": "2026-10-23",
+      "peers": [
+        {
+          "name": "Lucky Mom",
+          "form": 0.8
+        },
+        {
+          "name": "Luther King",
+          "form": 0.45
+        },
+        {
+          "name": "Lee Marvin",
+          "form": 0.64
+        },
+        {
+          "name": "La Chris",
+          "form": 0.6
+        },
+        {
+          "name": "Lanson",
+          "form": 0.7
+        },
+        {
+          "name": "Lonesomerider",
+          "form": 0.68
+        },
+        {
+          "name": "La Liga Boy",
+          "form": 0.45
+        },
+        {
+          "name": "Lookerbie Diamond",
+          "form": 0.6
+        },
+        {
+          "name": "Leicester",
+          "form": 0.36
+        },
+        {
+          "name": "Lazy Dust",
+          "form": 0.4
+        },
+        {
+          "name": "Legenden C N",
+          "form": 0.6667
+        },
+        {
+          "name": "Ludvig Cash",
+          "form": 0.24
+        }
+      ]
+    },
+    "2026-10-16_18_9": {
+      "raceId": "2026-10-16_18_9",
+      "cutoff": "2026-10-16",
+      "peers": [
+        {
+          "name": "Fabulous n'Away",
+          "form": 0.6
+        },
+        {
+          "name": "Procope",
+          "form": 0.08
+        },
+        {
+          "name": "Who's Funky",
+          "form": 0.5
+        },
+        {
+          "name": "Eugenius Face",
+          "form": 0.4667
+        },
+        {
+          "name": "Eye to Eye",
+          "form": 0.8
+        },
+        {
+          "name": "Ida Godiva",
+          "form": 0.6
+        },
+        {
+          "name": "M.T.Urus",
+          "form": 0.6
+        },
+        {
+          "name": "Global Edition",
+          "form": null
+        },
+        {
+          "name": "Lucky Treize",
+          "form": 0.2
+        },
+        {
+          "name": "Beibe Garde",
+          "form": null
+        },
+        {
+          "name": "Twins Zorro",
+          "form": 0.2
+        },
+        {
+          "name": "Nouvelle Lune",
+          "form": 0.7
+        }
+      ]
+    },
+    "2026-10-20_78_5": {
+      "raceId": "2026-10-20_78_5",
+      "cutoff": "2026-10-20",
+      "peers": [
+        {
+          "name": "Keep The Faith",
+          "form": null
+        },
+        {
+          "name": "Akissassweetascandy",
+          "form": 0.6
+        },
+        {
+          "name": "Valentina",
+          "form": 0.2
+        },
+        {
+          "name": "Sanctuaire",
+          "form": 0.7
+        },
+        {
+          "name": "Tortilla Tile",
+          "form": 0.64
+        },
+        {
+          "name": "Haley James",
+          "form": 0.25
+        },
+        {
+          "name": "Jael Tiamo",
+          "form": 0.5
+        },
+        {
+          "name": "Nikita di Quattro",
+          "form": 0.1333
+        },
+        {
+          "name": "Nature La Vilde",
+          "form": 0.1333
+        },
+        {
+          "name": "Global Graceful",
+          "form": 0.45
+        }
+      ]
+    },
+    "2026-10-10_5_3": {
+      "raceId": "2026-10-10_5_3",
+      "cutoff": "2026-10-10",
+      "peers": [
+        {
+          "name": "Calgary Dreams",
+          "form": 0.5
+        },
+        {
+          "name": "Mellby Ossa",
+          "form": 0.55
+        },
+        {
+          "name": "Global Holy Water",
+          "form": 0.0
+        },
+        {
+          "name": "Nakiska",
+          "form": 0.36
+        },
+        {
+          "name": "Nuria du Campus",
+          "form": 0.45
+        },
+        {
+          "name": "Natural Boko",
+          "form": 0.4667
+        },
+        {
+          "name": "Fatal Attraction",
+          "form": 1.0
+        },
+        {
+          "name": "Aloha",
+          "form": 0.08
+        },
+        {
+          "name": "Janitah Brook",
+          "form": 0.35
+        },
+        {
+          "name": "Raina Schermer",
+          "form": 0.35
+        },
+        {
+          "name": "Diamond in Pj's",
+          "form": 0.2
+        }
+      ]
+    },
+    "2026-09-18_54_4": {
+      "raceId": "2026-09-18_54_4",
+      "cutoff": "2026-09-18",
+      "peers": [
+        {
+          "name": "Looks Like Dust",
+          "form": 0.3
+        },
+        {
+          "name": "Paola Zandbergen",
+          "form": 0.36
+        },
+        {
+          "name": "Lady Hall",
+          "form": 0.55
+        },
+        {
+          "name": "Ingeborg",
+          "form": 0.0
+        },
+        {
+          "name": "Red Madonna",
+          "form": 0.55
+        },
+        {
+          "name": "Hoska",
+          "form": 0.5
+        },
+        {
+          "name": "Indian Summer",
+          "form": 0.44
+        },
+        {
+          "name": "Just Time",
+          "form": 0.4
+        },
+        {
+          "name": "Hit Me",
+          "form": 0.44
+        },
+        {
+          "name": "Hyacinth",
+          "form": 0.36
+        },
+        {
+          "name": "Fraja Ice",
+          "form": 0.0
+        },
+        {
+          "name": "Kollund Møbler",
+          "form": 0.35
+        }
+      ]
+    },
+    "2026-09-29_8_4": {
+      "raceId": "2026-09-29_8_4",
+      "cutoff": "2026-09-29",
+      "peers": [
+        {
+          "name": "Scandalous Zon",
+          "form": 0.16
+        },
+        {
+          "name": "Darude",
+          "form": 0.16
+        },
+        {
+          "name": "Luxury Rain",
+          "form": 0.4
+        },
+        {
+          "name": "Felicia Hall",
+          "form": 0.2
+        },
+        {
+          "name": "Maroon",
+          "form": 0.44
+        },
+        {
+          "name": "Have a Drink on Me",
+          "form": 0.08
+        },
+        {
+          "name": "Caribbean Lemon",
+          "form": 0.6
+        }
+      ]
+    },
+    "2026-10-01_32_8": {
+      "raceId": "2026-10-01_32_8",
+      "cutoff": "2026-10-01",
+      "peers": [
+        {
+          "name": "Myspirit",
+          "form": 0.35
+        },
+        {
+          "name": "Mellby Maybe",
+          "form": 0.24
+        },
+        {
+          "name": "Pretty Effect",
+          "form": 0.4667
+        },
+        {
+          "name": "Parma di Quattro",
+          "form": 0.3333
+        },
+        {
+          "name": "Make a Mil",
+          "form": 0.25
+        },
+        {
+          "name": "Good Reads",
+          "form": 0.2667
+        },
+        {
+          "name": "Bahta Bob",
+          "form": 0.5
+        },
+        {
+          "name": "Sunshine Tooma",
+          "form": 0.35
+        },
+        {
+          "name": "Old Maid Boko",
+          "form": 0.45
+        },
+        {
+          "name": "Fröken Crawly",
+          "form": 0.3333
+        },
+        {
+          "name": "Ziva Bris",
+          "form": 0.35
+        },
+        {
+          "name": "Ginevra Ek",
+          "form": 0.8
+        }
+      ]
+    },
+    "2026-10-17_80_7": {
+      "raceId": "2026-10-17_80_7",
+      "cutoff": "2026-10-17",
+      "peers": [
+        {
+          "name": "Clyde",
+          "form": 0.1333
+        },
+        {
+          "name": "Escobar Face",
+          "form": 0.36
+        },
+        {
+          "name": "Burmas King",
+          "form": 0.0
+        },
+        {
+          "name": "Followthatdream E.P.",
+          "form": 0.44
+        },
+        {
+          "name": "Chang",
+          "form": 0.1333
+        },
+        {
+          "name": "Jealous Rain",
+          "form": 0.85
+        },
+        {
+          "name": "Kentucky Field",
+          "form": 0.0
+        },
+        {
+          "name": "Trefilov",
+          "form": 0.1333
+        },
+        {
+          "name": "Petite Papillon",
+          "form": 0.0
+        },
+        {
+          "name": "Hobart",
+          "form": 0.28
+        },
+        {
+          "name": "Tix",
+          "form": 0.36
+        }
+      ]
+    },
+    "2026-10-18_31_9": {
+      "raceId": "2026-10-18_31_9",
+      "cutoff": "2026-10-18",
+      "peers": [
+        {
+          "name": "Amore",
+          "form": 0.6667
+        },
+        {
+          "name": "Yagger Kemp",
+          "form": 0.36
+        },
+        {
+          "name": "Kick the Man",
+          "form": 0.5
+        },
+        {
+          "name": "Surtsey S.I.R",
+          "form": 0.16
+        },
+        {
+          "name": "Good Guessing",
+          "form": 0.16
+        },
+        {
+          "name": "Barrique Wine",
+          "form": 0.3
+        },
+        {
+          "name": "Javelle",
+          "form": 0.0
+        },
+        {
+          "name": "Lady Adore",
+          "form": 0.24
+        },
+        {
+          "name": "Quick Reference",
+          "form": 0.28
+        },
+        {
+          "name": "Good Express",
+          "form": 0.0
+        },
+        {
+          "name": "Tutankhaton",
+          "form": 0.3333
+        },
+        {
+          "name": "Opening Night",
+          "form": 1.0
+        },
+        {
+          "name": "Southbeach Volo",
+          "form": 0.2667
+        },
+        {
+          "name": "Beartime",
+          "form": 0.75
+        }
+      ]
+    },
+    "2026-10-03_78_8": {
+      "raceId": "2026-10-03_78_8",
+      "cutoff": "2026-10-03",
+      "peers": [
+        {
+          "name": "Moneytalks",
+          "form": 0.4
+        },
+        {
+          "name": "Peyton Sawyer",
+          "form": 0.45
+        },
+        {
+          "name": "Lizzi B.R.",
+          "form": 0.5
+        },
+        {
+          "name": "Id Duchess",
+          "form": 0.6
+        },
+        {
+          "name": "New First Lady",
+          "form": 0.48
+        },
+        {
+          "name": "Gaviria",
+          "form": 0.4
+        },
+        {
+          "name": "Sobel Promise",
+          "form": 0.36
+        },
+        {
+          "name": "Ultima Royal",
+          "form": null
+        },
+        {
+          "name": "Rihanna T.G.",
+          "form": 0.35
+        },
+        {
+          "name": "Macy Mahara's R.T.",
+          "form": 0.45
+        },
+        {
+          "name": "Normaal",
+          "form": 0.64
+        },
+        {
+          "name": "Sanctuaire",
+          "form": 0.8
+        }
+      ]
+    },
+    "2026-10-03_78_1": {
+      "raceId": "2026-10-03_78_1",
+      "cutoff": "2026-10-03",
+      "peers": [
+        {
+          "name": "Maharasha",
+          "form": 0.45
+        },
+        {
+          "name": "Coral Coger",
+          "form": 0.08
+        },
+        {
+          "name": "Konstantia Sisu",
+          "form": 0.28
+        },
+        {
+          "name": "Kaffeåchampagne",
+          "form": 0.1
+        },
+        {
+          "name": "Zero Hugs'n Kisses",
+          "form": 0.48
+        },
+        {
+          "name": "Daim Brodda",
+          "form": 0.2
+        },
+        {
+          "name": "Hearts",
+          "form": 0.3333
+        }
+      ]
+    },
+    "2026-09-26_6_1": {
+      "raceId": "2026-09-26_6_1",
+      "cutoff": "2026-09-26",
+      "peers": [
+        {
+          "name": "Optimum Relight",
+          "form": 0.28
+        },
+        {
+          "name": "Gaga Lady",
+          "form": 0.6667
+        },
+        {
+          "name": "Make the Song",
+          "form": 0.7
+        },
+        {
+          "name": "Rokka Tiger M.G.",
+          "form": 0.6
+        },
+        {
+          "name": "Greenday I.T.",
+          "form": 0.68
+        },
+        {
+          "name": "MarTimo Sjöhammar",
+          "form": 0.35
+        },
+        {
+          "name": "Dimension Trot",
+          "form": 0.36
+        },
+        {
+          "name": "Custom Captain",
+          "form": 0.25
+        },
+        {
+          "name": "Lippi",
+          "form": 0.4
+        },
+        {
+          "name": "Heavenly Flavours",
+          "form": 0.55
+        },
+        {
+          "name": "Danville",
+          "form": 0.2667
+        },
+        {
+          "name": "Allegra Avanza",
+          "form": 0.52
+        }
+      ]
+    },
+    "2026-10-24_7_6": {
+      "raceId": "2026-10-24_7_6",
+      "cutoff": "2026-10-24",
+      "peers": [
+        {
+          "name": "Special Jog",
+          "form": 0.2
+        },
+        {
+          "name": "Polly Vici",
+          "form": 0.56
+        },
+        {
+          "name": "Alicia C.D.",
+          "form": 0.3333
+        },
+        {
+          "name": "Zipora C.D.",
+          "form": 0.28
+        },
+        {
+          "name": "Job Girl",
+          "form": 0.2
+        },
+        {
+          "name": "Run Rhapsody Run",
+          "form": 0.4667
+        },
+        {
+          "name": "Hawk Eyed Girl",
+          "form": 0.2
+        },
+        {
+          "name": "Love Express W.F.",
+          "form": 0.3
+        },
+        {
+          "name": "Mahakala",
+          "form": 0.4667
+        },
+        {
+          "name": "Staro Tindra",
+          "form": 0.4667
+        },
+        {
+          "name": "Bahta Bob",
+          "form": 0.4667
+        },
+        {
+          "name": "Call Me Ottilia",
+          "form": 0.6
+        },
+        {
+          "name": "Turfmans Nancy",
+          "form": 0.4667
+        },
+        {
+          "name": "Bella Yankee",
+          "form": 0.45
+        },
+        {
+          "name": "Anna K.J.",
+          "form": 0.35
+        }
+      ]
+    },
+    "2026-09-12_17_11": {
+      "raceId": "2026-09-12_17_11",
+      "cutoff": "2026-09-12",
+      "peers": [
+        {
+          "name": "Bruce Braylon",
+          "form": 0.56
+        },
+        {
+          "name": "Pineapple",
+          "form": 0.36
+        },
+        {
+          "name": "Graces Bird",
+          "form": 0.08
+        },
+        {
+          "name": "Mellby Mowgli",
+          "form": 0.56
+        },
+        {
+          "name": "Ebbot Rice",
+          "form": 0.48
+        },
+        {
+          "name": "Jaguar Godiva",
+          "form": 0.24
+        },
+        {
+          "name": "Don E.Star",
+          "form": 0.4
+        },
+        {
+          "name": "Lucky Silver",
+          "form": 0.56
+        },
+        {
+          "name": "Elvis T.C.B.",
+          "form": 0.36
+        },
+        {
+          "name": "Gosa Gosing",
+          "form": 0.56
+        },
+        {
+          "name": "Punchboard",
+          "form": 0.45
+        },
+        {
+          "name": "Slivovitz Lover",
+          "form": 0.28
+        }
+      ]
+    },
+    "2026-09-30_5_8": {
+      "raceId": "2026-09-30_5_8",
+      "cutoff": "2026-09-30",
+      "peers": [
+        {
+          "name": "Kohkahycumest",
+          "form": 0.3
+        },
+        {
+          "name": "Plucky Swamp",
+          "form": 0.4667
+        },
+        {
+          "name": "Fabulous Gent",
+          "form": 0.35
+        },
+        {
+          "name": "Ice Rose Alar",
+          "form": 0.3
+        },
+        {
+          "name": "Hickovelocissimo",
+          "form": 0.3333
+        },
+        {
+          "name": "Granns Lady",
+          "form": 0.1
+        },
+        {
+          "name": "Okocha Boko",
+          "form": 0.7
+        },
+        {
+          "name": "Pebbles Newport",
+          "form": null
+        },
+        {
+          "name": "Celtic Tonga",
+          "form": 0.35
+        },
+        {
+          "name": "Eagle of Oak",
+          "form": 0.3333
+        },
+        {
+          "name": "Jerome Zet",
+          "form": 0.76
+        }
+      ]
+    },
+    "2026-09-19_15_12": {
+      "raceId": "2026-09-19_15_12",
+      "cutoff": "2026-09-19",
+      "peers": [
+        {
+          "name": "Global Futurity",
+          "form": 0.48
+        },
+        {
+          "name": "Mr Carnation",
+          "form": 0.68
+        },
+        {
+          "name": "Global Dependable",
+          "form": 0.6
+        },
+        {
+          "name": "Global Education",
+          "form": 0.2
+        },
+        {
+          "name": "King of Trotter",
+          "form": 0.48
+        },
+        {
+          "name": "Great Old Dance",
+          "form": 0.76
+        },
+        {
+          "name": "Parish Crooks V.S.",
+          "form": 0.2
+        },
+        {
+          "name": "Weekend Vibe",
+          "form": 0.6
+        },
+        {
+          "name": "Golden Sunrise",
+          "form": 0.35
+        },
+        {
+          "name": "Cameron Hills",
+          "form": 0.2
+        },
+        {
+          "name": "Bourbon Brodde",
+          "form": 0.5
+        },
+        {
+          "name": "King Okay",
+          "form": 0.2
+        },
+        {
+          "name": "Pingis",
+          "form": 0.4667
+        },
+        {
+          "name": "Southbeach Volo",
+          "form": 0.6
+        },
+        {
+          "name": "Steady Express",
+          "form": 0.6
+        }
+      ]
+    },
+    "2026-09-26_6_10": {
+      "raceId": "2026-09-26_6_10",
+      "cutoff": "2026-09-26",
+      "peers": [
+        {
+          "name": "Blixt Lane",
+          "form": 0.4667
+        },
+        {
+          "name": "Mellby Mowgli",
+          "form": 0.48
+        },
+        {
+          "name": "J.C.",
+          "form": 0.7
+        },
+        {
+          "name": "I.D.Got a Colt",
+          "form": 0.8
+        },
+        {
+          "name": "Simon Palema",
+          "form": 0.68
+        },
+        {
+          "name": "Joker Ima",
+          "form": 0.48
+        },
+        {
+          "name": "Ebbot Rice",
+          "form": 0.36
+        },
+        {
+          "name": "Drag Racing",
+          "form": 0.35
+        },
+        {
+          "name": "Fly Express",
+          "form": 0.36
+        },
+        {
+          "name": "Mansa Musa Mearas",
+          "form": 0.7
+        },
+        {
+          "name": "L'Amiral S.J.S.",
+          "form": 0.7
+        },
+        {
+          "name": "Epicure D.E.",
+          "form": 0.48
+        }
+      ]
+    },
+    "2026-03-04_5_9": {
+      "raceId": "2026-03-04_5_9",
+      "cutoff": "2026-03-04",
+      "peers": [
+        {
+          "name": "Solo Traveler",
+          "form": 0.2
+        },
+        {
+          "name": "Flying Finn",
+          "form": 0.48
+        },
+        {
+          "name": "Anacott Steel",
+          "form": null
+        },
+        {
+          "name": "Hidalgo Simoni",
+          "form": 0.45
+        },
+        {
+          "name": "Waypoint Sequence",
+          "form": 0.1
+        },
+        {
+          "name": "Diamant Vendil",
+          "form": 0.4667
+        },
+        {
+          "name": "Selective Calling",
+          "form": 0.24
+        },
+        {
+          "name": "Magic Bourbon",
+          "form": 0.5
+        },
+        {
+          "name": "Katzenjammer",
+          "form": 0.55
+        },
+        {
+          "name": "Leverage",
+          "form": 0.8
+        },
+        {
+          "name": "Västerbo Carretera",
+          "form": 0.1
+        }
+      ]
+    },
+    "2026-09-29_78_8": {
+      "raceId": "2026-09-29_78_8",
+      "cutoff": "2026-09-29",
+      "peers": [
+        {
+          "name": "Timetoshine Bonanza",
+          "form": 0.35
+        },
+        {
+          "name": "Jackson Trot",
+          "form": 0.6
+        },
+        {
+          "name": "Look Like Gaagaa",
+          "form": 0.6
+        },
+        {
+          "name": "Max Orlando",
+          "form": 0.2
+        },
+        {
+          "name": "Thai Mississippi",
+          "form": 0.1
+        },
+        {
+          "name": "Odd Viking",
+          "form": 0.4667
+        },
+        {
+          "name": "Tayno B.B.",
+          "form": 0.5
+        },
+        {
+          "name": "Broker Artist",
+          "form": 0.2
+        }
+      ]
+    },
+    "2026-08-02_13_5": {
+      "raceId": "2026-08-02_13_5",
+      "cutoff": "2026-08-02",
+      "peers": [
+        {
+          "name": "Viking Lane",
+          "form": 0.28
+        },
+        {
+          "name": "Dalens Elvis",
+          "form": 0.35
+        },
+        {
+          "name": "Conrads Palle",
+          "form": 0.2
+        },
+        {
+          "name": "Hercules Godiva",
+          "form": 0.6667
+        },
+        {
+          "name": "High on Pepper",
+          "form": 0.1333
+        },
+        {
+          "name": "Epic Kronos",
+          "form": 0.44
+        }
+      ]
+    },
+    "2026-09-05_7_5": {
+      "raceId": "2026-09-05_7_5",
+      "cutoff": "2026-09-05",
+      "peers": [
+        {
+          "name": "Fly Express",
+          "form": 0.45
+        },
+        {
+          "name": "Mister Smartface",
+          "form": null
+        },
+        {
+          "name": "Victorious Tile",
+          "form": 0.16
+        },
+        {
+          "name": "Legligin",
+          "form": 0.45
+        },
+        {
+          "name": "Flight Sequence",
+          "form": 0.36
+        },
+        {
+          "name": "Look at Me Sisu",
+          "form": 0.5
+        },
+        {
+          "name": "Gustav Simoni",
+          "form": 0.4667
+        },
+        {
+          "name": "Go Kenneth Go",
+          "form": 0.24
+        },
+        {
+          "name": "Iaintnoquitter",
+          "form": 0.35
+        },
+        {
+          "name": "Shadow Moon",
+          "form": 0.76
+        },
+        {
+          "name": "Arnie Silvio",
+          "form": 0.44
+        }
+      ]
+    },
+    "2026-10-07_8_9": {
+      "raceId": "2026-10-07_8_9",
+      "cutoff": "2026-10-07",
+      "peers": [
+        {
+          "name": "Stargazer",
+          "form": 0.16
+        },
+        {
+          "name": "Osvaldo A.Boko",
+          "form": 0.35
+        },
+        {
+          "name": "Heartbeat Ellie",
+          "form": 0.5
+        },
+        {
+          "name": "Global Federation",
+          "form": 0.55
+        },
+        {
+          "name": "Mix the Booze",
+          "form": 0.0
+        },
+        {
+          "name": "Moore",
+          "form": 0.5
+        },
+        {
+          "name": "Fiber Shot",
+          "form": 0.1
+        },
+        {
+          "name": "Efrem",
+          "form": 0.5
+        },
+        {
+          "name": "Waco Sixx",
+          "form": 0.6667
+        },
+        {
+          "name": "Esteban Bar",
+          "form": 0.45
+        },
+        {
+          "name": "Fly Express",
+          "form": 0.28
+        }
+      ]
+    },
+    "2026-08-15_6_8": {
+      "raceId": "2026-08-15_6_8",
+      "cutoff": "2026-08-15",
+      "peers": [
+        {
+          "name": "Digital Brodde",
+          "form": 0.28
+        },
+        {
+          "name": "Idle Seabrook",
+          "form": 0.24
+        },
+        {
+          "name": "Datos Gangster",
+          "form": 0.8
+        },
+        {
+          "name": "Free Day",
+          "form": 0.2
+        },
+        {
+          "name": "Conrads Leonard",
+          "form": 0.6667
+        },
+        {
+          "name": "Kiss My I.D.",
+          "form": 0.4667
+        },
+        {
+          "name": "Björn Palema",
+          "form": 0.25
+        },
+        {
+          "name": "Nyras Daenker",
+          "form": 0.1
+        },
+        {
+          "name": "Ulaya",
+          "form": 0.3333
+        },
+        {
+          "name": "Chaplin",
+          "form": 0.45
+        },
+        {
+          "name": "Sefyr Lane",
+          "form": 0.6
+        }
+      ]
+    },
+    "2026-09-17_6_9": {
+      "raceId": "2026-09-17_6_9",
+      "cutoff": "2026-09-17",
+      "peers": [
+        {
+          "name": "Deadly Map",
+          "form": 0.45
+        },
+        {
+          "name": "Ugalli",
+          "form": 0.28
+        },
+        {
+          "name": "Arnie Silvio",
+          "form": 0.36
+        },
+        {
+          "name": "Look at Me Sisu",
+          "form": 0.25
+        },
+        {
+          "name": "Nencini",
+          "form": 0.4667
+        },
+        {
+          "name": "Zigzag Zagazoo",
+          "form": 0.08
+        },
+        {
+          "name": "Louis Vuitton",
+          "form": 0.5
+        },
+        {
+          "name": "Zucchini C.D.",
+          "form": 0.35
+        },
+        {
+          "name": "Esteban Bar",
+          "form": 0.6
+        },
+        {
+          "name": "Danville",
+          "form": 0.4
+        }
+      ]
+    },
+    "2026-09-05_77_8": {
+      "raceId": "2026-09-05_77_8",
+      "cutoff": "2026-09-05",
+      "peers": [
+        {
+          "name": "Tordenskjold",
+          "form": 0.56
+        },
+        {
+          "name": "Grislefaksen G.L.",
+          "form": 0.0
+        },
+        {
+          "name": "Holter Odin",
+          "form": 0.3
+        },
+        {
+          "name": "G. Jerken",
+          "form": 0.6
+        },
+        {
+          "name": "Gigant Tider",
+          "form": 0.6
+        },
+        {
+          "name": "Hauk Viktor",
+          "form": 0.1333
+        },
+        {
+          "name": "Baias",
+          "form": 0.28
+        }
+      ]
+    },
+    "2026-08-22_82_5": {
+      "raceId": "2026-08-22_82_5",
+      "cutoff": "2026-08-22",
+      "peers": [
+        {
+          "name": "Lille Helge",
+          "form": 0.25
+        },
+        {
+          "name": "Vestpol Kongen",
+          "form": 0.2
+        },
+        {
+          "name": "Åls Faksen",
+          "form": 0.16
+        },
+        {
+          "name": "Kvaals Tinn",
+          "form": 0.85
+        },
+        {
+          "name": "Aske Balder",
+          "form": 0.7
+        },
+        {
+          "name": "Midnatt Tulla",
+          "form": 0.36
+        },
+        {
+          "name": "Ramstad Balder",
+          "form": 0.4667
+        },
+        {
+          "name": "Bare Mattis",
+          "form": 0.44
+        },
+        {
+          "name": "Faks Odin",
+          "form": 0.1333
+        },
+        {
+          "name": "Hauk Viktor",
+          "form": 0.2667
+        }
+      ]
+    },
+    "2026-08-28_78_7": {
+      "raceId": "2026-08-28_78_7",
+      "cutoff": "2026-08-28",
+      "peers": [
+        {
+          "name": "Kagge Ty",
+          "form": 0.76
+        },
+        {
+          "name": "Full Fræs E.E.",
+          "form": 0.2
+        },
+        {
+          "name": "Troll Rapp",
+          "form": 0.2
+        },
+        {
+          "name": "Skinnes Storm",
+          "form": 0.1
+        },
+        {
+          "name": "Järvsö Robert",
+          "form": 0.52
+        },
+        {
+          "name": "Norheim Tor",
+          "form": 0.2667
+        },
+        {
+          "name": "Brenne Brago",
+          "form": 0.8
+        },
+        {
+          "name": "Ry Prinsen",
+          "form": 0.7
+        },
+        {
+          "name": "Tangen Nils",
+          "form": 0.7
+        }
+      ]
+    },
+    "2026-09-12_17_9": {
+      "raceId": "2026-09-12_17_9",
+      "cutoff": "2026-09-12",
+      "peers": [
+        {
+          "name": "Majblomster",
+          "form": 0.64
+        },
+        {
+          "name": "Prinsesse Ness Tjo",
+          "form": 0.45
+        },
+        {
+          "name": "Tekno Tana",
+          "form": 0.36
+        },
+        {
+          "name": "Hulte Alva",
+          "form": 0.5
+        },
+        {
+          "name": "Guli Stina",
+          "form": 0.24
+        },
+        {
+          "name": "Hög Decibel",
+          "form": 0.4
+        },
+        {
+          "name": "Hulte Annika",
+          "form": 0.36
+        },
+        {
+          "name": "Jonases Ninja",
+          "form": 0.56
+        },
+        {
+          "name": "Eldida",
+          "form": 0.1
+        },
+        {
+          "name": "Rötungen",
+          "form": 0.0
+        },
+        {
+          "name": "Saga Kiro",
+          "form": null
+        },
+        {
+          "name": "Ethel",
+          "form": 0.3333
+        }
+      ]
+    },
+    "2026-09-01_78_8": {
+      "raceId": "2026-09-01_78_8",
+      "cutoff": "2026-09-01",
+      "peers": [
+        {
+          "name": "Alf Martin",
+          "form": 0.2
+        },
+        {
+          "name": "Sitje Victor",
+          "form": 0.4667
+        },
+        {
+          "name": "Stolt Elmar",
+          "form": 0.4
+        },
+        {
+          "name": "Stjernedag",
+          "form": 0.48
+        },
+        {
+          "name": "Bragevinn",
+          "form": 0.35
+        },
+        {
+          "name": "Heimly Best",
+          "form": 0.1
+        },
+        {
+          "name": "Aske Balder",
+          "form": 0.64
+        },
+        {
+          "name": "Voje Hero",
+          "form": 0.1
+        },
+        {
+          "name": "Finseth Faksen",
+          "form": 0.08
+        },
+        {
+          "name": "Bjørnemyr Tore",
+          "form": 0.5
+        },
+        {
+          "name": "Tripsson Ø.K.",
+          "form": 0.45
+        },
+        {
+          "name": "Grislefaksen G.L.",
+          "form": 0.25
+        }
+      ]
+    },
+    "2026-09-24_85_6": {
+      "raceId": "2026-09-24_85_6",
+      "cutoff": "2026-09-24",
+      "peers": [
+        {
+          "name": "Bob Wiking",
+          "form": 0.4
+        },
+        {
+          "name": "Stella P.E.T.",
+          "form": 0.0
+        },
+        {
+          "name": "Alameda",
+          "form": 0.0
+        },
+        {
+          "name": "Happy Carpenter",
+          "form": 0.0
+        },
+        {
+          "name": "Keep The Faith",
+          "form": 0.7
+        },
+        {
+          "name": "Gaagaalicious",
+          "form": 0.0
+        },
+        {
+          "name": "Lilli Kentucky S.F.",
+          "form": 0.3333
+        },
+        {
+          "name": "Global Emotion",
+          "form": 0.0
+        },
+        {
+          "name": "Lioncoeur",
+          "form": 0.16
+        }
+      ]
+    },
+    "2026-07-29_82_1": {
+      "raceId": "2026-07-29_82_1",
+      "cutoff": "2026-07-29",
+      "peers": [
+        {
+          "name": "Viviani",
+          "form": 0.48
+        },
+        {
+          "name": "Hansi Thorup",
+          "form": 0.4
+        },
+        {
+          "name": "Mila Barosso",
+          "form": 0.2667
+        },
+        {
+          "name": "Finest Russian",
+          "form": null
+        },
+        {
+          "name": "Heidi Halbak",
+          "form": 0.0
+        },
+        {
+          "name": "Gatling's Gunner",
+          "form": 0.0
+        },
+        {
+          "name": "Ma Cherie",
+          "form": null
+        },
+        {
+          "name": "Merles Classic",
+          "form": 0.1
+        },
+        {
+          "name": "Pauhunri Boko",
+          "form": 0.85
+        },
+        {
+          "name": "Pictured Diamond",
+          "form": 0.16
+        },
+        {
+          "name": "Tortilla Tile",
+          "form": 0.64
+        },
+        {
+          "name": "Always Believed",
+          "form": null
+        }
+      ]
+    },
+    "2026-09-23_55_6": {
+      "raceId": "2026-09-23_55_6",
+      "cutoff": "2026-09-23",
+      "peers": [
+        {
+          "name": "Malthe S H",
+          "form": 0.52
+        },
+        {
+          "name": "Magic John",
+          "form": 0.5
+        },
+        {
+          "name": "Meslois",
+          "form": 0.4
+        },
+        {
+          "name": "MaigaardLovesCosta",
+          "form": 0.3333
+        },
+        {
+          "name": "Magic Park",
+          "form": 0.4667
+        },
+        {
+          "name": "Match Point",
+          "form": null
+        },
+        {
+          "name": "Magnus Tinghøj",
+          "form": 0.6
+        },
+        {
+          "name": "Moor Jeting",
+          "form": 0.55
+        }
+      ]
+    },
+    "2026-10-09_96_5": {
+      "raceId": "2026-10-09_96_5",
+      "cutoff": "2026-10-09",
+      "peers": [
+        {
+          "name": "Daisy Love",
+          "form": 0.16
+        },
+        {
+          "name": "Evangeline",
+          "form": 0.3333
+        },
+        {
+          "name": "Ares H.",
+          "form": 0.0
+        },
+        {
+          "name": "Diabolus W.H.",
+          "form": 0.0
+        },
+        {
+          "name": "Liam",
+          "form": 0.35
+        },
+        {
+          "name": "Gentleman",
+          "form": null
+        },
+        {
+          "name": "Juliette F.T.",
+          "form": null
+        },
+        {
+          "name": "Crown Protector",
+          "form": 0.2667
+        },
+        {
+          "name": "Drivetosurvive",
+          "form": 0.3
+        },
+        {
+          "name": "Börje Afrika",
+          "form": 0.0
+        }
+      ]
+    },
+    "2026-10-04_14_5": {
+      "raceId": "2026-10-04_14_5",
+      "cutoff": "2026-10-04",
+      "peers": [
+        {
+          "name": "Sam Clean C.G.",
+          "form": 0.3333
+        },
+        {
+          "name": "Carpaccio",
+          "form": 0.44
+        },
+        {
+          "name": "Lapin Kulta Sox",
+          "form": 0.5
+        },
+        {
+          "name": "Roy Holger",
+          "form": 0.6
+        },
+        {
+          "name": "Kristian Croc",
+          "form": 0.88
+        },
+        {
+          "name": "Moss Wood",
+          "form": 0.1
+        },
+        {
+          "name": "Cody D.K.",
+          "form": null
+        },
+        {
+          "name": "Zazu",
+          "form": 0.2
+        }
+      ]
+    }
+  },
+  "references": [
+    {
+      "leg": 1,
+      "number": 1,
+      "name": "Jaguar Godiva",
+      "raceId": "2026-10-10_5_11",
+      "cutoff": "2026-10-10",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.4855,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 2,
+      "name": "Hickovelocissimo",
+      "raceId": "2026-10-18_31_10",
+      "cutoff": "2026-10-18",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.3052,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 3,
+      "name": "Great Old Dance",
+      "raceId": "2026-10-17_16_11",
+      "cutoff": "2026-10-17",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.409,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 8,
+      "name": "Legligin",
+      "raceId": "2026-10-17_16_11",
+      "cutoff": "2026-10-17",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.421,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 4,
+      "name": "J.C.",
+      "raceId": "2026-10-19_22_4",
+      "cutoff": "2026-10-19",
+      "match": true,
+      "rivals": 7,
+      "rated": 6,
+      "mean": 0.4083,
+      "coverage": 0.857
+    },
+    {
+      "leg": 1,
+      "number": 5,
+      "name": "Leverage",
+      "raceId": "2026-04-02_16_12",
+      "cutoff": "2026-04-02",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.3813,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 6,
+      "name": "Jackson Trot",
+      "raceId": "2026-10-20_78_7",
+      "cutoff": "2026-10-20",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.3796,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 9,
+      "name": "Tayno B.B.",
+      "raceId": "2026-10-20_78_7",
+      "cutoff": "2026-10-20",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.3778,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 7,
+      "name": "Hercules Godiva",
+      "raceId": "2026-10-02_12_5",
+      "cutoff": "2026-10-02",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.2247,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 10,
+      "name": "Fly Express",
+      "raceId": "2026-10-19_22_9",
+      "cutoff": "2026-10-19",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.432,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 11,
+      "name": "Ulaya",
+      "raceId": "2026-09-30_7_9",
+      "cutoff": "2026-09-30",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.4,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 12,
+      "name": "Zigzag Zagazoo",
+      "raceId": "2026-10-07_5_9",
+      "cutoff": "2026-10-07",
+      "match": true,
+      "rivals": 10,
+      "rated": 9,
+      "mean": 0.34,
+      "coverage": 0.9
+    },
+    {
+      "leg": 2,
+      "number": 1,
+      "name": "Baias",
+      "raceId": "2026-09-19_15_8",
+      "cutoff": "2026-09-19",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.5007,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 4,
+      "name": "Voje Lotta",
+      "raceId": "2026-09-19_15_8",
+      "cutoff": "2026-09-19",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.443,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 2,
+      "name": "Gigant Tider",
+      "raceId": "2026-09-19_15_8",
+      "cutoff": "2026-09-19",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.4652,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 3,
+      "name": "Tordenskjold",
+      "raceId": "2026-09-19_15_8",
+      "cutoff": "2026-09-19",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.4607,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 6,
+      "name": "Grisle Tore G.L.",
+      "raceId": "2026-09-19_15_8",
+      "cutoff": "2026-09-19",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.4652,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 3,
+      "name": "Tordenskjold",
+      "raceId": "2026-10-20_78_2",
+      "cutoff": "2026-10-20",
+      "match": true,
+      "rivals": 8,
+      "rated": 7,
+      "mean": 0.2905,
+      "coverage": 0.875
+    },
+    {
+      "leg": 2,
+      "number": 6,
+      "name": "Grisle Tore G.L.",
+      "raceId": "2026-10-20_78_2",
+      "cutoff": "2026-10-20",
+      "match": true,
+      "rivals": 8,
+      "rated": 7,
+      "mean": 0.2705,
+      "coverage": 0.875
+    },
+    {
+      "leg": 2,
+      "number": 7,
+      "name": "Holter Odin",
+      "raceId": "2026-10-20_78_2",
+      "cutoff": "2026-10-20",
+      "match": true,
+      "rivals": 8,
+      "rated": 7,
+      "mean": 0.3419,
+      "coverage": 0.875
+    },
+    {
+      "leg": 2,
+      "number": 10,
+      "name": "Tripsson Ø.K.",
+      "raceId": "2026-10-20_78_2",
+      "cutoff": "2026-10-20",
+      "match": true,
+      "rivals": 8,
+      "rated": 7,
+      "mean": 0.3205,
+      "coverage": 0.875
+    },
+    {
+      "leg": 2,
+      "number": 4,
+      "name": "Voje Lotta",
+      "raceId": "2026-10-06_78_5",
+      "cutoff": "2026-10-06",
+      "match": true,
+      "rivals": 5,
+      "rated": 5,
+      "mean": 0.2747,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 3,
+      "name": "Tordenskjold",
+      "raceId": "2026-10-06_78_5",
+      "cutoff": "2026-10-06",
+      "match": true,
+      "rivals": 5,
+      "rated": 5,
+      "mean": 0.2827,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 6,
+      "name": "Grisle Tore G.L.",
+      "raceId": "2026-10-06_78_5",
+      "cutoff": "2026-10-06",
+      "match": true,
+      "rivals": 5,
+      "rated": 5,
+      "mean": 0.2907,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 7,
+      "name": "Holter Odin",
+      "raceId": "2026-10-06_78_5",
+      "cutoff": "2026-10-06",
+      "match": true,
+      "rivals": 5,
+      "rated": 5,
+      "mean": 0.384,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 11,
+      "name": "Alm Kevin",
+      "raceId": "2026-10-06_78_5",
+      "cutoff": "2026-10-06",
+      "match": true,
+      "rivals": 5,
+      "rated": 5,
+      "mean": 0.4107,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 5,
+      "name": "Bare Mattis",
+      "raceId": "2026-09-19_81_6",
+      "cutoff": "2026-09-19",
+      "match": true,
+      "rivals": 8,
+      "rated": 8,
+      "mean": 0.2467,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 8,
+      "name": "Tangen Nils",
+      "raceId": "2026-09-13_78_9",
+      "cutoff": "2026-09-13",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.453,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 9,
+      "name": "Prinsesse Ness Tjo",
+      "raceId": "2026-09-26_96_4",
+      "cutoff": "2026-09-26",
+      "match": true,
+      "rivals": 12,
+      "rated": 12,
+      "mean": 0.2139,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 11,
+      "name": "Alm Kevin",
+      "raceId": "2026-09-26_96_4",
+      "cutoff": "2026-09-26",
+      "match": true,
+      "rivals": 12,
+      "rated": 12,
+      "mean": 0.2639,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 11,
+      "name": "Alm Kevin",
+      "raceId": "2026-10-18_83_11",
+      "cutoff": "2026-10-18",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.3239,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 1,
+      "name": "Lilli Kentucky S.F.",
+      "raceId": "2026-10-08_99_6",
+      "cutoff": "2026-10-08",
+      "match": true,
+      "rivals": 8,
+      "rated": 7,
+      "mean": 0.3343,
+      "coverage": 0.875
+    },
+    {
+      "leg": 3,
+      "number": 2,
+      "name": "Pauhunri Boko",
+      "raceId": "2026-08-26_6_6",
+      "cutoff": "2026-08-26",
+      "match": true,
+      "rivals": 8,
+      "rated": 8,
+      "mean": 0.4192,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 3,
+      "name": "Moor Jeting",
+      "raceId": "2026-10-11_55_3",
+      "cutoff": "2026-10-11",
+      "match": true,
+      "rivals": 9,
+      "rated": 8,
+      "mean": 0.385,
+      "coverage": 0.889
+    },
+    {
+      "leg": 3,
+      "number": 5,
+      "name": "Lapin Kulta Sox",
+      "raceId": "2026-10-20_14_9",
+      "cutoff": "2026-10-20",
+      "match": true,
+      "rivals": 12,
+      "rated": 12,
+      "mean": 0.2458,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 6,
+      "name": "Sauron Zon",
+      "raceId": "2026-10-21_5_4",
+      "cutoff": "2026-10-21",
+      "match": true,
+      "rivals": 7,
+      "rated": 7,
+      "mean": 0.3786,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 7,
+      "name": "S.B.'sPeakyBlinder",
+      "raceId": "2026-10-18_31_6",
+      "cutoff": "2026-10-18",
+      "match": true,
+      "rivals": 14,
+      "rated": 14,
+      "mean": 0.2107,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 8,
+      "name": "Surpriced Tooma",
+      "raceId": "2026-10-09_5_5",
+      "cutoff": "2026-10-09",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.4333,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 9,
+      "name": "Man of Means",
+      "raceId": "2026-10-21_6_2",
+      "cutoff": "2026-10-21",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.3306,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 10,
+      "name": "Chasse Artist",
+      "raceId": "2026-10-17_80_9",
+      "cutoff": "2026-10-17",
+      "match": true,
+      "rivals": 8,
+      "rated": 8,
+      "mean": 0.3312,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 11,
+      "name": "Urban Tile",
+      "raceId": "2026-10-06_78_7",
+      "cutoff": "2026-10-06",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.344,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 12,
+      "name": "Gobsmacked",
+      "raceId": "2026-09-28_15_2",
+      "cutoff": "2026-09-28",
+      "match": true,
+      "rivals": 11,
+      "rated": 10,
+      "mean": 0.198,
+      "coverage": 0.909
+    },
+    {
+      "leg": 4,
+      "number": 1,
+      "name": "Baron Tilly",
+      "raceId": "2026-08-15_6_10",
+      "cutoff": "2026-08-15",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.4096,
+      "coverage": 1.0
+    },
+    {
+      "leg": 4,
+      "number": 2,
+      "name": "Daim Brodda",
+      "raceId": "2026-10-11_70_6",
+      "cutoff": "2026-10-11",
+      "match": true,
+      "rivals": 11,
+      "rated": 0,
+      "mean": null,
+      "coverage": 0.0
+    },
+    {
+      "leg": 4,
+      "number": 6,
+      "name": "Powwow",
+      "raceId": "2026-10-11_70_6",
+      "cutoff": "2026-10-11",
+      "match": true,
+      "rivals": 11,
+      "rated": 0,
+      "mean": null,
+      "coverage": 0.0
+    },
+    {
+      "leg": 4,
+      "number": 3,
+      "name": "Before Takeoff",
+      "raceId": "2026-10-10_5_7",
+      "cutoff": "2026-10-10",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.3336,
+      "coverage": 1.0
+    },
+    {
+      "leg": 4,
+      "number": 5,
+      "name": "Charron",
+      "raceId": "2026-10-10_5_7",
+      "cutoff": "2026-10-10",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.3227,
+      "coverage": 1.0
+    },
+    {
+      "leg": 4,
+      "number": 4,
+      "name": "Xanthis Harvey",
+      "raceId": "2026-09-05_7_7",
+      "cutoff": "2026-09-05",
+      "match": true,
+      "rivals": 8,
+      "rated": 8,
+      "mean": 0.3717,
+      "coverage": 1.0
+    },
+    {
+      "leg": 4,
+      "number": 7,
+      "name": "Crown",
+      "raceId": "2026-10-05_15_5",
+      "cutoff": "2026-10-05",
+      "match": true,
+      "rivals": 5,
+      "rated": 4,
+      "mean": 0.36,
+      "coverage": 0.8
+    },
+    {
+      "leg": 4,
+      "number": 8,
+      "name": "Clarissa",
+      "raceId": "2026-10-10_5_8",
+      "cutoff": "2026-10-10",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.4503,
+      "coverage": 1.0
+    },
+    {
+      "leg": 4,
+      "number": 9,
+      "name": "Lando Mearas",
+      "raceId": "2026-10-02_12_10",
+      "cutoff": "2026-10-02",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.4372,
+      "coverage": 1.0
+    },
+    {
+      "leg": 4,
+      "number": 3,
+      "name": "Before Takeoff",
+      "raceId": "2026-10-02_12_10",
+      "cutoff": "2026-10-02",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.4372,
+      "coverage": 1.0
+    },
+    {
+      "leg": 4,
+      "number": 10,
+      "name": "Castor the Star",
+      "raceId": "2026-08-29_9_12",
+      "cutoff": "2026-08-29",
+      "match": true,
+      "rivals": 8,
+      "rated": 8,
+      "mean": 0.35,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 1,
+      "name": "Yellowstone Doc",
+      "raceId": "2026-10-05_15_2",
+      "cutoff": "2026-10-05",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.2941,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 3,
+      "name": "Paleo Boko",
+      "raceId": "2026-10-24_7_7",
+      "cutoff": "2026-10-24",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.5042,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 4,
+      "name": "Orazi Cesare",
+      "raceId": "2026-10-21_5_3",
+      "cutoff": "2026-10-21",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.4585,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 5,
+      "name": "Fabulous Gent",
+      "raceId": "2026-10-10_5_2",
+      "cutoff": "2026-10-10",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.5691,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 6,
+      "name": "Neil Jung",
+      "raceId": "2026-08-05_22_7",
+      "cutoff": "2026-08-05",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.4082,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 7,
+      "name": "Hans Palema",
+      "raceId": "2026-10-15_5_4",
+      "cutoff": "2026-10-15",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.324,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 8,
+      "name": "Chantecler",
+      "raceId": "2026-09-22_78_7",
+      "cutoff": "2026-09-22",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.3511,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 9,
+      "name": "Mattex",
+      "raceId": "2026-10-10_77_9",
+      "cutoff": "2026-10-10",
+      "match": true,
+      "rivals": 8,
+      "rated": 8,
+      "mean": 0.4208,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 10,
+      "name": "Livorno",
+      "raceId": "2026-10-02_19_9",
+      "cutoff": "2026-10-02",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.3776,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 11,
+      "name": "Eldfell",
+      "raceId": "2026-10-03_11_9",
+      "cutoff": "2026-10-03",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.527,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 13,
+      "name": "Ready For Cash",
+      "raceId": "2026-06-13_78_8",
+      "cutoff": "2026-06-13",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.544,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 15,
+      "name": "Lippi",
+      "raceId": "2026-10-06_78_6",
+      "cutoff": "2026-10-06",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.2611,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 9,
+      "name": "Tayno B.B.",
+      "raceId": "2026-10-06_78_6",
+      "cutoff": "2026-10-06",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.2796,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 1,
+      "name": "Mimosa to Martini",
+      "raceId": "2026-09-26_6_5",
+      "cutoff": "2026-09-26",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.5091,
+      "coverage": 1.0
+    },
+    {
+      "leg": 4,
+      "number": 2,
+      "name": "Daim Brodda",
+      "raceId": "2026-09-26_6_5",
+      "cutoff": "2026-09-26",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.54,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 2,
+      "name": "Stella Ammik",
+      "raceId": "2026-10-17_80_10",
+      "cutoff": "2026-10-17",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.2827,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 4,
+      "name": "Catchagaga Volo",
+      "raceId": "2026-10-17_80_10",
+      "cutoff": "2026-10-17",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.2827,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 6,
+      "name": "G.G. Golden Power",
+      "raceId": "2026-10-17_80_10",
+      "cutoff": "2026-10-17",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.3087,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 7,
+      "name": "Rihanna T.G.",
+      "raceId": "2026-10-17_80_10",
+      "cutoff": "2026-10-17",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.2837,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 8,
+      "name": "G.G. Gentil",
+      "raceId": "2026-10-17_80_10",
+      "cutoff": "2026-10-17",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.2747,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 3,
+      "name": "Peggy Boko",
+      "raceId": "2026-10-11_70_4",
+      "cutoff": "2026-10-11",
+      "match": true,
+      "rivals": 11,
+      "rated": 0,
+      "mean": null,
+      "coverage": 0.0
+    },
+    {
+      "leg": 6,
+      "number": 5,
+      "name": "Lipa Wee",
+      "raceId": "2026-10-23_54_4",
+      "cutoff": "2026-10-23",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.3845,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 10,
+      "name": "Leonora by Hans",
+      "raceId": "2026-10-23_54_4",
+      "cutoff": "2026-10-23",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.4264,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 9,
+      "name": "Sherburne S.",
+      "raceId": "2026-10-14_6_7",
+      "cutoff": "2026-10-14",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.5949,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 11,
+      "name": "Day Time Trot",
+      "raceId": "2026-10-14_9_8",
+      "cutoff": "2026-10-14",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.5649,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 10,
+      "name": "Hankypanky Leonie",
+      "raceId": "2026-10-14_9_8",
+      "cutoff": "2026-10-14",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.4994,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 13,
+      "name": "Sparkling Power",
+      "raceId": "2026-10-14_9_8",
+      "cutoff": "2026-10-14",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.563,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 12,
+      "name": "Goldie Home",
+      "raceId": "2026-09-05_7_9",
+      "cutoff": "2026-09-05",
+      "match": true,
+      "rivals": 11,
+      "rated": 10,
+      "mean": 0.5137,
+      "coverage": 0.909
+    },
+    {
+      "leg": 7,
+      "number": 1,
+      "name": "Goodbye Kiss",
+      "raceId": "2026-10-16_18_8",
+      "cutoff": "2026-10-16",
+      "match": true,
+      "rivals": 14,
+      "rated": 12,
+      "mean": 0.2131,
+      "coverage": 0.857
+    },
+    {
+      "leg": 7,
+      "number": 2,
+      "name": "Blank",
+      "raceId": "2026-10-01_32_7",
+      "cutoff": "2026-10-01",
+      "match": true,
+      "rivals": 7,
+      "rated": 7,
+      "mean": 0.3629,
+      "coverage": 1.0
+    },
+    {
+      "leg": 7,
+      "number": 4,
+      "name": "Variegated",
+      "raceId": "2026-10-01_32_7",
+      "cutoff": "2026-10-01",
+      "match": true,
+      "rivals": 7,
+      "rated": 7,
+      "mean": 0.3629,
+      "coverage": 1.0
+    },
+    {
+      "leg": 7,
+      "number": 7,
+      "name": "Giotto Grif",
+      "raceId": "2026-10-01_32_7",
+      "cutoff": "2026-10-01",
+      "match": true,
+      "rivals": 7,
+      "rated": 7,
+      "mean": 0.3271,
+      "coverage": 1.0
+    },
+    {
+      "leg": 7,
+      "number": 5,
+      "name": "Muzan Kibutsuji",
+      "raceId": "2026-10-02_54_3",
+      "cutoff": "2026-10-02",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.3622,
+      "coverage": 1.0
+    },
+    {
+      "leg": 7,
+      "number": 6,
+      "name": "Bully Pepper",
+      "raceId": "2026-10-03_78_3",
+      "cutoff": "2026-10-03",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.2533,
+      "coverage": 1.0
+    },
+    {
+      "leg": 7,
+      "number": 10,
+      "name": "Onyx B.R.",
+      "raceId": "2026-10-03_78_3",
+      "cutoff": "2026-10-03",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.2733,
+      "coverage": 1.0
+    },
+    {
+      "leg": 6,
+      "number": 4,
+      "name": "Catchagaga Volo",
+      "raceId": "2026-10-03_78_3",
+      "cutoff": "2026-10-03",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.2667,
+      "coverage": 1.0
+    },
+    {
+      "leg": 7,
+      "number": 8,
+      "name": "Wise Guy",
+      "raceId": "2026-09-06_7_11",
+      "cutoff": "2026-09-06",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.5524,
+      "coverage": 1.0
+    },
+    {
+      "leg": 7,
+      "number": 9,
+      "name": "Ludvig Cash",
+      "raceId": "2026-10-23_54_6",
+      "cutoff": "2026-10-23",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.577,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 1,
+      "name": "Eye to Eye",
+      "raceId": "2026-10-16_18_9",
+      "cutoff": "2026-10-16",
+      "match": true,
+      "rivals": 11,
+      "rated": 9,
+      "mean": 0.4385,
+      "coverage": 0.818
+    },
+    {
+      "leg": 8,
+      "number": 2,
+      "name": "Sanctuaire",
+      "raceId": "2026-10-20_78_5",
+      "cutoff": "2026-10-20",
+      "match": true,
+      "rivals": 9,
+      "rated": 8,
+      "mean": 0.3633,
+      "coverage": 0.889
+    },
+    {
+      "leg": 8,
+      "number": 3,
+      "name": "Raina Schermer",
+      "raceId": "2026-10-10_5_3",
+      "cutoff": "2026-10-10",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.3957,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 4,
+      "name": "Kollund Møbler",
+      "raceId": "2026-09-18_54_4",
+      "cutoff": "2026-09-18",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.3545,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 5,
+      "name": "Luxury Rain",
+      "raceId": "2026-09-29_8_4",
+      "cutoff": "2026-09-29",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.2733,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 6,
+      "name": "Mellby Maybe",
+      "raceId": "2026-10-01_32_8",
+      "cutoff": "2026-10-01",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.4045,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 7,
+      "name": "Jealous Rain",
+      "raceId": "2026-10-17_80_7",
+      "cutoff": "2026-10-17",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.184,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 8,
+      "name": "Good Guessing",
+      "raceId": "2026-10-18_31_9",
+      "cutoff": "2026-10-18",
+      "match": true,
+      "rivals": 13,
+      "rated": 13,
+      "mean": 0.3736,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 9,
+      "name": "Normaal",
+      "raceId": "2026-10-03_78_8",
+      "cutoff": "2026-10-03",
+      "match": true,
+      "rivals": 11,
+      "rated": 10,
+      "mean": 0.479,
+      "coverage": 0.909
+    },
+    {
+      "leg": 6,
+      "number": 7,
+      "name": "Rihanna T.G.",
+      "raceId": "2026-10-03_78_8",
+      "cutoff": "2026-10-03",
+      "match": true,
+      "rivals": 11,
+      "rated": 10,
+      "mean": 0.508,
+      "coverage": 0.909
+    },
+    {
+      "leg": 8,
+      "number": 2,
+      "name": "Sanctuaire",
+      "raceId": "2026-10-03_78_8",
+      "cutoff": "2026-10-03",
+      "match": true,
+      "rivals": 11,
+      "rated": 10,
+      "mean": 0.463,
+      "coverage": 0.909
+    },
+    {
+      "leg": 8,
+      "number": 11,
+      "name": "Zero Hugs'n Kisses",
+      "raceId": "2026-10-03_78_1",
+      "cutoff": "2026-10-03",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.2406,
+      "coverage": 1.0
+    },
+    {
+      "leg": 4,
+      "number": 2,
+      "name": "Daim Brodda",
+      "raceId": "2026-10-03_78_1",
+      "cutoff": "2026-10-03",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.2872,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 14,
+      "name": "Gaga Lady",
+      "raceId": "2026-09-26_6_1",
+      "cutoff": "2026-09-26",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.4506,
+      "coverage": 1.0
+    },
+    {
+      "leg": 5,
+      "number": 15,
+      "name": "Lippi",
+      "raceId": "2026-09-26_6_1",
+      "cutoff": "2026-09-26",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.4749,
+      "coverage": 1.0
+    },
+    {
+      "leg": 8,
+      "number": 15,
+      "name": "Bella Yankee",
+      "raceId": "2026-10-24_7_6",
+      "cutoff": "2026-10-24",
+      "match": true,
+      "rivals": 14,
+      "rated": 14,
+      "mean": 0.3826,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 1,
+      "name": "Jaguar Godiva",
+      "raceId": "2026-09-12_17_11",
+      "cutoff": "2026-09-12",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.4227,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 2,
+      "name": "Hickovelocissimo",
+      "raceId": "2026-09-30_5_8",
+      "cutoff": "2026-09-30",
+      "match": true,
+      "rivals": 10,
+      "rated": 9,
+      "mean": 0.4067,
+      "coverage": 0.9
+    },
+    {
+      "leg": 5,
+      "number": 5,
+      "name": "Fabulous Gent",
+      "raceId": "2026-09-30_5_8",
+      "cutoff": "2026-09-30",
+      "match": true,
+      "rivals": 10,
+      "rated": 9,
+      "mean": 0.4048,
+      "coverage": 0.9
+    },
+    {
+      "leg": 1,
+      "number": 3,
+      "name": "Great Old Dance",
+      "raceId": "2026-09-19_15_12",
+      "cutoff": "2026-09-19",
+      "match": true,
+      "rivals": 14,
+      "rated": 14,
+      "mean": 0.4398,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 4,
+      "name": "J.C.",
+      "raceId": "2026-09-26_6_10",
+      "cutoff": "2026-09-26",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.5324,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 10,
+      "name": "Fly Express",
+      "raceId": "2026-09-26_6_10",
+      "cutoff": "2026-09-26",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.5633,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 5,
+      "name": "Leverage",
+      "raceId": "2026-03-04_5_9",
+      "cutoff": "2026-03-04",
+      "match": true,
+      "rivals": 10,
+      "rated": 9,
+      "mean": 0.343,
+      "coverage": 0.9
+    },
+    {
+      "leg": 1,
+      "number": 6,
+      "name": "Jackson Trot",
+      "raceId": "2026-09-29_78_8",
+      "cutoff": "2026-09-29",
+      "match": true,
+      "rivals": 7,
+      "rated": 7,
+      "mean": 0.3452,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 9,
+      "name": "Tayno B.B.",
+      "raceId": "2026-09-29_78_8",
+      "cutoff": "2026-09-29",
+      "match": true,
+      "rivals": 7,
+      "rated": 7,
+      "mean": 0.3595,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 7,
+      "name": "Hercules Godiva",
+      "raceId": "2026-08-02_13_5",
+      "cutoff": "2026-08-02",
+      "match": true,
+      "rivals": 5,
+      "rated": 5,
+      "mean": 0.2807,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 8,
+      "name": "Legligin",
+      "raceId": "2026-09-05_7_5",
+      "cutoff": "2026-09-05",
+      "match": true,
+      "rivals": 10,
+      "rated": 9,
+      "mean": 0.4141,
+      "coverage": 0.9
+    },
+    {
+      "leg": 1,
+      "number": 10,
+      "name": "Fly Express",
+      "raceId": "2026-10-07_8_9",
+      "cutoff": "2026-10-07",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.3777,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 11,
+      "name": "Ulaya",
+      "raceId": "2026-08-15_6_8",
+      "cutoff": "2026-08-15",
+      "match": true,
+      "rivals": 10,
+      "rated": 10,
+      "mean": 0.4053,
+      "coverage": 1.0
+    },
+    {
+      "leg": 1,
+      "number": 12,
+      "name": "Zigzag Zagazoo",
+      "raceId": "2026-09-17_6_9",
+      "cutoff": "2026-09-17",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.4063,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 1,
+      "name": "Baias",
+      "raceId": "2026-09-05_77_8",
+      "cutoff": "2026-09-05",
+      "match": true,
+      "rivals": 6,
+      "rated": 6,
+      "mean": 0.3655,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 5,
+      "name": "Bare Mattis",
+      "raceId": "2026-08-22_82_5",
+      "cutoff": "2026-08-22",
+      "match": true,
+      "rivals": 9,
+      "rated": 9,
+      "mean": 0.3763,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 8,
+      "name": "Tangen Nils",
+      "raceId": "2026-08-28_78_7",
+      "cutoff": "2026-08-28",
+      "match": true,
+      "rivals": 8,
+      "rated": 8,
+      "mean": 0.4433,
+      "coverage": 1.0
+    },
+    {
+      "leg": 2,
+      "number": 9,
+      "name": "Prinsesse Ness Tjo",
+      "raceId": "2026-09-12_17_9",
+      "cutoff": "2026-09-12",
+      "match": true,
+      "rivals": 11,
+      "rated": 10,
+      "mean": 0.3493,
+      "coverage": 0.909
+    },
+    {
+      "leg": 2,
+      "number": 10,
+      "name": "Tripsson Ø.K.",
+      "raceId": "2026-09-01_78_8",
+      "cutoff": "2026-09-01",
+      "match": true,
+      "rivals": 11,
+      "rated": 11,
+      "mean": 0.3242,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 1,
+      "name": "Lilli Kentucky S.F.",
+      "raceId": "2026-09-24_85_6",
+      "cutoff": "2026-09-24",
+      "match": true,
+      "rivals": 8,
+      "rated": 8,
+      "mean": 0.1575,
+      "coverage": 1.0
+    },
+    {
+      "leg": 3,
+      "number": 2,
+      "name": "Pauhunri Boko",
+      "raceId": "2026-07-29_82_1",
+      "cutoff": "2026-07-29",
+      "match": true,
+      "rivals": 11,
+      "rated": 8,
+      "mean": 0.2558,
+      "coverage": 0.727
+    },
+    {
+      "leg": 3,
+      "number": 3,
+      "name": "Moor Jeting",
+      "raceId": "2026-09-23_55_6",
+      "cutoff": "2026-09-23",
+      "match": true,
+      "rivals": 7,
+      "rated": 6,
+      "mean": 0.47,
+      "coverage": 0.857
+    },
+    {
+      "leg": 3,
+      "number": 4,
+      "name": "Daisy Love",
+      "raceId": "2026-10-09_96_5",
+      "cutoff": "2026-10-09",
+      "match": true,
+      "rivals": 9,
+      "rated": 7,
+      "mean": 0.1786,
+      "coverage": 0.778
+    },
+    {
+      "leg": 3,
+      "number": 5,
+      "name": "Lapin Kulta Sox",
+      "raceId": "2026-10-04_14_5",
+      "cutoff": "2026-10-04",
+      "match": true,
+      "rivals": 7,
+      "rated": 6,
+      "mean": 0.4256,
+      "coverage": 0.857
+    }
+  ],
+  "horses": [
+    {
+      "leg": 1,
+      "number": 1,
+      "name": "Jaguar Godiva",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4541,
+      "priorRaceIds": [
+        "2026-10-10_5_11",
+        "2026-09-12_17_11"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 2,
+      "name": "Hickovelocissimo",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3559,
+      "priorRaceIds": [
+        "2026-10-18_31_10",
+        "2026-09-30_5_8"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 3,
+      "name": "Great Old Dance",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4244,
+      "priorRaceIds": [
+        "2026-10-17_16_11",
+        "2026-09-19_15_12"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 4,
+      "name": "J.C.",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4703,
+      "priorRaceIds": [
+        "2026-10-19_22_4",
+        "2026-09-26_6_10"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 5,
+      "name": "Leverage",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3621,
+      "priorRaceIds": [
+        "2026-04-02_16_12",
+        "2026-03-04_5_9"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 6,
+      "name": "Jackson Trot",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3624,
+      "priorRaceIds": [
+        "2026-10-20_78_7",
+        "2026-09-29_78_8"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 7,
+      "name": "Hercules Godiva",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.2527,
+      "priorRaceIds": [
+        "2026-10-02_12_5",
+        "2026-08-02_13_5"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 8,
+      "name": "Legligin",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4175,
+      "priorRaceIds": [
+        "2026-10-17_16_11",
+        "2026-09-05_7_5"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 9,
+      "name": "Tayno B.B.",
+      "coveredPreviousRaces": 3,
+      "validPreviousRaces": 3,
+      "opponentFormMean": 0.339,
+      "priorRaceIds": [
+        "2026-10-20_78_7",
+        "2026-10-06_78_6",
+        "2026-09-29_78_8"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 10,
+      "name": "Fly Express",
+      "coveredPreviousRaces": 3,
+      "validPreviousRaces": 3,
+      "opponentFormMean": 0.4577,
+      "priorRaceIds": [
+        "2026-10-19_22_9",
+        "2026-09-26_6_10",
+        "2026-10-07_8_9"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 11,
+      "name": "Ulaya",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4027,
+      "priorRaceIds": [
+        "2026-09-30_7_9",
+        "2026-08-15_6_8"
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 12,
+      "name": "Zigzag Zagazoo",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3731,
+      "priorRaceIds": [
+        "2026-10-07_5_9",
+        "2026-09-17_6_9"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 1,
+      "name": "Baias",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4331,
+      "priorRaceIds": [
+        "2026-09-19_15_8",
+        "2026-09-05_77_8"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 2,
+      "name": "Gigant Tider",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4652,
+      "priorRaceIds": [
+        "2026-09-19_15_8"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 3,
+      "name": "Tordenskjold",
+      "coveredPreviousRaces": 3,
+      "validPreviousRaces": 3,
+      "opponentFormMean": 0.3446,
+      "priorRaceIds": [
+        "2026-09-19_15_8",
+        "2026-10-20_78_2",
+        "2026-10-06_78_5"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 4,
+      "name": "Voje Lotta",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3589,
+      "priorRaceIds": [
+        "2026-09-19_15_8",
+        "2026-10-06_78_5"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 5,
+      "name": "Bare Mattis",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3115,
+      "priorRaceIds": [
+        "2026-09-19_81_6",
+        "2026-08-22_82_5"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 6,
+      "name": "Grisle Tore G.L.",
+      "coveredPreviousRaces": 3,
+      "validPreviousRaces": 3,
+      "opponentFormMean": 0.3421,
+      "priorRaceIds": [
+        "2026-09-19_15_8",
+        "2026-10-20_78_2",
+        "2026-10-06_78_5"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 7,
+      "name": "Holter Odin",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3629,
+      "priorRaceIds": [
+        "2026-10-20_78_2",
+        "2026-10-06_78_5"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 8,
+      "name": "Tangen Nils",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4482,
+      "priorRaceIds": [
+        "2026-09-13_78_9",
+        "2026-08-28_78_7"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 9,
+      "name": "Prinsesse Ness Tjo",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.2816,
+      "priorRaceIds": [
+        "2026-09-26_96_4",
+        "2026-09-12_17_9"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 10,
+      "name": "Tripsson Ø.K.",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3224,
+      "priorRaceIds": [
+        "2026-10-20_78_2",
+        "2026-09-01_78_8"
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 11,
+      "name": "Alm Kevin",
+      "coveredPreviousRaces": 3,
+      "validPreviousRaces": 3,
+      "opponentFormMean": 0.3328,
+      "priorRaceIds": [
+        "2026-10-06_78_5",
+        "2026-09-26_96_4",
+        "2026-10-18_83_11"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 1,
+      "name": "Lilli Kentucky S.F.",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.2459,
+      "priorRaceIds": [
+        "2026-10-08_99_6",
+        "2026-09-24_85_6"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 2,
+      "name": "Pauhunri Boko",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3375,
+      "priorRaceIds": [
+        "2026-08-26_6_6",
+        "2026-07-29_82_1"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 3,
+      "name": "Moor Jeting",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4275,
+      "priorRaceIds": [
+        "2026-10-11_55_3",
+        "2026-09-23_55_6"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 4,
+      "name": "Daisy Love",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.1786,
+      "priorRaceIds": [
+        "2026-10-09_96_5"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 5,
+      "name": "Lapin Kulta Sox",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3357,
+      "priorRaceIds": [
+        "2026-10-20_14_9",
+        "2026-10-04_14_5"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 6,
+      "name": "Sauron Zon",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3786,
+      "priorRaceIds": [
+        "2026-10-21_5_4"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 7,
+      "name": "S.B.'sPeakyBlinder",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.2107,
+      "priorRaceIds": [
+        "2026-10-18_31_6"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 8,
+      "name": "Surpriced Tooma",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4333,
+      "priorRaceIds": [
+        "2026-10-09_5_5"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 9,
+      "name": "Man of Means",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3306,
+      "priorRaceIds": [
+        "2026-10-21_6_2"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 10,
+      "name": "Chasse Artist",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3312,
+      "priorRaceIds": [
+        "2026-10-17_80_9"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 11,
+      "name": "Urban Tile",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.344,
+      "priorRaceIds": [
+        "2026-10-06_78_7"
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 12,
+      "name": "Gobsmacked",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.198,
+      "priorRaceIds": [
+        "2026-09-28_15_2"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 1,
+      "name": "Baron Tilly",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4096,
+      "priorRaceIds": [
+        "2026-08-15_6_10"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 2,
+      "name": "Daim Brodda",
+      "coveredPreviousRaces": 3,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4136,
+      "priorRaceIds": [
+        "2026-09-26_6_5",
+        "2026-10-03_78_1"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 3,
+      "name": "Before Takeoff",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3854,
+      "priorRaceIds": [
+        "2026-10-10_5_7",
+        "2026-10-02_12_10"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 4,
+      "name": "Xanthis Harvey",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3717,
+      "priorRaceIds": [
+        "2026-09-05_7_7"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 5,
+      "name": "Charron",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3227,
+      "priorRaceIds": [
+        "2026-10-10_5_7"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 6,
+      "name": "Powwow",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 0,
+      "opponentFormMean": null,
+      "priorRaceIds": []
+    },
+    {
+      "leg": 4,
+      "number": 7,
+      "name": "Crown",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.36,
+      "priorRaceIds": [
+        "2026-10-05_15_5"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 8,
+      "name": "Clarissa",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4503,
+      "priorRaceIds": [
+        "2026-10-10_5_8"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 9,
+      "name": "Lando Mearas",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4372,
+      "priorRaceIds": [
+        "2026-10-02_12_10"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 10,
+      "name": "Castor the Star",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.35,
+      "priorRaceIds": [
+        "2026-08-29_9_12"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 1,
+      "name": "Yellowstone Doc",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.2941,
+      "priorRaceIds": [
+        "2026-10-05_15_2"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 2,
+      "name": "Peacekeeper",
+      "coveredPreviousRaces": 0,
+      "validPreviousRaces": 0,
+      "opponentFormMean": null,
+      "priorRaceIds": []
+    },
+    {
+      "leg": 5,
+      "number": 3,
+      "name": "Paleo Boko",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.5042,
+      "priorRaceIds": [
+        "2026-10-24_7_7"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 4,
+      "name": "Orazi Cesare",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4585,
+      "priorRaceIds": [
+        "2026-10-21_5_3"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 5,
+      "name": "Fabulous Gent",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4869,
+      "priorRaceIds": [
+        "2026-10-10_5_2",
+        "2026-09-30_5_8"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 6,
+      "name": "Neil Jung",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4082,
+      "priorRaceIds": [
+        "2026-08-05_22_7"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 7,
+      "name": "Hans Palema",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.324,
+      "priorRaceIds": [
+        "2026-10-15_5_4"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 8,
+      "name": "Chantecler",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3511,
+      "priorRaceIds": [
+        "2026-09-22_78_7"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 9,
+      "name": "Mattex",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4208,
+      "priorRaceIds": [
+        "2026-10-10_77_9"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 10,
+      "name": "Livorno",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3776,
+      "priorRaceIds": [
+        "2026-10-02_19_9"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 11,
+      "name": "Eldfell",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.527,
+      "priorRaceIds": [
+        "2026-10-03_11_9"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 12,
+      "name": "Firedup",
+      "coveredPreviousRaces": 0,
+      "validPreviousRaces": 0,
+      "opponentFormMean": null,
+      "priorRaceIds": []
+    },
+    {
+      "leg": 5,
+      "number": 13,
+      "name": "Ready For Cash",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.544,
+      "priorRaceIds": [
+        "2026-06-13_78_8"
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 14,
+      "name": "Burn",
+      "coveredPreviousRaces": 0,
+      "validPreviousRaces": 0,
+      "opponentFormMean": null,
+      "priorRaceIds": []
+    },
+    {
+      "leg": 5,
+      "number": 15,
+      "name": "Lippi",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.368,
+      "priorRaceIds": [
+        "2026-10-06_78_6",
+        "2026-09-26_6_1"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 1,
+      "name": "Mimosa to Martini",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.5091,
+      "priorRaceIds": [
+        "2026-09-26_6_5"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 2,
+      "name": "Stella Ammik",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.2827,
+      "priorRaceIds": [
+        "2026-10-17_80_10"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 3,
+      "name": "Peggy Boko",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 0,
+      "opponentFormMean": null,
+      "priorRaceIds": []
+    },
+    {
+      "leg": 6,
+      "number": 4,
+      "name": "Catchagaga Volo",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.2747,
+      "priorRaceIds": [
+        "2026-10-17_80_10",
+        "2026-10-03_78_3"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 5,
+      "name": "Lipa Wee",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3845,
+      "priorRaceIds": [
+        "2026-10-23_54_4"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 6,
+      "name": "G.G. Golden Power",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3087,
+      "priorRaceIds": [
+        "2026-10-17_80_10"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 7,
+      "name": "Rihanna T.G.",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.3959,
+      "priorRaceIds": [
+        "2026-10-17_80_10",
+        "2026-10-03_78_8"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 8,
+      "name": "G.G. Gentil",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.2747,
+      "priorRaceIds": [
+        "2026-10-17_80_10"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 9,
+      "name": "Sherburne S.",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.5949,
+      "priorRaceIds": [
+        "2026-10-14_6_7"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 10,
+      "name": "Leonora by Hans",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4264,
+      "priorRaceIds": [
+        "2026-10-23_54_4"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 11,
+      "name": "Day Time Trot",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.5649,
+      "priorRaceIds": [
+        "2026-10-14_9_8"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 12,
+      "name": "Goldie Home",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.5137,
+      "priorRaceIds": [
+        "2026-09-05_7_9"
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 1,
+      "name": "Goodbye Kiss",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.2131,
+      "priorRaceIds": [
+        "2026-10-16_18_8"
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 2,
+      "name": "Blank",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3629,
+      "priorRaceIds": [
+        "2026-10-01_32_7"
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 3,
+      "name": "Blizzard Diamant",
+      "coveredPreviousRaces": 0,
+      "validPreviousRaces": 0,
+      "opponentFormMean": null,
+      "priorRaceIds": []
+    },
+    {
+      "leg": 7,
+      "number": 4,
+      "name": "Variegated",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3629,
+      "priorRaceIds": [
+        "2026-10-01_32_7"
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 5,
+      "name": "Muzan Kibutsuji",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3622,
+      "priorRaceIds": [
+        "2026-10-02_54_3"
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 6,
+      "name": "Bully Pepper",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.2533,
+      "priorRaceIds": [
+        "2026-10-03_78_3"
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 7,
+      "name": "Giotto Grif",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3271,
+      "priorRaceIds": [
+        "2026-10-01_32_7"
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 8,
+      "name": "Wise Guy",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.5524,
+      "priorRaceIds": [
+        "2026-09-06_7_11"
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 9,
+      "name": "Ludvig Cash",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.577,
+      "priorRaceIds": [
+        "2026-10-23_54_6"
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 10,
+      "name": "Onyx B.R.",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.2733,
+      "priorRaceIds": [
+        "2026-10-03_78_3"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 1,
+      "name": "Eye to Eye",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4385,
+      "priorRaceIds": [
+        "2026-10-16_18_9"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 2,
+      "name": "Sanctuaire",
+      "coveredPreviousRaces": 2,
+      "validPreviousRaces": 2,
+      "opponentFormMean": 0.4132,
+      "priorRaceIds": [
+        "2026-10-20_78_5",
+        "2026-10-03_78_8"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 3,
+      "name": "Raina Schermer",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3957,
+      "priorRaceIds": [
+        "2026-10-10_5_3"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 4,
+      "name": "Kollund Møbler",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3545,
+      "priorRaceIds": [
+        "2026-09-18_54_4"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 5,
+      "name": "Luxury Rain",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.2733,
+      "priorRaceIds": [
+        "2026-09-29_8_4"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 6,
+      "name": "Mellby Maybe",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4045,
+      "priorRaceIds": [
+        "2026-10-01_32_8"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 7,
+      "name": "Jealous Rain",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.184,
+      "priorRaceIds": [
+        "2026-10-17_80_7"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 8,
+      "name": "Good Guessing",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3736,
+      "priorRaceIds": [
+        "2026-10-18_31_9"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 9,
+      "name": "Normaal",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.479,
+      "priorRaceIds": [
+        "2026-10-03_78_8"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 10,
+      "name": "Hankypanky Leonie",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4994,
+      "priorRaceIds": [
+        "2026-10-14_9_8"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 11,
+      "name": "Zero Hugs'n Kisses",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.2406,
+      "priorRaceIds": [
+        "2026-10-03_78_1"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 12,
+      "name": "Nore'n",
+      "coveredPreviousRaces": 0,
+      "validPreviousRaces": 0,
+      "opponentFormMean": null,
+      "priorRaceIds": []
+    },
+    {
+      "leg": 8,
+      "number": 13,
+      "name": "Sparkling Power",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.563,
+      "priorRaceIds": [
+        "2026-10-14_9_8"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 14,
+      "name": "Gaga Lady",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.4506,
+      "priorRaceIds": [
+        "2026-09-26_6_1"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 15,
+      "name": "Bella Yankee",
+      "coveredPreviousRaces": 1,
+      "validPreviousRaces": 1,
+      "opponentFormMean": 0.3826,
+      "priorRaceIds": [
+        "2026-10-24_7_6"
+      ]
+    }
+  ]
+}
