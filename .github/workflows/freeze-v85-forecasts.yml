@@ -1,0 +1,75 @@
+name: LA V85 - freeze independent prestart AI forecasts
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/freeze-v85-forecasts.yml"
+      - "scripts/freeze_v85_forecasts.py"
+      - "tests/test_freeze_v85_forecasts.py"
+  schedule:
+    # Sweden CET UTC+1 at Bjerke 2026-10-31. Github schedules are best-effort.
+    - cron: "0 17 30 10 *"  # Fri Oct 30 18:00 Swedish time
+    - cron: "15 13 31 10 *" # Sat Oct 31 14:15 Swedish time
+permissions:
+  contents: write
+concurrency:
+  group: la-v85-frozen-forecast-bjerke
+  cancel-in-progress: false
+jobs:
+  freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run prospective timestamp, source and identity tests
+        run: python -m unittest discover -s tests -p "test_freeze_v85_forecasts.py"
+      - name: Install modelling libraries
+        run: python -m pip install "xgboost>=2.1,<4" "scikit-learn>=1.5,<2"
+      - name: Freeze identical market and both independent forecasts
+        env:
+          GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          case "$GITHUB_EVENT_SCHEDULE" in
+            "0 17 30 10 *") SLOT=friday;;
+            "15 13 31 10 *") SLOT=saturday;;
+            *) SLOT=preview;;
+          esac
+          echo "SLOT=$SLOT" >> "$GITHUB_ENV"
+          python scripts/freeze_v85_forecasts.py --slot "$SLOT"
+      - name: Publish one immutable result per slot on latest main
+        run: |
+          target="research/frozen/2026-10-31/${SLOT}.json"
+          if test ! -f "$target"; then
+            echo "No in-window verified prospective report; no commit."
+            exit 0
+          fi
+          cp "$target" "$RUNNER_TEMP/frozen_candidate.json"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p research/frozen/2026-10-31
+            if test -e "$target"; then
+              echo "Immutable slot already published; never overwrite."
+              exit 0
+            fi
+            cp "$RUNNER_TEMP/frozen_candidate.json" "$target"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add "$target"
+            if git diff --cached --quiet; then
+              echo "Unchanged; no commit."
+              exit 0
+            fi
+            git commit -m "Freeze before-start ${SLOT} Bjerke research forecast [skip ci]"
+            if git push origin HEAD:main; then
+              echo "Immutable research published: $target"
+              exit 0
+            fi
+            echo "Concurrent main update; retrying without overwriting other work."
+          done
+          echo "Failed to publish without a conflict."
+          exit 1
