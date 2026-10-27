@@ -22,9 +22,20 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEST = ROOT / "research/historical_pilot_2026.json"
 USER_AGENT = "LA_V85/research-1.0 (Biggles22/LA_V85; low-frequency research)"
 # Saturdays spread over several months; no upcoming or live meetings.
-DATES = ("2026-05-02","2026-05-30","2026-06-27","2026-07-11",
-         "2026-07-25","2026-08-08","2026-08-22","2026-09-05",
-         "2026-09-19","2026-10-03","2026-10-10","2026-10-17")
+DATES = ("2026-03-14","2026-03-21","2026-03-28","2026-04-11",
+         "2026-09-19","2026-09-26","2026-10-03","2026-10-10",
+         "2026-10-17","2026-10-24")
+# Track IDs either confirmed from LA_V85 archive or candidate match with race calendar.
+TRACK_CANDIDATES={"2026-03-14":78,"2026-03-21":6,"2026-03-28":5,
+                  "2026-04-11":7,"2026-09-19":15,"2026-09-26":6,
+                  "2026-10-03":11,"2026-10-10":5,"2026-10-17":16,
+                  "2026-10-24":7}
+KNOWN_GAME_IDS={
+    "2026-10-03":"V85_2026-10-03_11_5",
+    "2026-10-10":"V85_2026-10-10_5_6",
+    "2026-10-17":"V85_2026-10-17_16_5",
+    "2026-10-24":"V85_2026-10-24_7_5",
+}
 
 
 def get_json(path):
@@ -70,6 +81,35 @@ def get_v85_id(calendar):
                 return item["id"]
     # Never invent a game from track IDs; report discovery failure.
     raise ValueError("No V85 game id in ATG calendar")
+
+
+def discover_game(date):
+    """Try calendar, then bounded, *validated* V85 game-ID candidates.
+
+    Known October IDs come from this repository's archived snapshots.
+    Earlier candidates are probed, never assumed to be valid.
+    """
+    attempts=[]
+    candidates=[]
+    try:
+        calendar=get_json("/calendar/day/"+date)
+        candidates.append(get_v85_id(calendar))
+    except (urllib.error.URLError,ValueError,KeyError) as ex:
+        attempts.append("calendar "+type(ex).__name__+" "+str(ex)[:100])
+    if date in KNOWN_GAME_IDS:
+        candidates.append(KNOWN_GAME_IDS[date])
+    track=TRACK_CANDIDATES.get(date)
+    if track is not None:
+        candidates.extend(f"V85_{date}_{track}_{num}" for num in (5,6,7))
+    for gid in dict.fromkeys(candidates):
+        try:
+            game=get_json("/games/"+gid)
+            if game.get("id")==gid and len(game.get("races") or [])==8 and gid.startswith("V85_"+date+"_"):
+                return gid,game
+            attempts.append(gid+" mismatched game ID/races")
+        except (urllib.error.URLError,ValueError,KeyError) as ex:
+            attempts.append(gid+" "+type(ex).__name__+" "+str(ex)[:80])
+    raise ValueError("No verified game for "+date+": "+"; ".join(attempts[-5:]))
 
 
 def past_records(start, race_day):
@@ -201,11 +241,7 @@ def collect(dates):
     output=[]; roundlog=[]; included=set()
     for date in dates:
         try:
-            calendar=get_json("/calendar/day/"+date)
-            game_id=get_v85_id(calendar)
-            game=get_json("/games/"+game_id)
-            if game.get("id")!=game_id:
-                raise ValueError("Game ID did not match calendar")
+            game_id,game=discover_game(date)
             races=game.get("races") or []
             if len(races)!=8:
                 raise ValueError("V85 game does not contain 8 races")
