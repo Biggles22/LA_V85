@@ -22,14 +22,28 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEST = ROOT / "research/historical_pilot_2026.json"
 USER_AGENT = "LA_V85/research-1.0 (Biggles22/LA_V85; low-frequency research)"
 # Saturdays spread over several months; no upcoming or live meetings.
-DATES = ("2026-03-14","2026-03-21","2026-03-28","2026-04-11",
-         "2026-09-19","2026-09-26","2026-10-03","2026-10-10",
-         "2026-10-17","2026-10-24")
-# Track IDs either confirmed from LA_V85 archive or candidate match with race calendar.
-TRACK_CANDIDATES={"2026-03-14":78,"2026-03-21":6,"2026-03-28":5,
-                  "2026-04-11":7,"2026-09-19":15,"2026-09-26":6,
-                  "2026-10-03":11,"2026-10-10":5,"2026-10-17":16,
-                  "2026-10-24":7}
+DATES = (
+    # Published V85 racing calendars; all dates are historical as of 2026-10-27.
+    "2025-11-22","2025-11-29","2025-12-06","2025-12-27",
+    "2026-01-03","2026-02-07","2026-02-14","2026-02-21","2026-02-28",
+    "2026-03-14","2026-03-21","2026-03-28","2026-04-11",
+    "2026-04-18","2026-04-25","2026-05-02","2026-05-09",
+    "2026-05-23","2026-05-30","2026-06-13","2026-06-27",
+    "2026-07-25","2026-09-19","2026-09-26",
+    "2026-10-03","2026-10-10","2026-10-17","2026-10-24"
+)
+# Track IDs are grounded in published ATG raceday PDFs, archived race IDs,
+# or existing race records. Each discovered game ID is verified against the API.
+TRACK_CANDIDATES={
+    "2025-11-22":7,"2025-11-29":5,"2025-12-06":6,"2025-12-27":16,
+    "2026-01-03":7,"2026-02-07":5,"2026-02-14":6,"2026-02-21":9,
+    "2026-02-28":8,"2026-03-14":78,"2026-03-21":6,"2026-03-28":5,
+    "2026-04-11":7,"2026-04-18":12,"2026-04-25":32,"2026-05-02":27,
+    "2026-05-09":6,"2026-05-23":16,"2026-05-30":5,
+    "2026-06-13":11,"2026-06-27":9,"2026-07-25":12,
+    "2026-09-19":15,"2026-09-26":6,
+    "2026-10-03":11,"2026-10-10":5,"2026-10-17":16,"2026-10-24":7
+}
 KNOWN_GAME_IDS={
     "2026-10-03":"V85_2026-10-03_11_5",
     "2026-10-10":"V85_2026-10-10_5_6",
@@ -242,8 +256,11 @@ def parse_historical_race(race,game,date):
     return rows
 
 
-def collect(dates):
-    output=[]; roundlog=[]; included=set()
+def collect(dates, prior_rows=()):
+    # Completed, previously validated race data are immutable research evidence.
+    # Do not refetch or erase them just because the unofficial API is temporarily down.
+    output=list(prior_rows); roundlog=[]
+    included={r["raceId"] for r in prior_rows}
     for date in dates:
         try:
             game_id,game=discover_game(date)
@@ -254,6 +271,9 @@ def collect(dates):
             for r in races:
                 rid=r.get("id")
                 if not isinstance(rid,str):
+                    continue
+                if rid in included:
+                    count+=1; eligible+=1
                     continue
                 try:
                     extended=get_json("/races/"+rid+"/extended")
@@ -288,7 +308,10 @@ def main():
     args=parser.parse_args()
     if not 1<=args.limit<=len(DATES):
         parser.error("invalid --limit")
-    rows,log=collect(DATES[:args.limit])
+    previous=json.loads(DEST.read_text()) if DEST.exists() else {}
+    old_rows=previous.get("rows",[])
+    rows,log=collect(DATES[:args.limit],old_rows)
+    rows.sort(key=lambda r:(r["date"],r["raceId"],r["number"]))
     dates={x["date"] for x in rows}
     races={x["raceId"] for x in rows}
     print("SUMMARY",len(rows),"starters",len(races),"completed races",len(dates),"dates",flush=True)
@@ -303,7 +326,6 @@ def main():
             "dates":list(DATES[:args.limit]),"rounds":log,
             "starterCount":len(rows),"raceCount":len(races),"rows":rows}
     DEST.parent.mkdir(parents=True,exist_ok=True)
-    previous=json.loads(DEST.read_text()) if DEST.exists() else None
     if previous==report:
         print("No changes to historical data");return
     DEST.write_text(json.dumps(report,ensure_ascii=False,separators=(",",":"))+"\n")
