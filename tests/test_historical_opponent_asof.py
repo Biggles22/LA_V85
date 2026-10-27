@@ -45,6 +45,17 @@ class HistoricalOpponentTests(unittest.TestCase):
         self.assertLessEqual(len(planned),15)
         self.assertEqual(len(planned),15)
 
+    def test_keep_published_cards_and_reach_later_test_dates(self):
+        targets=[
+            {"raceId":"2026-01-01_1_1","number":1,"candidatePriorRaceIds":["2025-12-01_1_1"]},
+            {"raceId":"2026-05-01_1_1","number":2,"candidatePriorRaceIds":["2026-04-01_1_1"]},
+            {"raceId":"2026-10-01_1_1","number":3,"candidatePriorRaceIds":["2026-09-01_1_1"]},
+        ]
+        selected=m.bounded_plan(targets,max_cards=2,cached_ids=["2025-12-01_1_1"])
+        self.assertIn("2025-12-01_1_1",selected)
+        self.assertIn("2026-09-01_1_1",selected)
+        self.assertNotIn("2026-04-01_1_1",selected)
+
     def test_no_outcome_or_pool_input_into_feature(self):
         import inspect
         source=inspect.getsource(m.asof_strength)+inspect.getsource(m.historical_card)
