@@ -12,11 +12,11 @@ def market_and_ext():
     for leg in range(1,9):
         rid=f"2026-10-31_78_{leg+4}"
         entries=[]
-        for i in range(1,9):
+        for i in range(1,11):
             entries.append({"number":i,
                             "horse":{"name":f"Runner {leg}-{i}"},
                             "postPosition":i,"distance":2100,
-                            "pools":{"V85":{"betDistribution":1250}}})
+                            "pools":{"V85":{"betDistribution":1000}}})
         races.append({"id":rid,"number":leg+4,"status":"bettable",
                       "starts":entries})
         extended[rid]={"id":rid,"startMethod":"auto","distance":2100,
@@ -42,8 +42,8 @@ class FreezeTests(unittest.TestCase):
         now=dt.datetime(2026,10,30,18,2,tzinfo=TZ)
         snapshot=f.checked_snapshot(game,now)
         rows=f.current_rows(game,extended,snapshot)
-        self.assertEqual(len(rows),64)
-        self.assertTrue(all(row["prestartFeatures"]["field"]==8 for row in rows))
+        self.assertEqual(len(rows),80)
+        self.assertTrue(all(row["prestartFeatures"]["field"]==10 for row in rows))
         extended["2026-10-31_78_5"]["starts"][0]["horse"]["name"]="WRONG"
         with self.assertRaisesRegex(ValueError,"mismatch"):
             f.current_rows(game,extended,snapshot)
