@@ -33,8 +33,53 @@ jobs:
           if ! python scripts/train_historical_pilot.py; then
             echo "::warning::Model test did not meet its minimum data requirements. Verified sample collection is retained for diagnosis."
           fi
-      - name: Commit only verified research data and evaluation
+      - name: Safely publish research from latest main
         run: |
+          # Only this ephemeral runner checkout is reset; the user's VS Code work is untouched.
+          cp research/historical_pilot_2026.json "$RUNNER_TEMP/historical_candidate.json"
+          if test -f research/model_report_2026.json; then
+            cp research/model_report_2026.json "$RUNNER_TEMP/report_candidate.json"
+          fi
+          git fetch origin main
+          git reset --hard origin/main
+          python - <<'PY'
+          import json,os,pathlib,shutil,sys
+          root=pathlib.Path("research")
+          tmp=pathlib.Path(os.environ["RUNNER_TEMP"])
+          cand=json.loads((tmp/"historical_candidate.json").read_text())
+          existing_file=root/"historical_pilot_2026.json"
+          if existing_file.exists():
+              old=json.loads(existing_file.read_text())
+              # Before refreshing, require every already-published runner result and
+              # every point-in-time feature to remain unchanged.
+              now={(r["raceId"],r["number"]):r for r in cand["rows"]}
+              for r in old.get("rows",[]):
+                  n=now.get((r["raceId"],r["number"]))
+                  if not n or any(n.get(k)!=r.get(k) for k in
+                                  ("date","winner","horse","prestartFeatures")):
+                      print("Existing research edits differ: refusing overwrite",r["raceId"],r["number"])
+                      sys.exit(1)
+              if cand["starterCount"] < old.get("starterCount",0):
+                  print("New candidate has fewer validated rows: keeping existing.")
+                  sys.exit(0)
+          root.mkdir(parents=True,exist_ok=True)
+          if not existing_file.exists() or cand["starterCount"]>old.get("starterCount",0):
+              shutil.copy2(tmp/"historical_candidate.json",existing_file)
+          candidate_report=tmp/"report_candidate.json"
+          target=root/"model_report_2026.json"
+          if candidate_report.exists():
+              proposal=json.loads(candidate_report.read_text())
+              if not target.exists():
+                  shutil.copy2(candidate_report,target)
+              else:
+                  old_report=json.loads(target.read_text())
+                  comparable=lambda d:{k:v for k,v in d.items() if k!="createdAt"}
+                  if comparable(proposal)!=comparable(old_report):
+                      if proposal.get("testRaces",0)<old_report.get("testRaces",0):
+                          print("New evaluation has smaller test: keeping existing.")
+                      else:
+                          shutil.copy2(candidate_report,target)
+          PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add research/historical_pilot_2026.json
@@ -42,8 +87,7 @@ jobs:
             git add research/model_report_2026.json
           fi
           if ! git diff --cached --quiet; then
-            git commit -m "Collect verified historical V85 pilot and time-split evaluation [skip ci]"
-            git pull --rebase origin main
+            git commit -m "Collect validated V85 history and time-split pilot [skip ci]"
             git push origin HEAD:main
           else
             echo "Research unchanged; no new commit."
