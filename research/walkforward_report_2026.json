@@ -1,0 +1,773 @@
+{
+  "reportType": "EXPANDING_CHRONOLOGICAL_BACKTEST_NOT_VALIDATED",
+  "generatedAt": "2026-10-27T07:45:13.261442+00:00",
+  "sourceRaceCount": 178,
+  "sourceStarts": 1931,
+  "sourceDates": 25,
+  "folds": [
+    {
+      "date": "2026-01-03",
+      "trainUntil": "2025-12-27",
+      "trainedDates": 4,
+      "trainStarts": 302,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 1.9219,
+        "horseBrier": 0.07691
+      },
+      "pairedRaces": 2,
+      "pairedModel": {
+        "races": 2,
+        "top1Count": 0,
+        "top3Count": 1,
+        "top1Rate": 0.0,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.3779,
+        "horseBrier": 0.07852
+      },
+      "pairedMarket": {
+        "races": 2,
+        "top1Count": 1,
+        "top3Count": 1,
+        "top1Rate": 0.5,
+        "top3Rate": 0.5,
+        "raceLogLoss": 1.7991,
+        "horseBrier": 0.05948
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "trainUntil": "2026-01-03",
+      "trainedDates": 5,
+      "trainStarts": 385,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 6,
+        "top1Rate": 0.375,
+        "top3Rate": 0.75,
+        "raceLogLoss": 1.8093,
+        "horseBrier": 0.0756
+      },
+      "pairedRaces": 0,
+      "pairedModel": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      },
+      "pairedMarket": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "trainUntil": "2026-02-07",
+      "trainedDates": 6,
+      "trainStarts": 468,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 2,
+        "top3Count": 5,
+        "top1Rate": 0.2857,
+        "top3Rate": 0.7143,
+        "raceLogLoss": 1.9996,
+        "horseBrier": 0.0842
+      },
+      "pairedRaces": 2,
+      "pairedModel": {
+        "races": 2,
+        "top1Count": 1,
+        "top3Count": 1,
+        "top1Rate": 0.5,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.0226,
+        "horseBrier": 0.08194
+      },
+      "pairedMarket": {
+        "races": 2,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.5,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.1588,
+        "horseBrier": 0.05733
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "trainUntil": "2026-02-14",
+      "trainedDates": 7,
+      "trainStarts": 538,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 4,
+        "top1Rate": 0.125,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.6452,
+        "horseBrier": 0.09193
+      },
+      "pairedRaces": 1,
+      "pairedModel": {
+        "races": 1,
+        "top1Count": 0,
+        "top3Count": 1,
+        "top1Rate": 0.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 2.0228,
+        "horseBrier": 0.07577
+      },
+      "pairedMarket": {
+        "races": 1,
+        "top1Count": 1,
+        "top3Count": 1,
+        "top1Rate": 1.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.0826,
+        "horseBrier": 0.0428
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "trainUntil": "2026-02-21",
+      "trainedDates": 8,
+      "trainStarts": 624,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 2,
+        "top3Count": 5,
+        "top1Rate": 0.2857,
+        "top3Rate": 0.7143,
+        "raceLogLoss": 1.8933,
+        "horseBrier": 0.06883
+      },
+      "pairedRaces": 2,
+      "pairedModel": {
+        "races": 2,
+        "top1Count": 1,
+        "top3Count": 1,
+        "top1Rate": 0.5,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.0116,
+        "horseBrier": 0.05695
+      },
+      "pairedMarket": {
+        "races": 2,
+        "top1Count": 1,
+        "top3Count": 1,
+        "top1Rate": 0.5,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.0994,
+        "horseBrier": 0.03899
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "trainUntil": "2026-02-28",
+      "trainedDates": 9,
+      "trainStarts": 703,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 1,
+        "top3Count": 4,
+        "top1Rate": 0.1429,
+        "top3Rate": 0.5714,
+        "raceLogLoss": 2.3756,
+        "horseBrier": 0.09148
+      },
+      "pairedRaces": 1,
+      "pairedModel": {
+        "races": 1,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": 0.0,
+        "top3Rate": 0.0,
+        "raceLogLoss": 3.3601,
+        "horseBrier": 0.13264
+      },
+      "pairedMarket": {
+        "races": 1,
+        "top1Count": 0,
+        "top3Count": 1,
+        "top1Rate": 0.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 2.6312,
+        "horseBrier": 0.14925
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "trainUntil": "2026-03-14",
+      "trainedDates": 10,
+      "trainStarts": 777,
+      "testMetrics": {
+        "races": 6,
+        "top1Count": 3,
+        "top3Count": 4,
+        "top1Rate": 0.5,
+        "top3Rate": 0.6667,
+        "raceLogLoss": 1.8122,
+        "horseBrier": 0.07259
+      },
+      "pairedRaces": 1,
+      "pairedModel": {
+        "races": 1,
+        "top1Count": 1,
+        "top3Count": 1,
+        "top1Rate": 1.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.3859,
+        "horseBrier": 0.05405
+      },
+      "pairedMarket": {
+        "races": 1,
+        "top1Count": 1,
+        "top3Count": 1,
+        "top1Rate": 1.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.1658,
+        "horseBrier": 0.0481
+      }
+    },
+    {
+      "date": "2026-03-28",
+      "trainUntil": "2026-03-21",
+      "trainedDates": 11,
+      "trainStarts": 842,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.125,
+        "top3Rate": 0.25,
+        "raceLogLoss": 2.4693,
+        "horseBrier": 0.09014
+      },
+      "pairedRaces": 1,
+      "pairedModel": {
+        "races": 1,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": 0.0,
+        "top3Rate": 0.0,
+        "raceLogLoss": 2.4088,
+        "horseBrier": 0.06419
+      },
+      "pairedMarket": {
+        "races": 1,
+        "top1Count": 0,
+        "top3Count": 1,
+        "top1Rate": 0.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 2.4914,
+        "horseBrier": 0.06743
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "trainUntil": "2026-03-28",
+      "trainedDates": 12,
+      "trainStarts": 930,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 3,
+        "top3Count": 4,
+        "top1Rate": 0.4286,
+        "top3Rate": 0.5714,
+        "raceLogLoss": 1.8284,
+        "horseBrier": 0.07652
+      },
+      "pairedRaces": 0,
+      "pairedModel": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      },
+      "pairedMarket": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "trainUntil": "2026-04-11",
+      "trainedDates": 13,
+      "trainStarts": 999,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 0,
+        "top3Count": 1,
+        "top1Rate": 0.0,
+        "top3Rate": 0.1429,
+        "raceLogLoss": 3.0752,
+        "horseBrier": 0.09681
+      },
+      "pairedRaces": 0,
+      "pairedModel": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      },
+      "pairedMarket": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "trainUntil": "2026-04-18",
+      "trainedDates": 14,
+      "trainStarts": 1076,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.1429,
+        "top3Rate": 0.2857,
+        "raceLogLoss": 2.5649,
+        "horseBrier": 0.08298
+      },
+      "pairedRaces": 2,
+      "pairedModel": {
+        "races": 2,
+        "top1Count": 0,
+        "top3Count": 1,
+        "top1Rate": 0.0,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.5941,
+        "horseBrier": 0.11149
+      },
+      "pairedMarket": {
+        "races": 2,
+        "top1Count": 1,
+        "top3Count": 1,
+        "top1Rate": 0.5,
+        "top3Rate": 0.5,
+        "raceLogLoss": 1.4309,
+        "horseBrier": 0.06426
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "trainUntil": "2026-04-25",
+      "trainedDates": 15,
+      "trainStarts": 1157,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 3,
+        "top3Count": 5,
+        "top1Rate": 0.4286,
+        "top3Rate": 0.7143,
+        "raceLogLoss": 1.9297,
+        "horseBrier": 0.07004
+      },
+      "pairedRaces": 1,
+      "pairedModel": {
+        "races": 1,
+        "top1Count": 0,
+        "top3Count": 1,
+        "top1Rate": 0.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.7135,
+        "horseBrier": 0.0637
+      },
+      "pairedMarket": {
+        "races": 1,
+        "top1Count": 0,
+        "top3Count": 1,
+        "top1Rate": 0.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.6815,
+        "horseBrier": 0.07206
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "trainUntil": "2026-05-02",
+      "trainedDates": 16,
+      "trainStarts": 1233,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 1,
+        "top3Count": 4,
+        "top1Rate": 0.1429,
+        "top3Rate": 0.5714,
+        "raceLogLoss": 2.0284,
+        "horseBrier": 0.08429
+      },
+      "pairedRaces": 0,
+      "pairedModel": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      },
+      "pairedMarket": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      }
+    },
+    {
+      "date": "2026-05-23",
+      "trainUntil": "2026-05-09",
+      "trainedDates": 17,
+      "trainStarts": 1308,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 4,
+        "top1Rate": 0.125,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.3136,
+        "horseBrier": 0.08622
+      },
+      "pairedRaces": 0,
+      "pairedModel": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      },
+      "pairedMarket": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      }
+    },
+    {
+      "date": "2026-05-30",
+      "trainUntil": "2026-05-23",
+      "trainedDates": 18,
+      "trainStarts": 1394,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 3,
+        "top1Rate": 0.375,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.3445,
+        "horseBrier": 0.0903
+      },
+      "pairedRaces": 0,
+      "pairedModel": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      },
+      "pairedMarket": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "trainUntil": "2026-05-30",
+      "trainedDates": 19,
+      "trainStarts": 1475,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 0,
+        "top3Count": 4,
+        "top1Rate": 0.0,
+        "top3Rate": 0.5714,
+        "raceLogLoss": 2.242,
+        "horseBrier": 0.08593
+      },
+      "pairedRaces": 2,
+      "pairedModel": {
+        "races": 2,
+        "top1Count": 0,
+        "top3Count": 1,
+        "top1Rate": 0.0,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.2927,
+        "horseBrier": 0.07499
+      },
+      "pairedMarket": {
+        "races": 2,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.5,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.4016,
+        "horseBrier": 0.05829
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "trainUntil": "2026-06-13",
+      "trainedDates": 20,
+      "trainStarts": 1553,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 2,
+        "top3Count": 5,
+        "top1Rate": 0.2857,
+        "top3Rate": 0.7143,
+        "raceLogLoss": 2.2824,
+        "horseBrier": 0.08134
+      },
+      "pairedRaces": 3,
+      "pairedModel": {
+        "races": 3,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.3333,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.868,
+        "horseBrier": 0.07076
+      },
+      "pairedMarket": {
+        "races": 3,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.3333,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.1668,
+        "horseBrier": 0.05364
+      }
+    },
+    {
+      "date": "2026-07-25",
+      "trainUntil": "2026-06-27",
+      "trainedDates": 21,
+      "trainStarts": 1632,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 5,
+        "top1Rate": 0.375,
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.7744,
+        "horseBrier": 0.07147
+      },
+      "pairedRaces": 5,
+      "pairedModel": {
+        "races": 5,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.2,
+        "top3Rate": 0.4,
+        "raceLogLoss": 1.9154,
+        "horseBrier": 0.07589
+      },
+      "pairedMarket": {
+        "races": 5,
+        "top1Count": 2,
+        "top3Count": 3,
+        "top1Rate": 0.4,
+        "top3Rate": 0.6,
+        "raceLogLoss": 2.0736,
+        "horseBrier": 0.08505
+      }
+    },
+    {
+      "date": "2026-10-10",
+      "trainUntil": "2026-07-25",
+      "trainedDates": 22,
+      "trainStarts": 1722,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 4,
+        "top3Count": 5,
+        "top1Rate": 0.5,
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.9037,
+        "horseBrier": 0.07104
+      },
+      "pairedRaces": 2,
+      "pairedModel": {
+        "races": 2,
+        "top1Count": 2,
+        "top3Count": 2,
+        "top1Rate": 1.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.4819,
+        "horseBrier": 0.05615
+      },
+      "pairedMarket": {
+        "races": 2,
+        "top1Count": 2,
+        "top3Count": 2,
+        "top1Rate": 1.0,
+        "top3Rate": 1.0,
+        "raceLogLoss": 0.7129,
+        "horseBrier": 0.02594
+      }
+    },
+    {
+      "date": "2026-10-17",
+      "trainUntil": "2026-10-10",
+      "trainedDates": 23,
+      "trainStarts": 1811,
+      "testMetrics": {
+        "races": 7,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.1429,
+        "top3Rate": 0.2857,
+        "raceLogLoss": 2.4985,
+        "horseBrier": 0.08775
+      },
+      "pairedRaces": 0,
+      "pairedModel": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      },
+      "pairedMarket": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "trainUntil": "2026-10-17",
+      "trainedDates": 24,
+      "trainStarts": 1886,
+      "testMetrics": {
+        "races": 4,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.5,
+        "top3Rate": 1.0,
+        "raceLogLoss": 1.4711,
+        "horseBrier": 0.06158
+      },
+      "pairedRaces": 0,
+      "pairedModel": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      },
+      "pairedMarket": {
+        "races": 0,
+        "top1Count": 0,
+        "top3Count": 0,
+        "top1Rate": null,
+        "top3Rate": null,
+        "raceLogLoss": null,
+        "horseBrier": null
+      }
+    }
+  ],
+  "testMetrics": {
+    "races": 151,
+    "top1Count": 39,
+    "top3Count": 82,
+    "top1Rate": 0.2583,
+    "top3Rate": 0.543,
+    "raceLogLoss": 2.1671,
+    "horseBrier": 0.08134
+  },
+  "strictPairedModel": {
+    "races": 25,
+    "top1Count": 7,
+    "top3Count": 15,
+    "top1Rate": 0.28,
+    "top3Rate": 0.6,
+    "raceLogLoss": 2.0654,
+    "horseBrier": 0.07609
+  },
+  "strictPairedMarket": {
+    "races": 25,
+    "top1Count": 12,
+    "top3Count": 20,
+    "top1Rate": 0.48,
+    "top3Rate": 0.8,
+    "raceLogLoss": 1.605,
+    "horseBrier": 0.06297
+  },
+  "strictPairedCount": 25,
+  "excludedFromMarketComparison": 126,
+  "features": [
+    "post",
+    "distance",
+    "field",
+    "auto",
+    "starts5",
+    "form_place_mean",
+    "win5",
+    "top3_5",
+    "days_off",
+    "gallop5",
+    "km_median",
+    "past_purse_log",
+    "post_field_ratio",
+    "form_percentile",
+    "wins_percentile",
+    "recent_km_percentile",
+    "purse_percentile"
+  ],
+  "method": "Expanding-origin model re-fit before each held-out date, trained on strictly earlier dates, with race-relative prestart features.",
+  "limitations": "Exploratory, few races, some training race results incomplete, history sample covers selected dates only. Final-pool market is not a prestart timestamp. No validated win probabilities, Benter blend or profit forecast."
+}
