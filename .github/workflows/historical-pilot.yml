@@ -8,6 +8,8 @@ on:
       - "scripts/historical_pilot.py"
       - "scripts/train_historical_pilot.py"
       - "tests/test_historical_pilot.py"
+      - "scripts/walkforward_evaluation.py"
+      - "tests/test_walkforward.py"
 permissions:
   contents: write
 concurrency:
@@ -16,22 +18,27 @@ concurrency:
 jobs:
   historical-backtest:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Run leakage and data-validation tests
-        run: python -m unittest discover -s tests -p "test_historical_pilot.py"
+        run: python -m unittest discover -s tests -p "test_*.py"
       - name: Install pinned-compatible XGBoost dependencies
         run: python -m pip install "xgboost>=2.1,<4" "scikit-learn>=1.5,<2"
       - name: Collect historical completed V85 rounds
-        run: python scripts/historical_pilot.py --limit 10
+        run: python scripts/historical_pilot.py
       - name: Train on older races; evaluate on newer unseen races
         run: |
           if ! python scripts/train_historical_pilot.py; then
             echo "::warning::Model test did not meet its minimum data requirements. Verified sample collection is retained for diagnosis."
+          fi
+      - name: Expanding-date validation on strictly later races
+        run: |
+          if ! python scripts/walkforward_evaluation.py; then
+            echo "::warning::Chronological multi-window report not yet ready. No fabricated performance metrics."
           fi
       - name: Safely publish research from latest main
         run: |
@@ -39,6 +46,9 @@ jobs:
           cp research/historical_pilot_2026.json "$RUNNER_TEMP/historical_candidate.json"
           if test -f research/model_report_2026.json; then
             cp research/model_report_2026.json "$RUNNER_TEMP/report_candidate.json"
+          fi
+          if test -f research/walkforward_report_2026.json; then
+            cp research/walkforward_report_2026.json "$RUNNER_TEMP/walkforward_candidate.json"
           fi
           git fetch origin main
           git reset --hard origin/main
@@ -79,12 +89,33 @@ jobs:
                           print("New evaluation has smaller test: keeping existing.")
                       else:
                           shutil.copy2(candidate_report,target)
+          candidate_walkforward=tmp/"walkforward_candidate.json"
+          target_walkforward=root/"walkforward_report_2026.json"
+          if candidate_walkforward.exists():
+              proposal=json.loads(candidate_walkforward.read_text())
+              if not target_walkforward.exists():
+                  shutil.copy2(candidate_walkforward,target_walkforward)
+              else:
+                  old_report=json.loads(target_walkforward.read_text())
+                  previous_count=old_report.get("sourceRaceCount",0)
+                  new_count=proposal.get("sourceRaceCount",0)
+                  previous_test=(old_report.get("testMetrics") or {}).get("races",0)
+                  new_test=(proposal.get("testMetrics") or {}).get("races",0)
+                  if new_count>previous_count and new_test>=previous_test:
+                      shutil.copy2(candidate_walkforward,target_walkforward)
+                  elif new_count<=previous_count:
+                      print("Existing walk-forward report kept: no larger dataset.")
+                  else:
+                      print("Existing walk-forward report kept: new test has fewer races.")
           PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add research/historical_pilot_2026.json
           if test -f research/model_report_2026.json; then
             git add research/model_report_2026.json
+          fi
+          if test -f research/walkforward_report_2026.json; then
+            git add research/walkforward_report_2026.json
           fi
           if ! git diff --cached --quiet; then
             git commit -m "Collect validated V85 history and time-split pilot [skip ci]"
