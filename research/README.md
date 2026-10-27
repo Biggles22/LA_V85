@@ -132,3 +132,26 @@ Detta ger en marginell förbättring av sannolikhetsmåtten, **men sämre vinnar
 **Nästa experiment** är en äkta historisk före-lopp-join som mäter kvaliteten på **de faktiska motståndarna i hästarnas egna tidigare lopp** i tillräckligt många redan avgjorda V85-lopp. Först då går det att testa den nya 90/97-datakällans motsvarighet i ett osett utfall. Det kräver fler kontrollerade äldre lopps startfält och tillhörande förhandsform samt tydlig hantering av saknad historik.
 
 [Källspår för bred motståndsinsamling](https://github.com/Biggles22/LA_V85/blob/main/research/opponent_coverage_2026.json) · [Historiskt experiment](https://github.com/Biggles22/LA_V85/blob/main/research/opposition_field_trial_2026.json).
+
+## Femte etappen – historiskt före-lopp-test av faktiska tidigare motståndare
+
+**Nytt test, två strikta datumgränser.** `scripts/historical_opponent_asof.py` väljer historiska V85-lopp *utan att känna till deras vinnare* och hämtar tidigare lopps fulla startfält från ATG:s ej versionsgaranterade webbgränssnitt. En tidigare start måste ligga **före V85-loppet**. De verkliga motståndarnas senaste placeringar i den tidigare starten beräknas i sin tur enbart med data **före den tidigare starten**. En vunnen historisk V85-start påverkar alltså endast testfacit, inte förhandsvariablerna.
+
+Den första insamlingen fick först en **tidsobalanserad täckning**, eftersom ett för litet tak för API-anrop gynnade äldre testdatum. Urvalet utökades därför till 380 möjliga tidigare loppskort; 366 verifierade kort fanns tillgängliga. Redan insamlat material behölls, och senare datum prioriterades. Resultatet är **42 analyserade äldre V85-lopp, 452 matchade häststarter och 441 häststarter med beräknad tidigare motståndarform**, över 25 tävlingsdatum.
+
+Den oberoende experimentfilen `scripts/historical_opponent_test.py` jämför samma två XGBoost-modeller över 21 kronologiska testfönster. Den försöker inte kalibrera vinstprocent eller skapa spelrekommendationer. En strikt delmängd för motståndsjämförelsen kräver minst sex bedömda hästar och minst 60 % täckning i loppet.
+
+| Resultat, samma 35 testlopp | Grundmodell | Med verkliga tidigare motståndare |
+| --- | ---: | ---: |
+| Vinnaren rankad först | 9/35 (25,7 %) | 7/35 (20,0 %) |
+| Vinnaren bland topp 3 | 20/35 (57,1 %) | 22/35 (62,9 %) |
+| Log loss (lägre = bättre) | 2,1247 | 2,0631 |
+| Brier score (lägre = bättre) | 0,08099 | 0,07986 |
+
+På **samtliga 151 walk-forward-testlopp**, inklusive lopp där motståndarvariabeln saknas, blev topp 1 **39/151 mot 35/151**, medan topp 3 blev **82/151 mot 84/151**. **Bara fyra** av de 35 historiska loppen har tillräckligt fullständig retrospektiv slutpool för en strikt ATG-jämförelse, så de resultaten har inte statistisk tyngd.
+
+**Begränsningar:** Måttet beskriver motståndarnas historiska seger-/topp-3-andelar, inte deras verkliga klass i ett tränat ratingsystem. De gamla API-svaren hämtas i efterhand och daterade startresultat filtreras till dåtid; de utgör inte ursprungliga frysta förhandsdatabaser. Urval, saknad data och upprepade modellförsök på samma historiska lopp kan påverka siffrorna. Den förbättrade topp 3-träffen är en hypotes, **inte bevis på bättre spikar, skrällar eller spelvärde**.
+
+**Beslut:** behåll nuvarande liveanalys och befintlig modell. Nästa validering måste använda nya, tidsstämplade V85-omgångar och förhandsstreck som sparas *före* spelstopp. Endast modellen med bevisad förbättring på osedd data bör få påverka råd eller kupong.
+
+[Läs forskningssidan](https://biggles22.github.io/LA_V85/research/) · [Historiska as-of-källdata](https://github.com/Biggles22/LA_V85/blob/main/research/historical_opponent_asof_2026.json) · [Walk-forward-test](https://github.com/Biggles22/LA_V85/blob/main/research/historical_opponent_test_2026.json).
