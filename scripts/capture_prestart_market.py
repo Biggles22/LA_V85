@@ -101,8 +101,8 @@ def candidate_path(doc):
     return DEST/(f"{source}_{digest}.json")
 
 
-def main():
-    now=dt.datetime.now(dt.timezone.utc)
+def main(now=None):
+    now=now or dt.datetime.now(dt.timezone.utc)
     if now.astimezone(LOCAL)>=CUTOFF:
         print("Outside prestart window, no archive created.")
         return 0
