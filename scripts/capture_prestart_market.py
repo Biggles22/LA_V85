@@ -11,6 +11,7 @@ import json
 import pathlib
 import sys
 import urllib.request
+import urllib.error
 from zoneinfo import ZoneInfo
 
 BASE=pathlib.Path(__file__).resolve().parents[1]
@@ -66,16 +67,27 @@ def checked_snapshot(game, now):
             packed.append({"number":n,"horse":horse["name"],"pct":round(pct,2),
                            "scratched":bool(h.get("scratched") or (h.get("result") or {}).get("scratched"))})
         active=[x for x in packed if not x["scratched"]]
-        if len({x["number"] for x in packed})!=len(packed) or not 95<=sum(x["pct"] for x in active)<=105:
-            raise ValueError(f"Market percent totals invalid in leg {leg}")
+        total=round(sum(x["pct"] for x in packed),2)
+        active_total=round(sum(x["pct"] for x in active),2)
+        scratched_total=round(total-active_total,2)
+        if len({x["number"] for x in packed})!=len(packed) or len(active)<6:
+            raise ValueError(f"Invalid or truncated active field in leg {leg}")
+        # ATG may still show the OLD percentages on scratched horses while
+        # redistribution is pending. All runners (including scratched) must
+        # still total ~100%; NEVER silently renormalize their raw shares.
+        if not 95<=total<=105:
+            raise ValueError(f"Market percent totals invalid in leg {leg}: all={total}, active={active_total}, scratched={scratched_total}")
         entries.append({"leg":leg,"raceId":r.get("id"),"raceNumber":r.get("number"),
-                        "starts":packed})
+                        "starts":packed,
+                        "allMarketPct":total,"activeMarketPct":active_total,
+                        "scratchedMarketPct":scratched_total,
+                        "awaitingScratchRedistribution":scratched_total>0.1})
     return {
         "schemaVersion":1,"gameId":ID,"raceDate":DAY,"source":URL,
         "sourceAt":parsed.isoformat(),"observedAt":local_now.isoformat(),
         "lagSeconds":round((local_now-parsed).total_seconds()),
         "snapshotKind":"OBSERVED_PRESTART_NOT_FINAL_POOL",
-        "note":"ATG V85 betDistribution from live API before scheduled start; not a predicted win probability.",
+        "note":"ATG V85 raw betDistribution from live API before scheduled start. Percentages on scratched horses are retained, not redistributed or converted into win probabilities.",
         "races":entries,
     }
 
@@ -96,9 +108,16 @@ def main():
         return 0
     req=urllib.request.Request(URL,headers={"Accept":"application/json",
                                             "User-Agent":"LA_V85-research-prestart/1.0"})
-    with urllib.request.urlopen(req,timeout=30) as response:
-        game=json.load(response)
-    doc=checked_snapshot(game,now)
+    try:
+        with urllib.request.urlopen(req,timeout=30) as response:
+            game=json.load(response)
+        doc=checked_snapshot(game,now)
+    except (ValueError,TypeError,KeyError,urllib.error.URLError,TimeoutError) as exc:
+        # A temporary unusable upstream snapshot is not a broken workflow.
+        # Keep older immutable evidence and retry on the next scheduled run.
+        print("::warning::ATG snapshot skipped; existing archive retained: "
+              +type(exc).__name__+": "+str(exc)[:180],flush=True)
+        return 0
     target=candidate_path(doc)
     if target.exists():
         print("Unchanged source and market: no duplicate snapshot",target)
