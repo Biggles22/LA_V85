@@ -3,17 +3,17 @@
   "gameId": "V85_2026-10-31_78_5",
   "track": "Bjerke",
   "raceDate": "2026-10-31",
-  "atgSourceAt": "2026-10-29 13:16:01",
+  "atgSourceAt": "2026-10-29 23:26:15",
   "method": "Backward-only performance, pace/draw proxy, and past purse-tier class proxy; NOT a calibrated win probability.",
   "limitations": "Pace approximates pace suitability using recorded km times and the current draw (NOT verified lead probability). Class compares previous first prizes ONLY within the same country and field, with past finishing performance. Not a calibrated prediction. Gear and many risks remain unknown. Scores never use odds or V85 betting percentages.",
   "coverage": {
-    "activeHorses": 92,
-    "horsesWithHistory": 92,
-    "formRated": 92,
+    "activeHorses": 89,
+    "horsesWithHistory": 89,
+    "formRated": 89,
     "riskRated": 15,
     "paceRated": 24,
-    "classRated": 86,
-    "partialRanked": 89,
+    "classRated": 83,
+    "partialRanked": 86,
     "failedRaces": 0
   },
   "failures": [],
@@ -94,7 +94,7 @@
           "scores": {
             "form": 2.5,
             "pace": null,
-            "class": 3.07,
+            "class": 2.98,
             "gear": null,
             "risk": null
           },
@@ -106,7 +106,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 54.6
+            "partialRankScore": 53.8
           },
           "coverage": {
             "form": true,
@@ -188,7 +188,7 @@
           "scores": {
             "form": 3.5,
             "pace": null,
-            "class": 2.46,
+            "class": 2.39,
             "gear": null,
             "risk": null
           },
@@ -200,7 +200,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 61.7
+            "partialRankScore": 61.1
           },
           "coverage": {
             "form": true,
@@ -282,7 +282,7 @@
           "scores": {
             "form": 3.44,
             "pace": null,
-            "class": 3.58,
+            "class": 3.49,
             "gear": null,
             "risk": null
           },
@@ -294,7 +294,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 69.9
+            "partialRankScore": 69.2
           },
           "coverage": {
             "form": true,
@@ -376,7 +376,7 @@
           "scores": {
             "form": 4.3,
             "pace": null,
-            "class": 3.03,
+            "class": 2.99,
             "gear": null,
             "risk": null
           },
@@ -388,7 +388,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 75.8
+            "partialRankScore": 75.5
           },
           "coverage": {
             "form": true,
@@ -470,7 +470,7 @@
           "scores": {
             "form": 2.77,
             "pace": null,
-            "class": 3.06,
+            "class": 2.95,
             "gear": null,
             "risk": null
           },
@@ -482,7 +482,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 57.7
+            "partialRankScore": 56.8
           },
           "coverage": {
             "form": true,
@@ -564,7 +564,7 @@
           "scores": {
             "form": 3.79,
             "pace": null,
-            "class": 1.29,
+            "class": 1.31,
             "gear": null,
             "risk": null
           },
@@ -576,7 +576,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 55.8
+            "partialRankScore": 56.0
           },
           "coverage": {
             "form": true,
@@ -658,7 +658,7 @@
           "scores": {
             "form": 2.29,
             "pace": null,
-            "class": 2.1,
+            "class": 1.98,
             "gear": null,
             "risk": 2.0
           },
@@ -670,7 +670,7 @@
               "SE"
             ],
             "modelCoverageWeight": 60,
-            "partialRankScore": 43.6
+            "partialRankScore": 42.8
           },
           "coverage": {
             "form": true,
@@ -752,7 +752,7 @@
           "scores": {
             "form": 2.75,
             "pace": null,
-            "class": 3.17,
+            "class": 3.07,
             "gear": null,
             "risk": null
           },
@@ -764,7 +764,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 58.4
+            "partialRankScore": 57.6
           },
           "coverage": {
             "form": true,
@@ -938,7 +938,7 @@
           "scores": {
             "form": 3.35,
             "pace": null,
-            "class": 2.45,
+            "class": 2.34,
             "gear": null,
             "risk": null
           },
@@ -950,7 +950,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 59.8
+            "partialRankScore": 58.9
           },
           "coverage": {
             "form": true,
@@ -965,7 +965,7 @@
         {
           "number": 11,
           "name": "Ulaya",
-          "scratched": false,
+          "scratched": true,
           "previousStarts": 5,
           "lastFive": [
             {
@@ -1032,29 +1032,27 @@
           "scores": {
             "form": 3.46,
             "pace": null,
-            "class": 2.05,
+            "class": null,
             "gear": null,
             "risk": null
           },
           "distanceOnlyScore": null,
           "evidence": {
-            "classStarts": 5,
+            "classStarts": 0,
             "paceStarts": 0,
-            "classCountries": [
-              "SE"
-            ],
-            "modelCoverageWeight": 50,
-            "partialRankScore": 57.9
+            "classCountries": [],
+            "modelCoverageWeight": 0,
+            "partialRankScore": null
           },
           "coverage": {
             "form": true,
             "risk": false,
             "pace": false,
-            "class": true,
+            "class": false,
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
+          "note": "Form från tidigare starter; spår/tempo och klass beräknas först när jämförbar historik räcker."
         },
         {
           "number": 12,
@@ -1226,7 +1224,7 @@
           "scores": {
             "form": 2.86,
             "pace": null,
-            "class": 3.18,
+            "class": 3.23,
             "gear": null,
             "risk": null
           },
@@ -1239,7 +1237,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 59.8
+            "partialRankScore": 60.2
           },
           "coverage": {
             "form": true,
@@ -1321,7 +1319,7 @@
           "scores": {
             "form": 4.27,
             "pace": null,
-            "class": 2.83,
+            "class": 2.86,
             "gear": null,
             "risk": null
           },
@@ -1334,7 +1332,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 73.9
+            "partialRankScore": 74.1
           },
           "coverage": {
             "form": true,
@@ -1416,7 +1414,7 @@
           "scores": {
             "form": 3.84,
             "pace": null,
-            "class": 3.1,
+            "class": 3.21,
             "gear": null,
             "risk": null
           },
@@ -1429,7 +1427,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 70.9
+            "partialRankScore": 71.8
           },
           "coverage": {
             "form": true,
@@ -1511,7 +1509,7 @@
           "scores": {
             "form": 4.13,
             "pace": null,
-            "class": 3.46,
+            "class": 3.53,
             "gear": null,
             "risk": null
           },
@@ -1524,7 +1522,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 77.2
+            "partialRankScore": 77.8
           },
           "coverage": {
             "form": true,
@@ -1539,7 +1537,7 @@
         {
           "number": 5,
           "name": "Bare Mattis",
-          "scratched": false,
+          "scratched": true,
           "previousStarts": 5,
           "lastFive": [
             {
@@ -1606,29 +1604,27 @@
           "scores": {
             "form": 4.28,
             "pace": null,
-            "class": 3.73,
+            "class": null,
             "gear": null,
             "risk": null
           },
           "distanceOnlyScore": null,
           "evidence": {
-            "classStarts": 5,
+            "classStarts": 0,
             "paceStarts": 0,
-            "classCountries": [
-              "NO"
-            ],
-            "modelCoverageWeight": 50,
-            "partialRankScore": 81.2
+            "classCountries": [],
+            "modelCoverageWeight": 0,
+            "partialRankScore": null
           },
           "coverage": {
             "form": true,
             "risk": false,
             "pace": false,
-            "class": true,
+            "class": false,
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
+          "note": "Form från tidigare starter; spår/tempo och klass beräknas först när jämförbar historik räcker."
         },
         {
           "number": 6,
@@ -1700,7 +1696,7 @@
           "scores": {
             "form": 4.09,
             "pace": null,
-            "class": 2.85,
+            "class": 2.93,
             "gear": null,
             "risk": null
           },
@@ -1713,7 +1709,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 71.9
+            "partialRankScore": 72.5
           },
           "coverage": {
             "form": true,
@@ -1795,7 +1791,7 @@
           "scores": {
             "form": 2.42,
             "pace": null,
-            "class": 2.22,
+            "class": 2.35,
             "gear": null,
             "risk": null
           },
@@ -1807,7 +1803,7 @@
               "NO"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 46.8
+            "partialRankScore": 47.8
           },
           "coverage": {
             "form": true,
@@ -1889,7 +1885,7 @@
           "scores": {
             "form": 4.59,
             "pace": null,
-            "class": 3.21,
+            "class": 3.25,
             "gear": null,
             "risk": null
           },
@@ -1902,7 +1898,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 80.8
+            "partialRankScore": 81.1
           },
           "coverage": {
             "form": true,
@@ -1984,7 +1980,7 @@
           "scores": {
             "form": 4.42,
             "pace": null,
-            "class": 3.29,
+            "class": 3.3,
             "gear": null,
             "risk": null
           },
@@ -2079,7 +2075,7 @@
           "scores": {
             "form": 3.0,
             "pace": null,
-            "class": 1.62,
+            "class": 1.7,
             "gear": null,
             "risk": null
           },
@@ -2091,7 +2087,7 @@
               "NO"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 49.0
+            "partialRankScore": 49.6
           },
           "coverage": {
             "form": true,
@@ -2173,7 +2169,7 @@
           "scores": {
             "form": 2.03,
             "pace": null,
-            "class": 2.22,
+            "class": 2.28,
             "gear": null,
             "risk": null
           },
@@ -2186,7 +2182,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 42.1
+            "partialRankScore": 42.6
           },
           "coverage": {
             "form": true,
@@ -5780,7 +5776,7 @@
           "scores": {
             "form": 2.87,
             "pace": 4.59,
-            "class": 3.4,
+            "class": 3.39,
             "gear": null,
             "risk": null
           },
@@ -5792,7 +5788,7 @@
               "SE"
             ],
             "modelCoverageWeight": 75,
-            "partialRankScore": 71.7
+            "partialRankScore": 71.6
           },
           "coverage": {
             "form": true,
@@ -5968,7 +5964,7 @@
           "scores": {
             "form": 2.9,
             "pace": 4.41,
-            "class": 3.48,
+            "class": 3.47,
             "gear": null,
             "risk": null
           },
@@ -5980,7 +5976,7 @@
               "SE"
             ],
             "modelCoverageWeight": 75,
-            "partialRankScore": 71.2
+            "partialRankScore": 71.1
           },
           "coverage": {
             "form": true,
@@ -6248,7 +6244,7 @@
           "scores": {
             "form": 2.71,
             "pace": null,
-            "class": 2.48,
+            "class": 2.49,
             "gear": null,
             "risk": null
           },
@@ -6438,7 +6434,7 @@
           "scores": {
             "form": 3.38,
             "pace": 1.09,
-            "class": 2.45,
+            "class": 2.46,
             "gear": null,
             "risk": null
           },
@@ -6533,7 +6529,7 @@
           "scores": {
             "form": 3.52,
             "pace": 3.14,
-            "class": 2.08,
+            "class": 2.15,
             "gear": null,
             "risk": null
           },
@@ -6545,7 +6541,7 @@
               "SE"
             ],
             "modelCoverageWeight": 75,
-            "partialRankScore": 60.2
+            "partialRankScore": 60.6
           },
           "coverage": {
             "form": true,
@@ -6719,7 +6715,7 @@
           "scores": {
             "form": 2.3,
             "pace": 2.07,
-            "class": 2.56,
+            "class": 2.6,
             "gear": null,
             "risk": null
           },
@@ -6731,7 +6727,7 @@
               "SE"
             ],
             "modelCoverageWeight": 75,
-            "partialRankScore": 45.9
+            "partialRankScore": 46.1
           },
           "coverage": {
             "form": true,
@@ -6746,7 +6742,7 @@
         {
           "number": 12,
           "name": "Goldie Home",
-          "scratched": false,
+          "scratched": true,
           "previousStarts": 5,
           "lastFive": [
             {
@@ -6813,29 +6809,27 @@
           "scores": {
             "form": 3.09,
             "pace": null,
-            "class": 2.86,
+            "class": null,
             "gear": null,
             "risk": null
           },
           "distanceOnlyScore": null,
           "evidence": {
-            "classStarts": 3,
+            "classStarts": 0,
             "paceStarts": 0,
-            "classCountries": [
-              "SE"
-            ],
-            "modelCoverageWeight": 50,
-            "partialRankScore": 60.0
+            "classCountries": [],
+            "modelCoverageWeight": 0,
+            "partialRankScore": null
           },
           "coverage": {
             "form": true,
             "risk": false,
             "pace": false,
-            "class": true,
+            "class": false,
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
+          "note": "Form från tidigare starter; spår/tempo och klass beräknas först när jämförbar historik räcker."
         }
       ]
     },
@@ -9201,5 +9195,5 @@
       ]
     }
   ],
-  "retrievedAt": "2026-10-29T14:33:31.677329+01:00"
+  "retrievedAt": "2026-10-29T23:55:16.829676+01:00"
 }
