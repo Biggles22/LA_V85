@@ -8,9 +8,9 @@ on:
       - "scripts/update_bjerke_form.py"
       - "tests/test_bjerke_form.py"
   schedule:
-    # Swedish winter time CET (UTC+1); 2026-10-31 start 15:00 CET.
-    - cron: "30 6,18 27-30 10 *"
-    - cron: "15 6-13 31 10 *"
+    # CET = UTC+1 on Bjerke race weekend; refresh hourly before off.
+    - cron: "39 16-22 30 10 *"
+    - cron: "39 6-13 31 10 *"
 permissions:
   contents: write
 concurrency:
@@ -25,21 +25,57 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run unit tests for historical form parsing
+      - name: Test verified historical form processing
         run: python -m unittest discover -s tests -p "test_bjerke_form.py"
-      - name: Fetch previous starts and calculate evidence-limited form scores
-        run: python scripts/update_bjerke_form.py
-      - name: Commit form evidence only if changed
+      - name: Refresh Bjerke historical form from latest market snapshot
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if test -f bjerke-form-20261031.json; then
-            git add bjerke-form-20261031.json
-            if ! git diff --cached --quiet; then
-              git commit -m "Update Bjerke verified historical form evidence [skip ci]"
-              git pull --rebase origin main
-              git push origin HEAD:main
-            fi
-          else
-            echo "Form file not generated; nothing to publish."
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/update_bjerke_form.py
+      - name: Safely publish updated form evidence only
+        run: |
+          if git diff --quiet -- bjerke-form-20261031.json; then
+            echo "No changed historical form."
+            exit 0
           fi
+          cp bjerke-form-20261031.json "$RUNNER_TEMP/form_candidate.json"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python - <<'PY'
+          import json,os,pathlib,shutil
+          file=pathlib.Path(os.environ["RUNNER_TEMP"])/"form_candidate.json"
+          new=json.loads(file.read_text(encoding="utf8"))
+          dest=pathlib.Path("bjerke-form-20261031.json")
+          old=json.loads(dest.read_text(encoding="utf8")) if dest.exists() else {}
+          if old.get("atgSourceAt") and new.get("atgSourceAt") and (
+              str(new["atgSourceAt"])<str(old["atgSourceAt"])
+          ):
+              print("Newer form source already on main; retain it.")
+              raise SystemExit(0)
+          if (old.get("coverage",{}).get("failedRaces",8)
+              <new.get("coverage",{}).get("failedRaces",8)
+              and old.get("atgSourceAt")==new.get("atgSourceAt")):
+              print("Current form has fewer missing races; retain it.")
+              raise SystemExit(0)
+          if old==new:
+              print("Form candidate already published.")
+              raise SystemExit(0)
+          shutil.copy2(file,dest)
+          PY
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add bjerke-form-20261031.json
+            if git diff --cached --quiet; then
+              echo "No safe form change needed."
+              exit 0
+            fi
+            git commit -m "Update Bjerke verified historical form evidence [skip ci]"
+            if git push origin HEAD:main; then
+              echo "Published updated Bjerke historical form."
+              exit 0
+            fi
+            echo "Concurrent main update; safely retry."
+          done
+          echo "Failed to publish updated form after three attempts."
+          exit 1
