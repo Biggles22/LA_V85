@@ -7,8 +7,10 @@ on:
       - ".github/workflows/bjerke-hourly.yml"
       - "scripts/update_bjerke.py"
   schedule:
-    # GitHub Actions uses UTC. Sweden is UTC+1 during this Bjerke week.
-    - cron: "0 6,18 * 10 *"
+    # GitHub uses UTC; Sweden is CET (UTC+1) on 30-31 October 2026.
+    # Hourly through the last Friday evening and Saturday before race start.
+    - cron: "23 16-22 30 10 *"
+    - cron: "13 6-13 31 10 *"
 permissions:
   contents: write
 concurrency:
@@ -17,20 +19,58 @@ concurrency:
 jobs:
   capture:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 7
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Fetch and validate 8 ATG races
-        run: python scripts/update_bjerke.py
-      - name: Commit changed ATG snapshot
+      - name: Fetch and validate eight Bjerke ATG races
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add bjerke-20261031.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Update Bjerke V85 ATG startlist and odds [skip ci]"
-            git push
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/update_bjerke.py
+      - name: Safely publish only a more recent market snapshot
+        run: |
+          if git diff --quiet -- bjerke-20261031.json; then
+            echo "No new ATG market data."
+            exit 0
           fi
+          cp bjerke-20261031.json "$RUNNER_TEMP/market_candidate.json"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python - <<'PY'
+          import json,os,pathlib,shutil
+          source=pathlib.Path(os.environ["RUNNER_TEMP"])/"market_candidate.json"
+          candidate=json.loads(source.read_text(encoding="utf8"))
+          target=pathlib.Path("bjerke-20261031.json")
+          current=json.loads(target.read_text(encoding="utf8")) if target.exists() else {}
+          # A newer source time (or newer contents at the same source time)
+          # must never be silently replaced by an older GitHub Action run.
+          if current.get("sourceAt") and candidate.get("sourceAt") and (
+              str(candidate["sourceAt"])<str(current["sourceAt"])
+          ):
+              print("Newer ATG market snapshot already on main; keep it.")
+              raise SystemExit(0)
+          if candidate==current:
+              print("Market candidate already published.")
+              raise SystemExit(0)
+          shutil.copy2(source,target)
+          PY
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add bjerke-20261031.json
+            if git diff --cached --quiet; then
+              echo "No safe market update needed."
+              exit 0
+            fi
+            git commit -m "Update Bjerke V85 ATG startlist and odds [skip ci]"
+            if git push origin HEAD:main; then
+              echo "Published Bjerke snapshot from ATG."
+              exit 0
+            fi
+            echo "Concurrent update of main; retry without touching other files."
+          done
+          echo "Could not safely publish after three attempts."
+          exit 1
