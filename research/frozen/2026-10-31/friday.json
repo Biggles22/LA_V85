@@ -1,0 +1,2159 @@
+{
+  "schemaVersion": 1,
+  "kind": "FROZEN_PROSPECTIVE_RESEARCH_NOT_BETTING_ADVICE",
+  "gameId": "V85_2026-10-31_78_5",
+  "date": "2026-10-31",
+  "slot": "friday",
+  "frozenAt": "2026-10-30T18:55:27.791475+01:00",
+  "marketSourceAt": "2026-10-30T18:26:15+01:00",
+  "marketObservedAt": "2026-10-30T18:55:27.791475+01:00",
+  "marketLagSeconds": 1753,
+  "marketSource": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-31_78_5",
+  "inputFileHashesSha256": {
+    "historicalStartsSha256": "0060f89560950b9d7e4ce6dbcd11c26e50bb1e204e9567f528e40222b3387953",
+    "historicalOpponentsSha256": "0abe5c7e1eafbda14445d302611d2fa824fb3a5d7f514230e162beb6d2e034a1",
+    "currentOpponentsSha256": "eaed349d585c9948cf246a207771ab941ec62ed439e6b8cd62d64bead156cba2",
+    "forecastCodeSha256": "2429769668d5ff3ff4a4aebe3058a58e1d633fe4110e5c71a693e81487ba7858"
+  },
+  "trainingRaces": 178,
+  "trainingStarts": 1931,
+  "dataProvenance": "Both XGBoost models were trained on historic starts strictly before 2026-10-31. All Bjerke inputs were obtained live BEFORE start; both share identical horse list and ATG source time.",
+  "statisticalWarning": "Percentages are within-race normalized UNCALIBRATED classifier scores, NOT estimated probabilities, spik odds, or predicted return.",
+  "researchDisclaimer": "No recommendation to bet based on these forecasts; model scores have underperformed ATG top-three ranking in historical comparison.",
+  "races": [
+    {
+      "leg": 1,
+      "raceId": "2026-10-31_78_5",
+      "runners": [
+        {
+          "number": 1,
+          "horse": "Jaguar Godiva",
+          "marketPct": 12.5,
+          "baseModelShare": 7.1365,
+          "previousOpponentsModelShare": 11.3463,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.6,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 2,
+          "horse": "Hickovelocissimo",
+          "marketPct": 2.98,
+          "baseModelShare": 9.9104,
+          "previousOpponentsModelShare": 8.7459,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 3,
+          "horse": "Great Old Dance",
+          "marketPct": 44.24,
+          "baseModelShare": 22.2052,
+          "previousOpponentsModelShare": 19.1434,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.8,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 4,
+          "horse": "J.C.",
+          "marketPct": 16.11,
+          "baseModelShare": 23.6351,
+          "previousOpponentsModelShare": 28.2232,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.8,
+            "win5": 2,
+            "top3_5": 5,
+            "days_off": 12,
+            "gallop5": null,
+            "km_median": 71.55,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 5,
+          "horse": "Leverage",
+          "marketPct": 9.79,
+          "baseModelShare": 14.9852,
+          "previousOpponentsModelShare": 14.5596,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.25,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 212,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 6,
+          "horse": "Jackson Trot",
+          "marketPct": 1.25,
+          "baseModelShare": 2.6623,
+          "previousOpponentsModelShare": 2.3432,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.25,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": 72.55,
+            "past_purse_log": 15.115
+          }
+        },
+        {
+          "number": 7,
+          "horse": "Hercules Godiva",
+          "marketPct": 0.48,
+          "baseModelShare": 6.6332,
+          "previousOpponentsModelShare": 4.1542,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 5,
+            "win5": 1,
+            "top3_5": 1,
+            "days_off": 29,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 8,
+          "horse": "Legligin",
+          "marketPct": 3.29,
+          "baseModelShare": 6.8656,
+          "previousOpponentsModelShare": 5.486,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.8,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 9,
+          "horse": "Tayno B.B.",
+          "marketPct": 0.21,
+          "baseModelShare": 2.0356,
+          "previousOpponentsModelShare": 1.9483,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": 72.6,
+            "past_purse_log": 14.907
+          }
+        },
+        {
+          "number": 10,
+          "horse": "Fly Express",
+          "marketPct": 7.99,
+          "baseModelShare": 3.9308,
+          "previousOpponentsModelShare": 4.0499,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.8,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 12,
+            "gallop5": null,
+            "km_median": 71.95,
+            "past_purse_log": null
+          }
+        }
+      ],
+      "baseTop3": [
+        4,
+        3,
+        5
+      ],
+      "opponentTop3": [
+        4,
+        3,
+        5
+      ],
+      "marketTop3": [
+        3,
+        4,
+        1
+      ],
+      "opponentDataCoverage": 10
+    },
+    {
+      "leg": 2,
+      "raceId": "2026-10-31_78_6",
+      "runners": [
+        {
+          "number": 1,
+          "horse": "Baias",
+          "marketPct": 1.9,
+          "baseModelShare": 7.6759,
+          "previousOpponentsModelShare": 10.8435,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.8,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 42,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.808
+          }
+        },
+        {
+          "number": 2,
+          "horse": "Gigant Tider",
+          "marketPct": 33.71,
+          "baseModelShare": 11.4746,
+          "previousOpponentsModelShare": 17.3227,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.8,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 16,
+            "gallop5": null,
+            "km_median": 82.2,
+            "past_purse_log": 14.422
+          }
+        },
+        {
+          "number": 3,
+          "horse": "Tordenskjold",
+          "marketPct": 5.42,
+          "baseModelShare": 10.1229,
+          "previousOpponentsModelShare": 8.2229,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.2,
+            "win5": 1,
+            "top3_5": 4,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": 81.55,
+            "past_purse_log": 15.387
+          }
+        },
+        {
+          "number": 4,
+          "horse": "Voje Lotta",
+          "marketPct": 15.83,
+          "baseModelShare": 21.8129,
+          "previousOpponentsModelShare": 20.4963,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 25,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.674
+          }
+        },
+        {
+          "number": 6,
+          "horse": "Grisle Tore G.L.",
+          "marketPct": 33.7,
+          "baseModelShare": 5.4744,
+          "previousOpponentsModelShare": 5.3048,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 14.981
+          }
+        },
+        {
+          "number": 7,
+          "horse": "Holter Odin",
+          "marketPct": 0.54,
+          "baseModelShare": 1.3925,
+          "previousOpponentsModelShare": 1.3271,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.25,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": 81.8,
+            "past_purse_log": 14.981
+          }
+        },
+        {
+          "number": 8,
+          "horse": "Tangen Nils",
+          "marketPct": 2.9,
+          "baseModelShare": 18.7198,
+          "previousOpponentsModelShare": 22.3869,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.6,
+            "win5": 3,
+            "top3_5": 5,
+            "days_off": 48,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 17.461
+          }
+        },
+        {
+          "number": 9,
+          "horse": "Prinsesse Ness Tjo",
+          "marketPct": 5.04,
+          "baseModelShare": 17.9372,
+          "previousOpponentsModelShare": 9.7059,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 35,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 10,
+          "horse": "Tripsson Ø.K.",
+          "marketPct": 0.17,
+          "baseModelShare": 1.4373,
+          "previousOpponentsModelShare": 1.1304,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": 82.95,
+            "past_purse_log": 14.827
+          }
+        },
+        {
+          "number": 11,
+          "horse": "Alm Kevin",
+          "marketPct": 0.18,
+          "baseModelShare": 3.9526,
+          "previousOpponentsModelShare": 3.2596,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 1609.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 5.75,
+            "win5": 0,
+            "top3_5": 0,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": 82.45,
+            "past_purse_log": 15.808
+          }
+        }
+      ],
+      "baseTop3": [
+        4,
+        8,
+        9
+      ],
+      "opponentTop3": [
+        8,
+        4,
+        2
+      ],
+      "marketTop3": [
+        2,
+        6,
+        4
+      ],
+      "opponentDataCoverage": 10
+    },
+    {
+      "leg": 3,
+      "raceId": "2026-10-31_78_7",
+      "runners": [
+        {
+          "number": 1,
+          "horse": "Lilli Kentucky S.F.",
+          "marketPct": 0.79,
+          "baseModelShare": 3.6982,
+          "previousOpponentsModelShare": 2.5084,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 23,
+            "gallop5": null,
+            "km_median": 76.3,
+            "past_purse_log": 14.316
+          }
+        },
+        {
+          "number": 2,
+          "horse": "Pauhunri Boko",
+          "marketPct": 33.62,
+          "baseModelShare": 10.3272,
+          "previousOpponentsModelShare": 6.5053,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.2,
+            "win5": 4,
+            "top3_5": 5,
+            "days_off": 66,
+            "gallop5": null,
+            "km_median": 76.1,
+            "past_purse_log": 14.316
+          }
+        },
+        {
+          "number": 3,
+          "horse": "Moor Jeting",
+          "marketPct": 5.86,
+          "baseModelShare": 7.7934,
+          "previousOpponentsModelShare": 10.9372,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.667,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 20,
+            "gallop5": 1.0,
+            "km_median": 75.3,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 4,
+          "horse": "Daisy Love",
+          "marketPct": 1.02,
+          "baseModelShare": 2.0266,
+          "previousOpponentsModelShare": 2.1345,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.8,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 8,
+            "gallop5": null,
+            "km_median": 75.4,
+            "past_purse_log": 14.316
+          }
+        },
+        {
+          "number": 5,
+          "horse": "Lapin Kulta Sox",
+          "marketPct": 4.33,
+          "baseModelShare": 4.3792,
+          "previousOpponentsModelShare": 5.7336,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": 75.55,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 6,
+          "horse": "Sauron Zon",
+          "marketPct": 34.31,
+          "baseModelShare": 2.5868,
+          "previousOpponentsModelShare": 3.2222,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.667,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 10,
+            "gallop5": 1.0,
+            "km_median": 75.4,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 7,
+          "horse": "S.B.'sPeakyBlinder",
+          "marketPct": 2.89,
+          "baseModelShare": 6.2043,
+          "previousOpponentsModelShare": 4.2165,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 13,
+            "gallop5": 1.0,
+            "km_median": 76.1,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 8,
+          "horse": "Surpriced Tooma",
+          "marketPct": 2.05,
+          "baseModelShare": 17.9197,
+          "previousOpponentsModelShare": 25.748,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 22,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 10,
+          "horse": "Chasse Artist",
+          "marketPct": 0.74,
+          "baseModelShare": 5.7316,
+          "previousOpponentsModelShare": 5.3525,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.25,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": 74.9,
+            "past_purse_log": 16.562
+          }
+        },
+        {
+          "number": 11,
+          "horse": "Urban Tile",
+          "marketPct": 13.06,
+          "baseModelShare": 21.3353,
+          "previousOpponentsModelShare": 22.7775,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.25,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 25,
+            "gallop5": null,
+            "km_median": 74.8,
+            "past_purse_log": 14.422
+          }
+        },
+        {
+          "number": 12,
+          "horse": "Gobsmacked",
+          "marketPct": 0.68,
+          "baseModelShare": 17.9977,
+          "previousOpponentsModelShare": 10.8645,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 33,
+            "gallop5": 1.0,
+            "km_median": 75.2,
+            "past_purse_log": null
+          }
+        }
+      ],
+      "baseTop3": [
+        11,
+        12,
+        8
+      ],
+      "opponentTop3": [
+        8,
+        11,
+        3
+      ],
+      "marketTop3": [
+        6,
+        2,
+        11
+      ],
+      "opponentDataCoverage": 11
+    },
+    {
+      "leg": 4,
+      "raceId": "2026-10-31_78_8",
+      "runners": [
+        {
+          "number": 1,
+          "horse": "Baron Tilly",
+          "marketPct": 18.3,
+          "baseModelShare": 7.8687,
+          "previousOpponentsModelShare": 8.9107,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 77,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 2,
+          "horse": "Daim Brodda",
+          "marketPct": 37.91,
+          "baseModelShare": 7.12,
+          "previousOpponentsModelShare": 7.6636,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 20,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 3,
+          "horse": "Before Takeoff",
+          "marketPct": 4.4,
+          "baseModelShare": 11.7242,
+          "previousOpponentsModelShare": 10.2701,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": 70.0,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 4,
+          "horse": "Xanthis Harvey",
+          "marketPct": 2.02,
+          "baseModelShare": 7.5111,
+          "previousOpponentsModelShare": 7.822,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 5,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 56,
+            "gallop5": null,
+            "km_median": 70.55,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 5,
+          "horse": "Charron",
+          "marketPct": 12.82,
+          "baseModelShare": 11.3686,
+          "previousOpponentsModelShare": 8.5393,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 5,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 21,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 16.947
+          }
+        },
+        {
+          "number": 7,
+          "horse": "Crown",
+          "marketPct": 0.62,
+          "baseModelShare": 9.3364,
+          "previousOpponentsModelShare": 8.3403,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 26,
+            "gallop5": null,
+            "km_median": 70.8,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 8,
+          "horse": "Clarissa",
+          "marketPct": 5.83,
+          "baseModelShare": 9.4597,
+          "previousOpponentsModelShare": 14.194,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 9,
+          "horse": "Lando Mearas",
+          "marketPct": 14.28,
+          "baseModelShare": 31.004,
+          "previousOpponentsModelShare": 30.158,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.4,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 29,
+            "gallop5": null,
+            "km_median": 69.75,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 10,
+          "horse": "Castor the Star",
+          "marketPct": 3.65,
+          "baseModelShare": 4.6074,
+          "previousOpponentsModelShare": 4.102,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.25,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 63,
+            "gallop5": null,
+            "km_median": 70.5,
+            "past_purse_log": null
+          }
+        }
+      ],
+      "baseTop3": [
+        9,
+        3,
+        5
+      ],
+      "opponentTop3": [
+        9,
+        8,
+        3
+      ],
+      "marketTop3": [
+        2,
+        1,
+        9
+      ],
+      "opponentDataCoverage": 9
+    },
+    {
+      "leg": 5,
+      "raceId": "2026-10-31_78_9",
+      "runners": [
+        {
+          "number": 1,
+          "horse": "Yellowstone Doc",
+          "marketPct": 1.66,
+          "baseModelShare": 11.0794,
+          "previousOpponentsModelShare": 7.1692,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1,
+            "win5": 3,
+            "top3_5": 3,
+            "days_off": 26,
+            "gallop5": null,
+            "km_median": 74.95,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 2,
+          "horse": "Peacekeeper",
+          "marketPct": 6.57,
+          "baseModelShare": 2.3278,
+          "previousOpponentsModelShare": 2.1803,
+          "hasOpponentEvidence": false,
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.2,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 8,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 14.561
+          }
+        },
+        {
+          "number": 3,
+          "horse": "Paleo Boko",
+          "marketPct": 28.94,
+          "baseModelShare": 4.0389,
+          "previousOpponentsModelShare": 5.7762,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.8,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 7,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 4,
+          "horse": "Orazi Cesare",
+          "marketPct": 28.4,
+          "baseModelShare": 5.7624,
+          "previousOpponentsModelShare": 7.6964,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 74.5,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 5,
+          "horse": "Fabulous Gent",
+          "marketPct": 2.74,
+          "baseModelShare": 5.8506,
+          "previousOpponentsModelShare": 7.6434,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.667,
+            "win5": 1,
+            "top3_5": 1,
+            "days_off": 21,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 6,
+          "horse": "Neil Jung",
+          "marketPct": 12.43,
+          "baseModelShare": 18.3078,
+          "previousOpponentsModelShare": 20.3403,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 87,
+            "gallop5": null,
+            "km_median": 73.7,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 7,
+          "horse": "Hans Palema",
+          "marketPct": 0.89,
+          "baseModelShare": 9.4707,
+          "previousOpponentsModelShare": 7.2612,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 16,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 8,
+          "horse": "Chantecler",
+          "marketPct": 1.14,
+          "baseModelShare": 2.1127,
+          "previousOpponentsModelShare": 2.1117,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.333,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 39,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 14.645
+          }
+        },
+        {
+          "number": 9,
+          "horse": "Mattex",
+          "marketPct": 0.98,
+          "baseModelShare": 4.7777,
+          "previousOpponentsModelShare": 4.3819,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.4,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.115
+          }
+        },
+        {
+          "number": 10,
+          "horse": "Livorno",
+          "marketPct": 9.46,
+          "baseModelShare": 5.8319,
+          "previousOpponentsModelShare": 5.5313,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.6,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 29,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 11,
+          "horse": "Eldfell",
+          "marketPct": 2.37,
+          "baseModelShare": 4.9566,
+          "previousOpponentsModelShare": 6.3016,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.667,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 12,
+          "horse": "Firedup",
+          "marketPct": 1.13,
+          "baseModelShare": 8.1603,
+          "previousOpponentsModelShare": 7.1721,
+          "hasOpponentEvidence": false,
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.037
+          }
+        },
+        {
+          "number": 13,
+          "horse": "Ready For Cash",
+          "marketPct": 2.42,
+          "baseModelShare": 5.911,
+          "previousOpponentsModelShare": 6.8212,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 13.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.6,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 140,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.52
+          }
+        },
+        {
+          "number": 14,
+          "horse": "Burn",
+          "marketPct": 0.21,
+          "baseModelShare": 6.5482,
+          "previousOpponentsModelShare": 5.5001,
+          "hasOpponentEvidence": false,
+          "prestartFeatures": {
+            "post": 14.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.4,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.338
+          }
+        },
+        {
+          "number": 15,
+          "horse": "Lippi",
+          "marketPct": 0.67,
+          "baseModelShare": 4.8639,
+          "previousOpponentsModelShare": 4.113,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 15.0,
+            "distance": 2600.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.75,
+            "win5": 3,
+            "top3_5": 3,
+            "days_off": 25,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 14.827
+          }
+        }
+      ],
+      "baseTop3": [
+        6,
+        1,
+        7
+      ],
+      "opponentTop3": [
+        6,
+        4,
+        5
+      ],
+      "marketTop3": [
+        3,
+        4,
+        6
+      ],
+      "opponentDataCoverage": 12
+    },
+    {
+      "leg": 6,
+      "raceId": "2026-10-31_78_10",
+      "runners": [
+        {
+          "number": 1,
+          "horse": "Mimosa to Martini",
+          "marketPct": 24.54,
+          "baseModelShare": 14.9865,
+          "previousOpponentsModelShare": 16.256,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 35,
+            "gallop5": null,
+            "km_median": 72.1,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 2,
+          "horse": "Stella Ammik",
+          "marketPct": 1.66,
+          "baseModelShare": 12.2161,
+          "previousOpponentsModelShare": 8.0235,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.4,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": 73.7,
+            "past_purse_log": 16.947
+          }
+        },
+        {
+          "number": 3,
+          "horse": "Peggy Boko",
+          "marketPct": 60.72,
+          "baseModelShare": 19.3499,
+          "previousOpponentsModelShare": 21.1511,
+          "hasOpponentEvidence": false,
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 20,
+            "gallop5": null,
+            "km_median": 71.8,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 4,
+          "horse": "Catchagaga Volo",
+          "marketPct": 1.54,
+          "baseModelShare": 12.6423,
+          "previousOpponentsModelShare": 7.5979,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.8,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": 73.3,
+            "past_purse_log": 16.031
+          }
+        },
+        {
+          "number": 5,
+          "horse": "Lipa Wee",
+          "marketPct": 6.19,
+          "baseModelShare": 10.7913,
+          "previousOpponentsModelShare": 10.9062,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.4,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 8,
+            "gallop5": 1.0,
+            "km_median": 73.3,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 6,
+          "horse": "G.G. Golden Power",
+          "marketPct": 0.69,
+          "baseModelShare": 7.8857,
+          "previousOpponentsModelShare": 6.8564,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.5,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.724
+          }
+        },
+        {
+          "number": 7,
+          "horse": "Rihanna T.G.",
+          "marketPct": 0.76,
+          "baseModelShare": 3.0811,
+          "previousOpponentsModelShare": 3.9415,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.75,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 14,
+            "gallop5": 1.0,
+            "km_median": 74.0,
+            "past_purse_log": 15.808
+          }
+        },
+        {
+          "number": 8,
+          "horse": "G.G. Gentil",
+          "marketPct": 0.4,
+          "baseModelShare": 2.1553,
+          "previousOpponentsModelShare": 1.5659,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": 74.1,
+            "past_purse_log": 15.743
+          }
+        },
+        {
+          "number": 9,
+          "horse": "Sherburne S.",
+          "marketPct": 2.16,
+          "baseModelShare": 10.4357,
+          "previousOpponentsModelShare": 14.0137,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": 73.05,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 10,
+          "horse": "Leonora by Hans",
+          "marketPct": 0.23,
+          "baseModelShare": 1.4426,
+          "previousOpponentsModelShare": 2.4422,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 8,
+            "gallop5": null,
+            "km_median": 73.9,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 11,
+          "horse": "Day Time Trot",
+          "marketPct": 0.84,
+          "baseModelShare": 5.0135,
+          "previousOpponentsModelShare": 7.2456,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2100.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 5.8,
+            "win5": 1,
+            "top3_5": 1,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": 73.6,
+            "past_purse_log": null
+          }
+        }
+      ],
+      "baseTop3": [
+        3,
+        1,
+        4
+      ],
+      "opponentTop3": [
+        3,
+        1,
+        9
+      ],
+      "marketTop3": [
+        3,
+        1,
+        5
+      ],
+      "opponentDataCoverage": 10
+    },
+    {
+      "leg": 7,
+      "raceId": "2026-10-31_78_11",
+      "runners": [
+        {
+          "number": 1,
+          "horse": "Goodbye Kiss",
+          "marketPct": 2.44,
+          "baseModelShare": 14.0022,
+          "previousOpponentsModelShare": 9.091,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 15,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 2,
+          "horse": "Blank",
+          "marketPct": 20.28,
+          "baseModelShare": 6.5187,
+          "previousOpponentsModelShare": 8.6597,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.333,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 30,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 3,
+          "horse": "Blizzard Diamant",
+          "marketPct": 61.05,
+          "baseModelShare": 28.9173,
+          "previousOpponentsModelShare": 29.8347,
+          "hasOpponentEvidence": false,
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.2,
+            "win5": 4,
+            "top3_5": 5,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 4,
+          "horse": "Variegated",
+          "marketPct": 1.71,
+          "baseModelShare": 7.549,
+          "previousOpponentsModelShare": 8.8943,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 30,
+            "gallop5": null,
+            "km_median": 71.45,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 5,
+          "horse": "Muzan Kibutsuji",
+          "marketPct": 1.31,
+          "baseModelShare": 8.5652,
+          "previousOpponentsModelShare": 9.3646,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.75,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 29,
+            "gallop5": null,
+            "km_median": 72.05,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 6,
+          "horse": "Bully Pepper",
+          "marketPct": 0.62,
+          "baseModelShare": 10.4289,
+          "previousOpponentsModelShare": 7.7357,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.6,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.338
+          }
+        },
+        {
+          "number": 7,
+          "horse": "Giotto Grif",
+          "marketPct": 2.28,
+          "baseModelShare": 7.1237,
+          "previousOpponentsModelShare": 5.8918,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 30,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 8,
+          "horse": "Wise Guy",
+          "marketPct": 9.8,
+          "baseModelShare": 10.556,
+          "previousOpponentsModelShare": 15.6023,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 55,
+            "gallop5": null,
+            "km_median": 71.3,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 10,
+          "horse": "Onyx B.R.",
+          "marketPct": 0.35,
+          "baseModelShare": 6.339,
+          "previousOpponentsModelShare": 4.9259,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 1609.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.8,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.031
+          }
+        }
+      ],
+      "baseTop3": [
+        3,
+        1,
+        8
+      ],
+      "opponentTop3": [
+        3,
+        8,
+        5
+      ],
+      "marketTop3": [
+        3,
+        2,
+        8
+      ],
+      "opponentDataCoverage": 8
+    },
+    {
+      "leg": 8,
+      "raceId": "2026-10-31_78_12",
+      "runners": [
+        {
+          "number": 1,
+          "horse": "Eye to Eye",
+          "marketPct": 3.52,
+          "baseModelShare": 13.0891,
+          "previousOpponentsModelShare": 16.5714,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 2,
+          "horse": "Sanctuaire",
+          "marketPct": 8.49,
+          "baseModelShare": 4.6029,
+          "previousOpponentsModelShare": 4.4682,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.175
+          }
+        },
+        {
+          "number": 3,
+          "horse": "Raina Schermer",
+          "marketPct": 1.49,
+          "baseModelShare": 3.9604,
+          "previousOpponentsModelShare": 3.708,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 4,
+          "horse": "Kollund Møbler",
+          "marketPct": 0.7,
+          "baseModelShare": 3.8768,
+          "previousOpponentsModelShare": 4.3253,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.333,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 43,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 5,
+          "horse": "Luxury Rain",
+          "marketPct": 19.71,
+          "baseModelShare": 5.3856,
+          "previousOpponentsModelShare": 4.1037,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 32,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 6,
+          "horse": "Mellby Maybe",
+          "marketPct": 1.23,
+          "baseModelShare": 8.8684,
+          "previousOpponentsModelShare": 8.8751,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.8,
+            "win5": 0,
+            "top3_5": 4,
+            "days_off": 30,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 7,
+          "horse": "Jealous Rain",
+          "marketPct": 1.02,
+          "baseModelShare": 11.0146,
+          "previousOpponentsModelShare": 5.3051,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 14,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 14.827
+          }
+        },
+        {
+          "number": 8,
+          "horse": "Good Guessing",
+          "marketPct": 5.0,
+          "baseModelShare": 3.1912,
+          "previousOpponentsModelShare": 2.6244,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.2,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 9,
+          "horse": "Normaal",
+          "marketPct": 0.36,
+          "baseModelShare": 6.8185,
+          "previousOpponentsModelShare": 8.0179,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.6,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.338
+          }
+        },
+        {
+          "number": 10,
+          "horse": "Hankypanky Leonie",
+          "marketPct": 47.75,
+          "baseModelShare": 12.9073,
+          "previousOpponentsModelShare": 14.0629,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 17,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 11,
+          "horse": "Zero Hugs'n Kisses",
+          "marketPct": 0.63,
+          "baseModelShare": 4.6345,
+          "previousOpponentsModelShare": 3.7881,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.6,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.338
+          }
+        },
+        {
+          "number": 13,
+          "horse": "Sparkling Power",
+          "marketPct": 4.52,
+          "baseModelShare": 4.398,
+          "previousOpponentsModelShare": 6.642,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 13.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.4,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 14,
+          "horse": "Gaga Lady",
+          "marketPct": 1.33,
+          "baseModelShare": 14.8698,
+          "previousOpponentsModelShare": 14.7785,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 14.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 35,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        },
+        {
+          "number": 15,
+          "horse": "Bella Yankee",
+          "marketPct": 3.23,
+          "baseModelShare": 2.3828,
+          "previousOpponentsModelShare": 2.7292,
+          "hasOpponentEvidence": true,
+          "prestartFeatures": {
+            "post": 15.0,
+            "distance": 2600.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.4,
+            "win5": 1,
+            "top3_5": 4,
+            "days_off": 7,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          }
+        }
+      ],
+      "baseTop3": [
+        14,
+        1,
+        10
+      ],
+      "opponentTop3": [
+        1,
+        14,
+        10
+      ],
+      "marketTop3": [
+        10,
+        5,
+        2
+      ],
+      "opponentDataCoverage": 14
+    }
+  ]
+}
