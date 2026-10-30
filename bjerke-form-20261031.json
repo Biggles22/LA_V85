@@ -3,7 +3,7 @@
   "gameId": "V85_2026-10-31_78_5",
   "track": "Bjerke",
   "raceDate": "2026-10-31",
-  "atgSourceAt": "2026-10-30 12:56:15",
+  "atgSourceAt": "2026-10-30 18:56:15",
   "method": "Backward-only performance, pace/draw proxy, and past purse-tier class proxy; NOT a calibrated win probability.",
   "limitations": "Pace approximates pace suitability using recorded km times and the current draw (NOT verified lead probability). Class compares previous first prizes ONLY within the same country and field, with past finishing performance. Not a calibrated prediction. Gear and many risks remain unknown. Scores never use odds or V85 betting percentages.",
   "coverage": {
@@ -9195,5 +9195,5 @@
       ]
     }
   ],
-  "retrievedAt": "2026-10-30T14:23:53.856220+01:00"
+  "retrievedAt": "2026-10-30T19:16:16.380112+01:00"
 }
