@@ -20,7 +20,9 @@ on:
   schedule:
     # Sweden CET UTC+1 at Bjerke 2026-10-31. Github schedules are best-effort.
     - cron: "0 17 30 10 *"  # Fri Oct 30 18:00 Swedish time
+    - cron: "13 18 30 10 *" # Fri backup Oct 30 19:13 Swedish time
     - cron: "15 13 31 10 *" # Sat Oct 31 14:15 Swedish time
+    - cron: "31 13 31 10 *" # Sat backup Oct 31 14:31 Swedish time
 permissions:
   contents: write
 concurrency:
@@ -61,8 +63,8 @@ jobs:
             fi
           else
             case "$GITHUB_EVENT_SCHEDULE" in
-              "0 17 30 10 *") SLOT=friday;;
-              "15 13 31 10 *") SLOT=saturday;;
+              "0 17 30 10 *"|"13 18 30 10 *") SLOT=friday;;
+              "15 13 31 10 *"|"31 13 31 10 *") SLOT=saturday;;
               *) SLOT=preview;;
             esac
           fi
