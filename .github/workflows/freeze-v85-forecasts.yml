@@ -47,6 +47,18 @@ jobs:
         run: |
           if test "$GITHUB_EVENT_NAME" = "workflow_dispatch"; then
             SLOT="${MANUAL_SLOT:-preview}"
+          elif test "$GITHUB_EVENT_NAME" = "push"; then
+            # Recovery path if GitHub's best-effort cron was delayed/missed.
+            # Use actual Swedish clock time, never backdate a forecast.
+            LOCAL_DAY=$(TZ=Europe/Stockholm date +%Y-%m-%d)
+            LOCAL_CLOCK=$(TZ=Europe/Stockholm date +%H%M)
+            if test "$LOCAL_DAY" = "2026-10-30" && [ "$LOCAL_CLOCK" -ge 1800 ]; then
+              SLOT=friday
+            elif test "$LOCAL_DAY" = "2026-10-31" && [ "$LOCAL_CLOCK" -ge 1415 ] && [ "$LOCAL_CLOCK" -lt 1500 ]; then
+              SLOT=saturday
+            else
+              SLOT=preview
+            fi
           else
             case "$GITHUB_EVENT_SCHEDULE" in
               "0 17 30 10 *") SLOT=friday;;
@@ -54,6 +66,7 @@ jobs:
               *) SLOT=preview;;
             esac
           fi
+          echo "Selected prospective slot: $SLOT; Swedish time: $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M:%S %Z')"
           echo "SLOT=$SLOT" >> "$GITHUB_ENV"
           python scripts/freeze_v85_forecasts.py --slot "$SLOT"
       - name: Publish one immutable result per slot on latest main
