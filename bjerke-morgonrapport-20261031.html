@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LA_V85 | Morgonrapport Bjerke 31 oktober 2026</title>
+<meta name="description" content="Bjerke V85 morgonrapport med senaste ATG-snapshot, historisk form, experimentell AI-ranking, spikar och skrällsignaler.">
+<style>
+:root{color-scheme:dark;--bg:#101c2b;--panel:#1a2a3b;--line:#31465b;--text:#f0f4fa;--muted:#bdcbd8;--gold:#ffd88b;--accent:#8ad4fc}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:1240px;margin:auto;padding:22px 16px 65px}
+a{color:var(--accent)}h1{font-size:clamp(1.7rem,4vw,2.5rem);margin:.2em 0}h2{font-size:1.45rem;margin:.2em 0 12px}h3{margin:8px 0}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.09em;text-transform:uppercase;font-size:.83rem}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:20px}nav a{color:white;text-decoration:none;border-bottom:1px solid var(--accent);padding:4px 0}
+section{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin:17px 0}p{margin:8px 0 12px}.muted,small{color:var(--muted)}.notice{border-left:4px solid var(--gold);padding:10px 13px;background:#293348}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}.grid>div{border:1px solid var(--line);padding:12px;border-radius:9px}
+table{width:100%;border-collapse:collapse;font-size:.89rem;white-space:nowrap}th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child,th:nth-child(2),td:nth-child(2),th:last-child,td:last-child{text-align:left}
+th{color:#e5f3ff;background:#243a50;position:sticky;top:0}tr:nth-child(even){background:#203144}.scroll{overflow-x:auto}.strike{opacity:.5;text-decoration:line-through}.top{color:var(--gold);font-weight:700}.racesummary{margin-bottom:14px}.error{color:#ffc4c4}
+</style>
+</head>
+<body><main>
+<nav><a href="./">← Aktuell omgång</a><a href="./index.html#tvastegsmodell">AI-testmodell</a><a href="./history/">Historik</a><a href="https://www.atg.se/spel/2026-10-31/V85/bjerke" target="_blank" rel="noopener">ATG:s V85</a></nav>
+<p class="eyebrow">Bjerke · Lördag 31 oktober 2026 · Start 15.00</p>
+<h1>Morgonrapport: hela V85-fältet</h1>
+<p>Denna sida läser de senaste publicerade ATG- och formfilerna från LA_V85 när den öppnas. AI-kolumnen är däremot den <strong>oföränderliga fredagsprognosen</strong>, så att en prognos inte i efterhand kan anpassas till marknaden.</p>
+<div class="notice"><strong>Viktigt:</strong> AI-poängen är normaliserade forskningspoäng, inte kalibrerade vinstchanser. Spik- och skrällistorna är automatiska <strong>marknadssignaler</strong>, inte färdiga spelrekommendationer. Historisk testning har inte visat att AI-modellen slår ATG-marknaden.</div>
+<section><h2>Datastatus</h2><div id="status">Läser de senaste filerna …</div></section>
+<section><h2>Marknadens spikar och skrällsignaler</h2><div id="candidates">Läser rekommendationer …</div></section>
+<section><h2>Ranking och motbud – alla åtta avdelningar</h2>
+<p class="muted">AI-rank = rang efter fryst modell med tidigare motstånd. Marknadens favorit och modellens två främsta alternativ anges separat. Form/klass/tempo/risk är poäng 0–5 endast där underlag finns. Trend anges i procentenheter. Alla aktiva hästar visas.</p>
+<div id="races">Läser startlistor …</div></section>
+<p class="muted">Källor: <a href="./bjerke-20261031.json">ATG-marknadsfil</a>, <a href="./bjerke-form-20261031.json">historisk form</a>, <a href="./research/frozen/2026-10-31/friday.json">fryst AI-prognos fredag</a>. Vid motstridiga uppgifter eller strykningar gäller alltid senaste officiella ATG-informationen.</p>
+</main>
+<script>
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);
+const esc=x=>String(x==null?'':x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+const num=(x,d=1)=>typeof x==='number'&&Number.isFinite(x)?x.toLocaleString('sv-SE',{minimumFractionDigits:d,maximumFractionDigits:d}):'–';
+const label=x=>x?esc(x.number+' '+x.name):'–';
+const fetchJson=async path=>{const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error(path+' gav HTTP '+r.status);return r.json()};
+Promise.all([fetchJson('./bjerke-20261031.json'),fetchJson('./bjerke-form-20261031.json'),fetchJson('./research/frozen/2026-10-31/friday.json')]).then(([market,form,frozen])=>{
+if(market.gameId!=='V85_2026-10-31_78_5'||form.gameId!==market.gameId||frozen.gameId!==market.gameId)throw Error('Fel omgång i datakällorna');
+const cov=form.coverage||{};
+const warn=form.atgSourceAt!==market.sourceAt?'<p class="notice">Formfilens ATG-tid skiljer sig från marknadsfilen. Kontrollera särskilt nytillkomna strykningar.</p>':'';
+$('status').innerHTML='<div class="grid"><div><strong>ATG-marknad</strong><p>'+esc(market.sourceAt)+' svensk tid</p><p>Omsättning: '+num(market.turnoverSEK,0)+' kr · '+num(market.systemCount,0)+' system</p></div>'+
+'<div><strong>Historisk form</strong><p>ATG-tid: '+esc(form.atgSourceAt)+'</p><p>Form '+num(cov.formRated,0)+'/'+num(cov.activeHorses,0)+' · Klass '+num(cov.classRated,0)+' · Tempo '+num(cov.paceRated,0)+' · Risk '+num(cov.riskRated,0)+'</p></div>'+
+'<div><strong>Fryst AI-jämförelse</strong><p>'+esc(frozen.frozenAt)+'</p><p>'+num(frozen.trainingRaces,0)+' träningslopp · ej kalibrerad modell</p></div></div>'+warn;
+const rec=market.recommendations||{};
+const cards=(arr)=>arr.map(x=>'<div><strong>V85-'+x.leg+' · '+esc(x.number+' '+x.name)+'</strong><p>'+num(x.pct,2)+' % streck · trend '+(x.trend>=0?'+':'')+num(x.trend,2)+' p.e. · odds '+num(x.odds,2)+'</p><small>'+esc(x.level)+'</small></div>').join('');
+$('candidates').innerHTML='<h3>Spiksignaler från marknaden</h3><div class="grid">'+cards(rec.spikes||[])+'</div><h3>Skrällsignaler från marknaden</h3><div class="grid">'+cards(rec.outsiders||[])+'</div>';
+const all=market.races.map(r=>{
+const fr=frozen.races.find(x=>x.leg===r.leg),fm=form.races.find(x=>x.leg===r.leg);
+if(!fr||!fm)return '<p class="error">Saknar data för V85-'+r.leg+'</p>';
+const active=r.starts.filter(x=>!x.scratched);
+const favorite=[...active].sort((a,b)=>b.pct-a.pct)[0];
+const mapFrozen=new Map(fr.runners.map(x=>[x.number,x]));
+const mapForm=new Map(fm.horses.map(x=>[x.number,x]));
+const sorted=[...active].sort((a,b)=>(mapFrozen.get(b.number)?.previousOpponentsModelShare??-1)-(mapFrozen.get(a.number)?.previousOpponentsModelShare??-1));
+const challengers=sorted.filter(x=>x.number!==favorite.number).slice(0,2);
+const ranked=sorted.concat(r.starts.filter(x=>x.scratched));
+const body=ranked.map((h,i)=>{
+const ai=mapFrozen.get(h.number),ff=mapForm.get(h.number),s=ff?.scores||{};
+const rank=h.scratched?'–':String(sorted.findIndex(x=>x.number===h.number)+1);
+return '<tr class="'+(h.scratched?'strike':i<3?'top':'')+'"><td>'+rank+'</td><td>'+esc(h.number+' '+h.name)+(h.scratched?' (struken)':'')+'</td><td>'+num(h.pct,2)+'</td><td>'+(h.trend>=0?'+':'')+num(h.trend,2)+'</td><td>'+num(h.odds,2)+'</td><td>'+num(ai?.previousOpponentsModelShare,1)+'</td><td>'+num(s.form,1)+'</td><td>'+num(s.class,1)+'</td><td>'+num(s.pace,1)+'</td><td>'+num(s.risk,1)+'</td><td>'+esc(h.driver||'–')+' / '+esc(h.trainer||'–')+'</td></tr>';
+}).join('');
+return '<section><h2>V85-'+r.leg+' · lopp '+r.raceNumber+'</h2><p class="racesummary"><strong>Marknadsfavorit:</strong> '+label(favorite)+' ('+num(favorite.pct,1)+' %). <strong>AI-modellens två främsta motbud:</strong> '+challengers.map(label).join(' och ')+'. <strong>AI-topp 3:</strong> '+sorted.slice(0,3).map(label).join(', ')+'.</p><div class="scroll"><table><thead><tr><th>AI-rank</th><th>Häst</th><th>V85 %</th><th>Trend</th><th>Odds</th><th>AI-poäng</th><th>Form</th><th>Klass</th><th>Tempo</th><th>Risk</th><th>Kusk / tränare</th></tr></thead><tbody>'+body+'</tbody></table></div></section>';
+}).join('');
+$('races').innerHTML=all;
+}).catch(e=>{const msg='<p class="error">Kunde inte läsa en eller flera källfiler: '+esc(e.message)+'. Öppna ATG eller försök igen.</p>';$('status').innerHTML=msg;$('candidates').innerHTML=msg;$('races').innerHTML=msg});
+})();
+</script>
+</body></html>
