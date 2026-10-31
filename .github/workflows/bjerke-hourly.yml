@@ -1,4 +1,5 @@
 name: Bjerke V85 startlist and market snapshot
+# 2026-10-31 morning final refresh trigger; schedule and logic unchanged.
 on:
   workflow_dispatch:
   push:
