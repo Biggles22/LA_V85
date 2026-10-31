@@ -1,4 +1,5 @@
 name: Bjerke V85 - verified historical form
+# 2026-10-31 morning final form refresh trigger; logic unchanged.
 on:
   workflow_dispatch:
   push:
