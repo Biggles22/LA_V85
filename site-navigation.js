@@ -17,6 +17,7 @@
       <div class="site-primary-nav">
         <a href="${root.href}" ${onCurrent ? 'aria-current="page"' : ''}>Aktuell omgång <small>Bjerke · 31 okt</small></a>
         <a href="${url('index.html#tvastegsmodell')}">AI-testmodell <small>Ranking &amp; spelvärde</small></a>
+        <a href="${url('bjerke-morgonrapport-20261031.html')}">Morgonrapport <small>Alla 8 avdelningar</small></a>
         <a href="${url('history/')}" ${onHistory ? 'aria-current="page"' : ''}>Historik <small>Omgångar &amp; analyser</small></a>
       </div>
     </nav>`;
