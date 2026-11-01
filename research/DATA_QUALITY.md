@@ -2,6 +2,8 @@
 
 Historiska råsvar saknas i den äldre databasen. Aggregerade galoppvärden kan därför inte repareras säkert i efterhand. ATG-åtkomst behövs för att hämta om de ursprungliga loppen. Tidigare databas, modellrapporter och frysta prognoser bevaras oförändrade som historisk dokumentation.
 
+**Alternativ datakälla hittad:** ett redan publicerat GitHub-arkiv ger en separat resultatbas med 1 050 svenska travlopp och 11 220 aktiva starter. Det innehåller inte de 147 spärrade V85-loppen och ersätter inte denna databas. Se [källor, kontroller och begränsningar](ALTERNATIVE_DATA.md).
+
 ## Vad som är rättat
 
 - `galloped: true` och `galloped: false` är de enda godkända galoppobservationerna. Saknade värden och okända koder förblir okända. Diskvalifikation är en separat uppgift; `disqualified: false` betyder inte galoppfri start. En bekräftad diskvalifikation räknas inte som en tidigare seger.

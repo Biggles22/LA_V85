@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-01",
+  "status": "result_archive_only_not_model_ready",
+  "sources": {
+    "archive": {
+      "url": "https://codeload.github.com/lbondarenko/travmodel/tar.gz/de68577d26a3384e0e16d38bbe650297cc586c77",
+      "commit": "de68577d26a3384e0e16d38bbe650297cc586c77",
+      "sha256": "ebd6a48830ac51b5bd4c26895d89bea68fe21df5fd7c9fe47187b7b068c1dfce"
+    },
+    "sample_game": {
+      "url": "https://raw.githubusercontent.com/jojo-swe/trav-mvp/b937891915b985a48152cbe74ceb9f4c6ec3d47d/data/game_V85_2025-10-25.json",
+      "commit": "b937891915b985a48152cbe74ceb9f4c6ec3d47d",
+      "sha256": "ea82b4e56c504f9b1e41c85ac5f9c25281a725da1430818308e9ec521d3caa07"
+    },
+    "csv": {
+      "url": "https://raw.githubusercontent.com/jojo-swe/trav-mvp/b937891915b985a48152cbe74ceb9f4c6ec3d47d/data/atg_starters.csv",
+      "commit": "b937891915b985a48152cbe74ceb9f4c6ec3d47d",
+      "sha256": "acab0a86b9a01549f118429780fb633567b184bb0706b05e4bb7a0c4388f6c92"
+    }
+  },
+  "qualitySourceSha256": "341dab4420d31c658f944d62ade5f0ed8603e89f0139e3961da5aac8fcd78ba2",
+  "games": 264,
+  "gameTypes": {
+    "GS75": 28,
+    "V64": 111,
+    "V65": 116,
+    "V86": 8,
+    "V85": 1
+  },
+  "rawRaces": 1630,
+  "eligibleRaces": 1050,
+  "eligibleStarts": 11220,
+  "eligibleRaceTypes": {
+    "GS75": 180,
+    "V64": 622,
+    "V65": 176,
+    "V86": 64,
+    "V85": 8
+  },
+  "dateRange": [
+    "2025-10-25",
+    "2026-07-22"
+  ],
+  "quarantinedV85Races": 147,
+  "rawOverlapWithQuarantine": [],
+  "exclusionReasons": {
+    "other_sport_or_country": 566,
+    "winner_not_unique": 6,
+    "field_size": 7,
+    "unknown_result": 1
+  },
+  "gallopObservations": {
+    "unknown": 8956,
+    "true": 2264
+  },
+  "csv": {
+    "rows": 68156,
+    "races": 7079,
+    "dateRange": [
+      "2025-10-10",
+      "2026-10-07"
+    ],
+    "overlapWithQuarantine": 124,
+    "comparedRawRaces": 1049,
+    "incompleteFields": 609,
+    "missingStarters": 940,
+    "identityOrWinnerConflicts": 0
+  },
+  "ledgerSha256": "2d6a671ce1c378cf3808dd576e19e4443a1e8e6cd1449040b09b1d4efe4ecb64",
+  "limitations": [
+    "Third-party published archives; no direct ATG revalidation was possible.",
+    "Only eight eligible races belong to V85; other pools require separate evaluation.",
+    "Missing gallop flags remain unknown, never false.",
+    "No archived prestart market observations or full per-horse extended history.",
+    "Rebuild rolling features from strictly earlier dates; mutable career aggregates were omitted.",
+    "CSV has incomplete fields and is excluded from the result ledger.",
+    "Raw datasets are stored locally; redistribution licensing has not been established."
+  ]
+}
