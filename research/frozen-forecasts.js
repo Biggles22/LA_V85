@@ -23,7 +23,7 @@
   }
   function status(name,display,doc,result){
     if(!doc){
-      return "<p class=\"muted\"><strong>"+esc(display)+":</strong> Ingen verifierad förhandsfil publicerad ännu. Prognosen får inte skapas efter start.</p>";
+      return "<p class=\"muted\"><strong>"+esc(display)+":</strong> Förhandsfil saknas i arkivet. Den får inte återskapas eller backdateras efter start.</p>";
     }
     if(doc.kind!=="FROZEN_PROSPECTIVE_RESEARCH_NOT_BETTING_ADVICE"||doc.races?.length!==8){
       return "<p class=\"notice\">Felaktigt prognosformat för "+esc(name)+"; visas inte.</p>";
@@ -44,7 +44,10 @@
     }
     return html;
   }
-  Promise.all([...slots.map(([key])=>read(path+key+".json")),read(path+"evaluation.json")])
+  read(path+"manifest.json").then(manifest=>{
+    if(!manifest)throw Error("Archive manifest missing");
+    return Promise.all([...slots.map(([key])=>manifest.slots?.[key]?read(path+manifest.slots[key]):null),manifest.evaluation?read(path+manifest.evaluation):null]);
+  })
     .then(files=>{
       const final=files[3];
       let html="<h2>Frysta förhandsprognoser inför Bjerke den 31 oktober</h2>"+
@@ -54,7 +57,7 @@
       if(final){
         html+="<p class=\"muted\">Facit hämtat från verifierade ATG-resultat efter start: <a href=\""+path+"evaluation.json\">Läs söndagens utvärdering</a>. En enda V85-omgång räcker inte för att bevisa träffsäkerhet eller spelvärde.</p>";
       }else{
-        html+="<p class=\"muted\">Söndagens facit skapas först när alla åtta ATG-resultat finns. Saknade prognoser backdateras inte.</p>";
+        html+="<p class=\"muted\">Automatisk resultatfil saknas i arkivet. <a href=\"../archive/2026-10-31-bjerke/\">Läs den publicerade efteranalysen av Bjerke</a>. Saknade prognoser backdateras inte.</p>";
       }
       node.innerHTML=html;
     }).catch(()=>{

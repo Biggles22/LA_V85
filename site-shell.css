@@ -16,6 +16,7 @@ body { background: var(--site-bg) !important; }
 
 .sidebar.site-header,
 .sidebar {
+  box-sizing: border-box;
   position: sticky;
   top: 0;
   z-index: 50;
@@ -35,6 +36,11 @@ body { background: var(--site-bg) !important; }
 .site-header .brand {
   flex: 0 0 auto;
   color: var(--site-navy);
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font: 800 19px/1.2 system-ui, sans-serif;
+  text-decoration: none;
 }
 
 .site-header nav {
@@ -73,6 +79,14 @@ body { background: var(--site-bg) !important; }
 
 .site-header .brand-mark {
   box-shadow: 0 7px 18px rgba(0,87,184,.18);
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: #075dbd;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
 }
 
 .site-primary-nav small {
@@ -184,12 +198,15 @@ body { background: var(--site-bg) !important; }
   }
 
   .site-primary-nav {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    gap: 2px;
   }
 
   .site-primary-nav a {
     white-space: nowrap;
-    padding-inline: 11px;
+    padding-inline: 8px;
+    font-size: 12px;
   }
 
   .site-primary-nav small {

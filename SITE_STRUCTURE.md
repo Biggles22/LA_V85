@@ -1,59 +1,60 @@
-# LA_V85 – webbstruktur
+# LA_V85 – sidor och arbetsflöde
 
-## Grundprincip
+## Aktuell omgång
 
-Webbplatsen har två huvudnivåer:
+`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Aktuell arbetsyta är Bergsåker 7 november 2026. Tävlingsdag och bana kommer från uppdraget; startlista, spelstopp och förslag inväntar verifierat ATG-underlag.
 
-1. **Aktuell omgång** – veckans enda aktiva arbetsyta.
-2. **Historik** – en master som leder till avslutade omgångar.
+Huvudmenyn har tre delar: **Lördagens V85**, **Historik**, **Metod & resultat**. Startsidan har ankarlänkar till **Skrällförslag**, **Spikförslag**, **Lopp för lopp** och **Mitt urval**. En avdelning visas åt gången med sökning, sortering och hästkort i mobilvy.
 
-En avslutad omgång har i sin tur två tydliga faser:
+- `index.html`, `v85.css`, `v85.js`: den gemensamma arbetsytan.
+- `v85-domain.js`: omgångsvalidering, granskade förslag, urval, radberäkning och förhandsfrysning.
+- `rounds/<omgång>/data.json`: verifierad marknadssnapshot eller uttrycklig status `awaiting_data`.
+- `rounds/<omgång>/analysis.json`: granskade förslag; samma gameId och snapshotId som datakällan krävs.
+- `metod/`: definitioner, kriterier för förslag och jämförelse av publicerade historiska tester.
+- `research/`: fördjupade experiment, modeller och frysta forskningsprognoser.
+- `history/`: gemensam ingång till avslutade omgångar.
 
-- **Förhandsarkiv** – det material och de val som fanns före start.
-- **Efteranalys** – resultat, utvärdering och lärdomar.
+## Verifierat underlag och förslag
 
-Förhandsmaterial ska aldrig skrivas om med facit i hand. Efter start arkiveras sidan och länkas från historikmastern.
+Kör `python3 scripts/update_current_round.py` från projektroten. Skriptet upptäcker V85-ID från ATG:s kalender och verifierar datum, bana, åtta lopp, hästidentiteter, starttid och källtid. Saknade uppgifter gissas inte. Nätverksfel, felaktig data, äldre snapshots eller passerad start lämnar tidigare data oförändrad. TLS-verifiering och den konfigurerade proxyn ska användas.
 
-## Nuvarande sidor
+Inga förslag genereras enbart från låg streckandel eller hög marknadsrank. När underlaget har granskats anges `gameId`, `snapshotId`, `reviewedAt` och `version` i analysis.json. Varje post i `picks` ska innehålla:
 
-| Nivå | Sida | Syfte |
-| --- | --- | --- |
-| Aktuell | `/` | Bjerke 31 oktober, startlista och arbetsyta |
-| Master | `/history/` | Samlad ingång till alla avslutade omgångar |
-| Omgång | `/archive/2026-10-24-jagersro/` | Jägersros förhandsmaterial och efteranalys |
-| Omgång | `/archive/2026-10-17-gavle/` | Gävles frysta förhandsmaterial |
-| Analys | `/archive/2026-10-17-gavle/analys/` | Gävles efteranalys |
-| Omgång | `/archive/2026-10-10-solvalla/` | Solvallas frysta förhandsmaterial |
-| Analys | `/resultatanalys/` | Solvallas efteranalys |
-| Omgång | `/archive/2026-10-03-boden/` | Bodens förhandsmaterial och analyssektioner |
+- `type`: `outsider` eller `spike`.
+- `leg`, `number`, `name`: exakt häst i rätt avdelning.
+- `reason`, `risk`, `sources`: konkret motivering, risk och minst en HTTPS-källa.
+- `challengers`: minst två granskade, aktiva motbuds namn för spikförslag (samtliga om färre än två finns).
 
-## Navigationsregler
+En ny marknadssnapshot kräver förnyad kontroll av förslagen. Strukna hästar visas aldrig som aktiva förslag. Saknad analys blockerar inte läsning av verifierade startlistor.
 
-- Huvudmenyn visar bara **Aktuell omgång** och **Historik**.
-- Arkivsidor visar dessutom en lokal omgångsrad med bana, datum och flikarna **Förhandsarkiv** och **Efteranalys**.
-- Historikmastern är den enda sidan som listar alla omgångar.
-- En äldre sida får aldrig märkas som aktuell.
-- Varje omgång ska ha en unik, beständig URL.
+## Egna urval och arkiv
 
-## Arbetsgång för kommande omgångar
+Egna urval sparas per omgång i localStorage. En spik ersätter andra val i samma avdelning. Radantal är produkten av antalet valda hästar i alla åtta lopp. Radpris anges av användaren när verifierat pris saknas.
 
-1. Skapa veckans sida som `/` och ange bana och datum i den gemensamma navigationen.
-2. Publicera verifierad startlista och marknadsdata med tydlig källtid.
-3. Spara förhandsurvalet före första start.
-4. Efter omgången: kopiera den oförändrade sidan till `/archive/YYYY-MM-DD-bana/`.
-5. Skapa efteranalysen under omgångens `analys/`-katalog.
-6. Lägg till omgången överst i `/history/` med båda länkarna.
-7. Byt `/` till nästa omgång och uppdatera aktuell bana/datum i `site-navigation.js`.
+Frysning kräver minst en vald aktiv häst, verifierat underlag och en verifierad starttid som ännu inte passerats. Kopian bevarar urval, noteringar, marknad, analysversion och källtider. Den laddas ner och sparas lokalt. Lokal tid är inte serververifierad och exporten är inget inlämningskvitto. Senare ändringar eller strykningar påverkar arbetsurvalet, inte redan frysta kopior.
 
-## Framgent
+Varje avslutad omgång har en beständig arkivadress. Bjerkes tidigare arbetsyta finns på `archive/2026-10-31-bjerke/forhand.html`; den är en bevarad arbetsyta med senast sparade data, inte ett retroaktivt fryst personligt urval. Gävles historiska data ligger i dess egen arkivkatalog. Den äldre `rounds/2026-10-10-solvalla/` leder till Solvallas kanoniska arkivsida. Saknade forskningsfrysningar markeras som saknade och återskapas inte efter start.
 
-För att undvika fortsatt specialkod bör nästa tekniska steg vara att flytta omgångsmetadata till en gemensam JSON-fil. Navigation, historikkort och omgångsflikar kan då genereras från samma källa. När den förändringen görs bör även Solvallas äldre `/resultatanalys/` flyttas till `/archive/2026-10-10-solvalla/analys/`, med en omdirigering från den gamla adressen.
+## Lokal validering
+
+```sh
+python3 -m http.server 8001 --bind 127.0.0.1
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'
+node tests/test_v85_domain.cjs
+node tests/test_homepage.cjs
+```
+
+Webbläsartestet kräver Playwright och Chromium. Det kontrollerar först den verkliga startsidan och testar sedan urvalsflödet med uttryckligt syntetiska svar i en isolerad webbläsarkontext. Testdata skrivs aldrig till webbplatsens datafiler.
+
+## Historisk implementation: Bjerke 31 oktober
+
+Följande beskriver den bevarade äldre arbetsytan, inte Bergsåkers nya startsida.
 
 ## Bjerke – marknadsdata
 
 - `bjerke-20261031.json` innehåller den senaste verifierade ATG-snapshoten för V85 den 31 oktober: startlistor, odds, streck, kuskar, tränare och hemmabanor.
 - `scripts/update_bjerke.py` används av GitHub Actions-flödet `.github/workflows/bjerke-hourly.yml` för att uppdatera snapshoten fram till spelstopp.
-- `bjerke-dashboard.js` visar snapshoten på startsidan. Källtid och eventuell brist på data måste alltid framgå; inga uppgifter ska presenteras som liveodds.
+- `bjerke-dashboard.js` visar snapshoten i Bjerkes förhandsarkiv. Källtid och eventuell brist på data måste alltid framgå; inga uppgifter ska presenteras som liveodds.
 - För ändringar från ChatGPT eller VS Code: läs alltid senaste GitHub-version och använd filens aktuella blob-SHA före uppdatering för att minska risken att skriva över parallella ändringar.
 
 ## Bjerke – tvåstegsmodell för spikar och skrällar
@@ -77,7 +78,7 @@ Vägd poäng = summan av delbetyg/5 × vikt; intervallet är 0–100. **Poängen
 - Spikförslag kräver separat motbuds-, form- och startmomentskontroll; högst streckprocent räcker inte.
 - Skrällar kan finnas även över 10 % streck. En låg streckandel i sig är inget vinnarargument.
 - Tidiga vinnarodds med låg omsättning och censurerat odds 99,99 får inte behandlas som exakt vinstsannolikhet.
-- `bjerke-model.js` sköter den manuella tvåstegsarbetsytan på `/`; `bjerke-model.css` dess stilar.
+- `bjerke-model.js` sköter den manuella tvåstegsarbetsytan i Bjerkes förhandsarkiv; `bjerke-model.css` dess stilar.
 - Betyg och egna vinstchanser sparas i **webbläsarens localStorage**, inte i GitHub. De följer därför inte med till andra enheter, och de är inte en fryst publicerad förhandsanalys.
 - Den automatiska `bjerke-20261031.json`-filens `recommendations` är fortfarande **endast streck-/trendbaserade marknadssignaler**. De får inte beskrivas som resultat från tvåstegsmodellen.
 - Vikterna och etiketternas gränser är **hypoteser för framtida utvärdering**. Frys urval och bedömningar före start och jämför mot verkliga resultat utan efterhandsjustering.
