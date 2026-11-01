@@ -1,0 +1,1144 @@
+{
+  "trainingDataQuality": {
+    "contractVersion": 2,
+    "sourceRaces": 178,
+    "sourceStarts": 1931,
+    "eligibleRaces": 31,
+    "eligibleStarts": 354,
+    "excludedRaces": 147,
+    "legacyEligibleRaces": 31,
+    "maskedLegacyGallopValues": 43,
+    "exclusionReasons": {
+      "legacy_field_requires_raw_refetch": 147
+    },
+    "quarantine": [
+      {
+        "raceId": "2025-11-22_7_3",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-11-22_7_4",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-11-22_7_5",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-11-22_7_6",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-11-22_7_8",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-11-22_7_9",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-11-29_5_4",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-11-29_5_9",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-06_6_10",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-06_6_3",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-06_6_5",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-06_6_6",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-06_6_7",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-06_6_8",
+        "rows": 8,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-06_6_9",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-27_16_10",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-27_16_4",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-27_16_5",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-27_16_6",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-27_16_7",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2025-12-27_16_9",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-01-03_7_10",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-01-03_7_3",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-01-03_7_4",
+        "rows": 7,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-01-03_7_6",
+        "rows": 8,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-01-03_7_8",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-01-03_7_9",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-07_5_10",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-07_5_11",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-07_5_12",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-07_5_5",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-07_5_6",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-07_5_7",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-07_5_8",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-07_5_9",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-14_6_10",
+        "rows": 8,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-14_6_11",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-14_6_5",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-14_6_6",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-14_6_8",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-21_9_10",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-21_9_11",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-21_9_12",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-21_9_6",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-21_9_7",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-21_9_8",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-21_9_9",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-28_8_12",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-28_8_5",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-28_8_6",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-28_8_8",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-02-28_8_9",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-14_78_10",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-14_78_12",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-14_78_5",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-14_78_6",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-14_78_8",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-14_78_9",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-21_6_10",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-21_6_11",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-21_6_12",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-21_6_7",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-21_6_8",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-28_5_10",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-28_5_11",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-28_5_12",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-28_5_5",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-28_5_6",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-28_5_7",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-03-28_5_9",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-11_7_10",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-11_7_11",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-11_7_12",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-11_7_6",
+        "rows": 7,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-11_7_7",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-11_7_8",
+        "rows": 7,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-11_7_9",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-18_12_10",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-18_12_11",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-18_12_12",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-18_12_5",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-18_12_6",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-18_12_8",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-18_12_9",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-25_32_10",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-25_32_11",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-25_32_12",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-25_32_5",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-04-25_32_6",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-02_27_10",
+        "rows": 8,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-02_27_11",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-02_27_12",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-02_27_5",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-02_27_6",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-02_27_7",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-09_6_10",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-09_6_11",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-09_6_12",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-09_6_5",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-09_6_6",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-09_6_7",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-09_6_9",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-23_16_10",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-23_16_11",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-23_16_12",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-23_16_5",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-23_16_6",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-23_16_7",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-23_16_8",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-23_16_9",
+        "rows": 8,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-30_5_10",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-30_5_11",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-30_5_12",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-30_5_13",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-30_5_5",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-30_5_6",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-30_5_8",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-05-30_5_9",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-06-13_11_10",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-06-13_11_11",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-06-13_11_12",
+        "rows": 8,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-06-13_11_5",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-06-13_11_7",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-06-27_9_11",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-06-27_9_6",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-06-27_9_8",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-06-27_9_9",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-07-25_12_11",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-07-25_12_12",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-07-25_12_9",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-10_5_10",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-10_5_12",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-10_5_13",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-10_5_6",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-10_5_8",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-10_5_9",
+        "rows": 12,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-17_16_11",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-17_16_12",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-17_16_5",
+        "rows": 9,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-17_16_6",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-17_16_7",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-17_16_8",
+        "rows": 8,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-17_16_9",
+        "rows": 14,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-24_7_10",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-24_7_12",
+        "rows": 10,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-24_7_5",
+        "rows": 11,
+        "reason": "legacy_field_requires_raw_refetch"
+      },
+      {
+        "raceId": "2026-10-24_7_6",
+        "rows": 13,
+        "reason": "legacy_field_requires_raw_refetch"
+      }
+    ],
+    "limitations": [
+      "Legacy gallop values require raw-source verification and are disabled.",
+      "Historical final market shares are not archived prestart observations.",
+      "A smaller complete-field subset is selected data, not validated betting evidence."
+    ],
+    "sourceFile": "research/historical_pilot_2026.json",
+    "sourceSha256": "0060f89560950b9d7e4ce6dbcd11c26e50bb1e204e9567f528e40222b3387953"
+  },
+  "reportType": "EXPLORATORY_BACKTEST_NOT_VALIDATED",
+  "createdAt": "2026-11-01T18:11:48.386550+00:00",
+  "trainDates": [
+    "2025-11-29",
+    "2026-04-25"
+  ],
+  "heldOutDates": [
+    "2026-05-02",
+    "2026-10-10"
+  ],
+  "trainStarts": 202,
+  "testStarts": 152,
+  "trainRaces": 18,
+  "testRaces": 13,
+  "model": "XGBClassifier, 135 trees, depth 3, time-ordered date holdout",
+  "features": [
+    "post",
+    "distance",
+    "field",
+    "auto",
+    "starts5",
+    "form_place_mean",
+    "win5",
+    "top3_5",
+    "days_off",
+    "gallop5",
+    "km_median",
+    "past_purse_log"
+  ],
+  "modelMetrics": {
+    "races": 13,
+    "top1Count": 1,
+    "top3Count": 7,
+    "top1Rate": 0.0769,
+    "top3Rate": 0.5385,
+    "raceLogLoss": 2.196,
+    "horseBrier": 0.07719
+  },
+  "modelOnIdenticalMarketRaces": {
+    "races": 13,
+    "top1Count": 1,
+    "top3Count": 7,
+    "top1Rate": 0.0769,
+    "top3Rate": 0.5385,
+    "raceLogLoss": 2.196,
+    "horseBrier": 0.07719
+  },
+  "marketFinalPoolBaseline": {
+    "races": 13,
+    "top1Count": 6,
+    "top3Count": 11,
+    "top1Rate": 0.4615,
+    "top3Rate": 0.8462,
+    "raceLogLoss": 1.5214,
+    "horseBrier": 0.06359
+  },
+  "baselineCaveat": "Market uses retrospective final V85 pool percentages, NOT independently archived prestart snapshots. Cross-pool timing may not be independently verified.",
+  "validationCaveat": "Small pilot, one chronological holdout, no hyperparameter search or robust confidence intervals. Do not interpret as profit, actionable spik/skrall recommendations or proven independent probabilities.",
+  "racePredictions": [
+    {
+      "raceId": "2026-05-02_27_9",
+      "date": "2026-05-02",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Eagle of Oak",
+          "modelProb": 0.3325
+        },
+        {
+          "number": 4,
+          "horse": "Inglourious Zet",
+          "modelProb": 0.189
+        },
+        {
+          "number": 6,
+          "horse": "Brother Day",
+          "modelProb": 0.1271
+        }
+      ],
+      "winnerNumbers": [
+        6
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-06-13_11_6",
+      "date": "2026-06-13",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Can't be Ruled",
+          "modelProb": 0.1648
+        },
+        {
+          "number": 4,
+          "horse": "Sonesta",
+          "modelProb": 0.1589
+        },
+        {
+          "number": 10,
+          "horse": "Jobiline Ridge",
+          "modelProb": 0.1072
+        }
+      ],
+      "winnerNumbers": [
+        4
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-06-13_11_9",
+      "date": "2026-06-13",
+      "topModel": [
+        {
+          "number": 9,
+          "horse": "Waldemar W.F.",
+          "modelProb": 0.2509
+        },
+        {
+          "number": 11,
+          "horse": "Puskas Boko",
+          "modelProb": 0.1528
+        },
+        {
+          "number": 1,
+          "horse": "Twigs Mind U.",
+          "modelProb": 0.1333
+        }
+      ],
+      "winnerNumbers": [
+        11
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-06-27_9_10",
+      "date": "2026-06-27",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Loxahatchee",
+          "modelProb": 0.1916
+        },
+        {
+          "number": 11,
+          "horse": "PolePosition",
+          "modelProb": 0.1186
+        },
+        {
+          "number": 2,
+          "horse": "Harpy",
+          "modelProb": 0.1161
+        }
+      ],
+      "winnerNumbers": [
+        1
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-06-27_9_12",
+      "date": "2026-06-27",
+      "topModel": [
+        {
+          "number": 6,
+          "horse": "Gretzky Brodde",
+          "modelProb": 0.2157
+        },
+        {
+          "number": 5,
+          "horse": "Solkattens Express",
+          "modelProb": 0.1591
+        },
+        {
+          "number": 3,
+          "horse": "Hit or Miss",
+          "modelProb": 0.1491
+        }
+      ],
+      "winnerNumbers": [
+        4
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-06-27_9_7",
+      "date": "2026-06-27",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Illuminato",
+          "modelProb": 0.2194
+        },
+        {
+          "number": 3,
+          "horse": "Last Cool Cash",
+          "modelProb": 0.1608
+        },
+        {
+          "number": 1,
+          "horse": "Puskas Boko",
+          "modelProb": 0.1495
+        }
+      ],
+      "winnerNumbers": [
+        1
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-07-25_12_10",
+      "date": "2026-07-25",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Pyrotek",
+          "modelProb": 0.1688
+        },
+        {
+          "number": 4,
+          "horse": "Prinsesse Ness Tjo",
+          "modelProb": 0.1161
+        },
+        {
+          "number": 15,
+          "horse": "Zargo",
+          "modelProb": 0.1075
+        }
+      ],
+      "winnerNumbers": [
+        8
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-07-25_12_5",
+      "date": "2026-07-25",
+      "topModel": [
+        {
+          "number": 6,
+          "horse": "Havana Heaven",
+          "modelProb": 0.2351
+        },
+        {
+          "number": 3,
+          "horse": "Rania Zon",
+          "modelProb": 0.1844
+        },
+        {
+          "number": 8,
+          "horse": "Waypoint Sequence",
+          "modelProb": 0.1395
+        }
+      ],
+      "winnerNumbers": [
+        3
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-07-25_12_6",
+      "date": "2026-07-25",
+      "topModel": [
+        {
+          "number": 2,
+          "horse": "Erik the Phantom",
+          "modelProb": 0.2146
+        },
+        {
+          "number": 1,
+          "horse": "Crowe Motion",
+          "modelProb": 0.1611
+        },
+        {
+          "number": 3,
+          "horse": "Ajlexes Hans",
+          "modelProb": 0.1559
+        }
+      ],
+      "winnerNumbers": [
+        9
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-07-25_12_7",
+      "date": "2026-07-25",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Myr Tötta",
+          "modelProb": 0.2486
+        },
+        {
+          "number": 9,
+          "horse": "Jonases Ninja",
+          "modelProb": 0.2213
+        },
+        {
+          "number": 12,
+          "horse": "Prinsessan Stöen",
+          "modelProb": 0.1258
+        }
+      ],
+      "winnerNumbers": [
+        15
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-07-25_12_8",
+      "date": "2026-07-25",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Xanthis Harvey",
+          "modelProb": 0.1803
+        },
+        {
+          "number": 1,
+          "horse": "Mellby Joker",
+          "modelProb": 0.1679
+        },
+        {
+          "number": 10,
+          "horse": "Izod Zet",
+          "modelProb": 0.135
+        }
+      ],
+      "winnerNumbers": [
+        6
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-10_5_11",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Elvis T.C.B.",
+          "modelProb": 0.2755
+        },
+        {
+          "number": 4,
+          "horse": "Flight Sequence",
+          "modelProb": 0.1202
+        },
+        {
+          "number": 10,
+          "horse": "Nickel Occagnes",
+          "modelProb": 0.1023
+        }
+      ],
+      "winnerNumbers": [
+        5
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-10_5_7",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 11,
+          "horse": "H.C.'s Crazy Horse",
+          "modelProb": 0.1861
+        },
+        {
+          "number": 5,
+          "horse": "Ready Star",
+          "modelProb": 0.1635
+        },
+        {
+          "number": 8,
+          "horse": "Call Me Gleipner",
+          "modelProb": 0.1427
+        }
+      ],
+      "winnerNumbers": [
+        5
+      ],
+      "winnerInTop3": true
+    }
+  ]
+}

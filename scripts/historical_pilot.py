@@ -8,18 +8,27 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import math
 import pathlib
 import re
 import statistics
+import tempfile
 import time
 import urllib.error
 import urllib.request
 
+try:
+    from scripts.data_quality import gallop_status, result_label
+except ModuleNotFoundError:
+    from data_quality import gallop_status, result_label
+
 BASE = "https://www.atg.se/services/racinginfo/v1/api"
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-DEST = ROOT / "research/historical_pilot_2026.json"
+DEST = ROOT / "research/historical_pilot_v2.json"
+CACHE = ROOT / "research/raw-history"
+OFFLINE = False
 USER_AGENT = "LA_V85/research-1.0 (Biggles22/LA_V85; low-frequency research)"
 # Saturdays spread over several months; no upcoming or live meetings.
 DATES = (
@@ -52,13 +61,47 @@ KNOWN_GAME_IDS={
 }
 
 
+def check_source_payload(path, value):
+    if not isinstance(value, dict):
+        raise ValueError('Historical API response is not an object')
+    if path.startswith('/games/'):
+        if value.get('id') != path.split('/')[2] or not isinstance(value.get('races'), list) or len(value['races']) != 8:
+            raise ValueError('Historical game response has wrong identity or race count')
+    elif path.startswith('/races/'):
+        if value.get('id') != path.split('/')[2] or not isinstance(value.get('starts'), list):
+            raise ValueError('Historical race response has wrong identity or missing field')
+    elif not isinstance(value.get('games'), (dict, list)):
+        raise ValueError('Historical calendar response has no games')
+
+
 def get_json(path):
+    if not re.fullmatch(r"/(?:games|races|calendar/day)/[A-Za-z0-9_-]+(?:/extended)?", path):
+        raise ValueError("Unexpected historical source path")
+    cache_file = CACHE / (hashlib.sha256(path.encode()).hexdigest() + '.json')
+    if cache_file.exists():
+        saved = json.loads(cache_file.read_text())
+        value = saved.get('payload')
+        digest = hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+        if saved.get('sourceUrl') != BASE+path or saved.get('sha256') != digest or not isinstance(value, dict):
+            raise ValueError('Historical raw cache failed identity/hash validation')
+        check_source_payload(path, value)
+        return value
+    if OFFLINE:
+        raise urllib.error.URLError('Raw source absent from offline cache')
     req = urllib.request.Request(BASE+path, headers={
         "User-Agent":USER_AGENT,"Accept":"application/json"})
     with urllib.request.urlopen(req, timeout=25) as response:
         value = json.load(response)
-    if not isinstance(value, dict):
-        raise ValueError("ATG endpoint did not return an object")
+    check_source_payload(path, value)
+    saved = {'schemaVersion': 1, 'sourceUrl': BASE+path,
+             'retrievedAt': dt.datetime.now(dt.timezone.utc).isoformat(),
+             'sha256': hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest(),
+             'payload': value}
+    CACHE.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile(mode='w', encoding='utf8', dir=CACHE, delete=False) as out:
+        json.dump(saved, out, ensure_ascii=False)
+        temp = pathlib.Path(out.name)
+    temp.replace(cache_file)
     return value
 
 
@@ -140,7 +183,9 @@ def past_records(start, race_day):
         race=r.get("race") or {}
         st=r.get("start") or {}
         position=number(r.get("place"))
-        if position is not None and not (1<=position<=30):
+        if position is not None and (not (1<=position<=30) or position != int(position)):
+            position=None
+        if r.get('disqualified') is True:
             position=None
         dist=number(st.get("distance"))
         if dist is None:
@@ -156,8 +201,8 @@ def past_records(start, race_day):
         kept.append({
             "date":when.isoformat(),"id":str(race.get("id") or ""),
             "place":int(position) if position is not None else None,
-            "gallop":r.get("galloped") is True or r.get("disqualified") is True,
-            "hasGallopFlag":type(r.get("galloped")) is bool or type(r.get("disqualified")) is bool,
+            "gallop":gallop_status(r),
+            "hasGallopFlag":gallop_status(r) is not None,
             "distance":dist, "method":race.get("startMethod"),
             "purse":purse, "country":track.get("countryCode"),
             "km":km if km is not None and 60<=km<=160 else None,
@@ -187,7 +232,7 @@ def features_from_history(start,race,race_day,field_size):
     return {
         "post":number(start.get("postPosition")),
         "distance":number(start.get("distance")) or number(race.get("distance")),
-        "field":field_size,"auto":1 if race.get("startMethod")=="auto" else 0,
+        "field":field_size,"auto":1 if race.get("startMethod")=="auto" else (0 if race.get("startMethod")=="volte" else None),
         "starts5":len(recent),
         "form_place_mean":round(statistics.mean(r["place"] for r in valid),3) if len(valid)>=2 else None,
         "win5":sum(r["place"]==1 for r in valid) if len(valid)>=2 else None,
@@ -215,50 +260,62 @@ def market_distribution(game, race_id):
 def parse_historical_race(race,game,date):
     day=dt.date.fromisoformat(date)
     rid=race.get("id")
-    if race.get("status")!="results" or not rid or not isinstance(race.get("starts"),list):
+    if (race.get("status")!="results" or not isinstance(rid,str) or not rid.startswith(date+'_')
+            or not str(game.get('id','')).startswith('V85_'+date+'_')
+            or not isinstance(race.get("starts"),list)):
         return None
-    entries=[]; failed=0
+    # First construct the complete active field, independently of placing.
+    active=[]; scratched=0; seen=set()
     for start in race["starts"]:
         if not isinstance(start,dict):
-            continue
+            return None
         horse=start.get("horse") or {}
-        result=start.get("result") or {}
-        if not isinstance(result,dict):
-            result={}
+        result=start.get("result") if isinstance(start.get("result"),dict) else {}
+        number_=start.get("number")
+        if type(number_) is not int or number_<1 or number_ in seen or not isinstance(horse,dict):
+            return None
+        seen.add(number_)
         if start.get("scratched") is True or result.get("scratched") is True or horse.get("scratched") is True:
+            scratched+=1
             continue
-        if not isinstance(horse.get("name"),str) or not isinstance(start.get("number"),int):
-            failed+=1;continue
-        place=number(result.get("place"))
-        if place is None or not (0<=place<=30):
-            failed+=1;continue
-        entries.append((start,horse,place))
-    # A historical result card may have an empty placing for a few runners.
-    # Never call these unknown runners losers. Exclude entire race if coverage poor.
-    all_count=len(race["starts"])
-    if (not 6<=len(entries)<=20 or len(entries)<all_count*0.75
-            or failed>3):
+        if not isinstance(horse.get("name"),str) or not horse["name"].strip():
+            return None
+        active.append(start)
+    if not 6<=len(active)<=20:
         return None
-    winners=[x for x in entries if x[2]==1]
-    if len(winners)!=1:
-        return None   # skip dead heats and uncertain winner labels
-    field_size=len(entries)
+    field_size=len(active)
     market=market_distribution(game,rid)
     rows=[]
-    for start,horse,place in entries:
+    for start in active:
+        # Never use the current result to determine a feature or remove a runner.
+        features=features_from_history(start,race,day,field_size)
+        label,status=result_label(start.get("result"))
+        observed=past_records(start,day)[:5]
         rows.append({
+            "dataContractVersion":2,
             "date":date,"raceId":rid,"track":(race.get("track") or {}).get("name"),
-            "gameId":game.get("id"),"number":start["number"],"horse":horse["name"],
-            "winner":int(place==1),"prestartFeatures":features_from_history(start,race,day,field_size),
+            "gameId":game.get("id"),"number":start["number"],"horse":start["horse"]["name"],
+            "winner":label,"resultStatus":status,"prestartFeatures":features,
+            "featureCoverage":{"gallopObservedStarts":sum(r["hasGallopFlag"] for r in observed),
+                               "historyStarts":len(observed)},
             "marketFinalPct":market.get(start["number"]),
-            "resultCoverage":round(len(entries)/len(race["starts"]),3),
         })
+    if sum(r["winner"]==1 for r in rows)>1:
+        return None  # A winner-only model does not support dead heats.
+    known=sum(r["winner"] is not None for r in rows)
+    counts={"registered":len(race["starts"]),"active":field_size,"scratched":scratched,
+            "knownResults":known,"unknownResults":field_size-known}
+    for row in rows:
+        row["raceCounts"]=dict(counts)
+        row["resultCoverage"]=known/field_size
     return rows
 
 
 def collect(dates, prior_rows=()):
     # Completed, previously validated race data are immutable research evidence.
     # Do not refetch or erase them just because the unofficial API is temporarily down.
+    if any(r.get('dataContractVersion') != 2 for r in prior_rows):
+        raise ValueError('Legacy aggregates must not be mixed into the raw-source v2 corpus')
     output=list(prior_rows); roundlog=[]
     included={r["raceId"] for r in prior_rows}
     for date in dates:
@@ -303,9 +360,12 @@ def collect(dates, prior_rows=()):
 
 
 def main():
+    global OFFLINE
     parser=argparse.ArgumentParser()
     parser.add_argument("--limit",type=int,default=len(DATES))
+    parser.add_argument("--offline", action="store_true", help="Rebuild only from verified saved raw responses; never use the network")
     args=parser.parse_args()
+    OFFLINE = args.offline
     if not 1<=args.limit<=len(DATES):
         parser.error("invalid --limit")
     previous=json.loads(DEST.read_text()) if DEST.exists() else {}
@@ -317,10 +377,10 @@ def main():
     print("SUMMARY",len(rows),"starters",len(races),"completed races",len(dates),"dates",flush=True)
     if len(dates)<2 or len(races)<8:
         raise SystemExit("Insufficient validated history; refusing to publish a misleading dataset")
-    report={"schemaVersion":1,"gameTypes":["V85"],
+    report={"schemaVersion":2,"gameTypes":["V85"],
             "asOfDate":"2026-10-27",
-            "method":"Historical V85 horse past-start features, each filtered strictly before that race's date.",
-            "leakageControls":"No post-race statistics, final odds or pooled percentages used as input features.",
+            "method":"Full active race fields, dated past-start features, explicit nullable labels and separate scratch/result coverage.",
+            "leakageControls":"Feature fields do not depend on outcome availability; unknown labels excluded at whole-race training gate. Raw API responses retained with source hashes.",
             "marketWarning":"marketFinalPct is retrospective close-of-pool data; NOT an archived verified prestart market snapshot.",
             "source":"ATG site racinginfo API (unofficial, subject to terms/availability)",
             "dates":list(DATES[:args.limit]),"rounds":log,
@@ -328,7 +388,11 @@ def main():
     DEST.parent.mkdir(parents=True,exist_ok=True)
     if previous==report:
         print("No changes to historical data");return
-    DEST.write_text(json.dumps(report,ensure_ascii=False,separators=(",",":"))+"\n")
+    with tempfile.NamedTemporaryFile(mode='w', encoding='utf8', dir=DEST.parent, delete=False) as out:
+        json.dump(report, out, ensure_ascii=False, separators=(',', ':'))
+        out.write('\n')
+        temp = pathlib.Path(out.name)
+    temp.replace(DEST)
     print("Saved",DEST,flush=True)
 
 

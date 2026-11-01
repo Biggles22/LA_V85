@@ -20,9 +20,14 @@ except ModuleNotFoundError:
     # Direct execution from scripts/ and package-style execution from project root.
     from train_historical_pilot import FEATURES, normalized_per_race, evaluate
 
+try:
+    from scripts.data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+except ModuleNotFoundError:
+    from data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-INPUT=ROOT/"research/historical_pilot_2026.json"
-OUTPUT=ROOT/"research/walkforward_report_2026.json"
+INPUT = CURRENT if CURRENT.exists() else LEGACY
+OUTPUT=ROOT/"research/walkforward_report_v2.json"
 RELATIVE_FEATURES=("post_field_ratio","form_percentile","wins_percentile",
                    "recent_km_percentile","purse_percentile")
 MIN_TRAIN_STARTERS=160
@@ -94,11 +99,11 @@ def clean_paired(groups):
 def produce():
     import numpy as np
     from xgboost import XGBClassifier
-    doc=json.loads(INPUT.read_text())
+    doc=load_training_data(INPUT)
     rows=doc.get("rows",[])
     dates=sorted({r["date"] for r in rows})
     if len(dates)<MIN_TRAIN_DATES+MIN_HELDOUT_DATES:
-        raise RuntimeError("Too few independent dates for expanding-origin evaluation")
+        raise InsufficientHistory("Too few independent dates for expanding-origin evaluation")
     out={};folds=[];total_training=set()
     for i,date in enumerate(dates):
         if i<MIN_TRAIN_DATES:
@@ -140,12 +145,13 @@ def produce():
         total_training.add(date)
         out.update(fold_groups)
     if len(folds)<MIN_HELDOUT_DATES or sum(f["testMetrics"]["races"] for f in folds)<12:
-        raise RuntimeError("Insufficient tested dates or races; no report published")
+        raise InsufficientHistory("Insufficient tested dates or races; no report published")
     paired=clean_paired(out)
     metrics=evaluate(out,"pred")
     pm=evaluate(paired,"pred")
     market=evaluate(paired,"marketFinalPct",market=True)
     report={
+        "trainingDataQuality":doc.get("dataQuality"),
         "reportType":"EXPANDING_CHRONOLOGICAL_BACKTEST_NOT_VALIDATED",
         "generatedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
         "sourceRaceCount":doc.get("raceCount"),"sourceStarts":doc.get("starterCount"),
@@ -173,6 +179,8 @@ def produce():
 if __name__=="__main__":
     try:
         produce()
+    except InsufficientHistory as error:
+        publish_unavailable(OUTPUT, error, INPUT)
     except (ImportError,RuntimeError,ValueError,AssertionError) as exc:
         print("WALKFORWARD NOT READY:",type(exc).__name__,str(exc),flush=True)
         sys.exit(1)

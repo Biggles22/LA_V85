@@ -31,12 +31,12 @@ class HistoricalPilotTests(unittest.TestCase):
              "distance":2140,"startMethod":"auto","track":{"name":"Test"},
              "starts":[{"number":i,"horse":{"name":f"Example{i}"},"result":{"place":1 if i==1 else i}}
                        for i in range(1,9)]}
-        parsed=h.parse_historical_race(race,{"id":"V85_TEST","races":[]},"2026-06-01")
+        parsed=h.parse_historical_race(race,{"id":"V85_2026-06-01_5_1","races":[]},"2026-06-01")
         self.assertEqual(len(parsed),8)
         self.assertEqual(sum(r["winner"] for r in parsed),1)
         self.assertIsNone(parsed[0]["prestartFeatures"]["form_place_mean"])
         race["starts"][1]["result"]["place"]=1
-        self.assertIsNone(h.parse_historical_race(race,{"id":"V85_TEST","races":[]},"2026-06-01"))
+        self.assertIsNone(h.parse_historical_race(race,{"id":"V85_2026-06-01_5_1","races":[]},"2026-06-01"))
 
     def test_normalized_probs(self):
         x=t.normalized_per_race([2,1,1])

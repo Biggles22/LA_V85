@@ -32,8 +32,13 @@ except ModuleNotFoundError:
     from capture_prestart_market import checked_snapshot,ID,CUTOFF
     from opponent_coverage import fetch_card,assess_card
 
+try:
+    from scripts.data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY
+except ModuleNotFoundError:
+    from data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY
+
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-HIST=ROOT/"research/historical_pilot_2026.json"
+HIST = CURRENT if CURRENT.exists() else LEGACY
 OPPONENT_HIST=ROOT/"research/historical_opponent_asof_2026.json"
 OLD_CURRENT=ROOT/"research/opponent_coverage_2026.json"
 DEST=ROOT/"research/frozen/2026-10-31"
@@ -152,12 +157,13 @@ def race_distribution(rows,scores):
 
 def compute_predictions(rows,history,opponent_history,coverage):
     import numpy as np
+    history=prepare_training_data(history)
     older=[r for r in history["rows"] if r["date"]<DATE.isoformat()]
     if len(older)<1000 or len({r["raceId"] for r in older})<80:
         raise ValueError("Historical training too small")
     if any(r["date"]>=DATE.isoformat() for r in older):
         raise AssertionError("Future records in training")
-    if opponent_history.get("sourceRaceCount")!=history.get("raceCount"):
+    if opponent_history.get("sourceRaceCount")!=history.get("rawSourceRaceCount",history.get("raceCount")):
         raise ValueError("Historical rival evidence not matched to training corpus")
     labels=np.array([x["winner"] for x in older],dtype="int32")
     if len(set(labels))!=2:
@@ -211,7 +217,7 @@ def build(slot,now=None,game=None,extended=None,historical=None,opponent_histori
         extended={r["raceId"]:get_json(BASE+"/races/"+r["raceId"]+"/extended")
                   for r in market["races"]}
     rows=current_rows(game,extended,market)
-    historical=historical or json.loads(HIST.read_text(encoding="utf8"))
+    historical=historical or load_training_data(HIST)
     opponent_historical=opponent_historical or json.loads(OPPONENT_HIST.read_text(encoding="utf8"))
     coverage=coverage or json.loads(OLD_CURRENT.read_text(encoding="utf8"))
     report=compute_predictions(rows,historical,opponent_historical,coverage)

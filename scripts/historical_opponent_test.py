@@ -19,10 +19,15 @@ except ModuleNotFoundError:
     from feature_trial import estimator
     from train_historical_pilot import evaluate
 
+try:
+    from scripts.data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+except ModuleNotFoundError:
+    from data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-SOURCE=ROOT/"research/historical_pilot_2026.json"
+SOURCE = CURRENT if CURRENT.exists() else LEGACY
 EVIDENCE=ROOT/"research/historical_opponent_asof_2026.json"
-OUT=ROOT/"research/historical_opponent_test_2026.json"
+OUT=ROOT/"research/historical_opponent_test_v2.json"
 
 
 def evidence_index(doc):
@@ -60,9 +65,9 @@ def marked_groups(groups,index,min_rated=6,min_fraction=.6):
 
 def run():
     import numpy as np
-    history=json.loads(SOURCE.read_text(encoding="utf8"))
+    history=load_training_data(SOURCE)
     evidence=json.loads(EVIDENCE.read_text(encoding="utf8"))
-    if evidence.get("schemaVersion")!=1 or evidence.get("sourceRaceCount")!=history.get("raceCount"):
+    if evidence.get("schemaVersion")!=1 or evidence.get("sourceRaceCount")!=history.get("rawSourceRaceCount",history.get("raceCount")):
         raise ValueError("Historical opponent join not verified for this historical corpus")
     index=evidence_index(evidence)
     allrows=history["rows"]
@@ -89,17 +94,20 @@ def run():
             experimental.setdefault(rid,[]).append({**row,"pred":float(b)})
         folds.append({"date":day,"trainStarters":len(train),"testRaces":len({r["raceId"] for r in test})})
     if len(folds)<6:
-        raise RuntimeError("Insufficient independent dates for evaluation")
+        raise InsufficientHistory("Insufficient independent dates for evaluation")
     selected=marked_groups(baseline,index)
     matched_a={k:baseline[k] for k in selected}
     matched_b={k:experimental[k] for k in selected}
     paired_market=clean_paired(selected)
     keys=set(paired_market)
     covered_dates=sorted({x[0]["date"] for x in selected.values()})
+    if len(selected)<12 or len(covered_dates)<6:
+        raise InsufficientHistory("Too few complete races/dates with verified opponent coverage")
     all_rated=sum(type((index.get((x["raceId"],x["number"],x["horse"])) or {}).get("opponentForm")) in
                  (int,float) for x in allrows)
     result={
-        "schemaVersion":1,"reportType":"ACTUAL_PAST_OPPONENT_FORM_EXPLORATORY_NOT_VALIDATED",
+        "schemaVersion":1,"trainingDataQuality":history.get("dataQuality"),
+        "reportType":"ACTUAL_PAST_OPPONENT_FORM_EXPLORATORY_NOT_VALIDATED",
         "historicalRaceCount":history["raceCount"],
         "historicalStarterCount":history["starterCount"],
         "datedFeatureRows":len(index),
@@ -133,6 +141,8 @@ def run():
 
 if __name__=="__main__":
     try:run()
+    except InsufficientHistory as error:
+        publish_unavailable(OUT, error, SOURCE)
     except (ValueError,RuntimeError,ImportError,KeyError,AssertionError) as error:
         print("ACTUAL-OPPONENT EVALUATION NOT READY:",error,file=sys.stderr)
         sys.exit(1)

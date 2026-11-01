@@ -25,9 +25,14 @@ except ModuleNotFoundError:
     )
     from train_historical_pilot import evaluate
 
+try:
+    from scripts.data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+except ModuleNotFoundError:
+    from data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "research" / "historical_pilot_2026.json"
-OUT = ROOT / "research" / "catboost_trial_2026.json"
+SOURCE = CURRENT if CURRENT.exists() else LEGACY
+OUT = ROOT / "research" / "catboost_trial_v2.json"
 
 
 def estimator():
@@ -49,11 +54,11 @@ def estimator():
 def main():
     import numpy as np
 
-    doc = json.loads(SOURCE.read_text())
+    doc = load_training_data(SOURCE)
     rows = doc.get("rows", [])
     dates = sorted({r["date"] for r in rows})
     if len(dates) < MIN_TRAIN_DATES + MIN_HELDOUT_DATES:
-        raise RuntimeError("Too few independent dates for CatBoost evaluation")
+        raise InsufficientHistory("Too few independent dates for CatBoost evaluation")
 
     all_groups, folds = {}, []
     for index, date in enumerate(dates):
@@ -93,10 +98,11 @@ def main():
 
     tested = sum(f["testMetrics"]["races"] for f in folds)
     if len(folds) < MIN_HELDOUT_DATES or tested < 12:
-        raise RuntimeError("Insufficient tested dates or races; no report published")
+        raise InsufficientHistory("Insufficient tested dates or races; no report published")
 
     paired = clean_paired(all_groups)
     report = {
+        "trainingDataQuality":doc.get("dataQuality"),
         "reportType": "CATBOOST_EXPANDING_CHRONOLOGICAL_BACKTEST_NOT_VALIDATED",
         "generatedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
         "sourceRaceCount": doc.get("raceCount"),
@@ -127,6 +133,8 @@ def main():
 if __name__ == "__main__":
     try:
         main()
+    except InsufficientHistory as error:
+        publish_unavailable(OUT, error, SOURCE)
     except (ImportError, RuntimeError, ValueError, AssertionError) as exc:
         print("CATBOOST NOT READY:", type(exc).__name__, str(exc), flush=True)
         sys.exit(1)

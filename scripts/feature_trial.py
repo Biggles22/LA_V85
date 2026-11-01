@@ -19,9 +19,14 @@ except ModuleNotFoundError:
     from walkforward_evaluation import enriched_matrix, clean_paired, MIN_TRAIN_STARTERS, MIN_TRAIN_DATES
     from train_historical_pilot import evaluate
 
+try:
+    from scripts.data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+except ModuleNotFoundError:
+    from data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-SOURCE=ROOT/"research/historical_pilot_2026.json"
-OUT=ROOT/"research/feature_trial_2026.json"
+SOURCE = CURRENT if CURRENT.exists() else LEGACY
+OUT=ROOT/"research/feature_trial_v2.json"
 
 FEATURE_NAMES=(
     "relative_past_purse_and_form",  # not actual opponent ratings
@@ -91,6 +96,7 @@ def estimator():
 
 def evaluate_trial(doc):
     import numpy as np
+    doc=prepare_training_data(doc)
     rows=doc["rows"]
     dates=sorted({r["date"] for r in rows})
     groups_v1={};groups_v2={};folds=[]
@@ -115,13 +121,14 @@ def evaluate_trial(doc):
         groups_v1.update(day_a);groups_v2.update(day_b)
         folds.append({"date":date,"trainingStarts":len(prior),"testedRaces":len(day_a)})
     if len(folds)<5 or len(groups_v1)<30:
-        raise RuntimeError("Too little history for an honest feature comparison")
+        raise InsufficientHistory("Too little history for an honest feature comparison")
     matched=clean_paired(groups_v1)
     m_ids=set(matched)
     paired_a={id:groups_v1[id] for id in m_ids}
     paired_b={id:groups_v2[id] for id in m_ids}
     result={
-        "schemaVersion":1,"reportType":"EXPLORATORY_FIXED_FEATURE_ABLATION",
+        "schemaVersion":1,"trainingDataQuality":doc.get("dataQuality"),
+        "reportType":"EXPLORATORY_FIXED_FEATURE_ABLATION",
         "generatedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
         "raceCount":doc["raceCount"],"sourceStarts":doc["starterCount"],
         "evaluatedDates":len(folds),"evaluatedRaces":len(groups_v1),
@@ -141,7 +148,7 @@ def evaluate_trial(doc):
 
 
 def run():
-    data=json.loads(SOURCE.read_text(encoding="utf8"))
+    data=load_training_data(SOURCE)
     result=evaluate_trial(data)
     current=json.loads(OUT.read_text(encoding="utf8")) if OUT.exists() else {}
     cmp=lambda x:{k:v for k,v in x.items() if k!="generatedAt"}
@@ -157,6 +164,8 @@ def run():
 if __name__=="__main__":
     try:
         sys.exit(run())
+    except InsufficientHistory as error:
+        publish_unavailable(OUT, error, SOURCE)
     except (ImportError,ValueError,RuntimeError,AssertionError) as e:
         print("Feature trial unready:",type(e).__name__,str(e),file=sys.stderr)
         sys.exit(1)

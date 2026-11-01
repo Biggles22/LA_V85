@@ -60,6 +60,12 @@ def fetch_extended(race_number):
     return data, url
 
 
+try:
+    from scripts.data_quality import gallop_status
+except ModuleNotFoundError:
+    from data_quality import gallop_status
+
+
 def records_of(start):
     # Published reference: results.records; tolerate missing/alternate wrappers.
     horse = start.get("horse") if isinstance(start.get("horse"), dict) else {}
@@ -87,9 +93,9 @@ def parse_record(record):
         placed = number(record.get("place"))
     if placed is not None and (placed < 0 or placed >= 30):
         placed = None
-    galloped = record.get("galloped")
-    disqualified = record.get("disqualified")
-    has_gallop = galloped is True or disqualified is True
+    if record.get('disqualified') is True:
+        placed = None
+    galloped = gallop_status(record)
     prize = number(race.get("firstPrize"))
     country = (record.get("track") or {}).get("countryCode") if isinstance(record.get("track"), dict) else None
     method = race.get("startMethod")
@@ -109,7 +115,7 @@ def parse_record(record):
         "postPosition": int(post) if post is not None and 1 <= post <= 20 else None,
         "startMethod": method if method in ("auto", "volte") else None,
         "kmSeconds": kilometre_seconds,
-        "galloped": has_gallop if galloped is not None or disqualified is not None else None,
+        "galloped": galloped,
         "distance": int(distance) if distance is not None and 800 <= distance <= 6000 else None,
         "raceId": race.get("id") or None,
     }
@@ -126,6 +132,8 @@ def performance(place, galloped):
         base = 4.0
     elif place == 3:
         base = 3.3
+    elif place == 0:
+        base = 0.7  # Official unplaced result, never a top-five placing.
     elif place <= 5:
         base = 2.5
     elif place <= 8:

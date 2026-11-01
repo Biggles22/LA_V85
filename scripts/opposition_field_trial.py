@@ -24,9 +24,14 @@ except ModuleNotFoundError:
     from feature_trial import estimator
     from train_historical_pilot import evaluate
 
+try:
+    from scripts.data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+except ModuleNotFoundError:
+    from data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-SOURCE=ROOT/"research/historical_pilot_2026.json"
-DEST=ROOT/"research/opposition_field_trial_2026.json"
+SOURCE = CURRENT if CURRENT.exists() else LEGACY
+DEST=ROOT/"research/opposition_field_trial_v2.json"
 COLUMNS=("rival_win5_mean","rival_top3_5_mean","rival_place_mean",
          "horse_vs_rival_win5","horse_vs_rival_top3_5","rated_rivals")
 
@@ -75,6 +80,7 @@ def augmented_matrix(rows):
 
 def backtest(document):
     import numpy as np
+    document=prepare_training_data(document)
     data=document["rows"]
     dates=sorted({x["date"] for x in data})
     base_groups={};opponent_groups={};folds=[]
@@ -100,7 +106,7 @@ def backtest(document):
         folds.append({"testDate":date,"trainedBefore":date,"trainRunners":len(training),
                       "testRaces":len({r["raceId"] for r in held})})
     if len(folds)<6 or len(base_groups)<30:
-        raise RuntimeError("Insufficient historical out-of-time test dates")
+        raise InsufficientHistory("Insufficient historical out-of-time test dates")
     paired=clean_paired(base_groups)
     ids=set(paired)
     base_paired={rid:base_groups[rid] for rid in ids}
@@ -109,6 +115,7 @@ def backtest(document):
     measured=sum(row[0] is not None for row in coverage)
     return {
         "schemaVersion":1,
+        "trainingDataQuality":document.get("dataQuality"),
         "reportType":"HISTORIC_UPCOMING_FIELD_OPPOSITION_ABLATION_NOT_VALIDATED",
         "sourceRaces":document.get("raceCount"),"sourceStarts":document.get("starterCount"),
         "foldCount":len(folds),"heldOutRaces":len(base_groups),
@@ -127,7 +134,7 @@ def backtest(document):
 
 
 def main():
-    document=json.loads(SOURCE.read_text(encoding="utf8"))
+    document=load_training_data(SOURCE)
     result=backtest(document)
     old=json.loads(DEST.read_text(encoding="utf8")) if DEST.exists() else None
     if result==old:
@@ -140,6 +147,8 @@ def main():
 
 if __name__=="__main__":
     try:main()
+    except InsufficientHistory as error:
+        publish_unavailable(DEST, error, SOURCE)
     except (ValueError,TypeError,RuntimeError,ImportError,AssertionError) as e:
         print("FIELD OPPOSITION NOT READY:",str(e),file=sys.stderr)
         sys.exit(1)

@@ -9,9 +9,14 @@ import pathlib
 import statistics
 import sys
 
+try:
+    from scripts.data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+except ModuleNotFoundError:
+    from data_quality import load_training_data, prepare_training_data, CURRENT, LEGACY, InsufficientHistory, publish_unavailable
+
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-INPUT=ROOT/"research/historical_pilot_2026.json"
-OUTPUT=ROOT/"research/model_report_2026.json"
+INPUT = CURRENT if CURRENT.exists() else LEGACY
+OUTPUT=ROOT/"research/model_report_v2.json"
 FEATURES=("post","distance","field","auto","starts5","form_place_mean",
           "win5","top3_5","days_off","gallop5","km_median","past_purse_log")
 
@@ -52,19 +57,19 @@ def train():
     import numpy as np
     from xgboost import XGBClassifier
 
-    data=json.loads(INPUT.read_text())
+    data=load_training_data(INPUT)
     rows=data.get("rows",[])
     dates=sorted({x["date"] for x in rows})
     if len(dates)<6:
-        raise RuntimeError("Need >=6 distinct historical dates for time-split exploratory evaluation")
+        raise InsufficientHistory("Need >=6 distinct historical dates for time-split exploratory evaluation")
     boundary=max(3,int(len(dates)*0.7))
     if len(dates)-boundary<2:
-        raise RuntimeError("Need at least 2 held-out dates")
+        raise InsufficientHistory("Need at least 2 held-out dates")
     train_dates=set(dates[:boundary]);test_dates=set(dates[boundary:])
     train_rows=[x for x in rows if x["date"] in train_dates]
     test_rows=[x for x in rows if x["date"] in test_dates]
     if len(train_rows)<200 or len(test_rows)<60:
-        raise RuntimeError("Insufficient training/test starters")
+        raise InsufficientHistory("Insufficient training/test starters")
     def matrix(items):
         return np.array([[float(row["prestartFeatures"][k]) if row["prestartFeatures"].get(k) is not None
                           else np.nan for k in FEATURES] for row in items],dtype="float64")
@@ -89,7 +94,7 @@ def train():
     paired_model=evaluate(paired,"pred")
     baseline=evaluate(paired,"marketFinalPct",market=True)
     if metrics["races"]<12:
-        raise RuntimeError("Test contains fewer than 12 eligible races")
+        raise InsufficientHistory("Test contains fewer than 12 eligible races")
     ranked=[]
     for rid,items in groups.items():
         probabilities=normalized_per_race([r["pred"] for r in items])
@@ -101,6 +106,7 @@ def train():
             "winnerNumbers":winners,
             "winnerInTop3":items[top[0]]["winner"]==1 or any(items[i]["winner"] for i in top[1:3])})
     report={
+        "trainingDataQuality":data.get("dataQuality"),
         "reportType":"EXPLORATORY_BACKTEST_NOT_VALIDATED",
         "createdAt":dt.datetime.now(dt.timezone.utc).isoformat(),
         "trainDates":[dates[0],dates[boundary-1]],
@@ -130,6 +136,8 @@ def train():
 if __name__=="__main__":
     try:
         train()
+    except InsufficientHistory as error:
+        publish_unavailable(OUTPUT, error, INPUT)
     except (ImportError,ValueError,RuntimeError) as error:
         print("Pilot not ready:",error,flush=True)
         sys.exit(1)

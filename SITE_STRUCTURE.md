@@ -46,6 +46,12 @@ node tests/test_homepage.cjs
 
 Webbläsartestet kräver Playwright och Chromium. Det kontrollerar först den verkliga startsidan och testar sedan urvalsflödet med uttryckligt syntetiska svar i en isolerad webbläsarkontext. Testdata skrivs aldrig till webbplatsens datafiler.
 
+## Träningsdata efter datarättningen 1 november
+
+Alla modelltränare använder `scripts/data_quality.py`. Den äldre databasen är bevarad; ofullständiga lopp spärras och dess galoppvärden används inte. Rådatabaserad återinsamling sköts av `scripts/historical_pilot.py` och skriver `historical_pilot_v2.json` samt kontrollerbara källsvar under `research/raw-history/`. `--offline` förbjuder nätanrop och använder endast sparade, hashkontrollerade råsvar.
+
+`research/training_data_quality_2026.json` redovisar användbara lopp och spärrade lopp. Modellrapporter efter rättningen skrivs till `*_v2.json`; ett otillräckligt underlag får en uttrycklig status utan prestationsmått. Metodsidan visar de nya rapporterna och `data-quality.js` visar datakontrollen. Äldre forskningsresultat och frysta prognoser är historiska och bevaras. Se `research/DATA_QUALITY.md` för återhämtning och tester.
+
 ## Historisk implementation: Bjerke 31 oktober
 
 Följande beskriver den bevarade äldre arbetsytan, inte Bergsåkers nya startsida.

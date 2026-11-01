@@ -1,5 +1,8 @@
 # LA_V85 – historisk pilot med tidsseparerat test
 
+> **Datarättning 1 november 2026:** De äldre resultaten nedan är bevarade historiska experiment. Modellträning använder nu fullständiga startfält och avstängda, ej verifierbara äldre galoppvärden. 31 av 178 lopp (354 starter) kan behållas för begränsade tester; 147 lopp behöver ny rådatakontroll. [Läs rättningen och återhämtningsstegen](DATA_QUALITY.md). [Aktuell datakontroll](training_data_quality_2026.json). Nya modellrapporter använder suffixet `_v2.json`.
+
+
 Den här katalogen innehåller ett **forskningsförsök**, inte färdiga spelråd eller validerade vinstsannolikheter.
 
 ## Syfte
