@@ -6,7 +6,7 @@
   const fmt=(n,d=1)=>D.finite(n)?n.toLocaleString('sv-SE',{maximumFractionDigits:d}):'–';
   const stamp=s=>D.instant(s)?new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}).format(new Date(s)):'Inte verifierad';
   const get=async url=>{const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error('Underlaget kunde inte hämtas ('+r.status+').');return r.json();};
-  let form=null;
+  let form=null,model=null;
   let data,analysis,round,storageKey,leg=1,state={selections:{},frozen:[],stake:null},analysisUnavailable=false;
   const empty=(title,body)=>'<div class="empty-state"><h3>'+esc(title)+'</h3><p>'+esc(body)+'</p></div>';
   function save(){
@@ -44,6 +44,13 @@
     }
     $('#outsider-list').innerHTML=cards('outsider');$('#spike-list').innerHTML=cards('spike');
   }
+  function renderModel(){
+    const target=$('#model-list'),note=$('#model-status');
+    if(!model){target.innerHTML=empty('Modellranking inväntas','En tränad ranking visas när den stämmer med den aktuella startlistan.');note.textContent='Ingen verifierad modellranking för detta underlag.';return;}
+    const t=model.training,m=model.validation.metrics;
+    note.textContent='CatBoost · '+t.starts+' historiska starter i '+t.races+' lopp på '+t.dates+' tävlingsdagar. Träningsperiod '+t.from+'–'+t.until+'. Test på senare tävlingsdagar: vinnaren fanns bland de tre högst rankade i '+m.top3Count+' av '+m.races+' lopp ('+fmt(m.top3Rate*100)+' %). Förstahästen vann '+m.top1Count+' av '+m.races+' lopp. Beräknad '+stamp(model.generatedAt)+'. Litet historiskt urval; modellpoäng är inte kalibrerad vinstchans.';
+    target.innerHTML=model.races.map(r=>'<article class="proposal-card"><div class="card-top"><strong>V85-'+r.leg+'</strong><span>CATBOOST</span></div><ol>'+r.top3.map(h=>'<li><strong>'+h.number+' '+esc(h.name)+'</strong></li>').join('')+'</ol><button class="button secondary" data-leg="'+r.leg+'">Granska loppet</button></article>').join('');
+  }
   function renderRaces(){
     $('#race-tabs').innerHTML=Array.from({length:8},(_,i)=>'<button type="button" data-leg="'+(i+1)+'" aria-pressed="'+(leg===i+1)+'" '+(data.status!=='verified'?'disabled':'')+'>V85-'+(i+1)+'</button>').join('');
     for(const id of ['#horse-search','#horse-sort','#show-scratched'])$(id).disabled=data.status!=='verified';
@@ -55,8 +62,10 @@
     const proposals=D.picks(data,analysis);
     const formRace=form?.snapshotId===data.snapshotId?form.races.find(r=>r.leg===leg):null;
     const formHorses=(formRace?.horses||[]).filter(h=>!h.scratched&&D.finite(h.evidence?.partialRankScore)).sort((a,b)=>b.evidence.partialRankScore-a.evidence.partialRankScore);
+    const modelRace=model?.races.find(r=>r.leg===leg);
+    const modelSummary=modelRace?'<div class="data-notice"><strong>CatBoost · topp 3 kandidater</strong><p>'+modelRace.top3.map(h=>h.rank+'. '+h.number+' '+esc(h.name)).join(' → ')+'</p><p>Tränad på kompletta historiska lopp. Ranking, inte kalibrerad vinstchans. <a href="#modellranking">Se alla åtta lopp och testutfall</a>.</p></div>':'';
     const formSummary=formRace?'<div class="data-notice"><strong>Preliminär formranking</strong><p>'+esc(formHorses.map(h=>h.number+' '+h.name+' ('+fmt(h.evidence.partialRankScore)+' poäng, '+h.evidence.modelCoverageWeight+' % underlag)').join(' → ')||'Otillräckligt underlag för delranking')+'</p><p>Historisk delpoäng, inte vinstchans. Utrustning och faktisk spetschans är inte bedömda. Olika datatäckning gör poängen mindre jämförbara. Streck krävs för spelvärde.</p></div>':'';
-    $('#race-panel').innerHTML='<div class="race-intro"><div><h3>V85-'+leg+(race.raceNumber?' · lopp '+esc(race.raceNumber):'')+'</h3><p>'+esc(race.distance?race.distance+' m':'Distans inväntas')+' · '+esc(race.startMethod==='auto'?'Autostart':race.startMethod==='volte'?'Voltstart':race.startMethod||'Startmetod inväntas')+' · '+horses.filter(h=>!h.scratched).length+' aktiva</p></div><p>Marknadens förstahäst: '+(ranked[0]?esc(ranked[0].number+' '+ranked[0].name)+' · '+fmt(ranked[0].pct)+' %':'Streck saknas')+'</p></div>'+formSummary+'<div class="horse-list">'+(rows.length?rows.map(h=>{
+    $('#race-panel').innerHTML='<div class="race-intro"><div><h3>V85-'+leg+(race.raceNumber?' · lopp '+esc(race.raceNumber):'')+'</h3><p>'+esc(race.distance?race.distance+' m':'Distans inväntas')+' · '+esc(race.startMethod==='auto'?'Autostart':race.startMethod==='volte'?'Voltstart':race.startMethod||'Startmetod inväntas')+' · '+horses.filter(h=>!h.scratched).length+' aktiva</p></div><p>Marknadens förstahäst: '+(ranked[0]?esc(ranked[0].number+' '+ranked[0].name)+' · '+fmt(ranked[0].pct)+' %':'Streck saknas')+'</p></div>'+modelSummary+formSummary+'<div class="horse-list">'+(rows.length?rows.map(h=>{
       const selected=state.selections[h.key],pick=proposals.find(p=>p.key===h.key),marketRank=ranked.findIndex(x=>x.key===h.key)+1;
       const assessment=formRace?.horses.find(x=>x.number===h.number&&x.name===h.name);
       const history=assessment?assessment.lastFive.map(x=>({date:x.date,description:(x.place===0?'Oplacerad':x.place===null?'Placering saknas':'Placering '+x.place)+(x.galloped===true?' · galopp':'')})):(Array.isArray(h.history)?h.history:[]);
@@ -75,12 +84,13 @@
     $('#frozen-list').innerHTML=state.frozen.map((f,i)=>'<div class="frozen-entry"><span><strong>Fryst urval '+(i+1)+'</strong> · '+esc(stamp(f.frozenAt))+'<br><small>Bevarat underlag: '+esc(stamp(f.sourceAt))+'</small></span><button class="small-button" data-download="'+i+'">Ladda ner fryst kopia</button></div>').join('');
     renderStatus();
   }
-  function renderAll(){renderStatus();renderProposals();renderRaces();renderSelection();}
+  function renderAll(){renderModel();renderStatus();renderProposals();renderRaces();renderSelection();}
   try{
     const config=await get('./rounds.json');round=config.rounds.find(r=>r.id===config.current);if(!round)throw Error('Aktuell omgång saknas.');
     data=D.validate(await get('./'+round.data),round);
     try{analysis=await get('./'+round.analysis);}catch{analysis=null;analysisUnavailable=true;}
     try{form=await get('./rounds/'+round.id+'/form.json');}catch{form=null;}
+    try{model=window.V85Model.validate(await get('./rounds/'+round.id+'/model.json'),data);}catch{model=null;}
     const day=new Date(round.date+'T12:00:00+01:00');
     $('#round-track').textContent=round.track+'.';$('#hero-date').textContent=day.toLocaleDateString('sv-SE',{timeZone:'Europe/Stockholm',day:'numeric',month:'long',year:'numeric'}).toUpperCase();
     $('#round-date').textContent=day.toLocaleDateString('sv-SE',{timeZone:'Europe/Stockholm',weekday:'long',day:'numeric',month:'long'});

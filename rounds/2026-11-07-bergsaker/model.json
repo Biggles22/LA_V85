@@ -1,0 +1,2748 @@
+{
+  "schemaVersion": 1,
+  "kind": "CATBOOST_PRESTART_RANKING",
+  "roundId": "2026-11-07-bergsaker",
+  "gameId": "V85_2026-11-07_9_5",
+  "snapshotId": "b5395617f5d19d7ee6c8172796128ca6b2fce27c1d8ef82459acbaeb2f2177d9",
+  "generatedAt": "2026-11-02T10:24:15.867917+00:00",
+  "model": "CatBoostClassifier",
+  "parameters": {
+    "iterations": 220,
+    "learning_rate": 0.045,
+    "depth": 5,
+    "l2_leaf_reg": 6,
+    "loss_function": "Logloss",
+    "thread_count": 2,
+    "random_seed": 214,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "training": {
+    "starts": 354,
+    "races": 31,
+    "dates": 16,
+    "from": "2025-11-29",
+    "until": "2026-10-10",
+    "source": "research\\historical_pilot_2026.json",
+    "sha256": "e6e50fc4d757ca3ab6606a48b643ce87e850f88ea51a96a2d9582f0be533a747",
+    "excludedRaces": 147
+  },
+  "features": [
+    "post",
+    "distance",
+    "field",
+    "auto",
+    "starts5",
+    "form_place_mean",
+    "win5",
+    "top3_5",
+    "days_off",
+    "gallop5",
+    "km_median",
+    "past_purse_log",
+    "post_field_ratio",
+    "form_percentile",
+    "wins_percentile",
+    "recent_km_percentile",
+    "purse_percentile"
+  ],
+  "validation": {
+    "folds": [
+      {
+        "date": "2026-03-28",
+        "trainUntil": "2026-03-21",
+        "trainStarts": 168,
+        "metrics": {
+          "races": 1,
+          "top1Count": 0,
+          "top3Count": 0,
+          "top1Rate": 0.0,
+          "top3Rate": 0.0,
+          "raceLogLoss": 2.6025,
+          "horseBrier": 0.06379
+        }
+      },
+      {
+        "date": "2026-04-25",
+        "trainUntil": "2026-03-28",
+        "trainStarts": 183,
+        "metrics": {
+          "races": 2,
+          "top1Count": 0,
+          "top3Count": 1,
+          "top1Rate": 0.0,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.9009,
+          "horseBrier": 0.11794
+        }
+      },
+      {
+        "date": "2026-05-02",
+        "trainUntil": "2026-04-25",
+        "trainStarts": 202,
+        "metrics": {
+          "races": 1,
+          "top1Count": 0,
+          "top3Count": 1,
+          "top1Rate": 0.0,
+          "top3Rate": 1.0,
+          "raceLogLoss": 1.6434,
+          "horseBrier": 0.0656
+        }
+      },
+      {
+        "date": "2026-06-13",
+        "trainUntil": "2026-05-02",
+        "trainStarts": 214,
+        "metrics": {
+          "races": 2,
+          "top1Count": 0,
+          "top3Count": 1,
+          "top1Rate": 0.0,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.3099,
+          "horseBrier": 0.07553
+        }
+      },
+      {
+        "date": "2026-06-27",
+        "trainUntil": "2026-06-13",
+        "trainStarts": 238,
+        "metrics": {
+          "races": 3,
+          "top1Count": 0,
+          "top3Count": 3,
+          "top1Rate": 0.0,
+          "top3Rate": 1.0,
+          "raceLogLoss": 1.8163,
+          "horseBrier": 0.06871
+        }
+      },
+      {
+        "date": "2026-07-25",
+        "trainUntil": "2026-06-27",
+        "trainStarts": 273,
+        "metrics": {
+          "races": 5,
+          "top1Count": 1,
+          "top3Count": 3,
+          "top1Rate": 0.2,
+          "top3Rate": 0.6,
+          "raceLogLoss": 2.1197,
+          "horseBrier": 0.08103
+        }
+      },
+      {
+        "date": "2026-10-10",
+        "trainUntil": "2026-07-25",
+        "trainStarts": 330,
+        "metrics": {
+          "races": 2,
+          "top1Count": 0,
+          "top3Count": 2,
+          "top1Rate": 0.0,
+          "top3Rate": 1.0,
+          "raceLogLoss": 1.8161,
+          "horseBrier": 0.06923
+        }
+      }
+    ],
+    "metrics": {
+      "races": 16,
+      "top1Count": 1,
+      "top3Count": 11,
+      "top1Rate": 0.0625,
+      "top3Rate": 0.6875,
+      "raceLogLoss": 2.1467,
+      "horseBrier": 0.07913
+    }
+  },
+  "sources": [
+    {
+      "raceId": "2026-11-07_9_5",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_5/extended",
+      "sha256": "c55a9711d746a08c34473ef4712a6e554ec4651c78925938d75637729df1c9f9"
+    },
+    {
+      "raceId": "2026-11-07_9_6",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_6/extended",
+      "sha256": "e4d981c1fd4f1a36cee03099cad0ca93abecb7c13672d83e77ba9c4c3b079f93"
+    },
+    {
+      "raceId": "2026-11-07_9_7",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_7/extended",
+      "sha256": "22ac6decd05cb9d1ad04344d83defc7f61421845185efd08893aaae65d44c8da"
+    },
+    {
+      "raceId": "2026-11-07_9_8",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_8/extended",
+      "sha256": "5869b1f91f36884ce64595bfb80437a1d7ad333edfce98bcf21fa5ec690f7c40"
+    },
+    {
+      "raceId": "2026-11-07_9_9",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_9/extended",
+      "sha256": "2ce25dd25d68e62f69a273964c9b7ef4fa65df692c640def437285a444fcb196"
+    },
+    {
+      "raceId": "2026-11-07_9_10",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_10/extended",
+      "sha256": "9b3545d8e6d7a5c4c2bc92acb1692ee78722d490c4f9c8efc8ef8fe8a5390053"
+    },
+    {
+      "raceId": "2026-11-07_9_11",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_11/extended",
+      "sha256": "fb41eeca31bfedaa07806ab53203c5e0f9806fa7e8dbcd65f6b1e00b6f609816"
+    },
+    {
+      "raceId": "2026-11-07_9_12",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_12/extended",
+      "sha256": "9550b84f5bebc5dc69c5512998078cbc679e2c004e0e7c1a83d14b1b12f0fab3"
+    }
+  ],
+  "limitations": "Experimentell ranking från ett litet urval kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, resultat, hästnamn, kusk och tränare ingår inte som modellvariabler. Galoppvariabeln är avstängd eftersom historiken inte är verifierad.",
+  "races": [
+    {
+      "leg": 1,
+      "raceId": "2026-11-07_9_5",
+      "horses": [
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 1,
+          "name": "Jaguar Godiva",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 7,
+            "gallop5": null,
+            "km_median": 71.85,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.28255752,
+          "rank": 1
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 9,
+          "name": "Andiamo",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.2,
+            "win5": 4,
+            "top3_5": 5,
+            "days_off": 23,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.11761095,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 4,
+          "name": "Global Dependable",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": 72.5,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.10373264,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 6,
+          "name": "Readly Brodde",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.333,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 24,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.09865603,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 11,
+          "name": "Russel Square",
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.25,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 18,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.06385549,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 12,
+          "name": "Lookin at Lucky",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.333,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.05669568,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 2,
+          "name": "River Tooma",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.8,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.04370368,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 5,
+          "name": "Raven",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.8,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 23,
+            "gallop5": null,
+            "km_median": 73.0,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.03392918,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 8,
+          "name": "Pasha Newport",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 22,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.01976608,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 10,
+          "name": "Any Given Sunday",
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 8,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.01701529,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 7,
+          "name": "Vixi Garbo",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 8,
+            "gallop5": null,
+            "km_median": 72.65,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.00969029,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 3,
+          "name": "Warhol",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.00957167,
+          "rank": 12
+        }
+      ],
+      "top3": [
+        {
+          "number": 1,
+          "name": "Jaguar Godiva",
+          "rank": 1
+        },
+        {
+          "number": 9,
+          "name": "Andiamo",
+          "rank": 2
+        },
+        {
+          "number": 4,
+          "name": "Global Dependable",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "leg": 2,
+      "raceId": "2026-11-07_9_6",
+      "horses": [
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 11,
+          "name": "Sanna Tooma",
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 18,
+            "gallop5": null,
+            "km_median": 73.05,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.1468805,
+          "rank": 1
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 4,
+          "name": "Executive Duchess",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1,
+            "win5": 3,
+            "top3_5": 3,
+            "days_off": 22,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.11036599,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 12,
+          "name": "Valuga",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.5,
+            "win5": 1,
+            "top3_5": 1,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.06401114,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 2,
+          "name": "Samira M.B.S.",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 31,
+            "gallop5": 1.0,
+            "km_median": 73.2,
+            "past_purse_log": 16.811
+          },
+          "modelScore": 0.0452938,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 5,
+          "name": "Nordic Choice",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.04086568,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 3,
+          "name": "La Fiesta Pellini",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.667,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 29,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.03640005,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 1,
+          "name": "May J.",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.75,
+            "win5": 3,
+            "top3_5": 3,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.03389632,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 7,
+          "name": "Beau Fille",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 30,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.03041765,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 10,
+          "name": "R.F.M.Levina",
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.333,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 39,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.02345911,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 8,
+          "name": "Ajlexes Konnässör",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.01719529,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 9,
+          "name": "Järnladyn",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 30,
+            "gallop5": null,
+            "km_median": 74.5,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.01418615,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 6,
+          "name": "Hervey Island",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.75,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 18,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.01211307,
+          "rank": 12
+        }
+      ],
+      "top3": [
+        {
+          "number": 11,
+          "name": "Sanna Tooma",
+          "rank": 1
+        },
+        {
+          "number": 4,
+          "name": "Executive Duchess",
+          "rank": 2
+        },
+        {
+          "number": 12,
+          "name": "Valuga",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "leg": 3,
+      "raceId": "2026-11-07_9_7",
+      "horses": [
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 1,
+          "name": "Eldbrand",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.75,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 35,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.956
+          },
+          "modelScore": 0.21353553,
+          "rank": 1
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 8,
+          "name": "Ellbert",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.667,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 13,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.83
+          },
+          "modelScore": 0.11361187,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 7,
+          "name": "Skjegge Svarten",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.8,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 34,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": null
+          },
+          "modelScore": 0.0755598,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 11,
+          "name": "Grisle Kongen G.L.",
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.6,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.06601388,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 6,
+          "name": "Faks Trym",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 18,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          },
+          "modelScore": 0.05140929,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 15,
+          "name": "Lill Elden",
+          "prestartFeatures": {
+            "post": 15.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.2,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 33,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 14.732
+          },
+          "modelScore": 0.04554049,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 14,
+          "name": "V.Viking",
+          "prestartFeatures": {
+            "post": 14.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.667,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 71,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.03887071,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 9,
+          "name": "Briskeby Pilen",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.03804091,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 3,
+          "name": "Nordprins",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 24,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.0281157,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 13,
+          "name": "Eldida",
+          "prestartFeatures": {
+            "post": 13.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 8,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.118
+          },
+          "modelScore": 0.0120524,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 2,
+          "name": "Kjempa Re",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.5,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.0104021,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 10,
+          "name": "Ersa Frej",
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.667,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 8,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.118
+          },
+          "modelScore": 0.01010201,
+          "rank": 12
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 12,
+          "name": "Harry Växus",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.667,
+            "win5": 1,
+            "top3_5": 1,
+            "days_off": 33,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.00855326,
+          "rank": 13
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 4,
+          "name": "Ava Modde",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.333,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 10,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.00820519,
+          "rank": 14
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 5,
+          "name": "Fosshaug Frasse",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.75,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.00535006,
+          "rank": 15
+        }
+      ],
+      "top3": [
+        {
+          "number": 1,
+          "name": "Eldbrand",
+          "rank": 1
+        },
+        {
+          "number": 8,
+          "name": "Ellbert",
+          "rank": 2
+        },
+        {
+          "number": 7,
+          "name": "Skjegge Svarten",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "raceId": "2026-11-07_9_8",
+      "horses": [
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 5,
+          "name": "Crowe Motion",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.4,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": 71.8,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.24979709,
+          "rank": 1
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 6,
+          "name": "Shogun R.R.",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 35,
+            "gallop5": null,
+            "km_median": 72.2,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.23369343,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 1,
+          "name": "Nickel Occagnes",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": 72.4,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.21564806,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 8,
+          "name": "Bright Star U.S.",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.667,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 26,
+            "gallop5": null,
+            "km_median": 71.3,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.16446253,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 4,
+          "name": "Conrads Åke",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.667,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": 71.9,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.06534847,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 12,
+          "name": "Indy Rock",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": null,
+            "win5": null,
+            "top3_5": null,
+            "days_off": 84,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": null
+          },
+          "modelScore": 0.06216079,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 2,
+          "name": "Parish Crooks V.S.",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.75,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": 72.35,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.03041653,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 3,
+          "name": "Four White E.G.",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.8,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.02752366,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 9,
+          "name": "Summermusic'nightS",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.75,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": 72.1,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.02002222,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 11,
+          "name": "Izod Zet",
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 71.85,
+            "past_purse_log": 15.895
+          },
+          "modelScore": 0.01783064,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 10,
+          "name": "Flotilla",
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 5,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.0117908,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 7,
+          "name": "Devils Tongue",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 11,
+            "gallop5": 1.0,
+            "km_median": 73.6,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.0096698,
+          "rank": 12
+        }
+      ],
+      "top3": [
+        {
+          "number": 5,
+          "name": "Crowe Motion",
+          "rank": 1
+        },
+        {
+          "number": 6,
+          "name": "Shogun R.R.",
+          "rank": 2
+        },
+        {
+          "number": 1,
+          "name": "Nickel Occagnes",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "leg": 5,
+      "raceId": "2026-11-07_9_9",
+      "horses": [
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 1,
+          "name": "Edens Odin",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 1.25,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 13,
+            "gallop5": 1.0,
+            "km_median": 83.8,
+            "past_purse_log": 16.118
+          },
+          "modelScore": 0.34664931,
+          "rank": 1
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 4,
+          "name": "Guli Em",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 4,
+            "top3_5": 4,
+            "days_off": 43,
+            "gallop5": null,
+            "km_median": 83.65,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.16471847,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 14,
+          "name": "Zargo",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2160.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": 83.85,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.09792483,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 11,
+          "name": "Tekno Jerven",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2160.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.4,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 83.65,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.09161961,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 10,
+          "name": "Soldhöjdens Drake",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2160.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 30,
+            "gallop5": null,
+            "km_median": 84.9,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.07307053,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 12,
+          "name": "Svarte Petter",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2160.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 2.75,
+            "win5": 3,
+            "top3_5": 3,
+            "days_off": 37,
+            "gallop5": 1.0,
+            "km_median": 83.95,
+            "past_purse_log": 16.678
+          },
+          "modelScore": 0.0725646,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 2,
+          "name": "Komnes Omer",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 2.6,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": 84.3,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.04559134,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 8,
+          "name": "Pyrotek",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3.6,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 13,
+            "gallop5": 1.0,
+            "km_median": 84.9,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.02697847,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 13,
+          "name": "Nordby Elde",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2160.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.02259077,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 15,
+          "name": "Smedheim Braut",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2160.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 5.333,
+            "win5": 0,
+            "top3_5": 0,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": 84.45,
+            "past_purse_log": 15.52
+          },
+          "modelScore": 0.01033081,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 5,
+          "name": "Kruson",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": 85.4,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.00873777,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 9,
+          "name": "Källsjöviking",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.6,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 20,
+            "gallop5": null,
+            "km_median": 85.9,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.00783107,
+          "rank": 12
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 7,
+          "name": "Guli Hektor",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.2,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 8,
+            "gallop5": 1.0,
+            "km_median": 84.95,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.00571152,
+          "rank": 13
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 3,
+          "name": "Klack Vidar",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 5,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": 84.6,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.00494401,
+          "rank": 14
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 6,
+          "name": "Hibovalle",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 5,
+            "win5": 0,
+            "top3_5": 0,
+            "days_off": 8,
+            "gallop5": 1.0,
+            "km_median": 85.4,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.00302177,
+          "rank": 15
+        }
+      ],
+      "top3": [
+        {
+          "number": 1,
+          "name": "Edens Odin",
+          "rank": 1
+        },
+        {
+          "number": 4,
+          "name": "Guli Em",
+          "rank": 2
+        },
+        {
+          "number": 14,
+          "name": "Zargo",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "raceId": "2026-11-07_9_10",
+      "horses": [
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 5,
+          "name": "Good Wine",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 4,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": 72.85,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.40175982,
+          "rank": 1
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 14,
+          "name": "Full Speed Forward",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2160.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 20,
+            "gallop5": 1.0,
+            "km_median": 73.2,
+            "past_purse_log": 16.455
+          },
+          "modelScore": 0.25722103,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 3,
+          "name": "Sunshine Tooma",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 13,
+            "gallop5": 1.0,
+            "km_median": 72.8,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.21897286,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 1,
+          "name": "Wing Profile",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3.4,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 27,
+            "gallop5": null,
+            "km_median": 73.8,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.15244804,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 8,
+          "name": "Conrads Jessica",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 1.333,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 23,
+            "gallop5": 1.0,
+            "km_median": 74.4,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.08046472,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 11,
+          "name": "Candy Celebration",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2160.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.667,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 58,
+            "gallop5": 1.0,
+            "km_median": 74.7,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.03485901,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 6,
+          "name": "Tarte Tatin",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.25,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 27,
+            "gallop5": null,
+            "km_median": 75.3,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.02541204,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 9,
+          "name": "Virtual Reality",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.5,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": 74.6,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.01980355,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 12,
+          "name": "Ajlexes Gourmand",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2160.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 5.25,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 74.0,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.01708944,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 2,
+          "name": "Aloha",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.25,
+            "win5": 1,
+            "top3_5": 1,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 74.15,
+            "past_purse_log": 16.118
+          },
+          "modelScore": 0.01701286,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 7,
+          "name": "Sessan of Man",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.2,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": 75.0,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.00658451,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 13,
+          "name": "Megan di Quattro",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2160.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3.75,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 74.4,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.00551714,
+          "rank": 12
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 4,
+          "name": "Rosi Tooma",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.4,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 74.55,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.00361607,
+          "rank": 13
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 15,
+          "name": "Staro Roseway",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2160.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.8,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 74.7,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.0027653,
+          "rank": 14
+        }
+      ],
+      "top3": [
+        {
+          "number": 5,
+          "name": "Good Wine",
+          "rank": 1
+        },
+        {
+          "number": 14,
+          "name": "Full Speed Forward",
+          "rank": 2
+        },
+        {
+          "number": 3,
+          "name": "Sunshine Tooma",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "leg": 7,
+      "raceId": "2026-11-07_9_11",
+      "horses": [
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 6,
+          "name": "Youans Son",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.25,
+            "win5": 3,
+            "top3_5": 4,
+            "days_off": 36,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.118
+          },
+          "modelScore": 0.21487405,
+          "rank": 1
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 2,
+          "name": "Dropthegloves",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.667,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.06510368,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 10,
+          "name": "Last Cool Cash",
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 4,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.0332546,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 12,
+          "name": "T.Wall's Notorius",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 4,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": 74.8,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.03117977,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 3,
+          "name": "Don't Forget Me",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.4,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.895
+          },
+          "modelScore": 0.02982489,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 7,
+          "name": "Mastroianni",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 38,
+            "gallop5": null,
+            "km_median": 74.45,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.02870498,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 9,
+          "name": "Jayden de Joudes",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.25,
+            "win5": 0,
+            "top3_5": 4,
+            "days_off": 12,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.02303689,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 8,
+          "name": "Seven Mounds",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 20,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.83
+          },
+          "modelScore": 0.0211453,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 11,
+          "name": "Adora Liss",
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.01887122,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 5,
+          "name": "Face to Face",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.01718295,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 1,
+          "name": "Pommery Boko",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.01476663,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 4,
+          "name": "Funny Guy",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.25,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 10,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.01275671,
+          "rank": 12
+        }
+      ],
+      "top3": [
+        {
+          "number": 6,
+          "name": "Youans Son",
+          "rank": 1
+        },
+        {
+          "number": 2,
+          "name": "Dropthegloves",
+          "rank": 2
+        },
+        {
+          "number": 10,
+          "name": "Last Cool Cash",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "leg": 8,
+      "raceId": "2026-11-07_9_12",
+      "horses": [
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 6,
+          "name": "Exile on Main St.",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 23,
+            "gallop5": null,
+            "km_median": 73.95,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.21587885,
+          "rank": 1
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 8,
+          "name": "Snack",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": 74.05,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.19009032,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 9,
+          "name": "Set it off H.C.",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.6,
+            "win5": 3,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": 73.8,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.11697561,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 14,
+          "name": "Ultimate Scotch",
+          "prestartFeatures": {
+            "post": 14.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.25,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.06167491,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 2,
+          "name": "Pure Dream",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 35,
+            "gallop5": 1.0,
+            "km_median": 77.8,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.06042065,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 5,
+          "name": "Turner Ale",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.4,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 24,
+            "gallop5": null,
+            "km_median": 74.3,
+            "past_purse_log": 16.118
+          },
+          "modelScore": 0.0573519,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 15,
+          "name": "Sir Håleryd",
+          "prestartFeatures": {
+            "post": 15.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.25,
+            "win5": 1,
+            "top3_5": 1,
+            "days_off": 35,
+            "gallop5": null,
+            "km_median": 74.5,
+            "past_purse_log": 16.118
+          },
+          "modelScore": 0.03196534,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 4,
+          "name": "Edes Coktail",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.667,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 27,
+            "gallop5": 1.0,
+            "km_median": 74.4,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.02653874,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 12,
+          "name": "Showmethecash",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 49,
+            "gallop5": null,
+            "km_median": 74.2,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.02452577,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 13,
+          "name": "Monir Southwind",
+          "prestartFeatures": {
+            "post": 13.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 62,
+            "gallop5": 1.0,
+            "km_median": 75.25,
+            "past_purse_log": 14.732
+          },
+          "modelScore": 0.01615471,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 7,
+          "name": "Almond Remix",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": 74.95,
+            "past_purse_log": 14.732
+          },
+          "modelScore": 0.01386444,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 11,
+          "name": "Iulius Zet",
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.667,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 13,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.01122169,
+          "rank": 12
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 1,
+          "name": "License to Fight",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.8,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": 75.45,
+            "past_purse_log": 14.914
+          },
+          "modelScore": 0.01023324,
+          "rank": 13
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 10,
+          "name": "Alfred Gratien",
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 13,
+            "gallop5": 1.0,
+            "km_median": 75.45,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.00746872,
+          "rank": 14
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 3,
+          "name": "Win Wood",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 10,
+            "gallop5": 1.0,
+            "km_median": 75.65,
+            "past_purse_log": 14.732
+          },
+          "modelScore": 0.00325979,
+          "rank": 15
+        }
+      ],
+      "top3": [
+        {
+          "number": 6,
+          "name": "Exile on Main St.",
+          "rank": 1
+        },
+        {
+          "number": 8,
+          "name": "Snack",
+          "rank": 2
+        },
+        {
+          "number": 9,
+          "name": "Set it off H.C.",
+          "rank": 3
+        }
+      ]
+    }
+  ],
+  "software": {
+    "catboost": "1.2.10",
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  }
+}

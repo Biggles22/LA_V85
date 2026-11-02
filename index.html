@@ -5,7 +5,7 @@
 <title>Bergsåker 7 november · Skrällar & spikar | LA_V85</title>
 <meta name="description" content="Inför V85 på Bergsåker den 7 november 2026: skrällförslag, spikförslag, loppanalys och ett eget sparbart urval med tydliga källor.">
 <link rel="stylesheet" href="./site-shell.css?v=20261101"><link rel="stylesheet" href="./v85.css?v=20261101">
-<script src="./site-navigation.js?v=20261101" defer></script><script src="./v85-domain.js?v=20261101" defer></script><script src="./v85.js?v=20261101" defer></script>
+<script src="./site-navigation.js?v=20261101" defer></script><script src="./v85-domain.js?v=20261101" defer></script><script src="./v85-model.js?v=20261102" defer></script><script src="./v85.js?v=20261102" defer></script>
 </head>
 <body class="v85-app">
 <a class="skip-link" href="#main">Till innehållet</a>
@@ -16,7 +16,7 @@
 <aside class="round-summary" aria-label="Omgångens status"><span id="round-phase" class="status-pill">Under arbete</span><dl><div><dt>Omgång</dt><dd id="round-date">Lördag 7 november</dd></div><div><dt>Spelstopp</dt><dd id="start-time">Inväntar verifierad tid</dd></div><div><dt>Marknadsdata</dt><dd id="source-time">Inväntar startlista</dd></div></dl><a id="official-link" href="https://www.atg.se/spel/2026-11-07/V85/bergsaker" target="_blank" rel="noopener noreferrer">Kontrollera omgången hos ATG</a></aside>
 </header>
 <div id="data-status" class="data-notice" role="status">Vi inväntar verifierade startlistor och streck för Bergsåker. Hästar och förslag visas när underlaget är kontrollerat.</div>
-<nav class="section-nav" aria-label="Den här omgången"><a href="#skrallar">Skrällar</a><a href="#spikar">Spikar</a><a href="#loppen">Lopp för lopp</a><a href="#mitt-urval">Mitt urval <span id="selected-count">0</span></a></nav>
+<nav class="section-nav" aria-label="Den här omgången"><a href="#skrallar">Skrällar</a><a href="#spikar">Spikar</a><a href="#modellranking">Modellens topp 3</a><a href="#loppen">Lopp för lopp</a><a href="#mitt-urval">Mitt urval <span id="selected-count">0</span></a></nav>
 <section id="skrallar" class="proposal-section" aria-labelledby="outsiders-title">
 <div class="section-heading"><div><p class="eyebrow amber">MOTBUD MED VINNARSKÄL</p><h2 id="outsiders-title">Skrällförslag</h2><p>Låg streckandel, tydligt vinnarargument och en risk att ta ställning till.</p></div><label class="compact-label">Högst streckandel<select id="outsider-limit"><option value="20">20 %</option><option value="10">10 %</option><option value="5">5 %</option><option value="100">Alla förslag</option></select></label></div>
 <div id="outsider-list" class="proposal-grid"><div class="empty-state"><h3>Skrällarna är nästa steg.</h3><p>Här samlas omgångens granskade motbud med motivering, risk och källtid. Vi inväntar Bergsåkers underlag.</p></div></div>
@@ -24,6 +24,12 @@
 <section id="spikar" class="proposal-section" aria-labelledby="spikes-title">
 <div class="section-heading"><div><p class="eyebrow teal">LOPPEN ATT TA STÄLLNING I</p><h2 id="spikes-title">Spikförslag</h2><p>Granskade förstahästar med de viktigaste motbuden och riskerna synliga.</p></div><a class="text-link" href="./metod/#spik">Så bedöms en spik →</a></div>
 <div id="spike-list" class="proposal-grid"><div class="empty-state"><span class="empty-symbol" aria-hidden="true">◎</span><h3>Spikarna ska tåla en granskning.</h3><p>Startlista, aktuell form och motbud behöver kontrolleras innan ett spikförslag publiceras.</p></div></div>
+</section>
+<section id="modellranking" class="proposal-section" aria-labelledby="model-title">
+<div class="section-heading"><div><p class="eyebrow teal">HISTORISKA DATA · TRÄNAD MODELL</p><h2 id="model-title">Topp 3 i varje lopp</h2><p>CatBoost rankar kandidaterna från historisk form, distans, spår och klass.</p></div></div>
+<p id="model-status" class="data-notice">Modellunderlaget hämtas.</p>
+<div id="model-list" class="proposal-grid"></div>
+<p class="fine-print">Odds och streck ingår inte i rankningen. Utrustning och loppbild behöver granskas separat. <a href="./rounds/2026-11-07-bergsaker/model.json">Data, variabler och tidsordnat test</a>.</p>
 </section>
 <section id="loppen" class="race-section" aria-labelledby="races-title">
 <div class="section-heading"><div><p class="eyebrow">HELA FÄLTET</p><h2 id="races-title">Lopp för lopp</h2><p>Jämför hästarna, öppna underlaget och spara dem du vill ha med.</p></div></div>
