@@ -40,10 +40,10 @@
       "A smaller complete-field subset is selected data, not validated betting evidence."
     ],
     "sourceFile": "research/historical_pilot_v2.json",
-    "sourceSha256": "3c42c2a358b3264b3cb84b8387872f3967cf655ff0a7d19f31cc28ccd3964ca6"
+    "sourceSha256": "9e7cae5c8156565e78281e5f00e4e368b298d74c9e73181aead1c45113a6b6d9"
   },
   "reportType": "EXPLORATORY_BACKTEST_NOT_VALIDATED",
-  "createdAt": "2026-11-02T11:29:17.792319+00:00",
+  "createdAt": "2026-11-02T11:35:07.333745+00:00",
   "trainDates": [
     "2025-11-22",
     "2026-05-09"
@@ -73,21 +73,21 @@
   ],
   "modelMetrics": {
     "races": 62,
-    "top1Count": 11,
-    "top3Count": 32,
-    "top1Rate": 0.1774,
-    "top3Rate": 0.5161,
-    "raceLogLoss": 2.2497,
-    "horseBrier": 0.07381
+    "top1Count": 13,
+    "top3Count": 29,
+    "top1Rate": 0.2097,
+    "top3Rate": 0.4677,
+    "raceLogLoss": 2.2396,
+    "horseBrier": 0.07349
   },
   "modelOnIdenticalMarketRaces": {
     "races": 62,
-    "top1Count": 11,
-    "top3Count": 32,
-    "top1Rate": 0.1774,
-    "top3Rate": 0.5161,
-    "raceLogLoss": 2.2497,
-    "horseBrier": 0.07381
+    "top1Count": 13,
+    "top3Count": 29,
+    "top1Rate": 0.2097,
+    "top3Rate": 0.4677,
+    "raceLogLoss": 2.2396,
+    "horseBrier": 0.07349
   },
   "marketFinalPoolBaseline": {
     "races": 62,
@@ -108,17 +108,17 @@
         {
           "number": 7,
           "horse": "Justcantgetenough",
-          "modelProb": 0.1538
+          "modelProb": 0.1588
         },
         {
           "number": 3,
           "horse": "Eagle of Oak",
-          "modelProb": 0.1191
+          "modelProb": 0.1363
         },
         {
-          "number": 1,
-          "horse": "Shuffleboard",
-          "modelProb": 0.1165
+          "number": 2,
+          "horse": "Huchuy Qosqo",
+          "modelProb": 0.1314
         }
       ],
       "winnerNumbers": [
@@ -133,17 +133,17 @@
         {
           "number": 2,
           "horse": "D'artagnan Face",
-          "modelProb": 0.208
-        },
-        {
-          "number": 6,
-          "horse": "VilliamSon B.B.",
-          "modelProb": 0.1013
+          "modelProb": 0.2265
         },
         {
           "number": 1,
           "horse": "Global Email",
-          "modelProb": 0.1011
+          "modelProb": 0.1053
+        },
+        {
+          "number": 6,
+          "horse": "VilliamSon B.B.",
+          "modelProb": 0.1051
         }
       ],
       "winnerNumbers": [
@@ -158,17 +158,17 @@
         {
           "number": 7,
           "horse": "PolePosition",
-          "modelProb": 0.1946
+          "modelProb": 0.203
         },
         {
           "number": 4,
           "horse": "Raven",
-          "modelProb": 0.128
+          "modelProb": 0.1293
         },
         {
           "number": 1,
           "horse": "Incomparable",
-          "modelProb": 0.1177
+          "modelProb": 0.119
         }
       ],
       "winnerNumbers": [
@@ -183,17 +183,17 @@
         {
           "number": 11,
           "horse": "Official Sox",
-          "modelProb": 0.1637
+          "modelProb": 0.1685
         },
         {
           "number": 3,
           "horse": "Direction Face",
-          "modelProb": 0.1085
+          "modelProb": 0.1124
         },
         {
           "number": 15,
           "horse": "Supernova Lyjam",
-          "modelProb": 0.1019
+          "modelProb": 0.0847
         }
       ],
       "winnerNumbers": [
@@ -208,17 +208,17 @@
         {
           "number": 1,
           "horse": "Nume Bris",
-          "modelProb": 0.1226
-        },
-        {
-          "number": 14,
-          "horse": "Ragnhild W.M.",
-          "modelProb": 0.1154
+          "modelProb": 0.1237
         },
         {
           "number": 8,
           "horse": "Kleppe Tuå",
-          "modelProb": 0.1142
+          "modelProb": 0.1199
+        },
+        {
+          "number": 15,
+          "horse": "Tekno Tana",
+          "modelProb": 0.1068
         }
       ],
       "winnerNumbers": [
@@ -233,17 +233,17 @@
         {
           "number": 9,
           "horse": "Global Graceland",
-          "modelProb": 0.2292
+          "modelProb": 0.217
         },
         {
           "number": 6,
           "horse": "R.K.Pascal",
-          "modelProb": 0.182
+          "modelProb": 0.1542
         },
         {
           "number": 7,
           "horse": "Snickers",
-          "modelProb": 0.1248
+          "modelProb": 0.1493
         }
       ],
       "winnerNumbers": [
@@ -258,17 +258,17 @@
         {
           "number": 3,
           "horse": "Bazoo Can",
-          "modelProb": 0.2116
+          "modelProb": 0.1846
         },
         {
           "number": 13,
           "horse": "Palmesus N.O.",
-          "modelProb": 0.1673
+          "modelProb": 0.1547
         },
         {
           "number": 9,
           "horse": "Moshus Prinsen",
-          "modelProb": 0.1039
+          "modelProb": 0.1248
         }
       ],
       "winnerNumbers": [
@@ -283,17 +283,17 @@
         {
           "number": 5,
           "horse": "Keep Asking",
-          "modelProb": 0.3544
+          "modelProb": 0.36
         },
         {
           "number": 6,
           "horse": "Kentucky River",
-          "modelProb": 0.1449
+          "modelProb": 0.135
         },
         {
-          "number": 1,
-          "horse": "Diamond Truppo",
-          "modelProb": 0.088
+          "number": 2,
+          "horse": "High on Pepper",
+          "modelProb": 0.0966
         }
       ],
       "winnerNumbers": [
@@ -308,17 +308,17 @@
         {
           "number": 5,
           "horse": "Brother Day",
-          "modelProb": 0.1738
+          "modelProb": 0.1947
         },
         {
           "number": 4,
           "horse": "Carros First King",
-          "modelProb": 0.1621
+          "modelProb": 0.1796
         },
         {
           "number": 3,
           "horse": "Global Federation",
-          "modelProb": 0.1599
+          "modelProb": 0.1528
         }
       ],
       "winnerNumbers": [
@@ -331,25 +331,25 @@
       "date": "2026-05-30",
       "topModel": [
         {
-          "number": 10,
-          "horse": "Chribo Hill",
-          "modelProb": 0.1817
-        },
-        {
           "number": 1,
           "horse": "I'm a Dancer",
-          "modelProb": 0.1611
+          "modelProb": 0.1826
         },
         {
           "number": 6,
           "horse": "Ebbot Rice",
-          "modelProb": 0.1591
+          "modelProb": 0.1781
+        },
+        {
+          "number": 4,
+          "horse": "Ingmar Banker",
+          "modelProb": 0.1428
         }
       ],
       "winnerNumbers": [
         10
       ],
-      "winnerInTop3": true
+      "winnerInTop3": false
     },
     {
       "raceId": "2026-05-30_5_12",
@@ -358,17 +358,17 @@
         {
           "number": 10,
           "horse": "Eminent Kronos",
-          "modelProb": 0.1358
+          "modelProb": 0.1475
         },
         {
           "number": 3,
           "horse": "Olli Boko",
-          "modelProb": 0.1237
+          "modelProb": 0.1363
         },
         {
           "number": 1,
           "horse": "Valla d'Gaagaa",
-          "modelProb": 0.1142
+          "modelProb": 0.1199
         }
       ],
       "winnerNumbers": [
@@ -383,17 +383,17 @@
         {
           "number": 7,
           "horse": "Bold Eagle Sun",
-          "modelProb": 0.2663
+          "modelProb": 0.2868
         },
         {
           "number": 1,
           "horse": "Daniel Hazelaar",
-          "modelProb": 0.1938
+          "modelProb": 0.1732
         },
         {
           "number": 2,
           "horse": "Indy Boy",
-          "modelProb": 0.1053
+          "modelProb": 0.1027
         }
       ],
       "winnerNumbers": [
@@ -408,17 +408,17 @@
         {
           "number": 8,
           "horse": "Clarissa",
-          "modelProb": 0.175
-        },
-        {
-          "number": 6,
-          "horse": "Celiaz",
-          "modelProb": 0.1499
+          "modelProb": 0.1667
         },
         {
           "number": 5,
           "horse": "Fantastica Doda",
-          "modelProb": 0.1106
+          "modelProb": 0.142
+        },
+        {
+          "number": 6,
+          "horse": "Celiaz",
+          "modelProb": 0.1359
         }
       ],
       "winnerNumbers": [
@@ -433,17 +433,17 @@
         {
           "number": 1,
           "horse": "Villiam Avenue",
-          "modelProb": 0.1943
+          "modelProb": 0.1913
         },
         {
           "number": 11,
           "horse": "Secret Bo",
-          "modelProb": 0.1601
+          "modelProb": 0.1776
         },
         {
           "number": 3,
           "horse": "Mellby Note",
-          "modelProb": 0.1228
+          "modelProb": 0.1271
         }
       ],
       "winnerNumbers": [
@@ -458,17 +458,17 @@
         {
           "number": 1,
           "horse": "Jackpot Mearas",
-          "modelProb": 0.1504
+          "modelProb": 0.1542
         },
         {
           "number": 6,
           "horse": "Ready Star",
-          "modelProb": 0.1475
+          "modelProb": 0.1424
         },
         {
-          "number": 5,
-          "horse": "Summermusic'nightS",
-          "modelProb": 0.1299
+          "number": 7,
+          "horse": "Harpy",
+          "modelProb": 0.1198
         }
       ],
       "winnerNumbers": [
@@ -481,19 +481,19 @@
       "date": "2026-05-30",
       "topModel": [
         {
-          "number": 10,
-          "horse": "Noelia",
-          "modelProb": 0.1314
-        },
-        {
           "number": 15,
           "horse": "I'm Still Standing",
-          "modelProb": 0.1234
+          "modelProb": 0.1432
+        },
+        {
+          "number": 10,
+          "horse": "Noelia",
+          "modelProb": 0.1326
         },
         {
           "number": 5,
           "horse": "Melina Havelock",
-          "modelProb": 0.0937
+          "modelProb": 0.1149
         }
       ],
       "winnerNumbers": [
@@ -508,17 +508,17 @@
         {
           "number": 2,
           "horse": "S.G.Mistral",
-          "modelProb": 0.2011
+          "modelProb": 0.1955
         },
         {
           "number": 1,
           "horse": "Micke Sting",
-          "modelProb": 0.1589
+          "modelProb": 0.1924
         },
         {
           "number": 7,
           "horse": "Donatello Face",
-          "modelProb": 0.145
+          "modelProb": 0.1404
         }
       ],
       "winnerNumbers": [
@@ -533,17 +533,17 @@
         {
           "number": 1,
           "horse": "Herkules A'lir",
-          "modelProb": 0.1455
+          "modelProb": 0.1636
         },
         {
           "number": 6,
           "horse": "Mellby Mowgli",
-          "modelProb": 0.1261
+          "modelProb": 0.1241
         },
         {
           "number": 9,
           "horse": "Gratisfaction",
-          "modelProb": 0.1246
+          "modelProb": 0.1219
         }
       ],
       "winnerNumbers": [
@@ -558,17 +558,17 @@
         {
           "number": 5,
           "horse": "Francesco Zet",
-          "modelProb": 0.2614
+          "modelProb": 0.2693
         },
         {
           "number": 3,
           "horse": "Makalu Doc",
-          "modelProb": 0.1425
+          "modelProb": 0.15
         },
         {
           "number": 7,
           "horse": "Mellby Jinx",
-          "modelProb": 0.1392
+          "modelProb": 0.1399
         }
       ],
       "winnerNumbers": [
@@ -583,17 +583,17 @@
         {
           "number": 9,
           "horse": "Önas Samanta",
-          "modelProb": 0.1639
+          "modelProb": 0.1756
         },
         {
           "number": 7,
           "horse": "Only Muscles Steel",
-          "modelProb": 0.1546
+          "modelProb": 0.1363
         },
         {
-          "number": 5,
-          "horse": "Chianti L.A.",
-          "modelProb": 0.1393
+          "number": 4,
+          "horse": "No Regrets Renka",
+          "modelProb": 0.1336
         }
       ],
       "winnerNumbers": [
@@ -608,17 +608,17 @@
         {
           "number": 5,
           "horse": "Can't be Ruled",
-          "modelProb": 0.1631
-        },
-        {
-          "number": 1,
-          "horse": "You to Ezme",
-          "modelProb": 0.1345
+          "modelProb": 0.1725
         },
         {
           "number": 2,
           "horse": "Sonoma L.A.",
-          "modelProb": 0.134
+          "modelProb": 0.125
+        },
+        {
+          "number": 1,
+          "horse": "You to Ezme",
+          "modelProb": 0.1228
         }
       ],
       "winnerNumbers": [
@@ -633,17 +633,17 @@
         {
           "number": 13,
           "horse": "Edens Odin",
-          "modelProb": 0.3451
+          "modelProb": 0.3705
         },
         {
           "number": 2,
           "horse": "Lille Rose G.L.",
-          "modelProb": 0.0799
+          "modelProb": 0.0658
         },
         {
-          "number": 3,
-          "horse": "Gargamel",
-          "modelProb": 0.0617
+          "number": 1,
+          "horse": "Tyri Leo",
+          "modelProb": 0.0603
         }
       ],
       "winnerNumbers": [
@@ -658,17 +658,17 @@
         {
           "number": 10,
           "horse": "Mysleeve One",
-          "modelProb": 0.1769
+          "modelProb": 0.1749
         },
         {
           "number": 6,
           "horse": "Treasure Tile",
-          "modelProb": 0.1092
+          "modelProb": 0.1034
         },
         {
           "number": 15,
           "horse": "Healthy Meal",
-          "modelProb": 0.106
+          "modelProb": 0.0936
         }
       ],
       "winnerNumbers": [
@@ -681,44 +681,44 @@
       "date": "2026-06-13",
       "topModel": [
         {
-          "number": 9,
-          "horse": "Waldemar W.F.",
-          "modelProb": 0.1518
-        },
-        {
           "number": 5,
           "horse": "Alfred Gratien",
-          "modelProb": 0.1497
+          "modelProb": 0.1405
         },
         {
-          "number": 1,
-          "horse": "Twigs Mind U.",
-          "modelProb": 0.1174
+          "number": 9,
+          "horse": "Waldemar W.F.",
+          "modelProb": 0.1235
+        },
+        {
+          "number": 11,
+          "horse": "Puskas Boko",
+          "modelProb": 0.1205
         }
       ],
       "winnerNumbers": [
         11
       ],
-      "winnerInTop3": false
+      "winnerInTop3": true
     },
     {
       "raceId": "2026-06-27_9_10",
       "date": "2026-06-27",
       "topModel": [
         {
-          "number": 2,
-          "horse": "Harpy",
-          "modelProb": 0.1651
-        },
-        {
           "number": 1,
           "horse": "Loxahatchee",
-          "modelProb": 0.1633
+          "modelProb": 0.1748
         },
         {
-          "number": 11,
-          "horse": "PolePosition",
-          "modelProb": 0.1338
+          "number": 2,
+          "horse": "Harpy",
+          "modelProb": 0.1675
+        },
+        {
+          "number": 7,
+          "horse": "X.O.Kemp",
+          "modelProb": 0.1183
         }
       ],
       "winnerNumbers": [
@@ -731,19 +731,19 @@
       "date": "2026-06-27",
       "topModel": [
         {
+          "number": 2,
+          "horse": "Newcomer Vici",
+          "modelProb": 0.2279
+        },
+        {
           "number": 1,
           "horse": "Gratisfaction",
-          "modelProb": 0.2409
+          "modelProb": 0.1987
         },
         {
           "number": 3,
           "horse": "Look at Me Sisu",
-          "modelProb": 0.2241
-        },
-        {
-          "number": 2,
-          "horse": "Newcomer Vici",
-          "modelProb": 0.1792
+          "modelProb": 0.1762
         }
       ],
       "winnerNumbers": [
@@ -758,17 +758,17 @@
         {
           "number": 5,
           "horse": "Solkattens Express",
-          "modelProb": 0.2554
+          "modelProb": 0.2286
         },
         {
           "number": 6,
           "horse": "Gretzky Brodde",
-          "modelProb": 0.1591
+          "modelProb": 0.164
         },
         {
           "number": 3,
           "horse": "Hit or Miss",
-          "modelProb": 0.1233
+          "modelProb": 0.1239
         }
       ],
       "winnerNumbers": [
@@ -783,17 +783,17 @@
         {
           "number": 2,
           "horse": "Crowe Motion",
-          "modelProb": 0.2386
+          "modelProb": 0.2252
         },
         {
           "number": 6,
           "horse": "The Flying Eagle",
-          "modelProb": 0.1697
+          "modelProb": 0.1763
         },
         {
           "number": 7,
           "horse": "Olli Boko",
-          "modelProb": 0.1117
+          "modelProb": 0.1383
         }
       ],
       "winnerNumbers": [
@@ -808,17 +808,17 @@
         {
           "number": 7,
           "horse": "Rosie Bros",
-          "modelProb": 0.1704
+          "modelProb": 0.1893
         },
         {
-          "number": 3,
-          "horse": "Najade Quesnoy",
-          "modelProb": 0.1314
+          "number": 4,
+          "horse": "Fusion Blaze",
+          "modelProb": 0.1396
         },
         {
           "number": 5,
           "horse": "Västerbo Sparkly",
-          "modelProb": 0.13
+          "modelProb": 0.119
         }
       ],
       "winnerNumbers": [
@@ -833,17 +833,17 @@
         {
           "number": 1,
           "horse": "Puskas Boko",
-          "modelProb": 0.18
+          "modelProb": 0.2135
         },
         {
           "number": 5,
           "horse": "Illuminato",
-          "modelProb": 0.1463
+          "modelProb": 0.15
         },
         {
           "number": 3,
           "horse": "Last Cool Cash",
-          "modelProb": 0.1251
+          "modelProb": 0.1162
         }
       ],
       "winnerNumbers": [
@@ -858,17 +858,17 @@
         {
           "number": 13,
           "horse": "La Yuca",
-          "modelProb": 0.1896
-        },
-        {
-          "number": 6,
-          "horse": "Okura Greenwood",
-          "modelProb": 0.1336
+          "modelProb": 0.1766
         },
         {
           "number": 2,
           "horse": "Ditte Gel",
-          "modelProb": 0.1299
+          "modelProb": 0.1391
+        },
+        {
+          "number": 6,
+          "horse": "Okura Greenwood",
+          "modelProb": 0.1349
         }
       ],
       "winnerNumbers": [
@@ -883,17 +883,17 @@
         {
           "number": 1,
           "horse": "City Slicker",
-          "modelProb": 0.2276
+          "modelProb": 0.2192
         },
         {
           "number": 5,
           "horse": "Grosbois",
-          "modelProb": 0.145
+          "modelProb": 0.1686
         },
         {
-          "number": 4,
-          "horse": "Conrads Emil",
-          "modelProb": 0.1271
+          "number": 3,
+          "horse": "Reagan Boko",
+          "modelProb": 0.1254
         }
       ],
       "winnerNumbers": [
@@ -908,17 +908,17 @@
         {
           "number": 6,
           "horse": "Åsvinn S.K.",
-          "modelProb": 0.139
+          "modelProb": 0.136
         },
         {
           "number": 3,
           "horse": "Pyrotek",
-          "modelProb": 0.1329
+          "modelProb": 0.1158
         },
         {
           "number": 5,
           "horse": "Faks Odin N.O.",
-          "modelProb": 0.0996
+          "modelProb": 0.1013
         }
       ],
       "winnerNumbers": [
@@ -933,17 +933,17 @@
         {
           "number": 12,
           "horse": "Tiberius Victory",
-          "modelProb": 0.265
-        },
-        {
-          "number": 6,
-          "horse": "Readly Brodde",
-          "modelProb": 0.1365
+          "modelProb": 0.2502
         },
         {
           "number": 1,
           "horse": "Illuminato",
-          "modelProb": 0.1312
+          "modelProb": 0.1544
+        },
+        {
+          "number": 6,
+          "horse": "Readly Brodde",
+          "modelProb": 0.116
         }
       ],
       "winnerNumbers": [
@@ -958,17 +958,17 @@
         {
           "number": 1,
           "horse": "Mandrake",
-          "modelProb": 0.1966
+          "modelProb": 0.188
         },
         {
           "number": 3,
           "horse": "Youans Son",
-          "modelProb": 0.1898
+          "modelProb": 0.1852
         },
         {
           "number": 6,
           "horse": "Creekside Inn",
-          "modelProb": 0.1608
+          "modelProb": 0.1483
         }
       ],
       "winnerNumbers": [
@@ -983,17 +983,17 @@
         {
           "number": 3,
           "horse": "Rania Zon",
-          "modelProb": 0.2755
+          "modelProb": 0.3303
         },
         {
           "number": 6,
           "horse": "Havana Heaven",
-          "modelProb": 0.2493
+          "modelProb": 0.221
         },
         {
-          "number": 4,
-          "horse": "Kit Crown",
-          "modelProb": 0.1037
+          "number": 2,
+          "horse": "Never to Young",
+          "modelProb": 0.1069
         }
       ],
       "winnerNumbers": [
@@ -1008,17 +1008,17 @@
         {
           "number": 2,
           "horse": "Erik the Phantom",
-          "modelProb": 0.3157
+          "modelProb": 0.3543
         },
         {
           "number": 6,
           "horse": "Currency Artist",
-          "modelProb": 0.1361
+          "modelProb": 0.1308
         },
         {
           "number": 1,
           "horse": "Crowe Motion",
-          "modelProb": 0.1223
+          "modelProb": 0.1021
         }
       ],
       "winnerNumbers": [
@@ -1031,19 +1031,19 @@
       "date": "2026-07-25",
       "topModel": [
         {
+          "number": 13,
+          "horse": "Björgen",
+          "modelProb": 0.1047
+        },
+        {
           "number": 1,
           "horse": "LanglandsBallerina",
-          "modelProb": 0.1051
+          "modelProb": 0.1013
         },
         {
           "number": 9,
           "horse": "Jonases Ninja",
-          "modelProb": 0.0993
-        },
-        {
-          "number": 4,
-          "horse": "Hög Decibel",
-          "modelProb": 0.0945
+          "modelProb": 0.1006
         }
       ],
       "winnerNumbers": [
@@ -1058,17 +1058,17 @@
         {
           "number": 1,
           "horse": "Mellby Joker",
-          "modelProb": 0.2129
-        },
-        {
-          "number": 4,
-          "horse": "Mellby Knekt",
-          "modelProb": 0.1351
+          "modelProb": 0.2349
         },
         {
           "number": 6,
           "horse": "Y.Not Diamant",
-          "modelProb": 0.1346
+          "modelProb": 0.1582
+        },
+        {
+          "number": 4,
+          "horse": "Mellby Knekt",
+          "modelProb": 0.1116
         }
       ],
       "winnerNumbers": [
@@ -1083,17 +1083,17 @@
         {
           "number": 6,
           "horse": "Global Gangbuster",
-          "modelProb": 0.1577
+          "modelProb": 0.1726
+        },
+        {
+          "number": 5,
+          "horse": "Explorer Grue",
+          "modelProb": 0.1387
         },
         {
           "number": 1,
           "horse": "Cocktail Spirit",
-          "modelProb": 0.1493
-        },
-        {
-          "number": 3,
-          "horse": "Fame Vendil",
-          "modelProb": 0.1386
+          "modelProb": 0.1301
         }
       ],
       "winnerNumbers": [
@@ -1108,17 +1108,17 @@
         {
           "number": 5,
           "horse": "Nightbird",
-          "modelProb": 0.1495
-        },
-        {
-          "number": 7,
-          "horse": "Zeebreeze",
-          "modelProb": 0.1324
+          "modelProb": 0.1498
         },
         {
           "number": 2,
           "horse": "Kagli Zet",
-          "modelProb": 0.128
+          "modelProb": 0.1385
+        },
+        {
+          "number": 7,
+          "horse": "Zeebreeze",
+          "modelProb": 0.1352
         }
       ],
       "winnerNumbers": [
@@ -1133,17 +1133,17 @@
         {
           "number": 1,
           "horse": "Conrads Åke",
-          "modelProb": 0.1738
+          "modelProb": 0.1774
         },
         {
           "number": 3,
           "horse": "Elvis T.C.B.",
-          "modelProb": 0.1417
+          "modelProb": 0.1494
         },
         {
           "number": 5,
           "horse": "Iaintnoquitter",
-          "modelProb": 0.1387
+          "modelProb": 0.1416
         }
       ],
       "winnerNumbers": [
@@ -1158,23 +1158,23 @@
         {
           "number": 5,
           "horse": "Steady Spender",
-          "modelProb": 0.1632
+          "modelProb": 0.1752
         },
         {
           "number": 1,
           "horse": "Po Tay Toes",
-          "modelProb": 0.121
+          "modelProb": 0.137
         },
         {
-          "number": 3,
-          "horse": "Nanda Devi Cut",
-          "modelProb": 0.1074
+          "number": 4,
+          "horse": "Kodiak Zet",
+          "modelProb": 0.1167
         }
       ],
       "winnerNumbers": [
         3
       ],
-      "winnerInTop3": true
+      "winnerInTop3": false
     },
     {
       "raceId": "2026-10-10_5_13",
@@ -1183,17 +1183,17 @@
         {
           "number": 2,
           "horse": "X.O.Kemp",
-          "modelProb": 0.2134
+          "modelProb": 0.2029
         },
         {
           "number": 4,
           "horse": "Alvena Roy",
-          "modelProb": 0.1218
+          "modelProb": 0.1166
         },
         {
           "number": 5,
           "horse": "The Flying Eagle",
-          "modelProb": 0.1194
+          "modelProb": 0.1055
         }
       ],
       "winnerNumbers": [
@@ -1208,17 +1208,17 @@
         {
           "number": 1,
           "horse": "Gumshoe Sox",
-          "modelProb": 0.3441
+          "modelProb": 0.3454
         },
         {
           "number": 5,
           "horse": "Digital Brodde",
-          "modelProb": 0.1363
+          "modelProb": 0.1305
         },
         {
           "number": 11,
           "horse": "Don Gaagaa",
-          "modelProb": 0.0883
+          "modelProb": 0.0929
         }
       ],
       "winnerNumbers": [
@@ -1233,17 +1233,17 @@
         {
           "number": 5,
           "horse": "Ready Star",
-          "modelProb": 0.2103
+          "modelProb": 0.2517
         },
         {
           "number": 1,
           "horse": "Charron",
-          "modelProb": 0.1393
+          "modelProb": 0.1357
         },
         {
           "number": 6,
           "horse": "Boscha Diablo",
-          "modelProb": 0.0957
+          "modelProb": 0.0863
         }
       ],
       "winnerNumbers": [
@@ -1258,17 +1258,17 @@
         {
           "number": 3,
           "horse": "Riverdale Z.",
-          "modelProb": 0.1631
-        },
-        {
-          "number": 8,
-          "horse": "Clarissa",
-          "modelProb": 0.1421
+          "modelProb": 0.1541
         },
         {
           "number": 6,
           "horse": "Monkey Wine",
-          "modelProb": 0.1173
+          "modelProb": 0.1144
+        },
+        {
+          "number": 8,
+          "horse": "Clarissa",
+          "modelProb": 0.1128
         }
       ],
       "winnerNumbers": [
@@ -1281,19 +1281,19 @@
       "date": "2026-10-10",
       "topModel": [
         {
-          "number": 13,
-          "horse": "Cameron Hills",
-          "modelProb": 0.1314
-        },
-        {
           "number": 15,
           "horse": "Monsieur Chocolat",
-          "modelProb": 0.1162
+          "modelProb": 0.1531
         },
         {
           "number": 10,
           "horse": "Moonshot",
-          "modelProb": 0.1058
+          "modelProb": 0.1308
+        },
+        {
+          "number": 13,
+          "horse": "Cameron Hills",
+          "modelProb": 0.1139
         }
       ],
       "winnerNumbers": [
@@ -1308,17 +1308,17 @@
         {
           "number": 7,
           "horse": "Haylee Eagra",
-          "modelProb": 0.3178
+          "modelProb": 0.292
         },
         {
           "number": 5,
           "horse": "Conrads Ove",
-          "modelProb": 0.1873
+          "modelProb": 0.2171
         },
         {
           "number": 9,
           "horse": "Rob Roy Boko",
-          "modelProb": 0.1684
+          "modelProb": 0.1553
         }
       ],
       "winnerNumbers": [
@@ -1333,17 +1333,17 @@
         {
           "number": 7,
           "horse": "Great Old Dance",
-          "modelProb": 0.2325
+          "modelProb": 0.2196
         },
         {
           "number": 5,
           "horse": "Ugalli",
-          "modelProb": 0.1564
+          "modelProb": 0.2021
         },
         {
           "number": 3,
           "horse": "Any Given Sunday",
-          "modelProb": 0.133
+          "modelProb": 0.143
         }
       ],
       "winnerNumbers": [
@@ -1358,17 +1358,17 @@
         {
           "number": 7,
           "horse": "Unicum",
-          "modelProb": 0.1977
-        },
-        {
-          "number": 4,
-          "horse": "Griffin Kronos",
-          "modelProb": 0.1498
+          "modelProb": 0.1925
         },
         {
           "number": 2,
           "horse": "Justcantgetenough",
-          "modelProb": 0.1425
+          "modelProb": 0.1751
+        },
+        {
+          "number": 4,
+          "horse": "Griffin Kronos",
+          "modelProb": 0.1653
         }
       ],
       "winnerNumbers": [
@@ -1383,17 +1383,17 @@
         {
           "number": 3,
           "horse": "Cashman J.R.",
-          "modelProb": 0.3126
-        },
-        {
-          "number": 4,
-          "horse": "Four White E.G.",
-          "modelProb": 0.1092
+          "modelProb": 0.3464
         },
         {
           "number": 2,
           "horse": "S.G.Empress",
-          "modelProb": 0.0947
+          "modelProb": 0.0963
+        },
+        {
+          "number": 8,
+          "horse": "Kapten Nemo",
+          "modelProb": 0.0946
         }
       ],
       "winnerNumbers": [
@@ -1406,25 +1406,25 @@
       "date": "2026-10-17",
       "topModel": [
         {
-          "number": 2,
-          "horse": "Realize'em",
-          "modelProb": 0.1282
-        },
-        {
           "number": 7,
           "horse": "Glory Forever",
-          "modelProb": 0.1094
+          "modelProb": 0.115
         },
         {
-          "number": 5,
-          "horse": "Geisha Road Grif",
-          "modelProb": 0.0902
+          "number": 2,
+          "horse": "Realize'em",
+          "modelProb": 0.1057
+        },
+        {
+          "number": 15,
+          "horse": "Sonesta",
+          "modelProb": 0.0877
         }
       ],
       "winnerNumbers": [
         5
       ],
-      "winnerInTop3": true
+      "winnerInTop3": false
     },
     {
       "raceId": "2026-10-17_16_7",
@@ -1433,17 +1433,17 @@
         {
           "number": 10,
           "horse": "Five Billion",
-          "modelProb": 0.2084
+          "modelProb": 0.1718
         },
         {
           "number": 6,
           "horse": "Sensational Doc",
-          "modelProb": 0.1409
+          "modelProb": 0.148
         },
         {
           "number": 1,
           "horse": "Carpaccio",
-          "modelProb": 0.1282
+          "modelProb": 0.1177
         }
       ],
       "winnerNumbers": [
@@ -1458,17 +1458,17 @@
         {
           "number": 1,
           "horse": "Borups Victory",
-          "modelProb": 0.2829
+          "modelProb": 0.2895
         },
         {
           "number": 6,
           "horse": "Competivo",
-          "modelProb": 0.2329
+          "modelProb": 0.2304
         },
         {
           "number": 7,
           "horse": "High on Pepper",
-          "modelProb": 0.2049
+          "modelProb": 0.2261
         }
       ],
       "winnerNumbers": [
@@ -1483,23 +1483,23 @@
         {
           "number": 2,
           "horse": "Grisle Best G.L.",
-          "modelProb": 0.1251
+          "modelProb": 0.1588
         },
         {
           "number": 9,
           "horse": "Grisle Kongen G.L.",
-          "modelProb": 0.1208
+          "modelProb": 0.1172
         },
         {
-          "number": 1,
-          "horse": "Sangviks Lynet",
-          "modelProb": 0.1006
+          "number": 8,
+          "horse": "Lannem Pär",
+          "modelProb": 0.1009
         }
       ],
       "winnerNumbers": [
         1
       ],
-      "winnerInTop3": true
+      "winnerInTop3": false
     },
     {
       "raceId": "2026-10-24_7_10",
@@ -1508,17 +1508,17 @@
         {
           "number": 7,
           "horse": "Tvingens Calippo",
-          "modelProb": 0.2552
+          "modelProb": 0.3004
         },
         {
           "number": 1,
           "horse": "Wannabe Zaz",
-          "modelProb": 0.1608
+          "modelProb": 0.1539
         },
         {
           "number": 5,
           "horse": "Superstitious",
-          "modelProb": 0.1181
+          "modelProb": 0.1251
         }
       ],
       "winnerNumbers": [
@@ -1533,17 +1533,17 @@
         {
           "number": 5,
           "horse": "Gustav Simoni",
-          "modelProb": 0.1528
-        },
-        {
-          "number": 1,
-          "horse": "Waco Sixx",
-          "modelProb": 0.1283
+          "modelProb": 0.1566
         },
         {
           "number": 6,
           "horse": "Nickel Occagnes",
-          "modelProb": 0.1175
+          "modelProb": 0.1295
+        },
+        {
+          "number": 1,
+          "horse": "Waco Sixx",
+          "modelProb": 0.1219
         }
       ],
       "winnerNumbers": [
@@ -1558,17 +1558,17 @@
         {
           "number": 3,
           "horse": "Nilla Lane",
-          "modelProb": 0.2008
+          "modelProb": 0.2081
         },
         {
           "number": 1,
           "horse": "Panthere d'Inverne",
-          "modelProb": 0.1997
+          "modelProb": 0.1983
         },
         {
           "number": 6,
           "horse": "I'm Still Standing",
-          "modelProb": 0.1299
+          "modelProb": 0.1047
         }
       ],
       "winnerNumbers": [
@@ -1583,17 +1583,17 @@
         {
           "number": 2,
           "horse": "Polly Vici",
-          "modelProb": 0.2193
+          "modelProb": 0.2576
         },
         {
           "number": 6,
           "horse": "Run Rhapsody Run",
-          "modelProb": 0.1159
+          "modelProb": 0.1181
         },
         {
           "number": 3,
           "horse": "Alicia C.D.",
-          "modelProb": 0.0963
+          "modelProb": 0.1
         }
       ],
       "winnerNumbers": [
@@ -1608,17 +1608,17 @@
         {
           "number": 12,
           "horse": "Chat Room",
-          "modelProb": 0.2712
+          "modelProb": 0.2948
         },
         {
-          "number": 5,
-          "horse": "Prince of Euro",
-          "modelProb": 0.1136
+          "number": 1,
+          "horse": "Mister Navajo",
+          "modelProb": 0.1005
         },
         {
-          "number": 10,
-          "horse": "Frank Silvio",
-          "modelProb": 0.0845
+          "number": 11,
+          "horse": "Special Ale",
+          "modelProb": 0.0887
         }
       ],
       "winnerNumbers": [
@@ -1633,17 +1633,17 @@
         {
           "number": 1,
           "horse": "Richmond",
-          "modelProb": 0.2135
-        },
-        {
-          "number": 12,
-          "horse": "Hard Rock",
-          "modelProb": 0.1915
+          "modelProb": 0.2348
         },
         {
           "number": 7,
           "horse": "Tactical",
-          "modelProb": 0.184
+          "modelProb": 0.1784
+        },
+        {
+          "number": 12,
+          "horse": "Hard Rock",
+          "modelProb": 0.1445
         }
       ],
       "winnerNumbers": [

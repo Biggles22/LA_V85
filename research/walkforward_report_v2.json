@@ -40,10 +40,10 @@
       "A smaller complete-field subset is selected data, not validated betting evidence."
     ],
     "sourceFile": "research/historical_pilot_v2.json",
-    "sourceSha256": "3c42c2a358b3264b3cb84b8387872f3967cf655ff0a7d19f31cc28ccd3964ca6"
+    "sourceSha256": "9e7cae5c8156565e78281e5f00e4e368b298d74c9e73181aead1c45113a6b6d9"
   },
   "reportType": "EXPANDING_CHRONOLOGICAL_BACKTEST_NOT_VALIDATED",
-  "generatedAt": "2026-11-02T11:32:26.456539+00:00",
+  "generatedAt": "2026-11-02T11:35:09.843404+00:00",
   "sourceRaceCount": 196,
   "sourceStarts": 2307,
   "sourceDates": 25,
@@ -55,22 +55,22 @@
       "trainStarts": 380,
       "testMetrics": {
         "races": 8,
-        "top1Count": 5,
+        "top1Count": 4,
         "top3Count": 7,
-        "top1Rate": 0.625,
+        "top1Rate": 0.5,
         "top3Rate": 0.875,
-        "raceLogLoss": 1.6562,
-        "horseBrier": 0.06708
+        "raceLogLoss": 1.6575,
+        "horseBrier": 0.0672
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
-        "top1Count": 5,
+        "top1Count": 4,
         "top3Count": 7,
-        "top1Rate": 0.625,
+        "top1Rate": 0.5,
         "top3Rate": 0.875,
-        "raceLogLoss": 1.6562,
-        "horseBrier": 0.06708
+        "raceLogLoss": 1.6575,
+        "horseBrier": 0.0672
       },
       "pairedMarket": {
         "races": 8,
@@ -93,8 +93,8 @@
         "top3Count": 4,
         "top1Rate": 0.25,
         "top3Rate": 0.5,
-        "raceLogLoss": 2.2399,
-        "horseBrier": 0.07337
+        "raceLogLoss": 2.1824,
+        "horseBrier": 0.07208
       },
       "pairedRaces": 8,
       "pairedModel": {
@@ -103,8 +103,8 @@
         "top3Count": 4,
         "top1Rate": 0.25,
         "top3Rate": 0.5,
-        "raceLogLoss": 2.2399,
-        "horseBrier": 0.07337
+        "raceLogLoss": 2.1824,
+        "horseBrier": 0.07208
       },
       "pairedMarket": {
         "races": 8,
@@ -124,21 +124,21 @@
       "testMetrics": {
         "races": 8,
         "top1Count": 2,
-        "top3Count": 4,
+        "top3Count": 5,
         "top1Rate": 0.25,
-        "top3Rate": 0.5,
-        "raceLogLoss": 2.2865,
-        "horseBrier": 0.09441
+        "top3Rate": 0.625,
+        "raceLogLoss": 2.3209,
+        "horseBrier": 0.09438
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
         "top1Count": 2,
-        "top3Count": 4,
+        "top3Count": 5,
         "top1Rate": 0.25,
-        "top3Rate": 0.5,
-        "raceLogLoss": 2.2865,
-        "horseBrier": 0.09441
+        "top3Rate": 0.625,
+        "raceLogLoss": 2.3209,
+        "horseBrier": 0.09438
       },
       "pairedMarket": {
         "races": 8,
@@ -157,22 +157,22 @@
       "trainStarts": 646,
       "testMetrics": {
         "races": 8,
-        "top1Count": 2,
+        "top1Count": 1,
         "top3Count": 4,
-        "top1Rate": 0.25,
+        "top1Rate": 0.125,
         "top3Rate": 0.5,
-        "raceLogLoss": 2.2946,
-        "horseBrier": 0.07728
+        "raceLogLoss": 2.2581,
+        "horseBrier": 0.07637
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
-        "top1Count": 2,
+        "top1Count": 1,
         "top3Count": 4,
-        "top1Rate": 0.25,
+        "top1Rate": 0.125,
         "top3Rate": 0.5,
-        "raceLogLoss": 2.2946,
-        "horseBrier": 0.07728
+        "raceLogLoss": 2.2581,
+        "horseBrier": 0.07637
       },
       "pairedMarket": {
         "races": 8,
@@ -191,22 +191,22 @@
       "trainStarts": 741,
       "testMetrics": {
         "races": 8,
-        "top1Count": 1,
+        "top1Count": 3,
         "top3Count": 3,
-        "top1Rate": 0.125,
+        "top1Rate": 0.375,
         "top3Rate": 0.375,
-        "raceLogLoss": 2.2882,
-        "horseBrier": 0.07398
+        "raceLogLoss": 2.2914,
+        "horseBrier": 0.07322
       },
       "pairedRaces": 7,
       "pairedModel": {
         "races": 7,
-        "top1Count": 1,
+        "top1Count": 3,
         "top3Count": 3,
-        "top1Rate": 0.1429,
+        "top1Rate": 0.4286,
         "top3Rate": 0.4286,
-        "raceLogLoss": 2.1797,
-        "horseBrier": 0.06803
+        "raceLogLoss": 2.1868,
+        "horseBrier": 0.06721
       },
       "pairedMarket": {
         "races": 7,
@@ -229,8 +229,8 @@
         "top3Count": 4,
         "top1Rate": 0.3333,
         "top3Rate": 0.6667,
-        "raceLogLoss": 2.1775,
-        "horseBrier": 0.08483
+        "raceLogLoss": 2.2035,
+        "horseBrier": 0.08324
       },
       "pairedRaces": 6,
       "pairedModel": {
@@ -239,8 +239,8 @@
         "top3Count": 4,
         "top1Rate": 0.3333,
         "top3Rate": 0.6667,
-        "raceLogLoss": 2.1775,
-        "horseBrier": 0.08483
+        "raceLogLoss": 2.2035,
+        "horseBrier": 0.08324
       },
       "pairedMarket": {
         "races": 6,
@@ -260,21 +260,21 @@
       "testMetrics": {
         "races": 8,
         "top1Count": 1,
-        "top3Count": 5,
+        "top3Count": 4,
         "top1Rate": 0.125,
-        "top3Rate": 0.625,
-        "raceLogLoss": 2.239,
-        "horseBrier": 0.0762
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.1636,
+        "horseBrier": 0.07391
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
         "top1Count": 1,
-        "top3Count": 5,
+        "top3Count": 4,
         "top1Rate": 0.125,
-        "top3Rate": 0.625,
-        "raceLogLoss": 2.239,
-        "horseBrier": 0.0762
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.1636,
+        "horseBrier": 0.07391
       },
       "pairedMarket": {
         "races": 8,
@@ -297,8 +297,8 @@
         "top3Count": 2,
         "top1Rate": 0.125,
         "top3Rate": 0.25,
-        "raceLogLoss": 2.6986,
-        "horseBrier": 0.083
+        "raceLogLoss": 2.7811,
+        "horseBrier": 0.08521
       },
       "pairedRaces": 8,
       "pairedModel": {
@@ -307,8 +307,8 @@
         "top3Count": 2,
         "top1Rate": 0.125,
         "top3Rate": 0.25,
-        "raceLogLoss": 2.6986,
-        "horseBrier": 0.083
+        "raceLogLoss": 2.7811,
+        "horseBrier": 0.08521
       },
       "pairedMarket": {
         "races": 8,
@@ -331,8 +331,8 @@
         "top3Count": 5,
         "top1Rate": 0.25,
         "top3Rate": 0.625,
-        "raceLogLoss": 2.1182,
-        "horseBrier": 0.07251
+        "raceLogLoss": 2.0456,
+        "horseBrier": 0.06952
       },
       "pairedRaces": 7,
       "pairedModel": {
@@ -341,8 +341,8 @@
         "top3Count": 5,
         "top1Rate": 0.2857,
         "top3Rate": 0.7143,
-        "raceLogLoss": 1.9618,
-        "horseBrier": 0.06919
+        "raceLogLoss": 1.895,
+        "horseBrier": 0.06583
       },
       "pairedMarket": {
         "races": 7,
@@ -361,22 +361,22 @@
       "trainStarts": 1180,
       "testMetrics": {
         "races": 8,
-        "top1Count": 1,
+        "top1Count": 0,
         "top3Count": 2,
-        "top1Rate": 0.125,
+        "top1Rate": 0.0,
         "top3Rate": 0.25,
-        "raceLogLoss": 2.8805,
-        "horseBrier": 0.08262
+        "raceLogLoss": 2.9804,
+        "horseBrier": 0.0836
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
-        "top1Count": 1,
+        "top1Count": 0,
         "top3Count": 2,
-        "top1Rate": 0.125,
+        "top1Rate": 0.0,
         "top3Rate": 0.25,
-        "raceLogLoss": 2.8805,
-        "horseBrier": 0.08262
+        "raceLogLoss": 2.9804,
+        "horseBrier": 0.0836
       },
       "pairedMarket": {
         "races": 8,
@@ -396,21 +396,21 @@
       "testMetrics": {
         "races": 8,
         "top1Count": 1,
-        "top3Count": 3,
+        "top3Count": 2,
         "top1Rate": 0.125,
-        "top3Rate": 0.375,
-        "raceLogLoss": 2.5604,
-        "horseBrier": 0.07946
+        "top3Rate": 0.25,
+        "raceLogLoss": 2.4738,
+        "horseBrier": 0.07835
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
         "top1Count": 1,
-        "top3Count": 3,
+        "top3Count": 2,
         "top1Rate": 0.125,
-        "top3Rate": 0.375,
-        "raceLogLoss": 2.5604,
-        "horseBrier": 0.07946
+        "top3Rate": 0.25,
+        "raceLogLoss": 2.4738,
+        "horseBrier": 0.07835
       },
       "pairedMarket": {
         "races": 8,
@@ -430,21 +430,21 @@
       "testMetrics": {
         "races": 8,
         "top1Count": 2,
-        "top3Count": 4,
+        "top3Count": 5,
         "top1Rate": 0.25,
-        "top3Rate": 0.5,
-        "raceLogLoss": 2.0013,
-        "horseBrier": 0.07033
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.9601,
+        "horseBrier": 0.06837
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
         "top1Count": 2,
-        "top3Count": 4,
+        "top3Count": 5,
         "top1Rate": 0.25,
-        "top3Rate": 0.5,
-        "raceLogLoss": 2.0013,
-        "horseBrier": 0.07033
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.9601,
+        "horseBrier": 0.06837
       },
       "pairedMarket": {
         "races": 8,
@@ -463,22 +463,22 @@
       "trainStarts": 1466,
       "testMetrics": {
         "races": 8,
-        "top1Count": 1,
+        "top1Count": 2,
         "top3Count": 6,
-        "top1Rate": 0.125,
+        "top1Rate": 0.25,
         "top3Rate": 0.75,
-        "raceLogLoss": 1.9441,
-        "horseBrier": 0.07151
+        "raceLogLoss": 1.9813,
+        "horseBrier": 0.07177
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
-        "top1Count": 1,
+        "top1Count": 2,
         "top3Count": 6,
-        "top1Rate": 0.125,
+        "top1Rate": 0.25,
         "top3Rate": 0.75,
-        "raceLogLoss": 1.9441,
-        "horseBrier": 0.07151
+        "raceLogLoss": 1.9813,
+        "horseBrier": 0.07177
       },
       "pairedMarket": {
         "races": 8,
@@ -501,8 +501,8 @@
         "top3Count": 3,
         "top1Rate": 0.125,
         "top3Rate": 0.375,
-        "raceLogLoss": 2.5299,
-        "horseBrier": 0.07653
+        "raceLogLoss": 2.5955,
+        "horseBrier": 0.0779
       },
       "pairedRaces": 7,
       "pairedModel": {
@@ -511,8 +511,8 @@
         "top3Count": 2,
         "top1Rate": 0.1429,
         "top3Rate": 0.2857,
-        "raceLogLoss": 2.6405,
-        "horseBrier": 0.07727
+        "raceLogLoss": 2.6889,
+        "horseBrier": 0.07815
       },
       "pairedMarket": {
         "races": 7,
@@ -531,22 +531,22 @@
       "trainStarts": 1661,
       "testMetrics": {
         "races": 8,
-        "top1Count": 2,
-        "top3Count": 2,
-        "top1Rate": 0.25,
-        "top3Rate": 0.25,
-        "raceLogLoss": 2.4414,
-        "horseBrier": 0.07941
+        "top1Count": 1,
+        "top3Count": 4,
+        "top1Rate": 0.125,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.4616,
+        "horseBrier": 0.07936
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
-        "top1Count": 2,
-        "top3Count": 2,
-        "top1Rate": 0.25,
-        "top3Rate": 0.25,
-        "raceLogLoss": 2.4414,
-        "horseBrier": 0.07941
+        "top1Count": 1,
+        "top3Count": 4,
+        "top1Rate": 0.125,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.4616,
+        "horseBrier": 0.07936
       },
       "pairedMarket": {
         "races": 8,
@@ -569,8 +569,8 @@
         "top3Count": 3,
         "top1Rate": 0.0,
         "top3Rate": 0.375,
-        "raceLogLoss": 2.4541,
-        "horseBrier": 0.07825
+        "raceLogLoss": 2.4618,
+        "horseBrier": 0.0786
       },
       "pairedRaces": 8,
       "pairedModel": {
@@ -579,8 +579,8 @@
         "top3Count": 3,
         "top1Rate": 0.0,
         "top3Rate": 0.375,
-        "raceLogLoss": 2.4541,
-        "horseBrier": 0.07825
+        "raceLogLoss": 2.4618,
+        "horseBrier": 0.0786
       },
       "pairedMarket": {
         "races": 8,
@@ -599,22 +599,22 @@
       "trainStarts": 1855,
       "testMetrics": {
         "races": 8,
-        "top1Count": 2,
+        "top1Count": 1,
         "top3Count": 4,
-        "top1Rate": 0.25,
+        "top1Rate": 0.125,
         "top3Rate": 0.5,
-        "raceLogLoss": 2.3664,
-        "horseBrier": 0.08002
+        "raceLogLoss": 2.4189,
+        "horseBrier": 0.08135
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
-        "top1Count": 2,
+        "top1Count": 1,
         "top3Count": 4,
-        "top1Rate": 0.25,
+        "top1Rate": 0.125,
         "top3Rate": 0.5,
-        "raceLogLoss": 2.3664,
-        "horseBrier": 0.08002
+        "raceLogLoss": 2.4189,
+        "horseBrier": 0.08135
       },
       "pairedMarket": {
         "races": 8,
@@ -633,22 +633,22 @@
       "trainStarts": 1947,
       "testMetrics": {
         "races": 8,
-        "top1Count": 1,
+        "top1Count": 3,
         "top3Count": 5,
-        "top1Rate": 0.125,
+        "top1Rate": 0.375,
         "top3Rate": 0.625,
-        "raceLogLoss": 1.8423,
-        "horseBrier": 0.0667
+        "raceLogLoss": 1.8383,
+        "horseBrier": 0.06602
       },
       "pairedRaces": 8,
       "pairedModel": {
         "races": 8,
-        "top1Count": 1,
+        "top1Count": 3,
         "top3Count": 5,
-        "top1Rate": 0.125,
+        "top1Rate": 0.375,
         "top3Rate": 0.625,
-        "raceLogLoss": 1.8423,
-        "horseBrier": 0.0667
+        "raceLogLoss": 1.8383,
+        "horseBrier": 0.06602
       },
       "pairedMarket": {
         "races": 8,
@@ -671,8 +671,8 @@
         "top3Count": 5,
         "top1Rate": 0.5,
         "top3Rate": 0.625,
-        "raceLogLoss": 1.9585,
-        "horseBrier": 0.06463
+        "raceLogLoss": 1.9415,
+        "horseBrier": 0.06437
       },
       "pairedRaces": 8,
       "pairedModel": {
@@ -681,8 +681,8 @@
         "top3Count": 5,
         "top1Rate": 0.5,
         "top3Rate": 0.625,
-        "raceLogLoss": 1.9585,
-        "horseBrier": 0.06463
+        "raceLogLoss": 1.9415,
+        "horseBrier": 0.06437
       },
       "pairedMarket": {
         "races": 8,
@@ -705,8 +705,8 @@
         "top3Count": 3,
         "top1Rate": 0.125,
         "top3Rate": 0.375,
-        "raceLogLoss": 2.4416,
-        "horseBrier": 0.08189
+        "raceLogLoss": 2.4312,
+        "horseBrier": 0.08164
       },
       "pairedRaces": 8,
       "pairedModel": {
@@ -715,8 +715,8 @@
         "top3Count": 3,
         "top1Rate": 0.125,
         "top3Rate": 0.375,
-        "raceLogLoss": 2.4416,
-        "horseBrier": 0.08189
+        "raceLogLoss": 2.4312,
+        "horseBrier": 0.08164
       },
       "pairedMarket": {
         "races": 8,
@@ -736,21 +736,21 @@
       "testMetrics": {
         "races": 6,
         "top1Count": 3,
-        "top3Count": 5,
+        "top3Count": 4,
         "top1Rate": 0.5,
-        "top3Rate": 0.8333,
-        "raceLogLoss": 1.737,
-        "horseBrier": 0.06044
+        "top3Rate": 0.6667,
+        "raceLogLoss": 1.768,
+        "horseBrier": 0.06154
       },
       "pairedRaces": 6,
       "pairedModel": {
         "races": 6,
         "top1Count": 3,
-        "top3Count": 5,
+        "top3Count": 4,
         "top1Rate": 0.5,
-        "top3Rate": 0.8333,
-        "raceLogLoss": 1.737,
-        "horseBrier": 0.06044
+        "top3Rate": 0.6667,
+        "raceLogLoss": 1.768,
+        "horseBrier": 0.06154
       },
       "pairedMarket": {
         "races": 6,
@@ -766,20 +766,20 @@
   "testMetrics": {
     "races": 164,
     "top1Count": 37,
-    "top3Count": 83,
+    "top3Count": 84,
     "top1Rate": 0.2256,
-    "top3Rate": 0.5061,
-    "raceLogLoss": 2.2526,
-    "horseBrier": 0.07601
+    "top3Rate": 0.5122,
+    "raceLogLoss": 2.2548,
+    "horseBrier": 0.0757
   },
   "strictPairedModel": {
     "races": 161,
     "top1Count": 37,
-    "top3Count": 82,
+    "top3Count": 83,
     "top1Rate": 0.2298,
-    "top3Rate": 0.5093,
-    "raceLogLoss": 2.2447,
-    "horseBrier": 0.07567
+    "top3Rate": 0.5155,
+    "raceLogLoss": 2.2467,
+    "horseBrier": 0.07533
   },
   "strictPairedMarket": {
     "races": 161,
