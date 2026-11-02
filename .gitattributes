@@ -1,0 +1,2 @@
+# Source hashes must be identical on Windows and the Linux evaluation runner.
+*.json text eol=lf

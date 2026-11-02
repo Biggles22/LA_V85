@@ -63,12 +63,18 @@ def marked_groups(groups,index,min_rated=6,min_fraction=.6):
     return accepted
 
 
+def validate_corpus_evidence(evidence, history):
+    if evidence.get('schemaVersion') != 1 or type(evidence.get('sourceRaceCount')) is not int:
+        raise ValueError('Invalid historical opponent evidence schema')
+    if evidence['sourceRaceCount'] != history.get('rawSourceRaceCount', history.get('raceCount')):
+        raise InsufficientHistory('Historical opponent evidence must be rebuilt for the expanded training corpus; no comparison can be published yet')
+
+
 def run():
     import numpy as np
     history=load_training_data(SOURCE)
     evidence=json.loads(EVIDENCE.read_text(encoding="utf8"))
-    if evidence.get("schemaVersion")!=1 or evidence.get("sourceRaceCount")!=history.get("rawSourceRaceCount",history.get("raceCount")):
-        raise ValueError("Historical opponent join not verified for this historical corpus")
+    validate_corpus_evidence(evidence, history)
     index=evidence_index(evidence)
     allrows=history["rows"]
     days=sorted({r["date"] for r in allrows})

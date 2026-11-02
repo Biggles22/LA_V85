@@ -189,6 +189,13 @@ class TrainingGateTests(unittest.TestCase):
 
 
 class SourceCacheTests(unittest.TestCase):
+    def test_recovered_source_bytes_are_portable_for_hash_verification(self):
+        from scripts.recover_historical import write_json
+        with tempfile.TemporaryDirectory() as directory:
+            path = pathlib.Path(directory) / 'source.json'
+            write_json(path, {'horse': 'Bergsåker'})
+            self.assertEqual(path.read_bytes(), '{"horse":"Bergsåker"}\n'.encode('utf-8'))
+
     def test_rate_limit_retried_but_forbidden_not_retried(self):
         response = mock.MagicMock()
         response.__enter__.return_value.read.return_value = json.dumps(card()).encode()

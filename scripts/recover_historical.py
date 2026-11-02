@@ -13,7 +13,7 @@ from scripts.data_quality import LEGACY, CURRENT, load_training_data, prepare_tr
 
 
 def write_json(path, value):
-    path.write_text(json.dumps(value, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    path.write_bytes((json.dumps(value, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8'))
 
 
 def main():

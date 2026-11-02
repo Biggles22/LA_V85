@@ -43,7 +43,7 @@
     "sourceSha256": "9e7cae5c8156565e78281e5f00e4e368b298d74c9e73181aead1c45113a6b6d9"
   },
   "reportType": "EXPLORATORY_BACKTEST_NOT_VALIDATED",
-  "createdAt": "2026-11-02T11:35:07.333745+00:00",
+  "createdAt": "2026-11-02T11:36:43.439498+00:00",
   "trainDates": [
     "2025-11-22",
     "2026-05-09"

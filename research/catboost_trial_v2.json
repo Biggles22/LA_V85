@@ -40,10 +40,10 @@
       "A smaller complete-field subset is selected data, not validated betting evidence."
     ],
     "sourceFile": "research/historical_pilot_v2.json",
-    "sourceSha256": "3c42c2a358b3264b3cb84b8387872f3967cf655ff0a7d19f31cc28ccd3964ca6"
+    "sourceSha256": "9e7cae5c8156565e78281e5f00e4e368b298d74c9e73181aead1c45113a6b6d9"
   },
   "reportType": "CATBOOST_EXPANDING_CHRONOLOGICAL_BACKTEST_NOT_VALIDATED",
-  "generatedAt": "2026-11-02T11:29:24.844364+00:00",
+  "generatedAt": "2026-11-02T11:36:50.578810+00:00",
   "sourceRaceCount": 196,
   "sourceStarts": 2307,
   "sourceDates": 25,

@@ -12,6 +12,12 @@ def row(num,score=None):
             "marketFinalPct":12.5}
 
 class ActualOpponentTests(unittest.TestCase):
+    def test_expanded_corpus_cannot_reuse_old_opponent_evidence(self):
+        with self.assertRaises(m.InsufficientHistory):
+            m.validate_corpus_evidence({'schemaVersion': 1, 'sourceRaceCount': 178}, {'rawSourceRaceCount': 200})
+        with self.assertRaises(ValueError):
+            m.validate_corpus_evidence({'sourceRaceCount': 200}, {'rawSourceRaceCount': 200})
+
     def test_three_part_identity_and_duplicate_rejection(self):
         report={"rows":[{"raceId":"R","number":2,"horse":"A","opponentForm":.4},
                         {"raceId":"R","number":3,"horse":"B","opponentForm":.5}]}
