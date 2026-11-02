@@ -1,5 +1,7 @@
 # Alternativa historiska datakällor, 1 november 2026
 
+> Uppdatering 2 november: 145 av de 147 V85-lopp som beskrivs som spärrade nedan har nu återställts direkt från ATG:s råsvar. Det separata alternativarkivet beskrivs här som historisk dokumentation. [Aktuell datakontroll och återhämtning](DATA_QUALITY.md).
+
 **Vi har hämtat ett redan publicerat rådataarkiv från GitHub och byggt en separat resultatfil med 1 050 svenska travlopp och 11 220 aktiva starter.** Det är ett underlag för att bygga historiska variabler och nya modellförsök. Det ersätter inte de 147 spärrade V85-loppen och är inte kopplat till sajtens tips eller befintliga modellrapporter.
 
 ## Källor och faktisk täckning

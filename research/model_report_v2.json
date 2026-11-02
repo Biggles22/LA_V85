@@ -1,751 +1,37 @@
 {
   "trainingDataQuality": {
     "contractVersion": 2,
-    "sourceRaces": 178,
-    "sourceStarts": 1931,
-    "eligibleRaces": 31,
-    "eligibleStarts": 354,
-    "excludedRaces": 147,
-    "legacyEligibleRaces": 31,
-    "maskedLegacyGallopValues": 43,
+    "sourceRaces": 200,
+    "sourceStarts": 2360,
+    "eligibleRaces": 196,
+    "eligibleStarts": 2307,
+    "excludedRaces": 4,
+    "legacyEligibleRaces": 0,
+    "maskedLegacyGallopValues": 0,
     "exclusionReasons": {
-      "legacy_field_requires_raw_refetch": 147
+      "dead_heat_not_supported": 2,
+      "unknown_result": 2
     },
     "quarantine": [
       {
-        "raceId": "2025-11-22_7_3",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_4",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_5",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_8",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_9",
+        "raceId": "2026-10-24_7_7",
         "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
+        "reason": "dead_heat_not_supported"
       },
       {
-        "raceId": "2025-11-29_5_4",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-29_5_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_10",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_3",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_6",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_8",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_9",
+        "raceId": "2026-10-24_7_11",
         "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_4",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_5",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_7",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_3",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_4",
-        "rows": 7,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_6",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_8",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_12",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_5",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_7",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_8",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_10",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_11",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_8",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_11",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_12",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_8",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_9",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_5",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_8",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-14_78_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
+        "reason": "dead_heat_not_supported"
       },
       {
         "raceId": "2026-03-14_78_12",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
+        "rows": 15,
+        "reason": "unknown_result"
       },
       {
         "raceId": "2026-03-14_78_5",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-14_78_6",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-14_78_8",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-14_78_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_11",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_8",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_12",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_5",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_7",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_10",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_11",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_12",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_6",
-        "rows": 7,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_7",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_8",
-        "rows": 7,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_11",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_5",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_8",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_11",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_12",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_10",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_12",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_6",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_7",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_11",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_5",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_6",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_7",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_10",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_11",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_12",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_6",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_8",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_9",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_10",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_12",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_13",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_5",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_6",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_8",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_9",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_10",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_11",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_12",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_5",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_7",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-27_9_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-27_9_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-27_9_8",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-27_9_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-07-25_12_11",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-07-25_12_12",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-07-25_12_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_12",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_13",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_8",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_9",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_5",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_6",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_8",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_9",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-24_7_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-24_7_12",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-24_7_5",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-24_7_6",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
+        "rows": 15,
+        "reason": "unknown_result"
       }
     ],
     "limitations": [
@@ -753,23 +39,23 @@
       "Historical final market shares are not archived prestart observations.",
       "A smaller complete-field subset is selected data, not validated betting evidence."
     ],
-    "sourceFile": "research/historical_pilot_2026.json",
-    "sourceSha256": "0060f89560950b9d7e4ce6dbcd11c26e50bb1e204e9567f528e40222b3387953"
+    "sourceFile": "research/historical_pilot_v2.json",
+    "sourceSha256": "3c42c2a358b3264b3cb84b8387872f3967cf655ff0a7d19f31cc28ccd3964ca6"
   },
   "reportType": "EXPLORATORY_BACKTEST_NOT_VALIDATED",
-  "createdAt": "2026-11-01T18:11:48.386550+00:00",
+  "createdAt": "2026-11-02T11:29:17.792319+00:00",
   "trainDates": [
-    "2025-11-29",
-    "2026-04-25"
+    "2025-11-22",
+    "2026-05-09"
   ],
   "heldOutDates": [
-    "2026-05-02",
-    "2026-10-10"
+    "2026-05-23",
+    "2026-10-24"
   ],
-  "trainStarts": 202,
-  "testStarts": 152,
-  "trainRaces": 18,
-  "testRaces": 13,
+  "trainStarts": 1562,
+  "testStarts": 745,
+  "trainRaces": 134,
+  "testRaces": 62,
   "model": "XGBClassifier, 135 trees, depth 3, time-ordered date holdout",
   "features": [
     "post",
@@ -786,53 +72,178 @@
     "past_purse_log"
   ],
   "modelMetrics": {
-    "races": 13,
-    "top1Count": 1,
-    "top3Count": 7,
-    "top1Rate": 0.0769,
-    "top3Rate": 0.5385,
-    "raceLogLoss": 2.196,
-    "horseBrier": 0.07719
+    "races": 62,
+    "top1Count": 11,
+    "top3Count": 32,
+    "top1Rate": 0.1774,
+    "top3Rate": 0.5161,
+    "raceLogLoss": 2.2497,
+    "horseBrier": 0.07381
   },
   "modelOnIdenticalMarketRaces": {
-    "races": 13,
-    "top1Count": 1,
-    "top3Count": 7,
-    "top1Rate": 0.0769,
-    "top3Rate": 0.5385,
-    "raceLogLoss": 2.196,
-    "horseBrier": 0.07719
+    "races": 62,
+    "top1Count": 11,
+    "top3Count": 32,
+    "top1Rate": 0.1774,
+    "top3Rate": 0.5161,
+    "raceLogLoss": 2.2497,
+    "horseBrier": 0.07381
   },
   "marketFinalPoolBaseline": {
-    "races": 13,
-    "top1Count": 6,
-    "top3Count": 11,
-    "top1Rate": 0.4615,
-    "top3Rate": 0.8462,
-    "raceLogLoss": 1.5214,
-    "horseBrier": 0.06359
+    "races": 62,
+    "top1Count": 21,
+    "top3Count": 43,
+    "top1Rate": 0.3387,
+    "top3Rate": 0.6935,
+    "raceLogLoss": 1.9198,
+    "horseBrier": 0.07159
   },
   "baselineCaveat": "Market uses retrospective final V85 pool percentages, NOT independently archived prestart snapshots. Cross-pool timing may not be independently verified.",
   "validationCaveat": "Small pilot, one chronological holdout, no hyperparameter search or robust confidence intervals. Do not interpret as profit, actionable spik/skrall recommendations or proven independent probabilities.",
   "racePredictions": [
     {
-      "raceId": "2026-05-02_27_9",
-      "date": "2026-05-02",
+      "raceId": "2026-05-23_16_10",
+      "date": "2026-05-23",
       "topModel": [
         {
-          "number": 1,
-          "horse": "Eagle of Oak",
-          "modelProb": 0.3325
+          "number": 7,
+          "horse": "Justcantgetenough",
+          "modelProb": 0.1538
         },
         {
-          "number": 4,
-          "horse": "Inglourious Zet",
-          "modelProb": 0.189
+          "number": 3,
+          "horse": "Eagle of Oak",
+          "modelProb": 0.1191
+        },
+        {
+          "number": 1,
+          "horse": "Shuffleboard",
+          "modelProb": 0.1165
+        }
+      ],
+      "winnerNumbers": [
+        11
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-05-23_16_11",
+      "date": "2026-05-23",
+      "topModel": [
+        {
+          "number": 2,
+          "horse": "D'artagnan Face",
+          "modelProb": 0.208
         },
         {
           "number": 6,
-          "horse": "Brother Day",
-          "modelProb": 0.1271
+          "horse": "VilliamSon B.B.",
+          "modelProb": 0.1013
+        },
+        {
+          "number": 1,
+          "horse": "Global Email",
+          "modelProb": 0.1011
+        }
+      ],
+      "winnerNumbers": [
+        9
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-05-23_16_12",
+      "date": "2026-05-23",
+      "topModel": [
+        {
+          "number": 7,
+          "horse": "PolePosition",
+          "modelProb": 0.1946
+        },
+        {
+          "number": 4,
+          "horse": "Raven",
+          "modelProb": 0.128
+        },
+        {
+          "number": 1,
+          "horse": "Incomparable",
+          "modelProb": 0.1177
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-05-23_16_5",
+      "date": "2026-05-23",
+      "topModel": [
+        {
+          "number": 11,
+          "horse": "Official Sox",
+          "modelProb": 0.1637
+        },
+        {
+          "number": 3,
+          "horse": "Direction Face",
+          "modelProb": 0.1085
+        },
+        {
+          "number": 15,
+          "horse": "Supernova Lyjam",
+          "modelProb": 0.1019
+        }
+      ],
+      "winnerNumbers": [
+        8
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-05-23_16_6",
+      "date": "2026-05-23",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Nume Bris",
+          "modelProb": 0.1226
+        },
+        {
+          "number": 14,
+          "horse": "Ragnhild W.M.",
+          "modelProb": 0.1154
+        },
+        {
+          "number": 8,
+          "horse": "Kleppe Tuå",
+          "modelProb": 0.1142
+        }
+      ],
+      "winnerNumbers": [
+        13
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-05-23_16_7",
+      "date": "2026-05-23",
+      "topModel": [
+        {
+          "number": 9,
+          "horse": "Global Graceland",
+          "modelProb": 0.2292
+        },
+        {
+          "number": 6,
+          "horse": "R.K.Pascal",
+          "modelProb": 0.182
+        },
+        {
+          "number": 7,
+          "horse": "Snickers",
+          "modelProb": 0.1248
         }
       ],
       "winnerNumbers": [
@@ -841,27 +252,427 @@
       "winnerInTop3": true
     },
     {
+      "raceId": "2026-05-23_16_8",
+      "date": "2026-05-23",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Bazoo Can",
+          "modelProb": 0.2116
+        },
+        {
+          "number": 13,
+          "horse": "Palmesus N.O.",
+          "modelProb": 0.1673
+        },
+        {
+          "number": 9,
+          "horse": "Moshus Prinsen",
+          "modelProb": 0.1039
+        }
+      ],
+      "winnerNumbers": [
+        13
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-05-23_16_9",
+      "date": "2026-05-23",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Keep Asking",
+          "modelProb": 0.3544
+        },
+        {
+          "number": 6,
+          "horse": "Kentucky River",
+          "modelProb": 0.1449
+        },
+        {
+          "number": 1,
+          "horse": "Diamond Truppo",
+          "modelProb": 0.088
+        }
+      ],
+      "winnerNumbers": [
+        10
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-05-30_5_10",
+      "date": "2026-05-30",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Brother Day",
+          "modelProb": 0.1738
+        },
+        {
+          "number": 4,
+          "horse": "Carros First King",
+          "modelProb": 0.1621
+        },
+        {
+          "number": 3,
+          "horse": "Global Federation",
+          "modelProb": 0.1599
+        }
+      ],
+      "winnerNumbers": [
+        4
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-05-30_5_11",
+      "date": "2026-05-30",
+      "topModel": [
+        {
+          "number": 10,
+          "horse": "Chribo Hill",
+          "modelProb": 0.1817
+        },
+        {
+          "number": 1,
+          "horse": "I'm a Dancer",
+          "modelProb": 0.1611
+        },
+        {
+          "number": 6,
+          "horse": "Ebbot Rice",
+          "modelProb": 0.1591
+        }
+      ],
+      "winnerNumbers": [
+        10
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-05-30_5_12",
+      "date": "2026-05-30",
+      "topModel": [
+        {
+          "number": 10,
+          "horse": "Eminent Kronos",
+          "modelProb": 0.1358
+        },
+        {
+          "number": 3,
+          "horse": "Olli Boko",
+          "modelProb": 0.1237
+        },
+        {
+          "number": 1,
+          "horse": "Valla d'Gaagaa",
+          "modelProb": 0.1142
+        }
+      ],
+      "winnerNumbers": [
+        4
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-05-30_5_13",
+      "date": "2026-05-30",
+      "topModel": [
+        {
+          "number": 7,
+          "horse": "Bold Eagle Sun",
+          "modelProb": 0.2663
+        },
+        {
+          "number": 1,
+          "horse": "Daniel Hazelaar",
+          "modelProb": 0.1938
+        },
+        {
+          "number": 2,
+          "horse": "Indy Boy",
+          "modelProb": 0.1053
+        }
+      ],
+      "winnerNumbers": [
+        8
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-05-30_5_5",
+      "date": "2026-05-30",
+      "topModel": [
+        {
+          "number": 8,
+          "horse": "Clarissa",
+          "modelProb": 0.175
+        },
+        {
+          "number": 6,
+          "horse": "Celiaz",
+          "modelProb": 0.1499
+        },
+        {
+          "number": 5,
+          "horse": "Fantastica Doda",
+          "modelProb": 0.1106
+        }
+      ],
+      "winnerNumbers": [
+        6
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-05-30_5_6",
+      "date": "2026-05-30",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Villiam Avenue",
+          "modelProb": 0.1943
+        },
+        {
+          "number": 11,
+          "horse": "Secret Bo",
+          "modelProb": 0.1601
+        },
+        {
+          "number": 3,
+          "horse": "Mellby Note",
+          "modelProb": 0.1228
+        }
+      ],
+      "winnerNumbers": [
+        3
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-05-30_5_8",
+      "date": "2026-05-30",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Jackpot Mearas",
+          "modelProb": 0.1504
+        },
+        {
+          "number": 6,
+          "horse": "Ready Star",
+          "modelProb": 0.1475
+        },
+        {
+          "number": 5,
+          "horse": "Summermusic'nightS",
+          "modelProb": 0.1299
+        }
+      ],
+      "winnerNumbers": [
+        4
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-05-30_5_9",
+      "date": "2026-05-30",
+      "topModel": [
+        {
+          "number": 10,
+          "horse": "Noelia",
+          "modelProb": 0.1314
+        },
+        {
+          "number": 15,
+          "horse": "I'm Still Standing",
+          "modelProb": 0.1234
+        },
+        {
+          "number": 5,
+          "horse": "Melina Havelock",
+          "modelProb": 0.0937
+        }
+      ],
+      "winnerNumbers": [
+        15
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-06-13_11_10",
+      "date": "2026-06-13",
+      "topModel": [
+        {
+          "number": 2,
+          "horse": "S.G.Mistral",
+          "modelProb": 0.2011
+        },
+        {
+          "number": 1,
+          "horse": "Micke Sting",
+          "modelProb": 0.1589
+        },
+        {
+          "number": 7,
+          "horse": "Donatello Face",
+          "modelProb": 0.145
+        }
+      ],
+      "winnerNumbers": [
+        9
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-06-13_11_11",
+      "date": "2026-06-13",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Herkules A'lir",
+          "modelProb": 0.1455
+        },
+        {
+          "number": 6,
+          "horse": "Mellby Mowgli",
+          "modelProb": 0.1261
+        },
+        {
+          "number": 9,
+          "horse": "Gratisfaction",
+          "modelProb": 0.1246
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-06-13_11_12",
+      "date": "2026-06-13",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Francesco Zet",
+          "modelProb": 0.2614
+        },
+        {
+          "number": 3,
+          "horse": "Makalu Doc",
+          "modelProb": 0.1425
+        },
+        {
+          "number": 7,
+          "horse": "Mellby Jinx",
+          "modelProb": 0.1392
+        }
+      ],
+      "winnerNumbers": [
+        4
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-06-13_11_5",
+      "date": "2026-06-13",
+      "topModel": [
+        {
+          "number": 9,
+          "horse": "Önas Samanta",
+          "modelProb": 0.1639
+        },
+        {
+          "number": 7,
+          "horse": "Only Muscles Steel",
+          "modelProb": 0.1546
+        },
+        {
+          "number": 5,
+          "horse": "Chianti L.A.",
+          "modelProb": 0.1393
+        }
+      ],
+      "winnerNumbers": [
+        1
+      ],
+      "winnerInTop3": false
+    },
+    {
       "raceId": "2026-06-13_11_6",
       "date": "2026-06-13",
       "topModel": [
         {
           "number": 5,
           "horse": "Can't be Ruled",
-          "modelProb": 0.1648
+          "modelProb": 0.1631
         },
         {
-          "number": 4,
-          "horse": "Sonesta",
-          "modelProb": 0.1589
+          "number": 1,
+          "horse": "You to Ezme",
+          "modelProb": 0.1345
         },
         {
-          "number": 10,
-          "horse": "Jobiline Ridge",
-          "modelProb": 0.1072
+          "number": 2,
+          "horse": "Sonoma L.A.",
+          "modelProb": 0.134
         }
       ],
       "winnerNumbers": [
         4
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-06-13_11_7",
+      "date": "2026-06-13",
+      "topModel": [
+        {
+          "number": 13,
+          "horse": "Edens Odin",
+          "modelProb": 0.3451
+        },
+        {
+          "number": 2,
+          "horse": "Lille Rose G.L.",
+          "modelProb": 0.0799
+        },
+        {
+          "number": 3,
+          "horse": "Gargamel",
+          "modelProb": 0.0617
+        }
+      ],
+      "winnerNumbers": [
+        15
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-06-13_11_8",
+      "date": "2026-06-13",
+      "topModel": [
+        {
+          "number": 10,
+          "horse": "Mysleeve One",
+          "modelProb": 0.1769
+        },
+        {
+          "number": 6,
+          "horse": "Treasure Tile",
+          "modelProb": 0.1092
+        },
+        {
+          "number": 15,
+          "horse": "Healthy Meal",
+          "modelProb": 0.106
+        }
+      ],
+      "winnerNumbers": [
+        6
       ],
       "winnerInTop3": true
     },
@@ -872,42 +683,42 @@
         {
           "number": 9,
           "horse": "Waldemar W.F.",
-          "modelProb": 0.2509
+          "modelProb": 0.1518
         },
         {
-          "number": 11,
-          "horse": "Puskas Boko",
-          "modelProb": 0.1528
+          "number": 5,
+          "horse": "Alfred Gratien",
+          "modelProb": 0.1497
         },
         {
           "number": 1,
           "horse": "Twigs Mind U.",
-          "modelProb": 0.1333
+          "modelProb": 0.1174
         }
       ],
       "winnerNumbers": [
         11
       ],
-      "winnerInTop3": true
+      "winnerInTop3": false
     },
     {
       "raceId": "2026-06-27_9_10",
       "date": "2026-06-27",
       "topModel": [
         {
+          "number": 2,
+          "horse": "Harpy",
+          "modelProb": 0.1651
+        },
+        {
           "number": 1,
           "horse": "Loxahatchee",
-          "modelProb": 0.1916
+          "modelProb": 0.1633
         },
         {
           "number": 11,
           "horse": "PolePosition",
-          "modelProb": 0.1186
-        },
-        {
-          "number": 2,
-          "horse": "Harpy",
-          "modelProb": 0.1161
+          "modelProb": 0.1338
         }
       ],
       "winnerNumbers": [
@@ -916,23 +727,48 @@
       "winnerInTop3": true
     },
     {
+      "raceId": "2026-06-27_9_11",
+      "date": "2026-06-27",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Gratisfaction",
+          "modelProb": 0.2409
+        },
+        {
+          "number": 3,
+          "horse": "Look at Me Sisu",
+          "modelProb": 0.2241
+        },
+        {
+          "number": 2,
+          "horse": "Newcomer Vici",
+          "modelProb": 0.1792
+        }
+      ],
+      "winnerNumbers": [
+        10
+      ],
+      "winnerInTop3": false
+    },
+    {
       "raceId": "2026-06-27_9_12",
       "date": "2026-06-27",
       "topModel": [
         {
-          "number": 6,
-          "horse": "Gretzky Brodde",
-          "modelProb": 0.2157
-        },
-        {
           "number": 5,
           "horse": "Solkattens Express",
+          "modelProb": 0.2554
+        },
+        {
+          "number": 6,
+          "horse": "Gretzky Brodde",
           "modelProb": 0.1591
         },
         {
           "number": 3,
           "horse": "Hit or Miss",
-          "modelProb": 0.1491
+          "modelProb": 0.1233
         }
       ],
       "winnerNumbers": [
@@ -941,23 +777,73 @@
       "winnerInTop3": false
     },
     {
+      "raceId": "2026-06-27_9_5",
+      "date": "2026-06-27",
+      "topModel": [
+        {
+          "number": 2,
+          "horse": "Crowe Motion",
+          "modelProb": 0.2386
+        },
+        {
+          "number": 6,
+          "horse": "The Flying Eagle",
+          "modelProb": 0.1697
+        },
+        {
+          "number": 7,
+          "horse": "Olli Boko",
+          "modelProb": 0.1117
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-06-27_9_6",
+      "date": "2026-06-27",
+      "topModel": [
+        {
+          "number": 7,
+          "horse": "Rosie Bros",
+          "modelProb": 0.1704
+        },
+        {
+          "number": 3,
+          "horse": "Najade Quesnoy",
+          "modelProb": 0.1314
+        },
+        {
+          "number": 5,
+          "horse": "Västerbo Sparkly",
+          "modelProb": 0.13
+        }
+      ],
+      "winnerNumbers": [
+        6
+      ],
+      "winnerInTop3": false
+    },
+    {
       "raceId": "2026-06-27_9_7",
       "date": "2026-06-27",
       "topModel": [
         {
+          "number": 1,
+          "horse": "Puskas Boko",
+          "modelProb": 0.18
+        },
+        {
           "number": 5,
           "horse": "Illuminato",
-          "modelProb": 0.2194
+          "modelProb": 0.1463
         },
         {
           "number": 3,
           "horse": "Last Cool Cash",
-          "modelProb": 0.1608
-        },
-        {
-          "number": 1,
-          "horse": "Puskas Boko",
-          "modelProb": 0.1495
+          "modelProb": 0.1251
         }
       ],
       "winnerNumbers": [
@@ -966,23 +852,73 @@
       "winnerInTop3": true
     },
     {
+      "raceId": "2026-06-27_9_8",
+      "date": "2026-06-27",
+      "topModel": [
+        {
+          "number": 13,
+          "horse": "La Yuca",
+          "modelProb": 0.1896
+        },
+        {
+          "number": 6,
+          "horse": "Okura Greenwood",
+          "modelProb": 0.1336
+        },
+        {
+          "number": 2,
+          "horse": "Ditte Gel",
+          "modelProb": 0.1299
+        }
+      ],
+      "winnerNumbers": [
+        11
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-06-27_9_9",
+      "date": "2026-06-27",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "City Slicker",
+          "modelProb": 0.2276
+        },
+        {
+          "number": 5,
+          "horse": "Grosbois",
+          "modelProb": 0.145
+        },
+        {
+          "number": 4,
+          "horse": "Conrads Emil",
+          "modelProb": 0.1271
+        }
+      ],
+      "winnerNumbers": [
+        5
+      ],
+      "winnerInTop3": true
+    },
+    {
       "raceId": "2026-07-25_12_10",
       "date": "2026-07-25",
       "topModel": [
         {
+          "number": 6,
+          "horse": "Åsvinn S.K.",
+          "modelProb": 0.139
+        },
+        {
           "number": 3,
           "horse": "Pyrotek",
-          "modelProb": 0.1688
+          "modelProb": 0.1329
         },
         {
-          "number": 4,
-          "horse": "Prinsesse Ness Tjo",
-          "modelProb": 0.1161
-        },
-        {
-          "number": 15,
-          "horse": "Zargo",
-          "modelProb": 0.1075
+          "number": 5,
+          "horse": "Faks Odin N.O.",
+          "modelProb": 0.0996
         }
       ],
       "winnerNumbers": [
@@ -991,23 +927,73 @@
       "winnerInTop3": false
     },
     {
+      "raceId": "2026-07-25_12_11",
+      "date": "2026-07-25",
+      "topModel": [
+        {
+          "number": 12,
+          "horse": "Tiberius Victory",
+          "modelProb": 0.265
+        },
+        {
+          "number": 6,
+          "horse": "Readly Brodde",
+          "modelProb": 0.1365
+        },
+        {
+          "number": 1,
+          "horse": "Illuminato",
+          "modelProb": 0.1312
+        }
+      ],
+      "winnerNumbers": [
+        6
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-07-25_12_12",
+      "date": "2026-07-25",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Mandrake",
+          "modelProb": 0.1966
+        },
+        {
+          "number": 3,
+          "horse": "Youans Son",
+          "modelProb": 0.1898
+        },
+        {
+          "number": 6,
+          "horse": "Creekside Inn",
+          "modelProb": 0.1608
+        }
+      ],
+      "winnerNumbers": [
+        3
+      ],
+      "winnerInTop3": true
+    },
+    {
       "raceId": "2026-07-25_12_5",
       "date": "2026-07-25",
       "topModel": [
         {
-          "number": 6,
-          "horse": "Havana Heaven",
-          "modelProb": 0.2351
-        },
-        {
           "number": 3,
           "horse": "Rania Zon",
-          "modelProb": 0.1844
+          "modelProb": 0.2755
         },
         {
-          "number": 8,
-          "horse": "Waypoint Sequence",
-          "modelProb": 0.1395
+          "number": 6,
+          "horse": "Havana Heaven",
+          "modelProb": 0.2493
+        },
+        {
+          "number": 4,
+          "horse": "Kit Crown",
+          "modelProb": 0.1037
         }
       ],
       "winnerNumbers": [
@@ -1022,17 +1008,17 @@
         {
           "number": 2,
           "horse": "Erik the Phantom",
-          "modelProb": 0.2146
+          "modelProb": 0.3157
+        },
+        {
+          "number": 6,
+          "horse": "Currency Artist",
+          "modelProb": 0.1361
         },
         {
           "number": 1,
           "horse": "Crowe Motion",
-          "modelProb": 0.1611
-        },
-        {
-          "number": 3,
-          "horse": "Ajlexes Hans",
-          "modelProb": 0.1559
+          "modelProb": 0.1223
         }
       ],
       "winnerNumbers": [
@@ -1045,19 +1031,19 @@
       "date": "2026-07-25",
       "topModel": [
         {
-          "number": 5,
-          "horse": "Myr Tötta",
-          "modelProb": 0.2486
+          "number": 1,
+          "horse": "LanglandsBallerina",
+          "modelProb": 0.1051
         },
         {
           "number": 9,
           "horse": "Jonases Ninja",
-          "modelProb": 0.2213
+          "modelProb": 0.0993
         },
         {
-          "number": 12,
-          "horse": "Prinsessan Stöen",
-          "modelProb": 0.1258
+          "number": 4,
+          "horse": "Hög Decibel",
+          "modelProb": 0.0945
         }
       ],
       "winnerNumbers": [
@@ -1070,19 +1056,294 @@
       "date": "2026-07-25",
       "topModel": [
         {
-          "number": 3,
-          "horse": "Xanthis Harvey",
-          "modelProb": 0.1803
+          "number": 1,
+          "horse": "Mellby Joker",
+          "modelProb": 0.2129
+        },
+        {
+          "number": 4,
+          "horse": "Mellby Knekt",
+          "modelProb": 0.1351
+        },
+        {
+          "number": 6,
+          "horse": "Y.Not Diamant",
+          "modelProb": 0.1346
+        }
+      ],
+      "winnerNumbers": [
+        6
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-07-25_12_9",
+      "date": "2026-07-25",
+      "topModel": [
+        {
+          "number": 6,
+          "horse": "Global Gangbuster",
+          "modelProb": 0.1577
         },
         {
           "number": 1,
-          "horse": "Mellby Joker",
-          "modelProb": 0.1679
+          "horse": "Cocktail Spirit",
+          "modelProb": 0.1493
+        },
+        {
+          "number": 3,
+          "horse": "Fame Vendil",
+          "modelProb": 0.1386
+        }
+      ],
+      "winnerNumbers": [
+        11
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-10_5_10",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Nightbird",
+          "modelProb": 0.1495
+        },
+        {
+          "number": 7,
+          "horse": "Zeebreeze",
+          "modelProb": 0.1324
+        },
+        {
+          "number": 2,
+          "horse": "Kagli Zet",
+          "modelProb": 0.128
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-10_5_11",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Conrads Åke",
+          "modelProb": 0.1738
+        },
+        {
+          "number": 3,
+          "horse": "Elvis T.C.B.",
+          "modelProb": 0.1417
+        },
+        {
+          "number": 5,
+          "horse": "Iaintnoquitter",
+          "modelProb": 0.1387
+        }
+      ],
+      "winnerNumbers": [
+        5
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-10_5_12",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Steady Spender",
+          "modelProb": 0.1632
+        },
+        {
+          "number": 1,
+          "horse": "Po Tay Toes",
+          "modelProb": 0.121
+        },
+        {
+          "number": 3,
+          "horse": "Nanda Devi Cut",
+          "modelProb": 0.1074
+        }
+      ],
+      "winnerNumbers": [
+        3
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-10_5_13",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 2,
+          "horse": "X.O.Kemp",
+          "modelProb": 0.2134
+        },
+        {
+          "number": 4,
+          "horse": "Alvena Roy",
+          "modelProb": 0.1218
+        },
+        {
+          "number": 5,
+          "horse": "The Flying Eagle",
+          "modelProb": 0.1194
+        }
+      ],
+      "winnerNumbers": [
+        9
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-10_5_6",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Gumshoe Sox",
+          "modelProb": 0.3441
+        },
+        {
+          "number": 5,
+          "horse": "Digital Brodde",
+          "modelProb": 0.1363
+        },
+        {
+          "number": 11,
+          "horse": "Don Gaagaa",
+          "modelProb": 0.0883
+        }
+      ],
+      "winnerNumbers": [
+        1
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-10_5_7",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Ready Star",
+          "modelProb": 0.2103
+        },
+        {
+          "number": 1,
+          "horse": "Charron",
+          "modelProb": 0.1393
+        },
+        {
+          "number": 6,
+          "horse": "Boscha Diablo",
+          "modelProb": 0.0957
+        }
+      ],
+      "winnerNumbers": [
+        5
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-10_5_8",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Riverdale Z.",
+          "modelProb": 0.1631
+        },
+        {
+          "number": 8,
+          "horse": "Clarissa",
+          "modelProb": 0.1421
+        },
+        {
+          "number": 6,
+          "horse": "Monkey Wine",
+          "modelProb": 0.1173
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-10_5_9",
+      "date": "2026-10-10",
+      "topModel": [
+        {
+          "number": 13,
+          "horse": "Cameron Hills",
+          "modelProb": 0.1314
+        },
+        {
+          "number": 15,
+          "horse": "Monsieur Chocolat",
+          "modelProb": 0.1162
         },
         {
           "number": 10,
-          "horse": "Izod Zet",
-          "modelProb": 0.135
+          "horse": "Moonshot",
+          "modelProb": 0.1058
+        }
+      ],
+      "winnerNumbers": [
+        15
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-17_16_10",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 7,
+          "horse": "Haylee Eagra",
+          "modelProb": 0.3178
+        },
+        {
+          "number": 5,
+          "horse": "Conrads Ove",
+          "modelProb": 0.1873
+        },
+        {
+          "number": 9,
+          "horse": "Rob Roy Boko",
+          "modelProb": 0.1684
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-17_16_11",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 7,
+          "horse": "Great Old Dance",
+          "modelProb": 0.2325
+        },
+        {
+          "number": 5,
+          "horse": "Ugalli",
+          "modelProb": 0.1564
+        },
+        {
+          "number": 3,
+          "horse": "Any Given Sunday",
+          "modelProb": 0.133
         }
       ],
       "winnerNumbers": [
@@ -1091,52 +1352,302 @@
       "winnerInTop3": false
     },
     {
-      "raceId": "2026-10-10_5_11",
-      "date": "2026-10-10",
+      "raceId": "2026-10-17_16_12",
+      "date": "2026-10-17",
       "topModel": [
         {
-          "number": 3,
-          "horse": "Elvis T.C.B.",
-          "modelProb": 0.2755
+          "number": 7,
+          "horse": "Unicum",
+          "modelProb": 0.1977
         },
         {
           "number": 4,
-          "horse": "Flight Sequence",
-          "modelProb": 0.1202
+          "horse": "Griffin Kronos",
+          "modelProb": 0.1498
         },
         {
-          "number": 10,
-          "horse": "Nickel Occagnes",
-          "modelProb": 0.1023
+          "number": 2,
+          "horse": "Justcantgetenough",
+          "modelProb": 0.1425
         }
       ],
       "winnerNumbers": [
-        5
+        4
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-17_16_5",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Cashman J.R.",
+          "modelProb": 0.3126
+        },
+        {
+          "number": 4,
+          "horse": "Four White E.G.",
+          "modelProb": 0.1092
+        },
+        {
+          "number": 2,
+          "horse": "S.G.Empress",
+          "modelProb": 0.0947
+        }
+      ],
+      "winnerNumbers": [
+        6
       ],
       "winnerInTop3": false
     },
     {
-      "raceId": "2026-10-10_5_7",
-      "date": "2026-10-10",
+      "raceId": "2026-10-17_16_6",
+      "date": "2026-10-17",
       "topModel": [
         {
-          "number": 11,
-          "horse": "H.C.'s Crazy Horse",
-          "modelProb": 0.1861
+          "number": 2,
+          "horse": "Realize'em",
+          "modelProb": 0.1282
+        },
+        {
+          "number": 7,
+          "horse": "Glory Forever",
+          "modelProb": 0.1094
         },
         {
           "number": 5,
-          "horse": "Ready Star",
-          "modelProb": 0.1635
-        },
-        {
-          "number": 8,
-          "horse": "Call Me Gleipner",
-          "modelProb": 0.1427
+          "horse": "Geisha Road Grif",
+          "modelProb": 0.0902
         }
       ],
       "winnerNumbers": [
         5
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-17_16_7",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 10,
+          "horse": "Five Billion",
+          "modelProb": 0.2084
+        },
+        {
+          "number": 6,
+          "horse": "Sensational Doc",
+          "modelProb": 0.1409
+        },
+        {
+          "number": 1,
+          "horse": "Carpaccio",
+          "modelProb": 0.1282
+        }
+      ],
+      "winnerNumbers": [
+        8
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-17_16_8",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Borups Victory",
+          "modelProb": 0.2829
+        },
+        {
+          "number": 6,
+          "horse": "Competivo",
+          "modelProb": 0.2329
+        },
+        {
+          "number": 7,
+          "horse": "High on Pepper",
+          "modelProb": 0.2049
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-17_16_9",
+      "date": "2026-10-17",
+      "topModel": [
+        {
+          "number": 2,
+          "horse": "Grisle Best G.L.",
+          "modelProb": 0.1251
+        },
+        {
+          "number": 9,
+          "horse": "Grisle Kongen G.L.",
+          "modelProb": 0.1208
+        },
+        {
+          "number": 1,
+          "horse": "Sangviks Lynet",
+          "modelProb": 0.1006
+        }
+      ],
+      "winnerNumbers": [
+        1
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-24_7_10",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 7,
+          "horse": "Tvingens Calippo",
+          "modelProb": 0.2552
+        },
+        {
+          "number": 1,
+          "horse": "Wannabe Zaz",
+          "modelProb": 0.1608
+        },
+        {
+          "number": 5,
+          "horse": "Superstitious",
+          "modelProb": 0.1181
+        }
+      ],
+      "winnerNumbers": [
+        7
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-24_7_12",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 5,
+          "horse": "Gustav Simoni",
+          "modelProb": 0.1528
+        },
+        {
+          "number": 1,
+          "horse": "Waco Sixx",
+          "modelProb": 0.1283
+        },
+        {
+          "number": 6,
+          "horse": "Nickel Occagnes",
+          "modelProb": 0.1175
+        }
+      ],
+      "winnerNumbers": [
+        4
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-24_7_5",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 3,
+          "horse": "Nilla Lane",
+          "modelProb": 0.2008
+        },
+        {
+          "number": 1,
+          "horse": "Panthere d'Inverne",
+          "modelProb": 0.1997
+        },
+        {
+          "number": 6,
+          "horse": "I'm Still Standing",
+          "modelProb": 0.1299
+        }
+      ],
+      "winnerNumbers": [
+        3
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-24_7_6",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 2,
+          "horse": "Polly Vici",
+          "modelProb": 0.2193
+        },
+        {
+          "number": 6,
+          "horse": "Run Rhapsody Run",
+          "modelProb": 0.1159
+        },
+        {
+          "number": 3,
+          "horse": "Alicia C.D.",
+          "modelProb": 0.0963
+        }
+      ],
+      "winnerNumbers": [
+        12
+      ],
+      "winnerInTop3": false
+    },
+    {
+      "raceId": "2026-10-24_7_8",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 12,
+          "horse": "Chat Room",
+          "modelProb": 0.2712
+        },
+        {
+          "number": 5,
+          "horse": "Prince of Euro",
+          "modelProb": 0.1136
+        },
+        {
+          "number": 10,
+          "horse": "Frank Silvio",
+          "modelProb": 0.0845
+        }
+      ],
+      "winnerNumbers": [
+        12
+      ],
+      "winnerInTop3": true
+    },
+    {
+      "raceId": "2026-10-24_7_9",
+      "date": "2026-10-24",
+      "topModel": [
+        {
+          "number": 1,
+          "horse": "Richmond",
+          "modelProb": 0.2135
+        },
+        {
+          "number": 12,
+          "horse": "Hard Rock",
+          "modelProb": 0.1915
+        },
+        {
+          "number": 7,
+          "horse": "Tactical",
+          "modelProb": 0.184
+        }
+      ],
+      "winnerNumbers": [
+        1
       ],
       "winnerInTop3": true
     }

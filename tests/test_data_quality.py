@@ -124,6 +124,17 @@ class CompleteFieldTests(unittest.TestCase):
 
 
 class TrainingGateTests(unittest.TestCase):
+    def test_raw_source_rejections_are_counted_once_and_preserved(self):
+        source = {'rows': parsed(), 'sourceRejections': [{'raceId': 'dead-heat', 'rows': 12, 'reason': 'dead_heat_not_supported'}]}
+        once = q.prepare_training_data(source)
+        self.assertEqual(once['dataQuality']['sourceRaces'], 2)
+        self.assertEqual(once['dataQuality']['sourceStarts'], 20)
+        self.assertEqual(once['dataQuality']['excludedRaces'], 1)
+        self.assertEqual(q.prepare_training_data(once), once)
+        source['sourceRejections'][0]['raceId'] = source['rows'][0]['raceId']
+        with self.assertRaises(ValueError):
+            q.prepare_training_data(source)
+
     def test_legacy_complete_field_retained_with_unverified_risk_disabled(self):
         source = legacy(); original = copy.deepcopy(source)
         clean = q.prepare_training_data(source)
@@ -178,6 +189,21 @@ class TrainingGateTests(unittest.TestCase):
 
 
 class SourceCacheTests(unittest.TestCase):
+    def test_rate_limit_retried_but_forbidden_not_retried(self):
+        response = mock.MagicMock()
+        response.__enter__.return_value.read.return_value = json.dumps(card()).encode()
+        for code, expected in [(429, 2), (403, 1)]:
+            error = urllib.error.HTTPError('url', code, 'blocked', {'Retry-After': '3'}, None)
+            with tempfile.TemporaryDirectory() as directory, mock.patch.object(h, 'CACHE', pathlib.Path(directory)), mock.patch.object(h, 'OFFLINE', False), mock.patch.object(h.time, 'sleep') as pause:
+                with mock.patch.object(h.urllib.request, 'urlopen', side_effect=[error, response]) as fetch:
+                    if code == 429:
+                        self.assertEqual(h.get_json('/races/2026-06-01_5_1/extended')['id'], card()['id'])
+                        pause.assert_any_call(3)
+                    else:
+                        with self.assertRaises(urllib.error.HTTPError):
+                            h.get_json('/races/2026-06-01_5_1/extended')
+                    self.assertEqual(fetch.call_count, expected)
+
     def test_api_error_objects_and_wrong_identity_are_not_cached(self):
         for payload in [{'error': 'temporary'}, {**card(), 'id': 'wrong-race'}]:
             response = mock.MagicMock()

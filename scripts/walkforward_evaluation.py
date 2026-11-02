@@ -164,7 +164,7 @@ def produce():
         "excludedFromMarketComparison":metrics["races"]-len(paired),
         "features":[*FEATURES,*RELATIVE_FEATURES],
         "method":"Expanding-origin model re-fit before each held-out date, trained on strictly earlier dates, with race-relative prestart features.",
-        "limitations":"Exploratory, few races, some training race results incomplete, history sample covers selected dates only. Final-pool market is not a prestart timestamp. No validated win probabilities, Benter blend or profit forecast.",
+        "limitations":"Exploratory, complete verified fields from selected dates only. Unknown outcomes and unsupported dead heats are excluded. Final-pool market is not a prestart timestamp. No validated win probabilities, Benter blend or profit forecast.",
     }
     current=json.loads(OUTPUT.read_text()) if OUTPUT.exists() else {}
     comparable=lambda x:{k:v for k,v in x.items() if k!="generatedAt"}

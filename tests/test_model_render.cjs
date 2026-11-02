@@ -9,8 +9,10 @@ await vm.runInNewContext(fs.readFileSync('v85.js','utf8'),context);
 assert.ok(!element('#data-status').className.includes('error'));
 assert.equal((element('#model-list').innerHTML.match(/<article /g)||[]).length,8);
 assert.equal((element('#model-list').innerHTML.match(/<li>/g)||[]).length,24);
-assert.match(element('#model-status').textContent,/11 av 16/);
-assert.match(element('#model-status').textContent,/1 av 16/);
+const metrics=model.validation.metrics;
+assert.ok(element('#model-status').textContent.includes(`${metrics.top3Count} av ${metrics.races}`));
+assert.ok(element('#model-status').textContent.includes(`${metrics.top1Count} av ${metrics.races}`));
+assert.ok(element('#model-status').textContent.includes(`slutstreckens topp 3 ${model.validation.retrospectiveFinalPool.top3Count} träffar`));
 assert.match(element('#race-panel').innerHTML,/CatBoost · topp 3/);
 for(let leg=1;leg<=8;leg++){
 events.click({target:{closest:()=>({dataset:{leg:String(leg)},closest:()=>true})}});

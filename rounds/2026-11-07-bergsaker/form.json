@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "b5395617f5d19d7ee6c8172796128ca6b2fce27c1d8ef82459acbaeb2f2177d9",
-  "retrievedAt": "2026-11-02T11:32:14.624093+01:00",
-  "method": "Prelimin�r delranking fr�n historisk form, klass och tempo/sp�r d�r underlag finns. Ingen kalibrerad vinstchans eller tr�nad XGBoost/CatBoost-prognos.",
+  "snapshotId": "f67aefc3dce6c4c7902079b8227c3f52ed01eaac9ff91856450732e90fa76ffd",
+  "retrievedAt": "2026-11-02T12:29:05.991720+01:00",
+  "method": "Preliminär delranking från historisk form, klass och tempo/spår där underlag finns. Ingen kalibrerad vinstchans eller tränad XGBoost/CatBoost-prognos.",
   "races": [
     {
       "leg": 1,
@@ -104,7 +104,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 2,
@@ -198,7 +198,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 3,
@@ -292,7 +292,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 4,
@@ -386,7 +386,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 5,
@@ -480,7 +480,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 6,
@@ -574,7 +574,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 7,
@@ -668,7 +668,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 8,
@@ -762,7 +762,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 9,
@@ -856,7 +856,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 10,
@@ -950,7 +950,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 11,
@@ -1044,7 +1044,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 12,
@@ -1138,7 +1138,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         }
       ]
     },
@@ -1240,7 +1240,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 2,
@@ -1334,7 +1334,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 3,
@@ -1428,7 +1428,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 4,
@@ -1522,7 +1522,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 5,
@@ -1616,7 +1616,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 6,
@@ -1710,7 +1710,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 7,
@@ -1804,11 +1804,11 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 8,
-          "name": "Ajlexes Konn�ss�r",
+          "name": "Ajlexes Konnässör",
           "scratched": false,
           "previousStarts": 5,
           "lastFive": [
@@ -1898,11 +1898,11 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 9,
-          "name": "J�rnladyn",
+          "name": "Järnladyn",
           "scratched": false,
           "previousStarts": 5,
           "lastFive": [
@@ -1992,7 +1992,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 10,
@@ -2086,7 +2086,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 11,
@@ -2180,7 +2180,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 12,
@@ -2274,7 +2274,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         }
       ]
     },
@@ -2376,7 +2376,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 2,
@@ -2470,7 +2470,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 3,
@@ -2564,7 +2564,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 4,
@@ -2658,7 +2658,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 5,
@@ -2752,7 +2752,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 6,
@@ -2846,7 +2846,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 7,
@@ -2940,7 +2940,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 8,
@@ -3034,7 +3034,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 9,
@@ -3129,7 +3129,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 10,
@@ -3223,7 +3223,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 11,
@@ -3317,11 +3317,11 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 12,
-          "name": "Harry V�xus",
+          "name": "Harry Växus",
           "scratched": false,
           "previousStarts": 5,
           "lastFive": [
@@ -3411,7 +3411,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 13,
@@ -3505,7 +3505,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 14,
@@ -3599,7 +3599,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 15,
@@ -3693,7 +3693,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         }
       ]
     },
@@ -3795,7 +3795,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 2,
@@ -3889,7 +3889,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 3,
@@ -3983,11 +3983,11 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 4,
-          "name": "Conrads �ke",
+          "name": "Conrads Åke",
           "scratched": false,
           "previousStarts": 5,
           "lastFive": [
@@ -4077,7 +4077,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 5,
@@ -4171,7 +4171,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 6,
@@ -4265,7 +4265,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 7,
@@ -4359,7 +4359,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 8,
@@ -4453,7 +4453,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 9,
@@ -4547,7 +4547,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 10,
@@ -4641,7 +4641,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 11,
@@ -4735,7 +4735,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 12,
@@ -4827,7 +4827,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Form fr�n tidigare starter; sp�r/tempo och klass ber�knas f�rst n�r j�mf�rbar historik r�cker."
+          "note": "Form från tidigare starter; spår/tempo och klass beräknas först när jämförbar historik räcker."
         }
       ]
     },
@@ -4929,7 +4929,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 2,
@@ -5023,7 +5023,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 3,
@@ -5117,7 +5117,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 4,
@@ -5211,7 +5211,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 5,
@@ -5305,7 +5305,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 6,
@@ -5399,7 +5399,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 7,
@@ -5493,7 +5493,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 8,
@@ -5587,11 +5587,11 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 9,
-          "name": "K�llsj�viking",
+          "name": "Källsjöviking",
           "scratched": false,
           "previousStarts": 5,
           "lastFive": [
@@ -5681,11 +5681,11 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 10,
-          "name": "Soldh�jdens Drake",
+          "name": "Soldhöjdens Drake",
           "scratched": false,
           "previousStarts": 5,
           "lastFive": [
@@ -5775,7 +5775,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 11,
@@ -5869,7 +5869,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 12,
@@ -5963,7 +5963,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 13,
@@ -6057,7 +6057,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 14,
@@ -6151,7 +6151,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 15,
@@ -6245,7 +6245,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         }
       ]
     },
@@ -6347,7 +6347,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 2,
@@ -6441,7 +6441,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 3,
@@ -6535,7 +6535,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 4,
@@ -6629,7 +6629,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 5,
@@ -6723,7 +6723,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 6,
@@ -6817,7 +6817,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 7,
@@ -6911,7 +6911,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 8,
@@ -7005,7 +7005,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 9,
@@ -7099,7 +7099,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 10,
@@ -7191,7 +7191,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Form fr�n tidigare starter; sp�r/tempo och klass ber�knas f�rst n�r j�mf�rbar historik r�cker."
+          "note": "Form från tidigare starter; spår/tempo och klass beräknas först när jämförbar historik räcker."
         },
         {
           "number": 11,
@@ -7285,7 +7285,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 12,
@@ -7379,7 +7379,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 13,
@@ -7473,7 +7473,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 14,
@@ -7567,7 +7567,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 15,
@@ -7661,7 +7661,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         }
       ]
     },
@@ -7763,7 +7763,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 2,
@@ -7857,7 +7857,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 3,
@@ -7951,7 +7951,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 4,
@@ -8045,7 +8045,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 5,
@@ -8139,7 +8139,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 6,
@@ -8233,7 +8233,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 7,
@@ -8327,7 +8327,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 8,
@@ -8421,7 +8421,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 9,
@@ -8515,7 +8515,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 10,
@@ -8609,7 +8609,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 11,
@@ -8703,7 +8703,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 12,
@@ -8797,7 +8797,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         }
       ]
     },
@@ -8899,7 +8899,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 2,
@@ -8993,7 +8993,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 3,
@@ -9087,7 +9087,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 4,
@@ -9181,7 +9181,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 5,
@@ -9275,7 +9275,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 6,
@@ -9369,7 +9369,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 7,
@@ -9463,7 +9463,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 8,
@@ -9557,7 +9557,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 9,
@@ -9651,7 +9651,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 10,
@@ -9745,7 +9745,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 11,
@@ -9839,7 +9839,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 12,
@@ -9933,7 +9933,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 13,
@@ -10027,7 +10027,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 14,
@@ -10121,11 +10121,11 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         },
         {
           "number": 15,
-          "name": "Sir H�leryd",
+          "name": "Sir Håleryd",
           "scratched": false,
           "previousStarts": 5,
           "lastFive": [
@@ -10215,7 +10215,7 @@
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/sp�r- och klassproxy d�r data finns; ingen s�ker spetsprognos."
+          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
         }
       ]
     }

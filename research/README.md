@@ -1,6 +1,6 @@
 # LA_V85 – historisk pilot med tidsseparerat test
 
-> **Datarättning 1 november 2026:** De äldre resultaten nedan är bevarade historiska experiment. Modellträning använder nu fullständiga startfält och avstängda, ej verifierbara äldre galoppvärden. 31 av 178 lopp (354 starter) kan behållas för begränsade tester; 147 lopp behöver ny rådatakontroll. [Läs rättningen och återhämtningsstegen](DATA_QUALITY.md). [Aktuell datakontroll](training_data_quality_2026.json). Nya modellrapporter använder suffixet `_v2.json`.
+> **Återhämtning 2 november 2026:** 145 av 147 tidigare spärrade lopp har återställts från sparad rådata. Nu godkänns 196 lopp med 2 307 starter från 25 datum. CatBoost testas tidsordnat på 164 lopp: vinnaren finns i topp tre i 83 lopp och rankas först i 29. [Aktuell modell](CURRENT_MODEL.md), [återhämtning](DATA_QUALITY.md) och [datakontroll](training_data_quality_2026.json). De äldre resultaten nedan bevaras som historiska experiment; aktuella jämförelser använder `_v2.json`.
 
 
 Den här katalogen innehåller ett **forskningsförsök**, inte färdiga spelråd eller validerade vinstsannolikheter.

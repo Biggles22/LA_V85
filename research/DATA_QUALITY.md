@@ -1,4 +1,12 @@
-# Datarättning 1 november 2026
+# Datakontroll och återhämtning 2 november 2026
+
+**Återhämtningen är genomförd:** 200 lopp från 25 V85-omgångar har hämtats som 225 råsvar. **196 lopp och 2 307 aktiva starter** klarar träningskontrollen. Av de tidigare 147 spärrade loppen har 145 återställts; alla 31 tidigare godkända lopp finns kvar och 20 kompletta lopp har tillkommit. Två lopp har okända resultat och två har dött lopp, vilket vinnarmodellen inte stöder. Dessa fyra lopp används inte i träningen.
+
+[Återhämtningsrapport](history_recovery_2026.json) · [Aktuell datakontroll](training_data_quality_2026.json) · [Kontroll av historiska statistikövergångar](historical_asof_audit_2026.json) · [Aktuell CatBoost-modell](CURRENT_MODEL.md).
+
+Råsvaren sparas med källa, hämtningstid och innehållshash. En full ombyggnad utan nätverk har gett samma SHA-256 för träningsfilen. I 385 kontrollerbara par av på varandra följande starter stämmer ökningen av karriärstarter och segrar med det mellanliggande loppet. Det stödjer att just dessa fält är tidsriktiga i urvalet, men bevisar inte att alla fält är frysta. Karriärstatistik används därför ännu inte som modellvariabler.
+
+Följande beskriver utgångsläget den 1 november och de kontroller som fortsatt gäller.
 
 Historiska råsvar saknas i den äldre databasen. Aggregerade galoppvärden kan därför inte repareras säkert i efterhand. ATG-åtkomst behövs för att hämta om de ursprungliga loppen. Tidigare databas, modellrapporter och frysta prognoser bevaras oförändrade som historisk dokumentation.
 
@@ -13,13 +21,13 @@ Historiska råsvar saknas i den äldre databasen. Aggregerade galoppvärden kan 
 - Samtliga träningsvägar använder samma kvalitetskontroll. Hela lopp med osäker identitet, okända resultat eller tvetydig täckning hålls utanför träningen. Dessa hästar behandlas inte som förlorare.
 - Rådata sparas från och med den nya importen med källa, hämtningstid och SHA-256. De kan kontrolleras och bearbetas igen utan nätverk. Inga råsvar har återskapats från aggregat.
 
-## Befintligt underlag
+## Äldre underlag före återhämtningen
 
 Den äldre databasen omfattar 178 lopp och 1 931 häststarter. **31 lopp med 354 starter** har full registrerad täckning, konsekventa startfält och en entydig vinnare. Dessa kan användas för begränsade forskningsförsök, med äldre galoppvärden avstängda. **43 tidigare numeriska galoppvärden** i detta delurval har ersatts av okänt i modellernas indata; källfilen är bevarad.
 
-**147 lopp spärras** tills rådata kan verifieras. Den gamla täckningssiffran blandar strykningar med saknade resultat, så vi kan inte säkert skilja dessa fall genom att räkna baklänges. Kvalitetsrapporten listar varje spärrat lopp och orsak.
+**147 lopp spärrades** i den äldre filen tills rådata kunde verifieras. Den gamla täckningssiffran blandade strykningar med saknade resultat. Återhämtningen ovan använder nya råsvar, inte baklängesberäkning av de äldre aggregaten.
 
-Detta är ett begränsat, selekterat underlag. Varken gallopprisken eller de fullständiga äldre startfälten har påståtts vara återhämtade. Även marknadsandelarna är historiska slutstreck, inte ursprungliga förhandssnapshots.
+Även det utökade underlaget är selekterat. Galoppvariabeln är fortsatt avstängd i den aktuella CatBoost-modellen. Marknadsandelarna är historiska slutstreck, inte ursprungliga förhandssnapshots.
 
 ## Körning och återhämtning
 
@@ -50,7 +58,8 @@ Importen skriver den separata filen `research/historical_pilot_v2.json`. Inga ä
 För ombearbetning av redan hämtade svar:
 
 ```sh
-python scripts/historical_pilot.py --offline
+python -m scripts.recover_historical --offline
+python -m scripts.audit_historical_asof
 ```
 
 Push-kontrollerna gör ingen automatisk ATG-insamling. En uttrycklig manuell insamling kan väljas i historical-pilot-flödet. Publicering av rapporter avbryts om GitHubs main har förändrats under körningen, så att parallellt arbete inte skrivs över. Tidigare antalsregler som vägrade ersätta en stor rapport med ett mindre men korrekt test används inte för v2.

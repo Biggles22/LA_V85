@@ -1,751 +1,37 @@
 {
   "trainingDataQuality": {
     "contractVersion": 2,
-    "sourceRaces": 178,
-    "sourceStarts": 1931,
-    "eligibleRaces": 31,
-    "eligibleStarts": 354,
-    "excludedRaces": 147,
-    "legacyEligibleRaces": 31,
-    "maskedLegacyGallopValues": 43,
+    "sourceRaces": 200,
+    "sourceStarts": 2360,
+    "eligibleRaces": 196,
+    "eligibleStarts": 2307,
+    "excludedRaces": 4,
+    "legacyEligibleRaces": 0,
+    "maskedLegacyGallopValues": 0,
     "exclusionReasons": {
-      "legacy_field_requires_raw_refetch": 147
+      "dead_heat_not_supported": 2,
+      "unknown_result": 2
     },
     "quarantine": [
       {
-        "raceId": "2025-11-22_7_3",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_4",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_5",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_8",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-22_7_9",
+        "raceId": "2026-10-24_7_7",
         "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
+        "reason": "dead_heat_not_supported"
       },
       {
-        "raceId": "2025-11-29_5_4",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-11-29_5_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_10",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_3",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_6",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_8",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-06_6_9",
+        "raceId": "2026-10-24_7_11",
         "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_4",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_5",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_7",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2025-12-27_16_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_3",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_4",
-        "rows": 7,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_6",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_8",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-01-03_7_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_12",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_5",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_7",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_8",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-07_5_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_10",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_11",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-14_6_8",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_11",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_12",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_8",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-21_9_9",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_5",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_8",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-02-28_8_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-14_78_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
+        "reason": "dead_heat_not_supported"
       },
       {
         "raceId": "2026-03-14_78_12",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
+        "rows": 15,
+        "reason": "unknown_result"
       },
       {
         "raceId": "2026-03-14_78_5",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-14_78_6",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-14_78_8",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-14_78_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_11",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-21_6_8",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_12",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_5",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_7",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-03-28_5_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_10",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_11",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_12",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_6",
-        "rows": 7,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_7",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_8",
-        "rows": 7,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-11_7_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_11",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_5",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_8",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-18_12_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_11",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_12",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-04-25_32_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_10",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_12",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_6",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-02_27_7",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_11",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_5",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_6",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_7",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-09_6_9",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_10",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_11",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_12",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_5",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_6",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_8",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-23_16_9",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_10",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_12",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_13",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_5",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_6",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_8",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-05-30_5_9",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_10",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_11",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_12",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_5",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-13_11_7",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-27_9_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-27_9_6",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-27_9_8",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-06-27_9_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-07-25_12_11",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-07-25_12_12",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-07-25_12_9",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_10",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_12",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_13",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_6",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_8",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-10_5_9",
-        "rows": 12,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_11",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_12",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_5",
-        "rows": 9,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_6",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_7",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_8",
-        "rows": 8,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-17_16_9",
-        "rows": 14,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-24_7_10",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-24_7_12",
-        "rows": 10,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-24_7_5",
-        "rows": 11,
-        "reason": "legacy_field_requires_raw_refetch"
-      },
-      {
-        "raceId": "2026-10-24_7_6",
-        "rows": 13,
-        "reason": "legacy_field_requires_raw_refetch"
+        "rows": 15,
+        "reason": "unknown_result"
       }
     ],
     "limitations": [
@@ -753,283 +39,759 @@
       "Historical final market shares are not archived prestart observations.",
       "A smaller complete-field subset is selected data, not validated betting evidence."
     ],
-    "sourceFile": "research/historical_pilot_2026.json",
-    "sourceSha256": "0060f89560950b9d7e4ce6dbcd11c26e50bb1e204e9567f528e40222b3387953"
+    "sourceFile": "research/historical_pilot_v2.json",
+    "sourceSha256": "3c42c2a358b3264b3cb84b8387872f3967cf655ff0a7d19f31cc28ccd3964ca6"
   },
   "reportType": "EXPANDING_CHRONOLOGICAL_BACKTEST_NOT_VALIDATED",
-  "generatedAt": "2026-11-01T18:11:48.639004+00:00",
-  "sourceRaceCount": 31,
-  "sourceStarts": 354,
-  "sourceDates": 16,
+  "generatedAt": "2026-11-02T11:32:26.456539+00:00",
+  "sourceRaceCount": 196,
+  "sourceStarts": 2307,
+  "sourceDates": 25,
   "folds": [
+    {
+      "date": "2026-01-03",
+      "trainUntil": "2025-12-27",
+      "trainedDates": 4,
+      "trainStarts": 380,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 5,
+        "top3Count": 7,
+        "top1Rate": 0.625,
+        "top3Rate": 0.875,
+        "raceLogLoss": 1.6562,
+        "horseBrier": 0.06708
+      },
+      "pairedRaces": 8,
+      "pairedModel": {
+        "races": 8,
+        "top1Count": 5,
+        "top3Count": 7,
+        "top1Rate": 0.625,
+        "top3Rate": 0.875,
+        "raceLogLoss": 1.6562,
+        "horseBrier": 0.06708
+      },
+      "pairedMarket": {
+        "races": 8,
+        "top1Count": 5,
+        "top3Count": 7,
+        "top1Rate": 0.625,
+        "top3Rate": 0.875,
+        "raceLogLoss": 1.1835,
+        "horseBrier": 0.0493
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "trainUntil": "2026-01-03",
+      "trainedDates": 5,
+      "trainStarts": 467,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.2399,
+        "horseBrier": 0.07337
+      },
+      "pairedRaces": 8,
+      "pairedModel": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.2399,
+        "horseBrier": 0.07337
+      },
+      "pairedMarket": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 1.9734,
+        "horseBrier": 0.06958
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "trainUntil": "2026-02-07",
+      "trainedDates": 6,
+      "trainStarts": 561,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.2865,
+        "horseBrier": 0.09441
+      },
+      "pairedRaces": 8,
+      "pairedModel": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.2865,
+        "horseBrier": 0.09441
+      },
+      "pairedMarket": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 7,
+        "top1Rate": 0.25,
+        "top3Rate": 0.875,
+        "raceLogLoss": 1.4846,
+        "horseBrier": 0.06908
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "trainUntil": "2026-02-14",
+      "trainedDates": 7,
+      "trainStarts": 646,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.2946,
+        "horseBrier": 0.07728
+      },
+      "pairedRaces": 8,
+      "pairedModel": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.2946,
+        "horseBrier": 0.07728
+      },
+      "pairedMarket": {
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 4,
+        "top1Rate": 0.375,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.1381,
+        "horseBrier": 0.06665
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "trainUntil": "2026-02-21",
+      "trainedDates": 8,
+      "trainStarts": 741,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.125,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.2882,
+        "horseBrier": 0.07398
+      },
+      "pairedRaces": 7,
+      "pairedModel": {
+        "races": 7,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.1429,
+        "top3Rate": 0.4286,
+        "raceLogLoss": 2.1797,
+        "horseBrier": 0.06803
+      },
+      "pairedMarket": {
+        "races": 7,
+        "top1Count": 4,
+        "top3Count": 4,
+        "top1Rate": 0.5714,
+        "top3Rate": 0.5714,
+        "raceLogLoss": 1.8983,
+        "horseBrier": 0.05214
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "trainUntil": "2026-02-28",
+      "trainedDates": 9,
+      "trainStarts": 835,
+      "testMetrics": {
+        "races": 6,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.3333,
+        "top3Rate": 0.6667,
+        "raceLogLoss": 2.1775,
+        "horseBrier": 0.08483
+      },
+      "pairedRaces": 6,
+      "pairedModel": {
+        "races": 6,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.3333,
+        "top3Rate": 0.6667,
+        "raceLogLoss": 2.1775,
+        "horseBrier": 0.08483
+      },
+      "pairedMarket": {
+        "races": 6,
+        "top1Count": 4,
+        "top3Count": 5,
+        "top1Rate": 0.6667,
+        "top3Rate": 0.8333,
+        "raceLogLoss": 1.4559,
+        "horseBrier": 0.06497
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "trainUntil": "2026-03-14",
+      "trainedDates": 10,
+      "trainStarts": 899,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 5,
+        "top1Rate": 0.125,
+        "top3Rate": 0.625,
+        "raceLogLoss": 2.239,
+        "horseBrier": 0.0762
+      },
+      "pairedRaces": 8,
+      "pairedModel": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 5,
+        "top1Rate": 0.125,
+        "top3Rate": 0.625,
+        "raceLogLoss": 2.239,
+        "horseBrier": 0.0762
+      },
+      "pairedMarket": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 4,
+        "top1Rate": 0.125,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.3319,
+        "horseBrier": 0.08219
+      }
+    },
     {
       "date": "2026-03-28",
       "trainUntil": "2026-03-21",
-      "trainedDates": 9,
-      "trainStarts": 168,
+      "trainedDates": 11,
+      "trainStarts": 994,
       "testMetrics": {
-        "races": 1,
-        "top1Count": 0,
-        "top3Count": 0,
-        "top1Rate": 0.0,
-        "top3Rate": 0.0,
-        "raceLogLoss": 2.6419,
-        "horseBrier": 0.06429
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.125,
+        "top3Rate": 0.25,
+        "raceLogLoss": 2.6986,
+        "horseBrier": 0.083
       },
-      "pairedRaces": 1,
+      "pairedRaces": 8,
       "pairedModel": {
-        "races": 1,
-        "top1Count": 0,
-        "top3Count": 0,
-        "top1Rate": 0.0,
-        "top3Rate": 0.0,
-        "raceLogLoss": 2.6419,
-        "horseBrier": 0.06429
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.125,
+        "top3Rate": 0.25,
+        "raceLogLoss": 2.6986,
+        "horseBrier": 0.083
       },
       "pairedMarket": {
-        "races": 1,
-        "top1Count": 0,
-        "top3Count": 1,
-        "top1Rate": 0.0,
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 6,
+        "top1Rate": 0.375,
+        "top3Rate": 0.75,
+        "raceLogLoss": 1.8798,
+        "horseBrier": 0.07267
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "trainUntil": "2026-03-28",
+      "trainedDates": 12,
+      "trainStarts": 1088,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 5,
+        "top1Rate": 0.25,
+        "top3Rate": 0.625,
+        "raceLogLoss": 2.1182,
+        "horseBrier": 0.07251
+      },
+      "pairedRaces": 7,
+      "pairedModel": {
+        "races": 7,
+        "top1Count": 2,
+        "top3Count": 5,
+        "top1Rate": 0.2857,
+        "top3Rate": 0.7143,
+        "raceLogLoss": 1.9618,
+        "horseBrier": 0.06919
+      },
+      "pairedMarket": {
+        "races": 7,
+        "top1Count": 5,
+        "top3Count": 7,
+        "top1Rate": 0.7143,
         "top3Rate": 1.0,
-        "raceLogLoss": 2.4914,
-        "horseBrier": 0.06743
+        "raceLogLoss": 1.147,
+        "horseBrier": 0.04615
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "trainUntil": "2026-04-11",
+      "trainedDates": 13,
+      "trainStarts": 1180,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.125,
+        "top3Rate": 0.25,
+        "raceLogLoss": 2.8805,
+        "horseBrier": 0.08262
+      },
+      "pairedRaces": 8,
+      "pairedModel": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.125,
+        "top3Rate": 0.25,
+        "raceLogLoss": 2.8805,
+        "horseBrier": 0.08262
+      },
+      "pairedMarket": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.125,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.7075,
+        "horseBrier": 0.08083
       }
     },
     {
       "date": "2026-04-25",
-      "trainUntil": "2026-03-28",
-      "trainedDates": 10,
-      "trainStarts": 183,
+      "trainUntil": "2026-04-18",
+      "trainedDates": 14,
+      "trainStarts": 1278,
       "testMetrics": {
-        "races": 2,
-        "top1Count": 0,
-        "top3Count": 0,
-        "top1Rate": 0.0,
-        "top3Rate": 0.0,
-        "raceLogLoss": 2.5339,
-        "horseBrier": 0.11188
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.125,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.5604,
+        "horseBrier": 0.07946
       },
-      "pairedRaces": 2,
+      "pairedRaces": 8,
       "pairedModel": {
-        "races": 2,
-        "top1Count": 0,
-        "top3Count": 0,
-        "top1Rate": 0.0,
-        "top3Rate": 0.0,
-        "raceLogLoss": 2.5339,
-        "horseBrier": 0.11188
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.125,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.5604,
+        "horseBrier": 0.07946
       },
       "pairedMarket": {
-        "races": 2,
-        "top1Count": 1,
-        "top3Count": 1,
-        "top1Rate": 0.5,
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 4,
+        "top1Rate": 0.375,
         "top3Rate": 0.5,
-        "raceLogLoss": 1.4309,
-        "horseBrier": 0.06426
+        "raceLogLoss": 2.2644,
+        "horseBrier": 0.06447
       }
     },
     {
       "date": "2026-05-02",
       "trainUntil": "2026-04-25",
-      "trainedDates": 11,
-      "trainStarts": 202,
+      "trainedDates": 15,
+      "trainStarts": 1376,
       "testMetrics": {
-        "races": 1,
-        "top1Count": 0,
-        "top3Count": 0,
-        "top1Rate": 0.0,
-        "top3Rate": 0.0,
-        "raceLogLoss": 2.1625,
-        "horseBrier": 0.07391
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.0013,
+        "horseBrier": 0.07033
       },
-      "pairedRaces": 1,
+      "pairedRaces": 8,
       "pairedModel": {
-        "races": 1,
-        "top1Count": 0,
-        "top3Count": 0,
-        "top1Rate": 0.0,
-        "top3Rate": 0.0,
-        "raceLogLoss": 2.1625,
-        "horseBrier": 0.07391
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.0013,
+        "horseBrier": 0.07033
       },
       "pairedMarket": {
-        "races": 1,
-        "top1Count": 0,
-        "top3Count": 1,
-        "top1Rate": 0.0,
-        "top3Rate": 1.0,
-        "raceLogLoss": 1.6815,
-        "horseBrier": 0.07206
+        "races": 8,
+        "top1Count": 4,
+        "top3Count": 6,
+        "top1Rate": 0.5,
+        "top3Rate": 0.75,
+        "raceLogLoss": 1.5404,
+        "horseBrier": 0.06179
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "trainUntil": "2026-05-02",
+      "trainedDates": 16,
+      "trainStarts": 1466,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 6,
+        "top1Rate": 0.125,
+        "top3Rate": 0.75,
+        "raceLogLoss": 1.9441,
+        "horseBrier": 0.07151
+      },
+      "pairedRaces": 8,
+      "pairedModel": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 6,
+        "top1Rate": 0.125,
+        "top3Rate": 0.75,
+        "raceLogLoss": 1.9441,
+        "horseBrier": 0.07151
+      },
+      "pairedMarket": {
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 7,
+        "top1Rate": 0.375,
+        "top3Rate": 0.875,
+        "raceLogLoss": 1.5203,
+        "horseBrier": 0.06185
+      }
+    },
+    {
+      "date": "2026-05-23",
+      "trainUntil": "2026-05-09",
+      "trainedDates": 17,
+      "trainStarts": 1562,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.125,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.5299,
+        "horseBrier": 0.07653
+      },
+      "pairedRaces": 7,
+      "pairedModel": {
+        "races": 7,
+        "top1Count": 1,
+        "top3Count": 2,
+        "top1Rate": 0.1429,
+        "top3Rate": 0.2857,
+        "raceLogLoss": 2.6405,
+        "horseBrier": 0.07727
+      },
+      "pairedMarket": {
+        "races": 7,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.2857,
+        "top3Rate": 0.5714,
+        "raceLogLoss": 2.0116,
+        "horseBrier": 0.0688
+      }
+    },
+    {
+      "date": "2026-05-30",
+      "trainUntil": "2026-05-23",
+      "trainedDates": 18,
+      "trainStarts": 1661,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 2,
+        "top1Rate": 0.25,
+        "top3Rate": 0.25,
+        "raceLogLoss": 2.4414,
+        "horseBrier": 0.07941
+      },
+      "pairedRaces": 8,
+      "pairedModel": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 2,
+        "top1Rate": 0.25,
+        "top3Rate": 0.25,
+        "raceLogLoss": 2.4414,
+        "horseBrier": 0.07941
+      },
+      "pairedMarket": {
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 5,
+        "top1Rate": 0.375,
+        "top3Rate": 0.625,
+        "raceLogLoss": 2.6009,
+        "horseBrier": 0.08629
       }
     },
     {
       "date": "2026-06-13",
-      "trainUntil": "2026-05-02",
-      "trainedDates": 12,
-      "trainStarts": 214,
+      "trainUntil": "2026-05-30",
+      "trainedDates": 19,
+      "trainStarts": 1756,
       "testMetrics": {
-        "races": 2,
+        "races": 8,
         "top1Count": 0,
-        "top3Count": 1,
+        "top3Count": 3,
         "top1Rate": 0.0,
-        "top3Rate": 0.5,
-        "raceLogLoss": 2.2356,
-        "horseBrier": 0.07794
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.4541,
+        "horseBrier": 0.07825
       },
-      "pairedRaces": 2,
+      "pairedRaces": 8,
       "pairedModel": {
-        "races": 2,
+        "races": 8,
         "top1Count": 0,
-        "top3Count": 1,
+        "top3Count": 3,
         "top1Rate": 0.0,
-        "top3Rate": 0.5,
-        "raceLogLoss": 2.2356,
-        "horseBrier": 0.07794
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.4541,
+        "horseBrier": 0.07825
       },
       "pairedMarket": {
-        "races": 2,
-        "top1Count": 1,
-        "top3Count": 2,
-        "top1Rate": 0.5,
-        "top3Rate": 1.0,
-        "raceLogLoss": 1.4016,
-        "horseBrier": 0.05829
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.0766,
+        "horseBrier": 0.07545
       }
     },
     {
       "date": "2026-06-27",
       "trainUntil": "2026-06-13",
-      "trainedDates": 13,
-      "trainStarts": 238,
+      "trainedDates": 20,
+      "trainStarts": 1855,
       "testMetrics": {
-        "races": 3,
+        "races": 8,
         "top1Count": 2,
-        "top3Count": 3,
-        "top1Rate": 0.6667,
-        "top3Rate": 1.0,
-        "raceLogLoss": 1.4786,
-        "horseBrier": 0.05653
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.3664,
+        "horseBrier": 0.08002
       },
-      "pairedRaces": 3,
+      "pairedRaces": 8,
       "pairedModel": {
-        "races": 3,
+        "races": 8,
         "top1Count": 2,
-        "top3Count": 3,
-        "top1Rate": 0.6667,
-        "top3Rate": 1.0,
-        "raceLogLoss": 1.4786,
-        "horseBrier": 0.05653
+        "top3Count": 4,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.3664,
+        "horseBrier": 0.08002
       },
       "pairedMarket": {
-        "races": 3,
-        "top1Count": 1,
-        "top3Count": 3,
-        "top1Rate": 0.3333,
-        "top3Rate": 1.0,
-        "raceLogLoss": 1.1668,
-        "horseBrier": 0.05364
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 7,
+        "top1Rate": 0.25,
+        "top3Rate": 0.875,
+        "raceLogLoss": 1.5449,
+        "horseBrier": 0.06464
       }
     },
     {
       "date": "2026-07-25",
       "trainUntil": "2026-06-27",
-      "trainedDates": 14,
-      "trainStarts": 273,
+      "trainedDates": 21,
+      "trainStarts": 1947,
       "testMetrics": {
-        "races": 5,
+        "races": 8,
         "top1Count": 1,
-        "top3Count": 2,
-        "top1Rate": 0.2,
-        "top3Rate": 0.4,
-        "raceLogLoss": 1.9959,
-        "horseBrier": 0.0733
+        "top3Count": 5,
+        "top1Rate": 0.125,
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.8423,
+        "horseBrier": 0.0667
       },
-      "pairedRaces": 5,
+      "pairedRaces": 8,
       "pairedModel": {
-        "races": 5,
+        "races": 8,
         "top1Count": 1,
-        "top3Count": 2,
-        "top1Rate": 0.2,
-        "top3Rate": 0.4,
-        "raceLogLoss": 1.9959,
-        "horseBrier": 0.0733
+        "top3Count": 5,
+        "top1Rate": 0.125,
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.8423,
+        "horseBrier": 0.0667
       },
       "pairedMarket": {
-        "races": 5,
-        "top1Count": 2,
-        "top3Count": 3,
-        "top1Rate": 0.4,
-        "top3Rate": 0.6,
-        "raceLogLoss": 2.0736,
-        "horseBrier": 0.08505
+        "races": 8,
+        "top1Count": 4,
+        "top3Count": 6,
+        "top1Rate": 0.5,
+        "top3Rate": 0.75,
+        "raceLogLoss": 1.7424,
+        "horseBrier": 0.07053
       }
     },
     {
       "date": "2026-10-10",
       "trainUntil": "2026-07-25",
-      "trainedDates": 15,
-      "trainStarts": 330,
+      "trainedDates": 22,
+      "trainStarts": 2042,
       "testMetrics": {
-        "races": 2,
-        "top1Count": 2,
-        "top3Count": 2,
-        "top1Rate": 1.0,
-        "top3Rate": 1.0,
-        "raceLogLoss": 1.249,
-        "horseBrier": 0.04809
+        "races": 8,
+        "top1Count": 4,
+        "top3Count": 5,
+        "top1Rate": 0.5,
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.9585,
+        "horseBrier": 0.06463
       },
-      "pairedRaces": 2,
+      "pairedRaces": 8,
       "pairedModel": {
-        "races": 2,
-        "top1Count": 2,
-        "top3Count": 2,
-        "top1Rate": 1.0,
-        "top3Rate": 1.0,
-        "raceLogLoss": 1.249,
-        "horseBrier": 0.04809
+        "races": 8,
+        "top1Count": 4,
+        "top3Count": 5,
+        "top1Rate": 0.5,
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.9585,
+        "horseBrier": 0.06463
       },
       "pairedMarket": {
-        "races": 2,
-        "top1Count": 2,
-        "top3Count": 2,
-        "top1Rate": 1.0,
-        "top3Rate": 1.0,
-        "raceLogLoss": 0.7129,
-        "horseBrier": 0.02594
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 5,
+        "top1Rate": 0.375,
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.6902,
+        "horseBrier": 0.06265
+      }
+    },
+    {
+      "date": "2026-10-17",
+      "trainUntil": "2026-10-10",
+      "trainedDates": 23,
+      "trainStarts": 2139,
+      "testMetrics": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.125,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.4416,
+        "horseBrier": 0.08189
+      },
+      "pairedRaces": 8,
+      "pairedModel": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.125,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.4416,
+        "horseBrier": 0.08189
+      },
+      "pairedMarket": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 6,
+        "top1Rate": 0.125,
+        "top3Rate": 0.75,
+        "raceLogLoss": 2.202,
+        "horseBrier": 0.09046
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "trainUntil": "2026-10-17",
+      "trainedDates": 24,
+      "trainStarts": 2231,
+      "testMetrics": {
+        "races": 6,
+        "top1Count": 3,
+        "top3Count": 5,
+        "top1Rate": 0.5,
+        "top3Rate": 0.8333,
+        "raceLogLoss": 1.737,
+        "horseBrier": 0.06044
+      },
+      "pairedRaces": 6,
+      "pairedModel": {
+        "races": 6,
+        "top1Count": 3,
+        "top3Count": 5,
+        "top1Rate": 0.5,
+        "top3Rate": 0.8333,
+        "raceLogLoss": 1.737,
+        "horseBrier": 0.06044
+      },
+      "pairedMarket": {
+        "races": 6,
+        "top1Count": 4,
+        "top3Count": 5,
+        "top1Rate": 0.6667,
+        "top3Rate": 0.8333,
+        "raceLogLoss": 1.4751,
+        "horseBrier": 0.04942
       }
     }
   ],
   "testMetrics": {
-    "races": 16,
-    "top1Count": 5,
-    "top3Count": 8,
-    "top1Rate": 0.3125,
-    "top3Rate": 0.5,
-    "raceLogLoss": 1.9535,
-    "horseBrier": 0.07188
+    "races": 164,
+    "top1Count": 37,
+    "top3Count": 83,
+    "top1Rate": 0.2256,
+    "top3Rate": 0.5061,
+    "raceLogLoss": 2.2526,
+    "horseBrier": 0.07601
   },
   "strictPairedModel": {
-    "races": 16,
-    "top1Count": 5,
-    "top3Count": 8,
-    "top1Rate": 0.3125,
-    "top3Rate": 0.5,
-    "raceLogLoss": 1.9535,
-    "horseBrier": 0.07188
+    "races": 161,
+    "top1Count": 37,
+    "top3Count": 82,
+    "top1Rate": 0.2298,
+    "top3Rate": 0.5093,
+    "raceLogLoss": 2.2447,
+    "horseBrier": 0.07567
   },
   "strictPairedMarket": {
-    "races": 16,
-    "top1Count": 7,
-    "top3Count": 13,
-    "top1Rate": 0.4375,
-    "top3Rate": 0.8125,
-    "raceLogLoss": 1.5707,
-    "horseBrier": 0.06391
+    "races": 161,
+    "top1Count": 61,
+    "top3Count": 110,
+    "top1Rate": 0.3789,
+    "top3Rate": 0.6832,
+    "raceLogLoss": 1.8635,
+    "horseBrier": 0.0676
   },
-  "strictPairedCount": 16,
-  "excludedFromMarketComparison": 0,
+  "strictPairedCount": 161,
+  "excludedFromMarketComparison": 3,
   "features": [
     "post",
     "distance",
@@ -1050,5 +812,5 @@
     "purse_percentile"
   ],
   "method": "Expanding-origin model re-fit before each held-out date, trained on strictly earlier dates, with race-relative prestart features.",
-  "limitations": "Exploratory, few races, some training race results incomplete, history sample covers selected dates only. Final-pool market is not a prestart timestamp. No validated win probabilities, Benter blend or profit forecast."
+  "limitations": "Exploratory, complete verified fields from selected dates only. Unknown outcomes and unsupported dead heats are excluded. Final-pool market is not a prestart timestamp. No validated win probabilities, Benter blend or profit forecast."
 }

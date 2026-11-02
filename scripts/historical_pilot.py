@@ -29,6 +29,8 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEST = ROOT / "research/historical_pilot_v2.json"
 CACHE = ROOT / "research/raw-history"
 OFFLINE = False
+REQUEST_INTERVAL = 1.0
+_last_request = 0.0
 USER_AGENT = "LA_V85/research-1.0 (Biggles22/LA_V85; low-frequency research)"
 # Saturdays spread over several months; no upcoming or live meetings.
 DATES = (
@@ -75,11 +77,12 @@ def check_source_payload(path, value):
 
 
 def get_json(path):
+    global _last_request
     if not re.fullmatch(r"/(?:games|races|calendar/day)/[A-Za-z0-9_-]+(?:/extended)?", path):
         raise ValueError("Unexpected historical source path")
     cache_file = CACHE / (hashlib.sha256(path.encode()).hexdigest() + '.json')
     if cache_file.exists():
-        saved = json.loads(cache_file.read_text())
+        saved = json.loads(cache_file.read_text(encoding='utf-8'))
         value = saved.get('payload')
         digest = hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
         if saved.get('sourceUrl') != BASE+path or saved.get('sha256') != digest or not isinstance(value, dict):
@@ -90,8 +93,22 @@ def get_json(path):
         raise urllib.error.URLError('Raw source absent from offline cache')
     req = urllib.request.Request(BASE+path, headers={
         "User-Agent":USER_AGENT,"Accept":"application/json"})
-    with urllib.request.urlopen(req, timeout=25) as response:
-        value = json.load(response)
+    for attempt in range(4):
+        time.sleep(max(0, REQUEST_INTERVAL - (time.monotonic() - _last_request)))
+        _last_request = time.monotonic()
+        try:
+            with urllib.request.urlopen(req, timeout=25) as response:
+                value = json.load(response)
+            break
+        except urllib.error.HTTPError as error:
+            if error.code not in (429, 500, 502, 503, 504) or attempt == 3:
+                raise
+            retry = error.headers.get('Retry-After', '')
+            time.sleep(max(2 ** (attempt + 1), float(retry) if retry.isdigit() else 0))
+        except (urllib.error.URLError, TimeoutError):
+            if attempt == 3:
+                raise
+            time.sleep(2 ** (attempt + 1))
     check_source_payload(path, value)
     saved = {'schemaVersion': 1, 'sourceUrl': BASE+path,
              'retrievedAt': dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -295,6 +312,7 @@ def parse_historical_race(race,game,date):
             "dataContractVersion":2,
             "date":date,"raceId":rid,"track":(race.get("track") or {}).get("name"),
             "gameId":game.get("id"),"number":start["number"],"horse":start["horse"]["name"],
+            "horseId":start["horse"].get("id"),
             "winner":label,"resultStatus":status,"prestartFeatures":features,
             "featureCoverage":{"gallopObservedStarts":sum(r["hasGallopFlag"] for r in observed),
                                "historyStarts":len(observed)},

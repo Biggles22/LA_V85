@@ -49,6 +49,8 @@
     if(!model){target.innerHTML=empty('Modellranking inväntas','En tränad ranking visas när den stämmer med den aktuella startlistan.');note.textContent='Ingen verifierad modellranking för detta underlag.';return;}
     const t=model.training,m=model.validation.metrics;
     note.textContent='CatBoost · '+t.starts+' historiska starter i '+t.races+' lopp på '+t.dates+' tävlingsdagar. Träningsperiod '+t.from+'–'+t.until+'. Test på senare tävlingsdagar: vinnaren fanns bland de tre högst rankade i '+m.top3Count+' av '+m.races+' lopp ('+fmt(m.top3Rate*100)+' %). Förstahästen vann '+m.top1Count+' av '+m.races+' lopp. Beräknad '+stamp(model.generatedAt)+'. Litet historiskt urval; modellpoäng är inte kalibrerad vinstchans.';
+    const market=model.validation.retrospectiveFinalPool,paired=model.validation.pairedModel;
+    if(market?.races>0&&market.races===paired?.races)note.textContent+=' På samma '+market.races+' jämförelselopp: CatBoost topp 3 '+paired.top3Count+' träffar, slutstreckens topp 3 '+market.top3Count+' träffar. Slutstreck är retrospektiva och visar inte lönsamhet.';
     target.innerHTML=model.races.map(r=>'<article class="proposal-card"><div class="card-top"><strong>V85-'+r.leg+'</strong><span>CATBOOST</span></div><ol>'+r.top3.map(h=>'<li><strong>'+h.number+' '+esc(h.name)+'</strong></li>').join('')+'</ol><button class="button secondary" data-leg="'+r.leg+'">Granska loppet</button></article>').join('');
   }
   function renderRaces(){

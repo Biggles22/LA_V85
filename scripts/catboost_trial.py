@@ -51,6 +51,12 @@ def estimator():
     )
 
 
+def matrix(rows):
+    # Same fixed feature policy as the published current-round model.
+    clean = [{**r, 'prestartFeatures': {**r['prestartFeatures'], 'gallop5': None}} for r in rows]
+    return enriched_matrix(clean)
+
+
 def main():
     import numpy as np
 
@@ -73,10 +79,10 @@ def main():
 
         model = estimator()
         model.fit(
-            enriched_matrix(training),
+            matrix(training),
             np.asarray([r["winner"] for r in training], dtype="int32"),
         )
-        predictions = model.predict_proba(enriched_matrix(holdout))[:, 1]
+        predictions = model.predict_proba(matrix(holdout))[:, 1]
         groups = {}
         for row, probability in zip(holdout, predictions):
             item = {**row, "catboostProb": float(probability)}
@@ -113,6 +119,7 @@ def main():
         "strictPairedCatBoost": evaluate(paired, "catboostProb"),
         "strictPairedMarket": evaluate(paired, "marketFinalPct", market=True),
         "strictPairedCount": len(paired),
+        "disabledFeatures": ["gallop5"],
         "features": [
             "prestart numeric form, class, post/distance and race-relative features",
         ],

@@ -72,6 +72,15 @@ def prepare_training_data(document):
             raise ValueError('Historical row lacks race identity')
         groups.setdefault(row['raceId'], []).append(row)
     accepted, excluded, reasons = [], [], Counter()
+    source_rejected = document.get('sourceRejections', [])
+    rejected_ids = set()
+    for item in source_rejected:
+        if (not isinstance(item, dict) or not isinstance(item.get('raceId'), str)
+                or item['raceId'] in groups or item['raceId'] in rejected_ids
+                or type(item.get('rows')) is not int or item['rows'] < 0
+                or not isinstance(item.get('reason'), str)):
+            raise ValueError('Invalid raw-source rejection provenance')
+        rejected_ids.add(item['raceId'])
     previous = document.get('dataQuality', {})
     if (not isinstance(previous, dict) or previous.get('eligibleRaces') != len(groups)
             or previous.get('eligibleStarts') != sum(map(len, groups.values()))):
@@ -131,10 +140,10 @@ def prepare_training_data(document):
     # Revalidation is idempotent: keep the original exclusion/provenance trail,
     # but always validate every row above rather than trusting a quality flag.
     prior_excluded = previous.get('quarantine', [])
-    excluded = prior_excluded + excluded
-    reasons.update(x['reason'] for x in prior_excluded)
-    source_races = previous.get('sourceRaces', len(groups))
-    source_starts = previous.get('sourceStarts', sum(map(len, groups.values())))
+    excluded = list({x['raceId']: x for x in prior_excluded + source_rejected + excluded}.values())
+    reasons = Counter(x['reason'] for x in excluded)
+    source_races = previous.get('sourceRaces', len(groups) + len(source_rejected))
+    source_starts = previous.get('sourceStarts', sum(map(len, groups.values())) + sum(x['rows'] for x in source_rejected))
     quality = {
         'contractVersion': 2, 'sourceRaces': source_races, 'sourceStarts': source_starts,
         'eligibleRaces': len({r['raceId'] for r in accepted}), 'eligibleStarts': len(accepted),
@@ -156,7 +165,7 @@ def load_training_data(path=None):
     source = Path(path) if path is not None else (CURRENT if CURRENT.exists() else LEGACY)
     raw = source.read_bytes()
     document = prepare_training_data(json.loads(raw))
-    document['dataQuality'].update({'sourceFile': str(source.relative_to(ROOT)) if source.is_relative_to(ROOT) else source.name,
+    document['dataQuality'].update({'sourceFile': source.relative_to(ROOT).as_posix() if source.is_relative_to(ROOT) else source.name,
                                     'sourceSha256': hashlib.sha256(raw).hexdigest()})
     return document
 

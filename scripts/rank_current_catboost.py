@@ -13,7 +13,7 @@ from catboost import CatBoostClassifier
 from scripts.data_quality import load_training_data
 from scripts.historical_pilot import features_from_history
 from scripts.train_historical_pilot import FEATURES, evaluate
-from scripts.walkforward_evaluation import enriched_matrix, RELATIVE_FEATURES, MIN_TRAIN_DATES, MIN_TRAIN_STARTERS
+from scripts.walkforward_evaluation import enriched_matrix, clean_paired, RELATIVE_FEATURES, MIN_TRAIN_DATES, MIN_TRAIN_STARTERS
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 def estimator():
@@ -22,7 +22,8 @@ def estimator():
         verbose=False, allow_writing_files=False, thread_count=2)
 
 def matrix(rows):
-    # Legacy corpus has no verified gallop observations: disable in inference too.
+    # Keep the fixed baseline feature policy during history expansion.
+    # Explicit historical gallop flags remain sparse; disable in inference too.
     clean = [{**r, 'prestartFeatures': {**r['prestartFeatures'], 'gallop5': None}} for r in rows]
     return enriched_matrix(clean)
 
@@ -45,7 +46,15 @@ def backtest(rows):
     metrics = evaluate(groups, 'score')
     if len(folds) < 2 or metrics['races'] < 12:
         raise ValueError('Insufficient independent chronological test races')
-    return {'folds': folds, 'metrics': metrics}
+    paired = clean_paired(groups)
+    return {'folds': folds, 'metrics': metrics,
+            'pairedModel': evaluate(paired, 'score'),
+            'retrospectiveFinalPool': evaluate(paired, 'marketFinalPct', market=True),
+            'marketCaveat': 'Final pool, not an independently archived prestart observation.',
+            'racePredictions': [{'raceId': rid, 'date': items[0]['date'],
+                                 'top3': [r['number'] for r in sorted(items, key=lambda r: (-r['score'], r['number']))[:3]],
+                                 'winner': next(r['number'] for r in items if r['winner'])}
+                                for rid, items in sorted(groups.items())]}
 
 def current_rows(data):
     day = dt.date.fromisoformat(data['date'])
@@ -104,7 +113,7 @@ def main():
                      'until': max(r['date'] for r in rows), 'source': doc['dataQuality']['sourceFile'],
                      'sha256': doc['dataQuality']['sourceSha256'], 'excludedRaces': doc['dataQuality']['excludedRaces']},
         'features': [*FEATURES, *RELATIVE_FEATURES], 'validation': validation, 'sources': sources,
-        'limitations': 'Experimentell ranking från ett litet urval kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, resultat, hästnamn, kusk och tränare ingår inte som modellvariabler. Galoppvariabeln är avstängd eftersom historiken inte är verifierad.',
+        'limitations': 'Experimentell ranking från utvalda kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, aktuellt resultat, hästnamn, kusk, tränare och karriärstatistik ingår inte som modellvariabler. Galoppvariabeln är avstängd för jämförbarhet med grundförsöket. Testet är retrospektivt och visar inte lönsamhet.',
         'races': ranked}
     output = ROOT/'rounds'/data['roundId']/'model.json'
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
