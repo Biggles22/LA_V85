@@ -89,6 +89,8 @@ def normalize(game, round_info, now):
             seen.add(number)
             market = (start.get("pools") or {}).get("V85") or {}
             pct = market.get("betDistribution")
+            if not numeric(pool.get("turnover")) or pool["turnover"] <= 0:
+                pct = None
             if pct is not None and (not numeric(pct) or not 0 <= pct <= 10000):
                 raise ValueError("Invalid market distribution")
             odd = ((start.get("pools") or {}).get("vinnare") or {}).get("odds")

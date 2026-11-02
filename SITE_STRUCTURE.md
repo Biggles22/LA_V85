@@ -2,7 +2,7 @@
 
 ## Aktuell omgång
 
-`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Aktuell arbetsyta är Bergsåker 7 november 2026. Tävlingsdag och bana kommer från uppdraget; startlista, spelstopp och förslag inväntar verifierat ATG-underlag.
+`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Aktuell arbetsyta är Bergsåker 7 november 2026. Startlistan och spelstopp är verifierade mot ATG. Den 2 november saknas omsättning och användbara streck; dessa visas som saknade. Historiska delrankningar finns i omgångens form.json. Granskade spik- och skrällförslag återstår.
 
 Huvudmenyn har tre delar: **Lördagens V85**, **Historik**, **Metod & resultat**. Startsidan har ankarlänkar till **Skrällförslag**, **Spikförslag**, **Lopp för lopp** och **Mitt urval**. En avdelning visas åt gången med sökning, sortering och hästkort i mobilvy.
 
@@ -109,3 +109,7 @@ Vägd poäng = summan av delbetyg/5 × vikt; intervallet är 0–100. **Poängen
 - Rapporten redovisar `coverage.classRated`, `coverage.paceRated` och `coverage.partialRanked`. `evidence.partialRankScore` är en *normaliserad delpoäng* över kända faktorer och visas med datatäckning (`modelCoverageWeight`). Minst två kända faktorer, motsvarande minst 45 % av modellens totala vikt, krävs för delpoäng. Det går **inte** att likställa 70 delpoäng med 70 % vinstchans eller full A–D-ranking.
 - `bjerke-form.js` visar preliminär sortering, förklaringar och historiska startuppgifter för samtliga åtta avdelningar. `bjerke-model.js` förifyller form/klass/tempo/risk *där de finns*, men användarens lokalt sparade manuella poäng har företräde och förändras inte av GitHub Actions.
 - **Utvärdering krävs:** kontroll av datakvalitet, eventuell lands-/banbias, backtest på frysta tidigare omgångar, riktigt spetsunderlag och senare en kalibrerad vinstchansmodell. Marknadsandelar, odds och resultatinformation efter loppet får aldrig läcka in i förhandsbedömningen.
+
+## Aktuell formuppdatering
+
+Efter `python3 scripts/update_current_round.py`, kör `python3 scripts/update_current_form.py`. Formrapporten återanvänder de testade historiska beräkningsfunktionerna, kontrollerar lopp- och hästidentitet och använder endast starter före aktuell tävlingsdag. Den skriver först när alla åtta lopp hämtats. Rapporten binds till aktuell snapshotId. Startsidan visar delranking, datatäckning och fem senaste starter. Ingen tränad XGBoost/CatBoost-prognos eller kalibrerad vinstchans påstås.
