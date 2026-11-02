@@ -15,6 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LEGACY = ROOT / 'research/historical_pilot_2026.json'
 CURRENT = ROOT / 'research/historical_pilot_v2.json'
+EXPANDED = ROOT / 'research/historical_expanded_2024_2026.json'
 
 
 class InsufficientHistory(RuntimeError):
@@ -162,7 +163,7 @@ def prepare_training_data(document):
 
 
 def load_training_data(path=None):
-    source = Path(path) if path is not None else (CURRENT if CURRENT.exists() else LEGACY)
+    source = Path(path) if path is not None else (EXPANDED if EXPANDED.exists() else (CURRENT if CURRENT.exists() else LEGACY))
     raw = source.read_bytes()
     document = prepare_training_data(json.loads(raw))
     document['dataQuality'].update({'sourceFile': source.relative_to(ROOT).as_posix() if source.is_relative_to(ROOT) else source.name,

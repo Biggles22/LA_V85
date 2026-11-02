@@ -7,20 +7,24 @@ Run from the repository root:
     node tests/test_current_model.cjs
     node tests/test_model_render.cjs
 
-The 2 November raw-source rebuild provides 196 eligible races / 2,307 starters across 25 dates, from 22 November 2025 through 24 October 2026. It recovered 145 of 147 previously quarantined races, retained all 31 previously eligible races and added 20 complete races. Two fields with unknown results and two dead heats are excluded. See [recovery evidence](history_recovery_2026.json) and [data quality](training_data_quality_2026.json).
+The expanded ATG collection provides **1,047 eligible races / 12,247 starters across 145 dates**, from 6 January 2024 through 31 October 2026: 634 V75 races (7,441 starts) and 413 V85 races (4,806 starts). It includes 81 races at Bergsåker. All 148 Saturdays were checked through ATG's calendar; three midsummer Saturdays had no V75/V85 game. Every previously eligible race is retained, with 851 additional eligible races. See [collection evidence](history_expansion_2026.json), [expanded evaluation](expanded_model_evaluation_2026.json) and [data quality](training_data_quality_2026.json).
 
-Fixed CatBoost parameters follow the existing trial; no tuning against these tests. Expanding-date tests cover 164 races on 21 dates: top-3 winner coverage 83/164 (50.61%), top-1 29/164 (17.68%). Each fold trains on strictly earlier dates; the first four dates initialize training. The former 11/16 and 1/16 figures came from a much smaller selected test set and are not directly comparable. This retrospective, selected sample does not establish calibrated probabilities or profitability. Top-3 means three candidates to win, not a prediction of finishing order.
+CatBoost parameters are unchanged, with no tuning against these tests. Each fold trains on strictly earlier V75 and V85 dates; **all evaluation races are V85**. Expanding-date tests cover 413 races on 53 dates: top-3 winner coverage 222/413 (53.75%), top-1 92/413 (22.28%). On the identical 164 races from the archived 196-race experiment, top-three coverage changes from 83 to 91 and top-one wins from 29 to 41. These are observed counts, not proof of a lasting improvement. The [baseline](baseline_196_races_2026.json) retains its predictions and fixed parameters.
+
+A separate later-period check fits once through 25 July 2026, then tests 108 V85 races from 1 August through 31 October: top three 54/108, top one 21/108. No fitting or parameter tuning uses that period in this run. Some dates were examined in earlier experiments, so it is not an untouched prospective test. Top-three candidates are candidates to win, not a prediction of finishing order.
 
 Only dated earlier starts and the target race's post, distance, field and start method enter features. Current outcomes, final market shares, names, drivers, trainers and career aggregates are excluded. Gallop remains disabled in BOTH training and prediction to preserve the baseline feature policy during data expansion. Numeric race-relative features use the same transformation on both sides. The separate historical final-pool benchmark is retrospective and is not a timestamped prestart market.
 
-On the 161 identical races with usable final market shares, CatBoost covers 82 winners in its top three (29 first-ranked); final-pool ranking covers 110 (61 first-ranked). The model does not outperform this retrospective benchmark.
+On 405 identical V85 races with usable final market shares: CatBoost top three 217/405 (top one 90), XGBoost top three 229/405 (top one 101), final-pool ranking top three 290/405 (top one 155). Both models use the same feature policy and strictly earlier training data. Neither outperforms the retrospective final-pool benchmark. XGBoost is a comparison; the published current-round ranking continues to use the fixed CatBoost model.
 
-All 225 raw responses are retained with retrieval timestamps and hashes. Rebuild and verify the historical corpus without network access:
+The expanded collection retains 1,361 raw responses with retrieval timestamps and hashes. New raw responses use lossless gzip compression; the earlier plain JSON cache remains readable. Rebuild and verify the expanded historical corpus without network access:
 
-    python -m scripts.recover_historical --offline
-    python -m scripts.audit_historical_asof
+    python -m scripts.expand_historical --offline
+    python -m scripts.audit_historical_asof --expanded
     python -m scripts.data_quality
 
-Without `--offline`, missing raw sources are fetched at most once per second, with bounded retries and backoff for transient errors. The old aggregate supplies verified game identities only; its rows are never mixed into the new training corpus. The as-of audit finds consistent career start/win increments in 385 pairs of consecutive starts, but this is not proof that every historical field was frozen. Career statistics remain excluded.
+Without `--offline`, missing sources are fetched at most once per second, with bounded retries and backoff for transient errors. Game IDs come from the calendar, with seven legs required for V75 and eight for V85. The old 196-race corpus remains unchanged as recovery evidence. The expanded corpus is preferred by the current model and data-quality summary; older explicitly selected v2 experiments retain their original source.
+
+Of 1,068 collected races, 21 are excluded: 14 with unknown results, three dead heats, three monté races and one field with only five active runners (the model's supported range is 6–20). No unknown result becomes a negative training label. The expanded as-of audit found consistent career start/win increments in 3,089 of 3,093 comparable consecutive-start pairs, with four mismatches. No same-day or future history entered features, and career statistics remain excluded.
 
 Inference fetches each extended ATG race, checks the complete active field, identities, post and distance against the current snapshot, and fails on changes. Update the round first if the field has changed. model.json retains source hashes, exact features, software, training dates, folds, all scores and top three. The UI rejects a different snapshot or mismatched active horses. It does not convert model rankings into reviewed spikes or outsiders.

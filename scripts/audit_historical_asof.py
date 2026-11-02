@@ -1,5 +1,6 @@
 """Check archived horse-statistic transitions; do not enable new features."""
 import collections
+import argparse
 import datetime as dt
 import json
 from scripts import historical_pilot as h
@@ -7,13 +8,19 @@ from scripts.data_quality import result_label
 
 
 def main():
-    corpus = json.loads(h.DEST.read_text(encoding='utf-8'))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--expanded', action='store_true')
+    args = parser.parse_args()
+    source_file = h.ROOT / 'research/historical_expanded_2024_2026.json' if args.expanded else h.DEST
+    corpus = json.loads(source_file.read_text(encoding='utf-8'))
     horses, problems = collections.defaultdict(list), []
     observed = excluded_history = 0
     for source in corpus['rawSources']:
         path = source['sourceUrl'].removeprefix(h.BASE)
         h.OFFLINE = True
         raw = h.get_json(path)  # validates the cached source hash and identity
+        if h.cache_document(path)['sha256'] != source['sha256']:
+            raise ValueError('Historical manifest source hash mismatch')
         if not path.startswith('/races/'):
             continue
         day = dt.date.fromisoformat(raw['id'][:10])
@@ -48,14 +55,15 @@ def main():
                           'startsBefore': av, 'startsNext': bv, 'winsBefore': aw, 'winsNext': bw,
                           'firstRaceWinner': a['winner'],
                           'consistent': bv == av + 1 and bw == aw + a['winner']})
-    report = {'schemaVersion': 1, 'source': 'research/historical_pilot_v2.json',
+    report = {'schemaVersion': 1, 'source': source_file.relative_to(h.ROOT).as_posix(),
               'activeSnapshotsChecked': observed, 'nonPastHistoryRecordsExcluded': excluded_history,
               'futureYearStatistics': problems, 'consecutiveStartPairs': len(pairs),
               'consistentPairs': sum(p['consistent'] for p in pairs),
               'mismatches': [p for p in pairs if not p['consistent']],
               'pairs': pairs,
               'conclusion': 'Sample consistency checks only, not proof that every field is frozen. Career statistics remain excluded from model inputs.'}
-    (h.ROOT / 'research/historical_asof_audit_2026.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    destination = 'research/historical_asof_audit_expanded_2026.json' if args.expanded else 'research/historical_asof_audit_2026.json'
+    (h.ROOT / destination).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({k:v for k,v in report.items() if k not in ('pairs','mismatches')}, ensure_ascii=False), flush=True)
 
 

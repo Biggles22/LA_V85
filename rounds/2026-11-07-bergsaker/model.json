@@ -3,8 +3,8 @@
   "kind": "CATBOOST_PRESTART_RANKING",
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "6434f127bf17fb4f7f59781d8a6efd0074b6b2ceb6c68a2d561ae6f1554256df",
-  "generatedAt": "2026-11-02T11:36:31.061646+00:00",
+  "snapshotId": "cacf07c337bc9e7202ba8b68f1cedc95c06f570eca4a0c5181c36b4f24a92b45",
+  "generatedAt": "2026-11-02T12:16:31.358097+00:00",
   "model": "CatBoostClassifier",
   "parameters": {
     "iterations": 220,
@@ -20,17 +20,28 @@
   "software": {
     "catboost": "1.2.10",
     "numpy": "2.3.5",
-    "python": "3.12.14"
+    "python": "3.12.14",
+    "xgboost": "3.4.1"
   },
   "training": {
-    "starts": 2307,
-    "races": 196,
-    "dates": 25,
-    "from": "2025-11-22",
-    "until": "2026-10-24",
-    "source": "research/historical_pilot_v2.json",
-    "sha256": "9e7cae5c8156565e78281e5f00e4e368b298d74c9e73181aead1c45113a6b6d9",
-    "excludedRaces": 4
+    "starts": 12247,
+    "races": 1047,
+    "dates": 145,
+    "from": "2024-01-06",
+    "until": "2026-10-31",
+    "source": "research/historical_expanded_2024_2026.json",
+    "sha256": "e22dedcaa2c8c623ced57641b85dd1ae1025ab2b4c6caaa95b97be523e5c0975",
+    "excludedRaces": 21,
+    "byGameType": {
+      "V75": {
+        "races": 634,
+        "starts": 7441
+      },
+      "V85": {
+        "races": 413,
+        "starts": 4806
+      }
+    }
   },
   "features": [
     "post",
@@ -52,347 +63,1962 @@
     "purse_percentile"
   ],
   "validation": {
+    "scope": "V85_ONLY",
     "folds": [
       {
-        "date": "2026-01-03",
-        "trainUntil": "2025-12-27",
-        "trainStarts": 380,
+        "date": "2025-10-25",
+        "trainUntil": "2025-10-18",
+        "trainStarts": 7441,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 3,
+          "top3Count": 5,
+          "top1Rate": 0.375,
+          "top3Rate": 0.625,
+          "raceLogLoss": 1.9127,
+          "horseBrier": 0.07449
+        }
+      },
+      {
+        "date": "2025-11-01",
+        "trainUntil": "2025-10-25",
+        "trainStarts": 7527,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 0,
+          "top3Count": 3,
+          "top1Rate": 0.0,
+          "top3Rate": 0.375,
+          "raceLogLoss": 2.4294,
+          "horseBrier": 0.08276
+        }
+      },
+      {
+        "date": "2025-11-08",
+        "trainUntil": "2025-11-01",
+        "trainStarts": 7620,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 3,
+          "top3Count": 4,
+          "top1Rate": 0.375,
+          "top3Rate": 0.5,
+          "raceLogLoss": 1.9642,
+          "horseBrier": 0.07494
+        }
+      },
+      {
+        "date": "2025-11-15",
+        "trainUntil": "2025-11-08",
+        "trainStarts": 7710,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 2,
+          "top3Count": 6,
+          "top1Rate": 0.25,
+          "top3Rate": 0.75,
+          "raceLogLoss": 1.8278,
+          "horseBrier": 0.06408
+        }
+      },
+      {
+        "date": "2025-11-22",
+        "trainUntil": "2025-11-15",
+        "trainStarts": 7808,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
           "top1Count": 2,
           "top3Count": 5,
           "top1Rate": 0.25,
           "top3Rate": 0.625,
-          "raceLogLoss": 1.8096,
-          "horseBrier": 0.06989
+          "raceLogLoss": 1.9447,
+          "horseBrier": 0.06767
+        }
+      },
+      {
+        "date": "2025-11-29",
+        "trainUntil": "2025-11-22",
+        "trainStarts": 7901,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 4,
+          "top1Rate": 0.125,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.3021,
+          "horseBrier": 0.07419
+        }
+      },
+      {
+        "date": "2025-12-06",
+        "trainUntil": "2025-11-29",
+        "trainStarts": 7993,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 2,
+          "top3Count": 4,
+          "top1Rate": 0.25,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.085,
+          "horseBrier": 0.06536
+        }
+      },
+      {
+        "date": "2025-12-13",
+        "trainUntil": "2025-12-06",
+        "trainStarts": 8089,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 4,
+          "top1Rate": 0.125,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.4214,
+          "horseBrier": 0.07478
+        }
+      },
+      {
+        "date": "2025-12-20",
+        "trainUntil": "2025-12-13",
+        "trainStarts": 8187,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 3,
+          "top1Rate": 0.125,
+          "top3Rate": 0.375,
+          "raceLogLoss": 2.4392,
+          "horseBrier": 0.07448
+        }
+      },
+      {
+        "date": "2025-12-27",
+        "trainUntil": "2025-12-20",
+        "trainStarts": 8282,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 3,
+          "top1Rate": 0.125,
+          "top3Rate": 0.375,
+          "raceLogLoss": 2.2407,
+          "horseBrier": 0.07423
+        }
+      },
+      {
+        "date": "2026-01-03",
+        "trainUntil": "2025-12-27",
+        "trainStarts": 8381,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 5,
+          "top3Count": 7,
+          "top1Rate": 0.625,
+          "top3Rate": 0.875,
+          "raceLogLoss": 1.5083,
+          "horseBrier": 0.05814
+        }
+      },
+      {
+        "date": "2026-01-10",
+        "trainUntil": "2026-01-03",
+        "trainStarts": 8468,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 2,
+          "top3Count": 5,
+          "top1Rate": 0.25,
+          "top3Rate": 0.625,
+          "raceLogLoss": 1.8993,
+          "horseBrier": 0.07237
+        }
+      },
+      {
+        "date": "2026-01-17",
+        "trainUntil": "2026-01-10",
+        "trainStarts": 8558,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 2,
+          "top3Count": 6,
+          "top1Rate": 0.25,
+          "top3Rate": 0.75,
+          "raceLogLoss": 2.0177,
+          "horseBrier": 0.0725
+        }
+      },
+      {
+        "date": "2026-01-24",
+        "trainUntil": "2026-01-17",
+        "trainStarts": 8647,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 0,
+          "top3Count": 5,
+          "top1Rate": 0.0,
+          "top3Rate": 0.625,
+          "raceLogLoss": 2.222,
+          "horseBrier": 0.07571
+        }
+      },
+      {
+        "date": "2026-01-31",
+        "trainUntil": "2026-01-24",
+        "trainStarts": 8741,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 2,
+          "top3Count": 3,
+          "top1Rate": 0.25,
+          "top3Rate": 0.375,
+          "raceLogLoss": 2.3114,
+          "horseBrier": 0.07748
         }
       },
       {
         "date": "2026-02-07",
-        "trainUntil": "2026-01-03",
-        "trainStarts": 467,
+        "trainUntil": "2026-01-31",
+        "trainStarts": 8832,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 0,
+          "top1Count": 2,
           "top3Count": 4,
-          "top1Rate": 0.0,
+          "top1Rate": 0.25,
           "top3Rate": 0.5,
-          "raceLogLoss": 2.4545,
-          "horseBrier": 0.08395
+          "raceLogLoss": 2.0841,
+          "horseBrier": 0.07077
         }
       },
       {
         "date": "2026-02-14",
         "trainUntil": "2026-02-07",
-        "trainStarts": 561,
+        "trainStarts": 8926,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
           "top1Count": 2,
           "top3Count": 6,
           "top1Rate": 0.25,
           "top3Rate": 0.75,
-          "raceLogLoss": 2.3519,
-          "horseBrier": 0.10105
+          "raceLogLoss": 1.8357,
+          "horseBrier": 0.07985
         }
       },
       {
         "date": "2026-02-21",
         "trainUntil": "2026-02-14",
-        "trainStarts": 646,
+        "trainStarts": 9011,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 2,
-          "top3Count": 4,
-          "top1Rate": 0.25,
-          "top3Rate": 0.5,
-          "raceLogLoss": 2.2839,
-          "horseBrier": 0.0778
+          "top1Count": 3,
+          "top3Count": 5,
+          "top1Rate": 0.375,
+          "top3Rate": 0.625,
+          "raceLogLoss": 2.1975,
+          "horseBrier": 0.07389
         }
       },
       {
         "date": "2026-02-28",
         "trainUntil": "2026-02-21",
-        "trainStarts": 741,
+        "trainStarts": 9106,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
           "top1Count": 2,
           "top3Count": 3,
           "top1Rate": 0.25,
           "top3Rate": 0.375,
-          "raceLogLoss": 2.3489,
-          "horseBrier": 0.07325
+          "raceLogLoss": 2.1755,
+          "horseBrier": 0.07175
+        }
+      },
+      {
+        "date": "2026-03-07",
+        "trainUntil": "2026-02-28",
+        "trainStarts": 9200,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 7,
+          "top1Count": 2,
+          "top3Count": 5,
+          "top1Rate": 0.2857,
+          "top3Rate": 0.7143,
+          "raceLogLoss": 1.9183,
+          "horseBrier": 0.06964
         }
       },
       {
         "date": "2026-03-14",
-        "trainUntil": "2026-02-28",
-        "trainStarts": 835,
+        "trainUntil": "2026-03-07",
+        "trainStarts": 9277,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 6,
-          "top1Count": 2,
+          "top1Count": 1,
           "top3Count": 4,
-          "top1Rate": 0.3333,
+          "top1Rate": 0.1667,
           "top3Rate": 0.6667,
-          "raceLogLoss": 2.2817,
-          "horseBrier": 0.08898
+          "raceLogLoss": 1.9322,
+          "horseBrier": 0.07822
         }
       },
       {
         "date": "2026-03-21",
         "trainUntil": "2026-03-14",
-        "trainStarts": 899,
+        "trainStarts": 9341,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 0,
-          "top3Count": 5,
-          "top1Rate": 0.0,
-          "top3Rate": 0.625,
-          "raceLogLoss": 2.2147,
-          "horseBrier": 0.07792
+          "top1Count": 2,
+          "top3Count": 7,
+          "top1Rate": 0.25,
+          "top3Rate": 0.875,
+          "raceLogLoss": 2.0133,
+          "horseBrier": 0.07036
         }
       },
       {
         "date": "2026-03-28",
         "trainUntil": "2026-03-21",
-        "trainStarts": 994,
+        "trainStarts": 9436,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
           "top1Count": 1,
-          "top3Count": 2,
+          "top3Count": 3,
           "top1Rate": 0.125,
-          "top3Rate": 0.25,
-          "raceLogLoss": 2.6515,
-          "horseBrier": 0.08388
+          "top3Rate": 0.375,
+          "raceLogLoss": 2.5796,
+          "horseBrier": 0.08174
+        }
+      },
+      {
+        "date": "2026-04-04",
+        "trainUntil": "2026-03-28",
+        "trainStarts": 9530,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 4,
+          "top1Count": 1,
+          "top3Count": 3,
+          "top1Rate": 0.25,
+          "top3Rate": 0.75,
+          "raceLogLoss": 1.6973,
+          "horseBrier": 0.10819
         }
       },
       {
         "date": "2026-04-11",
-        "trainUntil": "2026-03-28",
-        "trainStarts": 1088,
+        "trainUntil": "2026-04-04",
+        "trainStarts": 9562,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 2,
+          "top1Count": 1,
           "top3Count": 4,
-          "top1Rate": 0.25,
+          "top1Rate": 0.125,
           "top3Rate": 0.5,
-          "raceLogLoss": 2.2391,
-          "horseBrier": 0.07888
+          "raceLogLoss": 2.1611,
+          "horseBrier": 0.07664
         }
       },
       {
         "date": "2026-04-18",
         "trainUntil": "2026-04-11",
-        "trainStarts": 1180,
+        "trainStarts": 9654,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 0,
+          "top1Count": 1,
           "top3Count": 1,
-          "top1Rate": 0.0,
+          "top1Rate": 0.125,
           "top3Rate": 0.125,
-          "raceLogLoss": 3.0285,
-          "horseBrier": 0.0858
+          "raceLogLoss": 2.9165,
+          "horseBrier": 0.08091
         }
       },
       {
         "date": "2026-04-25",
         "trainUntil": "2026-04-18",
-        "trainStarts": 1278,
+        "trainStarts": 9752,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 1,
-          "top3Count": 2,
-          "top1Rate": 0.125,
-          "top3Rate": 0.25,
-          "raceLogLoss": 2.436,
-          "horseBrier": 0.0786
+          "top1Count": 3,
+          "top3Count": 4,
+          "top1Rate": 0.375,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.3335,
+          "horseBrier": 0.0759
         }
       },
       {
         "date": "2026-05-02",
         "trainUntil": "2026-04-25",
-        "trainStarts": 1376,
+        "trainStarts": 9850,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 2,
-          "top3Count": 6,
-          "top1Rate": 0.25,
-          "top3Rate": 0.75,
-          "raceLogLoss": 1.8563,
-          "horseBrier": 0.06638
+          "top1Count": 4,
+          "top3Count": 5,
+          "top1Rate": 0.5,
+          "top3Rate": 0.625,
+          "raceLogLoss": 1.9439,
+          "horseBrier": 0.0707
         }
       },
       {
         "date": "2026-05-09",
         "trainUntil": "2026-05-02",
-        "trainStarts": 1466,
+        "trainStarts": 9940,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 2,
-          "top3Count": 6,
-          "top1Rate": 0.25,
-          "top3Rate": 0.75,
-          "raceLogLoss": 1.9108,
-          "horseBrier": 0.06954
+          "top1Count": 1,
+          "top3Count": 7,
+          "top1Rate": 0.125,
+          "top3Rate": 0.875,
+          "raceLogLoss": 1.9798,
+          "horseBrier": 0.07105
         }
       },
       {
-        "date": "2026-05-23",
+        "date": "2026-05-16",
         "trainUntil": "2026-05-09",
-        "trainStarts": 1562,
+        "trainStarts": 10036,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
           "top1Count": 2,
           "top3Count": 3,
           "top1Rate": 0.25,
           "top3Rate": 0.375,
-          "raceLogLoss": 2.7085,
-          "horseBrier": 0.07969
+          "raceLogLoss": 2.3078,
+          "horseBrier": 0.0788
+        }
+      },
+      {
+        "date": "2026-05-23",
+        "trainUntil": "2026-05-16",
+        "trainStarts": 10126,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 3,
+          "top3Count": 3,
+          "top1Rate": 0.375,
+          "top3Rate": 0.375,
+          "raceLogLoss": 2.3389,
+          "horseBrier": 0.07498
         }
       },
       {
         "date": "2026-05-30",
         "trainUntil": "2026-05-23",
-        "trainStarts": 1661,
+        "trainStarts": 10225,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
           "top1Count": 0,
           "top3Count": 4,
           "top1Rate": 0.0,
           "top3Rate": 0.5,
-          "raceLogLoss": 2.4852,
-          "horseBrier": 0.08177
+          "raceLogLoss": 2.4625,
+          "horseBrier": 0.08196
+        }
+      },
+      {
+        "date": "2026-06-06",
+        "trainUntil": "2026-05-30",
+        "trainStarts": 10320,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 4,
+          "top3Count": 7,
+          "top1Rate": 0.5,
+          "top3Rate": 0.875,
+          "raceLogLoss": 1.8643,
+          "horseBrier": 0.07048
         }
       },
       {
         "date": "2026-06-13",
-        "trainUntil": "2026-05-30",
-        "trainStarts": 1756,
+        "trainUntil": "2026-06-06",
+        "trainStarts": 10411,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 0,
-          "top3Count": 2,
-          "top1Rate": 0.0,
-          "top3Rate": 0.25,
-          "raceLogLoss": 2.6918,
-          "horseBrier": 0.08267
+          "top1Count": 1,
+          "top3Count": 1,
+          "top1Rate": 0.125,
+          "top3Rate": 0.125,
+          "raceLogLoss": 2.4771,
+          "horseBrier": 0.07783
         }
       },
       {
         "date": "2026-06-27",
         "trainUntil": "2026-06-13",
-        "trainStarts": 1855,
-        "metrics": {
-          "races": 8,
-          "top1Count": 2,
-          "top3Count": 4,
-          "top1Rate": 0.25,
-          "top3Rate": 0.5,
-          "raceLogLoss": 2.2875,
-          "horseBrier": 0.07878
-        }
-      },
-      {
-        "date": "2026-07-25",
-        "trainUntil": "2026-06-27",
-        "trainStarts": 1947,
-        "metrics": {
-          "races": 8,
-          "top1Count": 2,
-          "top3Count": 6,
-          "top1Rate": 0.25,
-          "top3Rate": 0.75,
-          "raceLogLoss": 1.8477,
-          "horseBrier": 0.06736
-        }
-      },
-      {
-        "date": "2026-10-10",
-        "trainUntil": "2026-07-25",
-        "trainStarts": 2042,
+        "trainStarts": 10510,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
           "top1Count": 2,
           "top3Count": 5,
           "top1Rate": 0.25,
           "top3Rate": 0.625,
-          "raceLogLoss": 2.0508,
-          "horseBrier": 0.06673
+          "raceLogLoss": 2.1465,
+          "horseBrier": 0.07433
+        }
+      },
+      {
+        "date": "2026-07-04",
+        "trainUntil": "2026-06-27",
+        "trainStarts": 10602,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 3,
+          "top3Count": 6,
+          "top1Rate": 0.375,
+          "top3Rate": 0.75,
+          "raceLogLoss": 1.9535,
+          "horseBrier": 0.07306
+        }
+      },
+      {
+        "date": "2026-07-11",
+        "trainUntil": "2026-07-04",
+        "trainStarts": 10691,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 1,
+          "top1Rate": 0.125,
+          "top3Rate": 0.125,
+          "raceLogLoss": 2.2773,
+          "horseBrier": 0.07464
+        }
+      },
+      {
+        "date": "2026-07-18",
+        "trainUntil": "2026-07-11",
+        "trainStarts": 10791,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 5,
+          "top1Rate": 0.125,
+          "top3Rate": 0.625,
+          "raceLogLoss": 2.1912,
+          "horseBrier": 0.07785
+        }
+      },
+      {
+        "date": "2026-07-25",
+        "trainUntil": "2026-07-18",
+        "trainStarts": 10885,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 5,
+          "top1Rate": 0.125,
+          "top3Rate": 0.625,
+          "raceLogLoss": 1.9574,
+          "horseBrier": 0.07057
+        }
+      },
+      {
+        "date": "2026-08-01",
+        "trainUntil": "2026-07-25",
+        "trainStarts": 10980,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 4,
+          "top1Rate": 0.125,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.144,
+          "horseBrier": 0.07109
+        }
+      },
+      {
+        "date": "2026-08-08",
+        "trainUntil": "2026-08-01",
+        "trainStarts": 11077,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 3,
+          "top3Count": 5,
+          "top1Rate": 0.375,
+          "top3Rate": 0.625,
+          "raceLogLoss": 2.0348,
+          "horseBrier": 0.06912
+        }
+      },
+      {
+        "date": "2026-08-15",
+        "trainUntil": "2026-08-08",
+        "trainStarts": 11171,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 2,
+          "top1Rate": 0.125,
+          "top3Rate": 0.25,
+          "raceLogLoss": 2.5314,
+          "horseBrier": 0.08823
+        }
+      },
+      {
+        "date": "2026-08-22",
+        "trainUntil": "2026-08-15",
+        "trainStarts": 11258,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 4,
+          "top1Rate": 0.125,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.1706,
+          "horseBrier": 0.08485
+        }
+      },
+      {
+        "date": "2026-08-29",
+        "trainUntil": "2026-08-22",
+        "trainStarts": 11343,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 5,
+          "top1Rate": 0.125,
+          "top3Rate": 0.625,
+          "raceLogLoss": 2.1733,
+          "horseBrier": 0.07357
+        }
+      },
+      {
+        "date": "2026-09-05",
+        "trainUntil": "2026-08-29",
+        "trainStarts": 11440,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 1,
+          "top1Rate": 0.125,
+          "top3Rate": 0.125,
+          "raceLogLoss": 2.5819,
+          "horseBrier": 0.08369
+        }
+      },
+      {
+        "date": "2026-09-12",
+        "trainUntil": "2026-09-05",
+        "trainStarts": 11532,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 0,
+          "top3Count": 3,
+          "top1Rate": 0.0,
+          "top3Rate": 0.375,
+          "raceLogLoss": 2.4404,
+          "horseBrier": 0.08112
+        }
+      },
+      {
+        "date": "2026-09-19",
+        "trainUntil": "2026-09-12",
+        "trainStarts": 11630,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 1,
+          "top3Count": 5,
+          "top1Rate": 0.125,
+          "top3Rate": 0.625,
+          "raceLogLoss": 2.0668,
+          "horseBrier": 0.07068
+        }
+      },
+      {
+        "date": "2026-09-26",
+        "trainUntil": "2026-09-19",
+        "trainStarts": 11726,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 7,
+          "top1Count": 1,
+          "top3Count": 2,
+          "top1Rate": 0.1429,
+          "top3Rate": 0.2857,
+          "raceLogLoss": 2.3907,
+          "horseBrier": 0.07175
+        }
+      },
+      {
+        "date": "2026-10-03",
+        "trainUntil": "2026-09-26",
+        "trainStarts": 11812,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 0,
+          "top3Count": 4,
+          "top1Rate": 0.0,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.3908,
+          "horseBrier": 0.07277
+        }
+      },
+      {
+        "date": "2026-10-10",
+        "trainUntil": "2026-10-03",
+        "trainStarts": 11912,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 8,
+          "top1Count": 3,
+          "top3Count": 4,
+          "top1Rate": 0.375,
+          "top3Rate": 0.5,
+          "raceLogLoss": 2.0954,
+          "horseBrier": 0.06776
         }
       },
       {
         "date": "2026-10-17",
         "trainUntil": "2026-10-10",
-        "trainStarts": 2139,
+        "trainStarts": 12009,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 8,
-          "top1Count": 1,
+          "top1Count": 2,
           "top3Count": 3,
-          "top1Rate": 0.125,
+          "top1Rate": 0.25,
           "top3Rate": 0.375,
-          "raceLogLoss": 2.3621,
-          "horseBrier": 0.08035
+          "raceLogLoss": 2.3594,
+          "horseBrier": 0.08053
         }
       },
       {
         "date": "2026-10-24",
         "trainUntil": "2026-10-17",
-        "trainStarts": 2231,
+        "trainStarts": 12101,
+        "trainV75Starts": 7441,
         "metrics": {
           "races": 6,
-          "top1Count": 2,
-          "top3Count": 4,
-          "top1Rate": 0.3333,
-          "top3Rate": 0.6667,
-          "raceLogLoss": 1.861,
-          "horseBrier": 0.06185
+          "top1Count": 1,
+          "top3Count": 6,
+          "top1Rate": 0.1667,
+          "top3Rate": 1.0,
+          "raceLogLoss": 1.8144,
+          "horseBrier": 0.06243
+        }
+      },
+      {
+        "date": "2026-10-31",
+        "trainUntil": "2026-10-24",
+        "trainStarts": 12177,
+        "trainV75Starts": 7441,
+        "metrics": {
+          "races": 7,
+          "top1Count": 5,
+          "top3Count": 6,
+          "top1Rate": 0.7143,
+          "top3Rate": 0.8571,
+          "raceLogLoss": 1.3958,
+          "horseBrier": 0.06475
         }
       }
     ],
     "metrics": {
-      "races": 164,
-      "top1Count": 29,
-      "top3Count": 83,
-      "top1Rate": 0.1768,
-      "top3Rate": 0.5061,
-      "raceLogLoss": 2.2988,
-      "horseBrier": 0.07792
+      "races": 413,
+      "top1Count": 92,
+      "top3Count": 222,
+      "top1Rate": 0.2228,
+      "top3Rate": 0.5375,
+      "raceLogLoss": 2.1571,
+      "horseBrier": 0.07447
     },
     "pairedModel": {
-      "races": 161,
-      "top1Count": 29,
-      "top3Count": 82,
-      "top1Rate": 0.1801,
-      "top3Rate": 0.5093,
-      "raceLogLoss": 2.2819,
-      "horseBrier": 0.07745
+      "races": 405,
+      "top1Count": 90,
+      "top3Count": 217,
+      "top1Rate": 0.2222,
+      "top3Rate": 0.5358,
+      "raceLogLoss": 2.1578,
+      "horseBrier": 0.07438
+    },
+    "pairedXGBoost": {
+      "races": 405,
+      "top1Count": 101,
+      "top3Count": 229,
+      "top1Rate": 0.2494,
+      "top3Rate": 0.5654,
+      "raceLogLoss": 2.1554,
+      "horseBrier": 0.07452
+    },
+    "xgboostParameters": {
+      "n_estimators": 120,
+      "max_depth": 3,
+      "learning_rate": 0.055,
+      "subsample": 0.85,
+      "colsample_bytree": 0.85,
+      "reg_lambda": 5,
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "tree_method": "hist",
+      "random_state": 214,
+      "n_jobs": 2
     },
     "retrospectiveFinalPool": {
-      "races": 161,
-      "top1Count": 61,
-      "top3Count": 110,
-      "top1Rate": 0.3789,
-      "top3Rate": 0.6832,
-      "raceLogLoss": 1.8635,
-      "horseBrier": 0.0676
+      "races": 405,
+      "top1Count": 155,
+      "top3Count": 290,
+      "top1Rate": 0.3827,
+      "top3Rate": 0.716,
+      "raceLogLoss": 1.8365,
+      "horseBrier": 0.06782
     },
     "marketCaveat": "Final pool, not an independently archived prestart observation.",
+    "byTrack": {
+      "Axevalla": {
+        "races": 16,
+        "top1Count": 3,
+        "top3Count": 8,
+        "top1Rate": 0.1875,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.1834,
+        "horseBrier": 0.0748
+      },
+      "Bergsåker": {
+        "races": 32,
+        "top1Count": 9,
+        "top3Count": 19,
+        "top1Rate": 0.2812,
+        "top3Rate": 0.5938,
+        "raceLogLoss": 2.1204,
+        "horseBrier": 0.07418
+      },
+      "Bjerke": {
+        "races": 13,
+        "top1Count": 6,
+        "top3Count": 10,
+        "top1Rate": 0.4615,
+        "top3Rate": 0.7692,
+        "raceLogLoss": 1.6434,
+        "horseBrier": 0.07097
+      },
+      "Boden": {
+        "races": 16,
+        "top1Count": 1,
+        "top3Count": 5,
+        "top1Rate": 0.0625,
+        "top3Rate": 0.3125,
+        "raceLogLoss": 2.4339,
+        "horseBrier": 0.0753
+      },
+      "Bollnäs": {
+        "races": 16,
+        "top1Count": 2,
+        "top3Count": 6,
+        "top1Rate": 0.125,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.437,
+        "horseBrier": 0.07574
+      },
+      "Eskilstuna": {
+        "races": 16,
+        "top1Count": 4,
+        "top3Count": 12,
+        "top1Rate": 0.25,
+        "top3Rate": 0.75,
+        "raceLogLoss": 1.9227,
+        "horseBrier": 0.06829
+      },
+      "Färjestad": {
+        "races": 16,
+        "top1Count": 3,
+        "top3Count": 8,
+        "top1Rate": 0.1875,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.1891,
+        "horseBrier": 0.07408
+      },
+      "Gävle": {
+        "races": 24,
+        "top1Count": 6,
+        "top3Count": 9,
+        "top1Rate": 0.25,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.313,
+        "horseBrier": 0.07658
+      },
+      "Hagmyren": {
+        "races": 8,
+        "top1Count": 0,
+        "top3Count": 3,
+        "top1Rate": 0.0,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.4404,
+        "horseBrier": 0.08112
+      },
+      "Halmstad": {
+        "races": 23,
+        "top1Count": 6,
+        "top3Count": 14,
+        "top1Rate": 0.2609,
+        "top3Rate": 0.6087,
+        "raceLogLoss": 2.1117,
+        "horseBrier": 0.07252
+      },
+      "Jägersro": {
+        "races": 46,
+        "top1Count": 13,
+        "top3Count": 28,
+        "top1Rate": 0.2826,
+        "top3Rate": 0.6087,
+        "raceLogLoss": 1.9947,
+        "horseBrier": 0.07086
+      },
+      "Kalmar": {
+        "races": 8,
+        "top1Count": 0,
+        "top3Count": 5,
+        "top1Rate": 0.0,
+        "top3Rate": 0.625,
+        "raceLogLoss": 2.222,
+        "horseBrier": 0.07571
+      },
+      "Klosterskogen": {
+        "races": 4,
+        "top1Count": 1,
+        "top3Count": 3,
+        "top1Rate": 0.25,
+        "top3Rate": 0.75,
+        "raceLogLoss": 1.6973,
+        "horseBrier": 0.10819
+      },
+      "Mantorp": {
+        "races": 8,
+        "top1Count": 4,
+        "top3Count": 7,
+        "top1Rate": 0.5,
+        "top3Rate": 0.875,
+        "raceLogLoss": 1.8643,
+        "horseBrier": 0.07048
+      },
+      "Romme": {
+        "races": 24,
+        "top1Count": 3,
+        "top3Count": 12,
+        "top1Rate": 0.125,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.1664,
+        "horseBrier": 0.07999
+      },
+      "Rättvik": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 4,
+        "top1Rate": 0.125,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.144,
+        "horseBrier": 0.07109
+      },
+      "Solvalla": {
+        "races": 40,
+        "top1Count": 7,
+        "top3Count": 19,
+        "top1Rate": 0.175,
+        "top3Rate": 0.475,
+        "raceLogLoss": 2.3047,
+        "horseBrier": 0.07528
+      },
+      "Tingsryd": {
+        "races": 8,
+        "top1Count": 2,
+        "top3Count": 3,
+        "top1Rate": 0.25,
+        "top3Rate": 0.375,
+        "raceLogLoss": 2.3078,
+        "horseBrier": 0.0788
+      },
+      "Umåker": {
+        "races": 8,
+        "top1Count": 4,
+        "top3Count": 5,
+        "top1Rate": 0.5,
+        "top3Rate": 0.625,
+        "raceLogLoss": 1.9439,
+        "horseBrier": 0.0707
+      },
+      "Åby": {
+        "races": 47,
+        "top1Count": 9,
+        "top3Count": 28,
+        "top1Rate": 0.1915,
+        "top3Rate": 0.5957,
+        "raceLogLoss": 2.134,
+        "horseBrier": 0.07449
+      },
+      "Årjäng": {
+        "races": 8,
+        "top1Count": 1,
+        "top3Count": 1,
+        "top1Rate": 0.125,
+        "top3Rate": 0.125,
+        "raceLogLoss": 2.2773,
+        "horseBrier": 0.07464
+      },
+      "Örebro": {
+        "races": 8,
+        "top1Count": 3,
+        "top3Count": 4,
+        "top1Rate": 0.375,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.3335,
+        "horseBrier": 0.0759
+      },
+      "Östersund": {
+        "races": 16,
+        "top1Count": 4,
+        "top3Count": 9,
+        "top1Rate": 0.25,
+        "top3Rate": 0.5625,
+        "raceLogLoss": 2.2281,
+        "horseBrier": 0.07195
+      }
+    },
     "racePredictions": [
+      {
+        "raceId": "2025-10-25_7_10",
+        "date": "2025-10-25",
+        "gameType": "V85",
+        "top3": [
+          8,
+          11,
+          6
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2025-10-25_7_3",
+        "date": "2025-10-25",
+        "gameType": "V85",
+        "top3": [
+          2,
+          1,
+          6
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-10-25_7_4",
+        "date": "2025-10-25",
+        "gameType": "V85",
+        "top3": [
+          9,
+          8,
+          7
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2025-10-25_7_5",
+        "date": "2025-10-25",
+        "gameType": "V85",
+        "top3": [
+          10,
+          12,
+          8
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2025-10-25_7_6",
+        "date": "2025-10-25",
+        "gameType": "V85",
+        "top3": [
+          1,
+          11,
+          12
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2025-10-25_7_7",
+        "date": "2025-10-25",
+        "gameType": "V85",
+        "top3": [
+          5,
+          9,
+          11
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2025-10-25_7_8",
+        "date": "2025-10-25",
+        "gameType": "V85",
+        "top3": [
+          12,
+          4,
+          5
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2025-10-25_7_9",
+        "date": "2025-10-25",
+        "gameType": "V85",
+        "top3": [
+          1,
+          5,
+          9
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-11-01_23_10",
+        "date": "2025-11-01",
+        "gameType": "V85",
+        "top3": [
+          5,
+          1,
+          3
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-11-01_23_3",
+        "date": "2025-11-01",
+        "gameType": "V85",
+        "top3": [
+          8,
+          10,
+          1
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2025-11-01_23_4",
+        "date": "2025-11-01",
+        "gameType": "V85",
+        "top3": [
+          1,
+          6,
+          9
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2025-11-01_23_5",
+        "date": "2025-11-01",
+        "gameType": "V85",
+        "top3": [
+          4,
+          5,
+          1
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-11-01_23_6",
+        "date": "2025-11-01",
+        "gameType": "V85",
+        "top3": [
+          10,
+          2,
+          4
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-11-01_23_7",
+        "date": "2025-11-01",
+        "gameType": "V85",
+        "top3": [
+          15,
+          8,
+          3
+        ],
+        "winner": 12
+      },
+      {
+        "raceId": "2025-11-01_23_8",
+        "date": "2025-11-01",
+        "gameType": "V85",
+        "top3": [
+          10,
+          2,
+          8
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2025-11-01_23_9",
+        "date": "2025-11-01",
+        "gameType": "V85",
+        "top3": [
+          2,
+          3,
+          5
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2025-11-08_9_10",
+        "date": "2025-11-08",
+        "gameType": "V85",
+        "top3": [
+          6,
+          5,
+          1
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2025-11-08_9_3",
+        "date": "2025-11-08",
+        "gameType": "V85",
+        "top3": [
+          15,
+          14,
+          7
+        ],
+        "winner": 15
+      },
+      {
+        "raceId": "2025-11-08_9_4",
+        "date": "2025-11-08",
+        "gameType": "V85",
+        "top3": [
+          1,
+          4,
+          9
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2025-11-08_9_5",
+        "date": "2025-11-08",
+        "gameType": "V85",
+        "top3": [
+          11,
+          7,
+          6
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2025-11-08_9_6",
+        "date": "2025-11-08",
+        "gameType": "V85",
+        "top3": [
+          3,
+          4,
+          8
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-11-08_9_7",
+        "date": "2025-11-08",
+        "gameType": "V85",
+        "top3": [
+          1,
+          14,
+          7
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-11-08_9_8",
+        "date": "2025-11-08",
+        "gameType": "V85",
+        "top3": [
+          2,
+          5,
+          7
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2025-11-08_9_9",
+        "date": "2025-11-08",
+        "gameType": "V85",
+        "top3": [
+          3,
+          9,
+          10
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2025-11-15_14_10",
+        "date": "2025-11-15",
+        "gameType": "V85",
+        "top3": [
+          3,
+          6,
+          2
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2025-11-15_14_3",
+        "date": "2025-11-15",
+        "gameType": "V85",
+        "top3": [
+          4,
+          1,
+          2
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2025-11-15_14_4",
+        "date": "2025-11-15",
+        "gameType": "V85",
+        "top3": [
+          5,
+          3,
+          1
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2025-11-15_14_5",
+        "date": "2025-11-15",
+        "gameType": "V85",
+        "top3": [
+          14,
+          10,
+          4
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2025-11-15_14_6",
+        "date": "2025-11-15",
+        "gameType": "V85",
+        "top3": [
+          3,
+          4,
+          1
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-11-15_14_7",
+        "date": "2025-11-15",
+        "gameType": "V85",
+        "top3": [
+          3,
+          2,
+          1
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2025-11-15_14_8",
+        "date": "2025-11-15",
+        "gameType": "V85",
+        "top3": [
+          8,
+          7,
+          11
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2025-11-15_14_9",
+        "date": "2025-11-15",
+        "gameType": "V85",
+        "top3": [
+          2,
+          1,
+          3
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-11-22_7_10",
+        "date": "2025-11-22",
+        "gameType": "V85",
+        "top3": [
+          5,
+          7,
+          10
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2025-11-22_7_3",
+        "date": "2025-11-22",
+        "gameType": "V85",
+        "top3": [
+          14,
+          12,
+          8
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2025-11-22_7_4",
+        "date": "2025-11-22",
+        "gameType": "V85",
+        "top3": [
+          3,
+          8,
+          4
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2025-11-22_7_5",
+        "date": "2025-11-22",
+        "gameType": "V85",
+        "top3": [
+          1,
+          4,
+          10
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-11-22_7_6",
+        "date": "2025-11-22",
+        "gameType": "V85",
+        "top3": [
+          4,
+          8,
+          3
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2025-11-22_7_7",
+        "date": "2025-11-22",
+        "gameType": "V85",
+        "top3": [
+          4,
+          1,
+          2
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-11-22_7_8",
+        "date": "2025-11-22",
+        "gameType": "V85",
+        "top3": [
+          4,
+          1,
+          6
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-11-22_7_9",
+        "date": "2025-11-22",
+        "gameType": "V85",
+        "top3": [
+          8,
+          4,
+          3
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2025-11-29_5_10",
+        "date": "2025-11-29",
+        "gameType": "V85",
+        "top3": [
+          6,
+          1,
+          5
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2025-11-29_5_3",
+        "date": "2025-11-29",
+        "gameType": "V85",
+        "top3": [
+          2,
+          9,
+          4
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2025-11-29_5_4",
+        "date": "2025-11-29",
+        "gameType": "V85",
+        "top3": [
+          9,
+          2,
+          1
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2025-11-29_5_5",
+        "date": "2025-11-29",
+        "gameType": "V85",
+        "top3": [
+          4,
+          12,
+          11
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2025-11-29_5_6",
+        "date": "2025-11-29",
+        "gameType": "V85",
+        "top3": [
+          9,
+          4,
+          6
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-11-29_5_7",
+        "date": "2025-11-29",
+        "gameType": "V85",
+        "top3": [
+          10,
+          7,
+          2
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2025-11-29_5_8",
+        "date": "2025-11-29",
+        "gameType": "V85",
+        "top3": [
+          14,
+          3,
+          15
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-11-29_5_9",
+        "date": "2025-11-29",
+        "gameType": "V85",
+        "top3": [
+          8,
+          4,
+          2
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2025-12-06_6_10",
+        "date": "2025-12-06",
+        "gameType": "V85",
+        "top3": [
+          15,
+          5,
+          1
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2025-12-06_6_3",
+        "date": "2025-12-06",
+        "gameType": "V85",
+        "top3": [
+          11,
+          12,
+          7
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2025-12-06_6_4",
+        "date": "2025-12-06",
+        "gameType": "V85",
+        "top3": [
+          2,
+          6,
+          4
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-12-06_6_5",
+        "date": "2025-12-06",
+        "gameType": "V85",
+        "top3": [
+          14,
+          7,
+          1
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2025-12-06_6_6",
+        "date": "2025-12-06",
+        "gameType": "V85",
+        "top3": [
+          6,
+          3,
+          5
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2025-12-06_6_7",
+        "date": "2025-12-06",
+        "gameType": "V85",
+        "top3": [
+          4,
+          5,
+          8
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-12-06_6_8",
+        "date": "2025-12-06",
+        "gameType": "V85",
+        "top3": [
+          2,
+          5,
+          3
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-12-06_6_9",
+        "date": "2025-12-06",
+        "gameType": "V85",
+        "top3": [
+          12,
+          1,
+          3
+        ],
+        "winner": 12
+      },
+      {
+        "raceId": "2025-12-13_33_10",
+        "date": "2025-12-13",
+        "gameType": "V85",
+        "top3": [
+          8,
+          6,
+          11
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2025-12-13_33_3",
+        "date": "2025-12-13",
+        "gameType": "V85",
+        "top3": [
+          9,
+          2,
+          1
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-12-13_33_4",
+        "date": "2025-12-13",
+        "gameType": "V85",
+        "top3": [
+          1,
+          6,
+          3
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2025-12-13_33_5",
+        "date": "2025-12-13",
+        "gameType": "V85",
+        "top3": [
+          4,
+          7,
+          1
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-12-13_33_6",
+        "date": "2025-12-13",
+        "gameType": "V85",
+        "top3": [
+          15,
+          9,
+          4
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-12-13_33_7",
+        "date": "2025-12-13",
+        "gameType": "V85",
+        "top3": [
+          9,
+          8,
+          6
+        ],
+        "winner": 14
+      },
+      {
+        "raceId": "2025-12-13_33_8",
+        "date": "2025-12-13",
+        "gameType": "V85",
+        "top3": [
+          3,
+          6,
+          2
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2025-12-13_33_9",
+        "date": "2025-12-13",
+        "gameType": "V85",
+        "top3": [
+          6,
+          7,
+          4
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2025-12-20_18_10",
+        "date": "2025-12-20",
+        "gameType": "V85",
+        "top3": [
+          2,
+          1,
+          7
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2025-12-20_18_3",
+        "date": "2025-12-20",
+        "gameType": "V85",
+        "top3": [
+          14,
+          12,
+          11
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2025-12-20_18_4",
+        "date": "2025-12-20",
+        "gameType": "V85",
+        "top3": [
+          4,
+          2,
+          1
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2025-12-20_18_5",
+        "date": "2025-12-20",
+        "gameType": "V85",
+        "top3": [
+          6,
+          3,
+          4
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2025-12-20_18_6",
+        "date": "2025-12-20",
+        "gameType": "V85",
+        "top3": [
+          2,
+          6,
+          1
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2025-12-20_18_7",
+        "date": "2025-12-20",
+        "gameType": "V85",
+        "top3": [
+          10,
+          5,
+          3
+        ],
+        "winner": 12
+      },
+      {
+        "raceId": "2025-12-20_18_8",
+        "date": "2025-12-20",
+        "gameType": "V85",
+        "top3": [
+          9,
+          7,
+          12
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2025-12-20_18_9",
+        "date": "2025-12-20",
+        "gameType": "V85",
+        "top3": [
+          4,
+          11,
+          13
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-12-27_16_10",
+        "date": "2025-12-27",
+        "gameType": "V85",
+        "top3": [
+          10,
+          3,
+          4
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2025-12-27_16_3",
+        "date": "2025-12-27",
+        "gameType": "V85",
+        "top3": [
+          3,
+          2,
+          4
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2025-12-27_16_4",
+        "date": "2025-12-27",
+        "gameType": "V85",
+        "top3": [
+          4,
+          1,
+          5
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2025-12-27_16_5",
+        "date": "2025-12-27",
+        "gameType": "V85",
+        "top3": [
+          9,
+          1,
+          2
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2025-12-27_16_6",
+        "date": "2025-12-27",
+        "gameType": "V85",
+        "top3": [
+          4,
+          3,
+          7
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-12-27_16_7",
+        "date": "2025-12-27",
+        "gameType": "V85",
+        "top3": [
+          9,
+          2,
+          8
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2025-12-27_16_8",
+        "date": "2025-12-27",
+        "gameType": "V85",
+        "top3": [
+          6,
+          3,
+          11
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2025-12-27_16_9",
+        "date": "2025-12-27",
+        "gameType": "V85",
+        "top3": [
+          5,
+          1,
+          11
+        ],
+        "winner": 2
+      },
       {
         "raceId": "2026-01-03_7_10",
         "date": "2026-01-03",
+        "gameType": "V85",
         "top3": [
+          1,
           2,
-          8,
-          4
+          8
         ],
         "winner": 1
       },
       {
         "raceId": "2026-01-03_7_3",
         "date": "2026-01-03",
+        "gameType": "V85",
         "top3": [
-          13,
-          12,
+          5,
+          1,
           15
         ],
         "winner": 1
@@ -400,6 +2026,282 @@
       {
         "raceId": "2026-01-03_7_4",
         "date": "2026-01-03",
+        "gameType": "V85",
+        "top3": [
+          5,
+          2,
+          4
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-03_7_5",
+        "date": "2026-01-03",
+        "gameType": "V85",
+        "top3": [
+          1,
+          2,
+          6
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-01-03_7_6",
+        "date": "2026-01-03",
+        "gameType": "V85",
+        "top3": [
+          1,
+          2,
+          8
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-01-03_7_7",
+        "date": "2026-01-03",
+        "gameType": "V85",
+        "top3": [
+          9,
+          1,
+          11
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-01-03_7_8",
+        "date": "2026-01-03",
+        "gameType": "V85",
+        "top3": [
+          3,
+          2,
+          8
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-01-03_7_9",
+        "date": "2026-01-03",
+        "gameType": "V85",
+        "top3": [
+          2,
+          5,
+          3
+        ],
+        "winner": 12
+      },
+      {
+        "raceId": "2026-01-10_23_10",
+        "date": "2026-01-10",
+        "gameType": "V85",
+        "top3": [
+          9,
+          3,
+          2
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-01-10_23_3",
+        "date": "2026-01-10",
+        "gameType": "V85",
+        "top3": [
+          8,
+          10,
+          11
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-01-10_23_4",
+        "date": "2026-01-10",
+        "gameType": "V85",
+        "top3": [
+          1,
+          3,
+          11
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-01-10_23_5",
+        "date": "2026-01-10",
+        "gameType": "V85",
+        "top3": [
+          2,
+          1,
+          4
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-01-10_23_6",
+        "date": "2026-01-10",
+        "gameType": "V85",
+        "top3": [
+          8,
+          7,
+          4
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-01-10_23_7",
+        "date": "2026-01-10",
+        "gameType": "V85",
+        "top3": [
+          5,
+          2,
+          9
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-01-10_23_8",
+        "date": "2026-01-10",
+        "gameType": "V85",
+        "top3": [
+          5,
+          9,
+          4
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-10_23_9",
+        "date": "2026-01-10",
+        "gameType": "V85",
+        "top3": [
+          4,
+          9,
+          7
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2026-01-17_14_10",
+        "date": "2026-01-17",
+        "gameType": "V85",
+        "top3": [
+          5,
+          7,
+          4
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-17_14_3",
+        "date": "2026-01-17",
+        "gameType": "V85",
+        "top3": [
+          12,
+          11,
+          13
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-01-17_14_4",
+        "date": "2026-01-17",
+        "gameType": "V85",
+        "top3": [
+          9,
+          5,
+          4
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-17_14_5",
+        "date": "2026-01-17",
+        "gameType": "V85",
+        "top3": [
+          3,
+          6,
+          1
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-01-17_14_6",
+        "date": "2026-01-17",
+        "gameType": "V85",
+        "top3": [
+          15,
+          2,
+          4
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-01-17_14_7",
+        "date": "2026-01-17",
+        "gameType": "V85",
+        "top3": [
+          10,
+          5,
+          6
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-17_14_8",
+        "date": "2026-01-17",
+        "gameType": "V85",
+        "top3": [
+          6,
+          4,
+          3
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-01-17_14_9",
+        "date": "2026-01-17",
+        "gameType": "V85",
+        "top3": [
+          12,
+          6,
+          1
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-01-24_19_10",
+        "date": "2026-01-24",
+        "gameType": "V85",
+        "top3": [
+          4,
+          5,
+          10
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-24_19_3",
+        "date": "2026-01-24",
+        "gameType": "V85",
+        "top3": [
+          12,
+          3,
+          1
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-01-24_19_4",
+        "date": "2026-01-24",
+        "gameType": "V85",
+        "top3": [
+          1,
+          2,
+          5
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-24_19_5",
+        "date": "2026-01-24",
+        "gameType": "V85",
         "top3": [
           2,
           5,
@@ -408,71 +2310,155 @@
         "winner": 5
       },
       {
-        "raceId": "2026-01-03_7_5",
-        "date": "2026-01-03",
+        "raceId": "2026-01-24_19_6",
+        "date": "2026-01-24",
+        "gameType": "V85",
         "top3": [
-          1,
-          12,
-          2
+          14,
+          6,
+          1
         ],
-        "winner": 1
+        "winner": 6
       },
       {
-        "raceId": "2026-01-03_7_6",
-        "date": "2026-01-03",
+        "raceId": "2026-01-24_19_7",
+        "date": "2026-01-24",
+        "gameType": "V85",
         "top3": [
-          1,
-          9,
-          4
+          7,
+          11,
+          1
         ],
-        "winner": 1
+        "winner": 6
       },
       {
-        "raceId": "2026-01-03_7_7",
-        "date": "2026-01-03",
+        "raceId": "2026-01-24_19_8",
+        "date": "2026-01-24",
+        "gameType": "V85",
         "top3": [
-          9,
+          5,
           4,
-          8
-        ],
-        "winner": 1
-      },
-      {
-        "raceId": "2026-01-03_7_8",
-        "date": "2026-01-03",
-        "top3": [
-          8,
-          3,
-          7
+          2
         ],
         "winner": 3
       },
       {
-        "raceId": "2026-01-03_7_9",
-        "date": "2026-01-03",
+        "raceId": "2026-01-24_19_9",
+        "date": "2026-01-24",
+        "gameType": "V85",
         "top3": [
-          2,
-          12,
-          1
+          11,
+          5,
+          4
         ],
-        "winner": 12
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-31_15_10",
+        "date": "2026-01-31",
+        "gameType": "V85",
+        "top3": [
+          8,
+          4,
+          2
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-31_15_3",
+        "date": "2026-01-31",
+        "gameType": "V85",
+        "top3": [
+          12,
+          8,
+          14
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-01-31_15_4",
+        "date": "2026-01-31",
+        "gameType": "V85",
+        "top3": [
+          10,
+          6,
+          8
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-01-31_15_5",
+        "date": "2026-01-31",
+        "gameType": "V85",
+        "top3": [
+          10,
+          12,
+          8
+        ],
+        "winner": 15
+      },
+      {
+        "raceId": "2026-01-31_15_6",
+        "date": "2026-01-31",
+        "gameType": "V85",
+        "top3": [
+          9,
+          5,
+          2
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-01-31_15_7",
+        "date": "2026-01-31",
+        "gameType": "V85",
+        "top3": [
+          1,
+          4,
+          5
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-01-31_15_8",
+        "date": "2026-01-31",
+        "gameType": "V85",
+        "top3": [
+          12,
+          3,
+          4
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-01-31_15_9",
+        "date": "2026-01-31",
+        "gameType": "V85",
+        "top3": [
+          8,
+          2,
+          4
+        ],
+        "winner": 8
       },
       {
         "raceId": "2026-02-07_5_10",
         "date": "2026-02-07",
+        "gameType": "V85",
         "top3": [
           8,
-          1,
-          4
+          4,
+          6
         ],
         "winner": 4
       },
       {
         "raceId": "2026-02-07_5_11",
         "date": "2026-02-07",
+        "gameType": "V85",
         "top3": [
-          3,
           5,
+          3,
           6
         ],
         "winner": 4
@@ -480,39 +2466,43 @@
       {
         "raceId": "2026-02-07_5_12",
         "date": "2026-02-07",
+        "gameType": "V85",
         "top3": [
-          1,
-          6,
-          10
+          15,
+          10,
+          13
         ],
         "winner": 6
       },
       {
         "raceId": "2026-02-07_5_5",
         "date": "2026-02-07",
+        "gameType": "V85",
         "top3": [
-          1,
+          4,
           9,
-          10
+          2
         ],
         "winner": 5
       },
       {
         "raceId": "2026-02-07_5_6",
         "date": "2026-02-07",
+        "gameType": "V85",
         "top3": [
-          9,
-          1,
-          5
+          5,
+          3,
+          6
         ],
         "winner": 5
       },
       {
         "raceId": "2026-02-07_5_7",
         "date": "2026-02-07",
+        "gameType": "V85",
         "top3": [
-          1,
-          8,
+          5,
+          4,
           2
         ],
         "winner": 5
@@ -520,6 +2510,7 @@
       {
         "raceId": "2026-02-07_5_8",
         "date": "2026-02-07",
+        "gameType": "V85",
         "top3": [
           1,
           2,
@@ -530,66 +2521,73 @@
       {
         "raceId": "2026-02-07_5_9",
         "date": "2026-02-07",
+        "gameType": "V85",
         "top3": [
-          12,
           1,
-          9
+          9,
+          3
         ],
         "winner": 7
       },
       {
         "raceId": "2026-02-14_6_10",
         "date": "2026-02-14",
+        "gameType": "V85",
         "top3": [
           2,
-          3,
-          9
+          9,
+          3
         ],
         "winner": 9
       },
       {
         "raceId": "2026-02-14_6_11",
         "date": "2026-02-14",
+        "gameType": "V85",
         "top3": [
           1,
           3,
-          6
+          5
         ],
         "winner": 3
       },
       {
         "raceId": "2026-02-14_6_12",
         "date": "2026-02-14",
+        "gameType": "V85",
         "top3": [
           3,
-          4,
-          1
+          6,
+          7
         ],
         "winner": 1
       },
       {
         "raceId": "2026-02-14_6_5",
         "date": "2026-02-14",
+        "gameType": "V85",
         "top3": [
           10,
-          11,
-          8
+          3,
+          11
         ],
         "winner": 3
       },
       {
         "raceId": "2026-02-14_6_6",
         "date": "2026-02-14",
+        "gameType": "V85",
         "top3": [
           1,
-          2,
-          5
+          5,
+          2
         ],
         "winner": 2
       },
       {
         "raceId": "2026-02-14_6_7",
         "date": "2026-02-14",
+        "gameType": "V85",
         "top3": [
           3,
           4,
@@ -600,16 +2598,18 @@
       {
         "raceId": "2026-02-14_6_8",
         "date": "2026-02-14",
+        "gameType": "V85",
         "top3": [
           1,
-          4,
-          11
+          9,
+          4
         ],
         "winner": 1
       },
       {
         "raceId": "2026-02-14_6_9",
         "date": "2026-02-14",
+        "gameType": "V85",
         "top3": [
           3,
           4,
@@ -620,19 +2620,21 @@
       {
         "raceId": "2026-02-21_9_10",
         "date": "2026-02-21",
+        "gameType": "V85",
         "top3": [
           2,
-          7,
-          11
+          8,
+          3
         ],
         "winner": 9
       },
       {
         "raceId": "2026-02-21_9_11",
         "date": "2026-02-21",
+        "gameType": "V85",
         "top3": [
-          15,
           2,
+          1,
           12
         ],
         "winner": 8
@@ -640,9 +2642,10 @@
       {
         "raceId": "2026-02-21_9_12",
         "date": "2026-02-21",
+        "gameType": "V85",
         "top3": [
-          1,
           5,
+          1,
           11
         ],
         "winner": 5
@@ -650,16 +2653,18 @@
       {
         "raceId": "2026-02-21_9_5",
         "date": "2026-02-21",
+        "gameType": "V85",
         "top3": [
           3,
           5,
-          6
+          8
         ],
         "winner": 5
       },
       {
         "raceId": "2026-02-21_9_6",
         "date": "2026-02-21",
+        "gameType": "V85",
         "top3": [
           1,
           12,
@@ -670,69 +2675,76 @@
       {
         "raceId": "2026-02-21_9_7",
         "date": "2026-02-21",
+        "gameType": "V85",
         "top3": [
-          8,
+          4,
           5,
-          4
+          10
         ],
         "winner": 1
       },
       {
         "raceId": "2026-02-21_9_8",
         "date": "2026-02-21",
+        "gameType": "V85",
         "top3": [
           8,
           1,
-          12
+          5
         ],
         "winner": 8
       },
       {
         "raceId": "2026-02-21_9_9",
         "date": "2026-02-21",
+        "gameType": "V85",
         "top3": [
           5,
-          11,
-          6
+          3,
+          4
         ],
         "winner": 3
       },
       {
         "raceId": "2026-02-28_8_10",
         "date": "2026-02-28",
+        "gameType": "V85",
         "top3": [
           10,
-          11,
-          3
+          2,
+          6
         ],
         "winner": 8
       },
       {
         "raceId": "2026-02-28_8_11",
         "date": "2026-02-28",
+        "gameType": "V85",
         "top3": [
           12,
-          6,
-          1
+          1,
+          7
         ],
         "winner": 8
       },
       {
         "raceId": "2026-02-28_8_12",
         "date": "2026-02-28",
+        "gameType": "V85",
         "top3": [
-          2,
           1,
-          4
+          2,
+          6
         ],
         "winner": 2
       },
       {
         "raceId": "2026-02-28_8_5",
         "date": "2026-02-28",
+        "gameType": "V85",
         "top3": [
-          5,
           11,
+          5,
           7
         ],
         "winner": 11
@@ -740,16 +2752,18 @@
       {
         "raceId": "2026-02-28_8_6",
         "date": "2026-02-28",
+        "gameType": "V85",
         "top3": [
+          1,
           3,
-          2,
-          1
+          2
         ],
         "winner": 12
       },
       {
         "raceId": "2026-02-28_8_7",
         "date": "2026-02-28",
+        "gameType": "V85",
         "top3": [
           4,
           2,
@@ -760,89 +2774,175 @@
       {
         "raceId": "2026-02-28_8_8",
         "date": "2026-02-28",
+        "gameType": "V85",
         "top3": [
-          6,
           3,
-          2
+          6,
+          10
         ],
         "winner": 12
       },
       {
         "raceId": "2026-02-28_8_9",
         "date": "2026-02-28",
+        "gameType": "V85",
         "top3": [
           4,
-          7,
-          5
+          5,
+          3
         ],
         "winner": 1
       },
       {
+        "raceId": "2026-03-07_18_10",
+        "date": "2026-03-07",
+        "gameType": "V85",
+        "top3": [
+          2,
+          4,
+          5
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-03-07_18_11",
+        "date": "2026-03-07",
+        "gameType": "V85",
+        "top3": [
+          1,
+          3,
+          11
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-03-07_18_12",
+        "date": "2026-03-07",
+        "gameType": "V85",
+        "top3": [
+          4,
+          1,
+          10
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-03-07_18_5",
+        "date": "2026-03-07",
+        "gameType": "V85",
+        "top3": [
+          5,
+          3,
+          4
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-03-07_18_6",
+        "date": "2026-03-07",
+        "gameType": "V85",
+        "top3": [
+          1,
+          7,
+          3
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-03-07_18_8",
+        "date": "2026-03-07",
+        "gameType": "V85",
+        "top3": [
+          12,
+          9,
+          11
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-03-07_18_9",
+        "date": "2026-03-07",
+        "gameType": "V85",
+        "top3": [
+          6,
+          3,
+          1
+        ],
+        "winner": 3
+      },
+      {
         "raceId": "2026-03-14_78_10",
         "date": "2026-03-14",
+        "gameType": "V85",
         "top3": [
-          8,
-          2,
-          1
+          3,
+          1,
+          2
         ],
         "winner": 1
       },
       {
         "raceId": "2026-03-14_78_11",
         "date": "2026-03-14",
+        "gameType": "V85",
         "top3": [
           7,
           6,
-          3
+          8
         ],
         "winner": 2
       },
       {
         "raceId": "2026-03-14_78_6",
         "date": "2026-03-14",
+        "gameType": "V85",
         "top3": [
-          2,
+          4,
           5,
-          4
+          2
         ],
         "winner": 5
       },
       {
         "raceId": "2026-03-14_78_7",
         "date": "2026-03-14",
+        "gameType": "V85",
         "top3": [
           6,
           12,
-          11
+          5
         ],
         "winner": 6
       },
       {
         "raceId": "2026-03-14_78_8",
         "date": "2026-03-14",
+        "gameType": "V85",
         "top3": [
           5,
-          2,
-          11
+          11,
+          2
         ],
         "winner": 8
       },
       {
         "raceId": "2026-03-14_78_9",
         "date": "2026-03-14",
+        "gameType": "V85",
         "top3": [
+          3,
           6,
-          2,
-          3
+          2
         ],
         "winner": 6
       },
       {
         "raceId": "2026-03-21_6_10",
         "date": "2026-03-21",
+        "gameType": "V85",
         "top3": [
-          12,
           1,
+          12,
           2
         ],
         "winner": 2
@@ -850,16 +2950,18 @@
       {
         "raceId": "2026-03-21_6_11",
         "date": "2026-03-21",
+        "gameType": "V85",
         "top3": [
           3,
-          8,
-          2
+          2,
+          8
         ],
         "winner": 2
       },
       {
         "raceId": "2026-03-21_6_12",
         "date": "2026-03-21",
+        "gameType": "V85",
         "top3": [
           1,
           6,
@@ -870,59 +2972,65 @@
       {
         "raceId": "2026-03-21_6_5",
         "date": "2026-03-21",
+        "gameType": "V85",
         "top3": [
           1,
-          6,
-          7
+          2,
+          6
         ],
         "winner": 6
       },
       {
         "raceId": "2026-03-21_6_6",
         "date": "2026-03-21",
+        "gameType": "V85",
         "top3": [
           8,
-          6,
-          5
+          5,
+          1
         ],
         "winner": 5
       },
       {
         "raceId": "2026-03-21_6_7",
         "date": "2026-03-21",
+        "gameType": "V85",
         "top3": [
-          5,
           10,
-          9
+          5,
+          3
         ],
         "winner": 10
       },
       {
         "raceId": "2026-03-21_6_8",
         "date": "2026-03-21",
+        "gameType": "V85",
         "top3": [
+          2,
           5,
-          1,
-          12
+          6
         ],
         "winner": 6
       },
       {
         "raceId": "2026-03-21_6_9",
         "date": "2026-03-21",
+        "gameType": "V85",
         "top3": [
-          4,
+          5,
           1,
-          3
+          4
         ],
         "winner": 5
       },
       {
         "raceId": "2026-03-28_5_10",
         "date": "2026-03-28",
+        "gameType": "V85",
         "top3": [
-          3,
           6,
+          3,
           10
         ],
         "winner": 8
@@ -930,6 +3038,7 @@
       {
         "raceId": "2026-03-28_5_11",
         "date": "2026-03-28",
+        "gameType": "V85",
         "top3": [
           2,
           6,
@@ -940,26 +3049,29 @@
       {
         "raceId": "2026-03-28_5_12",
         "date": "2026-03-28",
+        "gameType": "V85",
         "top3": [
           6,
           1,
-          10
+          4
         ],
         "winner": 3
       },
       {
         "raceId": "2026-03-28_5_5",
         "date": "2026-03-28",
+        "gameType": "V85",
         "top3": [
           1,
-          5,
-          11
+          2,
+          5
         ],
         "winner": 7
       },
       {
         "raceId": "2026-03-28_5_6",
         "date": "2026-03-28",
+        "gameType": "V85",
         "top3": [
           1,
           6,
@@ -970,6 +3082,7 @@
       {
         "raceId": "2026-03-28_5_7",
         "date": "2026-03-28",
+        "gameType": "V85",
         "top3": [
           5,
           7,
@@ -980,29 +3093,76 @@
       {
         "raceId": "2026-03-28_5_8",
         "date": "2026-03-28",
+        "gameType": "V85",
         "top3": [
-          8,
           15,
-          6
+          9,
+          8
         ],
         "winner": 9
       },
       {
         "raceId": "2026-03-28_5_9",
         "date": "2026-03-28",
+        "gameType": "V85",
         "top3": [
           4,
-          5,
-          12
+          2,
+          3
         ],
         "winner": 8
       },
       {
-        "raceId": "2026-04-11_7_10",
-        "date": "2026-04-11",
+        "raceId": "2026-04-04_85_10",
+        "date": "2026-04-04",
+        "gameType": "V85",
         "top3": [
           4,
-          5,
+          3,
+          2
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-04-04_85_11",
+        "date": "2026-04-04",
+        "gameType": "V85",
+        "top3": [
+          3,
+          4,
+          9
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-04-04_85_12",
+        "date": "2026-04-04",
+        "gameType": "V85",
+        "top3": [
+          4,
+          2,
+          1
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-04-04_85_7",
+        "date": "2026-04-04",
+        "gameType": "V85",
+        "top3": [
+          1,
+          4,
+          3
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-04-11_7_10",
+        "date": "2026-04-11",
+        "gameType": "V85",
+        "top3": [
+          4,
+          7,
           2
         ],
         "winner": 4
@@ -1010,19 +3170,21 @@
       {
         "raceId": "2026-04-11_7_11",
         "date": "2026-04-11",
+        "gameType": "V85",
         "top3": [
           7,
-          9,
-          11
+          11,
+          9
         ],
         "winner": 4
       },
       {
         "raceId": "2026-04-11_7_12",
         "date": "2026-04-11",
+        "gameType": "V85",
         "top3": [
-          8,
-          10,
+          15,
+          9,
           4
         ],
         "winner": 11
@@ -1030,6 +3192,7 @@
       {
         "raceId": "2026-04-11_7_5",
         "date": "2026-04-11",
+        "gameType": "V85",
         "top3": [
           2,
           5,
@@ -1040,26 +3203,29 @@
       {
         "raceId": "2026-04-11_7_6",
         "date": "2026-04-11",
+        "gameType": "V85",
         "top3": [
           9,
-          3,
-          8
+          8,
+          3
         ],
         "winner": 7
       },
       {
         "raceId": "2026-04-11_7_7",
         "date": "2026-04-11",
+        "gameType": "V85",
         "top3": [
           14,
-          8,
-          12
+          9,
+          1
         ],
         "winner": 6
       },
       {
         "raceId": "2026-04-11_7_8",
         "date": "2026-04-11",
+        "gameType": "V85",
         "top3": [
           4,
           3,
@@ -1070,9 +3236,10 @@
       {
         "raceId": "2026-04-11_7_9",
         "date": "2026-04-11",
+        "gameType": "V85",
         "top3": [
-          10,
           6,
+          10,
           2
         ],
         "winner": 10
@@ -1080,16 +3247,18 @@
       {
         "raceId": "2026-04-18_12_10",
         "date": "2026-04-18",
+        "gameType": "V85",
         "top3": [
-          1,
+          4,
           2,
-          4
+          1
         ],
         "winner": 6
       },
       {
         "raceId": "2026-04-18_12_11",
         "date": "2026-04-18",
+        "gameType": "V85",
         "top3": [
           1,
           6,
@@ -1100,49 +3269,54 @@
       {
         "raceId": "2026-04-18_12_12",
         "date": "2026-04-18",
+        "gameType": "V85",
         "top3": [
-          1,
-          2,
-          6
+          4,
+          6,
+          1
         ],
         "winner": 3
       },
       {
         "raceId": "2026-04-18_12_5",
         "date": "2026-04-18",
+        "gameType": "V85",
         "top3": [
-          4,
           8,
-          7
+          4,
+          11
         ],
         "winner": 6
       },
       {
         "raceId": "2026-04-18_12_6",
         "date": "2026-04-18",
+        "gameType": "V85",
         "top3": [
+          2,
           6,
-          1,
-          2
+          1
         ],
         "winner": 10
       },
       {
         "raceId": "2026-04-18_12_7",
         "date": "2026-04-18",
+        "gameType": "V85",
         "top3": [
+          5,
           12,
-          3,
-          5
+          1
         ],
         "winner": 5
       },
       {
         "raceId": "2026-04-18_12_8",
         "date": "2026-04-18",
+        "gameType": "V85",
         "top3": [
+          11,
           8,
-          2,
           13
         ],
         "winner": 1
@@ -1150,9 +3324,10 @@
       {
         "raceId": "2026-04-18_12_9",
         "date": "2026-04-18",
+        "gameType": "V85",
         "top3": [
-          1,
           4,
+          1,
           8
         ],
         "winner": 5
@@ -1160,49 +3335,54 @@
       {
         "raceId": "2026-04-25_32_10",
         "date": "2026-04-25",
+        "gameType": "V85",
         "top3": [
           2,
-          4,
-          11
+          1,
+          4
         ],
         "winner": 2
       },
       {
         "raceId": "2026-04-25_32_11",
         "date": "2026-04-25",
+        "gameType": "V85",
         "top3": [
-          1,
-          12,
-          4
+          8,
+          3,
+          1
         ],
         "winner": 6
       },
       {
         "raceId": "2026-04-25_32_12",
         "date": "2026-04-25",
+        "gameType": "V85",
         "top3": [
+          3,
           14,
-          11,
-          3
+          15
         ],
         "winner": 3
       },
       {
         "raceId": "2026-04-25_32_5",
         "date": "2026-04-25",
+        "gameType": "V85",
         "top3": [
           14,
           9,
-          6
+          11
         ],
         "winner": 5
       },
       {
         "raceId": "2026-04-25_32_6",
         "date": "2026-04-25",
+        "gameType": "V85",
         "top3": [
           4,
-          10,
+          2,
           9
         ],
         "winner": 5
@@ -1210,109 +3390,120 @@
       {
         "raceId": "2026-04-25_32_7",
         "date": "2026-04-25",
+        "gameType": "V85",
         "top3": [
+          3,
           11,
-          4,
-          8
+          4
         ],
         "winner": 3
       },
       {
         "raceId": "2026-04-25_32_8",
         "date": "2026-04-25",
+        "gameType": "V85",
         "top3": [
           6,
           1,
-          2
+          7
         ],
         "winner": 7
       },
       {
         "raceId": "2026-04-25_32_9",
         "date": "2026-04-25",
+        "gameType": "V85",
         "top3": [
           8,
           2,
-          4
+          1
         ],
         "winner": 12
       },
       {
         "raceId": "2026-05-02_27_10",
         "date": "2026-05-02",
+        "gameType": "V85",
         "top3": [
           8,
-          5,
-          9
+          2,
+          5
         ],
         "winner": 8
       },
       {
         "raceId": "2026-05-02_27_11",
         "date": "2026-05-02",
+        "gameType": "V85",
         "top3": [
-          4,
-          1,
-          5
+          8,
+          2,
+          4
         ],
         "winner": 1
       },
       {
         "raceId": "2026-05-02_27_12",
         "date": "2026-05-02",
+        "gameType": "V85",
         "top3": [
-          3,
           7,
-          6
+          3,
+          4
         ],
         "winner": 7
       },
       {
         "raceId": "2026-05-02_27_5",
         "date": "2026-05-02",
+        "gameType": "V85",
         "top3": [
           7,
-          1,
-          9
+          9,
+          2
         ],
         "winner": 1
       },
       {
         "raceId": "2026-05-02_27_6",
         "date": "2026-05-02",
+        "gameType": "V85",
         "top3": [
           6,
           4,
-          1
+          3
         ],
         "winner": 8
       },
       {
         "raceId": "2026-05-02_27_7",
         "date": "2026-05-02",
+        "gameType": "V85",
         "top3": [
           1,
-          2,
-          5
+          5,
+          2
         ],
         "winner": 1
       },
       {
         "raceId": "2026-05-02_27_8",
         "date": "2026-05-02",
+        "gameType": "V85",
         "top3": [
-          4,
+          9,
           7,
-          3
+          12
         ],
         "winner": 9
       },
       {
         "raceId": "2026-05-02_27_9",
         "date": "2026-05-02",
+        "gameType": "V85",
         "top3": [
+          1,
           4,
-          3,
           6
         ],
         "winner": 6
@@ -1320,26 +3511,29 @@
       {
         "raceId": "2026-05-09_6_10",
         "date": "2026-05-09",
+        "gameType": "V85",
         "top3": [
-          1,
           5,
-          2
+          3,
+          1
         ],
         "winner": 3
       },
       {
         "raceId": "2026-05-09_6_11",
         "date": "2026-05-09",
+        "gameType": "V85",
         "top3": [
-          1,
           5,
-          7
+          7,
+          1
         ],
         "winner": 7
       },
       {
         "raceId": "2026-05-09_6_12",
         "date": "2026-05-09",
+        "gameType": "V85",
         "top3": [
           5,
           9,
@@ -1350,6 +3544,95 @@
       {
         "raceId": "2026-05-09_6_5",
         "date": "2026-05-09",
+        "gameType": "V85",
+        "top3": [
+          1,
+          2,
+          9
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-05-09_6_6",
+        "date": "2026-05-09",
+        "gameType": "V85",
+        "top3": [
+          4,
+          5,
+          3
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-05-09_6_7",
+        "date": "2026-05-09",
+        "gameType": "V85",
+        "top3": [
+          5,
+          12,
+          3
+        ],
+        "winner": 12
+      },
+      {
+        "raceId": "2026-05-09_6_8",
+        "date": "2026-05-09",
+        "gameType": "V85",
+        "top3": [
+          6,
+          8,
+          5
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2026-05-09_6_9",
+        "date": "2026-05-09",
+        "gameType": "V85",
+        "top3": [
+          4,
+          6,
+          1
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-05-16_46_10",
+        "date": "2026-05-16",
+        "gameType": "V85",
+        "top3": [
+          2,
+          4,
+          5
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-05-16_46_11",
+        "date": "2026-05-16",
+        "gameType": "V85",
+        "top3": [
+          2,
+          5,
+          4
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-05-16_46_12",
+        "date": "2026-05-16",
+        "gameType": "V85",
+        "top3": [
+          3,
+          1,
+          2
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-05-16_46_5",
+        "date": "2026-05-16",
+        "gameType": "V85",
         "top3": [
           2,
           1,
@@ -1358,81 +3641,89 @@
         "winner": 2
       },
       {
-        "raceId": "2026-05-09_6_6",
-        "date": "2026-05-09",
+        "raceId": "2026-05-16_46_6",
+        "date": "2026-05-16",
+        "gameType": "V85",
         "top3": [
-          5,
-          4,
-          1
+          6,
+          9,
+          8
         ],
-        "winner": 4
+        "winner": 3
       },
       {
-        "raceId": "2026-05-09_6_7",
-        "date": "2026-05-09",
-        "top3": [
-          12,
-          5,
-          4
-        ],
-        "winner": 12
-      },
-      {
-        "raceId": "2026-05-09_6_8",
-        "date": "2026-05-09",
-        "top3": [
-          5,
-          8,
-          10
-        ],
-        "winner": 8
-      },
-      {
-        "raceId": "2026-05-09_6_9",
-        "date": "2026-05-09",
+        "raceId": "2026-05-16_46_7",
+        "date": "2026-05-16",
+        "gameType": "V85",
         "top3": [
           1,
-          6,
-          4
+          11,
+          5
         ],
         "winner": 6
       },
       {
+        "raceId": "2026-05-16_46_8",
+        "date": "2026-05-16",
+        "gameType": "V85",
+        "top3": [
+          8,
+          6,
+          4
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-05-16_46_9",
+        "date": "2026-05-16",
+        "gameType": "V85",
+        "top3": [
+          7,
+          1,
+          2
+        ],
+        "winner": 8
+      },
+      {
         "raceId": "2026-05-23_16_10",
         "date": "2026-05-23",
+        "gameType": "V85",
         "top3": [
           3,
-          5,
-          6
+          8,
+          9
         ],
         "winner": 11
       },
       {
         "raceId": "2026-05-23_16_11",
         "date": "2026-05-23",
+        "gameType": "V85",
         "top3": [
           11,
-          1,
-          8
+          5,
+          1
         ],
         "winner": 9
       },
       {
         "raceId": "2026-05-23_16_12",
         "date": "2026-05-23",
+        "gameType": "V85",
         "top3": [
           7,
-          1,
-          4
+          4,
+          8
         ],
         "winner": 7
       },
       {
         "raceId": "2026-05-23_16_5",
         "date": "2026-05-23",
+        "gameType": "V85",
         "top3": [
-          15,
           11,
+          5,
           3
         ],
         "winner": 8
@@ -1440,26 +3731,29 @@
       {
         "raceId": "2026-05-23_16_6",
         "date": "2026-05-23",
+        "gameType": "V85",
         "top3": [
-          1,
           15,
-          8
+          8,
+          14
         ],
         "winner": 13
       },
       {
         "raceId": "2026-05-23_16_7",
         "date": "2026-05-23",
+        "gameType": "V85",
         "top3": [
-          9,
-          4,
-          6
+          6,
+          7,
+          11
         ],
         "winner": 6
       },
       {
         "raceId": "2026-05-23_16_8",
         "date": "2026-05-23",
+        "gameType": "V85",
         "top3": [
           13,
           3,
@@ -1470,9 +3764,10 @@
       {
         "raceId": "2026-05-23_16_9",
         "date": "2026-05-23",
+        "gameType": "V85",
         "top3": [
           5,
-          2,
+          1,
           3
         ],
         "winner": 10
@@ -1480,59 +3775,65 @@
       {
         "raceId": "2026-05-30_5_10",
         "date": "2026-05-30",
+        "gameType": "V85",
         "top3": [
           3,
           7,
-          4
+          1
         ],
         "winner": 4
       },
       {
         "raceId": "2026-05-30_5_11",
         "date": "2026-05-30",
+        "gameType": "V85",
         "top3": [
           1,
           10,
-          8
+          4
         ],
         "winner": 10
       },
       {
         "raceId": "2026-05-30_5_12",
         "date": "2026-05-30",
+        "gameType": "V85",
         "top3": [
           10,
-          1,
-          11
+          4,
+          12
         ],
         "winner": 4
       },
       {
         "raceId": "2026-05-30_5_13",
         "date": "2026-05-30",
+        "gameType": "V85",
         "top3": [
           7,
           3,
-          1
+          9
         ],
         "winner": 8
       },
       {
         "raceId": "2026-05-30_5_5",
         "date": "2026-05-30",
+        "gameType": "V85",
         "top3": [
-          5,
           8,
-          9
+          4,
+          5
         ],
         "winner": 6
       },
       {
         "raceId": "2026-05-30_5_6",
         "date": "2026-05-30",
+        "gameType": "V85",
         "top3": [
           1,
-          11,
+          2,
           3
         ],
         "winner": 3
@@ -1540,29 +3841,120 @@
       {
         "raceId": "2026-05-30_5_8",
         "date": "2026-05-30",
+        "gameType": "V85",
         "top3": [
+          1,
           2,
-          10,
-          6
+          12
         ],
         "winner": 4
       },
       {
         "raceId": "2026-05-30_5_9",
         "date": "2026-05-30",
+        "gameType": "V85",
         "top3": [
+          8,
           5,
-          14,
           15
         ],
         "winner": 15
       },
       {
+        "raceId": "2026-06-06_22_10",
+        "date": "2026-06-06",
+        "gameType": "V85",
+        "top3": [
+          6,
+          1,
+          4
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-06-06_22_11",
+        "date": "2026-06-06",
+        "gameType": "V85",
+        "top3": [
+          7,
+          3,
+          4
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-06-06_22_12",
+        "date": "2026-06-06",
+        "gameType": "V85",
+        "top3": [
+          5,
+          8,
+          1
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2026-06-06_22_5",
+        "date": "2026-06-06",
+        "gameType": "V85",
+        "top3": [
+          6,
+          3,
+          7
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-06-06_22_6",
+        "date": "2026-06-06",
+        "gameType": "V85",
+        "top3": [
+          13,
+          1,
+          6
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-06-06_22_7",
+        "date": "2026-06-06",
+        "gameType": "V85",
+        "top3": [
+          4,
+          10,
+          1
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-06-06_22_8",
+        "date": "2026-06-06",
+        "gameType": "V85",
+        "top3": [
+          6,
+          1,
+          3
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-06-06_22_9",
+        "date": "2026-06-06",
+        "gameType": "V85",
+        "top3": [
+          3,
+          4,
+          8
+        ],
+        "winner": 4
+      },
+      {
         "raceId": "2026-06-13_11_10",
         "date": "2026-06-13",
+        "gameType": "V85",
         "top3": [
-          2,
           1,
+          2,
           5
         ],
         "winner": 9
@@ -1570,16 +3962,18 @@
       {
         "raceId": "2026-06-13_11_11",
         "date": "2026-06-13",
+        "gameType": "V85",
         "top3": [
           9,
-          7,
-          6
+          6,
+          1
         ],
         "winner": 7
       },
       {
         "raceId": "2026-06-13_11_12",
         "date": "2026-06-13",
+        "gameType": "V85",
         "top3": [
           5,
           7,
@@ -1590,16 +3984,18 @@
       {
         "raceId": "2026-06-13_11_5",
         "date": "2026-06-13",
+        "gameType": "V85",
         "top3": [
-          5,
-          8,
-          9
+          1,
+          9,
+          5
         ],
         "winner": 1
       },
       {
         "raceId": "2026-06-13_11_6",
         "date": "2026-06-13",
+        "gameType": "V85",
         "top3": [
           5,
           2,
@@ -1610,9 +4006,10 @@
       {
         "raceId": "2026-06-13_11_7",
         "date": "2026-06-13",
+        "gameType": "V85",
         "top3": [
-          13,
           1,
+          13,
           3
         ],
         "winner": 15
@@ -1620,6 +4017,7 @@
       {
         "raceId": "2026-06-13_11_8",
         "date": "2026-06-13",
+        "gameType": "V85",
         "top3": [
           10,
           11,
@@ -1630,56 +4028,62 @@
       {
         "raceId": "2026-06-13_11_9",
         "date": "2026-06-13",
+        "gameType": "V85",
         "top3": [
           1,
           7,
-          11
+          3
         ],
         "winner": 11
       },
       {
         "raceId": "2026-06-27_9_10",
         "date": "2026-06-27",
+        "gameType": "V85",
         "top3": [
           1,
           2,
-          9
+          3
         ],
         "winner": 1
       },
       {
         "raceId": "2026-06-27_9_11",
         "date": "2026-06-27",
+        "gameType": "V85",
         "top3": [
           2,
           5,
-          7
+          3
         ],
         "winner": 10
       },
       {
         "raceId": "2026-06-27_9_12",
         "date": "2026-06-27",
+        "gameType": "V85",
         "top3": [
           5,
           4,
-          3
+          1
         ],
         "winner": 4
       },
       {
         "raceId": "2026-06-27_9_5",
         "date": "2026-06-27",
+        "gameType": "V85",
         "top3": [
           2,
           11,
-          6
+          4
         ],
         "winner": 7
       },
       {
         "raceId": "2026-06-27_9_6",
         "date": "2026-06-27",
+        "gameType": "V85",
         "top3": [
           4,
           7,
@@ -1690,76 +4094,348 @@
       {
         "raceId": "2026-06-27_9_7",
         "date": "2026-06-27",
+        "gameType": "V85",
         "top3": [
-          4,
           5,
-          6
+          1,
+          4
         ],
         "winner": 1
       },
       {
         "raceId": "2026-06-27_9_8",
         "date": "2026-06-27",
+        "gameType": "V85",
         "top3": [
           11,
-          13,
-          10
+          5,
+          13
         ],
         "winner": 11
       },
       {
         "raceId": "2026-06-27_9_9",
         "date": "2026-06-27",
+        "gameType": "V85",
         "top3": [
           1,
           5,
+          4
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-07-04_18_10",
+        "date": "2026-07-04",
+        "gameType": "V85",
+        "top3": [
+          1,
+          7,
+          3
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-07-04_18_11",
+        "date": "2026-07-04",
+        "gameType": "V85",
+        "top3": [
+          5,
+          1,
+          6
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-07-04_18_12",
+        "date": "2026-07-04",
+        "gameType": "V85",
+        "top3": [
+          7,
+          1,
+          6
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-07-04_18_5",
+        "date": "2026-07-04",
+        "gameType": "V85",
+        "top3": [
+          4,
+          10,
+          9
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-07-04_18_6",
+        "date": "2026-07-04",
+        "gameType": "V85",
+        "top3": [
+          11,
+          7,
+          5
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2026-07-04_18_7",
+        "date": "2026-07-04",
+        "gameType": "V85",
+        "top3": [
+          4,
+          10,
+          1
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-07-04_18_8",
+        "date": "2026-07-04",
+        "gameType": "V85",
+        "top3": [
+          1,
+          5,
+          4
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-07-04_18_9",
+        "date": "2026-07-04",
+        "gameType": "V85",
+        "top3": [
+          8,
+          2,
+          1
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-07-11_31_10",
+        "date": "2026-07-11",
+        "gameType": "V85",
+        "top3": [
+          5,
+          9,
+          2
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-07-11_31_11",
+        "date": "2026-07-11",
+        "gameType": "V85",
+        "top3": [
+          7,
+          11,
+          4
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2026-07-11_31_12",
+        "date": "2026-07-11",
+        "gameType": "V85",
+        "top3": [
+          3,
+          1,
+          11
+        ],
+        "winner": 12
+      },
+      {
+        "raceId": "2026-07-11_31_5",
+        "date": "2026-07-11",
+        "gameType": "V85",
+        "top3": [
+          7,
+          11,
+          13
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-07-11_31_6",
+        "date": "2026-07-11",
+        "gameType": "V85",
+        "top3": [
+          7,
+          4,
+          8
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2026-07-11_31_7",
+        "date": "2026-07-11",
+        "gameType": "V85",
+        "top3": [
+          9,
+          7,
+          5
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-07-11_31_8",
+        "date": "2026-07-11",
+        "gameType": "V85",
+        "top3": [
+          9,
+          14,
+          2
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-07-11_31_9",
+        "date": "2026-07-11",
+        "gameType": "V85",
+        "top3": [
+          10,
+          1,
+          5
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-07-18_8_10",
+        "date": "2026-07-18",
+        "gameType": "V85",
+        "top3": [
+          5,
+          3,
+          11
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2026-07-18_8_11",
+        "date": "2026-07-18",
+        "gameType": "V85",
+        "top3": [
+          4,
+          9,
+          1
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-07-18_8_12",
+        "date": "2026-07-18",
+        "gameType": "V85",
+        "top3": [
+          12,
+          4,
+          6
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-07-18_8_5",
+        "date": "2026-07-18",
+        "gameType": "V85",
+        "top3": [
+          3,
+          9,
+          12
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-07-18_8_6",
+        "date": "2026-07-18",
+        "gameType": "V85",
+        "top3": [
+          2,
+          5,
+          1
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-07-18_8_7",
+        "date": "2026-07-18",
+        "gameType": "V85",
+        "top3": [
+          5,
+          1,
           3
         ],
         "winner": 5
       },
       {
+        "raceId": "2026-07-18_8_8",
+        "date": "2026-07-18",
+        "gameType": "V85",
+        "top3": [
+          14,
+          15,
+          13
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-07-18_8_9",
+        "date": "2026-07-18",
+        "gameType": "V85",
+        "top3": [
+          10,
+          13,
+          11
+        ],
+        "winner": 13
+      },
+      {
         "raceId": "2026-07-25_12_10",
         "date": "2026-07-25",
+        "gameType": "V85",
         "top3": [
           5,
-          6,
-          9
+          8,
+          4
         ],
         "winner": 8
       },
       {
         "raceId": "2026-07-25_12_11",
         "date": "2026-07-25",
+        "gameType": "V85",
         "top3": [
-          12,
+          1,
           8,
-          6
+          12
         ],
         "winner": 6
       },
       {
         "raceId": "2026-07-25_12_12",
         "date": "2026-07-25",
+        "gameType": "V85",
         "top3": [
-          3,
           1,
-          8
+          3,
+          6
         ],
         "winner": 3
       },
       {
         "raceId": "2026-07-25_12_5",
         "date": "2026-07-25",
+        "gameType": "V85",
         "top3": [
           3,
           6,
-          7
+          5
         ],
         "winner": 3
       },
       {
         "raceId": "2026-07-25_12_6",
         "date": "2026-07-25",
+        "gameType": "V85",
         "top3": [
           2,
           1,
@@ -1770,6 +4446,7 @@
       {
         "raceId": "2026-07-25_12_7",
         "date": "2026-07-25",
+        "gameType": "V85",
         "top3": [
           9,
           15,
@@ -1780,6 +4457,7 @@
       {
         "raceId": "2026-07-25_12_8",
         "date": "2026-07-25",
+        "gameType": "V85",
         "top3": [
           4,
           1,
@@ -1790,19 +4468,890 @@
       {
         "raceId": "2026-07-25_12_9",
         "date": "2026-07-25",
+        "gameType": "V85",
+        "top3": [
+          6,
+          5,
+          3
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2026-08-01_24_10",
+        "date": "2026-08-01",
+        "gameType": "V85",
+        "top3": [
+          2,
+          4,
+          5
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-08-01_24_11",
+        "date": "2026-08-01",
+        "gameType": "V85",
+        "top3": [
+          3,
+          7,
+          5
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-08-01_24_12",
+        "date": "2026-08-01",
+        "gameType": "V85",
+        "top3": [
+          6,
+          3,
+          2
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-08-01_24_5",
+        "date": "2026-08-01",
+        "gameType": "V85",
+        "top3": [
+          3,
+          1,
+          2
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2026-08-01_24_6",
+        "date": "2026-08-01",
+        "gameType": "V85",
+        "top3": [
+          2,
+          5,
+          1
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-08-01_24_7",
+        "date": "2026-08-01",
+        "gameType": "V85",
+        "top3": [
+          5,
+          6,
+          1
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-08-01_24_8",
+        "date": "2026-08-01",
+        "gameType": "V85",
+        "top3": [
+          13,
+          11,
+          12
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-08-01_24_9",
+        "date": "2026-08-01",
+        "gameType": "V85",
+        "top3": [
+          4,
+          1,
+          11
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-08-08_33_10",
+        "date": "2026-08-08",
+        "gameType": "V85",
+        "top3": [
+          7,
+          4,
+          6
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-08-08_33_11",
+        "date": "2026-08-08",
+        "gameType": "V85",
+        "top3": [
+          6,
+          9,
+          10
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-08-08_33_12",
+        "date": "2026-08-08",
+        "gameType": "V85",
+        "top3": [
+          4,
+          1,
+          3
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-08-08_33_5",
+        "date": "2026-08-08",
+        "gameType": "V85",
+        "top3": [
+          2,
+          10,
+          12
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-08-08_33_6",
+        "date": "2026-08-08",
+        "gameType": "V85",
+        "top3": [
+          9,
+          2,
+          4
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-08-08_33_7",
+        "date": "2026-08-08",
+        "gameType": "V85",
+        "top3": [
+          8,
+          7,
+          3
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2026-08-08_33_8",
+        "date": "2026-08-08",
+        "gameType": "V85",
+        "top3": [
+          8,
+          12,
+          3
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-08-08_33_9",
+        "date": "2026-08-08",
+        "gameType": "V85",
+        "top3": [
+          1,
+          2,
+          4
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-08-15_6_10",
+        "date": "2026-08-15",
+        "gameType": "V85",
+        "top3": [
+          2,
+          1,
+          7
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-08-15_6_11",
+        "date": "2026-08-15",
+        "gameType": "V85",
+        "top3": [
+          4,
+          1,
+          5
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-08-15_6_12",
+        "date": "2026-08-15",
+        "gameType": "V85",
+        "top3": [
+          1,
+          5,
+          3
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-08-15_6_5",
+        "date": "2026-08-15",
+        "gameType": "V85",
+        "top3": [
+          9,
+          5,
+          13
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-08-15_6_6",
+        "date": "2026-08-15",
+        "gameType": "V85",
+        "top3": [
+          6,
+          4,
+          7
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-08-15_6_7",
+        "date": "2026-08-15",
+        "gameType": "V85",
+        "top3": [
+          2,
+          6,
+          9
+        ],
+        "winner": 12
+      },
+      {
+        "raceId": "2026-08-15_6_8",
+        "date": "2026-08-15",
+        "gameType": "V85",
+        "top3": [
+          5,
+          3,
+          1
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2026-08-15_6_9",
+        "date": "2026-08-15",
+        "gameType": "V85",
+        "top3": [
+          12,
+          3,
+          2
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-08-22_23_10",
+        "date": "2026-08-22",
+        "gameType": "V85",
+        "top3": [
+          5,
+          8,
+          3
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-08-22_23_11",
+        "date": "2026-08-22",
+        "gameType": "V85",
+        "top3": [
+          3,
+          2,
+          5
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-08-22_23_12",
+        "date": "2026-08-22",
+        "gameType": "V85",
+        "top3": [
+          14,
+          2,
+          3
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2026-08-22_23_5",
+        "date": "2026-08-22",
+        "gameType": "V85",
+        "top3": [
+          10,
+          6,
+          3
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2026-08-22_23_6",
+        "date": "2026-08-22",
+        "gameType": "V85",
+        "top3": [
+          6,
+          3,
+          4
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-08-22_23_7",
+        "date": "2026-08-22",
+        "gameType": "V85",
+        "top3": [
+          2,
+          1,
+          4
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-08-22_23_8",
+        "date": "2026-08-22",
+        "gameType": "V85",
+        "top3": [
+          4,
+          3,
+          8
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-08-22_23_9",
+        "date": "2026-08-22",
+        "gameType": "V85",
+        "top3": [
+          4,
+          3,
+          5
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-08-29_9_10",
+        "date": "2026-08-29",
+        "gameType": "V85",
+        "top3": [
+          2,
+          1,
+          3
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-08-29_9_11",
+        "date": "2026-08-29",
+        "gameType": "V85",
+        "top3": [
+          1,
+          2,
+          4
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2026-08-29_9_12",
+        "date": "2026-08-29",
+        "gameType": "V85",
+        "top3": [
+          4,
+          6,
+          8
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-08-29_9_5",
+        "date": "2026-08-29",
+        "gameType": "V85",
+        "top3": [
+          11,
+          13,
+          14
+        ],
+        "winner": 14
+      },
+      {
+        "raceId": "2026-08-29_9_6",
+        "date": "2026-08-29",
+        "gameType": "V85",
+        "top3": [
+          4,
+          12,
+          10
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-08-29_9_7",
+        "date": "2026-08-29",
+        "gameType": "V85",
+        "top3": [
+          13,
+          8,
+          14
+        ],
+        "winner": 14
+      },
+      {
+        "raceId": "2026-08-29_9_8",
+        "date": "2026-08-29",
+        "gameType": "V85",
+        "top3": [
+          2,
+          1,
+          7
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-08-29_9_9",
+        "date": "2026-08-29",
+        "gameType": "V85",
+        "top3": [
+          9,
+          4,
+          7
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-09-05_7_10",
+        "date": "2026-09-05",
+        "gameType": "V85",
+        "top3": [
+          3,
+          9,
+          1
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-09-05_7_11",
+        "date": "2026-09-05",
+        "gameType": "V85",
+        "top3": [
+          2,
+          9,
+          5
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-09-05_7_12",
+        "date": "2026-09-05",
+        "gameType": "V85",
+        "top3": [
+          4,
+          1,
+          7
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-09-05_7_5",
+        "date": "2026-09-05",
+        "gameType": "V85",
         "top3": [
           5,
           11,
           6
         ],
-        "winner": 11
+        "winner": 10
+      },
+      {
+        "raceId": "2026-09-05_7_6",
+        "date": "2026-09-05",
+        "gameType": "V85",
+        "top3": [
+          1,
+          11,
+          8
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-09-05_7_7",
+        "date": "2026-09-05",
+        "gameType": "V85",
+        "top3": [
+          2,
+          4,
+          6
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-09-05_7_8",
+        "date": "2026-09-05",
+        "gameType": "V85",
+        "top3": [
+          6,
+          7,
+          4
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-09-05_7_9",
+        "date": "2026-09-05",
+        "gameType": "V85",
+        "top3": [
+          7,
+          5,
+          11
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-09-12_17_10",
+        "date": "2026-09-12",
+        "gameType": "V85",
+        "top3": [
+          13,
+          7,
+          6
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-09-12_17_11",
+        "date": "2026-09-12",
+        "gameType": "V85",
+        "top3": [
+          5,
+          8,
+          1
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-09-12_17_12",
+        "date": "2026-09-12",
+        "gameType": "V85",
+        "top3": [
+          7,
+          8,
+          12
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2026-09-12_17_5",
+        "date": "2026-09-12",
+        "gameType": "V85",
+        "top3": [
+          2,
+          5,
+          9
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-09-12_17_6",
+        "date": "2026-09-12",
+        "gameType": "V85",
+        "top3": [
+          8,
+          11,
+          15
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-09-12_17_7",
+        "date": "2026-09-12",
+        "gameType": "V85",
+        "top3": [
+          1,
+          6,
+          7
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-09-12_17_8",
+        "date": "2026-09-12",
+        "gameType": "V85",
+        "top3": [
+          6,
+          1,
+          5
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2026-09-12_17_9",
+        "date": "2026-09-12",
+        "gameType": "V85",
+        "top3": [
+          1,
+          2,
+          4
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-09-19_15_10",
+        "date": "2026-09-19",
+        "gameType": "V85",
+        "top3": [
+          5,
+          4,
+          2
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-09-19_15_11",
+        "date": "2026-09-19",
+        "gameType": "V85",
+        "top3": [
+          9,
+          1,
+          5
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-09-19_15_12",
+        "date": "2026-09-19",
+        "gameType": "V85",
+        "top3": [
+          6,
+          2,
+          8
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2026-09-19_15_5",
+        "date": "2026-09-19",
+        "gameType": "V85",
+        "top3": [
+          2,
+          3,
+          4
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-09-19_15_6",
+        "date": "2026-09-19",
+        "gameType": "V85",
+        "top3": [
+          6,
+          7,
+          10
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-09-19_15_7",
+        "date": "2026-09-19",
+        "gameType": "V85",
+        "top3": [
+          6,
+          7,
+          1
+        ],
+        "winner": 7
+      },
+      {
+        "raceId": "2026-09-19_15_8",
+        "date": "2026-09-19",
+        "gameType": "V85",
+        "top3": [
+          4,
+          2,
+          3
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-09-19_15_9",
+        "date": "2026-09-19",
+        "gameType": "V85",
+        "top3": [
+          6,
+          1,
+          5
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-09-26_6_10",
+        "date": "2026-09-26",
+        "gameType": "V85",
+        "top3": [
+          5,
+          1,
+          3
+        ],
+        "winner": 1
+      },
+      {
+        "raceId": "2026-09-26_6_11",
+        "date": "2026-09-26",
+        "gameType": "V85",
+        "top3": [
+          2,
+          12,
+          11
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-09-26_6_12",
+        "date": "2026-09-26",
+        "gameType": "V85",
+        "top3": [
+          2,
+          12,
+          7
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2026-09-26_6_5",
+        "date": "2026-09-26",
+        "gameType": "V85",
+        "top3": [
+          7,
+          11,
+          1
+        ],
+        "winner": 6
+      },
+      {
+        "raceId": "2026-09-26_6_7",
+        "date": "2026-09-26",
+        "gameType": "V85",
+        "top3": [
+          6,
+          4,
+          1
+        ],
+        "winner": 9
+      },
+      {
+        "raceId": "2026-09-26_6_8",
+        "date": "2026-09-26",
+        "gameType": "V85",
+        "top3": [
+          6,
+          8,
+          2
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-09-26_6_9",
+        "date": "2026-09-26",
+        "gameType": "V85",
+        "top3": [
+          5,
+          4,
+          2
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-10-03_11_10",
+        "date": "2026-10-03",
+        "gameType": "V85",
+        "top3": [
+          1,
+          9,
+          4
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-10-03_11_11",
+        "date": "2026-10-03",
+        "gameType": "V85",
+        "top3": [
+          5,
+          3,
+          7
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-10-03_11_12",
+        "date": "2026-10-03",
+        "gameType": "V85",
+        "top3": [
+          12,
+          11,
+          9
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-10-03_11_5",
+        "date": "2026-10-03",
+        "gameType": "V85",
+        "top3": [
+          7,
+          12,
+          13
+        ],
+        "winner": 8
+      },
+      {
+        "raceId": "2026-10-03_11_6",
+        "date": "2026-10-03",
+        "gameType": "V85",
+        "top3": [
+          6,
+          3,
+          5
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-10-03_11_7",
+        "date": "2026-10-03",
+        "gameType": "V85",
+        "top3": [
+          2,
+          8,
+          6
+        ],
+        "winner": 10
+      },
+      {
+        "raceId": "2026-10-03_11_8",
+        "date": "2026-10-03",
+        "gameType": "V85",
+        "top3": [
+          7,
+          11,
+          5
+        ],
+        "winner": 5
+      },
+      {
+        "raceId": "2026-10-03_11_9",
+        "date": "2026-10-03",
+        "gameType": "V85",
+        "top3": [
+          2,
+          6,
+          8
+        ],
+        "winner": 5
       },
       {
         "raceId": "2026-10-10_5_10",
         "date": "2026-10-10",
+        "gameType": "V85",
         "top3": [
           5,
-          3,
+          4,
           9
         ],
         "winner": 7
@@ -1810,29 +5359,32 @@
       {
         "raceId": "2026-10-10_5_11",
         "date": "2026-10-10",
+        "gameType": "V85",
         "top3": [
-          7,
           5,
-          1
+          1,
+          7
         ],
         "winner": 5
       },
       {
         "raceId": "2026-10-10_5_12",
         "date": "2026-10-10",
+        "gameType": "V85",
         "top3": [
+          1,
           5,
-          3,
-          1
+          4
         ],
         "winner": 3
       },
       {
         "raceId": "2026-10-10_5_13",
         "date": "2026-10-10",
+        "gameType": "V85",
         "top3": [
-          2,
           6,
+          2,
           5
         ],
         "winner": 9
@@ -1840,6 +5392,7 @@
       {
         "raceId": "2026-10-10_5_6",
         "date": "2026-10-10",
+        "gameType": "V85",
         "top3": [
           1,
           5,
@@ -1850,6 +5403,7 @@
       {
         "raceId": "2026-10-10_5_7",
         "date": "2026-10-10",
+        "gameType": "V85",
         "top3": [
           5,
           7,
@@ -1860,56 +5414,62 @@
       {
         "raceId": "2026-10-10_5_8",
         "date": "2026-10-10",
+        "gameType": "V85",
         "top3": [
-          8,
           12,
-          6
+          6,
+          8
         ],
         "winner": 7
       },
       {
         "raceId": "2026-10-10_5_9",
         "date": "2026-10-10",
+        "gameType": "V85",
         "top3": [
           1,
-          12,
-          15
+          15,
+          10
         ],
         "winner": 15
       },
       {
         "raceId": "2026-10-17_16_10",
         "date": "2026-10-17",
+        "gameType": "V85",
         "top3": [
+          7,
           9,
-          5,
-          7
+          5
         ],
         "winner": 7
       },
       {
         "raceId": "2026-10-17_16_11",
         "date": "2026-10-17",
+        "gameType": "V85",
         "top3": [
           7,
-          11,
-          3
+          3,
+          11
         ],
         "winner": 6
       },
       {
         "raceId": "2026-10-17_16_12",
         "date": "2026-10-17",
+        "gameType": "V85",
         "top3": [
           4,
           7,
-          2
+          3
         ],
         "winner": 4
       },
       {
         "raceId": "2026-10-17_16_5",
         "date": "2026-10-17",
+        "gameType": "V85",
         "top3": [
           3,
           2,
@@ -1920,26 +5480,29 @@
       {
         "raceId": "2026-10-17_16_6",
         "date": "2026-10-17",
+        "gameType": "V85",
         "top3": [
-          12,
           7,
-          9
+          15,
+          12
         ],
         "winner": 5
       },
       {
         "raceId": "2026-10-17_16_7",
         "date": "2026-10-17",
+        "gameType": "V85",
         "top3": [
-          1,
-          6,
-          3
+          3,
+          2,
+          1
         ],
         "winner": 8
       },
       {
         "raceId": "2026-10-17_16_8",
         "date": "2026-10-17",
+        "gameType": "V85",
         "top3": [
           1,
           7,
@@ -1950,74 +5513,207 @@
       {
         "raceId": "2026-10-17_16_9",
         "date": "2026-10-17",
+        "gameType": "V85",
         "top3": [
-          6,
-          8,
-          2
+          4,
+          2,
+          13
         ],
         "winner": 1
       },
       {
         "raceId": "2026-10-24_7_10",
         "date": "2026-10-24",
+        "gameType": "V85",
         "top3": [
           1,
           7,
-          5
+          12
         ],
         "winner": 7
       },
       {
         "raceId": "2026-10-24_7_12",
         "date": "2026-10-24",
+        "gameType": "V85",
         "top3": [
           6,
-          5,
-          8
+          4,
+          5
         ],
         "winner": 4
       },
       {
         "raceId": "2026-10-24_7_5",
         "date": "2026-10-24",
+        "gameType": "V85",
         "top3": [
           3,
           1,
-          6
+          11
         ],
         "winner": 3
       },
       {
         "raceId": "2026-10-24_7_6",
         "date": "2026-10-24",
+        "gameType": "V85",
         "top3": [
-          6,
-          3,
-          2
+          8,
+          12,
+          6
         ],
         "winner": 12
       },
       {
         "raceId": "2026-10-24_7_8",
         "date": "2026-10-24",
+        "gameType": "V85",
         "top3": [
+          13,
           12,
-          14,
-          13
+          5
         ],
         "winner": 12
       },
       {
         "raceId": "2026-10-24_7_9",
         "date": "2026-10-24",
+        "gameType": "V85",
         "top3": [
           7,
           12,
           1
         ],
         "winner": 1
+      },
+      {
+        "raceId": "2026-10-31_78_10",
+        "date": "2026-10-31",
+        "gameType": "V85",
+        "top3": [
+          3,
+          1,
+          4
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-10-31_78_11",
+        "date": "2026-10-31",
+        "gameType": "V85",
+        "top3": [
+          3,
+          8,
+          1
+        ],
+        "winner": 3
+      },
+      {
+        "raceId": "2026-10-31_78_5",
+        "date": "2026-10-31",
+        "gameType": "V85",
+        "top3": [
+          4,
+          3,
+          2
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-10-31_78_6",
+        "date": "2026-10-31",
+        "gameType": "V85",
+        "top3": [
+          8,
+          4,
+          3
+        ],
+        "winner": 4
+      },
+      {
+        "raceId": "2026-10-31_78_7",
+        "date": "2026-10-31",
+        "gameType": "V85",
+        "top3": [
+          11,
+          2,
+          4
+        ],
+        "winner": 11
+      },
+      {
+        "raceId": "2026-10-31_78_8",
+        "date": "2026-10-31",
+        "gameType": "V85",
+        "top3": [
+          9,
+          3,
+          1
+        ],
+        "winner": 2
+      },
+      {
+        "raceId": "2026-10-31_78_9",
+        "date": "2026-10-31",
+        "gameType": "V85",
+        "top3": [
+          6,
+          1,
+          5
+        ],
+        "winner": 6
       }
-    ]
+    ],
+    "laterHoldout": {
+      "scope": "V85_ONLY",
+      "trainUntil": "2026-07-25",
+      "trainStarts": 10980,
+      "testFrom": "2026-08-01",
+      "testUntil": "2026-10-31",
+      "metrics": {
+        "races": 108,
+        "top1Count": 21,
+        "top3Count": 54,
+        "top1Rate": 0.1944,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.2112,
+        "horseBrier": 0.07502
+      },
+      "pairedModel": {
+        "races": 108,
+        "top1Count": 21,
+        "top3Count": 54,
+        "top1Rate": 0.1944,
+        "top3Rate": 0.5,
+        "raceLogLoss": 2.2112,
+        "horseBrier": 0.07502
+      },
+      "retrospectiveFinalPool": {
+        "races": 108,
+        "top1Count": 39,
+        "top3Count": 77,
+        "top1Rate": 0.3611,
+        "top3Rate": 0.713,
+        "raceLogLoss": 1.8909,
+        "horseBrier": 0.06826
+      },
+      "caveat": "Fixed parameters; no fitting on or tuning against this period in this run. Some dates were examined in earlier experiments, so this is not an untouched prospective test."
+    },
+    "sameRaceHistoryComparison": {
+      "sameRaces": 164,
+      "baseline": {
+        "races": 164,
+        "top1Count": 29,
+        "top3Count": 83
+      },
+      "expanded": {
+        "races": 164,
+        "top1Count": 41,
+        "top3Count": 91
+      },
+      "baselineSource": "research/baseline_196_races_2026.json"
+    }
   },
   "sources": [
     {
@@ -2070,46 +5766,24 @@
         {
           "raceId": "2026-11-07_9_5",
           "leg": 1,
-          "number": 4,
-          "name": "Global Dependable",
+          "number": 1,
+          "name": "Jaguar Godiva",
           "prestartFeatures": {
-            "post": 4.0,
+            "post": 1.0,
             "distance": 1640.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 1.5,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 28,
+            "form_place_mean": 4,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 7,
             "gallop5": null,
-            "km_median": 72.5,
+            "km_median": 71.85,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.1163351,
+          "modelScore": 0.16802628,
           "rank": 1
-        },
-        {
-          "raceId": "2026-11-07_9_5",
-          "leg": 1,
-          "number": 9,
-          "name": "Andiamo",
-          "prestartFeatures": {
-            "post": 9.0,
-            "distance": 1640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 1.2,
-            "win5": 4,
-            "top3_5": 5,
-            "days_off": 23,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.11408437,
-          "rank": 2
         },
         {
           "raceId": "2026-11-07_9_5",
@@ -2130,29 +5804,51 @@
             "km_median": null,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.11093534,
+          "modelScore": 0.15408953,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_5",
+          "leg": 1,
+          "number": 4,
+          "name": "Global Dependable",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": 72.5,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.11865038,
           "rank": 3
         },
         {
           "raceId": "2026-11-07_9_5",
           "leg": 1,
-          "number": 1,
-          "name": "Jaguar Godiva",
+          "number": 9,
+          "name": "Andiamo",
           "prestartFeatures": {
-            "post": 1.0,
+            "post": 9.0,
             "distance": 1640.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 4,
-            "win5": 0,
-            "top3_5": 3,
-            "days_off": 7,
+            "form_place_mean": 1.2,
+            "win5": 4,
+            "top3_5": 5,
+            "days_off": 23,
             "gallop5": null,
-            "km_median": 71.85,
-            "past_purse_log": 16.418
+            "km_median": null,
+            "past_purse_log": 15.068
           },
-          "modelScore": 0.10407563,
+          "modelScore": 0.11541489,
           "rank": 4
         },
         {
@@ -2174,7 +5870,7 @@
             "km_median": null,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.10142762,
+          "modelScore": 0.10824969,
           "rank": 5
         },
         {
@@ -2196,29 +5892,29 @@
             "km_median": null,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.06390571,
+          "modelScore": 0.05602022,
           "rank": 6
         },
         {
           "raceId": "2026-11-07_9_5",
           "leg": 1,
-          "number": 11,
-          "name": "Russel Square",
+          "number": 10,
+          "name": "Any Given Sunday",
           "prestartFeatures": {
-            "post": 11.0,
+            "post": 10.0,
             "distance": 1640.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 2.25,
-            "win5": 2,
+            "form_place_mean": 3,
+            "win5": 1,
             "top3_5": 3,
-            "days_off": 18,
+            "days_off": 8,
             "gallop5": null,
             "km_median": null,
-            "past_purse_log": 15.202
+            "past_purse_log": 16.418
           },
-          "modelScore": 0.0489317,
+          "modelScore": 0.05476318,
           "rank": 7
         },
         {
@@ -2240,51 +5936,51 @@
             "km_median": 73.0,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.04825483,
+          "modelScore": 0.05330066,
           "rank": 8
         },
         {
           "raceId": "2026-11-07_9_5",
           "leg": 1,
-          "number": 10,
-          "name": "Any Given Sunday",
+          "number": 3,
+          "name": "Warhol",
           "prestartFeatures": {
-            "post": 10.0,
+            "post": 3.0,
             "distance": 1640.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 3,
+            "form_place_mean": 3.5,
             "win5": 1,
-            "top3_5": 3,
-            "days_off": 8,
+            "top3_5": 2,
+            "days_off": 10,
             "gallop5": null,
             "km_median": null,
-            "past_purse_log": 16.418
+            "past_purse_log": 15.068
           },
-          "modelScore": 0.04512137,
+          "modelScore": 0.04726595,
           "rank": 9
         },
         {
           "raceId": "2026-11-07_9_5",
           "leg": 1,
-          "number": 12,
-          "name": "Lookin at Lucky",
+          "number": 11,
+          "name": "Russel Square",
           "prestartFeatures": {
-            "post": 12.0,
+            "post": 11.0,
             "distance": 1640.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 2.333,
+            "form_place_mean": 2.25,
             "win5": 2,
-            "top3_5": 2,
-            "days_off": 15,
+            "top3_5": 3,
+            "days_off": 18,
             "gallop5": null,
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.03675938,
+          "modelScore": 0.04166942,
           "rank": 10
         },
         {
@@ -2306,46 +6002,46 @@
             "km_median": 72.65,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.03457682,
+          "modelScore": 0.04104649,
           "rank": 11
         },
         {
           "raceId": "2026-11-07_9_5",
           "leg": 1,
-          "number": 3,
-          "name": "Warhol",
+          "number": 12,
+          "name": "Lookin at Lucky",
           "prestartFeatures": {
-            "post": 3.0,
+            "post": 12.0,
             "distance": 1640.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 3.5,
-            "win5": 1,
+            "form_place_mean": 2.333,
+            "win5": 2,
             "top3_5": 2,
-            "days_off": 10,
+            "days_off": 15,
             "gallop5": null,
             "km_median": null,
-            "past_purse_log": 15.068
+            "past_purse_log": 15.202
           },
-          "modelScore": 0.01990917,
+          "modelScore": 0.0348656,
           "rank": 12
         }
       ],
       "top3": [
         {
-          "number": 4,
-          "name": "Global Dependable",
+          "number": 1,
+          "name": "Jaguar Godiva",
           "rank": 1
-        },
-        {
-          "number": 9,
-          "name": "Andiamo",
-          "rank": 2
         },
         {
           "number": 6,
           "name": "Readly Brodde",
+          "rank": 2
+        },
+        {
+          "number": 4,
+          "name": "Global Dependable",
           "rank": 3
         }
       ]
@@ -2373,30 +6069,8 @@
             "km_median": null,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.1477895,
+          "modelScore": 0.26252895,
           "rank": 1
-        },
-        {
-          "raceId": "2026-11-07_9_6",
-          "leg": 2,
-          "number": 5,
-          "name": "Nordic Choice",
-          "prestartFeatures": {
-            "post": 5.0,
-            "distance": 1640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 4,
-            "win5": 0,
-            "top3_5": 3,
-            "days_off": 21,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.607
-          },
-          "modelScore": 0.0995657,
-          "rank": 2
         },
         {
           "raceId": "2026-11-07_9_6",
@@ -2417,30 +6091,30 @@
             "km_median": null,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.08325097,
-          "rank": 3
+          "modelScore": 0.16259182,
+          "rank": 2
         },
         {
           "raceId": "2026-11-07_9_6",
           "leg": 2,
-          "number": 2,
-          "name": "Samira M.B.S.",
+          "number": 5,
+          "name": "Nordic Choice",
           "prestartFeatures": {
-            "post": 2.0,
+            "post": 5.0,
             "distance": 1640.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 4,
             "win5": 0,
-            "top3_5": 1,
-            "days_off": 31,
-            "gallop5": 1.0,
-            "km_median": 73.2,
-            "past_purse_log": 16.811
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.607
           },
-          "modelScore": 0.08149496,
-          "rank": 4
+          "modelScore": 0.10671117,
+          "rank": 3
         },
         {
           "raceId": "2026-11-07_9_6",
@@ -2461,30 +6135,30 @@
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.06577367,
-          "rank": 5
+          "modelScore": 0.08210406,
+          "rank": 4
         },
         {
           "raceId": "2026-11-07_9_6",
           "leg": 2,
-          "number": 6,
-          "name": "Hervey Island",
+          "number": 2,
+          "name": "Samira M.B.S.",
           "prestartFeatures": {
-            "post": 6.0,
+            "post": 2.0,
             "distance": 1640.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 4.75,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 18,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.202
+            "form_place_mean": 4,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 31,
+            "gallop5": 1.0,
+            "km_median": 73.2,
+            "past_purse_log": 16.811
           },
-          "modelScore": 0.04544669,
-          "rank": 6
+          "modelScore": 0.07098869,
+          "rank": 5
         },
         {
           "raceId": "2026-11-07_9_6",
@@ -2505,30 +6179,8 @@
             "km_median": 73.05,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.04210287,
-          "rank": 7
-        },
-        {
-          "raceId": "2026-11-07_9_6",
-          "leg": 2,
-          "number": 7,
-          "name": "Beau Fille",
-          "prestartFeatures": {
-            "post": 7.0,
-            "distance": 1640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 1.5,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 30,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.03435786,
-          "rank": 8
+          "modelScore": 0.05752096,
+          "rank": 6
         },
         {
           "raceId": "2026-11-07_9_6",
@@ -2549,30 +6201,52 @@
             "km_median": null,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.02608942,
-          "rank": 9
+          "modelScore": 0.04516541,
+          "rank": 7
         },
         {
           "raceId": "2026-11-07_9_6",
           "leg": 2,
-          "number": 9,
-          "name": "Järnladyn",
+          "number": 6,
+          "name": "Hervey Island",
           "prestartFeatures": {
-            "post": 9.0,
+            "post": 6.0,
             "distance": 1640.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 3.2,
+            "form_place_mean": 4.75,
             "win5": 1,
-            "top3_5": 3,
-            "days_off": 30,
+            "top3_5": 2,
+            "days_off": 18,
             "gallop5": null,
-            "km_median": 74.5,
+            "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.02479706,
-          "rank": 10
+          "modelScore": 0.0404804,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 7,
+          "name": "Beau Fille",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 30,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.03539777,
+          "rank": 9
         },
         {
           "raceId": "2026-11-07_9_6",
@@ -2593,8 +6267,8 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.01902988,
-          "rank": 11
+          "modelScore": 0.0319673,
+          "rank": 10
         },
         {
           "raceId": "2026-11-07_9_6",
@@ -2615,7 +6289,29 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.0175641,
+          "modelScore": 0.02675892,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_6",
+          "leg": 2,
+          "number": 9,
+          "name": "Järnladyn",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 1640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 30,
+            "gallop5": null,
+            "km_median": 74.5,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.02513183,
           "rank": 12
         }
       ],
@@ -2626,13 +6322,13 @@
           "rank": 1
         },
         {
-          "number": 5,
-          "name": "Nordic Choice",
+          "number": 1,
+          "name": "May J.",
           "rank": 2
         },
         {
-          "number": 1,
-          "name": "May J.",
+          "number": 5,
+          "name": "Nordic Choice",
           "rank": 3
         }
       ]
@@ -2660,7 +6356,7 @@
             "km_median": null,
             "past_purse_log": 15.956
           },
-          "modelScore": 0.09067725,
+          "modelScore": 0.15861519,
           "rank": 1
         },
         {
@@ -2682,29 +6378,29 @@
             "km_median": null,
             "past_purse_log": 15.83
           },
-          "modelScore": 0.07145672,
+          "modelScore": 0.10558658,
           "rank": 2
         },
         {
           "raceId": "2026-11-07_9_7",
           "leg": 3,
-          "number": 11,
-          "name": "Grisle Kongen G.L.",
+          "number": 9,
+          "name": "Briskeby Pilen",
           "prestartFeatures": {
-            "post": 11.0,
+            "post": 9.0,
             "distance": 2640.0,
             "field": 15,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 2.6,
-            "win5": 2,
-            "top3_5": 4,
+            "form_place_mean": 3.25,
+            "win5": 0,
+            "top3_5": 2,
             "days_off": 21,
             "gallop5": null,
             "km_median": null,
-            "past_purse_log": 15.425
+            "past_purse_log": 16.341
           },
-          "modelScore": 0.06741861,
+          "modelScore": 0.08084119,
           "rank": 3
         },
         {
@@ -2726,29 +6422,29 @@
             "km_median": null,
             "past_purse_log": null
           },
-          "modelScore": 0.06521365,
+          "modelScore": 0.07777086,
           "rank": 4
         },
         {
           "raceId": "2026-11-07_9_7",
           "leg": 3,
-          "number": 9,
-          "name": "Briskeby Pilen",
+          "number": 3,
+          "name": "Nordprins",
           "prestartFeatures": {
-            "post": 9.0,
+            "post": 3.0,
             "distance": 2640.0,
             "field": 15,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 3.25,
-            "win5": 0,
-            "top3_5": 2,
-            "days_off": 21,
-            "gallop5": null,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 24,
+            "gallop5": 1.0,
             "km_median": null,
-            "past_purse_log": 16.341
+            "past_purse_log": 15.068
           },
-          "modelScore": 0.06000476,
+          "modelScore": 0.06045798,
           "rank": 5
         },
         {
@@ -2770,29 +6466,29 @@
             "km_median": null,
             "past_purse_log": null
           },
-          "modelScore": 0.05218213,
+          "modelScore": 0.06028769,
           "rank": 6
         },
         {
           "raceId": "2026-11-07_9_7",
           "leg": 3,
-          "number": 5,
-          "name": "Fosshaug Frasse",
+          "number": 11,
+          "name": "Grisle Kongen G.L.",
           "prestartFeatures": {
-            "post": 5.0,
+            "post": 11.0,
             "distance": 2640.0,
             "field": 15,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 3.75,
-            "win5": 0,
-            "top3_5": 1,
-            "days_off": 10,
+            "form_place_mean": 2.6,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 21,
             "gallop5": null,
             "km_median": null,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.04800261,
+          "modelScore": 0.05606928,
           "rank": 7
         },
         {
@@ -2814,7 +6510,7 @@
             "km_median": null,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.04089502,
+          "modelScore": 0.05589178,
           "rank": 8
         },
         {
@@ -2836,52 +6532,8 @@
             "km_median": null,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.03928797,
+          "modelScore": 0.05532832,
           "rank": 9
-        },
-        {
-          "raceId": "2026-11-07_9_7",
-          "leg": 3,
-          "number": 3,
-          "name": "Nordprins",
-          "prestartFeatures": {
-            "post": 3.0,
-            "distance": 2640.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.5,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 24,
-            "gallop5": 1.0,
-            "km_median": null,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.02730897,
-          "rank": 10
-        },
-        {
-          "raceId": "2026-11-07_9_7",
-          "leg": 3,
-          "number": 14,
-          "name": "V.Viking",
-          "prestartFeatures": {
-            "post": 14.0,
-            "distance": 2640.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.667,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 71,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.425
-          },
-          "modelScore": 0.02710196,
-          "rank": 11
         },
         {
           "raceId": "2026-11-07_9_7",
@@ -2902,7 +6554,51 @@
             "km_median": null,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.0264169,
+          "modelScore": 0.05399593,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 5,
+          "name": "Fosshaug Frasse",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.75,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.05072417,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_7",
+          "leg": 3,
+          "number": 14,
+          "name": "V.Viking",
+          "prestartFeatures": {
+            "post": 14.0,
+            "distance": 2640.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.667,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 71,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.0390934,
           "rank": 12
         },
         {
@@ -2924,7 +6620,7 @@
             "km_median": null,
             "past_purse_log": 14.732
           },
-          "modelScore": 0.01661074,
+          "modelScore": 0.03032473,
           "rank": 13
         },
         {
@@ -2946,7 +6642,7 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.01179071,
+          "modelScore": 0.02987582,
           "rank": 14
         },
         {
@@ -2968,7 +6664,7 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.01125429,
+          "modelScore": 0.02680555,
           "rank": 15
         }
       ],
@@ -2984,8 +6680,8 @@
           "rank": 2
         },
         {
-          "number": 11,
-          "name": "Grisle Kongen G.L.",
+          "number": 9,
+          "name": "Briskeby Pilen",
           "rank": 3
         }
       ]
@@ -2994,28 +6690,6 @@
       "leg": 4,
       "raceId": "2026-11-07_9_8",
       "horses": [
-        {
-          "raceId": "2026-11-07_9_8",
-          "leg": 4,
-          "number": 6,
-          "name": "Shogun R.R.",
-          "prestartFeatures": {
-            "post": 6.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2,
-            "win5": 2,
-            "top3_5": 4,
-            "days_off": 35,
-            "gallop5": null,
-            "km_median": 72.2,
-            "past_purse_log": 16.524
-          },
-          "modelScore": 0.26416044,
-          "rank": 1
-        },
         {
           "raceId": "2026-11-07_9_8",
           "leg": 4,
@@ -3035,74 +6709,30 @@
             "km_median": 71.8,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.19948113,
+          "modelScore": 0.18535645,
+          "rank": 1
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 6,
+          "name": "Shogun R.R.",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 35,
+            "gallop5": null,
+            "km_median": 72.2,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.17868213,
           "rank": 2
-        },
-        {
-          "raceId": "2026-11-07_9_8",
-          "leg": 4,
-          "number": 8,
-          "name": "Bright Star U.S.",
-          "prestartFeatures": {
-            "post": 8.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.667,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 26,
-            "gallop5": null,
-            "km_median": 71.3,
-            "past_purse_log": 16.524
-          },
-          "modelScore": 0.14146201,
-          "rank": 3
-        },
-        {
-          "raceId": "2026-11-07_9_8",
-          "leg": 4,
-          "number": 4,
-          "name": "Conrads Åke",
-          "prestartFeatures": {
-            "post": 4.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.667,
-            "win5": 0,
-            "top3_5": 2,
-            "days_off": 17,
-            "gallop5": null,
-            "km_median": 71.9,
-            "past_purse_log": 16.524
-          },
-          "modelScore": 0.10736566,
-          "rank": 4
-        },
-        {
-          "raceId": "2026-11-07_9_8",
-          "leg": 4,
-          "number": 2,
-          "name": "Parish Crooks V.S.",
-          "prestartFeatures": {
-            "post": 2.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.75,
-            "win5": 0,
-            "top3_5": 3,
-            "days_off": 14,
-            "gallop5": null,
-            "km_median": 72.35,
-            "past_purse_log": 16.524
-          },
-          "modelScore": 0.09237622,
-          "rank": 5
         },
         {
           "raceId": "2026-11-07_9_8",
@@ -3123,30 +6753,74 @@
             "km_median": 72.4,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.08361943,
-          "rank": 6
+          "modelScore": 0.147482,
+          "rank": 3
         },
         {
           "raceId": "2026-11-07_9_8",
           "leg": 4,
-          "number": 9,
-          "name": "Summermusic'nightS",
+          "number": 8,
+          "name": "Bright Star U.S.",
           "prestartFeatures": {
-            "post": 9.0,
+            "post": 8.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.667,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 26,
+            "gallop5": null,
+            "km_median": 71.3,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.14632873,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 4,
+          "name": "Conrads Åke",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.667,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": 71.9,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.08937241,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 2,
+          "name": "Parish Crooks V.S.",
+          "prestartFeatures": {
+            "post": 2.0,
             "distance": 2140.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.75,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 28,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 14,
             "gallop5": null,
-            "km_median": 72.1,
+            "km_median": 72.35,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.06444718,
-          "rank": 7
+          "modelScore": 0.08105028,
+          "rank": 6
         },
         {
           "raceId": "2026-11-07_9_8",
@@ -3167,8 +6841,52 @@
             "km_median": null,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.04680145,
+          "modelScore": 0.06184717,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 9,
+          "name": "Summermusic'nightS",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.75,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": 72.1,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.04967098,
           "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_8",
+          "leg": 4,
+          "number": 11,
+          "name": "Izod Zet",
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2140.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 71.85,
+            "past_purse_log": 15.895
+          },
+          "modelScore": 0.03928803,
+          "rank": 9
         },
         {
           "raceId": "2026-11-07_9_8",
@@ -3189,29 +6907,7 @@
             "km_median": null,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.03739572,
-          "rank": 9
-        },
-        {
-          "raceId": "2026-11-07_9_8",
-          "leg": 4,
-          "number": 12,
-          "name": "Indy Rock",
-          "prestartFeatures": {
-            "post": 12.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": null,
-            "win5": null,
-            "top3_5": null,
-            "days_off": 84,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": null
-          },
-          "modelScore": 0.02479895,
+          "modelScore": 0.03607678,
           "rank": 10
         },
         {
@@ -3233,46 +6929,46 @@
             "km_median": 73.6,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.02456864,
+          "modelScore": 0.03606836,
           "rank": 11
         },
         {
           "raceId": "2026-11-07_9_8",
           "leg": 4,
-          "number": 11,
-          "name": "Izod Zet",
+          "number": 12,
+          "name": "Indy Rock",
           "prestartFeatures": {
-            "post": 11.0,
+            "post": 12.0,
             "distance": 2140.0,
             "field": 12,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 3.2,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 10,
+            "form_place_mean": null,
+            "win5": null,
+            "top3_5": null,
+            "days_off": 84,
             "gallop5": null,
-            "km_median": 71.85,
-            "past_purse_log": 15.895
+            "km_median": null,
+            "past_purse_log": null
           },
-          "modelScore": 0.01144846,
+          "modelScore": 0.02740155,
           "rank": 12
         }
       ],
       "top3": [
         {
-          "number": 6,
-          "name": "Shogun R.R.",
+          "number": 5,
+          "name": "Crowe Motion",
           "rank": 1
         },
         {
-          "number": 5,
-          "name": "Crowe Motion",
+          "number": 6,
+          "name": "Shogun R.R.",
           "rank": 2
         },
         {
-          "number": 8,
-          "name": "Bright Star U.S.",
+          "number": 1,
+          "name": "Nickel Occagnes",
           "rank": 3
         }
       ]
@@ -3300,7 +6996,7 @@
             "km_median": 83.65,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.22593051,
+          "modelScore": 0.30714333,
           "rank": 1
         },
         {
@@ -3322,52 +7018,8 @@
             "km_median": 83.8,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.14847646,
+          "modelScore": 0.20129197,
           "rank": 2
-        },
-        {
-          "raceId": "2026-11-07_9_9",
-          "leg": 5,
-          "number": 10,
-          "name": "Soldhöjdens Drake",
-          "prestartFeatures": {
-            "post": 1.0,
-            "distance": 2160.0,
-            "field": 15,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 3.2,
-            "win5": 2,
-            "top3_5": 4,
-            "days_off": 30,
-            "gallop5": null,
-            "km_median": 84.9,
-            "past_purse_log": 16.341
-          },
-          "modelScore": 0.1031841,
-          "rank": 3
-        },
-        {
-          "raceId": "2026-11-07_9_9",
-          "leg": 5,
-          "number": 11,
-          "name": "Tekno Jerven",
-          "prestartFeatures": {
-            "post": 2.0,
-            "distance": 2160.0,
-            "field": 15,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 4.4,
-            "win5": 0,
-            "top3_5": 3,
-            "days_off": 10,
-            "gallop5": null,
-            "km_median": 83.65,
-            "past_purse_log": 15.607
-          },
-          "modelScore": 0.06864315,
-          "rank": 4
         },
         {
           "raceId": "2026-11-07_9_9",
@@ -3388,8 +7040,30 @@
             "km_median": 83.95,
             "past_purse_log": 16.678
           },
-          "modelScore": 0.06376424,
-          "rank": 5
+          "modelScore": 0.15458012,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 10,
+          "name": "Soldhöjdens Drake",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2160.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 2,
+            "top3_5": 4,
+            "days_off": 30,
+            "gallop5": null,
+            "km_median": 84.9,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.10571478,
+          "rank": 4
         },
         {
           "raceId": "2026-11-07_9_9",
@@ -3410,8 +7084,8 @@
             "km_median": 83.85,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.05921916,
-          "rank": 6
+          "modelScore": 0.08108924,
+          "rank": 5
         },
         {
           "raceId": "2026-11-07_9_9",
@@ -3432,7 +7106,29 @@
             "km_median": 84.3,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.04696853,
+          "modelScore": 0.07641309,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 11,
+          "name": "Tekno Jerven",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2160.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.4,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 10,
+            "gallop5": null,
+            "km_median": 83.65,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.07370672,
           "rank": 7
         },
         {
@@ -3454,30 +7150,8 @@
             "km_median": null,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.04270973,
+          "modelScore": 0.06858709,
           "rank": 8
-        },
-        {
-          "raceId": "2026-11-07_9_9",
-          "leg": 5,
-          "number": 5,
-          "name": "Kruson",
-          "prestartFeatures": {
-            "post": 5.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 3.25,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 15,
-            "gallop5": null,
-            "km_median": 85.4,
-            "past_purse_log": 15.425
-          },
-          "modelScore": 0.03357236,
-          "rank": 9
         },
         {
           "raceId": "2026-11-07_9_9",
@@ -3498,74 +7172,30 @@
             "km_median": 84.9,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.02676814,
-          "rank": 10
+          "modelScore": 0.04100517,
+          "rank": 9
         },
         {
           "raceId": "2026-11-07_9_9",
           "leg": 5,
-          "number": 15,
-          "name": "Smedheim Braut",
+          "number": 5,
+          "name": "Kruson",
           "prestartFeatures": {
-            "post": 6.0,
-            "distance": 2160.0,
-            "field": 15,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 5.333,
-            "win5": 0,
-            "top3_5": 0,
-            "days_off": 28,
-            "gallop5": null,
-            "km_median": 84.45,
-            "past_purse_log": 15.52
-          },
-          "modelScore": 0.01878949,
-          "rank": 11
-        },
-        {
-          "raceId": "2026-11-07_9_9",
-          "leg": 5,
-          "number": 6,
-          "name": "Hibovalle",
-          "prestartFeatures": {
-            "post": 6.0,
+            "post": 5.0,
             "distance": 2140.0,
             "field": 15,
             "auto": 0,
             "starts5": 5,
-            "form_place_mean": 5,
-            "win5": 0,
-            "top3_5": 0,
-            "days_off": 8,
-            "gallop5": 1.0,
+            "form_place_mean": 3.25,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 15,
+            "gallop5": null,
             "km_median": 85.4,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.01651508,
-          "rank": 12
-        },
-        {
-          "raceId": "2026-11-07_9_9",
-          "leg": 5,
-          "number": 9,
-          "name": "Källsjöviking",
-          "prestartFeatures": {
-            "post": 9.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 4.6,
-            "win5": 0,
-            "top3_5": 2,
-            "days_off": 20,
-            "gallop5": null,
-            "km_median": 85.9,
-            "past_purse_log": 15.425
-          },
-          "modelScore": 0.01564933,
-          "rank": 13
+          "modelScore": 0.04010736,
+          "rank": 10
         },
         {
           "raceId": "2026-11-07_9_9",
@@ -3586,8 +7216,30 @@
             "km_median": 84.95,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.01527698,
-          "rank": 14
+          "modelScore": 0.0283572,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 15,
+          "name": "Smedheim Braut",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2160.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 5.333,
+            "win5": 0,
+            "top3_5": 0,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": 84.45,
+            "past_purse_log": 15.52
+          },
+          "modelScore": 0.0214614,
+          "rank": 12
         },
         {
           "raceId": "2026-11-07_9_9",
@@ -3608,7 +7260,51 @@
             "km_median": 84.6,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.01347897,
+          "modelScore": 0.02053988,
+          "rank": 13
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 6,
+          "name": "Hibovalle",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 5,
+            "win5": 0,
+            "top3_5": 0,
+            "days_off": 8,
+            "gallop5": 1.0,
+            "km_median": 85.4,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.01806894,
+          "rank": 14
+        },
+        {
+          "raceId": "2026-11-07_9_9",
+          "leg": 5,
+          "number": 9,
+          "name": "Källsjöviking",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.6,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 20,
+            "gallop5": null,
+            "km_median": 85.9,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.01748743,
           "rank": 15
         }
       ],
@@ -3624,8 +7320,8 @@
           "rank": 2
         },
         {
-          "number": 10,
-          "name": "Soldhöjdens Drake",
+          "number": 12,
+          "name": "Svarte Petter",
           "rank": 3
         }
       ]
@@ -3653,7 +7349,7 @@
             "km_median": 72.85,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.32553977,
+          "modelScore": 0.17144154,
           "rank": 1
         },
         {
@@ -3675,7 +7371,7 @@
             "km_median": 73.8,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.27211118,
+          "modelScore": 0.1210695,
           "rank": 2
         },
         {
@@ -3697,52 +7393,8 @@
             "km_median": 72.8,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.10522401,
+          "modelScore": 0.09751683,
           "rank": 3
-        },
-        {
-          "raceId": "2026-11-07_9_10",
-          "leg": 6,
-          "number": 14,
-          "name": "Full Speed Forward",
-          "prestartFeatures": {
-            "post": 4.0,
-            "distance": 2160.0,
-            "field": 14,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 4,
-            "win5": 0,
-            "top3_5": 1,
-            "days_off": 20,
-            "gallop5": 1.0,
-            "km_median": 73.2,
-            "past_purse_log": 16.455
-          },
-          "modelScore": 0.09186255,
-          "rank": 4
-        },
-        {
-          "raceId": "2026-11-07_9_10",
-          "leg": 6,
-          "number": 6,
-          "name": "Tarte Tatin",
-          "prestartFeatures": {
-            "post": 6.0,
-            "distance": 2140.0,
-            "field": 14,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 4.25,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 27,
-            "gallop5": null,
-            "km_median": 75.3,
-            "past_purse_log": 15.607
-          },
-          "modelScore": 0.06755085,
-          "rank": 5
         },
         {
           "raceId": "2026-11-07_9_10",
@@ -3763,30 +7415,30 @@
             "km_median": 74.4,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.06335728,
-          "rank": 6
+          "modelScore": 0.08470025,
+          "rank": 4
         },
         {
           "raceId": "2026-11-07_9_10",
           "leg": 6,
-          "number": 9,
-          "name": "Virtual Reality",
+          "number": 14,
+          "name": "Full Speed Forward",
           "prestartFeatures": {
-            "post": 9.0,
-            "distance": 2140.0,
+            "post": 4.0,
+            "distance": 2160.0,
             "field": 14,
             "auto": 0,
             "starts5": 5,
-            "form_place_mean": 4.5,
+            "form_place_mean": 4,
             "win5": 0,
             "top3_5": 1,
-            "days_off": 13,
-            "gallop5": null,
-            "km_median": 74.6,
-            "past_purse_log": 16.341
+            "days_off": 20,
+            "gallop5": 1.0,
+            "km_median": 73.2,
+            "past_purse_log": 16.455
           },
-          "modelScore": 0.06213102,
-          "rank": 7
+          "modelScore": 0.07562373,
+          "rank": 5
         },
         {
           "raceId": "2026-11-07_9_10",
@@ -3807,8 +7459,30 @@
             "km_median": 74.15,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.04442279,
-          "rank": 8
+          "modelScore": 0.0579338,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 6,
+          "name": "Tarte Tatin",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.25,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 27,
+            "gallop5": null,
+            "km_median": 75.3,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.05466279,
+          "rank": 7
         },
         {
           "raceId": "2026-11-07_9_10",
@@ -3829,8 +7503,8 @@
             "km_median": 74.0,
             "past_purse_log": 16.341
           },
-          "modelScore": 0.04106877,
-          "rank": 9
+          "modelScore": 0.0426287,
+          "rank": 8
         },
         {
           "raceId": "2026-11-07_9_10",
@@ -3851,7 +7525,29 @@
             "km_median": 74.7,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.03930787,
+          "modelScore": 0.04151442,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 9,
+          "name": "Virtual Reality",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.5,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": 74.6,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.03574912,
           "rank": 10
         },
         {
@@ -3873,30 +7569,8 @@
             "km_median": 74.4,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.02330229,
+          "modelScore": 0.03481186,
           "rank": 11
-        },
-        {
-          "raceId": "2026-11-07_9_10",
-          "leg": 6,
-          "number": 7,
-          "name": "Sessan of Man",
-          "prestartFeatures": {
-            "post": 7.0,
-            "distance": 2140.0,
-            "field": 14,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 4.2,
-            "win5": 0,
-            "top3_5": 1,
-            "days_off": 13,
-            "gallop5": null,
-            "km_median": 75.0,
-            "past_purse_log": 15.202
-          },
-          "modelScore": 0.01664537,
-          "rank": 12
         },
         {
           "raceId": "2026-11-07_9_10",
@@ -3917,8 +7591,8 @@
             "km_median": 74.55,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.0147853,
-          "rank": 13
+          "modelScore": 0.0264531,
+          "rank": 12
         },
         {
           "raceId": "2026-11-07_9_10",
@@ -3939,7 +7613,29 @@
             "km_median": 74.7,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.01277018,
+          "modelScore": 0.02591853,
+          "rank": 13
+        },
+        {
+          "raceId": "2026-11-07_9_10",
+          "leg": 6,
+          "number": 7,
+          "name": "Sessan of Man",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.2,
+            "win5": 0,
+            "top3_5": 1,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": 75.0,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.02564842,
           "rank": 14
         }
       ],
@@ -3984,30 +7680,8 @@
             "km_median": null,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.17861369,
+          "modelScore": 0.31276666,
           "rank": 1
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 10,
-          "name": "Last Cool Cash",
-          "prestartFeatures": {
-            "post": 10.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.5,
-            "win5": 1,
-            "top3_5": 4,
-            "days_off": 17,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 16.524
-          },
-          "modelScore": 0.10657945,
-          "rank": 2
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -4028,7 +7702,29 @@
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.082644,
+          "modelScore": 0.09745418,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 10,
+          "name": "Last Cool Cash",
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 4,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.08501956,
           "rank": 3
         },
         {
@@ -4050,140 +7746,8 @@
             "km_median": null,
             "past_purse_log": 15.895
           },
-          "modelScore": 0.07280074,
+          "modelScore": 0.07186908,
           "rank": 4
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 7,
-          "name": "Mastroianni",
-          "prestartFeatures": {
-            "post": 7.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 38,
-            "gallop5": null,
-            "km_median": 74.45,
-            "past_purse_log": 16.418
-          },
-          "modelScore": 0.07124376,
-          "rank": 5
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 8,
-          "name": "Seven Mounds",
-          "prestartFeatures": {
-            "post": 8.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.2,
-            "win5": 2,
-            "top3_5": 3,
-            "days_off": 20,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.83
-          },
-          "modelScore": 0.05913305,
-          "rank": 6
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 12,
-          "name": "T.Wall's Notorius",
-          "prestartFeatures": {
-            "post": 12.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3,
-            "win5": 1,
-            "top3_5": 4,
-            "days_off": 28,
-            "gallop5": null,
-            "km_median": 74.8,
-            "past_purse_log": 16.341
-          },
-          "modelScore": 0.04473986,
-          "rank": 7
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 1,
-          "name": "Pommery Boko",
-          "prestartFeatures": {
-            "post": 1.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.25,
-            "win5": 2,
-            "top3_5": 2,
-            "days_off": 11,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.03698706,
-          "rank": 8
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 11,
-          "name": "Adora Liss",
-          "prestartFeatures": {
-            "post": 11.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 21,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.202
-          },
-          "modelScore": 0.03243391,
-          "rank": 9
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 5,
-          "name": "Face to Face",
-          "prestartFeatures": {
-            "post": 5.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.5,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 13,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.03182728,
-          "rank": 10
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -4204,8 +7768,118 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.02653954,
-          "rank": 11
+          "modelScore": 0.0665795,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 7,
+          "name": "Mastroianni",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 38,
+            "gallop5": null,
+            "km_median": 74.45,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.05636649,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 8,
+          "name": "Seven Mounds",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 20,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.83
+          },
+          "modelScore": 0.05344176,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 5,
+          "name": "Face to Face",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 13,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.05187886,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 1,
+          "name": "Pommery Boko",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.05083219,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 12,
+          "name": "T.Wall's Notorius",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 4,
+            "days_off": 28,
+            "gallop5": null,
+            "km_median": 74.8,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.0443887,
+          "rank": 10
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -4226,7 +7900,29 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.01919983,
+          "modelScore": 0.03398457,
+          "rank": 11
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 11,
+          "name": "Adora Liss",
+          "prestartFeatures": {
+            "post": 11.0,
+            "distance": 2640.0,
+            "field": 12,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.03053132,
           "rank": 12
         }
       ],
@@ -4237,13 +7933,13 @@
           "rank": 1
         },
         {
-          "number": 10,
-          "name": "Last Cool Cash",
+          "number": 2,
+          "name": "Dropthegloves",
           "rank": 2
         },
         {
-          "number": 2,
-          "name": "Dropthegloves",
+          "number": 10,
+          "name": "Last Cool Cash",
           "rank": 3
         }
       ]
@@ -4271,7 +7967,7 @@
             "km_median": 73.8,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.27274012,
+          "modelScore": 0.27032355,
           "rank": 1
         },
         {
@@ -4293,96 +7989,8 @@
             "km_median": 73.95,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.1591171,
+          "modelScore": 0.13654564,
           "rank": 2
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 5,
-          "name": "Turner Ale",
-          "prestartFeatures": {
-            "post": 5.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.4,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 24,
-            "gallop5": null,
-            "km_median": 74.3,
-            "past_purse_log": 16.118
-          },
-          "modelScore": 0.08765851,
-          "rank": 3
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 4,
-          "name": "Edes Coktail",
-          "prestartFeatures": {
-            "post": 4.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.667,
-            "win5": 2,
-            "top3_5": 2,
-            "days_off": 27,
-            "gallop5": 1.0,
-            "km_median": 74.4,
-            "past_purse_log": 15.202
-          },
-          "modelScore": 0.08400744,
-          "rank": 4
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 14,
-          "name": "Ultimate Scotch",
-          "prestartFeatures": {
-            "post": 14.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.25,
-            "win5": 2,
-            "top3_5": 3,
-            "days_off": 21,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 16.341
-          },
-          "modelScore": 0.07235955,
-          "rank": 5
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 1,
-          "name": "License to Fight",
-          "prestartFeatures": {
-            "post": 1.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.8,
-            "win5": 2,
-            "top3_5": 2,
-            "days_off": 15,
-            "gallop5": null,
-            "km_median": 75.45,
-            "past_purse_log": 14.914
-          },
-          "modelScore": 0.05894697,
-          "rank": 6
         },
         {
           "raceId": "2026-11-07_9_12",
@@ -4403,8 +8011,74 @@
             "km_median": 74.05,
             "past_purse_log": 16.341
           },
-          "modelScore": 0.05434254,
-          "rank": 7
+          "modelScore": 0.10576276,
+          "rank": 3
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 14,
+          "name": "Ultimate Scotch",
+          "prestartFeatures": {
+            "post": 14.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.25,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.08467989,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 5,
+          "name": "Turner Ale",
+          "prestartFeatures": {
+            "post": 5.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.4,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 24,
+            "gallop5": null,
+            "km_median": 74.3,
+            "past_purse_log": 16.118
+          },
+          "modelScore": 0.08161652,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 4,
+          "name": "Edes Coktail",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.667,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 27,
+            "gallop5": 1.0,
+            "km_median": 74.4,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.06408903,
+          "rank": 6
         },
         {
           "raceId": "2026-11-07_9_12",
@@ -4425,8 +8099,52 @@
             "km_median": 77.8,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.04156226,
+          "modelScore": 0.05975061,
+          "rank": 7
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 1,
+          "name": "License to Fight",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.8,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": 75.45,
+            "past_purse_log": 14.914
+          },
+          "modelScore": 0.04210447,
           "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 12,
+          "name": "Showmethecash",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 49,
+            "gallop5": null,
+            "km_median": 74.2,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.04010602,
+          "rank": 9
         },
         {
           "raceId": "2026-11-07_9_12",
@@ -4447,29 +8165,7 @@
             "km_median": 74.95,
             "past_purse_log": 14.732
           },
-          "modelScore": 0.03618165,
-          "rank": 9
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 10,
-          "name": "Alfred Gratien",
-          "prestartFeatures": {
-            "post": 10.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.25,
-            "win5": 2,
-            "top3_5": 2,
-            "days_off": 13,
-            "gallop5": 1.0,
-            "km_median": 75.45,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.0284869,
+          "modelScore": 0.03857996,
           "rank": 10
         },
         {
@@ -4491,52 +8187,8 @@
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.02121793,
+          "modelScore": 0.03754772,
           "rank": 11
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 15,
-          "name": "Sir Håleryd",
-          "prestartFeatures": {
-            "post": 15.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 4.25,
-            "win5": 1,
-            "top3_5": 1,
-            "days_off": 35,
-            "gallop5": null,
-            "km_median": 74.5,
-            "past_purse_log": 16.118
-          },
-          "modelScore": 0.0199448,
-          "rank": 12
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 12,
-          "name": "Showmethecash",
-          "prestartFeatures": {
-            "post": 12.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.25,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 49,
-            "gallop5": null,
-            "km_median": 74.2,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.01970865,
-          "rank": 13
         },
         {
           "raceId": "2026-11-07_9_12",
@@ -4557,7 +8209,51 @@
             "km_median": 75.65,
             "past_purse_log": 14.732
           },
-          "modelScore": 0.01854804,
+          "modelScore": 0.02884774,
+          "rank": 12
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 10,
+          "name": "Alfred Gratien",
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 13,
+            "gallop5": 1.0,
+            "km_median": 75.45,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.02866707,
+          "rank": 13
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 15,
+          "name": "Sir Håleryd",
+          "prestartFeatures": {
+            "post": 15.0,
+            "distance": 2140.0,
+            "field": 15,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 4.25,
+            "win5": 1,
+            "top3_5": 1,
+            "days_off": 35,
+            "gallop5": null,
+            "km_median": 74.5,
+            "past_purse_log": 16.118
+          },
+          "modelScore": 0.02663561,
           "rank": 14
         },
         {
@@ -4579,7 +8275,7 @@
             "km_median": 75.25,
             "past_purse_log": 14.732
           },
-          "modelScore": 0.01364827,
+          "modelScore": 0.01640053,
           "rank": 15
         }
       ],
@@ -4595,8 +8291,8 @@
           "rank": 2
         },
         {
-          "number": 5,
-          "name": "Turner Ale",
+          "number": 8,
+          "name": "Snack",
           "rank": 3
         }
       ]

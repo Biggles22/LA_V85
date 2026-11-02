@@ -1,17 +1,43 @@
 {
   "contractVersion": 2,
-  "sourceRaces": 200,
-  "sourceStarts": 2360,
-  "eligibleRaces": 196,
-  "eligibleStarts": 2307,
-  "excludedRaces": 4,
+  "sourceRaces": 1068,
+  "sourceStarts": 12495,
+  "eligibleRaces": 1047,
+  "eligibleStarts": 12247,
+  "excludedRaces": 21,
   "legacyEligibleRaces": 0,
   "maskedLegacyGallopValues": 0,
   "exclusionReasons": {
-    "dead_heat_not_supported": 2,
-    "unknown_result": 2
+    "dead_heat_not_supported": 3,
+    "parser_rejected": 4,
+    "unknown_result": 14
   },
   "quarantine": [
+    {
+      "raceId": "2024-03-23_5_9",
+      "rows": 12,
+      "reason": "dead_heat_not_supported"
+    },
+    {
+      "raceId": "2024-09-28_6_6",
+      "rows": 12,
+      "reason": "parser_rejected"
+    },
+    {
+      "raceId": "2025-09-27_6_6",
+      "rows": 12,
+      "reason": "parser_rejected"
+    },
+    {
+      "raceId": "2026-03-07_18_7",
+      "rows": 5,
+      "reason": "parser_rejected"
+    },
+    {
+      "raceId": "2026-09-26_6_6",
+      "rows": 10,
+      "reason": "parser_rejected"
+    },
     {
       "raceId": "2026-10-24_7_7",
       "rows": 12,
@@ -23,6 +49,41 @@
       "reason": "dead_heat_not_supported"
     },
     {
+      "raceId": "2024-03-16_78_9",
+      "rows": 11,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2024-03-30_85_13",
+      "rows": 14,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2024-03-30_85_7",
+      "rows": 15,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2024-03-30_85_8",
+      "rows": 12,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2025-04-19_85_10",
+      "rows": 12,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2025-04-19_85_11",
+      "rows": 10,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2025-04-19_85_9",
+      "rows": 10,
+      "reason": "unknown_result"
+    },
+    {
       "raceId": "2026-03-14_78_12",
       "rows": 15,
       "reason": "unknown_result"
@@ -31,6 +92,31 @@
       "raceId": "2026-03-14_78_5",
       "rows": 15,
       "reason": "unknown_result"
+    },
+    {
+      "raceId": "2026-04-04_85_5",
+      "rows": 14,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2026-04-04_85_6",
+      "rows": 12,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2026-04-04_85_8",
+      "rows": 12,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2026-04-04_85_9",
+      "rows": 10,
+      "reason": "unknown_result"
+    },
+    {
+      "raceId": "2026-10-31_78_12",
+      "rows": 12,
+      "reason": "unknown_result"
     }
   ],
   "limitations": [
@@ -38,56 +124,56 @@
     "Historical final market shares are not archived prestart observations.",
     "A smaller complete-field subset is selected data, not validated betting evidence."
   ],
-  "sourceFile": "research/historical_pilot_v2.json",
-  "sourceSha256": "9e7cae5c8156565e78281e5f00e4e368b298d74c9e73181aead1c45113a6b6d9",
+  "sourceFile": "research/historical_expanded_2024_2026.json",
+  "sourceSha256": "e22dedcaa2c8c623ced57641b85dd1ae1025ab2b4c6caaa95b97be523e5c0975",
   "featureCoverage": {
     "auto": {
-      "observed": 2307,
+      "observed": 12247,
       "missing": 0
     },
     "days_off": {
-      "observed": 2307,
+      "observed": 12247,
       "missing": 0
     },
     "distance": {
-      "observed": 2307,
+      "observed": 12247,
       "missing": 0
     },
     "field": {
-      "observed": 2307,
+      "observed": 12247,
       "missing": 0
     },
     "form_place_mean": {
-      "observed": 2291,
-      "missing": 16
+      "observed": 12152,
+      "missing": 95
     },
     "gallop5": {
-      "observed": 275,
-      "missing": 2032
+      "observed": 1610,
+      "missing": 10637
     },
     "km_median": {
-      "observed": 1671,
-      "missing": 636
+      "observed": 8226,
+      "missing": 4021
     },
     "past_purse_log": {
-      "observed": 2181,
-      "missing": 126
+      "observed": 11462,
+      "missing": 785
     },
     "post": {
-      "observed": 2307,
+      "observed": 12247,
       "missing": 0
     },
     "starts5": {
-      "observed": 2307,
+      "observed": 12247,
       "missing": 0
     },
     "top3_5": {
-      "observed": 2291,
-      "missing": 16
+      "observed": 12152,
+      "missing": 95
     },
     "win5": {
-      "observed": 2291,
-      "missing": 16
+      "observed": 12152,
+      "missing": 95
     }
   }
 }

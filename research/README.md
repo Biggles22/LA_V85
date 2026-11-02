@@ -1,6 +1,6 @@
 # LA_V85 – historisk pilot med tidsseparerat test
 
-> **Återhämtning 2 november 2026:** 145 av 147 tidigare spärrade lopp har återställts från sparad rådata. Nu godkänns 196 lopp med 2 307 starter från 25 datum. CatBoost testas tidsordnat på 164 lopp: vinnaren finns i topp tre i 83 lopp och rankas först i 29. [Aktuell modell](CURRENT_MODEL.md), [återhämtning](DATA_QUALITY.md) och [datakontroll](training_data_quality_2026.json). De äldre resultaten nedan bevaras som historiska experiment; aktuella jämförelser använder `_v2.json`.
+> **Utökning 2 november 2026:** ATG-insamlingen omfattar nu 1 047 kontrollerade lopp och 12 247 starter från 145 lördagsomgångar 2024–2026, med både V75 och V85 i träningen. CatBoost testas enbart på senare V85: 222 topp-tre-träffar i 413 lopp. På samma 164 lopp som tidigare ökar topp-tre-träffarna från 83 till 91. [Aktuell modell](CURRENT_MODEL.md), [insamlingsrapport](history_expansion_2026.json), [aktuell utvärdering](expanded_model_evaluation_2026.json) och [datakontroll](training_data_quality_2026.json). De äldre resultaten nedan och tidigare `_v2.json`-rapporter bevaras som separata historiska experiment.
 
 
 Den här katalogen innehåller ett **forskningsförsök**, inte färdiga spelråd eller validerade vinstsannolikheter.

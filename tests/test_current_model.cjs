@@ -20,4 +20,17 @@ const history=JSON.parse(fs.readFileSync(model.training.source,'utf8'));
 assert.equal(require('node:crypto').createHash('sha256').update(fs.readFileSync(model.training.source)).digest('hex'),model.training.sha256);
 assert.ok(model.training.starts>=200&&model.training.starts<=history.rows.length);
 assert.ok(model.validation.metrics.races>=12);
+if(model.training.byGameType?.V75?.races){
+  const v=model.validation,p=v.racePredictions;
+  assert.equal(v.scope,'V85_ONLY');
+  assert.ok(p.every(r=>r.gameType==='V85'&&history.rows.some(h=>h.raceId===r.raceId&&h.gameType==='V85')));
+  assert.equal(p.length,v.metrics.races);
+  assert.equal(p.filter(r=>r.top3[0]===r.winner).length,v.metrics.top1Count);
+  assert.equal(p.filter(r=>r.top3.includes(r.winner)).length,v.metrics.top3Count);
+  assert.equal(model.training.byGameType.V75.races+model.training.byGameType.V85.races,model.training.races);
+  assert.ok(v.laterHoldout.trainUntil<v.laterHoldout.testFrom);
+  const evaluation=JSON.parse(fs.readFileSync('research/expanded_model_evaluation_2026.json','utf8'));
+  assert.equal(evaluation.training.sha256,model.training.sha256);
+  assert.deepEqual(evaluation.validation,model.validation);
+}
 console.log('PASS: actual model, 24 candidates, scratches, stale snapshot, identity, scores, duplicate legs and temporal checks');

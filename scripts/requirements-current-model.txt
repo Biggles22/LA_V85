@@ -1,2 +1,4 @@
 catboost==1.2.10
 numpy==2.3.5
+xgboost==3.4.1
+scikit-learn==1.9.1

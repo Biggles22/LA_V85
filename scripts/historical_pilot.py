@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import hashlib
+import gzip
 import json
 import math
 import pathlib
@@ -30,6 +31,7 @@ DEST = ROOT / "research/historical_pilot_v2.json"
 CACHE = ROOT / "research/raw-history"
 OFFLINE = False
 REQUEST_INTERVAL = 1.0
+COMPRESS_CACHE = False
 _last_request = 0.0
 USER_AGENT = "LA_V85/research-1.0 (Biggles22/LA_V85; low-frequency research)"
 # Saturdays spread over several months; no upcoming or live meetings.
@@ -67,7 +69,9 @@ def check_source_payload(path, value):
     if not isinstance(value, dict):
         raise ValueError('Historical API response is not an object')
     if path.startswith('/games/'):
-        if value.get('id') != path.split('/')[2] or not isinstance(value.get('races'), list) or len(value['races']) != 8:
+        game_type = path.split('/')[2].split('_')[0]
+        expected = {'V75': 7, 'V85': 8}.get(game_type)
+        if expected is None or value.get('id') != path.split('/')[2] or not isinstance(value.get('races'), list) or len(value['races']) != expected:
             raise ValueError('Historical game response has wrong identity or race count')
     elif path.startswith('/races/'):
         if value.get('id') != path.split('/')[2] or not isinstance(value.get('starts'), list):
@@ -76,13 +80,27 @@ def check_source_payload(path, value):
         raise ValueError('Historical calendar response has no games')
 
 
+def cache_path(path):
+    stem = CACHE / hashlib.sha256(path.encode()).hexdigest()
+    plain, packed = stem.with_suffix('.json'), stem.with_suffix('.json.gz')
+    if plain.exists():
+        return plain
+    return packed if packed.exists() or COMPRESS_CACHE else plain
+
+
+def cache_document(path):
+    source = cache_path(path)
+    raw = source.read_bytes()
+    return json.loads(gzip.decompress(raw) if source.suffix == '.gz' else raw)
+
+
 def get_json(path):
     global _last_request
     if not re.fullmatch(r"/(?:games|races|calendar/day)/[A-Za-z0-9_-]+(?:/extended)?", path):
         raise ValueError("Unexpected historical source path")
-    cache_file = CACHE / (hashlib.sha256(path.encode()).hexdigest() + '.json')
+    cache_file = cache_path(path)
     if cache_file.exists():
-        saved = json.loads(cache_file.read_text(encoding='utf-8'))
+        saved = cache_document(path)
         value = saved.get('payload')
         digest = hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
         if saved.get('sourceUrl') != BASE+path or saved.get('sha256') != digest or not isinstance(value, dict):
@@ -115,8 +133,11 @@ def get_json(path):
              'sha256': hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest(),
              'payload': value}
     CACHE.mkdir(parents=True, exist_ok=True)
-    with tempfile.NamedTemporaryFile(mode='w', encoding='utf8', dir=CACHE, delete=False) as out:
-        json.dump(saved, out, ensure_ascii=False)
+    encoded = json.dumps(saved, ensure_ascii=False).encode('utf-8')
+    if cache_file.suffix == '.gz':
+        encoded = gzip.compress(encoded, compresslevel=6, mtime=0)
+    with tempfile.NamedTemporaryFile(mode='wb', dir=CACHE, delete=False) as out:
+        out.write(encoded)
         temp = pathlib.Path(out.name)
     temp.replace(cache_file)
     return value
@@ -262,12 +283,13 @@ def features_from_history(start,race,race_day,field_size):
 
 
 def market_distribution(game, race_id):
+    game_type = str(game.get('id', '')).split('_')[0]
     for r in game.get("races",[]):
         if not isinstance(r,dict) or r.get("id")!=race_id:
             continue
         entries={}
         for s in r.get("starts",[]):
-            pct=number(((s.get("pools") or {}).get("V85") or {}).get("betDistribution"))
+            pct=number(((s.get("pools") or {}).get(game_type) or {}).get("betDistribution"))
             if pct is not None:
                 entries[s.get("number")]=pct/100
         return entries
@@ -277,8 +299,11 @@ def market_distribution(game, race_id):
 def parse_historical_race(race,game,date):
     day=dt.date.fromisoformat(date)
     rid=race.get("id")
+    game_type = str(game.get('id', '')).split('_')[0]
     if (race.get("status")!="results" or not isinstance(rid,str) or not rid.startswith(date+'_')
-            or not str(game.get('id','')).startswith('V85_'+date+'_')
+            or game_type not in ('V75', 'V85')
+            or not str(game.get('id','')).startswith(game_type+'_'+date+'_')
+            or race.get('sport', 'trot') != 'trot'
             or not isinstance(race.get("starts"),list)):
         return None
     # First construct the complete active field, independently of placing.
@@ -312,6 +337,7 @@ def parse_historical_race(race,game,date):
             "dataContractVersion":2,
             "date":date,"raceId":rid,"track":(race.get("track") or {}).get("name"),
             "gameId":game.get("id"),"number":start["number"],"horse":start["horse"]["name"],
+            "gameType":game_type,
             "horseId":start["horse"].get("id"),
             "winner":label,"resultStatus":status,"prestartFeatures":features,
             "featureCoverage":{"gallopObservedStarts":sum(r["hasGallopFlag"] for r in observed),

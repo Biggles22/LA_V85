@@ -1,4 +1,19 @@
-# Datakontroll och återhämtning 2 november 2026
+# Utökad ATG-historik 2 november 2026
+
+**Aktuellt underlag: 1 047 lopp och 12 247 starter.** ATG:s kalender har kontrollerats för samtliga 148 lördagar från januari 2024 till oktober 2026. 145 omgångar hittades; de tre midsommarlördagarna saknade V75/V85. Av 1 068 hämtade lopp klarar 1 047 modellens kontroller: 634 V75-lopp och 413 V85-lopp. Alla 196 tidigare godkända lopp finns kvar, med 851 nya. Underlaget omfattar 81 lopp på Bergsåker.
+
+21 lopp används inte: 14 med okända resultat, tre med dött lopp, tre montélopp och ett lopp med fem aktiva hästar. Modellen är avgränsad till vanliga travlopp med 6–20 aktiva hästar. Resultat saknas aldrig tyst som en antagen förlust.
+
+[Insamlingsrapport](history_expansion_2026.json) · [Utökad träningsdata](historical_expanded_2024_2026.json) · [Aktuell utvärdering](expanded_model_evaluation_2026.json) · [Aktuell datakontroll](training_data_quality_2026.json).
+
+Samtliga 1 361 källsvar är sparade med källa, hämtningstid och kontrollsumma. Nya råsvar är komprimerade utan informationsförlust. En ombyggnad utan nätverk gav identisk SHA-256 för träningsfilen. Den utökade tidskontrollen visar 3 089 förenliga övergångar av karriärstarter/segrar i 3 093 jämförbara par; fyra avvikelser finns dokumenterade. Karriärstatistik används fortsatt inte som modellvariabler. V75 och V85 får ingå i träningen, medan de aktuella testmåtten enbart avser senare V85-lopp.
+
+    python -m scripts.expand_historical --offline
+    python -m scripts.audit_historical_asof --expanded
+    python -m scripts.data_quality
+    python -m scripts.rank_current_catboost
+
+## Föregående återhämtning samma dag
 
 **Återhämtningen är genomförd:** 200 lopp från 25 V85-omgångar har hämtats som 225 råsvar. **196 lopp och 2 307 aktiva starter** klarar träningskontrollen. Av de tidigare 147 spärrade loppen har 145 återställts; alla 31 tidigare godkända lopp finns kvar och 20 kompletta lopp har tillkommit. Två lopp har okända resultat och två har dött lopp, vilket vinnarmodellen inte stöder. Dessa fyra lopp används inte i träningen.
 
