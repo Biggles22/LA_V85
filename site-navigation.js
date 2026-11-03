@@ -5,13 +5,13 @@
   const url=value=>new URL(value,root).href;
   const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const relative=path.startsWith(root.pathname)?path.slice(root.pathname.length):path;
-  const onCurrent=relative===''||relative==='index.html',onMethod=relative.startsWith('metod/')||relative.startsWith('research/');
+  const onCurrent=relative===''||relative==='index.html',onMethod=relative.startsWith('metod/')||relative.startsWith('research/'),onReview=relative.startsWith('efteranalys/');
   header.classList.add('site-header');
   const pageBrand=header.querySelector('.brand[data-site-brand]');
   const brand=pageBrand?pageBrand.outerHTML:'<a class="brand v75-brand" data-site-brand href="'+root.href+'" aria-label="V75travet.se – startsidan"><img class="v75-brand__mark" src="'+url('assets/v75travet-mark.svg')+'" width="48" height="48" alt=""><span class="v75-brand__type"><span class="v75-brand__name"><span>V75</span>travet<span class="v75-brand__domain">.se</span></span><span class="v75-brand__tagline">Skrällar &amp; spikar</span></span></a>';
-  header.innerHTML=brand+'<nav aria-label="Huvudnavigering"><div class="site-primary-nav"><a href="'+root.href+'" '+(onCurrent?'aria-current="page"':'')+'>Lördagens V85</a><a href="'+url('history/')+'" '+(!onCurrent&&!onMethod?'aria-current="page"':'')+'>Historik</a><a href="'+url('metod/')+'" '+(onMethod?'aria-current="page"':'')+'>Metod & resultat</a></div></nav>';
+  header.innerHTML=brand+'<nav aria-label="Huvudnavigering"><div class="site-primary-nav"><a href="'+root.href+'" '+(onCurrent?'aria-current="page"':'')+'>Lördagens V85</a><a href="'+url('history/')+'" '+(!onCurrent&&!onMethod&&!onReview?'aria-current="page"':'')+'>Historik</a><a href="'+url('efteranalys/')+'" '+(onReview?'aria-current="page"':'')+'>Veckans efteranalys</a><a href="'+url('metod/')+'" '+(onMethod?'aria-current="page"':'')+'>Metod & resultat</a></div></nav>';
   document.body.classList.toggle('is-current-round',onCurrent);
-  document.body.classList.toggle('is-history',!onCurrent&&!onMethod);
+  document.body.classList.toggle('is-history',!onCurrent&&!onMethod&&!onReview);
   fetch(url('rounds.json'),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(config=>{
     const current=config.rounds.find(r=>r.id===config.current);
     if(current)header.querySelector('.site-primary-nav a').title=current.track+' · '+current.date;
