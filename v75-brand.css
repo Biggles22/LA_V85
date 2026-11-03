@@ -1,9 +1,10 @@
-/* Homepage branding; race data, navigation and archived pages keep their behavior. */
+/* Shared V75travet.se identity for the homepage, archives and reports. */
 .sidebar .brand.v75-brand {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
   gap: 11px;
+  padding: 0;
   color: #153650;
   text-decoration: none;
   white-space: nowrap;

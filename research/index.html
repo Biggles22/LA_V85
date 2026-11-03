@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LA_V85 · Historisk AI-pilot</title>
+<title>V75travet.se · Historisk AI-pilot</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#1e3045;background:#f4f7fb}
 *{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:0 auto;padding:28px 18px 60px}
@@ -15,7 +15,9 @@ table{width:100%;border-collapse:collapse;min-width:700px}th,td{padding:11px 14p
 a{color:#075ba5}.muted{color:#52647c}footer{margin-top:20px;font-size:13px;color:#52647c}
 </style>
 <link rel="stylesheet" href="../site-shell.css?v=20261101">
-</head><body><header class="sidebar"></header><main>
+<link rel="stylesheet" href="../v75-brand.css?v=20261103-all">
+<link rel="icon" type="image/svg+xml" href="../assets/v75travet-mark.svg">
+</head><body><header class="sidebar"><a class="brand v75-brand" data-site-brand href="../" aria-label="V75travet.se – startsidan"><img class="v75-brand__mark" src="../assets/v75travet-mark.svg" width="48" height="48" alt=""><span class="v75-brand__type"><span class="v75-brand__name"><span>V75</span>travet<span class="v75-brand__domain">.se</span></span><span class="v75-brand__tagline">Skrällar &amp; spikar</span></span></a></header><main>
 <a href="../metod/">← Metod & resultat</a>
 <p class="eyebrow">FORSKNING · INTE SPELRÅD</p>
 <h1>Historiska V85-lopp och vår AI-testmodell</h1>
@@ -47,4 +49,4 @@ el.innerHTML='<h2>Första tidsseparerade testet</h2>'+
 (d.racePredictions||[]).map(r=>'<tr><td>'+esc(r.date)+'</td><td>'+esc(r.raceId)+'</td><td>'+r.topModel.map(x=>esc(x.number+' '+x.horse)).join(' / ')+'</td><td>'+esc((r.winnerNumbers||[]).join(','))+'</td><td>'+(r.winnerInTop3?'Ja':'Nej')+'</td></tr>').join('')+'</tbody></table></div>';
 }).catch(()=>{el.innerHTML='<div class="notice"><strong>Ingen verifierad modellrapport ännu.</strong> Historikinsamlingen eller valideringen är inte klar, eller har misslyckats. Vi visar inte påhittad statistik. Se <a href="https://github.com/Biggles22/LA_V85/actions/workflows/historical-pilot.yml">GitHub Actions</a> för exakt status.</div>'});
 })();
-</script><script src="./walkforward.js?v=20261027-v1" defer></script><script src="./feature-trial.js?v=20261027-v1" defer></script><script src="./opposition-expanded.js?v=20261027-v1" defer></script><script src="./actual-opponent.js?v=20261027-v1" defer></script><script src="./frozen-forecasts.js?v=20261027-v1" defer></script><script src="./catboost.js?v=20261101-v1" defer></script><script src="../site-navigation.js?v=20261101" defer></script></body></html>
+</script><script src="./walkforward.js?v=20261027-v1" defer></script><script src="./feature-trial.js?v=20261027-v1" defer></script><script src="./opposition-expanded.js?v=20261027-v1" defer></script><script src="./actual-opponent.js?v=20261027-v1" defer></script><script src="./frozen-forecasts.js?v=20261027-v1" defer></script><script src="./catboost.js?v=20261101-v1" defer></script><script src="../site-navigation.js?v=20261103-all" defer></script></body></html>

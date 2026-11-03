@@ -7,8 +7,8 @@
   const relative=path.startsWith(root.pathname)?path.slice(root.pathname.length):path;
   const onCurrent=relative===''||relative==='index.html',onMethod=relative.startsWith('metod/')||relative.startsWith('research/');
   header.classList.add('site-header');
-  const homeBrand=onCurrent&&header.querySelector('.brand[data-home-brand]');
-  const brand=homeBrand?homeBrand.outerHTML:'<a class="brand" href="'+root.href+'"><span class="brand-mark">LA</span><span>LA_V85</span></a>';
+  const pageBrand=header.querySelector('.brand[data-site-brand]');
+  const brand=pageBrand?pageBrand.outerHTML:'<a class="brand v75-brand" data-site-brand href="'+root.href+'" aria-label="V75travet.se – startsidan"><img class="v75-brand__mark" src="'+url('assets/v75travet-mark.svg')+'" width="48" height="48" alt=""><span class="v75-brand__type"><span class="v75-brand__name"><span>V75</span>travet<span class="v75-brand__domain">.se</span></span><span class="v75-brand__tagline">Skrällar &amp; spikar</span></span></a>';
   header.innerHTML=brand+'<nav aria-label="Huvudnavigering"><div class="site-primary-nav"><a href="'+root.href+'" '+(onCurrent?'aria-current="page"':'')+'>Lördagens V85</a><a href="'+url('history/')+'" '+(!onCurrent&&!onMethod?'aria-current="page"':'')+'>Historik</a><a href="'+url('metod/')+'" '+(onMethod?'aria-current="page"':'')+'>Metod & resultat</a></div></nav>';
   document.body.classList.toggle('is-current-round',onCurrent);
   document.body.classList.toggle('is-history',!onCurrent&&!onMethod);

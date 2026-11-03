@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0057b8">
-  <meta name="description" content="LA_V85 samlar veckans V85-tips och hjälper dig bygga ditt system.">
-  <title>LA_V85 — historik och analys Boden 3 oktober 2026</title>
+  <meta name="description" content="V75travet.se samlar veckans V85-tips och hjälper dig bygga ditt system.">
+  <title>V75travet.se — historik och analys Boden 3 oktober 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -376,16 +376,18 @@
 
   </style>
   <link rel="stylesheet" href="../../round-navigation.css?v=20261001-wide">
-<link rel="stylesheet" href="../../history-layout.css"><link rel="stylesheet" href="../../site-shell.css?v=20261019-1805"></head>
+<link rel="stylesheet" href="../../history-layout.css"><link rel="stylesheet" href="../../site-shell.css?v=20261019-1805"><link rel="stylesheet" href="../../v75-brand.css?v=20261103-all">
+<link rel="icon" type="image/svg+xml" href="../../assets/v75travet-mark.svg">
+</head>
 <body>
   <div class="shell">
     <aside class="sidebar" aria-label="Huvudmeny">
-      <a class="brand" href="#top" aria-label="LA_V85 startsida"><span class="brand-mark">LA</span><span class="brand-name">LA_V85</span></a>
+      <a class="brand v75-brand" data-site-brand href="../../" aria-label="V75travet.se – startsidan"><img class="v75-brand__mark" src="../../assets/v75travet-mark.svg" width="48" height="48" alt=""><span class="v75-brand__type"><span class="v75-brand__name"><span>V75</span>travet<span class="v75-brand__domain">.se</span></span><span class="v75-brand__tagline">Skrällar &amp; spikar</span></span></a>
       <nav aria-label="V85-omgångar"><div class="nav-section"><div class="nav-label">Aktuell omgång</div><a class="nav-link " href="../../" ><span class="nav-icon">◷</span><span>Solvalla<br><small>10 okt 2026 · aktuell</small></span></a></div><div class="nav-section"><div class="nav-label">Historik</div><a class="nav-link " href="../../history/" ><span class="nav-icon">▣</span><span>Historik<br><small>Resultat och lärdomar</small></span></a><a class="nav-link active" href="../../archive/2026-10-03-boden/" aria-current="page"><span class="nav-icon">↳</span><span>Boden<br><small>3 okt 2026 · avslutad</small></span></a></div></nav>
       <div class="side-bottom"><div class="responsible"><strong>Spela ansvarsfullt</strong>Tips är inspiration, aldrig en garanti. Sätt en gräns innan du spelar.</div></div>
     </aside>
     <main id="top">
-      <div class="topbar"><div class="breadcrumb">HISTORIK&nbsp; / &nbsp;<span>Boden · 3 okt 2026</span></div><div class="top-actions"><button class="icon-button" type="button" aria-label="Hjälp" title="Om LA_V85">i</button><div class="avatar" aria-label="Profil LA">LA</div></div></div>
+      <div class="topbar"><div class="breadcrumb">HISTORIK&nbsp; / &nbsp;<span>Boden · 3 okt 2026</span></div><div class="top-actions"><button class="icon-button" type="button" aria-label="Hjälp" title="Om V75travet.se">i</button><div class="avatar" aria-label="Profil LA">LA</div></div></div>
       <div class="layout">
         <section class="main-column" aria-labelledby="page-title">
           <div class="eyebrow"><span class="live-dot"></span>AVSLUTAD OMGÅNG · BODEN 3 OKT 2026</div>
@@ -1149,7 +1151,7 @@
       showToast(`V85-${leg}, nr ${number}: ${percent.toLocaleString("sv-SE")} %. Rankningen uppdaterad.`);
     });
     document.querySelector("#percent-input").addEventListener("keydown", event => { if (event.key === "Enter") document.querySelector("#set-percent").click(); });
-    document.querySelector(".icon-button").addEventListener("click", () => showToast("LA_V85 är en fristående tipsida, inte en del av ATG."));
+    document.querySelector(".icon-button").addEventListener("click", () => showToast("V75travet.se är en fristående tipsida, inte en del av ATG."));
     update();
 
     const radarWatchKey = "la-v85-watch-2026-10-03";
@@ -1294,5 +1296,5 @@
     setInterval(updateReliability, 60000);
 
   </script>
-<script src="../../site-navigation.js?v=20261019-1805" defer></script></body>
+<script src="../../site-navigation.js?v=20261103-all" defer></script></body>
 </html>

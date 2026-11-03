@@ -2,7 +2,7 @@
 <html lang="sv">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LA_V85 | Morgonrapport Bjerke 31 oktober 2026</title>
+<title>V75travet.se | Morgonrapport Bjerke 31 oktober 2026</title>
 <meta name="description" content="Bjerke V85 morgonrapport med senaste ATG-snapshot, historisk form, experimentell AI-ranking, spikar och skrällsignaler.">
 <style>
 :root{color-scheme:dark;--bg:#f4f7fb;--panel:#ffffff;--line:#d9e3ee;--text:#153650;--muted:#526879;--gold:#946117;--accent:#075dbd}
@@ -14,12 +14,14 @@ section{background:var(--panel);border:1px solid var(--line);border-radius:14px;
 table{width:100%;border-collapse:collapse;font-size:.89rem;white-space:nowrap}th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child,th:nth-child(2),td:nth-child(2),th:last-child,td:last-child{text-align:left}
 th{color:#153650;background:#edf3f9;position:sticky;top:0}tr:nth-child(even){background:#f5f8fb}.scroll{overflow-x:auto}.strike{opacity:.5;text-decoration:line-through}.top{color:var(--gold);font-weight:700}.racesummary{margin-bottom:14px}.error{color:#ffc4c4}
 </style>
-<link rel="stylesheet" href="./site-shell.css?v=20261101"></head>
-<body><header class="sidebar"></header><main>
+<link rel="stylesheet" href="./site-shell.css?v=20261101"><link rel="stylesheet" href="./v75-brand.css?v=20261103-all">
+<link rel="icon" type="image/svg+xml" href="./assets/v75travet-mark.svg">
+</head>
+<body><header class="sidebar"><a class="brand v75-brand" data-site-brand href="./" aria-label="V75travet.se – startsidan"><img class="v75-brand__mark" src="./assets/v75travet-mark.svg" width="48" height="48" alt=""><span class="v75-brand__type"><span class="v75-brand__name"><span>V75</span>travet<span class="v75-brand__domain">.se</span></span><span class="v75-brand__tagline">Skrällar &amp; spikar</span></span></a></header><main>
 <nav><a href="./archive/2026-10-31-bjerke/forhand.html">← Bjerkes förhandsarkiv</a><a href="./research/#frozen-v85-forecasts">Fryst modelljämförelse</a><a href="./history/">Historik</a><a href="https://www.atg.se/spel/2026-10-31/V85/bjerke" target="_blank" rel="noopener">ATG:s V85</a></nav>
 <p class="eyebrow">Bjerke · Lördag 31 oktober 2026 · Start 15.00</p>
 <h1>Morgonrapport: hela V85-fältet</h1>
-<p>Denna sida läser de senaste publicerade ATG- och formfilerna från LA_V85 när den öppnas. AI-kolumnen är däremot den <strong>oföränderliga fredagsprognosen</strong>, så att en prognos inte i efterhand kan anpassas till marknaden.</p>
+<p>Denna sida läser de senaste publicerade ATG- och formfilerna från V75travet.se när den öppnas. AI-kolumnen är däremot den <strong>oföränderliga fredagsprognosen</strong>, så att en prognos inte i efterhand kan anpassas till marknaden.</p>
 <div class="notice"><strong>Viktigt:</strong> AI-poängen är normaliserade forskningspoäng, inte kalibrerade vinstchanser. Spik- och skrällistorna är automatiska <strong>marknadssignaler</strong>, inte färdiga spelrekommendationer. Historisk testning har inte visat att AI-modellen slår ATG-marknaden.</div>
 <section><h2>Datastatus</h2><div id="status">Läser de senaste filerna …</div></section>
 <section><h2>Marknadens spikar och skrällsignaler</h2><div id="candidates">Läser rekommendationer …</div></section>
@@ -67,4 +69,4 @@ $('races').innerHTML=all;
 }).catch(e=>{const msg='<p class="error">Kunde inte läsa en eller flera källfiler: '+esc(e.message)+'. Öppna ATG eller försök igen.</p>';$('status').innerHTML=msg;$('candidates').innerHTML=msg;$('races').innerHTML=msg});
 })();
 </script>
-<script src="./site-navigation.js?v=20261101" defer></script></body></html>
+<script src="./site-navigation.js?v=20261103-all" defer></script></body></html>
