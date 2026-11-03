@@ -7,7 +7,9 @@
   const relative=path.startsWith(root.pathname)?path.slice(root.pathname.length):path;
   const onCurrent=relative===''||relative==='index.html',onMethod=relative.startsWith('metod/')||relative.startsWith('research/');
   header.classList.add('site-header');
-  header.innerHTML='<a class="brand" href="'+root.href+'"><span class="brand-mark">LA</span><span>LA_V85</span></a><nav aria-label="Huvudnavigering"><div class="site-primary-nav"><a href="'+root.href+'" '+(onCurrent?'aria-current="page"':'')+'>Lördagens V85</a><a href="'+url('history/')+'" '+(!onCurrent&&!onMethod?'aria-current="page"':'')+'>Historik</a><a href="'+url('metod/')+'" '+(onMethod?'aria-current="page"':'')+'>Metod & resultat</a></div></nav>';
+  const homeBrand=onCurrent&&header.querySelector('.brand[data-home-brand]');
+  const brand=homeBrand?homeBrand.outerHTML:'<a class="brand" href="'+root.href+'"><span class="brand-mark">LA</span><span>LA_V85</span></a>';
+  header.innerHTML=brand+'<nav aria-label="Huvudnavigering"><div class="site-primary-nav"><a href="'+root.href+'" '+(onCurrent?'aria-current="page"':'')+'>Lördagens V85</a><a href="'+url('history/')+'" '+(!onCurrent&&!onMethod?'aria-current="page"':'')+'>Historik</a><a href="'+url('metod/')+'" '+(onMethod?'aria-current="page"':'')+'>Metod & resultat</a></div></nav>';
   document.body.classList.toggle('is-current-round',onCurrent);
   document.body.classList.toggle('is-history',!onCurrent&&!onMethod);
   fetch(url('rounds.json'),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(config=>{

@@ -1,0 +1,38 @@
+/* Homepage branding; race data, navigation and archived pages keep their behavior. */
+.sidebar .brand.v75-brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 11px;
+  color: #153650;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.v75-brand__mark {
+  display: block;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px #15365018;
+}
+
+.v75-brand__type { display: grid; gap: 4px; }
+.v75-brand__name {
+  font: 800 25px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+  letter-spacing: -.045em;
+}
+.v75-brand__name > span:first-child { color: #095dbe; }
+.v75-brand__domain { color: #526879; font-weight: 600; }
+.v75-brand__tagline {
+  color: #526879;
+  font: 700 9px/1.2 system-ui, -apple-system, "Segoe UI", sans-serif;
+  letter-spacing: .19em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .v75-brand__mark { width: 44px; height: 44px; flex-basis: 44px; }
+  .v75-brand__name { font-size: 24px; }
+}

@@ -97,7 +97,7 @@
     const day=new Date(round.date+'T12:00:00+01:00');
     $('#round-track').textContent=round.track+'.';$('#hero-date').textContent=day.toLocaleDateString('sv-SE',{timeZone:'Europe/Stockholm',day:'numeric',month:'long',year:'numeric'}).toUpperCase();
     $('#round-date').textContent=day.toLocaleDateString('sv-SE',{timeZone:'Europe/Stockholm',weekday:'long',day:'numeric',month:'long'});
-    document.title=round.track+' '+$('#round-date').textContent+' · Skrällar & spikar | LA_V85';
+    document.title=round.track+' '+$('#round-date').textContent+' · Skrällar & spikar | V75travet.se';
     if(/^https:\/\/www\.atg\.se\//.test(round.sourceUrl))$('#official-link').href=round.sourceUrl;
     storageKey='LA_V85_SELECTION_'+round.id;
     try{const stored=JSON.parse(localStorage.getItem(storageKey)||'null');if(stored&&typeof stored==='object')state={selections:stored.selections||{},stake:D.finite(stored.stake)&&stored.stake>0?stored.stake:null,frozen:Array.isArray(stored.frozen)?stored.frozen.filter(f=>f?.kind==='LOCAL_PRESTART_SELECTION'&&f.roundId===round.id&&D.instant(f.frozenAt)):[]};}catch{}

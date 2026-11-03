@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
+  <title>V75travet – hästsymbol</title>
+  <defs>
+    <linearGradient id="blue" x1="8" y1="4" x2="65" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#146dcc"/>
+      <stop offset="1" stop-color="#123654"/>
+    </linearGradient>
+  </defs>
+  <rect width="72" height="72" rx="20" fill="url(#blue)"/>
+  <path d="M16 51c2-15 9-27 23-33l-3 11c-9 5-12 13-12 22Z" fill="#78c2f2"/>
+  <path d="m37 15 5 6 7-7-1 13 10 13c2 3 0 6-3 7l-7 2-7-7c-5 3-7 8-8 14H21c1-13 5-23 13-29Z" fill="#fff"/>
+  <path d="m47 34 3 1" stroke="#123654" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="m45 45 8-3" stroke="#146dcc" stroke-width="2" stroke-linecap="round"/>
+  <path d="M13 60c13-3 29-3 46-1" stroke="#e8b968" stroke-width="3" stroke-linecap="round"/>
+  <path d="M11 39h10M9 46h8" stroke="#78c2f2" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
