@@ -3,8 +3,8 @@
   "kind": "CATBOOST_PRESTART_RANKING",
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "cacf07c337bc9e7202ba8b68f1cedc95c06f570eca4a0c5181c36b4f24a92b45",
-  "generatedAt": "2026-11-02T12:16:31.358097+00:00",
+  "snapshotId": "b6a6eb9d5515a532e11ef53f07b18967886938e8eccea2eb46f6baea8e6e82e6",
+  "generatedAt": "2026-11-04T15:06:04.081300+00:00",
   "model": "CatBoostClassifier",
   "parameters": {
     "iterations": 220,
@@ -5719,42 +5719,42 @@
     {
       "raceId": "2026-11-07_9_5",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_5/extended",
-      "sha256": "a1982c8d02209ca93b4c3a4cf7d12b048d75fc2b909a686717f5c56d51fbc0c9"
+      "sha256": "825082bac45a07d16aaf38262e0e137fb7022ca21676b65ea62e2b83d2ab3e21"
     },
     {
       "raceId": "2026-11-07_9_6",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_6/extended",
-      "sha256": "e4d981c1fd4f1a36cee03099cad0ca93abecb7c13672d83e77ba9c4c3b079f93"
+      "sha256": "a81e549c1c2e045453f0cfa4136e04d544d6fc63bcd70fe3bb536cb0a603273d"
     },
     {
       "raceId": "2026-11-07_9_7",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_7/extended",
-      "sha256": "22ac6decd05cb9d1ad04344d83defc7f61421845185efd08893aaae65d44c8da"
+      "sha256": "f936c29813a64617868b0e423a64d2d68acd297cbe52d905c2ea78a48c37db7c"
     },
     {
       "raceId": "2026-11-07_9_8",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_8/extended",
-      "sha256": "5869b1f91f36884ce64595bfb80437a1d7ad333edfce98bcf21fa5ec690f7c40"
+      "sha256": "e49c651c7368dc2cc90269c5c1d50bc411cdd1f3c02462e5a2de3d5a9eeeb566"
     },
     {
       "raceId": "2026-11-07_9_9",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_9/extended",
-      "sha256": "2ce25dd25d68e62f69a273964c9b7ef4fa65df692c640def437285a444fcb196"
+      "sha256": "dbe386caf0c8c2f449300d7454fd3785e2f8dbde417deb6053d1152b5fd243f3"
     },
     {
       "raceId": "2026-11-07_9_10",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_10/extended",
-      "sha256": "9b3545d8e6d7a5c4c2bc92acb1692ee78722d490c4f9c8efc8ef8fe8a5390053"
+      "sha256": "d1a26a0e26b72b50dc63cf312a1490a025c5b936eedffbd28579208c4f0a854f"
     },
     {
       "raceId": "2026-11-07_9_11",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_11/extended",
-      "sha256": "fb41eeca31bfedaa07806ab53203c5e0f9806fa7e8dbcd65f6b1e00b6f609816"
+      "sha256": "9ad8daad75138f6ca2000c70aaaeed56ab231785cdb233e04d80b0676c8f13d4"
     },
     {
       "raceId": "2026-11-07_9_12",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_12/extended",
-      "sha256": "9550b84f5bebc5dc69c5512998078cbc679e2c004e0e7c1a83d14b1b12f0fab3"
+      "sha256": "9c1f2f8a69f50b82b171d6c15e3bb3a98395bcd65ebaed1ea44576a1ef754b73"
     }
   ],
   "limitations": "Experimentell ranking från utvalda kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, aktuellt resultat, hästnamn, kusk, tränare och karriärstatistik ingår inte som modellvariabler. Galoppvariabeln är avstängd för jämförbarhet med grundförsöket. Testet är retrospektivt och visar inte lönsamhet.",
@@ -7669,7 +7669,7 @@
           "prestartFeatures": {
             "post": 6.0,
             "distance": 2640.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 1.25,
@@ -7680,30 +7680,8 @@
             "km_median": null,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.31276666,
+          "modelScore": 0.36865897,
           "rank": 1
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 2,
-          "name": "Dropthegloves",
-          "prestartFeatures": {
-            "post": 2.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 1.667,
-            "win5": 2,
-            "top3_5": 3,
-            "days_off": 21,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.202
-          },
-          "modelScore": 0.09745418,
-          "rank": 2
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7713,7 +7691,7 @@
           "prestartFeatures": {
             "post": 10.0,
             "distance": 2640.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.5,
@@ -7724,30 +7702,30 @@
             "km_median": null,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.08501956,
-          "rank": 3
+          "modelScore": 0.09516786,
+          "rank": 2
         },
         {
           "raceId": "2026-11-07_9_11",
           "leg": 7,
-          "number": 3,
-          "name": "Don't Forget Me",
+          "number": 2,
+          "name": "Dropthegloves",
           "prestartFeatures": {
-            "post": 3.0,
+            "post": 2.0,
             "distance": 2640.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 3.4,
-            "win5": 0,
-            "top3_5": 2,
-            "days_off": 17,
+            "form_place_mean": 1.667,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 21,
             "gallop5": null,
             "km_median": null,
-            "past_purse_log": 15.895
+            "past_purse_log": 15.202
           },
-          "modelScore": 0.07186908,
-          "rank": 4
+          "modelScore": 0.09422093,
+          "rank": 3
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7757,7 +7735,7 @@
           "prestartFeatures": {
             "post": 4.0,
             "distance": 2640.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.25,
@@ -7768,52 +7746,30 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.0665795,
-          "rank": 5
+          "modelScore": 0.07474683,
+          "rank": 4
         },
         {
           "raceId": "2026-11-07_9_11",
           "leg": 7,
-          "number": 7,
-          "name": "Mastroianni",
+          "number": 3,
+          "name": "Don't Forget Me",
           "prestartFeatures": {
-            "post": 7.0,
+            "post": 3.0,
             "distance": 2640.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 3,
-            "win5": 1,
+            "form_place_mean": 3.4,
+            "win5": 0,
             "top3_5": 2,
-            "days_off": 38,
-            "gallop5": null,
-            "km_median": 74.45,
-            "past_purse_log": 16.418
-          },
-          "modelScore": 0.05636649,
-          "rank": 6
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 8,
-          "name": "Seven Mounds",
-          "prestartFeatures": {
-            "post": 8.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.2,
-            "win5": 2,
-            "top3_5": 3,
-            "days_off": 20,
+            "days_off": 17,
             "gallop5": null,
             "km_median": null,
-            "past_purse_log": 15.83
+            "past_purse_log": 15.895
           },
-          "modelScore": 0.05344176,
-          "rank": 7
+          "modelScore": 0.06613322,
+          "rank": 5
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7823,7 +7779,7 @@
           "prestartFeatures": {
             "post": 5.0,
             "distance": 2640.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.5,
@@ -7834,8 +7790,30 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.05187886,
-          "rank": 8
+          "modelScore": 0.05693218,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 8,
+          "name": "Seven Mounds",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2640.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.2,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 20,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.83
+          },
+          "modelScore": 0.05446192,
+          "rank": 7
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7845,7 +7823,7 @@
           "prestartFeatures": {
             "post": 1.0,
             "distance": 2640.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.25,
@@ -7856,7 +7834,29 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.05083219,
+          "modelScore": 0.05318582,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 7,
+          "name": "Mastroianni",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2640.0,
+            "field": 11,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 38,
+            "gallop5": null,
+            "km_median": 74.45,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.04894092,
           "rank": 9
         },
         {
@@ -7867,7 +7867,7 @@
           "prestartFeatures": {
             "post": 12.0,
             "distance": 2640.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3,
@@ -7878,30 +7878,8 @@
             "km_median": 74.8,
             "past_purse_log": 16.341
           },
-          "modelScore": 0.0443887,
+          "modelScore": 0.04357256,
           "rank": 10
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 9,
-          "name": "Jayden de Joudes",
-          "prestartFeatures": {
-            "post": 9.0,
-            "distance": 2640.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.25,
-            "win5": 0,
-            "top3_5": 4,
-            "days_off": 12,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.03398457,
-          "rank": 11
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7911,7 +7889,7 @@
           "prestartFeatures": {
             "post": 11.0,
             "distance": 2640.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3,
@@ -7922,8 +7900,8 @@
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.03053132,
-          "rank": 12
+          "modelScore": 0.03005705,
+          "rank": 11
         }
       ],
       "top3": [
@@ -7933,13 +7911,13 @@
           "rank": 1
         },
         {
-          "number": 2,
-          "name": "Dropthegloves",
+          "number": 10,
+          "name": "Last Cool Cash",
           "rank": 2
         },
         {
-          "number": 10,
-          "name": "Last Cool Cash",
+          "number": 2,
+          "name": "Dropthegloves",
           "rank": 3
         }
       ]

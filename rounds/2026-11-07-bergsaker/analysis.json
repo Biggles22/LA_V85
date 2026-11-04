@@ -1,9 +1,43 @@
 {
   "schemaVersion": 1,
   "roundId": "2026-11-07-bergsaker",
-  "gameId": null,
-  "version": 1,
-  "reviewedAt": null,
-  "snapshotId": null,
-  "picks": []
+  "gameId": "V85_2026-11-07_9_5",
+  "version": 2,
+  "reviewedAt": "2026-11-04T15:08:54.567624+00:00",
+  "snapshotId": "b6a6eb9d5515a532e11ef53f07b18967886938e8eccea2eb46f6baea8e6e82e6",
+  "picks": [
+    {
+      "leg": 3,
+      "number": 8,
+      "name": "Ellbert",
+      "type": "outsider",
+      "reason": "Tvåa i båda modellerna och två segrar på fem starter. Vid 8,72 procent är Ellbert en skrällkandidat att granska. Möjlig väg till seger är ett lopp med ryggar och sparad speed. Anmäld med skor och amerikansk vagn, med vagnändring; detta är en uppgift att kontrollera, ingen bevisad förbättring.",
+      "risk": "Spår 8 försvårar positionen. Spetschans och tempo är inte verifierade, och utrustningen kan ändras.",
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5"
+      ]
+    },
+    {
+      "leg": 8,
+      "number": 8,
+      "name": "Snack",
+      "type": "outsider",
+      "reason": "Trea i historikmodellen och tvåa i den utökade modellen vid 5,04 procent. En seger och två topp-tre-placeringar på fem starter ger stöd för fortsatt granskning. Behöver ett lopp där avslutningen kommer till sin rätt efter ett ekonomiskt lopp. Anmäld barfota fram, sko bak och vanlig vagn.",
+      "risk": "Spår 8 innebär positionsrisk. Begränsad segerform, oklar loppbild och ingen kalibrerad vinstchans.",
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 5,
+      "name": "Good Wine",
+      "type": "outsider",
+      "reason": "Historikmodellens förstaval vid 4,37 procent: en seger och fyra topp-tre på fem starter. Kan vara intressant om formen håller och hästen får en gynnsam resa från spår 5. Anmäld sko fram, barfota bak och vanlig vagn.",
+      "risk": "Den utökade modellen rankar hästen som åtta. Detta är en tydlig modellkonflikt; gynnsamt tempo och resa är villkor, inte verifierade prognoser.",
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5"
+      ]
+    }
+  ]
 }

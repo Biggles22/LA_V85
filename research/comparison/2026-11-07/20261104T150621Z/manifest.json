@@ -1,0 +1,35 @@
+{
+  "automationId": "uppdatera-la-v85-torsdag-och-fredag",
+  "manualTest": true,
+  "capturedAt": "2026-11-04T15:06:21.897349+00:00",
+  "sourceAt": "2026-11-04 15:37:30",
+  "roundId": "2026-11-07-bergsaker",
+  "gameId": "V85_2026-11-07_9_5",
+  "modelCodeSha256": "505dc5af75dfb38ef1bf95202f587160a3744d8ee042548d929db04426fe50ae",
+  "spikes": [],
+  "spikeReason": "No calibrated >50% win probability available",
+  "system": null,
+  "limitations": [
+    "Expanded model uses historical final markets; retrospective holdout is not a prestart performance estimate.",
+    "Early odds and shares disagree strongly. Equipment is provisional.",
+    "No independently verified pace, lead probability or calibration."
+  ],
+  "files": {
+    "analysis.json": "29b547efbd77830b7c1171e8a90dfc77b14a61b93008a84c834ab934efbb22d2",
+    "connections.json": "142542c78cef2ffecf7fad103544e7fbfdd494604436d44b3c285553d6ca3da2",
+    "data.json": "a3557216707e4f77bf0b15bca031dcd84d6ea4283cff09968fd5c26b2c5ba293",
+    "form.json": "2df1e0fa58b768acff0270ef9978ca99f26ab5ce30804daa56253895afc09b00",
+    "model.json": "42c64fb46035dc920a362cee3ce3851558494d01a58fdeef63c42ec39905be71",
+    "models.json": "a4eef79b8052722f8ef867b153fc5fe8818fd58a000dd167005f9cbd9a4feb41",
+    "raw\\20261104T150621Z_2026-11-07_9_10.json": "676c98c0ea011e91d2017b4827279a0ef52dbd1a8483113a851592e45a6faad8",
+    "raw\\20261104T150621Z_2026-11-07_9_11.json": "cb8d215433970a49da231a72bdd18e01715f1b0d0d897221735bd495ea383bd1",
+    "raw\\20261104T150621Z_2026-11-07_9_12.json": "acfb4fd3fbc3d18b475cfdb8040ec9caaffe79427162294f51d58cbb678c1796",
+    "raw\\20261104T150621Z_2026-11-07_9_5.json": "0e23da5a703b97368b6d1e64e9dfd70c70d1b486eef929d6c0b654df35c2194a",
+    "raw\\20261104T150621Z_2026-11-07_9_6.json": "4a50f215b3b3bdfce6ff7f421c0d6b7c06d682dffda173979c5a2d3aef4bd088",
+    "raw\\20261104T150621Z_2026-11-07_9_7.json": "cac4b107a2b12d4d54d1b0cd1dc38980020f82b03953d98b85d449d717abf863",
+    "raw\\20261104T150621Z_2026-11-07_9_8.json": "c5b0d42d930b12865dfc14bfb59ad4f4752a78270a1e2397de0b8ddc117bf057",
+    "raw\\20261104T150621Z_2026-11-07_9_9.json": "750c2629402b27aca1c46c7f1f939a01ee750cde350f4a9429385c009cf60e90",
+    "raw\\20261104T150621Z_game.json": "239463d3044c57cbec0b8d6ca1e3bd4ac3acda612c9ce09a023c48f571a6a5b0"
+  },
+  "comparisonImplementation": "scripts/compare_current_models.py"
+}

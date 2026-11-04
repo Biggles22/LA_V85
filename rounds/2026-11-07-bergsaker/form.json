@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "cacf07c337bc9e7202ba8b68f1cedc95c06f570eca4a0c5181c36b4f24a92b45",
-  "retrievedAt": "2026-11-02T13:16:30.356006+01:00",
+  "snapshotId": "b6a6eb9d5515a532e11ef53f07b18967886938e8eccea2eb46f6baea8e6e82e6",
+  "retrievedAt": "2026-11-04T16:06:01.338513+01:00",
   "method": "Preliminär delranking från historisk form, klass och tempo/spår där underlag finns. Ingen kalibrerad vinstchans eller tränad XGBoost/CatBoost-prognos.",
   "races": [
     {
@@ -7741,7 +7741,7 @@
           "scores": {
             "form": 3.18,
             "pace": null,
-            "class": 2.6,
+            "class": 2.57,
             "gear": null,
             "risk": null
           },
@@ -7753,7 +7753,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 59.0
+            "partialRankScore": 58.7
           },
           "coverage": {
             "form": true,
@@ -7835,7 +7835,7 @@
           "scores": {
             "form": 2.81,
             "pace": null,
-            "class": 2.1,
+            "class": 2.07,
             "gear": null,
             "risk": null
           },
@@ -7847,7 +7847,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 50.5
+            "partialRankScore": 50.3
           },
           "coverage": {
             "form": true,
@@ -7929,7 +7929,7 @@
           "scores": {
             "form": 2.9,
             "pace": null,
-            "class": 3.2,
+            "class": 3.13,
             "gear": null,
             "risk": null
           },
@@ -7941,7 +7941,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 60.4
+            "partialRankScore": 59.8
           },
           "coverage": {
             "form": true,
@@ -8023,7 +8023,7 @@
           "scores": {
             "form": 3.53,
             "pace": null,
-            "class": 1.94,
+            "class": 1.92,
             "gear": null,
             "risk": 2.0
           },
@@ -8035,7 +8035,7 @@
               "SE"
             ],
             "modelCoverageWeight": 60,
-            "partialRankScore": 54.9
+            "partialRankScore": 54.8
           },
           "coverage": {
             "form": true,
@@ -8117,7 +8117,7 @@
           "scores": {
             "form": 3.28,
             "pace": null,
-            "class": 1.66,
+            "class": 1.65,
             "gear": null,
             "risk": null
           },
@@ -8211,7 +8211,7 @@
           "scores": {
             "form": 3.9,
             "pace": null,
-            "class": 3.31,
+            "class": 3.26,
             "gear": null,
             "risk": null
           },
@@ -8223,7 +8223,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 73.3
+            "partialRankScore": 72.9
           },
           "coverage": {
             "form": true,
@@ -8305,7 +8305,7 @@
           "scores": {
             "form": 3.05,
             "pace": null,
-            "class": 2.93,
+            "class": 2.89,
             "gear": null,
             "risk": null
           },
@@ -8317,7 +8317,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 60.0
+            "partialRankScore": 59.7
           },
           "coverage": {
             "form": true,
@@ -8399,7 +8399,7 @@
           "scores": {
             "form": 3.48,
             "pace": null,
-            "class": 2.81,
+            "class": 2.78,
             "gear": null,
             "risk": null
           },
@@ -8411,7 +8411,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 64.2
+            "partialRankScore": 64.0
           },
           "coverage": {
             "form": true,
@@ -8426,7 +8426,7 @@
         {
           "number": 9,
           "name": "Jayden de Joudes",
-          "scratched": false,
+          "scratched": true,
           "previousStarts": 5,
           "lastFive": [
             {
@@ -8493,29 +8493,27 @@
           "scores": {
             "form": 3.41,
             "pace": null,
-            "class": 2.3,
+            "class": null,
             "gear": null,
             "risk": null
           },
           "distanceOnlyScore": null,
           "evidence": {
-            "classStarts": 5,
+            "classStarts": 0,
             "paceStarts": 0,
-            "classCountries": [
-              "SE"
-            ],
-            "modelCoverageWeight": 50,
-            "partialRankScore": 59.3
+            "classCountries": [],
+            "modelCoverageWeight": 0,
+            "partialRankScore": null
           },
           "coverage": {
             "form": true,
             "risk": false,
             "pace": false,
-            "class": true,
+            "class": false,
             "gear": false
           },
           "status": "partial",
-          "note": "Historisk prestations-, tempo/spår- och klassproxy där data finns; ingen säker spetsprognos."
+          "note": "Form från tidigare starter; spår/tempo och klass beräknas först när jämförbar historik räcker."
         },
         {
           "number": 10,
@@ -8587,7 +8585,7 @@
           "scores": {
             "form": 3.19,
             "pace": null,
-            "class": 3.73,
+            "class": 3.67,
             "gear": null,
             "risk": null
           },
@@ -8599,7 +8597,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 68.1
+            "partialRankScore": 67.6
           },
           "coverage": {
             "form": true,
@@ -8681,7 +8679,7 @@
           "scores": {
             "form": 3.6,
             "pace": null,
-            "class": 3.11,
+            "class": 3.05,
             "gear": null,
             "risk": null
           },
@@ -8693,7 +8691,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 68.1
+            "partialRankScore": 67.6
           },
           "coverage": {
             "form": true,
@@ -8775,7 +8773,7 @@
           "scores": {
             "form": 3.54,
             "pace": null,
-            "class": 3.47,
+            "class": 3.43,
             "gear": null,
             "risk": null
           },
@@ -8787,7 +8785,7 @@
               "SE"
             ],
             "modelCoverageWeight": 50,
-            "partialRankScore": 70.2
+            "partialRankScore": 69.9
           },
           "coverage": {
             "form": true,
