@@ -74,8 +74,12 @@ def main():
         modules = pathlib.Path.home()/'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules'
         if not environment.get('NODE_PATH') and modules.is_dir():
             environment['NODE_PATH'] = str(modules)
-        result = subprocess.run([shutil.which('node') or 'node', str(root/'scripts/verify_private_browser.cjs')],
-                                input=json.dumps(payload), text=True, capture_output=True, env=environment)
+        try:
+            result = subprocess.run([shutil.which('node') or 'node', str(root/'scripts/verify_private_browser.cjs')],
+                                    input=json.dumps(payload), text=True, capture_output=True, env=environment,
+                                    timeout=120)
+        except subprocess.TimeoutExpired:
+            raise RuntimeError('Browser verification timed out; use a writable local output folder') from None
         if result.returncode:
             raise RuntimeError('Authenticated browser verification failed; credentials were not logged')
         print('PASS: authenticated mobile/desktop content, links and screenshots')
