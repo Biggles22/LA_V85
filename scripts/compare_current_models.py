@@ -9,6 +9,7 @@ from scripts.data_quality import load_training_data
 from scripts.rank_current_catboost import estimator, matrix
 from scripts.historical_pilot import features_from_history
 from scripts.train_historical_pilot import evaluate
+from scripts.update_current_round import normalize, TZ
 NOW=dt.datetime.now(dt.timezone.utc)
 CONFIG=json.loads((ROOT/'rounds.json').read_text(encoding='utf8'))
 ROUND=next(r for r in CONFIG['rounds'] if r['id']==CONFIG['current'])
@@ -68,6 +69,11 @@ def main():
     saved=json.loads((ROOT/info['data']).read_text(encoding='utf8')); game=fetch('/games/'+saved['gameId'])
     assert game['id']==saved['gameId'] and len(game['races'])==8
     assert NOW < dt.datetime.fromisoformat(saved['startTime']) and all(r.get('status')!='results' for r in game['races'])
+    # The market can change during fitting. Identify the actual captured game,
+    # rather than assigning the older input snapshot ID to newer odds/shares.
+    captured_at = dt.datetime.now(dt.timezone.utc)
+    captured = normalize(game, info, captured_at.astimezone(TZ))
+    (OUT/'data.json').write_text(json.dumps(captured,ensure_ascii=False,indent=2),encoding='utf8')
     stamp=NOW.strftime('%Y%m%dT%H%M%SZ');(WORK/(stamp+'_game.json')).write_text(json.dumps(game,ensure_ascii=False),encoding='utf8')
     extended=list(ThreadPoolExecutor(max_workers=3).map(lambda r:fetch('/races/'+r['id']+'/extended'),game['races']))
     current=[]; pool_info=[]
@@ -94,7 +100,7 @@ def main():
             ordered=sorted(rs,key=lambda r:(-r[key],r['number']));rankings[key]=[r['number'] for r in ordered[:3]]
             for rank,r in enumerate(ordered,1):r[key+'Rank']=rank
         races.append({'leg':leg,'top3':rankings,'horses':rs})
-    report={'kind':'EXPERIMENTAL_FINAL_MARKET_TRAINED_COMPARISON_NOT_PRESTART_VALIDATION','roundId':saved['roundId'],'gameId':saved['gameId'],'snapshotId':saved['snapshotId'],'observedAt':NOW.isoformat(),
+    report={'kind':'EXPERIMENTAL_FINAL_MARKET_TRAINED_COMPARISON_NOT_PRESTART_VALIDATION','roundId':saved['roundId'],'gameId':saved['gameId'],'inputSnapshotId':saved['snapshotId'],'snapshotId':captured['snapshotId'],'runStartedAt':NOW.isoformat(),'observedAt':captured_at.isoformat(),
       'sourceAt':game.get('pools',{}).get('V85',{}).get('timestamp'),'sourceUrl':BASE+'/games/'+game['id'],
       'limitations':['Expanded model is trained on final market odds/shares and recorded equipment; historical timing of equipment is not independently verified.',
       'Current prestart markets are incomplete and do not match historical final markets. No calibration or >50% win-probability claims.',

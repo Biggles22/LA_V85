@@ -1,0 +1,175 @@
+{
+  "observedAt": "2026-11-05T19:05:41.312608+00:00",
+  "sourceAt": "2026-11-05 20:03:45",
+  "snapshotId": "c193eb0a09d90af255da7c00ee63b23bc2924eda2c9b563b456b9b7c86b03636",
+  "races": [
+    {
+      "leg": 1,
+      "raceId": "2026-11-07_9_5",
+      "orderedTop3": [
+        {
+          "number": 6,
+          "name": "Readly Brodde",
+          "pct": 42.46
+        },
+        {
+          "number": 5,
+          "name": "Raven",
+          "pct": 16.44
+        },
+        {
+          "number": 1,
+          "name": "Jaguar Godiva",
+          "pct": 15.2
+        }
+      ]
+    },
+    {
+      "leg": 2,
+      "raceId": "2026-11-07_9_6",
+      "orderedTop3": [
+        {
+          "number": 1,
+          "name": "May J.",
+          "pct": 37.97
+        },
+        {
+          "number": 2,
+          "name": "Samira M.B.S.",
+          "pct": 22.03
+        },
+        {
+          "number": 4,
+          "name": "Executive Duchess",
+          "pct": 15.16
+        }
+      ]
+    },
+    {
+      "leg": 3,
+      "raceId": "2026-11-07_9_7",
+      "orderedTop3": [
+        {
+          "number": 9,
+          "name": "Briskeby Pilen",
+          "pct": 30.98
+        },
+        {
+          "number": 11,
+          "name": "Grisle Kongen G.L.",
+          "pct": 21.81
+        },
+        {
+          "number": 7,
+          "name": "Skjegge Svarten",
+          "pct": 20.68
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "raceId": "2026-11-07_9_8",
+      "orderedTop3": [
+        {
+          "number": 6,
+          "name": "Shogun R.R.",
+          "pct": 44.31
+        },
+        {
+          "number": 1,
+          "name": "Nickel Occagnes",
+          "pct": 17.65
+        },
+        {
+          "number": 5,
+          "name": "Crowe Motion",
+          "pct": 11.28
+        }
+      ]
+    },
+    {
+      "leg": 5,
+      "raceId": "2026-11-07_9_9",
+      "orderedTop3": [
+        {
+          "number": 12,
+          "name": "Svarte Petter",
+          "pct": 46.15
+        },
+        {
+          "number": 1,
+          "name": "Edens Odin",
+          "pct": 18.53
+        },
+        {
+          "number": 4,
+          "name": "Guli Em",
+          "pct": 15.25
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "raceId": "2026-11-07_9_10",
+      "orderedTop3": [
+        {
+          "number": 6,
+          "name": "Tarte Tatin",
+          "pct": 43.73
+        },
+        {
+          "number": 1,
+          "name": "Wing Profile",
+          "pct": 22.83
+        },
+        {
+          "number": 2,
+          "name": "Aloha",
+          "pct": 12.58
+        }
+      ]
+    },
+    {
+      "leg": 7,
+      "raceId": "2026-11-07_9_11",
+      "orderedTop3": [
+        {
+          "number": 6,
+          "name": "Youans Son",
+          "pct": 67.48
+        },
+        {
+          "number": 10,
+          "name": "Last Cool Cash",
+          "pct": 13.95
+        },
+        {
+          "number": 7,
+          "name": "Mastroianni",
+          "pct": 4.21
+        }
+      ]
+    },
+    {
+      "leg": 8,
+      "raceId": "2026-11-07_9_12",
+      "orderedTop3": [
+        {
+          "number": 5,
+          "name": "Turner Ale",
+          "pct": 36.45
+        },
+        {
+          "number": 14,
+          "name": "Ultimate Scotch",
+          "pct": 22.36
+        },
+        {
+          "number": 6,
+          "name": "Exile on Main St.",
+          "pct": 16.87
+        }
+      ]
+    }
+  ]
+}

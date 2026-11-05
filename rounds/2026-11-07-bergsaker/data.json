@@ -6,11 +6,11 @@
   "status": "verified",
   "gameId": "V85_2026-11-07_9_5",
   "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5",
-  "sourceAt": "2026-11-04T15:37:30+01:00",
-  "retrievedAt": "2026-11-04T16:05:49.428840+01:00",
+  "sourceAt": "2026-11-05T20:03:45+01:00",
+  "retrievedAt": "2026-11-05T20:05:32.418570+01:00",
   "startTime": "2026-11-07T15:00:00+01:00",
   "unitStakeSEK": null,
-  "turnoverSEK": 635178.0,
+  "turnoverSEK": 1919342.0,
   "races": [
     {
       "leg": 1,
@@ -28,10 +28,10 @@
           "postPosition": 1,
           "distance": 1640,
           "scratched": false,
-          "pct": 16.34,
-          "odds": 4.25,
+          "pct": 15.2,
+          "odds": 8.35,
           "oddsCapped": false,
-          "trend": -0.03,
+          "trend": -0.31,
           "history": []
         },
         {
@@ -42,10 +42,10 @@
           "postPosition": 2,
           "distance": 1640,
           "scratched": false,
-          "pct": 5.58,
-          "odds": 31.05,
+          "pct": 6.34,
+          "odds": 6.44,
           "oddsCapped": false,
-          "trend": 1.18,
+          "trend": 1.56,
           "history": []
         },
         {
@@ -56,10 +56,10 @@
           "postPosition": 3,
           "distance": 1640,
           "scratched": false,
-          "pct": 1.65,
-          "odds": 44.52,
+          "pct": 2.07,
+          "odds": 66.31,
           "oddsCapped": false,
-          "trend": -1.3,
+          "trend": -0.35,
           "history": []
         },
         {
@@ -70,10 +70,10 @@
           "postPosition": 4,
           "distance": 1640,
           "scratched": false,
-          "pct": 7.06,
-          "odds": 23.08,
+          "pct": 6.4,
+          "odds": 16.32,
           "oddsCapped": false,
-          "trend": -1.48,
+          "trend": 1.17,
           "history": []
         },
         {
@@ -84,10 +84,10 @@
           "postPosition": 5,
           "distance": 1640,
           "scratched": false,
-          "pct": 13.34,
-          "odds": 6.23,
+          "pct": 16.44,
+          "odds": 3.45,
           "oddsCapped": false,
-          "trend": 2.44,
+          "trend": 4.71,
           "history": []
         },
         {
@@ -98,10 +98,10 @@
           "postPosition": 6,
           "distance": 1640,
           "scratched": false,
-          "pct": 43.1,
-          "odds": 20.7,
+          "pct": 42.46,
+          "odds": 19.76,
           "oddsCapped": false,
-          "trend": 2.35,
+          "trend": -6.48,
           "history": []
         },
         {
@@ -112,10 +112,10 @@
           "postPosition": 7,
           "distance": 1640,
           "scratched": false,
-          "pct": 0.95,
-          "odds": 64.31,
+          "pct": 0.63,
+          "odds": 56.39,
           "oddsCapped": false,
-          "trend": -0.95,
+          "trend": -0.01,
           "history": []
         },
         {
@@ -126,10 +126,10 @@
           "postPosition": 8,
           "distance": 1640,
           "scratched": false,
-          "pct": 2.59,
-          "odds": 25.55,
+          "pct": 3.35,
+          "odds": 30.07,
           "oddsCapped": false,
-          "trend": -1.41,
+          "trend": -0.66,
           "history": []
         },
         {
@@ -140,10 +140,10 @@
           "postPosition": 9,
           "distance": 1640,
           "scratched": false,
-          "pct": 3.64,
-          "odds": 4.01,
+          "pct": 2.79,
+          "odds": 3.25,
           "oddsCapped": false,
-          "trend": 0.14,
+          "trend": 0.17,
           "history": []
         },
         {
@@ -154,10 +154,10 @@
           "postPosition": 10,
           "distance": 1640,
           "scratched": false,
-          "pct": 1.76,
-          "odds": 3.7,
+          "pct": 1.63,
+          "odds": 9.81,
           "oddsCapped": false,
-          "trend": 0.02,
+          "trend": 0.49,
           "history": []
         },
         {
@@ -168,10 +168,10 @@
           "postPosition": 11,
           "distance": 1640,
           "scratched": false,
-          "pct": 0.93,
-          "odds": 25.72,
+          "pct": 0.54,
+          "odds": 52.0,
           "oddsCapped": false,
-          "trend": -0.73,
+          "trend": -0.16,
           "history": []
         },
         {
@@ -182,10 +182,10 @@
           "postPosition": 12,
           "distance": 1640,
           "scratched": false,
-          "pct": 3.07,
-          "odds": 42.87,
-          "oddsCapped": false,
-          "trend": -0.22,
+          "pct": 2.14,
+          "odds": null,
+          "oddsCapped": true,
+          "trend": -0.12,
           "history": []
         }
       ]
@@ -206,10 +206,10 @@
           "postPosition": 1,
           "distance": 1640,
           "scratched": false,
-          "pct": 39.1,
-          "odds": 4.48,
+          "pct": 37.97,
+          "odds": 8.43,
           "oddsCapped": false,
-          "trend": 1.26,
+          "trend": -4.15,
           "history": []
         },
         {
@@ -220,10 +220,10 @@
           "postPosition": 2,
           "distance": 1640,
           "scratched": false,
-          "pct": 21.96,
-          "odds": 9.87,
+          "pct": 22.03,
+          "odds": 7.25,
           "oddsCapped": false,
-          "trend": -0.53,
+          "trend": 3.2,
           "history": []
         },
         {
@@ -234,10 +234,10 @@
           "postPosition": 3,
           "distance": 1640,
           "scratched": false,
-          "pct": 10.67,
-          "odds": 23.04,
+          "pct": 12.89,
+          "odds": 1.87,
           "oddsCapped": false,
-          "trend": 1.96,
+          "trend": 3.51,
           "history": []
         },
         {
@@ -248,10 +248,10 @@
           "postPosition": 4,
           "distance": 1640,
           "scratched": false,
-          "pct": 14.47,
-          "odds": 14.48,
+          "pct": 15.16,
+          "odds": 5.18,
           "oddsCapped": false,
-          "trend": -2.87,
+          "trend": -0.52,
           "history": []
         },
         {
@@ -262,10 +262,10 @@
           "postPosition": 5,
           "distance": 1640,
           "scratched": false,
-          "pct": 1.76,
-          "odds": 19.04,
+          "pct": 2.06,
+          "odds": 16.87,
           "oddsCapped": false,
-          "trend": -0.82,
+          "trend": -0.55,
           "history": []
         },
         {
@@ -276,10 +276,10 @@
           "postPosition": 6,
           "distance": 1640,
           "scratched": false,
-          "pct": 1.4,
-          "odds": 3.57,
+          "pct": 1.64,
+          "odds": 20.4,
           "oddsCapped": false,
-          "trend": 0.37,
+          "trend": -0.67,
           "history": []
         },
         {
@@ -289,11 +289,11 @@
           "trainer": "Lars Wikström",
           "postPosition": 7,
           "distance": 1640,
-          "scratched": false,
-          "pct": 3.43,
-          "odds": 4.08,
+          "scratched": true,
+          "pct": 1.39,
+          "odds": null,
           "oddsCapped": false,
-          "trend": 0.92,
+          "trend": -1.25,
           "history": []
         },
         {
@@ -304,10 +304,10 @@
           "postPosition": 8,
           "distance": 1640,
           "scratched": false,
-          "pct": 0.77,
-          "odds": 34.56,
+          "pct": 0.68,
+          "odds": 18.91,
           "oddsCapped": false,
-          "trend": 0.26,
+          "trend": -0.36,
           "history": []
         },
         {
@@ -318,10 +318,10 @@
           "postPosition": 9,
           "distance": 1640,
           "scratched": false,
-          "pct": 1.61,
+          "pct": 1.13,
           "odds": null,
           "oddsCapped": true,
-          "trend": 0.45,
+          "trend": 0.87,
           "history": []
         },
         {
@@ -332,10 +332,10 @@
           "postPosition": 10,
           "distance": 1640,
           "scratched": false,
-          "pct": 3.23,
-          "odds": 34.56,
+          "pct": 3.3,
+          "odds": 78.13,
           "oddsCapped": false,
-          "trend": -0.13,
+          "trend": 0.22,
           "history": []
         },
         {
@@ -346,10 +346,10 @@
           "postPosition": 11,
           "distance": 1640,
           "scratched": false,
-          "pct": 1.08,
+          "pct": 0.77,
           "odds": null,
           "oddsCapped": true,
-          "trend": -0.47,
+          "trend": 0.18,
           "history": []
         },
         {
@@ -360,10 +360,10 @@
           "postPosition": 12,
           "distance": 1640,
           "scratched": false,
-          "pct": 0.52,
-          "odds": 9.52,
+          "pct": 0.98,
+          "odds": 49.52,
           "oddsCapped": false,
-          "trend": -0.41,
+          "trend": -0.48,
           "history": []
         }
       ]
@@ -384,10 +384,10 @@
           "postPosition": 1,
           "distance": 2640,
           "scratched": false,
-          "pct": 4.1,
-          "odds": 28.61,
+          "pct": 4.02,
+          "odds": 14.51,
           "oddsCapped": false,
-          "trend": -2.38,
+          "trend": 0.34,
           "history": []
         },
         {
@@ -398,10 +398,10 @@
           "postPosition": 2,
           "distance": 2640,
           "scratched": false,
-          "pct": 0.74,
-          "odds": 42.0,
+          "pct": 0.59,
+          "odds": 37.91,
           "oddsCapped": false,
-          "trend": -0.59,
+          "trend": -0.36,
           "history": []
         },
         {
@@ -412,10 +412,10 @@
           "postPosition": 3,
           "distance": 2640,
           "scratched": false,
-          "pct": 2.04,
-          "odds": 3.49,
+          "pct": 2.06,
+          "odds": 6.54,
           "oddsCapped": false,
-          "trend": 0.54,
+          "trend": -0.1,
           "history": []
         },
         {
@@ -426,10 +426,10 @@
           "postPosition": 4,
           "distance": 2640,
           "scratched": false,
-          "pct": 1.45,
-          "odds": 31.7,
+          "pct": 1.06,
+          "odds": 20.85,
           "oddsCapped": false,
-          "trend": -0.77,
+          "trend": 0.07,
           "history": []
         },
         {
@@ -440,10 +440,10 @@
           "postPosition": 5,
           "distance": 2640,
           "scratched": false,
-          "pct": 0.93,
-          "odds": 13.76,
+          "pct": 0.8,
+          "odds": 11.12,
           "oddsCapped": false,
-          "trend": -0.49,
+          "trend": 0.21,
           "history": []
         },
         {
@@ -454,10 +454,10 @@
           "postPosition": 6,
           "distance": 2640,
           "scratched": false,
-          "pct": 4.6,
-          "odds": 50.3,
+          "pct": 6.29,
+          "odds": 6.44,
           "oddsCapped": false,
-          "trend": 0.99,
+          "trend": 1.59,
           "history": []
         },
         {
@@ -468,10 +468,10 @@
           "postPosition": 7,
           "distance": 2640,
           "scratched": false,
-          "pct": 17.16,
-          "odds": 8.38,
+          "pct": 20.68,
+          "odds": 9.67,
           "oddsCapped": false,
-          "trend": 1.09,
+          "trend": 2.89,
           "history": []
         },
         {
@@ -482,10 +482,10 @@
           "postPosition": 8,
           "distance": 2640,
           "scratched": false,
-          "pct": 8.72,
-          "odds": 4.42,
+          "pct": 6.62,
+          "odds": 8.27,
           "oddsCapped": false,
-          "trend": -1.47,
+          "trend": -2.05,
           "history": []
         },
         {
@@ -496,10 +496,10 @@
           "postPosition": 9,
           "distance": 2640,
           "scratched": false,
-          "pct": 30.16,
-          "odds": 15.75,
+          "pct": 30.98,
+          "odds": 12.41,
           "oddsCapped": false,
-          "trend": 2.05,
+          "trend": -0.58,
           "history": []
         },
         {
@@ -510,10 +510,10 @@
           "postPosition": 10,
           "distance": 2640,
           "scratched": false,
-          "pct": 0.55,
-          "odds": 28.61,
+          "pct": 0.64,
+          "odds": 6.18,
           "oddsCapped": false,
-          "trend": -0.24,
+          "trend": 0.22,
           "history": []
         },
         {
@@ -524,10 +524,10 @@
           "postPosition": 11,
           "distance": 2640,
           "scratched": false,
-          "pct": 24.82,
-          "odds": 38.15,
+          "pct": 21.81,
+          "odds": 17.74,
           "oddsCapped": false,
-          "trend": 2.39,
+          "trend": -2.64,
           "history": []
         },
         {
@@ -538,10 +538,10 @@
           "postPosition": 12,
           "distance": 2640,
           "scratched": false,
-          "pct": 0.38,
-          "odds": 42.0,
+          "pct": 0.32,
+          "odds": 72.35,
           "oddsCapped": false,
-          "trend": -0.34,
+          "trend": -0.08,
           "history": []
         },
         {
@@ -552,10 +552,10 @@
           "postPosition": 13,
           "distance": 2640,
           "scratched": false,
-          "pct": 2.97,
-          "odds": 10.49,
+          "pct": 3.01,
+          "odds": 17.88,
           "oddsCapped": false,
-          "trend": 0.05,
+          "trend": 0.77,
           "history": []
         },
         {
@@ -566,10 +566,10 @@
           "postPosition": 14,
           "distance": 2640,
           "scratched": false,
-          "pct": 0.87,
-          "odds": 8.39,
+          "pct": 0.83,
+          "odds": 22.91,
           "oddsCapped": false,
-          "trend": -0.59,
+          "trend": -0.22,
           "history": []
         },
         {
@@ -580,10 +580,10 @@
           "postPosition": 15,
           "distance": 2640,
           "scratched": false,
-          "pct": 0.5,
+          "pct": 0.3,
           "odds": null,
           "oddsCapped": true,
-          "trend": -0.23,
+          "trend": -0.06,
           "history": []
         }
       ]
@@ -604,10 +604,10 @@
           "postPosition": 1,
           "distance": 2140,
           "scratched": false,
-          "pct": 17.01,
-          "odds": 18.98,
+          "pct": 17.65,
+          "odds": 10.8,
           "oddsCapped": false,
-          "trend": -0.39,
+          "trend": 0.1,
           "history": []
         },
         {
@@ -618,10 +618,10 @@
           "postPosition": 2,
           "distance": 2140,
           "scratched": false,
-          "pct": 3.66,
-          "odds": 26.48,
+          "pct": 2.55,
+          "odds": 41.05,
           "oddsCapped": false,
-          "trend": -1.0,
+          "trend": -0.57,
           "history": []
         },
         {
@@ -632,10 +632,10 @@
           "postPosition": 3,
           "distance": 2140,
           "scratched": false,
-          "pct": 2.44,
-          "odds": 2.37,
+          "pct": 2.4,
+          "odds": 3.98,
           "oddsCapped": false,
-          "trend": -0.63,
+          "trend": 0.69,
           "history": []
         },
         {
@@ -646,10 +646,10 @@
           "postPosition": 4,
           "distance": 2140,
           "scratched": false,
-          "pct": 3.38,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -1.33,
+          "pct": 2.08,
+          "odds": 98.55,
+          "oddsCapped": false,
+          "trend": 0.79,
           "history": []
         },
         {
@@ -660,10 +660,10 @@
           "postPosition": 5,
           "distance": 2140,
           "scratched": false,
-          "pct": 10.96,
-          "odds": 9.49,
+          "pct": 11.28,
+          "odds": 10.94,
           "oddsCapped": false,
-          "trend": -1.04,
+          "trend": 0.37,
           "history": []
         },
         {
@@ -674,10 +674,10 @@
           "postPosition": 6,
           "distance": 2140,
           "scratched": false,
-          "pct": 42.32,
-          "odds": 2.83,
+          "pct": 44.31,
+          "odds": 1.78,
           "oddsCapped": false,
-          "trend": 9.22,
+          "trend": 1.25,
           "history": []
         },
         {
@@ -688,10 +688,10 @@
           "postPosition": 7,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.44,
+          "pct": 1.03,
           "odds": null,
           "oddsCapped": true,
-          "trend": -1.1,
+          "trend": -0.27,
           "history": []
         },
         {
@@ -702,10 +702,10 @@
           "postPosition": 8,
           "distance": 2140,
           "scratched": false,
-          "pct": 9.2,
-          "odds": 17.74,
+          "pct": 9.83,
+          "odds": 57.82,
           "oddsCapped": false,
-          "trend": -0.42,
+          "trend": -1.16,
           "history": []
         },
         {
@@ -716,10 +716,10 @@
           "postPosition": 9,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.72,
+          "pct": 0.73,
           "odds": null,
           "oddsCapped": true,
-          "trend": -0.57,
+          "trend": -0.22,
           "history": []
         },
         {
@@ -730,10 +730,10 @@
           "postPosition": 10,
           "distance": 2140,
           "scratched": false,
-          "pct": 3.43,
-          "odds": 8.82,
+          "pct": 2.92,
+          "odds": 16.94,
           "oddsCapped": false,
-          "trend": -0.41,
+          "trend": -0.73,
           "history": []
         },
         {
@@ -744,10 +744,10 @@
           "postPosition": 11,
           "distance": 2140,
           "scratched": false,
-          "pct": 2.42,
-          "odds": 46.8,
+          "pct": 2.64,
+          "odds": 52.24,
           "oddsCapped": false,
-          "trend": -1.28,
+          "trend": 0.42,
           "history": []
         },
         {
@@ -758,10 +758,10 @@
           "postPosition": 12,
           "distance": 2140,
           "scratched": false,
-          "pct": 3.02,
-          "odds": 56.98,
+          "pct": 2.57,
+          "odds": 21.35,
           "oddsCapped": false,
-          "trend": -1.03,
+          "trend": -0.66,
           "history": []
         }
       ]
@@ -782,10 +782,10 @@
           "postPosition": 1,
           "distance": 2140,
           "scratched": false,
-          "pct": 16.85,
-          "odds": 23.94,
+          "pct": 18.53,
+          "odds": 6.06,
           "oddsCapped": false,
-          "trend": 0.34,
+          "trend": 2.12,
           "history": []
         },
         {
@@ -796,10 +796,10 @@
           "postPosition": 2,
           "distance": 2140,
           "scratched": false,
-          "pct": 2.2,
-          "odds": 47.89,
-          "oddsCapped": false,
-          "trend": 1.35,
+          "pct": 1.94,
+          "odds": null,
+          "oddsCapped": true,
+          "trend": -0.84,
           "history": []
         },
         {
@@ -810,10 +810,10 @@
           "postPosition": 3,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.65,
-          "odds": 19.43,
+          "pct": 0.87,
+          "odds": 35.59,
           "oddsCapped": false,
-          "trend": -0.15,
+          "trend": 0.63,
           "history": []
         },
         {
@@ -824,10 +824,10 @@
           "postPosition": 4,
           "distance": 2140,
           "scratched": false,
-          "pct": 15.97,
-          "odds": 25.7,
+          "pct": 15.25,
+          "odds": 22.39,
           "oddsCapped": false,
-          "trend": 0.95,
+          "trend": -0.81,
           "history": []
         },
         {
@@ -838,10 +838,10 @@
           "postPosition": 5,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.17,
-          "odds": 15.09,
+          "pct": 0.91,
+          "odds": 10.26,
           "oddsCapped": false,
-          "trend": -0.41,
+          "trend": 0.04,
           "history": []
         },
         {
@@ -852,10 +852,10 @@
           "postPosition": 6,
           "distance": 2140,
           "scratched": false,
-          "pct": 2.25,
-          "odds": 26.08,
+          "pct": 2.12,
+          "odds": 21.05,
           "oddsCapped": false,
-          "trend": -0.1,
+          "trend": 0.23,
           "history": []
         },
         {
@@ -866,10 +866,10 @@
           "postPosition": 7,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.11,
-          "odds": 39.12,
+          "pct": 0.97,
+          "odds": 37.65,
           "oddsCapped": false,
-          "trend": -0.59,
+          "trend": -0.33,
           "history": []
         },
         {
@@ -880,10 +880,10 @@
           "postPosition": 8,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.7,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -0.5,
+          "pct": 0.55,
+          "odds": 25.97,
+          "oddsCapped": false,
+          "trend": 0.16,
           "history": []
         },
         {
@@ -894,10 +894,10 @@
           "postPosition": 9,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.45,
-          "odds": 54.67,
+          "pct": 0.31,
+          "odds": 35.88,
           "oddsCapped": false,
-          "trend": -0.11,
+          "trend": -0.14,
           "history": []
         },
         {
@@ -908,10 +908,10 @@
           "postPosition": 1,
           "distance": 2160,
           "scratched": false,
-          "pct": 4.92,
-          "odds": 24.0,
+          "pct": 4.22,
+          "odds": 28.33,
           "oddsCapped": false,
-          "trend": 0.59,
+          "trend": -0.14,
           "history": []
         },
         {
@@ -922,10 +922,10 @@
           "postPosition": 2,
           "distance": 2160,
           "scratched": false,
-          "pct": 5.06,
-          "odds": 12.14,
+          "pct": 4.72,
+          "odds": 11.85,
           "oddsCapped": false,
-          "trend": -1.25,
+          "trend": -0.76,
           "history": []
         },
         {
@@ -936,10 +936,10 @@
           "postPosition": 3,
           "distance": 2160,
           "scratched": false,
-          "pct": 44.52,
-          "odds": 1.56,
+          "pct": 46.15,
+          "odds": 2.82,
           "oddsCapped": false,
-          "trend": -0.07,
+          "trend": -0.76,
           "history": []
         },
         {
@@ -950,10 +950,10 @@
           "postPosition": 4,
           "distance": 2160,
           "scratched": false,
-          "pct": 1.58,
-          "odds": 48.0,
+          "pct": 1.14,
+          "odds": 6.43,
           "oddsCapped": false,
-          "trend": 0.05,
+          "trend": 1.08,
           "history": []
         },
         {
@@ -964,10 +964,10 @@
           "postPosition": 5,
           "distance": 2160,
           "scratched": false,
-          "pct": 2.17,
-          "odds": 10.93,
+          "pct": 2.02,
+          "odds": 15.06,
           "oddsCapped": false,
-          "trend": 0.09,
+          "trend": -0.32,
           "history": []
         },
         {
@@ -978,10 +978,10 @@
           "postPosition": 6,
           "distance": 2160,
           "scratched": false,
-          "pct": 0.41,
+          "pct": 0.28,
           "odds": null,
           "oddsCapped": true,
-          "trend": -0.18,
+          "trend": -0.16,
           "history": []
         }
       ]
@@ -1002,10 +1002,10 @@
           "postPosition": 1,
           "distance": 2140,
           "scratched": false,
-          "pct": 24.68,
-          "odds": 52.05,
+          "pct": 22.83,
+          "odds": 10.53,
           "oddsCapped": false,
-          "trend": 2.03,
+          "trend": -1.83,
           "history": []
         },
         {
@@ -1016,10 +1016,10 @@
           "postPosition": 2,
           "distance": 2140,
           "scratched": false,
-          "pct": 13.54,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -1.47,
+          "pct": 12.58,
+          "odds": 26.69,
+          "oddsCapped": false,
+          "trend": -1.22,
           "history": []
         },
         {
@@ -1030,10 +1030,10 @@
           "postPosition": 3,
           "distance": 2140,
           "scratched": false,
-          "pct": 2.71,
-          "odds": 11.28,
+          "pct": 3.67,
+          "odds": 18.01,
           "oddsCapped": false,
-          "trend": -0.2,
+          "trend": 0.33,
           "history": []
         },
         {
@@ -1044,10 +1044,10 @@
           "postPosition": 4,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.93,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -0.44,
+          "pct": 0.94,
+          "odds": 65.59,
+          "oddsCapped": false,
+          "trend": -0.01,
           "history": []
         },
         {
@@ -1058,10 +1058,10 @@
           "postPosition": 5,
           "distance": 2140,
           "scratched": false,
-          "pct": 4.37,
-          "odds": 19.56,
+          "pct": 4.89,
+          "odds": 8.19,
           "oddsCapped": false,
-          "trend": -1.65,
+          "trend": 1.41,
           "history": []
         },
         {
@@ -1072,10 +1072,10 @@
           "postPosition": 6,
           "distance": 2140,
           "scratched": false,
-          "pct": 37.6,
-          "odds": 1.42,
+          "pct": 43.73,
+          "odds": 2.15,
           "oddsCapped": false,
-          "trend": 8.17,
+          "trend": 3.54,
           "history": []
         },
         {
@@ -1086,10 +1086,10 @@
           "postPosition": 7,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.09,
+          "pct": 0.75,
           "odds": null,
           "oddsCapped": true,
-          "trend": -0.05,
+          "trend": -0.21,
           "history": []
         },
         {
@@ -1100,10 +1100,10 @@
           "postPosition": 8,
           "distance": 2140,
           "scratched": false,
-          "pct": 5.9,
-          "odds": 72.66,
+          "pct": 3.57,
+          "odds": 46.23,
           "oddsCapped": false,
-          "trend": -2.65,
+          "trend": -1.89,
           "history": []
         },
         {
@@ -1114,10 +1114,10 @@
           "postPosition": 9,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.17,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -0.47,
+          "pct": 0.95,
+          "odds": 42.85,
+          "oddsCapped": false,
+          "trend": 0.45,
           "history": []
         },
         {
@@ -1128,10 +1128,10 @@
           "postPosition": 10,
           "distance": 2140,
           "scratched": true,
-          "pct": 0.1,
+          "pct": 0.06,
           "odds": null,
           "oddsCapped": false,
-          "trend": -0.1,
+          "trend": -0.06,
           "history": []
         },
         {
@@ -1142,10 +1142,10 @@
           "postPosition": 1,
           "distance": 2160,
           "scratched": false,
-          "pct": 0.79,
+          "pct": 0.57,
           "odds": null,
           "oddsCapped": true,
-          "trend": -0.34,
+          "trend": -0.15,
           "history": []
         },
         {
@@ -1156,10 +1156,10 @@
           "postPosition": 2,
           "distance": 2160,
           "scratched": false,
-          "pct": 0.71,
-          "odds": 5.2,
+          "pct": 0.72,
+          "odds": 6.72,
           "oddsCapped": false,
-          "trend": -0.23,
+          "trend": -0.34,
           "history": []
         },
         {
@@ -1170,10 +1170,10 @@
           "postPosition": 3,
           "distance": 2160,
           "scratched": false,
-          "pct": 0.71,
-          "odds": 14.52,
+          "pct": 0.45,
+          "odds": 13.94,
           "oddsCapped": false,
-          "trend": -0.51,
+          "trend": 0.83,
           "history": []
         },
         {
@@ -1184,10 +1184,10 @@
           "postPosition": 4,
           "distance": 2160,
           "scratched": false,
-          "pct": 5.32,
-          "odds": 36.32,
+          "pct": 4.1,
+          "odds": 9.03,
           "oddsCapped": false,
-          "trend": -1.83,
+          "trend": -0.67,
           "history": []
         },
         {
@@ -1198,10 +1198,10 @@
           "postPosition": 5,
           "distance": 2160,
           "scratched": false,
-          "pct": 0.38,
-          "odds": 72.66,
-          "oddsCapped": false,
-          "trend": -0.26,
+          "pct": 0.18,
+          "odds": null,
+          "oddsCapped": true,
+          "trend": -0.18,
           "history": []
         }
       ]
@@ -1222,10 +1222,10 @@
           "postPosition": 1,
           "distance": 2640,
           "scratched": false,
-          "pct": 1.66,
-          "odds": 7.68,
+          "pct": 1.63,
+          "odds": 10.24,
           "oddsCapped": false,
-          "trend": -0.54,
+          "trend": 1.26,
           "history": []
         },
         {
@@ -1236,10 +1236,10 @@
           "postPosition": 2,
           "distance": 2640,
           "scratched": false,
-          "pct": 1.66,
-          "odds": 33.6,
-          "oddsCapped": false,
-          "trend": -0.49,
+          "pct": 1.31,
+          "odds": null,
+          "oddsCapped": true,
+          "trend": -0.44,
           "history": []
         },
         {
@@ -1250,10 +1250,10 @@
           "postPosition": 3,
           "distance": 2640,
           "scratched": false,
-          "pct": 2.92,
-          "odds": 16.8,
+          "pct": 2.04,
+          "odds": 8.42,
           "oddsCapped": false,
-          "trend": -1.3,
+          "trend": 0.15,
           "history": []
         },
         {
@@ -1264,10 +1264,10 @@
           "postPosition": 4,
           "distance": 2640,
           "scratched": false,
-          "pct": 2.74,
-          "odds": 8.32,
+          "pct": 2.04,
+          "odds": 9.26,
           "oddsCapped": false,
-          "trend": -0.1,
+          "trend": 0.41,
           "history": []
         },
         {
@@ -1278,10 +1278,10 @@
           "postPosition": 5,
           "distance": 2640,
           "scratched": false,
-          "pct": 1.32,
+          "pct": 0.9,
           "odds": null,
           "oddsCapped": true,
-          "trend": -0.4,
+          "trend": 0.28,
           "history": []
         },
         {
@@ -1292,10 +1292,10 @@
           "postPosition": 6,
           "distance": 2640,
           "scratched": false,
-          "pct": 62.13,
-          "odds": 5.12,
+          "pct": 67.48,
+          "odds": 2.89,
           "oddsCapped": false,
-          "trend": 13.78,
+          "trend": -0.15,
           "history": []
         },
         {
@@ -1306,10 +1306,10 @@
           "postPosition": 7,
           "distance": 2640,
           "scratched": false,
-          "pct": 5.52,
-          "odds": 33.6,
+          "pct": 4.21,
+          "odds": 16.14,
           "oddsCapped": false,
-          "trend": -2.49,
+          "trend": -0.47,
           "history": []
         },
         {
@@ -1320,10 +1320,10 @@
           "postPosition": 8,
           "distance": 2640,
           "scratched": false,
-          "pct": 1.03,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -0.15,
+          "pct": 0.69,
+          "odds": 20.23,
+          "oddsCapped": false,
+          "trend": -0.33,
           "history": []
         },
         {
@@ -1334,10 +1334,10 @@
           "postPosition": 9,
           "distance": 2640,
           "scratched": true,
-          "pct": 2.26,
+          "pct": 0.86,
           "odds": null,
           "oddsCapped": false,
-          "trend": -2.26,
+          "trend": 0.08,
           "history": []
         },
         {
@@ -1348,10 +1348,10 @@
           "postPosition": 10,
           "distance": 2640,
           "scratched": false,
-          "pct": 12.27,
-          "odds": 26.86,
+          "pct": 13.95,
+          "odds": 14.45,
           "oddsCapped": false,
-          "trend": -2.91,
+          "trend": 0.35,
           "history": []
         },
         {
@@ -1362,10 +1362,10 @@
           "postPosition": 11,
           "distance": 2640,
           "scratched": false,
-          "pct": 2.19,
-          "odds": 5.15,
+          "pct": 1.97,
+          "odds": 6.0,
           "oddsCapped": false,
-          "trend": -1.18,
+          "trend": -0.61,
           "history": []
         },
         {
@@ -1376,10 +1376,10 @@
           "postPosition": 12,
           "distance": 2640,
           "scratched": false,
-          "pct": 4.3,
-          "odds": 2.69,
+          "pct": 2.92,
+          "odds": 6.83,
           "oddsCapped": false,
-          "trend": -1.96,
+          "trend": -0.53,
           "history": []
         }
       ]
@@ -1400,10 +1400,10 @@
           "postPosition": 1,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.66,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -0.87,
+          "pct": 1.63,
+          "odds": 14.0,
+          "oddsCapped": false,
+          "trend": 0.34,
           "history": []
         },
         {
@@ -1414,10 +1414,10 @@
           "postPosition": 2,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.66,
-          "odds": 9.19,
+          "pct": 1.39,
+          "odds": 18.01,
           "oddsCapped": false,
-          "trend": -0.93,
+          "trend": 0.4,
           "history": []
         },
         {
@@ -1428,10 +1428,10 @@
           "postPosition": 3,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.55,
-          "odds": 35.3,
+          "pct": 0.4,
+          "odds": 99.9,
           "oddsCapped": false,
-          "trend": -0.44,
+          "trend": 0.16,
           "history": []
         },
         {
@@ -1442,10 +1442,10 @@
           "postPosition": 4,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.34,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -0.58,
+          "pct": 1.23,
+          "odds": 5.44,
+          "oddsCapped": false,
+          "trend": 2.06,
           "history": []
         },
         {
@@ -1456,10 +1456,10 @@
           "postPosition": 5,
           "distance": 2140,
           "scratched": false,
-          "pct": 35.11,
-          "odds": 6.39,
+          "pct": 36.45,
+          "odds": 9.33,
           "oddsCapped": false,
-          "trend": 3.61,
+          "trend": -2.07,
           "history": []
         },
         {
@@ -1470,10 +1470,10 @@
           "postPosition": 6,
           "distance": 2140,
           "scratched": false,
-          "pct": 15.05,
-          "odds": 3.59,
+          "pct": 16.87,
+          "odds": 5.67,
           "oddsCapped": false,
-          "trend": 2.01,
+          "trend": 0.65,
           "history": []
         },
         {
@@ -1484,10 +1484,10 @@
           "postPosition": 7,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.83,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -0.16,
+          "pct": 0.8,
+          "odds": 37.43,
+          "oddsCapped": false,
+          "trend": 0.75,
           "history": []
         },
         {
@@ -1498,10 +1498,10 @@
           "postPosition": 8,
           "distance": 2140,
           "scratched": false,
-          "pct": 5.04,
-          "odds": 6.41,
+          "pct": 4.71,
+          "odds": 6.14,
           "oddsCapped": false,
-          "trend": -0.15,
+          "trend": -0.61,
           "history": []
         },
         {
@@ -1512,10 +1512,10 @@
           "postPosition": 9,
           "distance": 2140,
           "scratched": false,
-          "pct": 10.95,
-          "odds": 7.05,
+          "pct": 10.69,
+          "odds": 10.35,
           "oddsCapped": false,
-          "trend": -1.09,
+          "trend": -2.44,
           "history": []
         },
         {
@@ -1526,10 +1526,10 @@
           "postPosition": 10,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.03,
-          "odds": 7.05,
+          "pct": 0.7,
+          "odds": 29.17,
           "oddsCapped": false,
-          "trend": -0.3,
+          "trend": -0.27,
           "history": []
         },
         {
@@ -1540,10 +1540,10 @@
           "postPosition": 11,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.63,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -0.48,
+          "pct": 0.39,
+          "odds": 19.82,
+          "oddsCapped": false,
+          "trend": -0.3,
           "history": []
         },
         {
@@ -1554,10 +1554,10 @@
           "postPosition": 12,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.87,
-          "odds": 35.3,
+          "pct": 0.47,
+          "odds": 14.52,
           "oddsCapped": false,
-          "trend": -0.46,
+          "trend": -0.1,
           "history": []
         },
         {
@@ -1568,10 +1568,10 @@
           "postPosition": 13,
           "distance": 2140,
           "scratched": false,
-          "pct": 0.57,
-          "odds": null,
-          "oddsCapped": true,
-          "trend": -0.5,
+          "pct": 0.5,
+          "odds": 24.06,
+          "oddsCapped": false,
+          "trend": 1.28,
           "history": []
         },
         {
@@ -1582,10 +1582,10 @@
           "postPosition": 14,
           "distance": 2140,
           "scratched": false,
-          "pct": 23.26,
-          "odds": 44.37,
+          "pct": 22.36,
+          "odds": 14.23,
           "oddsCapped": false,
-          "trend": 0.3,
+          "trend": 0.0,
           "history": []
         },
         {
@@ -1596,14 +1596,14 @@
           "postPosition": 15,
           "distance": 2140,
           "scratched": false,
-          "pct": 1.45,
-          "odds": 12.07,
+          "pct": 1.4,
+          "odds": 45.3,
           "oddsCapped": false,
-          "trend": 0.02,
+          "trend": 0.13,
           "history": []
         }
       ]
     }
   ],
-  "snapshotId": "b6a6eb9d5515a532e11ef53f07b18967886938e8eccea2eb46f6baea8e6e82e6"
+  "snapshotId": "c193eb0a09d90af255da7c00ee63b23bc2924eda2c9b563b456b9b7c86b03636"
 }
