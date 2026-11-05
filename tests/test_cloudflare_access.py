@@ -9,7 +9,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]/'scripts'))
 import cloudflare_access as access
-from verify_deployment import verify_html
+from verify_deployment import verify_html, verify_home_link
 
 
 class AccessTests(unittest.TestCase):
@@ -46,6 +46,14 @@ class AccessTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             verify_html('V75travet.se expected', 'text/plain', 'expected')
         verify_html('<title>V75travet.se</title><h1>expected</h1>', 'text/html', 'expected')
+
+    def test_saturday_report_must_be_reachable_through_homepage_archive(self):
+        home = verify_html('V75travet.se <a href="./efteranalys/">Arkiv</a>', 'text/html', 'Arkiv')
+        with patch('verify_deployment.fetch_site', return_value=(
+                'V75travet.se <a href="./2026-11-07/">Rapport</a>', 'text/html')):
+            verify_home_link(home, '/efteranalys/2026-11-07/', {})
+            with self.assertRaises(RuntimeError):
+                verify_home_link(home, '/efteranalys/2026-11-14/', {})
 
 
 if __name__ == '__main__':

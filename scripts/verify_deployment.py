@@ -6,7 +6,7 @@ import pathlib
 import shutil
 import subprocess
 from html.parser import HTMLParser
-from urllib.parse import urlsplit
+from urllib.parse import urljoin, urlsplit
 from cloudflare_access import ORIGIN, fetch_site, load_credentials, site_url
 
 
@@ -46,6 +46,24 @@ def verify_html(body, content_type, expected):
     return page
 
 
+def links_to(page, base_path, target_path):
+    target = urlsplit(site_url(target_path))
+    return any((link.scheme, link.netloc, link.path) == (target.scheme, target.netloc, target.path)
+               for link in (urlsplit(urljoin(ORIGIN+base_path, href)) for href in page.links))
+
+
+def verify_home_link(home, path, credentials):
+    if links_to(home, '/', path):
+        return
+    # Saturday reports are linked through the archive already on the homepage.
+    if path.startswith('/efteranalys/') and links_to(home, '/', '/efteranalys/'):
+        body, kind = fetch_site('/efteranalys/', credentials)
+        archive = verify_html(body, kind, 'V75travet.se')
+        if links_to(archive, '/efteranalys/', path):
+            return
+    raise RuntimeError('Homepage/archive does not link to the requested report')
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', required=True)
@@ -59,8 +77,7 @@ def main():
     page = verify_html(body, content_type, args.expect)
     homepage, homepage_type = fetch_site('/', credentials)
     home = verify_html(homepage, homepage_type, 'V75travet.se')
-    if args.path not in [urlsplit(x).path.replace('./', '/') for x in home.links]:
-        raise RuntimeError('Homepage does not link to the requested report')
+    verify_home_link(home, args.path, credentials)
     print('PASS: authenticated production content and homepage report link')
     if args.browser:
         if not args.output_dir:
