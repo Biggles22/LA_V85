@@ -2,39 +2,28 @@
   "schemaVersion": 1,
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "c193eb0a09d90af255da7c00ee63b23bc2924eda2c9b563b456b9b7c86b03636",
-  "version": 3,
-  "reviewedAt": "2026-11-05T19:08:49.940863+00:00",
+  "snapshotId": "1c595b4331a5b94e86a9160d7833d1efe1defa71774cfef3d63b2a0741604756",
+  "version": 4,
+  "reviewedAt": "2026-11-06T19:01:07.708076+00:00",
   "picks": [
     {
       "leg": 6,
       "number": 5,
       "name": "Good Wine",
       "type": "outsider",
-      "reason": "Historikmodellens förstaval och nu trea i den utökade modellen, upp från åttonde plats i går. En seger och fyra topp-tre på fem starter ger formstöd. Från spår 5 på startvolten över 2140 meter kan en felfri start och ett ekonomiskt lopp ge en väg till seger. Anmäld med sko fram, barfota bak och vanlig vagn. Streck 4,89 procent (tidigare 4,37), vinnarodds 8,19 (tidigare 19,56).",
-      "risk": "Tarte Tatin är fortfarande förstaval i den utökade modellen. Voltstart och positioner innebär risk; någon verifierad spets- eller tempoprognos finns inte.",
+      "reason": "Good Wine är fortsatt historikmodellens förstaval, med en seger och fyra topp-tre på fem starter. Den utökade modellen sänker hästen från trea till fyra. Från spår 5 på startvolten över 2140 meter krävs en felfri start och ett ekonomiskt lopp; vid rätt ryggar finns en konkret väg att komma till slut. Anmäld med sko fram, barfota bak och vanlig vagn. Streck 4,47 procent (torsdag 4,89), vinnarodds 11,27 (torsdag 8,19).",
+      "risk": "Tarte Tatin är favorit och förstaval i den utökade modellen, medan Wing Profile är tvåa i båda. Voltstart, positionsförlust och modellkonflikten gör skrällförslaget osäkert. Tempo och spetschans är inte verifierade.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5"
       ]
     },
     {
-      "leg": 8,
-      "number": 8,
-      "name": "Snack",
+      "leg": 3,
+      "number": 1,
+      "name": "Eldbrand",
       "type": "outsider",
-      "reason": "Snack är nu etta i den utökade modellen, tidigare tvåa, och fortsatt trea i historikmodellen. En seger och två topp-tre på fem starter ger visst formstöd. Vid högt tempo och en ryggresa kan en sen avslutning ge en väg till seger över 2140 meter. Anmäld barfota fram, sko bak och vanlig vagn. Streck 4,71 procent (tidigare 5,04), vinnarodds 6,14 (tidigare 6,41).",
-      "risk": "Spår 8 innebär risk för ett dyrt lopp. Tempo och ryggresa är villkor, inte verifierade förutsägelser. Historikmodellen föredrar Set it off H.C. och Exile on Main St.",
-      "sources": [
-        "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5"
-      ]
-    },
-    {
-      "leg": 1,
-      "number": 9,
-      "name": "Andiamo",
-      "type": "outsider",
-      "reason": "Andiamo är ny etta i den utökade modellen, tidigare tvåa, och fyra i historikmodellen. Fyra segrar och fem topp-tre på fem starter gör formargumentet tydligt. Över 1640 meter behöver hästen från bakspår följa rätt rygg och komma loss i tid. Anmäld barfota runt om med vanlig vagn; ändring bak är registrerad. Streck 2,79 procent (tidigare 3,64), vinnarodds 3,25 (tidigare 4,01).",
-      "risk": "Bakspår på kort distans kan låsa in hästen eller ge för långt fram. Historikmodellen föredrar Jaguar Godiva. Låga streck och låga odds är en marknadskonflikt, inte bevis på spelvärde.",
+      "reason": "Eldbrand tas upp som en tydligt modellberoende skrällkandidat: etta i historikmodellen, två segrar och fyra topp-tre på fem starter. Från innerspår bakom bilen över 2640 meter kan ett positionssnålt lopp och en öppning i slutskedet vara vägen till seger. Anmäld med skor runt om, skoändring fram och vanlig vagn. Streck 4,20 procent (torsdag 4,02), vinnarodds 15,07 (torsdag 14,51).",
+      "risk": "Den utökade modellen rankar Eldbrand först nia och föredrar Briskeby Pilen samt Skjegge Svarten. Innerspåret kan bli en fälla och 35 dagar mellan starterna ökar osäkerheten om dagsformen. Det finns ingen verifierad spets- eller tempoprognos.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5"
       ]

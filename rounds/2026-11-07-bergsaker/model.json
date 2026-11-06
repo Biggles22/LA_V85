@@ -3,8 +3,8 @@
   "kind": "CATBOOST_PRESTART_RANKING",
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "c193eb0a09d90af255da7c00ee63b23bc2924eda2c9b563b456b9b7c86b03636",
-  "generatedAt": "2026-11-05T19:06:32.252490+00:00",
+  "snapshotId": "1c595b4331a5b94e86a9160d7833d1efe1defa71774cfef3d63b2a0741604756",
+  "generatedAt": "2026-11-06T18:58:19.891180+00:00",
   "model": "CatBoostClassifier",
   "parameters": {
     "iterations": 220,
@@ -5719,42 +5719,42 @@
     {
       "raceId": "2026-11-07_9_5",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_5/extended",
-      "sha256": "607f2e7f837141078e2bf077a1f217ac1a8c5a3f4bf479e3ea50ad5e1eaf8920"
+      "sha256": "95d7d6fd546a01c8b5f0ac4bc250dc7ea28544f8635439a264ee67857264c517"
     },
     {
       "raceId": "2026-11-07_9_6",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_6/extended",
-      "sha256": "91aaab45fb79fed5d290ce979d5fc648d1221563c0cee53ed3a041dc4b950614"
+      "sha256": "6951f4f44117517b69a4778210d7599b4c44c1d47db18499066a44a5569b8913"
     },
     {
       "raceId": "2026-11-07_9_7",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_7/extended",
-      "sha256": "13ca2246dfb395336be437f59a784ecd06575bd91477675f1dacaa4538c1b756"
+      "sha256": "fdc900a16f919199bb1d5ffdf9fa0444f7b3caf91e7b34ee19bbd307dc8f0a74"
     },
     {
       "raceId": "2026-11-07_9_8",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_8/extended",
-      "sha256": "f6321a3890a33d60ad4aba2aaed43d75911bc0b540147dba04e8d0627bb8b6dc"
+      "sha256": "0d760a72a8fb9b3650da73457bb7dc62e5e9e19fa0fcf5c2c4aed0bd6d4895fd"
     },
     {
       "raceId": "2026-11-07_9_9",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_9/extended",
-      "sha256": "881c2d950e58ea4f07955d2542963919dfa68bf0e3872a06c8a150af92e183ba"
+      "sha256": "721e842a429ce0067ac88e7242df48bc6e6d97cc25c09a9ed87d63910998dad1"
     },
     {
       "raceId": "2026-11-07_9_10",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_10/extended",
-      "sha256": "8c2c039e157990579bc1d0053d399fffd02d793a6ab22d16b7e108ddbb4183de"
+      "sha256": "af2e627b04cca52525d9326674596dd63d108de2f157493b2ada125a61e3b1cc"
     },
     {
       "raceId": "2026-11-07_9_11",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_11/extended",
-      "sha256": "3efbfadb04fceb78b845387c9d383cd772ef8eb0db65b0236ae8ffc76d99f950"
+      "sha256": "762a07b2f2cb66c8a153e1f49e49ad559fa5cb31a10968084737a5da426c9c79"
     },
     {
       "raceId": "2026-11-07_9_12",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_12/extended",
-      "sha256": "5c6c871a297e156c14a9b0acaa2aa029c70ae5abb14c2c9113dfbc9fcdb29ec1"
+      "sha256": "997cc252c8faaac5c46203568150fc36df0c615aff1a20c82a784bc746a83a27"
     }
   ],
   "limitations": "Experimentell ranking från utvalda kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, aktuellt resultat, hästnamn, kusk, tränare och karriärstatistik ingår inte som modellvariabler. Galoppvariabeln är avstängd för jämförbarhet med grundförsöket. Testet är retrospektivt och visar inte lönsamhet.",
@@ -6676,7 +6676,7 @@
           "prestartFeatures": {
             "post": 5.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.4,
@@ -6687,7 +6687,7 @@
             "km_median": 71.8,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.18535645,
+          "modelScore": 0.18646011,
           "rank": 1
         },
         {
@@ -6698,7 +6698,7 @@
           "prestartFeatures": {
             "post": 6.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2,
@@ -6709,7 +6709,7 @@
             "km_median": 72.2,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.17868213,
+          "modelScore": 0.17417938,
           "rank": 2
         },
         {
@@ -6720,7 +6720,7 @@
           "prestartFeatures": {
             "post": 1.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 1.5,
@@ -6731,7 +6731,7 @@
             "km_median": 72.4,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.147482,
+          "modelScore": 0.16400785,
           "rank": 3
         },
         {
@@ -6742,7 +6742,7 @@
           "prestartFeatures": {
             "post": 8.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.667,
@@ -6753,7 +6753,7 @@
             "km_median": 71.3,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.14632873,
+          "modelScore": 0.12809748,
           "rank": 4
         },
         {
@@ -6764,7 +6764,7 @@
           "prestartFeatures": {
             "post": 4.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.667,
@@ -6775,7 +6775,7 @@
             "km_median": 71.9,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.08937241,
+          "modelScore": 0.0909885,
           "rank": 5
         },
         {
@@ -6786,7 +6786,7 @@
           "prestartFeatures": {
             "post": 2.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.75,
@@ -6797,7 +6797,7 @@
             "km_median": 72.35,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.08105028,
+          "modelScore": 0.08540683,
           "rank": 6
         },
         {
@@ -6808,7 +6808,7 @@
           "prestartFeatures": {
             "post": 3.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.8,
@@ -6819,7 +6819,7 @@
             "km_median": null,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.06184717,
+          "modelScore": 0.06025167,
           "rank": 7
         },
         {
@@ -6830,7 +6830,7 @@
           "prestartFeatures": {
             "post": 9.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.75,
@@ -6841,7 +6841,7 @@
             "km_median": 72.1,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.04967098,
+          "modelScore": 0.0488276,
           "rank": 8
         },
         {
@@ -6852,7 +6852,7 @@
           "prestartFeatures": {
             "post": 11.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.2,
@@ -6863,7 +6863,7 @@
             "km_median": 71.85,
             "past_purse_log": 15.895
           },
-          "modelScore": 0.03928803,
+          "modelScore": 0.03736553,
           "rank": 9
         },
         {
@@ -6874,7 +6874,7 @@
           "prestartFeatures": {
             "post": 10.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 5,
@@ -6885,30 +6885,8 @@
             "km_median": null,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.03607678,
+          "modelScore": 0.0343292,
           "rank": 10
-        },
-        {
-          "raceId": "2026-11-07_9_8",
-          "leg": 4,
-          "number": 7,
-          "name": "Devils Tongue",
-          "prestartFeatures": {
-            "post": 7.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 11,
-            "gallop5": 1.0,
-            "km_median": 73.6,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.03606836,
-          "rank": 11
         },
         {
           "raceId": "2026-11-07_9_8",
@@ -6918,7 +6896,7 @@
           "prestartFeatures": {
             "post": 12.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 11,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": null,
@@ -6929,8 +6907,8 @@
             "km_median": null,
             "past_purse_log": null
           },
-          "modelScore": 0.02740155,
-          "rank": 12
+          "modelScore": 0.02582184,
+          "rank": 11
         }
       ],
       "top3": [
@@ -7647,7 +7625,7 @@
           "prestartFeatures": {
             "post": 6.0,
             "distance": 2640.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 1.25,
@@ -7658,30 +7636,8 @@
             "km_median": null,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.36865897,
+          "modelScore": 0.37304752,
           "rank": 1
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 10,
-          "name": "Last Cool Cash",
-          "prestartFeatures": {
-            "post": 10.0,
-            "distance": 2640.0,
-            "field": 11,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.5,
-            "win5": 1,
-            "top3_5": 4,
-            "days_off": 17,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 16.524
-          },
-          "modelScore": 0.09516786,
-          "rank": 2
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7691,7 +7647,7 @@
           "prestartFeatures": {
             "post": 2.0,
             "distance": 2640.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 1.667,
@@ -7702,7 +7658,29 @@
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.09422093,
+          "modelScore": 0.10407453,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 10,
+          "name": "Last Cool Cash",
+          "prestartFeatures": {
+            "post": 10.0,
+            "distance": 2640.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.5,
+            "win5": 1,
+            "top3_5": 4,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.524
+          },
+          "modelScore": 0.10389611,
           "rank": 3
         },
         {
@@ -7713,7 +7691,7 @@
           "prestartFeatures": {
             "post": 4.0,
             "distance": 2640.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.25,
@@ -7724,7 +7702,7 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.07474683,
+          "modelScore": 0.07467053,
           "rank": 4
         },
         {
@@ -7735,7 +7713,7 @@
           "prestartFeatures": {
             "post": 3.0,
             "distance": 2640.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.4,
@@ -7746,7 +7724,7 @@
             "km_median": null,
             "past_purse_log": 15.895
           },
-          "modelScore": 0.06613322,
+          "modelScore": 0.06270735,
           "rank": 5
         },
         {
@@ -7757,7 +7735,7 @@
           "prestartFeatures": {
             "post": 5.0,
             "distance": 2640.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.5,
@@ -7768,30 +7746,8 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.05693218,
+          "modelScore": 0.05260773,
           "rank": 6
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 8,
-          "name": "Seven Mounds",
-          "prestartFeatures": {
-            "post": 8.0,
-            "distance": 2640.0,
-            "field": 11,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.2,
-            "win5": 2,
-            "top3_5": 3,
-            "days_off": 20,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.83
-          },
-          "modelScore": 0.05446192,
-          "rank": 7
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7801,7 +7757,7 @@
           "prestartFeatures": {
             "post": 1.0,
             "distance": 2640.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.25,
@@ -7812,30 +7768,8 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.05318582,
-          "rank": 8
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 7,
-          "name": "Mastroianni",
-          "prestartFeatures": {
-            "post": 7.0,
-            "distance": 2640.0,
-            "field": 11,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 38,
-            "gallop5": null,
-            "km_median": 74.45,
-            "past_purse_log": 16.418
-          },
-          "modelScore": 0.04894092,
-          "rank": 9
+          "modelScore": 0.04681554,
+          "rank": 7
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7845,7 +7779,7 @@
           "prestartFeatures": {
             "post": 12.0,
             "distance": 2640.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3,
@@ -7856,8 +7790,30 @@
             "km_median": 74.8,
             "past_purse_log": 16.341
           },
-          "modelScore": 0.04357256,
-          "rank": 10
+          "modelScore": 0.04458177,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 7,
+          "name": "Mastroianni",
+          "prestartFeatures": {
+            "post": 7.0,
+            "distance": 2640.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 38,
+            "gallop5": null,
+            "km_median": 74.45,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.04227064,
+          "rank": 9
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7867,7 +7823,7 @@
           "prestartFeatures": {
             "post": 11.0,
             "distance": 2640.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3,
@@ -7878,8 +7834,8 @@
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.03005705,
-          "rank": 11
+          "modelScore": 0.03120149,
+          "rank": 10
         }
       ],
       "top3": [
@@ -7889,13 +7845,13 @@
           "rank": 1
         },
         {
-          "number": 10,
-          "name": "Last Cool Cash",
+          "number": 2,
+          "name": "Dropthegloves",
           "rank": 2
         },
         {
-          "number": 2,
-          "name": "Dropthegloves",
+          "number": 10,
+          "name": "Last Cool Cash",
           "rank": 3
         }
       ]
@@ -7912,7 +7868,7 @@
           "prestartFeatures": {
             "post": 9.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.6,
@@ -7923,7 +7879,7 @@
             "km_median": 73.8,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.27032355,
+          "modelScore": 0.2227809,
           "rank": 1
         },
         {
@@ -7934,7 +7890,7 @@
           "prestartFeatures": {
             "post": 6.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 1.5,
@@ -7945,7 +7901,7 @@
             "km_median": 73.95,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.13654564,
+          "modelScore": 0.13526765,
           "rank": 2
         },
         {
@@ -7956,7 +7912,7 @@
           "prestartFeatures": {
             "post": 8.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.25,
@@ -7967,30 +7923,8 @@
             "km_median": 74.05,
             "past_purse_log": 16.341
           },
-          "modelScore": 0.10576276,
+          "modelScore": 0.08788362,
           "rank": 3
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 14,
-          "name": "Ultimate Scotch",
-          "prestartFeatures": {
-            "post": 14.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.25,
-            "win5": 2,
-            "top3_5": 3,
-            "days_off": 21,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 16.341
-          },
-          "modelScore": 0.08467989,
-          "rank": 4
         },
         {
           "raceId": "2026-11-07_9_12",
@@ -8000,7 +7934,7 @@
           "prestartFeatures": {
             "post": 5.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.4,
@@ -8011,7 +7945,29 @@
             "km_median": 74.3,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.08161652,
+          "modelScore": 0.0784006,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 14,
+          "name": "Ultimate Scotch",
+          "prestartFeatures": {
+            "post": 14.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.25,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.07793152,
           "rank": 5
         },
         {
@@ -8022,7 +7978,7 @@
           "prestartFeatures": {
             "post": 4.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.667,
@@ -8033,7 +7989,7 @@
             "km_median": 74.4,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.06408903,
+          "modelScore": 0.06823707,
           "rank": 6
         },
         {
@@ -8044,7 +8000,7 @@
           "prestartFeatures": {
             "post": 2.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 1,
@@ -8055,52 +8011,8 @@
             "km_median": 77.8,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.05975061,
+          "modelScore": 0.06255877,
           "rank": 7
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 1,
-          "name": "License to Fight",
-          "prestartFeatures": {
-            "post": 1.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.8,
-            "win5": 2,
-            "top3_5": 2,
-            "days_off": 15,
-            "gallop5": null,
-            "km_median": 75.45,
-            "past_purse_log": 14.914
-          },
-          "modelScore": 0.04210447,
-          "rank": 8
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 12,
-          "name": "Showmethecash",
-          "prestartFeatures": {
-            "post": 12.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.25,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 49,
-            "gallop5": null,
-            "km_median": 74.2,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.04010602,
-          "rank": 9
         },
         {
           "raceId": "2026-11-07_9_12",
@@ -8110,7 +8022,7 @@
           "prestartFeatures": {
             "post": 7.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3,
@@ -8121,8 +8033,30 @@
             "km_median": 74.95,
             "past_purse_log": 14.732
           },
-          "modelScore": 0.03857996,
-          "rank": 10
+          "modelScore": 0.04073698,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 1,
+          "name": "License to Fight",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.8,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 15,
+            "gallop5": null,
+            "km_median": 75.45,
+            "past_purse_log": 14.914
+          },
+          "modelScore": 0.03974427,
+          "rank": 9
         },
         {
           "raceId": "2026-11-07_9_12",
@@ -8132,7 +8066,7 @@
           "prestartFeatures": {
             "post": 11.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.667,
@@ -8143,7 +8077,29 @@
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.03754772,
+          "modelScore": 0.03768485,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-07_9_12",
+          "leg": 8,
+          "number": 12,
+          "name": "Showmethecash",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2140.0,
+            "field": 14,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 49,
+            "gallop5": null,
+            "km_median": 74.2,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.0368884,
           "rank": 11
         },
         {
@@ -8154,7 +8110,7 @@
           "prestartFeatures": {
             "post": 3.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 4,
@@ -8165,7 +8121,7 @@
             "km_median": 75.65,
             "past_purse_log": 14.732
           },
-          "modelScore": 0.02884774,
+          "modelScore": 0.02748801,
           "rank": 12
         },
         {
@@ -8176,7 +8132,7 @@
           "prestartFeatures": {
             "post": 10.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.25,
@@ -8187,30 +8143,8 @@
             "km_median": 75.45,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.02866707,
+          "modelScore": 0.02734381,
           "rank": 13
-        },
-        {
-          "raceId": "2026-11-07_9_12",
-          "leg": 8,
-          "number": 15,
-          "name": "Sir Håleryd",
-          "prestartFeatures": {
-            "post": 15.0,
-            "distance": 2140.0,
-            "field": 15,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 4.25,
-            "win5": 1,
-            "top3_5": 1,
-            "days_off": 35,
-            "gallop5": null,
-            "km_median": 74.5,
-            "past_purse_log": 16.118
-          },
-          "modelScore": 0.02663561,
-          "rank": 14
         },
         {
           "raceId": "2026-11-07_9_12",
@@ -8220,7 +8154,7 @@
           "prestartFeatures": {
             "post": 13.0,
             "distance": 2140.0,
-            "field": 15,
+            "field": 14,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 4.2,
@@ -8231,8 +8165,8 @@
             "km_median": 75.25,
             "past_purse_log": 14.732
           },
-          "modelScore": 0.01640053,
-          "rank": 15
+          "modelScore": 0.01490809,
+          "rank": 14
         }
       ],
       "top3": [
