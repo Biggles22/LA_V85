@@ -1,0 +1,515 @@
+{
+  "createdAt": "2026-11-06T19:27:25.258674+00:00",
+  "roundId": "2026-11-07-bergsaker",
+  "gameId": "V85_2026-11-07_9_5",
+  "snapshotId": "abb3a93247b759b289d8d89664c4f6629c2eb19f9124137fcfa7a7187b168849",
+  "observedAt": "2026-11-06T19:20:23.417037+00:00",
+  "sourceAt": "2026-11-06T20:14:30+01:00",
+  "bettingDeadline": "2026-11-07T15:00:00+01:00",
+  "gitHeadBeforeReview": "41a78f9",
+  "modelVersionFiles": [
+    "models.json",
+    "model.json"
+  ],
+  "manualVersion": 5,
+  "comparisonWindow": "Friday follow-up; not the Saturday common-window comparison",
+  "externalComparison": "No complete third-party benchmark captured in this follow-up. Original forecasts retained.",
+  "rawCaptureNote": "Game captured at models.observedAt; extended races fetched afterwards by compare_current_models.py. Exact per-race response times not retained. Horse history has individual capture times.",
+  "files": [
+    {
+      "path": "analysis.json",
+      "sha256": "fdc96fd7a3243fb5dcb0c42738d13d828a737e27bbd8cab61f31a00f96f1f8fc"
+    },
+    {
+      "path": "data.json",
+      "sha256": "4f9b6e91ebc0a78506c8a9816267f980072499786791016532f34b3cad72b4db"
+    },
+    {
+      "path": "form.json",
+      "sha256": "92b9792d5fb1a7b722a132f4c8b086c922dc2292346710f10815bb02d972cd1b"
+    },
+    {
+      "path": "history-review.json",
+      "sha256": "950e7502f5a336d9475ef33b218d3d26d488bc39093c87668c43bf4f21ce7264"
+    },
+    {
+      "path": "history-statistics.json",
+      "sha256": "5056502c78a6493c8b857f3ab9136aec8a72ce9f6103ff5dc3276ee65ffcb7ee"
+    },
+    {
+      "path": "manual-review.json",
+      "sha256": "42c4e494fd7d4638bb85807ab30bc7c8be5fb2589a74301a0ba4a4605a37e1fc"
+    },
+    {
+      "path": "market.json",
+      "sha256": "4440ad23f27832fd2b800ee6c7844886d96afaa0ff54e236d14b1819ab99b25e"
+    },
+    {
+      "path": "model.json",
+      "sha256": "448889c33d737ed0f86bea659c6bc51fcf4bbec49e09626a55da48be768f84b2"
+    },
+    {
+      "path": "models.json",
+      "sha256": "8c41f4a67e7b8f277c4b44dec0a7a6840f2f5f6fc269793c35c83c0dfa853adc"
+    },
+    {
+      "path": "horse-history/743074.json",
+      "sha256": "57ece1ccaf67297c2a2668818e65bdcf4bf7009e0637fb87e8effdd15451417c"
+    },
+    {
+      "path": "horse-history/744176.json",
+      "sha256": "a85e795222306f7e6048b1970044e25d0db5ddf7ace8e81140034c046baa8345"
+    },
+    {
+      "path": "horse-history/744343.json",
+      "sha256": "048a0a49512dd1584951efce007ea171271d6b9a4058686ebc36361a766460ac"
+    },
+    {
+      "path": "horse-history/745779.json",
+      "sha256": "14a18223c6ebebd8a492efe6c2835fa9c7c0e22983d172ce6d302d8960e5cadb"
+    },
+    {
+      "path": "horse-history/746697.json",
+      "sha256": "d42370be9c2a47cca1074547d8a08ca6dbc9dc6652801c6c6ac90f7edd70c757"
+    },
+    {
+      "path": "horse-history/750346.json",
+      "sha256": "0048e9f64b95c2240363d8f219a8c0c2a49bb8b212469d848cdb2c28e5bd7181"
+    },
+    {
+      "path": "horse-history/752221.json",
+      "sha256": "0529c80d78e6739c99465d0b2dd9e4767af3744ae6331140873944bd1528a45a"
+    },
+    {
+      "path": "horse-history/753317.json",
+      "sha256": "d168b9644a752caf42ac976636a9b74dd6af2d5621a1176856ea8f7492a246e2"
+    },
+    {
+      "path": "horse-history/753536.json",
+      "sha256": "4a0dcadbab5438d64b4cdaf93a3b7845fbd4fd15089016ac8bc98b707c195341"
+    },
+    {
+      "path": "horse-history/756301.json",
+      "sha256": "f6b57460085a63982ef29c59aa4832eeb50983e5a21f654bfcf90a2303da9522"
+    },
+    {
+      "path": "horse-history/757383.json",
+      "sha256": "be31416661e411d7e8ceac78100d843a958318ff83fd8d5c7753b022c2c64b5b"
+    },
+    {
+      "path": "horse-history/759341.json",
+      "sha256": "95cb4971d8e0411ba697107b698ddd601c58b9fc6121de9c41f391506dd99cb2"
+    },
+    {
+      "path": "horse-history/759690.json",
+      "sha256": "cfb4f4a8fe4b8262a33e4a40fc55c2ba915632a5da466bf2894d0635aee209d8"
+    },
+    {
+      "path": "horse-history/761394.json",
+      "sha256": "cd620159f44999f22d2d7d5c17b38448fc0d333065d8df85aaf04756ad9e6a6d"
+    },
+    {
+      "path": "horse-history/761948.json",
+      "sha256": "57ab0d7fea9629b06aa52e9a41bccc2134e0e8415fe187394b9b240f057f6608"
+    },
+    {
+      "path": "horse-history/763359.json",
+      "sha256": "cdf99cd65be58d272dc5176c7934adf4361ba4af1564ef560c7c9c5b1d5414d0"
+    },
+    {
+      "path": "horse-history/764203.json",
+      "sha256": "d2f7c344dc1c925e387402bd39185ecc68e3f87a85fdf73fc0cc06649e866cff"
+    },
+    {
+      "path": "horse-history/765089.json",
+      "sha256": "6aff391ac2acfef2bd21cbad612a0746a9e1faf477de2f9fc963433e1e137e58"
+    },
+    {
+      "path": "horse-history/765629.json",
+      "sha256": "3eb9c3e98e358496a5ce8e064955039f7f00ffd7facdf9c6fde8fafd2f4384e6"
+    },
+    {
+      "path": "horse-history/766064.json",
+      "sha256": "2fa7ecfbd19df6187456c8dd62b54fd75a0eedea4fe758f3101151bc63be0864"
+    },
+    {
+      "path": "horse-history/771031.json",
+      "sha256": "fd8775551390537c013baf8873730e97576dcbb830ae5d91c0adb801865d6ce5"
+    },
+    {
+      "path": "horse-history/772463.json",
+      "sha256": "f8f48096d1e6b6b632b23aaf16de3fc1a6ab988aa50914c7cf50774dda820126"
+    },
+    {
+      "path": "horse-history/772487.json",
+      "sha256": "7379fc41834c4b7198a03bd3b87ea24b88fd6d75ea4aaeb6b16e7bf7f512dcb3"
+    },
+    {
+      "path": "horse-history/773050.json",
+      "sha256": "998a3ec643c491a79fe1ca8d9d8de814813a7fd889e93009b0af8614503f1027"
+    },
+    {
+      "path": "horse-history/773117.json",
+      "sha256": "9c287dd1f7af88b922132cebb173bc79d06a0e80b02b718fcc7d7f555a84bad9"
+    },
+    {
+      "path": "horse-history/776542.json",
+      "sha256": "b0c610043c4463d8efd052d204b3de685fa4029c1f2ae40a6fb9bbce04b99d68"
+    },
+    {
+      "path": "horse-history/777146.json",
+      "sha256": "954497bbcc3a7fb47794e2120e068d0856e91b21bf5b7186abf9bfc57324d97b"
+    },
+    {
+      "path": "horse-history/777163.json",
+      "sha256": "e5f0558cc8a2c29abb1d86d0cd0f75ecb06e1f2f9fc476b142af711574cc6cf3"
+    },
+    {
+      "path": "horse-history/777776.json",
+      "sha256": "cce42da63661df159d770969344ad4045e30e7f7f5167cc3c53415bc238d990d"
+    },
+    {
+      "path": "horse-history/778369.json",
+      "sha256": "c161ec241ef475ed0843b75f13bb011c16a50a6b2a6d87d7171ce1ffa8bbed4d"
+    },
+    {
+      "path": "horse-history/778376.json",
+      "sha256": "75fdb04008d39067e37774106c76a2e3d4df1e1b758981c7dd82884ff8d45e48"
+    },
+    {
+      "path": "horse-history/778923.json",
+      "sha256": "4044e34f564bd08bd507b4788ba04cb3c49dbc57f0357f398eacc05c4318da7a"
+    },
+    {
+      "path": "horse-history/779719.json",
+      "sha256": "24eafcc18d0306a67594fa827ae6c6128d423f80993716f0d4f344a6afea8501"
+    },
+    {
+      "path": "horse-history/779964.json",
+      "sha256": "54be97d76b30a4e32245fd3f577628ce7445c2398a22b22d38ede3ca4ec665c2"
+    },
+    {
+      "path": "horse-history/780041.json",
+      "sha256": "143d163c3e0bbafc81981818460c4cc48ac0cf88ddebcf5e4cbce1630ce73f61"
+    },
+    {
+      "path": "horse-history/780143.json",
+      "sha256": "599da2144bf394bee16f3690de1c9a1ab6f93e839e9a0b6b36a7830aac67964c"
+    },
+    {
+      "path": "horse-history/780334.json",
+      "sha256": "3899c6fd1868220c31dfba7595ac6ff089022da6b03b9e964e22ea6609868df1"
+    },
+    {
+      "path": "horse-history/780522.json",
+      "sha256": "f3e6c01ea3aa1a6162b146eac4edc522b5e981d5d80ba3c30041b461b133c661"
+    },
+    {
+      "path": "horse-history/781365.json",
+      "sha256": "37d2cd8a504cce16de618e2fbc1693b9579c163079c989beb5b3b07097c99a39"
+    },
+    {
+      "path": "horse-history/781409.json",
+      "sha256": "19ea3e67d02b1a00b474670e5ceb0673773b239030dc9bec328cd82853f9637e"
+    },
+    {
+      "path": "horse-history/782001.json",
+      "sha256": "ff8dac64918249bfe479740e3f63dceb5fececb764477bd04fde5b3fcc2a899b"
+    },
+    {
+      "path": "horse-history/783541.json",
+      "sha256": "8f137f84d6734e37eb25d0afca6f12b5f3309a90bb93e53aa9ad14cb72af94b6"
+    },
+    {
+      "path": "horse-history/783606.json",
+      "sha256": "3bee98586ec6a217fd94da145fa46473aaf9c173d22c891ac5d5939485df9823"
+    },
+    {
+      "path": "horse-history/783865.json",
+      "sha256": "9d630e4ed7235b321fd8258032666b058727c8fcdb378654b8effcca0cb5d07e"
+    },
+    {
+      "path": "horse-history/783935.json",
+      "sha256": "ecc4bff15e07b45614bce48b939c61539daee8e37919a3cd3822b390fafe94d3"
+    },
+    {
+      "path": "horse-history/784388.json",
+      "sha256": "8c1dbc1a80388e68fb8b719ff2922c4e67c1cc60dfe1d22933ef0d60029f1d22"
+    },
+    {
+      "path": "horse-history/784406.json",
+      "sha256": "bab2e14432cf5d440d869f26f4667b0d09fc43c0214787087f6e5132aaa8df9b"
+    },
+    {
+      "path": "horse-history/784501.json",
+      "sha256": "c073ecf42b447d14a42f84e0c9b9f30a472d88384f59261917c621fbf5c20725"
+    },
+    {
+      "path": "horse-history/784545.json",
+      "sha256": "9b23b770c3d5d87fa883b382e6ea4527de200175b44644659135ea69afbf3029"
+    },
+    {
+      "path": "horse-history/784875.json",
+      "sha256": "3e9b30f2e29d277392fee8c4ed137a2acc2b7a3c369d38d38c9daea2b060ef6c"
+    },
+    {
+      "path": "horse-history/784930.json",
+      "sha256": "96e36e6c3add6cd0bd2e72e7033ed746d137f72633e5cdd29dfff755802f17ec"
+    },
+    {
+      "path": "horse-history/785299.json",
+      "sha256": "12ad2200e0cbe9756960beb2f7f2261d9aa25d98f7da2f076d2b19bd405e140d"
+    },
+    {
+      "path": "horse-history/785329.json",
+      "sha256": "e7ba070cae25f84fe04086b506f5f65ee23b3c15911edd09e08f4f5d1fb85879"
+    },
+    {
+      "path": "horse-history/785412.json",
+      "sha256": "0e85e0c6795c8595b9baf646553767c1526f0eeb8663405e5e933ba77acd1243"
+    },
+    {
+      "path": "horse-history/785743.json",
+      "sha256": "28e59d1e95c1157b0141e290d414d436e2640493b444fdf62f34cb0cb7cf5419"
+    },
+    {
+      "path": "horse-history/785806.json",
+      "sha256": "427f296904c673b163f2a3b20f5df134ab34a93f0c289ca8ff9a2cc92fc54752"
+    },
+    {
+      "path": "horse-history/786255.json",
+      "sha256": "2cf054e1f716318b018e72d446985df1a3300927796ca0a1fb8a269de9508833"
+    },
+    {
+      "path": "horse-history/786256.json",
+      "sha256": "181ca8d2f95628da5319d4948386f47114475e0aac2bd82d4738f75619f0938a"
+    },
+    {
+      "path": "horse-history/786331.json",
+      "sha256": "b21cec4e87cdb442283b01406ac7905cd0114e74f45b754ae90b2c48593a72c6"
+    },
+    {
+      "path": "horse-history/786346.json",
+      "sha256": "d61acc0e84b415278964c7dd20deb4f83c94a67a98c7ed1e28ac73fe09002384"
+    },
+    {
+      "path": "horse-history/786362.json",
+      "sha256": "bbcfaa95d3592d76435ad39b6c386d97381858ffe9b6516d7b4472835dfc92fc"
+    },
+    {
+      "path": "horse-history/786558.json",
+      "sha256": "91706ef64a3a31a9f4b601aab55cc47e815b3f007b19a20306e695d23fbdc8cc"
+    },
+    {
+      "path": "horse-history/787115.json",
+      "sha256": "112332c617709ab037a2e377ffc40c0a4265803a2384df7dedb10b97b3d03821"
+    },
+    {
+      "path": "horse-history/787608.json",
+      "sha256": "90693c3dafdb12e90e763e669313398b7bdd89b77b26362825d88b9d6dc0196b"
+    },
+    {
+      "path": "horse-history/787754.json",
+      "sha256": "9c795a565ca22b5d1c3f70acda2d82458dcbeeeb5e1de27e2c6de1db0cedae1c"
+    },
+    {
+      "path": "horse-history/787853.json",
+      "sha256": "661487a9004bf90846d07aeeb6d226b5f0fbbd5a8de870741bdf4f9f87e7b16d"
+    },
+    {
+      "path": "horse-history/788212.json",
+      "sha256": "f069885047f975c65abd3f8960f1d7ee7dd66e68d64628c69735b56455b46cad"
+    },
+    {
+      "path": "horse-history/790399.json",
+      "sha256": "e80af9b4c62151d3ca74ab12ed2169282e5ba4c1f4178f7ba46f86b26c585644"
+    },
+    {
+      "path": "horse-history/790411.json",
+      "sha256": "dee945ba6fc3f5b1d808837f39311d25abf1095cb9e85f7b38a13b19b952fd9b"
+    },
+    {
+      "path": "horse-history/790663.json",
+      "sha256": "053e3c3e692ce0b1963a2b9ddd3468b28087b2499cce459a47d336512f300e14"
+    },
+    {
+      "path": "horse-history/790808.json",
+      "sha256": "b20ce709417001889635eb6392b372fd0b3da9decdfc420ba8b7bcbf3d99207f"
+    },
+    {
+      "path": "horse-history/791074.json",
+      "sha256": "3097302e8dfa1d00bd576154264b4c12d93569bbb87d8add3467a2f1e109d5e2"
+    },
+    {
+      "path": "horse-history/791138.json",
+      "sha256": "2b917650b194537cf3a8422d20fd040a03e1acc08906a566916a0c14aef423e5"
+    },
+    {
+      "path": "horse-history/791277.json",
+      "sha256": "0b95ee9aed21dd11b36a87005f0fc33afb0a26e02b8bb667224592bfb8d93a03"
+    },
+    {
+      "path": "horse-history/791522.json",
+      "sha256": "8b76d399e4cfc0a08d92a5d2ee8b582864252b0fe50136bbc7691b3920447095"
+    },
+    {
+      "path": "horse-history/791694.json",
+      "sha256": "b8fca693e07af8922d1a96e664fedce721b1708a1c49d54e5e9aa72f53f5959e"
+    },
+    {
+      "path": "horse-history/791885.json",
+      "sha256": "3d7a0c6aeb1a525de300e1978391942351a664840ccc526fa53c28b744906eae"
+    },
+    {
+      "path": "horse-history/792310.json",
+      "sha256": "78583900b53ad94ea4106fb258d92975ab27c542d63a02851c0816f68fa29b89"
+    },
+    {
+      "path": "horse-history/792419.json",
+      "sha256": "e0f9203221da57d5735a3d571d401b3b29086a70232880500acfe72b312a7ec5"
+    },
+    {
+      "path": "horse-history/792591.json",
+      "sha256": "143a047bf2962cb46a050342e878acf7a3e790b8e293dcadcac4188d1425be8a"
+    },
+    {
+      "path": "horse-history/792628.json",
+      "sha256": "f3ef20a082bd496787a47b18c7d0d775bdeeab67a3cb387eb3d2365573231a3b"
+    },
+    {
+      "path": "horse-history/792730.json",
+      "sha256": "4d1ece99fb5790dcd8173b60a7169c2944410b386b3c6ee3d717a19e222a07ad"
+    },
+    {
+      "path": "horse-history/793376.json",
+      "sha256": "36faaf68823e4cb9b22e5f4b1886d0b57d995661a4263f43913899bff8795358"
+    },
+    {
+      "path": "horse-history/793529.json",
+      "sha256": "eabca353326ca4da52fad06abccd7d87e546001cd37daa3bad9c3ea6936e01b8"
+    },
+    {
+      "path": "horse-history/793680.json",
+      "sha256": "7f8b6b20dca378bda49e7f49cde01b89bdd9f7e4e2a4f6948855494c66cfce51"
+    },
+    {
+      "path": "horse-history/794009.json",
+      "sha256": "18e32d8923e40e4c1b4588218a08cf4f81b174eca86832668409c192dc15229d"
+    },
+    {
+      "path": "horse-history/794346.json",
+      "sha256": "59698b25eac02ff801056234f44428d5d3971029cff422c15f7c9d44cf36c46e"
+    },
+    {
+      "path": "horse-history/794393.json",
+      "sha256": "ded388aac1159737f9e6a1dd0082a78eb1accc263a13b306a10140d3ec728b37"
+    },
+    {
+      "path": "horse-history/794398.json",
+      "sha256": "17aa09961f09f107dbe88c503f928129156ca8ce3a79d49c5e9e14341e18c480"
+    },
+    {
+      "path": "horse-history/794653.json",
+      "sha256": "b0af2d3632ea5baeefaf5ff38903def12a6c924a70968806a5023b25b2c44fad"
+    },
+    {
+      "path": "horse-history/794912.json",
+      "sha256": "0af383ea5b8a66e40697690d21a48179584baa310e4080bfb34a3473421e50f6"
+    },
+    {
+      "path": "horse-history/795083.json",
+      "sha256": "8dce1618a3819ca8f1a5879902e48826639081de7421b7746b648c29bd69b295"
+    },
+    {
+      "path": "horse-history/795367.json",
+      "sha256": "4b53fc97257ae42f2cecae1099d7a3a9e7510bfa84b1da7281318230012c3a6a"
+    },
+    {
+      "path": "horse-history/796864.json",
+      "sha256": "d2c18aa0c992f2370474e7e25f4e71b7bd8e4826dedd7306aaaf744373d5fa18"
+    },
+    {
+      "path": "horse-history/797892.json",
+      "sha256": "d5cab61f73314a0a66ea36bede606ed563aa82d1615f999787825af17da80cad"
+    },
+    {
+      "path": "horse-history/797948.json",
+      "sha256": "ee7397cb38bb3dac1e04838430693e18c9e0b0d9330a699a8b308f4d37f0856b"
+    },
+    {
+      "path": "horse-history/798020.json",
+      "sha256": "023191597402b3fb848ea5246c4ea42981c417c888ef0498d6c2d1dee1012506"
+    },
+    {
+      "path": "horse-history/800205.json",
+      "sha256": "402f0309e683c9f03e5053526a96017e1eff3d0b0085a59fbdd75388a094661c"
+    },
+    {
+      "path": "horse-history/800370.json",
+      "sha256": "b73042d1eae9e7756d4f15252b9355f0cadf24bd662824f15fda1d029ee40cab"
+    },
+    {
+      "path": "horse-history/802840.json",
+      "sha256": "050597c638c0d1c28560bc8a757af69ee2cc0da0c56d1844bdbbcea099b508ed"
+    },
+    {
+      "path": "horse-history/807135.json",
+      "sha256": "cab118987af8220af5a075ad22797fe56d2b05aae5d049ce6f72d38583c10093"
+    },
+    {
+      "path": "horse-history/817454.json",
+      "sha256": "e46d02c7db56d595a7037096b85183fd59e3bee4bd1ba9adcf16838861f6ea24"
+    },
+    {
+      "path": "method/README.md",
+      "sha256": "51af3db0ad1b5713460e2c9b52caf909336ce24db3196444f576ac8c792851d5"
+    },
+    {
+      "path": "raw/20261106T192019Z_2026-11-07_9_10.json",
+      "sha256": "4c4ae018a349ee01c88737a764180888c68078038a4842e80d9d811b340744bb"
+    },
+    {
+      "path": "raw/20261106T192019Z_2026-11-07_9_11.json",
+      "sha256": "98ce7ae3bb404da0eab3b896006c3055ac56c6d90e3b8e95ca8a4820076ec33b"
+    },
+    {
+      "path": "raw/20261106T192019Z_2026-11-07_9_12.json",
+      "sha256": "d6002537c735b34768e2a22ecdf62ed21178c058e7d9f5363c5520e8c67a544d"
+    },
+    {
+      "path": "raw/20261106T192019Z_2026-11-07_9_5.json",
+      "sha256": "f34fcd644f1422b307918dd9ac9a2f1fe168da6590a115f21121124f92d8c3d2"
+    },
+    {
+      "path": "raw/20261106T192019Z_2026-11-07_9_6.json",
+      "sha256": "d4fdb9c221ea79e50d8c0d49b11317b916dd58798f51712c5c4c700e3a994404"
+    },
+    {
+      "path": "raw/20261106T192019Z_2026-11-07_9_7.json",
+      "sha256": "afdc24340723ea7e1a1d2a8de10d49d3c8c2bb4f1a995167678a114d54737139"
+    },
+    {
+      "path": "raw/20261106T192019Z_2026-11-07_9_8.json",
+      "sha256": "33f552ede9b94e1a299f007e37f6898ce3ad21ad52d448fbe694dbea056e8054"
+    },
+    {
+      "path": "raw/20261106T192019Z_2026-11-07_9_9.json",
+      "sha256": "4034b2a9ecf88f7346a80a1536c66df1d8f717ace837f32f7f4775fb471ced7e"
+    },
+    {
+      "path": "raw/20261106T192019Z_game.json",
+      "sha256": "7d075ae3d89fc34626ca3239169bc80be82246ae721c2578a6e57045ad43d7fa"
+    }
+  ],
+  "historyMethodNote": "Capture metadata has no derived rates. history-statistics.json excludes regular rows without both place and time and records per-horse coverage. Missing foreign results are not interpreted as losses.",
+  "externalSourceChecks": [
+    {
+      "url": "https://weather.metoffice.gov.uk/forecast/u7h6czsf2?new-design=false",
+      "status": "Conflicting cached dates between search and opened page; forecast excluded from report."
+    },
+    {
+      "url": "https://www.guiden.se/artiklar/guiden-expressv75/20261106/guiden-express-v85-bergsaker-7-november/",
+      "status": "Search excerpts available; full page not reliably accessible. No interview-dependent claims retained."
+    }
+  ]
+}

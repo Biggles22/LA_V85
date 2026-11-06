@@ -1,0 +1,108 @@
+{
+  "reviewedAt": "2026-11-06T19:27:25.258674+00:00",
+  "snapshotId": "abb3a93247b759b289d8d89664c4f6629c2eb19f9124137fcfa7a7187b168849",
+  "orderedMainOutsiders": [
+    {
+      "leg": 6,
+      "number": 5
+    },
+    {
+      "leg": 4,
+      "number": 3
+    },
+    {
+      "leg": 5,
+      "number": 14
+    },
+    {
+      "leg": 1,
+      "number": 9
+    }
+  ],
+  "candidates": [
+    {
+      "leg": 6,
+      "number": 5,
+      "tier": "Huvudskräll",
+      "factsAndReason": "Fyra topp tre på fem starter, inklusive tredjeplatsen på Solvalla den 21 oktober i ett lopp med 150 000 kr i förstapris. Segern den 5 oktober togs över 1660 meter volt efter avancemang, vilket visar att hon kan avgöra även utan ledningen. Historikmodellen rankar henne etta och den utökade fyra. Det är ett bättre samlat argument än enbart låg procent.",
+      "conditionalWinRoute": "Felfri start från spår 5 på startvolten, en position nära täten och en sen attack med sparad speed. Om Tarte Tatin får arbeta eller inte får ett ostört ledarlopp finns en konkret chans att spurta förbi.",
+      "risk": "Spår 5 i volt kan kosta position eller ge galopp. Tarte Tatin och Wing Profile är starka motbud. Med samma anmälda skobalans finns fyra historiska starter, en seger och fyra topp tre; det lilla urvalet är ingen prognos. Historiklistan innehåller 29 genomförda lopp mot karriärstatistikens 30, så alla livstidskvoter är osäkra.",
+      "change": "Behålls och blir mitt första skrällval."
+    },
+    {
+      "leg": 4,
+      "number": 3,
+      "tier": "Huvudskräll",
+      "factsAndReason": "Trea på 1.10,9 över 1640 meter den 17 oktober efter en resa bakom ledaren där luckan uteblev. Vann på 1.10,4 över samma distans den 22 augusti i ett lopp med 135 000 kr i förstapris. Har två segrar på två Bergsåkersstarter. Utökade modellen rankar honom trea, historikmodellen sjua.",
+      "conditionalWinRoute": "Spår 3 ger möjlighet till ett billigt lopp nära ledaren. Om Nickel Occagnes och Shogun R.R. håller farten uppe och luckan kommer kan han utnyttja sin dokumenterade kortspeed.",
+      "risk": "De bästa aktuella prestationerna är över kort distans; nu gäller 2140 meter. I tillgängliga lopp över ungefär aktuell distans med autostart har han en seger på 17 starter. Två hemmabanesegrar är ett mycket litet urval. Shogun R.R., Nickel Occagnes och Crowe Motion gör uppgiften hård.",
+      "change": "Ny huvudskräll efter granskning av prestationerna bakom resultatraden."
+    },
+    {
+      "leg": 5,
+      "number": 14,
+      "tier": "Huvudskräll",
+      "factsAndReason": "Senaste tre placeringarna är 2–2–1. Segern den 14 september togs över 2160 meter volt på 1.23,3 efter ett offensivt lopp. Både startmetod och distans är därför belagda. Historikmodellen rankar honom femma och den utökade trea.",
+      "conditionalWinRoute": "Kommer iväg felfritt från femtespåret på tillägg och får ryggar när de starka hästarna från samma volt avancerar. Kan då spara sin avslutning medan favoriterna får göra mer arbete.",
+      "risk": "20 meters tillägg och spår 5 i volt innebär stor trafik- och startrisk. Den senaste segern kom i ett lopp med 50 000 kr i förstapris och är inget bevis på överlägsenhet här. Bara en seger på elva Bergsåkersstarter. Svarte Petter och hästarna på start, särskilt Edens Odin och Guli Em, kan bli för svåra.",
+      "change": "Ny huvudskräll; aktuell form och dokumenterad voltförmåga väger tyngre än enbart marknadsrank."
+    },
+    {
+      "leg": 1,
+      "number": 9,
+      "tier": "Huvudskräll",
+      "factsAndReason": "Resultatraden är 2–1–1–1–1. Segern den 3 oktober kom i ett lopp med samma förstapris som nu, 135 000 kr. Sprintseger finns från den 30 juli på 1.12,7. Historikmodellen rankar honom fyra och den utökade femma. Han avfärdas därför inte bara för att den utökade modellen tappat honom från förstaplatsen i torsdags.",
+      "conditionalWinRoute": "Från bakspår krävs en smidig start i rygg på ettan och sedan rätt draghjälp. Om Raven och Readly Brodde driver upp tempot kan han komma in i matchen med sparade krafter. Barfota runt om är anmält, med ändring bak.",
+      "risk": "Han har tagit sex av sina åtta karriärsegrar i ledningen enligt TR Medias statistik via ATG. Tre av de fyra senaste segrarna togs från tät; den vägen är svår från spår 9. Flera segrar kom i enklare lopp. 23 dagar mellan starterna. Stark formrad innebär inte automatiskt samma chans från bakspår i bronsdivisionen.",
+      "change": "Återtas som huvudskräll. Tidigare bortval lade för stor vikt vid den experimentella modellens ändrade rank."
+    },
+    {
+      "leg": 3,
+      "number": 1,
+      "tier": "Andra skrällval",
+      "factsAndReason": "Två segrar och fyra topp tre i de fem senaste redovisade loppen. Andraplatsen i Boden den 3 oktober på 1.24,5 över 1660 meter volt kom efter arbete utvändigt. Historikmodellen rankar honom etta men den utökade nia.",
+      "conditionalWinRoute": "Innerspåret kan ge en plats nära täten utan att han behöver lägga kraft i vida spår. Vid ett lugnt, ekonomiskt lopp och fri väg till slut kan han räcka.",
+      "risk": "35 dagar mellan starterna och stor modellkonflikt. Resultattjänsten ger bara sju genomförda lopp mot 41 i officiell karriärstatistik; framför allt norsk historik är ofullständig. Ingen start över ungefär 2640 meter finns i den hämtade listan, vilket betyder saknat underlag, inte bevis på distanssvaghet. Skor runt om med ändring fram.",
+      "change": "Sänks från huvudskräll till ett osäkrare garderingsbud."
+    },
+    {
+      "leg": 2,
+      "number": 11,
+      "tier": "Djup skräll",
+      "factsAndReason": "Vann över 1640 meter autostart den 24 augusti på 1.12,5 efter attack från andra ytter. I de tre tillgängliga sprintloppen med bil har hon två segrar. Näst senast fanns sparat bakom ledaren enligt löpningskommentaren, och senaste starten störs i resultatraden av galopp med krafter kvar.",
+      "conditionalWinRoute": "Startspår 11 kräver högt tempo mellan de mer betrodda framspårshästarna och ryggar som tar henne framåt. Den dokumenterade sprintavslutningen är skälet att ta henne på allvar vid bred gardering.",
+      "risk": "Skor runt om är anmält; i elva historiska starter med samma rapporterade skobalans finns ingen seger. De tre sprintstarterna är ett litet urval med olika förutsättningar. Galopp senast, bakspår och modellerna sexa/åtta gör henne klart osäker. May J., Samira M.B.S., La Fiesta Pellini och Executive Duchess står bättre till.",
+      "change": "Nytt djupare alternativ, inte en skräll jag prioriterar före huvudförslagen."
+    },
+    {
+      "leg": 7,
+      "number": 12,
+      "tier": "Skräll vid gardering",
+      "factsAndReason": "Vann ett lopp med 135 000 kr i förstapris på Solvalla den 12 september på 1.11,9 över 2140 meter. Två segrar och fyra topp tre på fem tillgängliga autostarter över ungefär 2640 meter. Åttondeplatsen i finalen senast döljer en bra avslutning i vida spår enligt löpningskommentaren.",
+      "conditionalWinRoute": "Om Youans Son får arbeta eller loppet blir hårt kört kan han spara kraft i ryggar och använda sin långdistansförmåga i en sen attack. Två strukna hästar i loppet minskar antalet aktiva konkurrenter, men gör inte spår 12 till ett bra läge.",
+      "risk": "Youans Son är fortsatt mitt manuella förstaval till spik och Last Cool Cash det tidigaste motbudet. Bakspår, 28 dagars uppehåll och modellrank åtta/sexa talar emot. Ett lugnt lopp där favoriten får bestämma är ett tydligt minusscenario.",
+      "change": "Ny skräll om favoriten garderas; inget skäl i sig att överge förstaspiken."
+    },
+    {
+      "leg": 8,
+      "number": 4,
+      "tier": "Djup skräll",
+      "factsAndReason": "Två raka segrar efter avancemang i spåren visar att han kan avgöra utan ledningen. Segern den 11 oktober togs på 1.14,7 över 1640 meter och den 30 september vann han över 2140 meter volt. Spår 4 är mer användbart än många konkurrenters lägen.",
+      "conditionalWinRoute": "Får en position bakom de mer betrodda och sparar sin attack tills de gjort grovjobbet. Den möjligheten gör honom intressant till mycket låg procent.",
+      "risk": "Segerloppen hade bara 30 000 respektive 25 000 kr i förstapris; nu möter han starkare hästar. I fyra genomförda autostarter över ungefär 2140 meter finns ingen topp-tre-placering. Båda modellerna rankar honom sexa. Galopp finns i historiken och 27 dagar mellan starterna. Turner Ale, Exile on Main St. och Ultimate Scotch är klart starkare på förhand.",
+      "change": "Nytt djupare alternativ. Set it off H.C. är ett tidigare streck om man prioriterar segerchans före låg procent."
+    }
+  ],
+  "allLegAssessment": {
+    "1": "River Tooma är ett tidigare garderingsstreck än de flesta långskotten: 8,23 procent, 8,89 i odds, bra avslutning som tvåa senast och spår 2. Däremot saknas sprintmerit i den verifierade genomförda historiken och de fem senaste starterna är över medeldistans. Global Dependable har 1.10,5 som tvåa över sprint men tre raka nollor, där senaste starten gav sen lucka eller ingen lucka. Any Given Sunday har flera starka prestationer och anmäld barfota fram med ändring, men spår 10 över 1640 meter är ett stort minus. Warhol och Pasha Newport har fart, men ger inte samma samlade stöd som huvudvalet. Vixi Garbo, Russel Square och Lookin at Lucky kräver ännu mer klaff från sina lägen.",
+    "2": "Nordic Choice är historikmodellens trea och var trea på 1.12,4 över aktuell distans senast, men har bara en karriärseger på 18 starter och ingen på tio i år. R.F.M.Levina har två segrar på fem starter men senaste segern var från ledningen, följd av 39 dagars uppehåll; bakspår över sprint passar den segerprofilen sämre. Ajlexes Konnässör har fin utveckling och anmäld skoändring bak, men spår 8 och större klasskrav gör hästen till ett mycket osäkert långskott. Hervey Island, Järnladyn och Valuga har inget lika tydligt samlat skrällargument.",
+    "3": "Faks Trym är ett seriöst motbud till 10,30 procent med Björn Goop och tidigare seger mot norskt motstånd, men ingen säker statistisk kuskeffekt skattas. Eldida vann senast efter stark avslutning och kan få draghjälp, men spår 13 och bara en seger i år talar emot. Ellbert får amerikansk vagn enligt anmälan men har galopperat i de två senaste loppen och saknar seger över distansen i den svenska statistiken; tvåa i historikmodellen räcker inte för ett huvudförslag. Nordprins kan gynnas av distansen men formstödet är svagare. Ava Modde, Fosshaug Frasse, Ersa Frej och V.Viking är möjliga först vid bred gardering. Kjempa Re, Harry Växus och Lill Elden har tunnare aktuellt stöd; saknade vinnarodds för vissa hästar gör dessutom den utökade modellens oväntat höga rank osäker.",
+    "4": "Crowe Motion är det starkare, mindre skrällbetonade alternativet till 10,76 procent: historikmodellens etta, seger senast och flera bra prestationer i hårda lopp. Flotilla avslutade bra senast men har bara en seger i år och svårt bakspår. Indy Rock har hög äldre kapacitet men 84 dagar mellan starterna, spår 12 och ofullständig utländsk historik. Bright Star U.S. har kapacitet men sämre läge. Parish Crooks V.S., Conrads Åke och Izod Zet har mer att bevisa här. Summermusic’nightS rankas överraskande fyra i den utökade modellen när användbara vinnarodds saknas; det behandlas som en osäkerhet, inte som ett köpsignal.",
+    "5": "Soldhöjdens Drake är ett seriöst garderingsbud: två segrar och fyra topp tre på fem starter, men 30 dagars paus, innerspår på tillägg och rapporterat byte till vanlig vagn försvårar. Tekno Jerven har fart och flera bra avslutningar men ingen seger på 17 starter i år; 4,71 procent är därför inget självklart fynd. Komnes Omer vann senast efter sen lucka och har bra startläge, men segern kom efter en mycket gynnsam resa i enklare lopp. Nordby Elde har en färsk seger och anmäld barfotabalans, men tillägg och läget gör honom till ett djupare bud. Guli Em är ett tidigare segerbud än långskotten men 14,38 procent gör honom mindre skrällbetonad. Klack Vidar, Kruson, Hibovalle, Guli Hektor, Pyrotek, Källsjöviking och Smedheim Braut får lägre prioritet i helhetsbedömningen.",
+    "6": "Conrads Jessica är den mest intressanta extra chansningen: två segrar och tre topp tre på fem starter samt tre segrar på åtta genomförda voltstarter över ungefär aktuell distans. Hon står på startvolten, men de två senaste starterna slutade efter galopp före bilens släpp. Nu är det volt; det kan ändra förutsättningarna men bevisar ingen förbättring. Sunshine Tooma är historikmodellens trea och var bra som tvåa senast; noll segrar på sju jämförbara voltstarter håller nere prioriteten. Full Speed Forward har flera prestationer som är bättre än placeringarna, men 20 meters tillägg och en seger i år. Ajlexes Gourmand har ofta fått sent fritt och bra voltmerit, men måste runda hästar från tillägg. Aloha är ett tidigare segerbud än de djupaste skrällarna. Rosi Tooma, Sessan of Man, Virtual Reality, Candy Celebration och Megan di Quattro har svagare samlat stöd. Staro Roseway rankas trea i den utökade modellen med saknade odds; det är en modellrisk, inte ett starkt manuellt argument.",
+    "7": "Last Cool Cash är första motbudet på segerchans till 12,54 procent, tvåa i utökade modellen och trea i historikmodellen. Mastroianni har vunnit över 2640 meter, får Björn Goop och är anmäld barfota runt om med ändring fram och bak; historikmodellen rankar honom dock nia och uppehållet är 38 dagar. Dropthegloves är historikmodellens tvåa och kan få en bra position från spår 2 men saknar seger i tre jämförbara autostarter och möter hårdare hästar nu. Funny Guy och Don’t Forget Me är möjliga vid bred gardering, medan Pommery Boko, Face to Face och Adora Liss kräver ännu mer utveckling eller klaff. Ingen av dessa gör favoriten till en dålig vinnarkandidat bara genom låg procent.",
+    "8": "Set it off H.C. är det tydligaste motbudet utanför de tre mest streckade: historikmodellens etta och fyra i den utökade, med fyra segrar på sju karriärstarter. Han har tre segrar på fem jämförbara autostarter men spår 9 kan ge trafikproblem. Snack återtas inte som huvudskräll: spår 8, galopp för tre starter sedan och inga avslutningar som tydligt visar att han ska slå de bästa här; historik/utökad rank tre/fem. Det är mer nyanserat än att bara avfärda honom för ändrade odds. Almond Remix har två segrar och sparat senast, men alla fem karriärsegrar har tagits i ledningen enligt TR Media och spår 7 försvårar. License to Fight har färsk seger i enklare lopp. Pure Dream har galopprisk och saknar aktuell formstyrka; Win Wood, Alfred Gratien, Iulius Zet, Showmethecash och Monir Southwind får lägre prioritet mot detta motstånd."
+  },
+  "completeBettingSystem": null,
+  "modelScoresAreWinProbabilities": false
+}

@@ -1,0 +1,13 @@
+# Historical outsider review
+
+Raw market and extended start lists were captured by scripts/compare_current_models.py. Horse IDs and current race IDs come from those matching start lists. Each horse-history response has its own URL, capture window and SHA256 in history-review.json. Model inputs and fitted-model parameters are recorded in models.json and model.json. No models were newly calibrated for this review.
+
+history-statistics.json is derived only from the preserved horse-history responses. Include records before 2026-11-07 whose race.type is regular and which have at least one of place or kmTime. Rows without both are excluded as having no evidenced result, without claiming that every excluded foreign record was a scratch. Exclude qualifier and premium records. Deduplicate by race ID (all included record IDs were unique). A win is place equal to 1; top three is place 1, 2 or 3. Do not infer gallops from unknown time codes.
+
+DistanceAndMethod uses current horse start distance +/-100 metres and the current race startMethod. Bergsaker uses track ID 9. SameDriver compares numeric driver IDs. SameReportedShoes requires front and back shoe flags in a historical record to match the current explicitly reported shoe flags; historical missing flags are excluded. These overlapping historical groups must not be added or treated as independent evidence. Small samples do not establish present win probabilities.
+
+Compare the included regular record count against the official horse.statistics.life.starts from the captured extended race. A matching count is a coverage check, not proof every field is accurate. The endpoint can return hasMoreRecords=false while omitting older foreign races. For this capture, 80 of 102 horses match official career-start counts and 99 match the extended start list's five latest dates. Differences remain visible in history-statistics.json. For example, Eldbrand has only seven included records versus 41 official starts. No missing long-distance result is interpreted as a negative performance.
+
+The eight manual candidate reviews and all-leg screening are frozen in manual-review.json. Only the four ordered main outsider proposals are active in analysis.json. Other candidates are conditional wider-cover selections, not additional main tips. No full betting system, monetary return or calibrated probability is reconstructed.
+
+The historical CatBoost rank is independent of current odds/shares. The expanded variant is experimental and was trained on historical final-market data, so it is not validated as a model operating before the V85 deadline. Raw scores and inverse odds are not probabilities. Manual prioritization can differ from either model when documented race conditions or source coverage justify it.

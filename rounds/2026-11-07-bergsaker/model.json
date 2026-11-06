@@ -3,8 +3,8 @@
   "kind": "CATBOOST_PRESTART_RANKING",
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "1c595b4331a5b94e86a9160d7833d1efe1defa71774cfef3d63b2a0741604756",
-  "generatedAt": "2026-11-06T18:58:19.891180+00:00",
+  "snapshotId": "abb3a93247b759b289d8d89664c4f6629c2eb19f9124137fcfa7a7187b168849",
+  "generatedAt": "2026-11-06T19:23:30.515118+00:00",
   "model": "CatBoostClassifier",
   "parameters": {
     "iterations": 220,
@@ -5754,7 +5754,7 @@
     {
       "raceId": "2026-11-07_9_12",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_12/extended",
-      "sha256": "997cc252c8faaac5c46203568150fc36df0c615aff1a20c82a784bc746a83a27"
+      "sha256": "7a551f62b63bf96e80f04a5a0318f5f42633b622ebfda39fa1ee0f2295913838"
     }
   ],
   "limitations": "Experimentell ranking från utvalda kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, aktuellt resultat, hästnamn, kusk, tränare och karriärstatistik ingår inte som modellvariabler. Galoppvariabeln är avstängd för jämförbarhet med grundförsöket. Testet är retrospektivt och visar inte lönsamhet.",
