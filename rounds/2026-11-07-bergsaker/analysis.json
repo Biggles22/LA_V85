@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "abb3a93247b759b289d8d89664c4f6629c2eb19f9124137fcfa7a7187b168849",
-  "version": 5,
-  "reviewedAt": "2026-11-06T19:27:25.258674+00:00",
+  "snapshotId": "f235e87bf6b96dff9afeb953794474ff284fb0acfa9ec8fa1e1125215adc1d35",
+  "version": 6,
+  "reviewedAt": "2026-11-06T19:40:29.431866+00:00",
   "picks": [
     {
       "leg": 6,
@@ -56,6 +56,26 @@
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5",
         "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_5/extended",
         "https://www.atg.se/services/racinginfo/v1/api/horses/780041/results"
+      ]
+    },
+    {
+      "type": "spike",
+      "leg": 7,
+      "number": 6,
+      "name": "Youans Son",
+      "reason": "Manuell huvudspik. Fyra segrar på sex starter i år, etta i båda modellerna och seger senast efter arbete utvändigt. Min helhetsbedömning är över 50 procents segerchans, utan kalibrerat procenttal. Tidig ledning är ett möjligt scenario; han har också vunnit utan ledningen. De 74,66 procenten är ATG-streck, inte min vinstprognos.",
+      "risk": "36 dagars uppehåll och tunt underlag över 2640 meter: ingen seger på två autostarter. Last Cool Cash var före honom i Derbyuttagningen och är främsta motbudet. Tuff resa eller svag dagsform kan fälla honom. Skor runt om och vanlig vagn är anmält.",
+      "challengers": [
+        "Last Cool Cash",
+        "Mastroianni",
+        "T.Wall's Notorius",
+        "Dropthegloves"
+      ],
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5",
+        "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_11/extended",
+        "https://www.atg.se/services/racinginfo/v1/api/horses/791074/results",
+        "https://v75travet.se/uppdateringar/2026-11-06-spikar/"
       ]
     }
   ]

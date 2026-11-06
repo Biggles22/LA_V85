@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "abb3a93247b759b289d8d89664c4f6629c2eb19f9124137fcfa7a7187b168849",
-  "retrievedAt": "2026-11-06T20:23:29.443791+01:00",
+  "snapshotId": "f235e87bf6b96dff9afeb953794474ff284fb0acfa9ec8fa1e1125215adc1d35",
+  "retrievedAt": "2026-11-06T20:37:39.743114+01:00",
   "method": "Preliminär delranking från historisk form, klass och tempo/spår där underlag finns. Ingen kalibrerad vinstchans eller tränad XGBoost/CatBoost-prognos.",
   "races": [
     {

@@ -3,8 +3,8 @@
   "kind": "CATBOOST_PRESTART_RANKING",
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "abb3a93247b759b289d8d89664c4f6629c2eb19f9124137fcfa7a7187b168849",
-  "generatedAt": "2026-11-06T19:23:30.515118+00:00",
+  "snapshotId": "f235e87bf6b96dff9afeb953794474ff284fb0acfa9ec8fa1e1125215adc1d35",
+  "generatedAt": "2026-11-06T19:37:40.730289+00:00",
   "model": "CatBoostClassifier",
   "parameters": {
     "iterations": 220,

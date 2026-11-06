@@ -1,0 +1,147 @@
+{
+  "reviewedAt": "2026-11-06T19:40:29.431866+00:00",
+  "roundId": "2026-11-07-bergsaker",
+  "gameId": "V85_2026-11-07_9_5",
+  "snapshotId": "f235e87bf6b96dff9afeb953794474ff284fb0acfa9ec8fa1e1125215adc1d35",
+  "version": 6,
+  "candidates": [
+    {
+      "leg": 7,
+      "number": 6,
+      "priority": 1,
+      "status": "Huvudspik",
+      "approvedSpike": true,
+      "reason": "Fyra segrar på sex starter i år och etta i båda modellerna. Senast vann han på 1.12,7 över 2140 meter efter att ha gjort arbete utvändigt om ledaren. Även segern den 25 juli togs efter en utvändig resa. Han har alltså visat att han kan avgöra utan ett perfekt smyglopp. Daniel Wäjersten kör igen; ekipaget har fem segrar och tio topp tre på tolv starter.",
+      "route": "Från spår 6 bedömer jag att han kan köras fram tidigt och få överta ledningen, men det är ett tänkbart loppförlopp och inget verifierat löfte. Skulle han bli kvar utvändigt ger de tidigare styrkeprestationerna ändå ett vinnarargument.",
+      "risk": "36 dagar mellan starterna. På ungefär 2640 meter med autostart finns bara två starter, ingen seger och en topp-tre-placering. I Derbyuttagningen den 25 augusti tappade han aktionen och blev oplacerad. Fyra pallplatser men ingen seger på fyra Bergsåkersstarter visar att en stark hemmastatistik inte är samma sak som säker vinst. Nästan 75 procent streck gör honom dessutom dyr att gardera bort och ger ingen garanti för spelvärde.",
+      "decision": "Min manuella helhetsbedömning är bättre än jämn segerchans, alltså över 50 procent, vilket uppfyller sidans spikkrav. Det är en subjektiv bedömning med osäkerhet, inte en kalibrerad modellprognos. Jag sätter honom som enda huvudspik. Att han är bäst att spika betyder inte att hans segerchans är 74,66 procent eller att strecken är låga.",
+      "equipment": "Skor runt om och vanlig vagn; ingen rapporterad ändring.",
+      "challengers": [
+        {
+          "number": 10,
+          "reason": "Last Cool Cash är första motbudet: seger den 7 oktober, stark tredjeplats den 21 oktober och trea på 1.12,8 över 2640 meter i samma Derbyuttagning där Youans Son blev oplacerad. Bakspår är nackdelen.",
+          "name": "Last Cool Cash"
+        },
+        {
+          "number": 7,
+          "reason": "Mastroianni vann över 2640 meter på Bergsåker den 7 september. Björn Goop kör för första gången i den hämtade historiken och barfota runt om är anmält som ändring. Historikmodellen rankar honom bara nia; utrustning och kuskbyte bevisar ingen förbättring.",
+          "name": "Mastroianni"
+        },
+        {
+          "number": 12,
+          "reason": "T.Wall's Notorius är långdistansalternativet vid bred gardering: två segrar och fyra topp tre på fem jämförbara autostarter. Senaste åttondeplatsen kom med en bra avslutning i vida spår. Spår 12 och ett möjligt lugnt lopp talar emot.",
+          "name": "T.Wall's Notorius"
+        },
+        {
+          "number": 2,
+          "reason": "Dropthegloves är tvåa i historikmodellen, har bra utgångsläge och vann över 2660 meter volt i juli. Det motiverar respekt, men meriterna ger inte samma samlade stöd som favoritens.",
+          "name": "Dropthegloves"
+        }
+      ],
+      "reconsider": "Om värmningen visar tveksam aktion, nya negativa stallbesked kommer eller han väntas få ett utdraget hårt lopp blir Last Cool Cash första garderingen. Sådana besked är ännu inte verifierade.",
+      "name": "Youans Son",
+      "horseId": 791074,
+      "raceId": "2026-11-07_9_11",
+      "marketPct": 74.66,
+      "odds": 1.76,
+      "historyRank": 1,
+      "expandedRank": 1,
+      "historySourceCaptureAt": "2026-11-06T19:21:51.648129+00:00",
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5",
+        "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_11/extended",
+        "https://www.atg.se/services/racinginfo/v1/api/horses/791074/results"
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 6,
+      "priority": 2,
+      "status": "Andra spikkandidat – villkorad",
+      "approvedSpike": false,
+      "reason": "15 segrar på 30 karriärstarter, fem på nio i år och tio på femton på Bergsåker. På ungefär aktuell distans med autostart har han fem segrar på elva starter. Senast tvåa på 1.12,2 efter arbete utvändigt; dessförinnan seger på 1.12,6 över 2660 meter volt. Historikmodellen rankar honom tvåa och den utökade etta.",
+      "route": "Styrkan gör en offensiv resa möjlig även utan ledning. Min positiva bedömning bygger på att han når en bra position utan för stor kostnad och sedan kan pressa svagare motstånd under slutvarvet.",
+      "risk": "Nickel Occagnes har innerspår och kan göra spetsstriden kostsam. Crowe Motion är historikmodellens etta och vann senast. Shogun fick nöja sig med andraplatsen efter en utvändig resa senast; samma upplägg behöver inte räcka nu heller. 35 dagar mellan starterna och en kort startgalopp i augusti är ytterligare osäkerheter.",
+      "decision": "Min andrakandidat om ett mindre system kräver en spik till. Jag har inte tillräckligt stöd för att sätta honom över 50 procents segerchans i nuläget, så han får inget godkänt spikkort på startsidan. Jag föredrar gardering tills loppbild och dagsform ger tydligare stöd.",
+      "equipment": "Barfota runt om och amerikansk vagn; ingen rapporterad ändring.",
+      "challengers": [
+        {
+          "number": 1,
+          "reason": "Nickel Occagnes kan försvara en framskjuten position från innerspår och är tvåa i den utökade modellen.",
+          "name": "Nickel Occagnes"
+        },
+        {
+          "number": 5,
+          "reason": "Crowe Motion är historikmodellens etta, vann senast och blir farlig om de andra förbrukar kraft i början.",
+          "name": "Crowe Motion"
+        },
+        {
+          "number": 3,
+          "reason": "Four White E.G. är kvar som huvudskräll från fördjupningen. Om Shogun spikas väljer man samtidigt bort den skrällidén i detta lopp.",
+          "name": "Four White E.G."
+        }
+      ],
+      "reconsider": "Ett tydligt positivt besked om dagsformen och en mer gynnsam bedömd spets- eller positionschans kan höja honom. Ett sannolikt tungt lopp gör gardering mer angelägen.",
+      "name": "Shogun R.R.",
+      "horseId": 784930,
+      "raceId": "2026-11-07_9_8",
+      "marketPct": 46.53,
+      "odds": 1.75,
+      "historyRank": 2,
+      "expandedRank": 1,
+      "historySourceCaptureAt": "2026-11-06T19:21:50.547915+00:00",
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5",
+        "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_8/extended",
+        "https://www.atg.se/services/racinginfo/v1/api/horses/784930/results"
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 6,
+      "priority": 3,
+      "status": "Tredje spikkandidat – spetsberoende",
+      "approvedSpike": false,
+      "reason": "Senaste segern och tredjeplatsen dessförinnan visar förbättrad form. Den 11 oktober vann hon från ledningen efter att ha fått styra tempot, och veckan innan avslutade hon bra från ett sämre läge. Springspår 6 med Björn Goop ger ett rimligt ledningsscenario. Den utökade modellen rankar henne etta, medan historikmodellen bara har henne sjua.",
+      "route": "En felfri voltstart, ledning tidigt och ett jämnt tempo skulle gynna henne tydligt. Det är den konkreta vägen till seger som gör henne intressant som alternativspik.",
+      "risk": "Bara två segrar på 18 starter och en på tio i år. Wing Profile var trea bakom henne senast men startade då 20 meter bakom; nu står båda på startvolten. Good Wine har fyra topp tre på fem starter och är historikmodellens etta. Barfota runt om är anmält som ändring, men det finns bara en tidigare sådan start i den hämtade historiken. Första starten med Goop ger ingen mätbar kuskeffekt att luta sig mot. 27 dagar mellan starterna.",
+      "decision": "Jag prioriterar gardering. Strecken 52,04 procent är inte bevis för över 50 procents vinstchans, och huvudskrällen Good Wine finns i samma lopp. Tarte Tatin blir ett villkorat tredje alternativ när man uttryckligen tar ställning för ett gynnsamt ledarlopp.",
+      "equipment": "Barfota runt om, ändring både fram och bak; vanlig vagn.",
+      "challengers": [
+        {
+          "number": 1,
+          "reason": "Wing Profile har 20 meter bättre relativa villkor än i senaste mötet och ett bra läge på startvolten.",
+          "name": "Wing Profile"
+        },
+        {
+          "number": 5,
+          "reason": "Good Wine är mitt främsta skrällval för omgången och historikmodellens etta. Hon har dokumenterade prestationer som gör henne intressant om favoriten inte får bestämma.",
+          "name": "Good Wine"
+        },
+        {
+          "number": 3,
+          "reason": "Aloha är trea i historikmodellen och ett kompletterande garderingsbud från startvolten.",
+          "name": "Sunshine Tooma"
+        }
+      ],
+      "reconsider": "För att höja henne vill jag se en tydligare väg till ostörd ledning och positiva dagsformsbesked. Om skoplanen ändras eller hon ser osäker ut i volten stärks garderingsbeslutet.",
+      "name": "Tarte Tatin",
+      "horseId": 791694,
+      "raceId": "2026-11-07_9_10",
+      "marketPct": 52.04,
+      "odds": 2.15,
+      "historyRank": 7,
+      "expandedRank": 1,
+      "historySourceCaptureAt": "2026-11-06T19:21:51.202901+00:00",
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5",
+        "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_10/extended",
+        "https://www.atg.se/services/racinginfo/v1/api/horses/791694/results"
+      ]
+    }
+  ],
+  "historicalEvidenceDirectory": "research/comparison/2026-11-07/20261106T192019Z",
+  "calibratedProbabilities": null,
+  "completeBettingSystem": null,
+  "method": "Manual comparison of current conditions, opposition, recent races, longer history and two model ranks. Only priority 1 is assessed subjectively above 50%; alternatives do not pass the approved-spike threshold."
+}

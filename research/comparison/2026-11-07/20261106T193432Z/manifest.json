@@ -1,0 +1,79 @@
+{
+  "createdAt": "2026-11-06T19:40:29.431866+00:00",
+  "roundId": "2026-11-07-bergsaker",
+  "gameId": "V85_2026-11-07_9_5",
+  "snapshotId": "f235e87bf6b96dff9afeb953794474ff284fb0acfa9ec8fa1e1125215adc1d35",
+  "sourceAt": "2026-11-06T20:14:30+01:00",
+  "observedAt": "2026-11-06T19:34:37.589391+00:00",
+  "manualVersion": 6,
+  "bettingDeadline": "2026-11-07T15:00:00+01:00",
+  "previousGitHead": "be391f5",
+  "historicalEvidenceDirectory": "research/comparison/2026-11-07/20261106T192019Z",
+  "rawCaptureNote": "Game captured at models.observedAt; extended races fetched afterwards. Exact per-race response times not retained. Race pools carry their own source timestamps. Longer histories keep original per-horse capture times in prior immutable directory.",
+  "files": [
+    {
+      "path": "analysis.json",
+      "sha256": "79f672433c3bdbc6ef2fd8033ed15cf6493b15cf75299f7d6ae7ab88ecb462ec"
+    },
+    {
+      "path": "data.json",
+      "sha256": "4876f5c9f2f5c64d822cbfb60cce07a6cc5b2bfa33843623d4c6184b469edf1f"
+    },
+    {
+      "path": "external-review.json",
+      "sha256": "636edd6e8652d59b88eab17e186c312f5995dba04208f8927b23e6a4eaa83496"
+    },
+    {
+      "path": "form.json",
+      "sha256": "cdfc2ddd43ac77b516ea0adf75794da54f55a48e218c02d96148a6f838510c95"
+    },
+    {
+      "path": "model.json",
+      "sha256": "f6d3de91d1a388cfb1c1828de1a9881d8a7fa7e8143ba5733d3459024a276495"
+    },
+    {
+      "path": "models.json",
+      "sha256": "3b854b7d41503d5dfddef1d8bf14268e36c58135c82be31a225f02f2c59b7b2f"
+    },
+    {
+      "path": "spike-review.json",
+      "sha256": "d5d30922222ab1d68c983559b8557019da2724952e798f0f08b88ed0de252575"
+    },
+    {
+      "path": "raw/20261106T193432Z_2026-11-07_9_10.json",
+      "sha256": "4c4ae018a349ee01c88737a764180888c68078038a4842e80d9d811b340744bb"
+    },
+    {
+      "path": "raw/20261106T193432Z_2026-11-07_9_11.json",
+      "sha256": "98ce7ae3bb404da0eab3b896006c3055ac56c6d90e3b8e95ca8a4820076ec33b"
+    },
+    {
+      "path": "raw/20261106T193432Z_2026-11-07_9_12.json",
+      "sha256": "d6002537c735b34768e2a22ecdf62ed21178c058e7d9f5363c5520e8c67a544d"
+    },
+    {
+      "path": "raw/20261106T193432Z_2026-11-07_9_5.json",
+      "sha256": "f34fcd644f1422b307918dd9ac9a2f1fe168da6590a115f21121124f92d8c3d2"
+    },
+    {
+      "path": "raw/20261106T193432Z_2026-11-07_9_6.json",
+      "sha256": "d4fdb9c221ea79e50d8c0d49b11317b916dd58798f51712c5c4c700e3a994404"
+    },
+    {
+      "path": "raw/20261106T193432Z_2026-11-07_9_7.json",
+      "sha256": "afdc24340723ea7e1a1d2a8de10d49d3c8c2bb4f1a995167678a114d54737139"
+    },
+    {
+      "path": "raw/20261106T193432Z_2026-11-07_9_8.json",
+      "sha256": "33f552ede9b94e1a299f007e37f6898ce3ad21ad52d448fbe694dbea056e8054"
+    },
+    {
+      "path": "raw/20261106T193432Z_2026-11-07_9_9.json",
+      "sha256": "4034b2a9ecf88f7346a80a1536c66df1d8f717ace837f32f7f4775fb471ced7e"
+    },
+    {
+      "path": "raw/20261106T193432Z_game.json",
+      "sha256": "cdb372f0331fe5cd975ba1513aa205732a3f580c11cf6b506950c5c77a2b1264"
+    }
+  ]
+}
