@@ -13,31 +13,31 @@
   "files": [
     {
       "path": "analysis.json",
-      "sha256": "79f672433c3bdbc6ef2fd8033ed15cf6493b15cf75299f7d6ae7ab88ecb462ec"
+      "sha256": "12b5d52530434537b878b84b2aedea184f78ad184d5223352610c039095e498b"
     },
     {
       "path": "data.json",
-      "sha256": "4876f5c9f2f5c64d822cbfb60cce07a6cc5b2bfa33843623d4c6184b469edf1f"
+      "sha256": "6cf13018841c69969898e8fe86de477d850185427594284d2723e1b76f8c8279"
     },
     {
       "path": "external-review.json",
-      "sha256": "636edd6e8652d59b88eab17e186c312f5995dba04208f8927b23e6a4eaa83496"
+      "sha256": "f23fd0743a78a4cdb20e05602940ceb5c2973670e8eae6b0200df1ddbcf5aed4"
     },
     {
       "path": "form.json",
-      "sha256": "cdfc2ddd43ac77b516ea0adf75794da54f55a48e218c02d96148a6f838510c95"
+      "sha256": "8ac5c3ee74715b8f34dfb305d413a577e1f4ac5d74c0ff842f2a9d618135b44d"
     },
     {
       "path": "model.json",
-      "sha256": "f6d3de91d1a388cfb1c1828de1a9881d8a7fa7e8143ba5733d3459024a276495"
+      "sha256": "ac63de980302ae48197c239b882fc1a1c2089eff671e8668e3d241fd8fb5fe6d"
     },
     {
       "path": "models.json",
-      "sha256": "3b854b7d41503d5dfddef1d8bf14268e36c58135c82be31a225f02f2c59b7b2f"
+      "sha256": "e7ed757ab5bfdad3ccd99aadba23af3d68de7095f4f6dcf889ba69a9bb11e8a7"
     },
     {
       "path": "spike-review.json",
-      "sha256": "d5d30922222ab1d68c983559b8557019da2724952e798f0f08b88ed0de252575"
+      "sha256": "071f70bc7efa3e5ee69fb59e7bff66e00247f864244782a427691f609a596f89"
     },
     {
       "path": "raw/20261106T193432Z_2026-11-07_9_10.json",
@@ -75,5 +75,6 @@
       "path": "raw/20261106T193432Z_game.json",
       "sha256": "cdb372f0331fe5cd975ba1513aa205732a3f580c11cf6b506950c5c77a2b1264"
     }
-  ]
+  ],
+  "hashEncoding": "SHA-256 of published Git file bytes; JSON line endings normalized to LF by repository attributes."
 }
