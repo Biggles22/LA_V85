@@ -113,3 +113,7 @@ Vägd poäng = summan av delbetyg/5 × vikt; intervallet är 0–100. **Poängen
 ## Aktuell formuppdatering
 
 Efter `python3 scripts/update_current_round.py`, kör `python3 scripts/update_current_form.py`. Formrapporten återanvänder de testade historiska beräkningsfunktionerna, kontrollerar lopp- och hästidentitet och använder endast starter före aktuell tävlingsdag. Den skriver först när alla åtta lopp hämtats. Rapporten binds till aktuell snapshotId. Startsidan visar delranking, datatäckning och fem senaste starter. Ingen tränad XGBoost/CatBoost-prognos eller kalibrerad vinstchans påstås.
+
+## Våra inlämnade resultat
+
+`resultat/` samlar användarens fem V85-kuponger från oktober 2026. `data.json` bevarar alla streck, reserver, inlämningstider, ATG-källor, SHA-256 för källsvaren, vinnare och utdelningsberäkningar. HTML är förgenererad och läsbar utan JavaScript. Filtret påverkar bara omgångslistan; totalsiffrorna avser alla fem. Beräknad utdelning är inte verifierad kontoutbetalning. Alla fem kuponger har 50 % insats och inga valda strykningar. Jägersros döda lopp har flera godkända vinnare per avdelning; en rad räknas endast en gång. Nya kuponger kräver ny avläsning, kontroll av strykningar/reserver och ny beräkning. Startsidan och huvudmenyn länkar till resultatöversikten.

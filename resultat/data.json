@@ -1,0 +1,1378 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-06T05:57:57.186310+00:00",
+  "systemSource": "Fem inlämningskvitton uppladdade av användaren 6 november 2026. Samtliga spelade med 50 % insats.",
+  "settlementNote": "Beräknad utdelning från kupongens rader och ATG:s slutliga utdelningar, utan Boost. Inte bekräftad kontoutbetalning. Inga valda hästar var strukna. Döda lopp behandlas som flera godkända vinnare i samma avdelning.",
+  "rounds": [
+    {
+      "date": "2026-10-31",
+      "track": "Bjerke",
+      "submittedAt": "2026-10-31 10:11",
+      "costSEK": 648,
+      "stakeFraction": 0.5,
+      "rows": 2592,
+      "hits": 8,
+      "prizeSEK": 1338.0,
+      "netSEK": 690.0,
+      "payouts": {
+        "5": {
+          "amountSEK": 0.0,
+          "jackpot": true
+        },
+        "6": {
+          "amountSEK": 0.0,
+          "jackpot": true
+        },
+        "7": {
+          "amountSEK": 54.0,
+          "jackpot": false
+        },
+        "8": {
+          "amountSEK": 1866.0,
+          "jackpot": false
+        }
+      },
+      "winningRows": {
+        "5": 329,
+        "6": 95,
+        "7": 15,
+        "8": 1
+      },
+      "legs": [
+        {
+          "leg": 1,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Great Old Dance"
+            },
+            {
+              "number": 4,
+              "name": "J.C."
+            },
+            {
+              "number": 5,
+              "name": "Leverage"
+            }
+          ],
+          "reserves": [
+            1,
+            10
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "J.C."
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 2,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Gigant Tider"
+            },
+            {
+              "number": 4,
+              "name": "Voje Lotta"
+            },
+            {
+              "number": 8,
+              "name": "Tangen Nils"
+            }
+          ],
+          "reserves": [
+            6,
+            9
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Voje Lotta"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 3,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Moor Jeting"
+            },
+            {
+              "number": 6,
+              "name": "Sauron Zon"
+            },
+            {
+              "number": 8,
+              "name": "Surpriced Tooma"
+            },
+            {
+              "number": 11,
+              "name": "Urban Tile"
+            }
+          ],
+          "reserves": [
+            2,
+            5
+          ],
+          "winners": [
+            {
+              "number": 11,
+              "name": "Urban Tile"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 4,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Daim Brodda"
+            },
+            {
+              "number": 3,
+              "name": "Before Takeoff"
+            },
+            {
+              "number": 9,
+              "name": "Lando Mearas"
+            }
+          ],
+          "reserves": [
+            5,
+            1
+          ],
+          "winners": [
+            {
+              "number": 2,
+              "name": "Daim Brodda"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 5,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Paleo Boko"
+            },
+            {
+              "number": 4,
+              "name": "Orazi Cesare"
+            },
+            {
+              "number": 5,
+              "name": "Fabulous Gent"
+            },
+            {
+              "number": 6,
+              "name": "Neil Jung"
+            }
+          ],
+          "reserves": [
+            10,
+            2
+          ],
+          "winners": [
+            {
+              "number": 6,
+              "name": "Neil Jung"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 6,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Peggy Boko"
+            }
+          ],
+          "reserves": [
+            1,
+            5
+          ],
+          "winners": [
+            {
+              "number": 3,
+              "name": "Peggy Boko"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 7,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Blizzard Diamant"
+            },
+            {
+              "number": 8,
+              "name": "Wise Guy"
+            }
+          ],
+          "reserves": [
+            2,
+            5
+          ],
+          "winners": [
+            {
+              "number": 3,
+              "name": "Blizzard Diamant"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 8,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Eye to Eye"
+            },
+            {
+              "number": 5,
+              "name": "Luxury Rain"
+            },
+            {
+              "number": 10,
+              "name": "Hankypanky Leonie"
+            }
+          ],
+          "reserves": [
+            2,
+            15
+          ],
+          "winners": [
+            {
+              "number": 10,
+              "name": "Hankypanky Leonie"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        }
+      ],
+      "reviewUrl": "../archive/2026-10-31-bjerke/",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-31_78_5",
+      "sourceSha256": "c116ec62586b5769e9d0fa0a4ccc48aa5a199a39d88ec1451478454107b76372",
+      "sourceTimestamp": "2026-10-31 18:03:00",
+      "resultUrl": "https://www.atg.se/spel/2026-10-31/V85/bjerke/resultat"
+    },
+    {
+      "date": "2026-10-24",
+      "track": "Jägersro",
+      "submittedAt": "2026-10-24 10:32",
+      "costSEK": 486,
+      "stakeFraction": 0.5,
+      "rows": 1944,
+      "hits": 5,
+      "prizeSEK": 108.0,
+      "netSEK": -378.0,
+      "payouts": {
+        "5": {
+          "amountSEK": 6.0,
+          "jackpot": false
+        },
+        "6": {
+          "amountSEK": 27.0,
+          "jackpot": false
+        },
+        "7": {
+          "amountSEK": 835.0,
+          "jackpot": false
+        },
+        "8": {
+          "amountSEK": 75808.0,
+          "jackpot": false
+        }
+      },
+      "winningRows": {
+        "5": 36,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "legs": [
+        {
+          "leg": 1,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Panthere d'Inverne"
+            },
+            {
+              "number": 3,
+              "name": "Nilla Lane"
+            }
+          ],
+          "reserves": [
+            10,
+            2
+          ],
+          "winners": [
+            {
+              "number": 3,
+              "name": "Nilla Lane"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 2,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Polly Vici"
+            },
+            {
+              "number": 5,
+              "name": "Job Girl"
+            },
+            {
+              "number": 6,
+              "name": "Run Rhapsody Run"
+            },
+            {
+              "number": 7,
+              "name": "Hawk Eyed Girl"
+            }
+          ],
+          "reserves": [
+            9,
+            12
+          ],
+          "winners": [
+            {
+              "number": 12,
+              "name": "Call Me Ottilia"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 3,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Helan Går"
+            },
+            {
+              "number": 2,
+              "name": "Wiener Sängerknabe"
+            },
+            {
+              "number": 3,
+              "name": "Veritas"
+            }
+          ],
+          "reserves": [
+            4,
+            12
+          ],
+          "winners": [
+            {
+              "number": 2,
+              "name": "Wiener Sängerknabe"
+            },
+            {
+              "number": 9,
+              "name": "Mondavi"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 4,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Ulix Turner"
+            },
+            {
+              "number": 5,
+              "name": "Prince of Euro"
+            },
+            {
+              "number": 12,
+              "name": "Chat Room"
+            }
+          ],
+          "reserves": [
+            13,
+            10
+          ],
+          "winners": [
+            {
+              "number": 12,
+              "name": "Chat Room"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 5,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Richmond"
+            },
+            {
+              "number": 3,
+              "name": "Elroy Face"
+            },
+            {
+              "number": 9,
+              "name": "Cruel Eagle"
+            }
+          ],
+          "reserves": [
+            12,
+            11
+          ],
+          "winners": [
+            {
+              "number": 1,
+              "name": "Richmond"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 6,
+          "selected": [
+            {
+              "number": 7,
+              "name": "Tvingens Calippo"
+            }
+          ],
+          "reserves": [
+            1,
+            10
+          ],
+          "winners": [
+            {
+              "number": 7,
+              "name": "Tvingens Calippo"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 7,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Diva Ek"
+            },
+            {
+              "number": 4,
+              "name": "Harpy"
+            },
+            {
+              "number": 11,
+              "name": "Fighter Kronos"
+            }
+          ],
+          "reserves": [
+            12,
+            5
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Kentucky River"
+            },
+            {
+              "number": 6,
+              "name": "Boscha Diablo"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 8,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Look at Me Sisu"
+            },
+            {
+              "number": 5,
+              "name": "Gustav Simoni"
+            },
+            {
+              "number": 6,
+              "name": "Nickel Occagnes"
+            }
+          ],
+          "reserves": [
+            4,
+            12
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Blixt Lane"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        }
+      ],
+      "reviewUrl": "../archive/2026-10-24-jagersro/#efteranalys",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-24_7_5",
+      "sourceSha256": "cf1b83be4930677ab5bcdb7f2b0d9855ba4cdd29fca55304ac97f5072b5000df",
+      "sourceTimestamp": "2026-10-24 17:58:45",
+      "resultUrl": "https://www.atg.se/spel/2026-10-24/V85/jagersro/resultat"
+    },
+    {
+      "date": "2026-10-17",
+      "track": "Gävle",
+      "submittedAt": "2026-10-17 13:14",
+      "costSEK": 540,
+      "stakeFraction": 0.5,
+      "rows": 2160,
+      "hits": 2,
+      "prizeSEK": 0.0,
+      "netSEK": -540.0,
+      "payouts": {
+        "5": {
+          "amountSEK": 113.0,
+          "jackpot": false
+        },
+        "6": {
+          "amountSEK": 945.0,
+          "jackpot": false
+        },
+        "7": {
+          "amountSEK": 50954.0,
+          "jackpot": false
+        },
+        "8": {
+          "amountSEK": 6401695.0,
+          "jackpot": false
+        }
+      },
+      "winningRows": {
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "legs": [
+        {
+          "leg": 1,
+          "selected": [
+            {
+              "number": 2,
+              "name": "S.G.Empress"
+            },
+            {
+              "number": 3,
+              "name": "Cashman J.R."
+            },
+            {
+              "number": 6,
+              "name": "Crowe Motion"
+            }
+          ],
+          "reserves": [
+            10,
+            1
+          ],
+          "winners": [
+            {
+              "number": 6,
+              "name": "Crowe Motion"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 2,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Realize'em"
+            },
+            {
+              "number": 4,
+              "name": "Good Reads"
+            },
+            {
+              "number": 8,
+              "name": "Havana Heaven"
+            }
+          ],
+          "reserves": [
+            3,
+            5
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Geisha Road Grif"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 3,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Emerald Broline"
+            },
+            {
+              "number": 6,
+              "name": "Sensational Doc"
+            },
+            {
+              "number": 10,
+              "name": "Five Billion"
+            }
+          ],
+          "reserves": [
+            12,
+            3
+          ],
+          "winners": [
+            {
+              "number": 8,
+              "name": "You to Gangster"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 4,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Borups Victory"
+            }
+          ],
+          "reserves": [
+            7,
+            2
+          ],
+          "winners": [
+            {
+              "number": 7,
+              "name": "High on Pepper"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 5,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Grisle Best G.L."
+            },
+            {
+              "number": 4,
+              "name": "Alm Nordstjernen"
+            },
+            {
+              "number": 8,
+              "name": "Lannem Pär"
+            },
+            {
+              "number": 9,
+              "name": "Grisle Kongen G.L."
+            }
+          ],
+          "reserves": [
+            10,
+            6
+          ],
+          "winners": [
+            {
+              "number": 1,
+              "name": "Sangviks Lynet"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 6,
+          "selected": [
+            {
+              "number": 5,
+              "name": "Conrads Ove"
+            },
+            {
+              "number": 9,
+              "name": "Rob Roy Boko"
+            },
+            {
+              "number": 11,
+              "name": "Laruns"
+            },
+            {
+              "number": 12,
+              "name": "Vince Wynn"
+            }
+          ],
+          "reserves": [
+            7,
+            3
+          ],
+          "winners": [
+            {
+              "number": 7,
+              "name": "Haylee Eagra"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 7,
+          "selected": [
+            {
+              "number": 7,
+              "name": "Great Old Dance"
+            }
+          ],
+          "reserves": [
+            5,
+            6
+          ],
+          "winners": [
+            {
+              "number": 6,
+              "name": "Pineapple"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 8,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Justcantgetenough"
+            },
+            {
+              "number": 4,
+              "name": "Griffin Kronos"
+            },
+            {
+              "number": 9,
+              "name": "Readly Winner"
+            },
+            {
+              "number": 10,
+              "name": "Monte Rei"
+            },
+            {
+              "number": 12,
+              "name": "Florenzo"
+            }
+          ],
+          "reserves": [
+            7,
+            5
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Griffin Kronos"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        }
+      ],
+      "reviewUrl": "../archive/2026-10-17-gavle/analys/",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-17_16_5",
+      "sourceSha256": "2aea35f89cb79d5504536a674a7dd6ca37231d374a1f64073f73333043fcfd28",
+      "sourceTimestamp": "2026-10-17 18:00:45",
+      "resultUrl": "https://www.atg.se/spel/2026-10-17/V85/gavle/resultat"
+    },
+    {
+      "date": "2026-10-10",
+      "track": "Solvalla",
+      "submittedAt": "2026-10-10 13:16",
+      "costSEK": 720,
+      "stakeFraction": 0.5,
+      "rows": 2880,
+      "hits": 5,
+      "prizeSEK": 56.0,
+      "netSEK": -664.0,
+      "payouts": {
+        "5": {
+          "amountSEK": 7.0,
+          "jackpot": false
+        },
+        "6": {
+          "amountSEK": 32.0,
+          "jackpot": false
+        },
+        "7": {
+          "amountSEK": 846.0,
+          "jackpot": false
+        },
+        "8": {
+          "amountSEK": 64035.0,
+          "jackpot": false
+        }
+      },
+      "winningRows": {
+        "5": 16,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "legs": [
+        {
+          "leg": 1,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Gumshoe Sox"
+            },
+            {
+              "number": 2,
+              "name": "Cold Blaze"
+            },
+            {
+              "number": 3,
+              "name": "Chaplin"
+            },
+            {
+              "number": 12,
+              "name": "T.Wall's Notorius"
+            }
+          ],
+          "reserves": [
+            5,
+            4
+          ],
+          "winners": [
+            {
+              "number": 1,
+              "name": "Gumshoe Sox"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 2,
+          "selected": [
+            {
+              "number": 5,
+              "name": "Ready Star"
+            },
+            {
+              "number": 7,
+              "name": "Makalu Doc"
+            },
+            {
+              "number": 9,
+              "name": "Jerka Sting"
+            }
+          ],
+          "reserves": [
+            1,
+            10
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Ready Star"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 3,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Gosa Gosing"
+            },
+            {
+              "number": 7,
+              "name": "Nilla Lane"
+            },
+            {
+              "number": 8,
+              "name": "Clarissa"
+            }
+          ],
+          "reserves": [
+            12,
+            11
+          ],
+          "winners": [
+            {
+              "number": 7,
+              "name": "Nilla Lane"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 4,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Mister Malabar"
+            }
+          ],
+          "reserves": [
+            11,
+            15
+          ],
+          "winners": [
+            {
+              "number": 15,
+              "name": "Monsieur Chocolat"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 5,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Kagli Zet"
+            },
+            {
+              "number": 3,
+              "name": "Global Halo"
+            },
+            {
+              "number": 5,
+              "name": "Nightbird"
+            },
+            {
+              "number": 11,
+              "name": "Morning Rain"
+            }
+          ],
+          "reserves": [
+            9,
+            4
+          ],
+          "winners": [
+            {
+              "number": 7,
+              "name": "Zeebreeze"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 6,
+          "selected": [
+            {
+              "number": 5,
+              "name": "Iaintnoquitter"
+            }
+          ],
+          "reserves": [
+            7,
+            12
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Iaintnoquitter"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 7,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Po Tay Toes"
+            },
+            {
+              "number": 4,
+              "name": "Kodiak Zet"
+            },
+            {
+              "number": 8,
+              "name": "Intro"
+            },
+            {
+              "number": 11,
+              "name": "Mister Nabab"
+            }
+          ],
+          "reserves": [
+            3,
+            5
+          ],
+          "winners": [
+            {
+              "number": 3,
+              "name": "Nanda Devi Cut"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 8,
+          "selected": [
+            {
+              "number": 2,
+              "name": "X.O.Kemp"
+            },
+            {
+              "number": 3,
+              "name": "Crowe Motion"
+            },
+            {
+              "number": 4,
+              "name": "Alvena Roy"
+            },
+            {
+              "number": 9,
+              "name": "Killer Rain"
+            },
+            {
+              "number": 11,
+              "name": "Västerbo Exciting"
+            }
+          ],
+          "reserves": [
+            6,
+            8
+          ],
+          "winners": [
+            {
+              "number": 9,
+              "name": "Killer Rain"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        }
+      ],
+      "reviewUrl": "../resultatanalys/",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-10_5_6",
+      "sourceSha256": "680d936283058e02e704e56dc3d4d15a6ad8a30cdb458cd5e150c5b405aa6b8b",
+      "sourceTimestamp": "2026-10-10 18:08:30",
+      "resultUrl": "https://www.atg.se/spel/2026-10-10/V85/solvalla/resultat"
+    },
+    {
+      "date": "2026-10-03",
+      "track": "Boden",
+      "submittedAt": "2026-10-03 13:29",
+      "costSEK": 486,
+      "stakeFraction": 0.5,
+      "rows": 1944,
+      "hits": 6,
+      "prizeSEK": 595.5,
+      "netSEK": 109.5,
+      "payouts": {
+        "5": {
+          "amountSEK": 20.0,
+          "jackpot": false
+        },
+        "6": {
+          "amountSEK": 117.0,
+          "jackpot": false
+        },
+        "7": {
+          "amountSEK": 3472.0,
+          "jackpot": false
+        },
+        "8": {
+          "amountSEK": 256598.0,
+          "jackpot": false
+        }
+      },
+      "winningRows": {
+        "5": 42,
+        "6": 3,
+        "7": 0,
+        "8": 0
+      },
+      "legs": [
+        {
+          "leg": 1,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Mellby Medusa"
+            },
+            {
+              "number": 8,
+              "name": "R.K.Kiara"
+            },
+            {
+              "number": 9,
+              "name": "Perez Mora Boko"
+            },
+            {
+              "number": 12,
+              "name": "Sonoma L.A."
+            }
+          ],
+          "reserves": [
+            4,
+            7
+          ],
+          "winners": [
+            {
+              "number": 8,
+              "name": "R.K.Kiara"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 2,
+          "selected": [
+            {
+              "number": 6,
+              "name": "Readly Brodde"
+            }
+          ],
+          "reserves": [
+            7,
+            9
+          ],
+          "winners": [
+            {
+              "number": 3,
+              "name": "Andiamo"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 3,
+          "selected": [
+            {
+              "number": 4,
+              "name": "So Far So Good Zaz"
+            },
+            {
+              "number": 6,
+              "name": "Inglourious Zet"
+            },
+            {
+              "number": 10,
+              "name": "Sacrebleu"
+            }
+          ],
+          "reserves": [
+            2,
+            12
+          ],
+          "winners": [
+            {
+              "number": 10,
+              "name": "Sacrebleu"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 4,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Tåsjö Teddy"
+            },
+            {
+              "number": 4,
+              "name": "Haslehaugens Vår"
+            },
+            {
+              "number": 12,
+              "name": "Eldbrand"
+            }
+          ],
+          "reserves": [
+            5,
+            7
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Skeie Loke"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 5,
+          "selected": [
+            {
+              "number": 5,
+              "name": "Done Deal"
+            },
+            {
+              "number": 6,
+              "name": "Griffin Kronos"
+            },
+            {
+              "number": 10,
+              "name": "Puskas Boko"
+            }
+          ],
+          "reserves": [
+            2,
+            4
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Done Deal"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 6,
+          "selected": [
+            {
+              "number": 4,
+              "name": "Prince A'lir"
+            }
+          ],
+          "reserves": [
+            9,
+            12
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Prince A'lir"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 7,
+          "selected": [
+            {
+              "number": 2,
+              "name": "The Bald Eagle"
+            },
+            {
+              "number": 3,
+              "name": "Frank S.H."
+            },
+            {
+              "number": 5,
+              "name": "Shogun R.R."
+            }
+          ],
+          "reserves": [
+            7,
+            4
+          ],
+          "winners": [
+            {
+              "number": 3,
+              "name": "Frank S.H."
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 8,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Merillion"
+            },
+            {
+              "number": 4,
+              "name": "Irwin Zet"
+            },
+            {
+              "number": 7,
+              "name": "Lots of Fun Sisu"
+            },
+            {
+              "number": 8,
+              "name": "Uno"
+            },
+            {
+              "number": 13,
+              "name": "B.Sacamano"
+            },
+            {
+              "number": 15,
+              "name": "King of Djazz"
+            }
+          ],
+          "reserves": [
+            12,
+            14
+          ],
+          "winners": [
+            {
+              "number": 3,
+              "name": "Merillion"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        }
+      ],
+      "reviewUrl": "../archive/2026-10-03-boden/#boden-analysis",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-10-03_11_5",
+      "sourceSha256": "386bfb85f9f68346c80d6985ae395730bd0789c60c4fb8ad46c33a3c5298ccf7",
+      "sourceTimestamp": "2026-10-03 18:10:30",
+      "resultUrl": "https://www.atg.se/spel/2026-10-03/V85/boden/resultat"
+    }
+  ]
+}
