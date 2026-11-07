@@ -678,6 +678,10 @@
     {
       "date": "2026-11-07",
       "description": "Rättat rapporttext: modellerna hade olika förstaval i sju av åtta lopp; historikmodellens topp-tre-missar var avdelning 6 och 8. Kompletterat med officiella placeringar för egna förslag och fördjupad underlagsanalys. Frysta förhandsval och resultatmått oförändrade."
+    },
+    {
+      "date": "2026-11-08",
+      "description": "Kompletterat med inlämnad Harry Boy-bong från användarens bild: 192 kombinationer, kostnad 100 kr, 7 rätt. Ersätter tidigare uppgift om saknat komplett eget system. Insatsandel, Boost och verklig utbetalning okända. Förhandsdata oförändrade."
     }
   ],
   "ownPickOutcomes": [
@@ -726,5 +730,113 @@
       "finishOrder": 1,
       "won": true
     }
-  ]
+  ],
+  "submittedTicket": {
+    "source": "User receipt image IMG_1906.jpeg, supplied after results",
+    "addedOn": "2026-11-08",
+    "product": "Harry Boy",
+    "submittedAt": "2026-11-07T14:38:00+01:00",
+    "costSEK": 100,
+    "selections": [
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        6,
+        9,
+        11
+      ],
+      [
+        6
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        5,
+        14
+      ]
+    ],
+    "reserves": [
+      [
+        6,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        6,
+        9
+      ]
+    ],
+    "combinations": 192,
+    "correctLegs": 7,
+    "rowDistribution": [
+      0,
+      6,
+      29,
+      57,
+      58,
+      32,
+      9,
+      1,
+      0
+    ],
+    "selectedScratches": [],
+    "reserveSubstitutions": [],
+    "ticketSpikes": {
+      "hits": 1,
+      "count": 2,
+      "legs": [
+        4,
+        6
+      ]
+    },
+    "stakeFraction": null,
+    "boost": null,
+    "actualPayoutSEK": null,
+    "actualNetSEK": null,
+    "conditionalOrdinaryFullStake": {
+      "payoutSEK": 25,
+      "netSEK": -75,
+      "note": "Assumes full row stake and no Boost; actual stake/tillval not visible on image. Not verified payout."
+    }
+  }
 }
