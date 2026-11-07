@@ -674,5 +674,57 @@
     }
   },
   "financialComparison": null,
-  "corrections": []
+  "corrections": [
+    {
+      "date": "2026-11-07",
+      "description": "Rättat rapporttext: modellerna hade olika förstaval i sju av åtta lopp; historikmodellens topp-tre-missar var avdelning 6 och 8. Kompletterat med officiella placeringar för egna förslag och fördjupad underlagsanalys. Frysta förhandsval och resultatmått oförändrade."
+    }
+  ],
+  "ownPickOutcomes": [
+    {
+      "leg": 6,
+      "number": 5,
+      "name": "Good Wine",
+      "type": "outsider",
+      "place": 0,
+      "finishOrder": 9,
+      "won": false
+    },
+    {
+      "leg": 4,
+      "number": 3,
+      "name": "Four White E.G.",
+      "type": "outsider",
+      "place": 0,
+      "finishOrder": 11,
+      "won": false
+    },
+    {
+      "leg": 5,
+      "number": 14,
+      "name": "Zargo",
+      "type": "outsider",
+      "place": 8,
+      "finishOrder": 8,
+      "won": false
+    },
+    {
+      "leg": 1,
+      "number": 9,
+      "name": "Andiamo",
+      "type": "outsider",
+      "place": 5,
+      "finishOrder": 5,
+      "won": false
+    },
+    {
+      "leg": 7,
+      "number": 6,
+      "name": "Youans Son",
+      "type": "spike",
+      "place": 1,
+      "finishOrder": 1,
+      "won": true
+    }
+  ]
 }
