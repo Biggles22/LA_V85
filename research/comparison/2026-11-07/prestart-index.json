@@ -1,0 +1,19 @@
+{
+  "roundId": "2026-11-07-bergsaker",
+  "gameId": "V85_2026-11-07_9_5",
+  "primaryBatch": "20261107T110356Z",
+  "batchPath": "research/comparison/2026-11-07/20261107T110356Z",
+  "observationWindow": {
+    "start": "2026-11-07T11:00:00+00:00",
+    "end": "2026-11-07T12:00:00+00:00",
+    "note": "Gemensamt observationsfönster 12–13 svensk tid. Varje källa har egen verklig hämtningstid; uppdateringstider kan skilja sig."
+  },
+  "capturedBeforeBettingDeadline": true,
+  "bettingDeadline": "2026-11-07T15:00:00+01:00",
+  "models": "20261107T110356Z/models.json",
+  "market": "20261107T110356Z/market.json",
+  "manualAnalysis": "20261107T110356Z/analysis.json",
+  "externalSources": "20261107T110356Z/external-sources.json",
+  "manifest": "20261107T110356Z/manifest.json",
+  "note": "Primary Saturday comparison batch. Keep prior forecasts unchanged. Missing services and ambiguous rankings must remain missing/incomparable after results."
+}

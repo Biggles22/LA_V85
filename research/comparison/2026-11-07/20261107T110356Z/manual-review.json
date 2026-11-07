@@ -1,0 +1,24 @@
+{
+  "reviewedAt": "2026-11-07T11:12:14.211541+00:00",
+  "snapshotId": "159ca123de7dd2bd85087c20b0cc85dbec627f0ce040d6602e01c38145dea331",
+  "basis": "Retains and rechecks the documented manual Friday decision against Saturday field, equipment and both current rankings. Not a calibrated probability model.",
+  "historicalDetailedReview": "research/comparison/2026-11-07/20261106T193432Z/spike-review.json",
+  "historicalOutsiderReview": "research/comparison/2026-11-07/20261106T192019Z/manual-review.json",
+  "mainSpike": {
+    "leg": 7,
+    "number": 6,
+    "assessedAbove50Percent": true,
+    "assessmentType": "SUBJECTIVE_MANUAL_JUDGEMENT",
+    "calibratedWinProbability": null,
+    "notMarketPct": true,
+    "reason": "Manuell huvudspik, kvar efter lördagens fält- och utrustningskontroll. Fyra segrar på sex starter i år, etta i båda modellerna och tidigare seger efter arbete utvändigt ger min grund. Min subjektiva helhetsbedömning är fortsatt över 50 procents segerchans, utan kalibrerat procenttal. De 76,73 procenten är ATG-streck, inte min vinstprognos; vinnarodds 1,80.",
+    "risk": "36 dagars uppehåll och tunt underlag över 2640 meter: ingen seger på två autostarter. Last Cool Cash var före honom i Derbyuttagningen och är främsta motbudet. Tuff resa eller svag dagsform kan fälla honom. Skor runt om och vanlig vagn är anmält. Värmning och nya stallbesked är ännu inte verifierade i denna körning. Bedömningen över 50 procent är osäker och bevisar inte spelvärde vid den höga streckandelen."
+  },
+  "system": null,
+  "remainingGaps": [
+    "No verified warm-up observations",
+    "No newly verified stable interviews",
+    "No numeric verified lead/pace features",
+    "Historical expanded-model training uses final markets; prestart validation is missing"
+  ]
+}

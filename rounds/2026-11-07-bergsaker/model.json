@@ -3,8 +3,8 @@
   "kind": "CATBOOST_PRESTART_RANKING",
   "roundId": "2026-11-07-bergsaker",
   "gameId": "V85_2026-11-07_9_5",
-  "snapshotId": "f235e87bf6b96dff9afeb953794474ff284fb0acfa9ec8fa1e1125215adc1d35",
-  "generatedAt": "2026-11-06T19:37:40.730289+00:00",
+  "snapshotId": "159ca123de7dd2bd85087c20b0cc85dbec627f0ce040d6602e01c38145dea331",
+  "generatedAt": "2026-11-07T11:04:09.422618+00:00",
   "model": "CatBoostClassifier",
   "parameters": {
     "iterations": 220,
@@ -5724,37 +5724,37 @@
     {
       "raceId": "2026-11-07_9_6",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_6/extended",
-      "sha256": "6951f4f44117517b69a4778210d7599b4c44c1d47db18499066a44a5569b8913"
+      "sha256": "adc5c3efbb46bf2d2854fe548b77d473eaf214f22391d8847f672a533a6fbbf6"
     },
     {
       "raceId": "2026-11-07_9_7",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_7/extended",
-      "sha256": "fdc900a16f919199bb1d5ffdf9fa0444f7b3caf91e7b34ee19bbd307dc8f0a74"
+      "sha256": "01692a12ef353e85b9fb01bf5be9d3a201608bc768aab74620d46bc1b5c16db3"
     },
     {
       "raceId": "2026-11-07_9_8",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_8/extended",
-      "sha256": "0d760a72a8fb9b3650da73457bb7dc62e5e9e19fa0fcf5c2c4aed0bd6d4895fd"
+      "sha256": "d98a74be3b09d7cbc579022661d786f3932a750eff61e2261867b5d335ba5fdc"
     },
     {
       "raceId": "2026-11-07_9_9",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_9/extended",
-      "sha256": "721e842a429ce0067ac88e7242df48bc6e6d97cc25c09a9ed87d63910998dad1"
+      "sha256": "f093033a7cb5e44df6a8b62e9215407098f11b3a41a4b4020eb18107504c8fd2"
     },
     {
       "raceId": "2026-11-07_9_10",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_10/extended",
-      "sha256": "af2e627b04cca52525d9326674596dd63d108de2f157493b2ada125a61e3b1cc"
+      "sha256": "38ba0f9b98b0df7f5a5e818b28b42675f1e204917259905ee4d0b75e6689ddce"
     },
     {
       "raceId": "2026-11-07_9_11",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_11/extended",
-      "sha256": "762a07b2f2cb66c8a153e1f49e49ad559fa5cb31a10968084737a5da426c9c79"
+      "sha256": "23cf87a7e153b952161a598c37fc4cace7e8a5adefc87bb179e816ca16519809"
     },
     {
       "raceId": "2026-11-07_9_12",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-07_9_12/extended",
-      "sha256": "7a551f62b63bf96e80f04a5a0318f5f42633b622ebfda39fa1ee0f2295913838"
+      "sha256": "f83ad93af48809cb0d069189fa8161f5569f3101226df3a099759d3e56c9293c"
     }
   ],
   "limitations": "Experimentell ranking från utvalda kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, aktuellt resultat, hästnamn, kusk, tränare och karriärstatistik ingår inte som modellvariabler. Galoppvariabeln är avstängd för jämförbarhet med grundförsöket. Testet är retrospektivt och visar inte lönsamhet.",
@@ -7625,7 +7625,7 @@
           "prestartFeatures": {
             "post": 6.0,
             "distance": 2640.0,
-            "field": 10,
+            "field": 9,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 1.25,
@@ -7636,30 +7636,8 @@
             "km_median": null,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.37304752,
+          "modelScore": 0.32263781,
           "rank": 1
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 2,
-          "name": "Dropthegloves",
-          "prestartFeatures": {
-            "post": 2.0,
-            "distance": 2640.0,
-            "field": 10,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 1.667,
-            "win5": 2,
-            "top3_5": 3,
-            "days_off": 21,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.202
-          },
-          "modelScore": 0.10407453,
-          "rank": 2
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7669,7 +7647,7 @@
           "prestartFeatures": {
             "post": 10.0,
             "distance": 2640.0,
-            "field": 10,
+            "field": 9,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.5,
@@ -7680,96 +7658,30 @@
             "km_median": null,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.10389611,
+          "modelScore": 0.12002637,
+          "rank": 2
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 2,
+          "name": "Dropthegloves",
+          "prestartFeatures": {
+            "post": 2.0,
+            "distance": 2640.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 1.667,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.202
+          },
+          "modelScore": 0.0973053,
           "rank": 3
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 4,
-          "name": "Funny Guy",
-          "prestartFeatures": {
-            "post": 4.0,
-            "distance": 2640.0,
-            "field": 10,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.25,
-            "win5": 2,
-            "top3_5": 3,
-            "days_off": 10,
-            "gallop5": 1.0,
-            "km_median": null,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.07467053,
-          "rank": 4
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 3,
-          "name": "Don't Forget Me",
-          "prestartFeatures": {
-            "post": 3.0,
-            "distance": 2640.0,
-            "field": 10,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.4,
-            "win5": 0,
-            "top3_5": 2,
-            "days_off": 17,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.895
-          },
-          "modelScore": 0.06270735,
-          "rank": 5
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 5,
-          "name": "Face to Face",
-          "prestartFeatures": {
-            "post": 5.0,
-            "distance": 2640.0,
-            "field": 10,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 2.5,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 13,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.05260773,
-          "rank": 6
-        },
-        {
-          "raceId": "2026-11-07_9_11",
-          "leg": 7,
-          "number": 1,
-          "name": "Pommery Boko",
-          "prestartFeatures": {
-            "post": 1.0,
-            "distance": 2640.0,
-            "field": 10,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.25,
-            "win5": 2,
-            "top3_5": 2,
-            "days_off": 11,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.04681554,
-          "rank": 7
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7779,7 +7691,7 @@
           "prestartFeatures": {
             "post": 12.0,
             "distance": 2640.0,
-            "field": 10,
+            "field": 9,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3,
@@ -7790,8 +7702,74 @@
             "km_median": 74.8,
             "past_purse_log": 16.341
           },
-          "modelScore": 0.04458177,
-          "rank": 8
+          "modelScore": 0.07927894,
+          "rank": 4
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 3,
+          "name": "Don't Forget Me",
+          "prestartFeatures": {
+            "post": 3.0,
+            "distance": 2640.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.4,
+            "win5": 0,
+            "top3_5": 2,
+            "days_off": 17,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.895
+          },
+          "modelScore": 0.0774397,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 4,
+          "name": "Funny Guy",
+          "prestartFeatures": {
+            "post": 4.0,
+            "distance": 2640.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 2.25,
+            "win5": 2,
+            "top3_5": 3,
+            "days_off": 10,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.07253038,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-07_9_11",
+          "leg": 7,
+          "number": 1,
+          "name": "Pommery Boko",
+          "prestartFeatures": {
+            "post": 1.0,
+            "distance": 2640.0,
+            "field": 9,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.25,
+            "win5": 2,
+            "top3_5": 2,
+            "days_off": 11,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 15.068
+          },
+          "modelScore": 0.04567036,
+          "rank": 7
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7801,7 +7779,7 @@
           "prestartFeatures": {
             "post": 7.0,
             "distance": 2640.0,
-            "field": 10,
+            "field": 9,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3,
@@ -7812,8 +7790,8 @@
             "km_median": 74.45,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.04227064,
-          "rank": 9
+          "modelScore": 0.04104114,
+          "rank": 8
         },
         {
           "raceId": "2026-11-07_9_11",
@@ -7823,7 +7801,7 @@
           "prestartFeatures": {
             "post": 11.0,
             "distance": 2640.0,
-            "field": 10,
+            "field": 9,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3,
@@ -7834,8 +7812,8 @@
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.03120149,
-          "rank": 10
+          "modelScore": 0.0253865,
+          "rank": 9
         }
       ],
       "top3": [
@@ -7845,13 +7823,13 @@
           "rank": 1
         },
         {
-          "number": 2,
-          "name": "Dropthegloves",
+          "number": 10,
+          "name": "Last Cool Cash",
           "rank": 2
         },
         {
-          "number": 10,
-          "name": "Last Cool Cash",
+          "number": 2,
+          "name": "Dropthegloves",
           "rank": 3
         }
       ]

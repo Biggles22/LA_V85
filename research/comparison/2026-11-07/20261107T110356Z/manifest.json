@@ -1,0 +1,61 @@
+{
+  "automationId": "uppdatera-la-v85-l-rdag-f-re-spelstopp",
+  "roundId": "2026-11-07-bergsaker",
+  "gameId": "V85_2026-11-07_9_5",
+  "snapshotId": "159ca123de7dd2bd85087c20b0cc85dbec627f0ce040d6602e01c38145dea331",
+  "observationWindow": {
+    "start": "2026-11-07T11:00:00+00:00",
+    "end": "2026-11-07T12:00:00+00:00",
+    "note": "Gemensamt observationsfönster 12–13 svensk tid. Varje källa har egen verklig hämtningstid; uppdateringstider kan skilja sig."
+  },
+  "runStartedAt": "2026-11-07T11:03:56.839146+00:00",
+  "observedAt": "2026-11-07T11:04:06.027179+00:00",
+  "sourceAt": "2026-11-07 12:02:00",
+  "reviewedAt": "2026-11-07T11:12:14.211541+00:00",
+  "bettingDeadline": "2026-11-07T15:00:00+01:00",
+  "codeRevision": "3038622",
+  "historicalReviewReferences": [
+    "research/comparison/2026-11-07/20261106T192019Z/manifest.json",
+    "research/comparison/2026-11-07/20261106T193432Z/manifest.json"
+  ],
+  "modelImplementation": "scripts/compare_current_models.py",
+  "implementationSha256": "2962fb33a376e1142ff6c257506de64a6b4a0e924dfdd133c7d54837cd5d1790",
+  "manualSpike": {
+    "leg": 7,
+    "number": 6,
+    "above50Percent": "subjective manual judgement, not calibrated"
+  },
+  "ownSystem": null,
+  "externalPublishedSystem": "Tipper Trav, recorded without placing a bet; see external-sources.json for financial limitations",
+  "rawFileSavedAt": {
+    "20261107T110356Z_2026-11-07_9_10.json": "2026-11-07T11:04:06.422448+00:00",
+    "20261107T110356Z_2026-11-07_9_11.json": "2026-11-07T11:04:06.423448+00:00",
+    "20261107T110356Z_2026-11-07_9_12.json": "2026-11-07T11:04:06.424451+00:00",
+    "20261107T110356Z_2026-11-07_9_5.json": "2026-11-07T11:04:06.416449+00:00",
+    "20261107T110356Z_2026-11-07_9_6.json": "2026-11-07T11:04:06.418448+00:00",
+    "20261107T110356Z_2026-11-07_9_7.json": "2026-11-07T11:04:06.419451+00:00",
+    "20261107T110356Z_2026-11-07_9_8.json": "2026-11-07T11:04:06.420448+00:00",
+    "20261107T110356Z_2026-11-07_9_9.json": "2026-11-07T11:04:06.421448+00:00",
+    "20261107T110356Z_game.json": "2026-11-07T11:04:06.031184+00:00"
+  },
+  "timeNote": "Game observedAt is after HTTP response; rawFileSavedAt are local file-save times, not independent timestamp attestations. All captured records precede betting deadline.",
+  "files": {
+    "analysis.json": "27651c80fc53a8f4d9c57b0538c4db7b12b72f069801cfcba92667b99af2cb23",
+    "data.json": "5c9068b909f82e577f1158002b8e9d3eccafad2eaaef5c17bea5b2f87ab56f45",
+    "external-sources.json": "1a38d2038444a1a75449753c01e6265de915b4243f7e50a3eb5b09fb5157093c",
+    "form.json": "843c01e8fd96e42128c12a91f4fb02e8e0539b61ada7bd5dd2bb9e604928707d",
+    "manual-review.json": "624ebf885482e0211ab358461853a7531ff10fd61ff0478b286a71407a6a738a",
+    "market.json": "a03ae5fed67dbf5a10c886d7b9087811c6fcbef6a92a79d01c81d48414950234",
+    "model.json": "58b89fc2ceb32c0f0bf33cd2d4e70db9b13d1b3bc0c005a874ad7caa3859a267",
+    "models.json": "f7854c07137dade348eaff72b18de04e72f359f3d07e888b8138d38eb279ef94",
+    "raw/20261107T110356Z_2026-11-07_9_10.json": "2476ede736f3ab5bfb629ac574615b8f7324537a1a64151bdb9c6ac4842fc27d",
+    "raw/20261107T110356Z_2026-11-07_9_11.json": "ec3b0eb8d3566bee0fe9811396c3832b5cc690fadb26fe5d418e602b857be876",
+    "raw/20261107T110356Z_2026-11-07_9_12.json": "7e51fff2a11ed201e892ef7e688782ad4acaacd6e11435a01e38710a013d1d28",
+    "raw/20261107T110356Z_2026-11-07_9_5.json": "f34fcd644f1422b307918dd9ac9a2f1fe168da6590a115f21121124f92d8c3d2",
+    "raw/20261107T110356Z_2026-11-07_9_6.json": "18e20c8994c48449f6157150200e11bb75a11afb5c6a5cc6d035d1f85a663654",
+    "raw/20261107T110356Z_2026-11-07_9_7.json": "38c6634a7e1bbbefa54656ad2a93b171d8f8e1ac8b3295180dacbb3b694779e0",
+    "raw/20261107T110356Z_2026-11-07_9_8.json": "2d0206c1437291ef68dadacebd21d7dfd67d6b92d3be7633bf61e53df1c5acc9",
+    "raw/20261107T110356Z_2026-11-07_9_9.json": "78f19ed9b95ff9cd90bf68832dc5da801667a1bf1dd922fe4e07c4dbffe31ac8",
+    "raw/20261107T110356Z_game.json": "28e9f220c9c4de9a9b40b33c0a47cfd9211f213fd89052168b83bcf081d68f6a"
+  }
+}

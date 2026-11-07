@@ -1,0 +1,2433 @@
+{
+  "roundId": "2026-11-07-bergsaker",
+  "gameId": "V85_2026-11-07_9_5",
+  "referenceSnapshotId": "159ca123de7dd2bd85087c20b0cc85dbec627f0ce040d6602e01c38145dea331",
+  "observationWindow": {
+    "start": "2026-11-07T11:00:00+00:00",
+    "end": "2026-11-07T12:00:00+00:00",
+    "note": "Gemensamt observationsfönster 12–13 svensk tid. Varje källa har egen verklig hämtningstid; uppdateringstider kan skilja sig."
+  },
+  "createdAt": "2026-11-07T11:11:17.603355+00:00",
+  "timingNote": "Source publication times are unknown unless explicitly recorded. Each retrieval is prestart within the common window, but not simultaneous. No full third-party articles are republished.",
+  "sources": [
+    {
+      "name": "Travmaskinen",
+      "url": "https://travmaskinen.se/v85-tips",
+      "finalUrl": "https://travmaskinen.se/v85-tips",
+      "capturedAt": "2026-11-07T11:05:05.806592+00:00",
+      "httpStatus": 200,
+      "sha256": "f5a4f97f43d272f5649230ae967ef5c215a5edfd4fbaa423be2b2e380bf86a50",
+      "sourcePublishedAt": null,
+      "status": "partial_public_preview",
+      "method": "Source explicitly numbers an AI ranking for leg 1. Legs 2–8 are starting lists, not rankings.",
+      "orderedTop3": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522
+            },
+            {
+              "number": 5,
+              "name": "Raven",
+              "horseId": 778376
+            },
+            {
+              "number": 1,
+              "name": "Jaguar Godiva",
+              "horseId": 794009
+            }
+          ]
+        }
+      ],
+      "firstChoices": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522
+            }
+          ]
+        }
+      ],
+      "spikes": [
+        {
+          "leg": 5,
+          "raceId": "2026-11-07_9_9",
+          "horses": [
+            {
+              "number": 12,
+              "name": "Svarte Petter",
+              "horseId": 772487
+            }
+          ]
+        }
+      ],
+      "spikeEvidenceUrl": "https://travmaskinen.se/artiklar/v85-tips-bergsaker-2026-11-07",
+      "spikeEvidenceDate": "2026-11-05",
+      "spikeEvidenceNote": "Public article teaser names Svarte Petter as strongest spike; full article requires login.",
+      "outsiders": [],
+      "system": null,
+      "coverageNote": "En ordnad topp tre, sju avdelningar bakom medlemsåtkomst. Offentlig artikelteaser ger spiknamn, inget komplett system.",
+      "spikeEvidence": {
+        "url": "https://travmaskinen.se/artiklar/v85-tips-bergsaker-2026-11-07",
+        "finalUrl": "https://travmaskinen.se/artiklar/v85-tips-bergsaker-2026-11-07",
+        "capturedAt": "2026-11-07T11:05:47.544317+00:00",
+        "httpStatus": 200,
+        "sha256": "17f66117d0f8130e4a1efd6fe54796620e07b7f79cc55631a314825934de9ee6"
+      }
+    },
+    {
+      "name": "Travtips AI",
+      "url": "https://travtips.ai/sv/game/S1_NR_2026-11-07/V85",
+      "finalUrl": "https://travtips.ai/sv/game/S1_NR_2026-11-07/V85",
+      "capturedAt": "2026-11-07T11:05:47.591397+00:00",
+      "httpStatus": 200,
+      "sha256": "87951f711cbefe836ddd417b0508fe8560f27c3f3a23c035993d7331b051e77e",
+      "sourcePublishedAt": null,
+      "status": "partial_unordered_preview",
+      "orderedTop3": [],
+      "firstChoices": [],
+      "unorderedSelections": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522
+            },
+            {
+              "number": 5,
+              "name": "Raven",
+              "horseId": 778376
+            },
+            {
+              "number": 9,
+              "name": "Andiamo",
+              "horseId": 780041
+            }
+          ]
+        }
+      ],
+      "spikes": [],
+      "outsiders": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 9,
+              "name": "Andiamo",
+              "horseId": 780041
+            }
+          ]
+        }
+      ],
+      "system": null,
+      "coverageNote": "Tre toppförslag i avdelning 1, men ordningen är inte verifierad som ranking. Övriga sju avdelningar saknar öppna förslag; konto/Pro krävs för mer analys."
+    },
+    {
+      "name": "V46",
+      "url": "https://v46.se/spel/V85_2026-11-07_9_5/",
+      "finalUrl": "https://v46.se/spel/V85_2026-11-07_9_5/",
+      "capturedAt": "2026-11-07T11:05:47.693033+00:00",
+      "httpStatus": 200,
+      "sha256": "eba2325b5fec957ed91f257c78525875c3cf0f5c0cb7983f8685dbd99229ef22",
+      "sourcePublishedAt": null,
+      "status": "analysis_missing",
+      "orderedTop3": [],
+      "firstChoices": [],
+      "spikes": [],
+      "outsiders": [],
+      "system": null,
+      "coverageNote": "Omgångssidan visar 0 av 8 analyserade avdelningar. Startsidan anger pausad AI på grund av API-gräns. Marknadsval eller manuella spelhjälpsval ersätter inte saknade AI-tips.",
+      "supportingSources": [
+        {
+          "url": "https://v46.se/",
+          "finalUrl": "https://v46.se/",
+          "capturedAt": "2026-11-07T11:05:05.950057+00:00",
+          "httpStatus": 200,
+          "sha256": "a9d38d1b3bb9c761e6d4011ef7958405051532f437748fe82ad4d976c32e8ce1"
+        }
+      ]
+    },
+    {
+      "name": "Tipper Trav",
+      "url": "https://tippertrav.se/",
+      "finalUrl": "https://tippertrav.se/",
+      "capturedAt": "2026-11-07T11:05:05.982204+00:00",
+      "httpStatus": 200,
+      "sha256": "566e7457eb385c21beb48f3e845ca1e879e9ac6fc8d5fab4806354db2bad9904",
+      "sourcePublishedAt": null,
+      "status": "captured_numeric_index",
+      "orderedTop3": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522
+            },
+            {
+              "number": 5,
+              "name": "Raven",
+              "horseId": 778376
+            },
+            {
+              "number": 2,
+              "name": "River Tooma",
+              "horseId": 786255
+            }
+          ]
+        },
+        {
+          "leg": 2,
+          "raceId": "2026-11-07_9_6",
+          "horses": [
+            {
+              "number": 1,
+              "name": "May J.",
+              "horseId": 795367
+            },
+            {
+              "number": 3,
+              "name": "La Fiesta Pellini",
+              "horseId": 785329
+            },
+            {
+              "number": 2,
+              "name": "Samira M.B.S.",
+              "horseId": 797948
+            }
+          ]
+        },
+        {
+          "leg": 5,
+          "raceId": "2026-11-07_9_9",
+          "horses": [
+            {
+              "number": 1,
+              "name": "Edens Odin",
+              "horseId": 776542
+            },
+            {
+              "number": 12,
+              "name": "Svarte Petter",
+              "horseId": 772487
+            },
+            {
+              "number": 4,
+              "name": "Guli Em",
+              "horseId": 759341
+            }
+          ]
+        },
+        {
+          "leg": 6,
+          "raceId": "2026-11-07_9_10",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Tarte Tatin",
+              "horseId": 791694
+            },
+            {
+              "number": 1,
+              "name": "Wing Profile",
+              "horseId": 785743
+            },
+            {
+              "number": 2,
+              "name": "Aloha",
+              "horseId": 796864
+            }
+          ]
+        },
+        {
+          "leg": 8,
+          "raceId": "2026-11-07_9_12",
+          "horses": [
+            {
+              "number": 5,
+              "name": "Turner Ale",
+              "horseId": 798020
+            },
+            {
+              "number": 6,
+              "name": "Exile on Main St.",
+              "horseId": 790399
+            },
+            {
+              "number": 14,
+              "name": "Ultimate Scotch",
+              "horseId": 790663
+            }
+          ]
+        }
+      ],
+      "firstChoices": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522
+            }
+          ]
+        },
+        {
+          "leg": 2,
+          "raceId": "2026-11-07_9_6",
+          "horses": [
+            {
+              "number": 1,
+              "name": "May J.",
+              "horseId": 795367
+            }
+          ]
+        },
+        {
+          "leg": 3,
+          "raceId": "2026-11-07_9_7",
+          "horses": [
+            {
+              "number": 9,
+              "name": "Briskeby Pilen",
+              "horseId": 784388
+            }
+          ]
+        },
+        {
+          "leg": 4,
+          "raceId": "2026-11-07_9_8",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Shogun R.R.",
+              "horseId": 784930
+            }
+          ]
+        },
+        {
+          "leg": 5,
+          "raceId": "2026-11-07_9_9",
+          "horses": [
+            {
+              "number": 1,
+              "name": "Edens Odin",
+              "horseId": 776542
+            }
+          ]
+        },
+        {
+          "leg": 6,
+          "raceId": "2026-11-07_9_10",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Tarte Tatin",
+              "horseId": 791694
+            }
+          ]
+        },
+        {
+          "leg": 7,
+          "raceId": "2026-11-07_9_11",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Youans Son",
+              "horseId": 791074
+            }
+          ]
+        },
+        {
+          "leg": 8,
+          "raceId": "2026-11-07_9_12",
+          "horses": [
+            {
+              "number": 5,
+              "name": "Turner Ale",
+              "horseId": 798020
+            }
+          ]
+        }
+      ],
+      "spikes": [
+        {
+          "leg": 3,
+          "raceId": "2026-11-07_9_7",
+          "horses": [
+            {
+              "number": 9,
+              "name": "Briskeby Pilen",
+              "horseId": 784388
+            }
+          ]
+        },
+        {
+          "leg": 5,
+          "raceId": "2026-11-07_9_9",
+          "horses": [
+            {
+              "number": 1,
+              "name": "Edens Odin",
+              "horseId": 776542
+            }
+          ]
+        },
+        {
+          "leg": 7,
+          "raceId": "2026-11-07_9_11",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Youans Son",
+              "horseId": 791074
+            }
+          ]
+        }
+      ],
+      "outsiders": [],
+      "system": {
+        "kind": "PUBLISHED_PROPOSAL_NOT_PLACED_BET",
+        "sourcePreset": "Snabbspringaren",
+        "selections": [
+          {
+            "leg": 1,
+            "raceId": "2026-11-07_9_5",
+            "horses": [
+              {
+                "number": 1,
+                "name": "Jaguar Godiva",
+                "horseId": 794009
+              },
+              {
+                "number": 2,
+                "name": "River Tooma",
+                "horseId": 786255
+              },
+              {
+                "number": 4,
+                "name": "Global Dependable",
+                "horseId": 771031
+              },
+              {
+                "number": 5,
+                "name": "Raven",
+                "horseId": 778376
+              },
+              {
+                "number": 6,
+                "name": "Readly Brodde",
+                "horseId": 791522
+              }
+            ]
+          },
+          {
+            "leg": 2,
+            "raceId": "2026-11-07_9_6",
+            "horses": [
+              {
+                "number": 1,
+                "name": "May J.",
+                "horseId": 795367
+              },
+              {
+                "number": 2,
+                "name": "Samira M.B.S.",
+                "horseId": 797948
+              },
+              {
+                "number": 3,
+                "name": "La Fiesta Pellini",
+                "horseId": 785329
+              },
+              {
+                "number": 4,
+                "name": "Executive Duchess",
+                "horseId": 790808
+              }
+            ]
+          },
+          {
+            "leg": 3,
+            "raceId": "2026-11-07_9_7",
+            "horses": [
+              {
+                "number": 9,
+                "name": "Briskeby Pilen",
+                "horseId": 784388
+              }
+            ]
+          },
+          {
+            "leg": 4,
+            "raceId": "2026-11-07_9_8",
+            "horses": [
+              {
+                "number": 5,
+                "name": "Crowe Motion",
+                "horseId": 787853
+              },
+              {
+                "number": 6,
+                "name": "Shogun R.R.",
+                "horseId": 784930
+              }
+            ]
+          },
+          {
+            "leg": 5,
+            "raceId": "2026-11-07_9_9",
+            "horses": [
+              {
+                "number": 1,
+                "name": "Edens Odin",
+                "horseId": 776542
+              }
+            ]
+          },
+          {
+            "leg": 6,
+            "raceId": "2026-11-07_9_10",
+            "horses": [
+              {
+                "number": 1,
+                "name": "Wing Profile",
+                "horseId": 785743
+              },
+              {
+                "number": 2,
+                "name": "Aloha",
+                "horseId": 796864
+              },
+              {
+                "number": 5,
+                "name": "Good Wine",
+                "horseId": 787608
+              },
+              {
+                "number": 6,
+                "name": "Tarte Tatin",
+                "horseId": 791694
+              },
+              {
+                "number": 14,
+                "name": "Full Speed Forward",
+                "horseId": 777146
+              }
+            ]
+          },
+          {
+            "leg": 7,
+            "raceId": "2026-11-07_9_11",
+            "horses": [
+              {
+                "number": 6,
+                "name": "Youans Son",
+                "horseId": 791074
+              }
+            ]
+          },
+          {
+            "leg": 8,
+            "raceId": "2026-11-07_9_12",
+            "horses": [
+              {
+                "number": 5,
+                "name": "Turner Ale",
+                "horseId": 798020
+              },
+              {
+                "number": 6,
+                "name": "Exile on Main St.",
+                "horseId": 790399
+              },
+              {
+                "number": 8,
+                "name": "Snack",
+                "horseId": 794912
+              },
+              {
+                "number": 9,
+                "name": "Set it off H.C.",
+                "horseId": 792628
+              },
+              {
+                "number": 14,
+                "name": "Ultimate Scotch",
+                "horseId": 790663
+              }
+            ]
+          }
+        ],
+        "rows": 1000,
+        "publishedCostSEK": 500,
+        "effectiveRowPriceSEK": 0.5,
+        "declaredStakeFraction": null,
+        "financialComparisonEligible": false,
+        "financialNote": "Full selections, row count and published cost frozen. Confirm official unit price / stake interpretation before payout comparison; never invent reserves.",
+        "reserves": null
+      },
+      "races": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Jaguar Godiva",
+              "horseId": 794009,
+              "index": 42
+            },
+            {
+              "number": 2,
+              "name": "River Tooma",
+              "horseId": 786255,
+              "index": 50
+            },
+            {
+              "number": 3,
+              "name": "Warhol",
+              "horseId": 778369,
+              "index": 23
+            },
+            {
+              "number": 4,
+              "name": "Global Dependable",
+              "horseId": 771031,
+              "index": 41
+            },
+            {
+              "number": 5,
+              "name": "Raven",
+              "horseId": 778376,
+              "index": 70
+            },
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522,
+              "index": 79
+            },
+            {
+              "number": 7,
+              "name": "Vixi Garbo",
+              "horseId": 781365,
+              "index": 10
+            },
+            {
+              "number": 8,
+              "name": "Pasha Newport",
+              "horseId": 793376,
+              "index": 22
+            },
+            {
+              "number": 9,
+              "name": "Andiamo",
+              "horseId": 780041,
+              "index": 29
+            },
+            {
+              "number": 10,
+              "name": "Any Given Sunday",
+              "horseId": 785412,
+              "index": 29
+            },
+            {
+              "number": 11,
+              "name": "Russel Square",
+              "horseId": 766064,
+              "index": 13
+            },
+            {
+              "number": 12,
+              "name": "Lookin at Lucky",
+              "horseId": 783865,
+              "index": 29
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              9,
+              10,
+              12
+            ]
+          ]
+        },
+        {
+          "leg": 2,
+          "raceId": "2026-11-07_9_6",
+          "scores": [
+            {
+              "number": 1,
+              "name": "May J.",
+              "horseId": 795367,
+              "index": 70
+            },
+            {
+              "number": 2,
+              "name": "Samira M.B.S.",
+              "horseId": 797948,
+              "index": 56
+            },
+            {
+              "number": 3,
+              "name": "La Fiesta Pellini",
+              "horseId": 785329,
+              "index": 63
+            },
+            {
+              "number": 4,
+              "name": "Executive Duchess",
+              "horseId": 790808,
+              "index": 51
+            },
+            {
+              "number": 5,
+              "name": "Nordic Choice",
+              "horseId": 795083,
+              "index": 20
+            },
+            {
+              "number": 6,
+              "name": "Hervey Island",
+              "horseId": 792591,
+              "index": 17
+            },
+            {
+              "number": 8,
+              "name": "Ajlexes Konnässör",
+              "horseId": 800370,
+              "index": 18
+            },
+            {
+              "number": 9,
+              "name": "Järnladyn",
+              "horseId": 780143,
+              "index": 11
+            },
+            {
+              "number": 10,
+              "name": "R.F.M.Levina",
+              "horseId": 787754,
+              "index": 30
+            },
+            {
+              "number": 11,
+              "name": "Sanna Tooma",
+              "horseId": 791277,
+              "index": 20
+            },
+            {
+              "number": 12,
+              "name": "Valuga",
+              "horseId": 793529,
+              "index": 11
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              5,
+              11
+            ],
+            [
+              9,
+              12
+            ]
+          ]
+        },
+        {
+          "leg": 3,
+          "raceId": "2026-11-07_9_7",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Eldbrand",
+              "horseId": 817454,
+              "index": 29
+            },
+            {
+              "number": 2,
+              "name": "Kjempa Re",
+              "horseId": 786346,
+              "index": 4
+            },
+            {
+              "number": 3,
+              "name": "Nordprins",
+              "horseId": 785806,
+              "index": 22
+            },
+            {
+              "number": 4,
+              "name": "Ava Modde",
+              "horseId": 764203,
+              "index": 16
+            },
+            {
+              "number": 5,
+              "name": "Fosshaug Frasse",
+              "horseId": 761948,
+              "index": 17
+            },
+            {
+              "number": 6,
+              "name": "Faks Trym",
+              "horseId": 784406,
+              "index": 48
+            },
+            {
+              "number": 7,
+              "name": "Skjegge Svarten",
+              "horseId": 794653,
+              "index": 48
+            },
+            {
+              "number": 8,
+              "name": "Ellbert",
+              "horseId": 779964,
+              "index": 24
+            },
+            {
+              "number": 9,
+              "name": "Briskeby Pilen",
+              "horseId": 784388,
+              "index": 73
+            },
+            {
+              "number": 10,
+              "name": "Ersa Frej",
+              "horseId": 743074,
+              "index": 16
+            },
+            {
+              "number": 11,
+              "name": "Grisle Kongen G.L.",
+              "horseId": 802840,
+              "index": 42
+            },
+            {
+              "number": 12,
+              "name": "Harry Växus",
+              "horseId": 746697,
+              "index": 14
+            },
+            {
+              "number": 13,
+              "name": "Eldida",
+              "horseId": 752221,
+              "index": 28
+            },
+            {
+              "number": 14,
+              "name": "V.Viking",
+              "horseId": 744343,
+              "index": 23
+            },
+            {
+              "number": 15,
+              "name": "Lill Elden",
+              "horseId": 753536,
+              "index": 12
+            }
+          ],
+          "strictOrderedTop3Eligible": false,
+          "tieGroups": [
+            [
+              6,
+              7
+            ],
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "leg": 4,
+          "raceId": "2026-11-07_9_8",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Nickel Occagnes",
+              "horseId": 797892,
+              "index": 38
+            },
+            {
+              "number": 2,
+              "name": "Parish Crooks V.S.",
+              "horseId": 787115,
+              "index": 16
+            },
+            {
+              "number": 3,
+              "name": "Four White E.G.",
+              "horseId": 783935,
+              "index": 32
+            },
+            {
+              "number": 4,
+              "name": "Conrads Åke",
+              "horseId": 784875,
+              "index": 20
+            },
+            {
+              "number": 5,
+              "name": "Crowe Motion",
+              "horseId": 787853,
+              "index": 38
+            },
+            {
+              "number": 6,
+              "name": "Shogun R.R.",
+              "horseId": 784930,
+              "index": 71
+            },
+            {
+              "number": 8,
+              "name": "Bright Star U.S.",
+              "horseId": 807135,
+              "index": 32
+            },
+            {
+              "number": 9,
+              "name": "Summermusic'nightS",
+              "horseId": 800205,
+              "index": 16
+            },
+            {
+              "number": 10,
+              "name": "Flotilla",
+              "horseId": 777776,
+              "index": 19
+            },
+            {
+              "number": 11,
+              "name": "Izod Zet",
+              "horseId": 785299,
+              "index": 16
+            },
+            {
+              "number": 12,
+              "name": "Indy Rock",
+              "horseId": 763359,
+              "index": 26
+            }
+          ],
+          "strictOrderedTop3Eligible": false,
+          "tieGroups": [
+            [
+              1,
+              5
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              2,
+              9,
+              11
+            ]
+          ]
+        },
+        {
+          "leg": 5,
+          "raceId": "2026-11-07_9_9",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Edens Odin",
+              "horseId": 776542,
+              "index": 79
+            },
+            {
+              "number": 2,
+              "name": "Komnes Omer",
+              "horseId": 757383,
+              "index": 33
+            },
+            {
+              "number": 3,
+              "name": "Klack Vidar",
+              "horseId": 759690,
+              "index": 19
+            },
+            {
+              "number": 4,
+              "name": "Guli Em",
+              "horseId": 759341,
+              "index": 46
+            },
+            {
+              "number": 5,
+              "name": "Kruson",
+              "horseId": 756301,
+              "index": 14
+            },
+            {
+              "number": 6,
+              "name": "Hibovalle",
+              "horseId": 744176,
+              "index": 27
+            },
+            {
+              "number": 7,
+              "name": "Guli Hektor",
+              "horseId": 773117,
+              "index": 11
+            },
+            {
+              "number": 8,
+              "name": "Pyrotek",
+              "horseId": 765089,
+              "index": 11
+            },
+            {
+              "number": 9,
+              "name": "Källsjöviking",
+              "horseId": 745779,
+              "index": 7
+            },
+            {
+              "number": 10,
+              "name": "Soldhöjdens Drake",
+              "horseId": 761394,
+              "index": 32
+            },
+            {
+              "number": 11,
+              "name": "Tekno Jerven",
+              "horseId": 750346,
+              "index": 29
+            },
+            {
+              "number": 12,
+              "name": "Svarte Petter",
+              "horseId": 772487,
+              "index": 68
+            },
+            {
+              "number": 13,
+              "name": "Nordby Elde",
+              "horseId": 753317,
+              "index": 26
+            },
+            {
+              "number": 14,
+              "name": "Zargo",
+              "horseId": 765629,
+              "index": 31
+            },
+            {
+              "number": 15,
+              "name": "Smedheim Braut",
+              "horseId": 784501,
+              "index": 4
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        {
+          "leg": 6,
+          "raceId": "2026-11-07_9_10",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Wing Profile",
+              "horseId": 785743,
+              "index": 38
+            },
+            {
+              "number": 2,
+              "name": "Aloha",
+              "horseId": 796864,
+              "index": 29
+            },
+            {
+              "number": 3,
+              "name": "Sunshine Tooma",
+              "horseId": 792419,
+              "index": 21
+            },
+            {
+              "number": 4,
+              "name": "Rosi Tooma",
+              "horseId": 786256,
+              "index": 17
+            },
+            {
+              "number": 5,
+              "name": "Good Wine",
+              "horseId": 787608,
+              "index": 27
+            },
+            {
+              "number": 6,
+              "name": "Tarte Tatin",
+              "horseId": 791694,
+              "index": 72
+            },
+            {
+              "number": 7,
+              "name": "Sessan of Man",
+              "horseId": 780522,
+              "index": 14
+            },
+            {
+              "number": 8,
+              "name": "Conrads Jessica",
+              "horseId": 786331,
+              "index": 25
+            },
+            {
+              "number": 9,
+              "name": "Virtual Reality",
+              "horseId": 786362,
+              "index": 17
+            },
+            {
+              "number": 11,
+              "name": "Candy Celebration",
+              "horseId": 782001,
+              "index": 14
+            },
+            {
+              "number": 12,
+              "name": "Ajlexes Gourmand",
+              "horseId": 784545,
+              "index": 21
+            },
+            {
+              "number": 13,
+              "name": "Megan di Quattro",
+              "horseId": 772463,
+              "index": 12
+            },
+            {
+              "number": 14,
+              "name": "Full Speed Forward",
+              "horseId": 777146,
+              "index": 28
+            },
+            {
+              "number": 15,
+              "name": "Staro Roseway",
+              "horseId": 780334,
+              "index": 6
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              3,
+              12
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              7,
+              11
+            ]
+          ]
+        },
+        {
+          "leg": 7,
+          "raceId": "2026-11-07_9_11",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Pommery Boko",
+              "horseId": 791138,
+              "index": 19
+            },
+            {
+              "number": 2,
+              "name": "Dropthegloves",
+              "horseId": 786558,
+              "index": 23
+            },
+            {
+              "number": 3,
+              "name": "Don't Forget Me",
+              "horseId": 793680,
+              "index": 23
+            },
+            {
+              "number": 4,
+              "name": "Funny Guy",
+              "horseId": 788212,
+              "index": 18
+            },
+            {
+              "number": 6,
+              "name": "Youans Son",
+              "horseId": 791074,
+              "index": 84
+            },
+            {
+              "number": 7,
+              "name": "Mastroianni",
+              "horseId": 781409,
+              "index": 27
+            },
+            {
+              "number": 10,
+              "name": "Last Cool Cash",
+              "horseId": 792730,
+              "index": 40
+            },
+            {
+              "number": 11,
+              "name": "Adora Liss",
+              "horseId": 779719,
+              "index": 23
+            },
+            {
+              "number": 12,
+              "name": "T.Wall's Notorius",
+              "horseId": 778923,
+              "index": 27
+            }
+          ],
+          "strictOrderedTop3Eligible": false,
+          "tieGroups": [
+            [
+              7,
+              12
+            ],
+            [
+              2,
+              3,
+              11
+            ]
+          ]
+        },
+        {
+          "leg": 8,
+          "raceId": "2026-11-07_9_12",
+          "scores": [
+            {
+              "number": 1,
+              "name": "License to Fight",
+              "horseId": 792310,
+              "index": 25
+            },
+            {
+              "number": 2,
+              "name": "Pure Dream",
+              "horseId": 794398,
+              "index": 20
+            },
+            {
+              "number": 3,
+              "name": "Win Wood",
+              "horseId": 794346,
+              "index": 20
+            },
+            {
+              "number": 4,
+              "name": "Edes Coktail",
+              "horseId": 794393,
+              "index": 32
+            },
+            {
+              "number": 5,
+              "name": "Turner Ale",
+              "horseId": 798020,
+              "index": 82
+            },
+            {
+              "number": 6,
+              "name": "Exile on Main St.",
+              "horseId": 790399,
+              "index": 63
+            },
+            {
+              "number": 7,
+              "name": "Almond Remix",
+              "horseId": 791885,
+              "index": 26
+            },
+            {
+              "number": 8,
+              "name": "Snack",
+              "horseId": 794912,
+              "index": 35
+            },
+            {
+              "number": 9,
+              "name": "Set it off H.C.",
+              "horseId": 792628,
+              "index": 48
+            },
+            {
+              "number": 10,
+              "name": "Alfred Gratien",
+              "horseId": 790411,
+              "index": 27
+            },
+            {
+              "number": 11,
+              "name": "Iulius Zet",
+              "horseId": 783541,
+              "index": 12
+            },
+            {
+              "number": 12,
+              "name": "Showmethecash",
+              "horseId": 773050,
+              "index": 18
+            },
+            {
+              "number": 13,
+              "name": "Monir Southwind",
+              "horseId": 783606,
+              "index": 17
+            },
+            {
+              "number": 14,
+              "name": "Ultimate Scotch",
+              "horseId": 790663,
+              "index": 58
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      ],
+      "method": "Derived by descending published AI index over the common active field. No invented tie-break; strictly ordered top-three metric is omitted for ties within the first three or at the cutoff. Index is not a win probability.",
+      "coverageNote": "AI-index för alla åtta lopp; exakt ordnad topp tre kan jämföras i fem. Fullt publicerat förslag: 1 000 rader, 500 kr."
+    },
+    {
+      "name": "Travtipsaren",
+      "url": "https://travtipsaren.se/",
+      "finalUrl": "https://travtipsaren.se/",
+      "capturedAt": "2026-11-07T11:07:56.981Z",
+      "httpStatus": 200,
+      "sha256": "1d7f38d038ede7506b61e9d580bd5c9c3684f9613938f09fd5e0a8d383ac7f3b",
+      "sourcePublishedAt": null,
+      "status": "captured_numeric_index",
+      "orderedTop3": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522
+            },
+            {
+              "number": 7,
+              "name": "Vixi Garbo",
+              "horseId": 781365
+            },
+            {
+              "number": 5,
+              "name": "Raven",
+              "horseId": 778376
+            }
+          ]
+        },
+        {
+          "leg": 2,
+          "raceId": "2026-11-07_9_6",
+          "horses": [
+            {
+              "number": 1,
+              "name": "May J.",
+              "horseId": 795367
+            },
+            {
+              "number": 3,
+              "name": "La Fiesta Pellini",
+              "horseId": 785329
+            },
+            {
+              "number": 2,
+              "name": "Samira M.B.S.",
+              "horseId": 797948
+            }
+          ]
+        },
+        {
+          "leg": 4,
+          "raceId": "2026-11-07_9_8",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Shogun R.R.",
+              "horseId": 784930
+            },
+            {
+              "number": 1,
+              "name": "Nickel Occagnes",
+              "horseId": 797892
+            },
+            {
+              "number": 8,
+              "name": "Bright Star U.S.",
+              "horseId": 807135
+            }
+          ]
+        },
+        {
+          "leg": 5,
+          "raceId": "2026-11-07_9_9",
+          "horses": [
+            {
+              "number": 12,
+              "name": "Svarte Petter",
+              "horseId": 772487
+            },
+            {
+              "number": 1,
+              "name": "Edens Odin",
+              "horseId": 776542
+            },
+            {
+              "number": 4,
+              "name": "Guli Em",
+              "horseId": 759341
+            }
+          ]
+        },
+        {
+          "leg": 6,
+          "raceId": "2026-11-07_9_10",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Tarte Tatin",
+              "horseId": 791694
+            },
+            {
+              "number": 1,
+              "name": "Wing Profile",
+              "horseId": 785743
+            },
+            {
+              "number": 2,
+              "name": "Aloha",
+              "horseId": 796864
+            }
+          ]
+        },
+        {
+          "leg": 8,
+          "raceId": "2026-11-07_9_12",
+          "horses": [
+            {
+              "number": 5,
+              "name": "Turner Ale",
+              "horseId": 798020
+            },
+            {
+              "number": 6,
+              "name": "Exile on Main St.",
+              "horseId": 790399
+            },
+            {
+              "number": 14,
+              "name": "Ultimate Scotch",
+              "horseId": 790663
+            }
+          ]
+        }
+      ],
+      "firstChoices": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522
+            }
+          ]
+        },
+        {
+          "leg": 2,
+          "raceId": "2026-11-07_9_6",
+          "horses": [
+            {
+              "number": 1,
+              "name": "May J.",
+              "horseId": 795367
+            }
+          ]
+        },
+        {
+          "leg": 3,
+          "raceId": "2026-11-07_9_7",
+          "horses": [
+            {
+              "number": 9,
+              "name": "Briskeby Pilen",
+              "horseId": 784388
+            }
+          ]
+        },
+        {
+          "leg": 4,
+          "raceId": "2026-11-07_9_8",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Shogun R.R.",
+              "horseId": 784930
+            }
+          ]
+        },
+        {
+          "leg": 5,
+          "raceId": "2026-11-07_9_9",
+          "horses": [
+            {
+              "number": 12,
+              "name": "Svarte Petter",
+              "horseId": 772487
+            }
+          ]
+        },
+        {
+          "leg": 6,
+          "raceId": "2026-11-07_9_10",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Tarte Tatin",
+              "horseId": 791694
+            }
+          ]
+        },
+        {
+          "leg": 7,
+          "raceId": "2026-11-07_9_11",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Youans Son",
+              "horseId": 791074
+            }
+          ]
+        },
+        {
+          "leg": 8,
+          "raceId": "2026-11-07_9_12",
+          "horses": [
+            {
+              "number": 5,
+              "name": "Turner Ale",
+              "horseId": 798020
+            }
+          ]
+        }
+      ],
+      "spikes": [],
+      "outsiders": [],
+      "system": null,
+      "races": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Jaguar Godiva",
+              "horseId": 794009,
+              "index": 9
+            },
+            {
+              "number": 2,
+              "name": "River Tooma",
+              "horseId": 786255,
+              "index": 7
+            },
+            {
+              "number": 3,
+              "name": "Warhol",
+              "horseId": 778369,
+              "index": 2
+            },
+            {
+              "number": 4,
+              "name": "Global Dependable",
+              "horseId": 771031,
+              "index": 5
+            },
+            {
+              "number": 5,
+              "name": "Raven",
+              "horseId": 778376,
+              "index": 15
+            },
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522,
+              "index": 21
+            },
+            {
+              "number": 7,
+              "name": "Vixi Garbo",
+              "horseId": 781365,
+              "index": 20
+            },
+            {
+              "number": 8,
+              "name": "Pasha Newport",
+              "horseId": 793376,
+              "index": 3
+            },
+            {
+              "number": 9,
+              "name": "Andiamo",
+              "horseId": 780041,
+              "index": 2
+            },
+            {
+              "number": 10,
+              "name": "Any Given Sunday",
+              "horseId": 785412,
+              "index": 2
+            },
+            {
+              "number": 11,
+              "name": "Russel Square",
+              "horseId": 766064,
+              "index": 1
+            },
+            {
+              "number": 12,
+              "name": "Lookin at Lucky",
+              "horseId": 783865,
+              "index": 2
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              3,
+              9,
+              10,
+              12
+            ]
+          ]
+        },
+        {
+          "leg": 2,
+          "raceId": "2026-11-07_9_6",
+          "scores": [
+            {
+              "number": 1,
+              "name": "May J.",
+              "horseId": 795367,
+              "index": 21
+            },
+            {
+              "number": 2,
+              "name": "Samira M.B.S.",
+              "horseId": 797948,
+              "index": 13
+            },
+            {
+              "number": 3,
+              "name": "La Fiesta Pellini",
+              "horseId": 785329,
+              "index": 16
+            },
+            {
+              "number": 4,
+              "name": "Executive Duchess",
+              "horseId": 790808,
+              "index": 10
+            },
+            {
+              "number": 5,
+              "name": "Nordic Choice",
+              "horseId": 795083,
+              "index": 2
+            },
+            {
+              "number": 6,
+              "name": "Hervey Island",
+              "horseId": 792591,
+              "index": 1
+            },
+            {
+              "number": 8,
+              "name": "Ajlexes Konnässör",
+              "horseId": 800370,
+              "index": 1
+            },
+            {
+              "number": 9,
+              "name": "Järnladyn",
+              "horseId": 780143,
+              "index": 1
+            },
+            {
+              "number": 10,
+              "name": "R.F.M.Levina",
+              "horseId": 787754,
+              "index": 3
+            },
+            {
+              "number": 11,
+              "name": "Sanna Tooma",
+              "horseId": 791277,
+              "index": 2
+            },
+            {
+              "number": 12,
+              "name": "Valuga",
+              "horseId": 793529,
+              "index": 1
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              5,
+              11
+            ],
+            [
+              6,
+              8,
+              9,
+              12
+            ]
+          ]
+        },
+        {
+          "leg": 3,
+          "raceId": "2026-11-07_9_7",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Eldbrand",
+              "horseId": 817454,
+              "index": 3
+            },
+            {
+              "number": 2,
+              "name": "Kjempa Re",
+              "horseId": 786346,
+              "index": 1
+            },
+            {
+              "number": 3,
+              "name": "Nordprins",
+              "horseId": 785806,
+              "index": 1
+            },
+            {
+              "number": 4,
+              "name": "Ava Modde",
+              "horseId": 764203,
+              "index": 2
+            },
+            {
+              "number": 5,
+              "name": "Fosshaug Frasse",
+              "horseId": 761948,
+              "index": 1
+            },
+            {
+              "number": 6,
+              "name": "Faks Trym",
+              "horseId": 784406,
+              "index": 9
+            },
+            {
+              "number": 7,
+              "name": "Skjegge Svarten",
+              "horseId": 794653,
+              "index": 13
+            },
+            {
+              "number": 8,
+              "name": "Ellbert",
+              "horseId": 779964,
+              "index": 3
+            },
+            {
+              "number": 9,
+              "name": "Briskeby Pilen",
+              "horseId": 784388,
+              "index": 21
+            },
+            {
+              "number": 10,
+              "name": "Ersa Frej",
+              "horseId": 743074,
+              "index": 1
+            },
+            {
+              "number": 11,
+              "name": "Grisle Kongen G.L.",
+              "horseId": 802840,
+              "index": 9
+            },
+            {
+              "number": 12,
+              "name": "Harry Växus",
+              "horseId": 746697,
+              "index": 1
+            },
+            {
+              "number": 13,
+              "name": "Eldida",
+              "horseId": 752221,
+              "index": 3
+            },
+            {
+              "number": 14,
+              "name": "V.Viking",
+              "horseId": 744343,
+              "index": 1
+            },
+            {
+              "number": 15,
+              "name": "Lill Elden",
+              "horseId": 753536,
+              "index": 1
+            }
+          ],
+          "strictOrderedTop3Eligible": false,
+          "tieGroups": [
+            [
+              6,
+              11
+            ],
+            [
+              1,
+              8,
+              13
+            ],
+            [
+              2,
+              3,
+              5,
+              10,
+              12,
+              14,
+              15
+            ]
+          ]
+        },
+        {
+          "leg": 4,
+          "raceId": "2026-11-07_9_8",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Nickel Occagnes",
+              "horseId": 797892,
+              "index": 10
+            },
+            {
+              "number": 2,
+              "name": "Parish Crooks V.S.",
+              "horseId": 787115,
+              "index": 2
+            },
+            {
+              "number": 3,
+              "name": "Four White E.G.",
+              "horseId": 783935,
+              "index": 2
+            },
+            {
+              "number": 4,
+              "name": "Conrads Åke",
+              "horseId": 784875,
+              "index": 1
+            },
+            {
+              "number": 5,
+              "name": "Crowe Motion",
+              "horseId": 787853,
+              "index": 5
+            },
+            {
+              "number": 6,
+              "name": "Shogun R.R.",
+              "horseId": 784930,
+              "index": 21
+            },
+            {
+              "number": 8,
+              "name": "Bright Star U.S.",
+              "horseId": 807135,
+              "index": 7
+            },
+            {
+              "number": 9,
+              "name": "Summermusic'nightS",
+              "horseId": 800205,
+              "index": 1
+            },
+            {
+              "number": 10,
+              "name": "Flotilla",
+              "horseId": 777776,
+              "index": 2
+            },
+            {
+              "number": 11,
+              "name": "Izod Zet",
+              "horseId": 785299,
+              "index": 2
+            },
+            {
+              "number": 12,
+              "name": "Indy Rock",
+              "horseId": 763359,
+              "index": 3
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              2,
+              3,
+              10,
+              11
+            ],
+            [
+              4,
+              9
+            ]
+          ]
+        },
+        {
+          "leg": 5,
+          "raceId": "2026-11-07_9_9",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Edens Odin",
+              "horseId": 776542,
+              "index": 16
+            },
+            {
+              "number": 2,
+              "name": "Komnes Omer",
+              "horseId": 757383,
+              "index": 2
+            },
+            {
+              "number": 3,
+              "name": "Klack Vidar",
+              "horseId": 759690,
+              "index": 1
+            },
+            {
+              "number": 4,
+              "name": "Guli Em",
+              "horseId": 759341,
+              "index": 8
+            },
+            {
+              "number": 5,
+              "name": "Kruson",
+              "horseId": 756301,
+              "index": 1
+            },
+            {
+              "number": 6,
+              "name": "Hibovalle",
+              "horseId": 744176,
+              "index": 2
+            },
+            {
+              "number": 7,
+              "name": "Guli Hektor",
+              "horseId": 773117,
+              "index": 1
+            },
+            {
+              "number": 8,
+              "name": "Pyrotek",
+              "horseId": 765089,
+              "index": 1
+            },
+            {
+              "number": 9,
+              "name": "Källsjöviking",
+              "horseId": 745779,
+              "index": 1
+            },
+            {
+              "number": 10,
+              "name": "Soldhöjdens Drake",
+              "horseId": 761394,
+              "index": 3
+            },
+            {
+              "number": 11,
+              "name": "Tekno Jerven",
+              "horseId": 750346,
+              "index": 3
+            },
+            {
+              "number": 12,
+              "name": "Svarte Petter",
+              "horseId": 772487,
+              "index": 21
+            },
+            {
+              "number": 13,
+              "name": "Nordby Elde",
+              "horseId": 753317,
+              "index": 1
+            },
+            {
+              "number": 14,
+              "name": "Zargo",
+              "horseId": 765629,
+              "index": 2
+            },
+            {
+              "number": 15,
+              "name": "Smedheim Braut",
+              "horseId": 784501,
+              "index": 1
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              10,
+              11
+            ],
+            [
+              2,
+              6,
+              14
+            ],
+            [
+              3,
+              5,
+              7,
+              8,
+              9,
+              13,
+              15
+            ]
+          ]
+        },
+        {
+          "leg": 6,
+          "raceId": "2026-11-07_9_10",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Wing Profile",
+              "horseId": 785743,
+              "index": 7
+            },
+            {
+              "number": 2,
+              "name": "Aloha",
+              "horseId": 796864,
+              "index": 3
+            },
+            {
+              "number": 3,
+              "name": "Sunshine Tooma",
+              "horseId": 792419,
+              "index": 2
+            },
+            {
+              "number": 4,
+              "name": "Rosi Tooma",
+              "horseId": 786256,
+              "index": 1
+            },
+            {
+              "number": 5,
+              "name": "Good Wine",
+              "horseId": 787608,
+              "index": 2
+            },
+            {
+              "number": 6,
+              "name": "Tarte Tatin",
+              "horseId": 791694,
+              "index": 21
+            },
+            {
+              "number": 7,
+              "name": "Sessan of Man",
+              "horseId": 780522,
+              "index": 1
+            },
+            {
+              "number": 8,
+              "name": "Conrads Jessica",
+              "horseId": 786331,
+              "index": 1
+            },
+            {
+              "number": 9,
+              "name": "Virtual Reality",
+              "horseId": 786362,
+              "index": 2
+            },
+            {
+              "number": 11,
+              "name": "Candy Celebration",
+              "horseId": 782001,
+              "index": 1
+            },
+            {
+              "number": 12,
+              "name": "Ajlexes Gourmand",
+              "horseId": 784545,
+              "index": 1
+            },
+            {
+              "number": 13,
+              "name": "Megan di Quattro",
+              "horseId": 772463,
+              "index": 1
+            },
+            {
+              "number": 14,
+              "name": "Full Speed Forward",
+              "horseId": 777146,
+              "index": 2
+            },
+            {
+              "number": 15,
+              "name": "Staro Roseway",
+              "horseId": 780334,
+              "index": 1
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              3,
+              5,
+              9,
+              14
+            ],
+            [
+              4,
+              7,
+              8,
+              11,
+              12,
+              13,
+              15
+            ]
+          ]
+        },
+        {
+          "leg": 7,
+          "raceId": "2026-11-07_9_11",
+          "scores": [
+            {
+              "number": 1,
+              "name": "Pommery Boko",
+              "horseId": 791138,
+              "index": 1
+            },
+            {
+              "number": 2,
+              "name": "Dropthegloves",
+              "horseId": 786558,
+              "index": 1
+            },
+            {
+              "number": 3,
+              "name": "Don't Forget Me",
+              "horseId": 793680,
+              "index": 1
+            },
+            {
+              "number": 4,
+              "name": "Funny Guy",
+              "horseId": 788212,
+              "index": 1
+            },
+            {
+              "number": 6,
+              "name": "Youans Son",
+              "horseId": 791074,
+              "index": 21
+            },
+            {
+              "number": 7,
+              "name": "Mastroianni",
+              "horseId": 781409,
+              "index": 1
+            },
+            {
+              "number": 10,
+              "name": "Last Cool Cash",
+              "horseId": 792730,
+              "index": 4
+            },
+            {
+              "number": 11,
+              "name": "Adora Liss",
+              "horseId": 779719,
+              "index": 1
+            },
+            {
+              "number": 12,
+              "name": "T.Wall's Notorius",
+              "horseId": 778923,
+              "index": 1
+            }
+          ],
+          "strictOrderedTop3Eligible": false,
+          "tieGroups": [
+            [
+              1,
+              2,
+              3,
+              4,
+              7,
+              11,
+              12
+            ]
+          ]
+        },
+        {
+          "leg": 8,
+          "raceId": "2026-11-07_9_12",
+          "scores": [
+            {
+              "number": 1,
+              "name": "License to Fight",
+              "horseId": 792310,
+              "index": 2
+            },
+            {
+              "number": 2,
+              "name": "Pure Dream",
+              "horseId": 794398,
+              "index": 1
+            },
+            {
+              "number": 3,
+              "name": "Win Wood",
+              "horseId": 794346,
+              "index": 1
+            },
+            {
+              "number": 4,
+              "name": "Edes Coktail",
+              "horseId": 794393,
+              "index": 2
+            },
+            {
+              "number": 5,
+              "name": "Turner Ale",
+              "horseId": 798020,
+              "index": 21
+            },
+            {
+              "number": 6,
+              "name": "Exile on Main St.",
+              "horseId": 790399,
+              "index": 15
+            },
+            {
+              "number": 7,
+              "name": "Almond Remix",
+              "horseId": 791885,
+              "index": 2
+            },
+            {
+              "number": 8,
+              "name": "Snack",
+              "horseId": 794912,
+              "index": 3
+            },
+            {
+              "number": 9,
+              "name": "Set it off H.C.",
+              "horseId": 792628,
+              "index": 7
+            },
+            {
+              "number": 10,
+              "name": "Alfred Gratien",
+              "horseId": 790411,
+              "index": 1
+            },
+            {
+              "number": 11,
+              "name": "Iulius Zet",
+              "horseId": 783541,
+              "index": 1
+            },
+            {
+              "number": 12,
+              "name": "Showmethecash",
+              "horseId": 773050,
+              "index": 1
+            },
+            {
+              "number": 13,
+              "name": "Monir Southwind",
+              "horseId": 783606,
+              "index": 1
+            },
+            {
+              "number": 14,
+              "name": "Ultimate Scotch",
+              "horseId": 790663,
+              "index": 14
+            }
+          ],
+          "strictOrderedTop3Eligible": true,
+          "tieGroups": [
+            [
+              1,
+              4,
+              7
+            ],
+            [
+              2,
+              3,
+              10,
+              11,
+              12,
+              13
+            ]
+          ]
+        }
+      ],
+      "method": "Derived by descending published AI index over the common active field. No invented tie-break; strictly ordered top-three metric is omitted for ties within the first three or at the cutoff. Index is not a win probability.",
+      "hashBasis": "Captured DOM race text; not raw HTTP HTML",
+      "qualityNote": "The leg-1 expert comment describes a mare race while the verified race is the Bronze division. Scores are captured as displayed, not endorsed as accurate.",
+      "coverageNote": "AI-poäng fångade för aktuella hästar i alla åtta lopp. Sex avdelningar har strikt entydig topp tre; två har delad placering vid gränsen. Ingen standardkupong har använts som AI-ranking."
+    },
+    {
+      "name": "Travia AI",
+      "url": "https://travia.se/ai",
+      "finalUrl": "https://travia.se/ai",
+      "capturedAt": "2026-11-07T11:05:05.708391+00:00",
+      "httpStatus": 200,
+      "sha256": "a73f988e80321d7979213e8bd431816048af68a9c0506d5dd9640fc26af10d94",
+      "browserCheckedAt": "2026-11-07T11:06:58.948Z",
+      "sourcePublishedAt": null,
+      "status": "parameter_dependent_account_limited",
+      "orderedTop3": [],
+      "firstChoices": [],
+      "spikes": [],
+      "outsiders": [],
+      "system": null,
+      "coverageNote": "Bergsåker V85 7 november verifierad. Ingen standardranking utan egna parameterval. Avdelning 4–8 kräver konto."
+    },
+    {
+      "name": "ATG Elli",
+      "url": "https://www.atg.se/",
+      "finalUrl": "https://www.atg.se/",
+      "capturedAt": "2026-11-07T11:05:05.982204+00:00",
+      "httpStatus": 200,
+      "sha256": "6ccac40c1f885e848442c1c9153ef8a6ecd8ae61830b937afe405fc5f091fc08",
+      "browserCheckedAt": "2026-11-07T11:09:01.449Z",
+      "sourcePublishedAt": null,
+      "status": "no_published_round_ranking",
+      "orderedTop3": [],
+      "firstChoices": [],
+      "spikes": [],
+      "outsiders": [],
+      "system": null,
+      "coverageNote": "Den öppna sidan betecknar Elli som Kundservice AI-assistent. Ingen publicerad omgångsrankning sparades och inga kontakter eller spel skickades."
+    },
+    {
+      "name": "Simsalabim Heat Rank",
+      "url": "https://simsalabim.se/travtips/simsalabims-jackpot-tips-v85/",
+      "finalUrl": "https://simsalabim.se/travtips/simsalabims-jackpot-tips-v85/",
+      "capturedAt": "2026-11-07T11:05:07.674546+00:00",
+      "httpStatus": 200,
+      "sha256": "b988d737449adb88c35d0dfbaf3184025e43f601bb918c15cc819753e77b8157",
+      "sourcePublishedAt": "2026-11-05 (visible publication date; time unknown)",
+      "status": "editorial_preview_not_verified_heat_rank",
+      "method": "First-leg editorial winner, chance-spike and outsider labels only. No independently verified Heat Rank model and no invented order within ABC tiers.",
+      "orderedTop3": [],
+      "firstChoices": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522
+            }
+          ]
+        }
+      ],
+      "spikes": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Readly Brodde",
+              "horseId": 791522
+            }
+          ]
+        }
+      ],
+      "outsiders": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-07_9_5",
+          "horses": [
+            {
+              "number": 8,
+              "name": "Pasha Newport",
+              "horseId": 793376
+            }
+          ]
+        }
+      ],
+      "system": null,
+      "coverageNote": "Öppen redaktionell förhandsanalys för avdelning 1: vinnare/chansspik Readly Brodde och skräll Pasha Newport. Ingen verifierad Heat Rank och inget åtkomligt komplett system; räknas separat från AI-modeller."
+    }
+  ]
+}
