@@ -1,9 +1,297 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-06T05:57:57.186310+00:00",
-  "systemSource": "Fem inlämningskvitton uppladdade av användaren 6 november 2026. Samtliga spelade med 50 % insats.",
+  "checkedAt": "2026-11-07T21:58:26.912689+00:00",
+  "systemSource": "Sex inlämningskvitton uppladdade av användaren: fem oktoberkuponger den 6 november och Bergsåkerskupongen den 7 november 2026. Samtliga spelade med 50 % insats.",
   "settlementNote": "Beräknad utdelning från kupongens rader och ATG:s slutliga utdelningar, utan Boost. Inte bekräftad kontoutbetalning. Inga valda hästar var strukna. Döda lopp behandlas som flera godkända vinnare i samma avdelning.",
   "rounds": [
+    {
+      "date": "2026-11-07",
+      "track": "Bergsåker",
+      "submittedAt": "2026-11-07 13:22",
+      "costSEK": 1000,
+      "stakeFraction": 0.5,
+      "rows": 4000,
+      "hits": 7,
+      "prizeSEK": 12.5,
+      "netSEK": -987.5,
+      "payouts": {
+        "5": {
+          "amountSEK": 0.0,
+          "jackpot": true
+        },
+        "6": {
+          "amountSEK": 0.0,
+          "jackpot": true
+        },
+        "7": {
+          "amountSEK": 25.0,
+          "jackpot": false
+        },
+        "8": {
+          "amountSEK": 1762.0,
+          "jackpot": false
+        }
+      },
+      "winningRows": {
+        "5": 147,
+        "6": 19,
+        "7": 1,
+        "8": 0
+      },
+      "legs": [
+        {
+          "leg": 1,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Jaguar Godiva"
+            },
+            {
+              "number": 5,
+              "name": "Raven"
+            },
+            {
+              "number": 6,
+              "name": "Readly Brodde"
+            },
+            {
+              "number": 9,
+              "name": "Andiamo"
+            }
+          ],
+          "reserves": [
+            2,
+            4
+          ],
+          "winners": [
+            {
+              "number": 1,
+              "name": "Jaguar Godiva"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 2,
+          "selected": [
+            {
+              "number": 1,
+              "name": "May J."
+            },
+            {
+              "number": 2,
+              "name": "Samira M.B.S."
+            },
+            {
+              "number": 3,
+              "name": "La Fiesta Pellini"
+            },
+            {
+              "number": 4,
+              "name": "Executive Duchess"
+            },
+            {
+              "number": 5,
+              "name": "Nordic Choice"
+            }
+          ],
+          "reserves": [
+            10,
+            11
+          ],
+          "winners": [
+            {
+              "number": 1,
+              "name": "May J."
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 3,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Eldbrand"
+            },
+            {
+              "number": 6,
+              "name": "Faks Trym"
+            },
+            {
+              "number": 7,
+              "name": "Skjegge Svarten"
+            },
+            {
+              "number": 8,
+              "name": "Ellbert"
+            },
+            {
+              "number": 9,
+              "name": "Briskeby Pilen"
+            }
+          ],
+          "reserves": [
+            11,
+            5
+          ],
+          "winners": [
+            {
+              "number": 9,
+              "name": "Briskeby Pilen"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 4,
+          "selected": [
+            {
+              "number": 6,
+              "name": "Shogun R.R."
+            }
+          ],
+          "reserves": [
+            1,
+            8
+          ],
+          "winners": [
+            {
+              "number": 1,
+              "name": "Nickel Occagnes"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 5,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Edens Odin"
+            },
+            {
+              "number": 4,
+              "name": "Guli Em"
+            },
+            {
+              "number": 12,
+              "name": "Svarte Petter"
+            },
+            {
+              "number": 14,
+              "name": "Zargo"
+            }
+          ],
+          "reserves": [
+            10,
+            6
+          ],
+          "winners": [
+            {
+              "number": 1,
+              "name": "Edens Odin"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 6,
+          "selected": [
+            {
+              "number": 5,
+              "name": "Good Wine"
+            },
+            {
+              "number": 6,
+              "name": "Tarte Tatin"
+            }
+          ],
+          "reserves": [
+            1,
+            2
+          ],
+          "winners": [
+            {
+              "number": 6,
+              "name": "Tarte Tatin"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 7,
+          "selected": [
+            {
+              "number": 6,
+              "name": "Youans Son"
+            }
+          ],
+          "reserves": [
+            7,
+            4
+          ],
+          "winners": [
+            {
+              "number": 6,
+              "name": "Youans Son"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 8,
+          "selected": [
+            {
+              "number": 5,
+              "name": "Turner Ale"
+            },
+            {
+              "number": 6,
+              "name": "Exile on Main St."
+            },
+            {
+              "number": 8,
+              "name": "Snack"
+            },
+            {
+              "number": 9,
+              "name": "Set it off H.C."
+            },
+            {
+              "number": 14,
+              "name": "Ultimate Scotch"
+            }
+          ],
+          "reserves": [
+            1,
+            2
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Turner Ale"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        }
+      ],
+      "reviewUrl": "../efteranalys/2026-11-07/",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5",
+      "sourceSha256": "227262e4f740175f5dc9888552b12f1d960ce74e437e49b0ba8ff0d330ceefc9",
+      "sourceEvidencePath": "efteranalys/2026-11-07/evidence/atg-game.json",
+      "sourceTimestamp": "2026-11-07 17:57:15",
+      "resultUrl": "https://www.atg.se/spel/2026-11-07/V85/bergsaker/resultat",
+      "receiptSource": "Användarens uppladdade inlämningskvitto för Bergsåker 7 november 2026."
+    },
     {
       "date": "2026-10-31",
       "track": "Bjerke",
