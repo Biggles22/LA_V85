@@ -1,0 +1,678 @@
+{
+  "publishedAt": "2026-11-07T21:01:27+01:00",
+  "status": "verified_results",
+  "gameId": "V85_2026-11-07_9_5",
+  "batchPath": "research/comparison/2026-11-07/20261107T110356Z",
+  "manifestVerified": true,
+  "officialEvidence": {
+    "url": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-07_9_5",
+    "capturedAt": "2026-11-07T19:59:15.404685+00:00",
+    "sha256": "227262e4f740175f5dc9888552b12f1d960ce74e437e49b0ba8ff0d330ceefc9"
+  },
+  "winners": {
+    "2026-11-07_9_5": [
+      1
+    ],
+    "2026-11-07_9_6": [
+      1
+    ],
+    "2026-11-07_9_7": [
+      9
+    ],
+    "2026-11-07_9_8": [
+      1
+    ],
+    "2026-11-07_9_9": [
+      1
+    ],
+    "2026-11-07_9_10": [
+      6
+    ],
+    "2026-11-07_9_11": [
+      6
+    ],
+    "2026-11-07_9_12": [
+      5
+    ]
+  },
+  "metrics": {
+    "Historik-CatBoost": {
+      "first": {
+        "hits": 2,
+        "races": 8,
+        "legs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "top3": {
+        "hits": 6,
+        "races": 8,
+        "legs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    "Utökad CatBoost (experimentell)": {
+      "first": {
+        "hits": 5,
+        "races": 8,
+        "legs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "top3": {
+        "hits": 7,
+        "races": 8,
+        "legs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    "Marknaden kl. 12.02": {
+      "first": {
+        "hits": 5,
+        "races": 8,
+        "legs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "top3": {
+        "hits": 8,
+        "races": 8,
+        "legs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    "Travmaskinen": {
+      "first": {
+        "hits": 0,
+        "races": 1,
+        "legs": [
+          1
+        ]
+      },
+      "top3": {
+        "hits": 1,
+        "races": 1,
+        "legs": [
+          1
+        ]
+      },
+      "spikes": {
+        "hits": 0,
+        "races": 1,
+        "legs": [
+          5
+        ]
+      },
+      "outsiders": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      }
+    },
+    "Travtips AI": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "spikes": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "outsiders": {
+        "hits": 0,
+        "races": 1,
+        "legs": [
+          1
+        ]
+      }
+    },
+    "V46": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "spikes": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "outsiders": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      }
+    },
+    "Tipper Trav": {
+      "first": {
+        "hits": 6,
+        "races": 8,
+        "legs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "top3": {
+        "hits": 4,
+        "races": 5,
+        "legs": [
+          1,
+          2,
+          5,
+          6,
+          8
+        ]
+      },
+      "spikes": {
+        "hits": 3,
+        "races": 3,
+        "legs": [
+          3,
+          5,
+          7
+        ]
+      },
+      "outsiders": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      }
+    },
+    "Travtipsaren": {
+      "first": {
+        "hits": 5,
+        "races": 8,
+        "legs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "top3": {
+        "hits": 5,
+        "races": 6,
+        "legs": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "spikes": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "outsiders": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      }
+    },
+    "Travia AI": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "spikes": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "outsiders": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      }
+    },
+    "ATG Elli": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "spikes": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "outsiders": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      }
+    },
+    "Simsalabim Heat Rank": {
+      "first": {
+        "hits": 0,
+        "races": 1,
+        "legs": [
+          1
+        ]
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "legs": []
+      },
+      "spikes": {
+        "hits": 0,
+        "races": 1,
+        "legs": [
+          1
+        ]
+      },
+      "outsiders": {
+        "hits": 0,
+        "races": 1,
+        "legs": [
+          1
+        ]
+      }
+    }
+  },
+  "cumulative": {
+    "rounds": 1,
+    "note": "Only this frozen comparable round; retrospective model tests excluded",
+    "metrics": {
+      "Historik-CatBoost": {
+        "first": {
+          "hits": 2,
+          "races": 8,
+          "legs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "top3": {
+          "hits": 6,
+          "races": 8,
+          "legs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      },
+      "Utökad CatBoost (experimentell)": {
+        "first": {
+          "hits": 5,
+          "races": 8,
+          "legs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "top3": {
+          "hits": 7,
+          "races": 8,
+          "legs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      },
+      "Marknaden kl. 12.02": {
+        "first": {
+          "hits": 5,
+          "races": 8,
+          "legs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "top3": {
+          "hits": 8,
+          "races": 8,
+          "legs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      },
+      "Travmaskinen": {
+        "first": {
+          "hits": 0,
+          "races": 1,
+          "legs": [
+            1
+          ]
+        },
+        "top3": {
+          "hits": 1,
+          "races": 1,
+          "legs": [
+            1
+          ]
+        },
+        "spikes": {
+          "hits": 0,
+          "races": 1,
+          "legs": [
+            5
+          ]
+        },
+        "outsiders": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        }
+      },
+      "Travtips AI": {
+        "first": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "spikes": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "outsiders": {
+          "hits": 0,
+          "races": 1,
+          "legs": [
+            1
+          ]
+        }
+      },
+      "V46": {
+        "first": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "spikes": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "outsiders": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        }
+      },
+      "Tipper Trav": {
+        "first": {
+          "hits": 6,
+          "races": 8,
+          "legs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "top3": {
+          "hits": 4,
+          "races": 5,
+          "legs": [
+            1,
+            2,
+            5,
+            6,
+            8
+          ]
+        },
+        "spikes": {
+          "hits": 3,
+          "races": 3,
+          "legs": [
+            3,
+            5,
+            7
+          ]
+        },
+        "outsiders": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        }
+      },
+      "Travtipsaren": {
+        "first": {
+          "hits": 5,
+          "races": 8,
+          "legs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "top3": {
+          "hits": 5,
+          "races": 6,
+          "legs": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        "spikes": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "outsiders": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        }
+      },
+      "Travia AI": {
+        "first": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "spikes": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "outsiders": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        }
+      },
+      "ATG Elli": {
+        "first": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "spikes": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "outsiders": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        }
+      },
+      "Simsalabim Heat Rank": {
+        "first": {
+          "hits": 0,
+          "races": 1,
+          "legs": [
+            1
+          ]
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0,
+          "legs": []
+        },
+        "spikes": {
+          "hits": 0,
+          "races": 1,
+          "legs": [
+            1
+          ]
+        },
+        "outsiders": {
+          "hits": 0,
+          "races": 1,
+          "legs": [
+            1
+          ]
+        }
+      }
+    }
+  },
+  "financialComparison": null,
+  "corrections": []
+}
