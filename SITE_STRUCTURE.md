@@ -2,7 +2,7 @@
 
 ## Aktuell omgång
 
-`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Aktuell arbetsyta är Eskilstuna 14 november 2026. Åtta lopp och 102 hästar är hämtade och identitetskontrollerade mot ATG:s kalender och omgångsdata. Ny omgång har separat analys; tidigare spikar och modellprognoser återanvänds inte. Bergsåkers startsida bevaras på `archive/2026-11-07-bergsaker/forhand.html` med en egen omgångskonfiguration och bevarade renderingsskript. Efteranalysen ligger kvar på `efteranalys/2026-11-07/`.
+`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Aktuell arbetsyta är Eskilstuna 14 november 2026. Åtta lopp och 102 hästar är hämtade och identitetskontrollerade mot ATG:s kalender och omgångsdata. CatBoost-rankning och historisk form är omräknade för samtliga 102 hästar; modellfilen och formfilen är bundna till samma ATG-snapshot. Träningen använder det befintliga kontrollerade underlaget med 12 247 starter i 1 047 lopp till och med 31 oktober. Ny omgång har separat analys; tidigare spikar och modellprognoser återanvänds inte. Bergsåkers startsida bevaras på `archive/2026-11-07-bergsaker/forhand.html` med en egen omgångskonfiguration och bevarade renderingsskript. Efteranalysen ligger kvar på `efteranalys/2026-11-07/`.
 
 Huvudmenyn har tre delar: **Lördagens V85**, **Historik**, **Metod & resultat**. Startsidan har ankarlänkar till **Skrällförslag**, **Spikförslag**, **Lopp för lopp** och **Mitt urval**. En avdelning visas åt gången med sökning, sortering och hästkort i mobilvy.
 

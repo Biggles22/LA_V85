@@ -1,7 +1,9 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
 const {validate}=require('../v85-model.js');
-const data=JSON.parse(fs.readFileSync('rounds/2026-11-07-bergsaker/data.json','utf8'));
-const model=JSON.parse(fs.readFileSync('rounds/2026-11-07-bergsaker/model.json','utf8'));
+const config=JSON.parse(fs.readFileSync('rounds.json','utf8'));
+const current=config.rounds.find(r=>r.id===config.current);
+const model=JSON.parse(fs.readFileSync('rounds/'+current.id+'/model.json','utf8'));
+const data=JSON.parse(fs.readFileSync(current.data,'utf8'));
 assert.ok(validate(model,data));
 const bad=mutate=>{const x=structuredClone(model);mutate(x);assert.equal(validate(x,data),null);};
 bad(x=>x.snapshotId='old');

@@ -1,5 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
-const model=JSON.parse(fs.readFileSync('rounds/2026-11-07-bergsaker/model.json','utf8'));
+const config=JSON.parse(fs.readFileSync('rounds.json','utf8'));
+const current=config.rounds.find(r=>r.id===config.current);
+const model=JSON.parse(fs.readFileSync('rounds/'+current.id+'/model.json','utf8'));
 const vm=require('node:vm'),D=require('../v85-domain.js'),M=require('../v85-model.js');
 const elements=new Map(),events={};
 function element(id){if(!elements.has(id))elements.set(id,{value:id==='#outsider-limit'?'20':id==='#horse-sort'?'number':'',checked:false,innerHTML:'',textContent:'',className:'',addEventListener(){},scrollIntoView(){}});return elements.get(id);}
@@ -16,7 +18,7 @@ assert.ok(element('#model-status').textContent.includes(`slutstreckens topp 3 ${
 assert.match(element('#race-panel').innerHTML,/CatBoost · topp 3/);
 for(let leg=1;leg<=8;leg++){
 events.click({target:{closest:()=>({dataset:{leg:String(leg)},closest:()=>true})}});
-for(const h of model.races.find(r=>r.leg===leg).top3)assert.ok(element('#race-panel').innerHTML.includes(h.name.replaceAll('&','&amp;')));
+for(const h of model.races.find(r=>r.leg===leg).top3)assert.ok(element('#race-panel').innerHTML.includes(h.name.replaceAll('&','&amp;').replaceAll("'",'&#39;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;')));
 }
 console.log('PASS: real app renders eight model cards, 24 candidates, both test metrics and all race tabs');
 })().catch(e=>{console.error(e);process.exitCode=1;});
