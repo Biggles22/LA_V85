@@ -1,0 +1,55 @@
+{
+  "current": "2026-11-07-bergsaker",
+  "rounds": [
+    {
+      "id": "2026-11-07-bergsaker",
+      "date": "2026-11-07",
+      "track": "Bergsåker",
+      "status": "preparing",
+      "data": "rounds/2026-11-07-bergsaker/data.json",
+      "analysis": "rounds/2026-11-07-bergsaker/analysis.json",
+      "sourceUrl": "https://www.atg.se/spel/2026-11-07/V85/bergsaker"
+    },
+    {
+      "id": "2026-10-31-bjerke",
+      "date": "2026-10-31",
+      "track": "Bjerke",
+      "status": "completed",
+      "overview": "archive/2026-10-31-bjerke/forhand.html",
+      "review": "archive/2026-10-31-bjerke/",
+      "frozen": "research/frozen/2026-10-31/friday.json"
+    },
+    {
+      "id": "2026-10-24-jagersro",
+      "date": "2026-10-24",
+      "track": "Jägersro",
+      "status": "completed",
+      "overview": "archive/2026-10-24-jagersro/",
+      "review": "archive/2026-10-24-jagersro/#efteranalys"
+    },
+    {
+      "id": "2026-10-17-gavle",
+      "date": "2026-10-17",
+      "track": "Gävle",
+      "status": "completed",
+      "overview": "archive/2026-10-17-gavle/",
+      "review": "archive/2026-10-17-gavle/analys/"
+    },
+    {
+      "id": "2026-10-10-solvalla",
+      "date": "2026-10-10",
+      "track": "Solvalla",
+      "status": "completed",
+      "overview": "archive/2026-10-10-solvalla/",
+      "review": "resultatanalys/"
+    },
+    {
+      "id": "2026-10-03-boden",
+      "date": "2026-10-03",
+      "track": "Boden",
+      "status": "completed",
+      "overview": "archive/2026-10-03-boden/",
+      "review": "archive/2026-10-03-boden/#boden-analysis"
+    }
+  ]
+}
