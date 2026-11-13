@@ -32,15 +32,16 @@
     $('#freeze-selection').disabled=phase==='closed'||phase==='awaiting'||!D.totals(data,state.selections,state.stake).selected;
   }
   function renderProposals(){
-    const verified=D.picks(data,analysis),limit=Number($('#outsider-limit').value);
+    const verified=D.picks(data,analysis),candidates=D.picks(data,{...analysis,picks:(analysis?.spikeCandidates||[]).map(p=>({...p,type:'spike'}))}),limit=Number($('#outsider-limit').value);
     function cards(type){
-      const all=verified.filter(p=>p.type===type),list=all.filter(p=>type==='spike'||limit===100||(D.finite(p.pct)&&p.pct<=limit));
+      const all=type==='candidate'?candidates:verified.filter(p=>p.type===type),list=all.filter(p=>type!=='outsider'||limit===100||(D.finite(p.pct)&&p.pct<=limit));
+      if(type==='spike'&&!list.length&&candidates.length)return cards('candidate');
       if(!list.length){
         const title=all.length?'Inga förslag inom valt streckintervall':type==='outsider'?'Skrällförslagen inväntar granskning':'Spikförslagen inväntar granskning';
         const body=data.status!=='verified'?'Omgångens startlista och speluppgifter behöver först verifieras. Inga hästar från en äldre omgång används som förslag.':all.length?'Välj en högre streckgräns för att visa fler granskade motbud.':'Startlistan finns att granska nedan. Förslag publiceras först med motivering, risk och källor för det aktuella underlaget.';
         return empty(title,body);
       }
-      return list.map(p=>'<article class="proposal-card '+(type==='spike'?'spike':'')+'"><div class="card-top"><span>V85-'+p.leg+' · '+(type==='spike'?'SPIKFÖRSLAG':'SKRÄLLFÖRSLAG')+'</span><span class="percentage">'+fmt(p.pct)+' %</span></div><h3>'+p.number+' '+esc(p.name)+'</h3><p>'+esc(p.reason)+'</p><p class="risk"><strong>Risk:</strong> '+esc(p.risk)+'</p>'+(Array.isArray(p.challengers)&&p.challengers.length?'<p><strong>Motbud:</strong> '+esc(p.challengers.join(', '))+'</p>':'')+'<p class="source-note">Granskad '+esc(stamp(analysis.reviewedAt))+' · '+p.sources.map((s,i)=>'<a href="'+esc(s)+'" target="_blank" rel="noopener noreferrer">Källa '+(i+1)+'</a>').join(' · ')+'</p><div class="card-actions"><button class="button secondary" data-leg="'+p.leg+'">Granska loppet</button><button class="button primary" data-action="include" data-key="'+p.key+'">'+(state.selections[p.key]?'✓ Vald':'+ Mitt urval')+'</button></div></article>').join('');
+      return list.map(p=>'<article class="proposal-card '+(type!=='outsider'?'spike':'')+'"><div class="card-top"><span>V85-'+p.leg+' · '+(type==='spike'?'SPIKFÖRSLAG':type==='candidate'?'SPIKKANDIDAT':'SKRÄLLFÖRSLAG')+'</span><span class="percentage">'+fmt(p.pct)+' %</span></div><h3>'+p.number+' '+esc(p.name)+'</h3><p>'+esc(p.reason)+'</p><p class="risk"><strong>Risk:</strong> '+esc(p.risk)+'</p>'+(Array.isArray(p.challengers)&&p.challengers.length?'<p><strong>Motbud:</strong> '+esc(p.challengers.join(', '))+'</p>':'')+'<p class="source-note">Granskad '+esc(stamp(analysis.reviewedAt))+' · '+p.sources.map((s,i)=>'<a href="'+esc(s)+'" target="_blank" rel="noopener noreferrer">Källa '+(i+1)+'</a>').join(' · ')+'</p><div class="card-actions"><button class="button secondary" data-leg="'+p.leg+'">Granska loppet</button><button class="button primary" data-action="include" data-key="'+p.key+'">'+(state.selections[p.key]?'✓ Vald':'+ Mitt urval')+'</button></div></article>').join('');
     }
     $('#outsider-list').innerHTML=cards('outsider');$('#spike-list').innerHTML=cards('spike');
   }
