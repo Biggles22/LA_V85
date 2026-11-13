@@ -1,1 +1,72 @@
-{"schemaVersion":1,"roundId":"2026-11-14-eskilstuna","gameId":"V85_2026-11-14_14_5","version":2,"reviewedAt":"2026-11-12T19:03:13.466201+00:00","snapshotId":"f5e578e826ce8ac398f33822f824dc7f2ee6b539021089ce4b4f47b51c70bb6a","picks":[{"type":"outsider","leg":1,"number":14,"name":"Kyrkebys Gunbritt","reason":"Tre segrar och en andraplats bland de fem redovisade starterna; historikmodellen prioriterar hästen. Ett konkret formbud att granska bakom marknadens favorit.","risk":"Tillägg i voltstart och många hästar att passera. Delmodell och marknad kan bedöma klassen olika.","sources":["https://www.atg.se/services/racinginfo/v1/api/races/2026-11-14_14_5/extended"]},{"type":"outsider","leg":6,"number":1,"name":"Yalla Yalla","reason":"Fem senaste redovisade placeringarna är 3–2–3–3–1. Innerspår ger möjlighet till en ekonomisk resa över lång distans; ett garderingsbud med dokumenterad jämn form.","risk":"Beroende av resa och lucka; placeringar är inte samma sak som visad överlägsenhet. Prince Harry och Vince Wynn är tydliga marknadsmotbud.","sources":["https://www.atg.se/services/racinginfo/v1/api/races/2026-11-14_14_10/extended"]}],"spikeReview":"Chamberi och Zarex är kandidater att granska. Ingen kalibrerad >50-procentsbedömning finns; inga färdiga spikförslag publiceras från modellpoäng.","limitations":"Loppbild och dagsform är preliminära; anmälda skor/vagn är inte bekräftad tävlingsutrustning."}
+{
+  "schemaVersion": 1,
+  "roundId": "2026-11-14-eskilstuna",
+  "gameId": "V85_2026-11-14_14_5",
+  "version": 3,
+  "reviewedAt": "2026-11-13T15:07:00+01:00",
+  "snapshotId": "f5e578e826ce8ac398f33822f824dc7f2ee6b539021089ce4b4f47b51c70bb6a",
+  "picks": [
+    {
+      "type": "spike",
+      "leg": 2,
+      "number": 4,
+      "name": "Chamberi",
+      "reason": "Spikförslag med stöd från båda modellvarianterna och nyare externa analyser. Chamberi toppar den experimentella utökade modellen och är tvåa i den historiska CatBoost-rankningen.",
+      "risk": "Högt streckad favorit. Love to the Limit och Milady Josselyn är reella motbud; modellen är inte en kalibrerad vinstchans.",
+      "challengers": [
+        "Love to the Limit",
+        "Milady Josselyn"
+      ],
+      "sources": [
+        "https://www.atg.se/spel/2026-11-14/V85/eskilstuna",
+        "https://kupongkollen.se/analys/v85/2026-11-14/",
+        "https://travia.se/v85/eskilstuna-2026-11-14"
+      ]
+    },
+    {
+      "type": "spike",
+      "leg": 3,
+      "number": 4,
+      "name": "Zarex",
+      "reason": "Spikförslag med förstaplats i den historiska CatBoost-rankningen, starkt marknadsstöd i den verifierade snapshoten och stöd i externa analyser.",
+      "risk": "Tuff final med Recycle Cash och Sven Kuce som motbud. En favoritspik med tydlig sportslig risk.",
+      "challengers": [
+        "Recycle Cash",
+        "Sven Kuce"
+      ],
+      "sources": [
+        "https://www.atg.se/spel/2026-11-14/V85/eskilstuna",
+        "https://kupongkollen.se/analys/v85/2026-11-14/",
+        "https://www.aftonbladet.se/sportbladet/trav365/a/OynAOw/v85-tips-lordag-14-november-pa-eskilstuna-analys-spikar-skrallar-och-system"
+      ]
+    },
+    {
+      "type": "outsider",
+      "leg": 1,
+      "number": 14,
+      "name": "Kyrkebys Gunbritt",
+      "reason": "Historisk CatBoost rankar hästen först i loppet. Den verifierade ATG-snapshoten visade 3,98 % streck och en nyare extern analys lyfter hästen som skrällbud.",
+      "risk": "Tillägg i voltstart och många hästar att passera. Garderingsbud, inte säker vinnare.",
+      "sources": [
+        "https://www.atg.se/spel/2026-11-14/V85/eskilstuna",
+        "https://kupongkollen.se/analys/v85/2026-11-14/",
+        "https://travia.se/v85/eskilstuna-2026-11-14"
+      ]
+    },
+    {
+      "type": "outsider",
+      "leg": 6,
+      "number": 1,
+      "name": "Yalla Yalla",
+      "reason": "Fem senaste placeringarna i underlaget är 3–2–3–3–1. Nyare externa analyser pekar också ut hästen som lågprocentat motbud; snapshoten visade 3,88 %.",
+      "risk": "Lång distans och beroende av position och lucka. Prince Harry och Vince Wynn är tydliga motbud.",
+      "sources": [
+        "https://www.atg.se/spel/2026-11-14/V85/eskilstuna",
+        "https://kupongkollen.se/analys/v85/2026-11-14/",
+        "https://travia.se/v85/eskilstuna-2026-11-14"
+      ]
+    }
+  ],
+  "spikeReview": "Chamberi och Zarex föreslås som spikar efter granskning av modeller och externa analyser. Strecktal och strykningar är inte direkt uppdaterade i ATG sedan snapshoten 12 november; kontrollera live före spelstopp.",
+  "limitations": "ATG-snapshoten är från 2026-11-12T19:37:15+01:00. Externa analyser kontrollerades 2026-11-13T15:07:00+01:00. Startsidan visar snapshotens streckandelar och markerar marknadsdata som äldre än sex timmar."
+}
