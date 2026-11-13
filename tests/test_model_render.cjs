@@ -1,4 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
+const scriptVersion=require('node:crypto').createHash('sha256').update(fs.readFileSync('v85.js')).digest('hex').slice(0,12);
+assert.ok(fs.readFileSync('index.html','utf8').includes('v85.js?v='+scriptVersion),'Homepage must change the script URL when rendering code changes');
 const config=JSON.parse(fs.readFileSync('rounds.json','utf8'));
 const current=config.rounds.find(r=>r.id===config.current);
 const model=JSON.parse(fs.readFileSync('rounds/'+current.id+'/model.json','utf8'));
