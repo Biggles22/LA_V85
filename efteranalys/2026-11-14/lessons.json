@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "roundDate": "2026-11-14",
+  "kind": "postrace_diagnostic_not_prestart_strategy",
+  "sourceCommit": "4d86996d6d8f07b3b8aca845f514d976f7eebfc6",
+  "frozenBatch": "research/comparison/2026-11-14/20261114T110607Z/",
+  "updatedAt": "2026-11-14T23:03:07.008388+00:00",
+  "filmReview": false,
+  "actions": [
+    {
+      "id": "spikbeslut",
+      "priority": 1,
+      "status": "proposed",
+      "action": "Kräv ett dokumenterat slutbeslut för varje spik och minst ett prissatt garderingsalternativ inom samma totalbudget.",
+      "why": "Sven Kuce var redan känt motbud; samma riskfråga återkom efter Bergsåker.",
+      "measure": "Alla föreslagna spikar har motbud, skäl, omprövningsvillkor och kostnad före spelstopp. Följ utfall utan att omdefiniera rollen efter start."
+    },
+    {
+      "id": "bortvalsgranskning",
+      "priority": 1,
+      "status": "proposed",
+      "action": "Granska reserver, namngivna motbud och relevanta formhästar som faller utanför systemet; spara ett konkret bortvalsskäl.",
+      "why": "Miss Brighton fanns i startunderlaget och som reserv men saknades i garderingsurvalet.",
+      "measure": "Samtliga reserver och uttryckliga motbud har beslut före start. Redovisa efteråt både fångade vinnare och antalet extra förlorande streck."
+    },
+    {
+      "id": "datakvalitet",
+      "priority": 1,
+      "status": "research_required",
+      "action": "Pröva separata variabler för placerad, oplacerad, diskvalificerad och okänd start samt datatäckning; granska historiska galoppflaggor.",
+      "why": "Snittplaceringen utelämnar 0/diskvalifikation och historikmodellens galoppmått är avstängt.",
+      "measure": "Enhetstesta datatolkningen. Träna med oförändrad basmodell som kontroll och tidsordnade tränings-/testperioder. Redovisa också försämringar."
+    },
+    {
+      "id": "modellkombination",
+      "priority": 2,
+      "status": "prospective_test_proposed",
+      "action": "Jämför marknadsbas, utökad modell och marknadsbas med dokumenterade historik-/manuella avvikelser i frysta system på samma budget.",
+      "why": "Historikmodellen tillförde Steady Spender; utökad modell gav samma topp-tre-vinnare som marknaden.",
+      "measure": "Frys urvalsregel, budget och tid före nästa start. Följ förstaval, täckning, antal streck, spikutfall, netto och återbetalning i minst åtta nya omgångar före första planerade översyn; åtta är en arbetsperiod, ingen statistisk säkerhetsgräns."
+    },
+    {
+      "id": "loppverifiering",
+      "priority": 2,
+      "status": "not_completed",
+      "action": "Komplettera avgörande lopp med verifierad lopprapport eller film innan orsaker som tempo, position, trafik eller utrustning tillskrivs utfallet.",
+      "why": "Officiell placering och kilometertid visar inte hela loppförloppet.",
+      "measure": "Varje orsaksutsaga ska ha en källa och tydligt skiljas från hypotes. Inga sådana slutsatser är fastställda här."
+    }
+  ],
+  "computed": {
+    "actualRows": 3840,
+    "costSEK": 960,
+    "prizeSEK": 238.5,
+    "netSEK": -721.5,
+    "returnPct": 24.8438,
+    "selectedOutsiders": 7,
+    "proposedOutsiders": 9,
+    "winningOutsiders": 2,
+    "modelUnionLegSizes": [
+      6,
+      4,
+      4,
+      4,
+      4,
+      5,
+      4,
+      4
+    ],
+    "modelUnionRows": 122880,
+    "modelUnionCostSEK": 30720.0,
+    "modelUnionHitLegs": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      8
+    ],
+    "expandedExtraTop3WinnerLegsVsMarket": [],
+    "historyExtraTop3WinnerLegsVsMarket": [
+      7
+    ]
+  },
+  "limitations": [
+    "No verified causal race-film analysis",
+    "No model change implemented",
+    "Illustrative additions are hindsight diagnostics, not equal-budget performance claims",
+    "Two comparable rounds only"
+  ]
+}

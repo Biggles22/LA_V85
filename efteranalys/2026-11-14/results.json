@@ -1405,5 +1405,11 @@
       "capturedAt": "2026-11-14T11:05:09.687962+00:00",
       "sourcePublishedAt": null
     }
-  ]
+  ],
+  "deepReview": {
+    "path": "lessons.json",
+    "focus": "selection_spike_risk_budget_data_quality_prospective_validation",
+    "status": "published_analysis_proposed_actions",
+    "modelChangesApplied": false
+  }
 }
