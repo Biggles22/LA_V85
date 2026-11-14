@@ -1,9 +1,293 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-07T21:58:26.912689+00:00",
-  "systemSource": "Sex inlämningskvitton uppladdade av användaren: fem oktoberkuponger den 6 november och Bergsåkerskupongen den 7 november 2026. Samtliga spelade med 50 % insats.",
+  "checkedAt": "2026-11-14",
+  "systemSource": "Sju inlämningskvitton uppladdade av användaren: fem oktoberkuponger, Bergsåker 7 november och Eskilstuna 14 november 2026. Samtliga spelade med 50 % insats.",
   "settlementNote": "Beräknad utdelning från kupongens rader och ATG:s slutliga utdelningar, utan Boost. Inte bekräftad kontoutbetalning. Inga valda hästar var strukna. Döda lopp behandlas som flera godkända vinnare i samma avdelning.",
   "rounds": [
+    {
+      "date": "2026-11-14",
+      "track": "Eskilstuna",
+      "submittedAt": "2026-11-14 13:05",
+      "costSEK": 960,
+      "stakeFraction": 0.5,
+      "rows": 3840,
+      "legs": [
+        {
+          "leg": 1,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Nightdance"
+            },
+            {
+              "number": 2,
+              "name": "Frances Will"
+            },
+            {
+              "number": 4,
+              "name": "Mill Indra"
+            },
+            {
+              "number": 14,
+              "name": "Kyrkebys Gunbritt"
+            }
+          ],
+          "reserves": [
+            3,
+            6
+          ],
+          "winners": [
+            {
+              "number": 2,
+              "name": "Frances Will"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 2,
+          "selected": [
+            {
+              "number": 4,
+              "name": "Chamberi"
+            }
+          ],
+          "reserves": [
+            2,
+            3
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Chamberi"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 3,
+          "selected": [
+            {
+              "number": 4,
+              "name": "Zarex"
+            }
+          ],
+          "reserves": [
+            2,
+            1
+          ],
+          "winners": [
+            {
+              "number": 11,
+              "name": "Sven Kuce"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 4,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Conrads Ove"
+            },
+            {
+              "number": 3,
+              "name": "Rob Roy Boko"
+            },
+            {
+              "number": 4,
+              "name": "Reidar di Quattro"
+            },
+            {
+              "number": 5,
+              "name": "Hard Rock"
+            }
+          ],
+          "reserves": [
+            7,
+            10
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Reidar di Quattro"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 5,
+          "selected": [
+            {
+              "number": 2,
+              "name": "I See Tail Lights"
+            },
+            {
+              "number": 3,
+              "name": "Zeebreeze"
+            },
+            {
+              "number": 4,
+              "name": "Grace in Heaven"
+            }
+          ],
+          "reserves": [
+            1,
+            9
+          ],
+          "winners": [
+            {
+              "number": 9,
+              "name": "Miss Brighton"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 6,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Yalla Yalla"
+            },
+            {
+              "number": 3,
+              "name": "Vince Wynn"
+            },
+            {
+              "number": 5,
+              "name": "Napoleon Sisu"
+            },
+            {
+              "number": 10,
+              "name": "Hankypanky Readler"
+            },
+            {
+              "number": 11,
+              "name": "Prince Harry"
+            }
+          ],
+          "reserves": [
+            6,
+            7
+          ],
+          "winners": [
+            {
+              "number": 10,
+              "name": "Hankypanky Readler"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 7,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Com Best"
+            },
+            {
+              "number": 3,
+              "name": "Kodiak Zet"
+            },
+            {
+              "number": 4,
+              "name": "Steady Spender"
+            },
+            {
+              "number": 6,
+              "name": "Nanda Devi Cut"
+            }
+          ],
+          "reserves": [
+            2,
+            10
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Steady Spender"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 8,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Einstein Face"
+            },
+            {
+              "number": 3,
+              "name": "Neil Jung"
+            },
+            {
+              "number": 5,
+              "name": "Justcantgetenough"
+            },
+            {
+              "number": 7,
+              "name": "Florenzo"
+            }
+          ],
+          "reserves": [
+            12,
+            1
+          ],
+          "winners": [
+            {
+              "number": 2,
+              "name": "Einstein Face"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        }
+      ],
+      "payouts": {
+        "5": {
+          "amountSEK": 8.0,
+          "jackpot": false
+        },
+        "6": {
+          "amountSEK": 31.0,
+          "jackpot": false
+        },
+        "7": {
+          "amountSEK": 687.0,
+          "jackpot": false
+        },
+        "8": {
+          "amountSEK": 105247.0,
+          "jackpot": false
+        }
+      },
+      "hits": 6,
+      "winningRows": {
+        "5": 48,
+        "6": 3,
+        "7": 0,
+        "8": 0
+      },
+      "prizeSEK": 238.5,
+      "netSEK": -721.5,
+      "reviewUrl": "../efteranalys/2026-11-14/",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-14_14_5",
+      "sourceSha256": "111ac2720db7c92d8334e5190c44f0f5cbad48af40e017a976b337c19e547844",
+      "sourceTimestamp": "2026-11-14 18:09:30",
+      "sourceEvidencePath": "efteranalys/2026-11-14/evidence/games_V85_2026-11-14_14_5.json.gz",
+      "resultUrl": "https://www.atg.se/spel/2026-11-14/V85/eskilstuna/resultat",
+      "receiptSource": "Användarens uppladdade inlämningskvitto för Eskilstuna 14 november 2026."
+    },
     {
       "date": "2026-11-07",
       "track": "Bergsåker",

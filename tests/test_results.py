@@ -16,7 +16,7 @@ class ResultsTest(unittest.TestCase):
     def test_receipt_costs_and_independent_row_enumeration(self):
         expected = {'Boden': (486, 6, 595.5), 'Solvalla': (720, 5, 56),
                     'Gävle': (540, 2, 0), 'Jägersro': (486, 5, 108),
-                    'Bjerke': (648, 8, 1338), 'Bergsåker': (1000, 7, 12.5)}
+                    'Bjerke': (648, 8, 1338), 'Bergsåker': (1000, 7, 12.5), 'Eskilstuna': (960, 6, 238.5)}
         for round_ in self.data['rounds']:
             with self.subTest(track=round_['track']):
                 choices = [[h['number'] for h in leg['selected']] for leg in round_['legs']]
@@ -50,11 +50,11 @@ class ResultsTest(unittest.TestCase):
 
     def test_totals_and_home_navigation(self):
         rounds = self.data['rounds']
-        self.assertEqual(sum(r['costSEK'] for r in rounds), 3880)
-        self.assertEqual(sum(r['prizeSEK'] for r in rounds), 2110)
-        self.assertEqual(sum(r['netSEK'] for r in rounds), -1770)
+        self.assertEqual(sum(r['costSEK'] for r in rounds), 4840)
+        self.assertEqual(sum(r['prizeSEK'] for r in rounds), 2348.5)
+        self.assertEqual(sum(r['netSEK'] for r in rounds), -2491.5)
         self.assertEqual(sum(r['netSEK'] > 0 for r in rounds), 2)
-        for value in ['3 880', '2 110', '−1 770', '54,4']:
+        for value in ['4 840', '2 348,50', '−2 491,50', '48,5']:
             self.assertIn(value, self.html)
         self.assertIn('href="./resultat/"', (ROOT / 'index.html').read_text())
         self.assertIn("url('resultat/')", (ROOT / 'site-navigation.js').read_text())
@@ -71,3 +71,4 @@ class ResultsTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

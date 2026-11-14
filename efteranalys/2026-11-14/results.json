@@ -1,1 +1,1409 @@
-{"publishedAt":"2026-11-14T21:08:22.491924+01:00","status":"verified_results","gameId":"V85_2026-11-14_14_5","batchPath":"research/comparison/2026-11-14/20261114T110607Z/","manifestVerified":true,"observationWindow":{"from":"2026-11-14T11:04:50.182430+00:00","until":"2026-11-14T11:05:10.272419+00:00"},"officialEvidence":{"sourceUrl":"https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-14_14_5","capturedAt":"2026-11-14T20:04:14.470238+00:00","sha256":"111ac2720db7c92d8334e5190c44f0f5cbad48af40e017a976b337c19e547844"},"officialSourceAt":"2026-11-14 18:09:30","winners":{"2026-11-14_14_5":[2],"2026-11-14_14_6":[4],"2026-11-14_14_7":[11],"2026-11-14_14_8":[4],"2026-11-14_14_9":[9],"2026-11-14_14_10":[10],"2026-11-14_14_11":[4],"2026-11-14_14_12":[2]},"races":[{"leg":1,"raceId":"2026-11-14_14_5","status":"verified","deadHeat":false,"winners":[{"number":2,"name":"Frances Will","prestartPct":7.53,"finalOdds":9.34}]},{"leg":2,"raceId":"2026-11-14_14_6","status":"verified","deadHeat":false,"winners":[{"number":4,"name":"Chamberi","prestartPct":65.7,"finalOdds":1.68}]},{"leg":3,"raceId":"2026-11-14_14_7","status":"verified","deadHeat":false,"winners":[{"number":11,"name":"Sven Kuce","prestartPct":12.52,"finalOdds":4.59}]},{"leg":4,"raceId":"2026-11-14_14_8","status":"verified","deadHeat":false,"winners":[{"number":4,"name":"Reidar di Quattro","prestartPct":40.98,"finalOdds":2.1}]},{"leg":5,"raceId":"2026-11-14_14_9","status":"verified","deadHeat":false,"winners":[{"number":9,"name":"Miss Brighton","prestartPct":6.49,"finalOdds":9.54}]},{"leg":6,"raceId":"2026-11-14_14_10","status":"verified","deadHeat":false,"winners":[{"number":10,"name":"Hankypanky Readler","prestartPct":21.51,"finalOdds":2.87}]},{"leg":7,"raceId":"2026-11-14_14_11","status":"verified","deadHeat":false,"winners":[{"number":4,"name":"Steady Spender","prestartPct":5.4,"finalOdds":20.34}]},{"leg":8,"raceId":"2026-11-14_14_12","status":"verified","deadHeat":false,"winners":[{"number":2,"name":"Einstein Face","prestartPct":13.35,"finalOdds":6.27}]}],"payouts":{"5":{"amountSEK":8.0,"systems":2869862},"6":{"amountSEK":31.0,"systems":325804},"7":{"amountSEK":687.0,"systems":19674},"8":{"amountSEK":105247.0,"systems":492}},"metrics":{"Historik-CatBoost":{"first":{"hits":0,"races":8,"raceIds":["2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9","2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12"],"hitRaceIds":[]},"top3":{"hits":4,"races":8,"raceIds":["2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9","2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_8","2026-11-14_14_11","2026-11-14_14_12"]}},"Utökad CatBoost (experimentell)":{"first":{"hits":3,"races":8,"raceIds":["2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9","2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_8","2026-11-14_14_10"]},"top3":{"hits":5,"races":8,"raceIds":["2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9","2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_10","2026-11-14_14_12"]}},"Marknaden vid frysning":{"first":{"hits":2,"races":8,"raceIds":["2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9","2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_8"]},"top3":{"hits":5,"races":8,"raceIds":["2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9","2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_10","2026-11-14_14_12"]}},"Travmaskinen":{"first":{"hits":0,"races":1,"raceIds":["2026-11-14_14_5"],"hitRaceIds":[]},"top3":{"hits":0,"races":1,"raceIds":["2026-11-14_14_5"],"hitRaceIds":[]}},"Travtips AI":{"first":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]},"top3":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]}},"V46":{"first":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]},"top3":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]}},"Tipper Trav":{"first":{"hits":3,"races":7,"raceIds":["2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9","2026-11-14_14_10","2026-11-14_14_12"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_8","2026-11-14_14_10"]},"top3":{"hits":4,"races":7,"raceIds":["2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9","2026-11-14_14_10","2026-11-14_14_12"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_10"]}},"Travtipsaren":{"first":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]},"top3":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]}},"Travia AI":{"first":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]},"top3":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]}},"ATG Elli":{"first":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]},"top3":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]}},"Simsalabim Heat Rank":{"first":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]},"top3":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]}},"Travia omgångsanalys":{"first":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]},"top3":{"hits":0,"races":0,"raceIds":[],"hitRaceIds":[]}}},"pairedAgainstMarket":{"Historik-CatBoost":{"first":{"left":{"hits":0,"races":8,"raceIds":["2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":[]},"right":{"hits":2,"races":8,"raceIds":["2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_8"]}},"top3":{"left":{"hits":4,"races":8,"raceIds":["2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_11","2026-11-14_14_12","2026-11-14_14_6","2026-11-14_14_8"]},"right":{"hits":5,"races":8,"raceIds":["2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_10","2026-11-14_14_12","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8"]}}},"Utökad CatBoost (experimentell)":{"first":{"left":{"hits":3,"races":8,"raceIds":["2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_10","2026-11-14_14_6","2026-11-14_14_8"]},"right":{"hits":2,"races":8,"raceIds":["2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_8"]}},"top3":{"left":{"hits":5,"races":8,"raceIds":["2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_10","2026-11-14_14_12","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8"]},"right":{"hits":5,"races":8,"raceIds":["2026-11-14_14_10","2026-11-14_14_11","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_10","2026-11-14_14_12","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8"]}}},"Travmaskinen":{"first":{"left":{"hits":0,"races":1,"raceIds":["2026-11-14_14_5"],"hitRaceIds":[]},"right":{"hits":0,"races":1,"raceIds":["2026-11-14_14_5"],"hitRaceIds":[]}},"top3":{"left":{"hits":0,"races":1,"raceIds":["2026-11-14_14_5"],"hitRaceIds":[]},"right":{"hits":0,"races":1,"raceIds":["2026-11-14_14_5"],"hitRaceIds":[]}}},"Tipper Trav":{"first":{"left":{"hits":3,"races":7,"raceIds":["2026-11-14_14_10","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_10","2026-11-14_14_6","2026-11-14_14_8"]},"right":{"hits":2,"races":7,"raceIds":["2026-11-14_14_10","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_6","2026-11-14_14_8"]}},"top3":{"left":{"hits":4,"races":7,"raceIds":["2026-11-14_14_10","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_10","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8"]},"right":{"hits":5,"races":7,"raceIds":["2026-11-14_14_10","2026-11-14_14_12","2026-11-14_14_5","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8","2026-11-14_14_9"],"hitRaceIds":["2026-11-14_14_10","2026-11-14_14_12","2026-11-14_14_6","2026-11-14_14_7","2026-11-14_14_8"]}}}},"ownPickOutcomes":[{"role":"outsider","leg":1,"number":14,"name":"Kyrkebys Gunbritt","won":false,"place":6,"finishOrder":6,"prestartPct":7.13,"historyRank":1,"expandedRank":5,"reason":"Tre segrar och en andraplats på fem redovisade starter; historikmodellen rankar etta.","risk":"Tillägg i voltstart, trafik och tydlig oenighet med marknaden."},{"role":"outsider","leg":6,"number":1,"name":"Yalla Yalla","won":false,"place":0,"finishOrder":10,"prestartPct":2.98,"historyRank":7,"expandedRank":5,"reason":"Fem senaste placeringarna 3–2–3–3–1. Innerspår kan ge ekonomisk resa över 2640 meter.","risk":"Kräver position och lucka; Prince Harry och Vince Wynn är tydliga motbud."},{"role":"outsider","leg":3,"number":6,"name":"Gumshoe Sox","won":false,"place":0,"finishOrder":11,"prestartPct":3.75,"historyRank":5,"expandedRank":6,"reason":"Fem senaste placeringarna 2–1–1–1–2. Aktuellt formbud och offentligt skrällbud hos Travia.","risk":"Zarex och Recycle Cash har starkt stöd; tuff final och ingen säker spets från spår 6."},{"role":"outsider","leg":8,"number":5,"name":"Justcantgetenough","won":false,"place":5,"finishOrder":5,"prestartPct":7.3,"historyRank":3,"expandedRank":4,"reason":"Tre segrar och två pallplatser på de fem senaste redovisade starterna. Trea i historiska CatBoost-rankningen. Prioriterat garderingsbud efter lördagsgranskning.","risk":"Strecken har stigit från 3,76 till 7.3 procent sedan fredagens huvudobservation. Lägre klassproxy än huvudmotbuden; Neil Jung och Florenzo är starka konkurrenter."},{"role":"outsider","leg":1,"number":4,"name":"Mill Indra","won":false,"place":0,"finishOrder":11,"prestartPct":1.96,"historyRank":4,"expandedRank":9,"reason":"Två raka segrar, dessförinnan trea och tvåa. Fyra i historikmodellen. Prioriterat garderingsbud efter lördagsgranskning.","risk":"Voltstart och tufft motstånd; den utökade modellen ger svagare stöd."},{"role":"outsider","leg":7,"number":4,"name":"Steady Spender","won":true,"place":1,"finishOrder":1,"prestartPct":5.4,"historyRank":2,"expandedRank":4,"reason":"Tvåa senast och tre segrar bland de fem redovisade starterna. Tvåa i historikmodellen. Prioriterat garderingsbud efter lördagsgranskning.","risk":"En historisk placering saknas. Kodiak Zet och Nanda Devi Cut är starka motbud."},{"role":"outsider","leg":1,"number":2,"name":"Frances Will","won":true,"place":1,"finishOrder":1,"prestartPct":7.53,"historyRank":9,"expandedRank":6,"reason":"Två raka andraplatser. Dagens historikmodell rankar 9 och experimentmodellen 6. Voltstart och dokumenterad jämn närform gör hästen till garderingsbud.","risk":"Historikmodellen rankar nia: tydlig oenighet. Voltstart och positionsrisk."},{"role":"outsider","leg":2,"number":6,"name":"Jacqueline Zet","won":false,"place":0,"finishOrder":7,"prestartPct":2.19,"historyRank":5,"expandedRank":7,"reason":"Tvåa senast, fem senaste 2–6–3–6–2. Historikmodellen rankar 5 och experimentmodellen 7 i dagens körning. Fredagens modellplacering återanvänds inte.","risk":"Ojämn resultatrad och spår 6. Chamberi är stark favorit; ett chansbetonat garderingsbud."},{"role":"outsider","leg":6,"number":5,"name":"Napoleon Sisu","won":false,"place":8,"finishOrder":8,"prestartPct":2.03,"historyRank":1,"expandedRank":7,"reason":"Seger senast och tvåa gången före. Historikmodellens förstahäst.","risk":"Experimentmodellen rankar 7. 2640 meter och starka motbud: ett chansbetonat modellbud, ingen kalibrerad värdering."},{"role":"spikeCandidate","leg":2,"number":4,"name":"Chamberi","won":true,"place":1,"finishOrder":1,"prestartPct":65.7,"historyRank":2,"expandedRank":1,"reason":"Fem raka segrar, spår 4 över 2140 meter. Dagens historiska modell rankar 2 och experimentmodellen 1. Fortsatt spikkandidat, inte ett påstått säkert singelstreck.","risk":"Högt streckad. Love to the Limit har bättre tempo/spårproxy och Milady Josselyn högre klassproxy. Egen vinstchans över 50 procent är inte fastställd."},{"role":"spikeCandidate","leg":3,"number":4,"name":"Zarex","won":false,"place":0,"finishOrder":7,"prestartPct":41.38,"historyRank":1,"expandedRank":1,"reason":"Fyra segrar på fem redovisade starter och stark klassproxy. Dagens historiska modell rankar 1 och experimentmodellen 1. Marknadsstödet har sjunkit från 48,11 till 41.38 procent sedan fredag; motbuden måste tas på allvar.","risk":"Recycle Cash har bättre tempo/spårproxy. Sven Kuce och formstarke Gumshoe Sox är ytterligare hot. Egen vinstchans över 50 procent är inte fastställd."}],"externalProposalOutcomes":[{"name":"Travia omgångsanalys","role":"spikes","hits":1,"proposals":1,"choices":[{"leg":2,"number":4,"name":"Chamberi"}]},{"name":"Travia omgångsanalys","role":"outsiders","hits":0,"proposals":1,"choices":[{"leg":3,"number":6,"name":"Gumshoe Sox"}]}],"formalSpikeCount":0,"cumulative":{"rounds":2,"dates":["2026-11-07","2026-11-14"],"metrics":{"Historik-CatBoost":{"first":{"hits":2,"races":16},"top3":{"hits":10,"races":16}},"Utökad CatBoost (experimentell)":{"first":{"hits":8,"races":16},"top3":{"hits":12,"races":16}},"Marknaden vid frysning":{"first":{"hits":7,"races":16},"top3":{"hits":13,"races":16}},"Travmaskinen":{"first":{"hits":0,"races":2},"top3":{"hits":1,"races":2}},"Travtips AI":{"first":{"hits":0,"races":0},"top3":{"hits":0,"races":0}},"V46":{"first":{"hits":0,"races":0},"top3":{"hits":0,"races":0}},"Tipper Trav":{"first":{"hits":9,"races":15},"top3":{"hits":8,"races":12}},"Travtipsaren":{"first":{"hits":5,"races":8},"top3":{"hits":5,"races":6}},"Travia AI":{"first":{"hits":0,"races":0},"top3":{"hits":0,"races":0}},"ATG Elli":{"first":{"hits":0,"races":0},"top3":{"hits":0,"races":0}},"Simsalabim Heat Rank":{"first":{"hits":0,"races":0},"top3":{"hits":0,"races":0}},"Travia omgångsanalys":{"first":{"hits":0,"races":0},"top3":{"hits":0,"races":0}}},"note":"Only frozen published prestart comparisons; retrospective backtests and older unlike models excluded. Source coverage differs; no pooled competitor league.","excludedHistoricalAttributions":["7 november: Simsalabims redaktionella förslag är inte verifierad Heat Rank och förs inte över som modellstatistik."]},"financialComparison":"unavailable_no_frozen_complete_system_or_confirmed_current_ticket","submittedTicket":{"status":"missing_for_current_round","latestConfirmedRepositoryDate":"2026-11-07","note":"Corrected November 7 receipt preserved. Not reused as a November 14 ticket."},"corrections":[],"missingSources":[{"name":"Travmaskinen","status":"partial_public_preview","note":"Endast avdelning 1 AI-rankad; övriga startlistor/medlemsinnehåll.","capturedAt":"2026-11-14T11:04:56.543449+00:00","sourcePublishedAt":null},{"name":"Travtips AI","status":"partial_locked_preview","note":"Offentlig oordnad trio i avdelning 1: Nightdance, Pachamama, Miami Mearas. Helanalys låst; ingen strikt ordnad topp tre.","capturedAt":"2026-11-14T11:04:57.562400+00:00","sourcePublishedAt":null},{"name":"V46","status":"access_failed","note":"Ingen verifierad prognos tillgänglig.","capturedAt":"2026-11-14T11:04:55.627607+00:00","sourcePublishedAt":null},{"name":"Tipper Trav","status":"captured_numeric_index","note":"Numeriskt Tipper AI-index, inte sannolikhet. Separat nämnare för unik etta och strikt topp tre utan interna/gränsties.","capturedAt":"2026-11-14T11:04:56.919653+00:00","sourcePublishedAt":null},{"name":"Travtipsaren","status":"javascript_content_unverified","note":"Appskal; ingen daterad ranking kunde verifieras.","capturedAt":"2026-11-14T11:05:01.636642+00:00","sourcePublishedAt":null},{"name":"Travia AI","status":"parameter_dependent_not_comparable","note":"Ingen fast daterad ordnad ranking verifierad.","capturedAt":"2026-11-14T11:05:02.544841+00:00","sourcePublishedAt":null},{"name":"ATG Elli","status":"analysis_not_verified","note":"ATG-startsidan innehåller ingen identifierad daterad Elli-prognos.","capturedAt":"2026-11-14T11:05:02.185303+00:00","sourcePublishedAt":null},{"name":"Simsalabim Heat Rank","status":"access_failed","note":"Ingen verifierad prognos tillgänglig.","capturedAt":"2026-11-14T11:05:03.375559+00:00","sourcePublishedAt":null},{"name":"Travia omgångsanalys","status":"parameter_dependent_preview","note":"Parametriserad analys, tre avdelningar. Chamberi spikförslag och Gumshoe Sox skräll; ingen fast fullrankning.","capturedAt":"2026-11-14T11:05:09.687962+00:00","sourcePublishedAt":null}]}
+{
+  "publishedAt": "2026-11-14T21:08:22.491924+01:00",
+  "status": "verified_results",
+  "gameId": "V85_2026-11-14_14_5",
+  "batchPath": "research/comparison/2026-11-14/20261114T110607Z/",
+  "manifestVerified": true,
+  "observationWindow": {
+    "from": "2026-11-14T11:04:50.182430+00:00",
+    "until": "2026-11-14T11:05:10.272419+00:00"
+  },
+  "officialEvidence": {
+    "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-14_14_5",
+    "capturedAt": "2026-11-14T20:04:14.470238+00:00",
+    "sha256": "111ac2720db7c92d8334e5190c44f0f5cbad48af40e017a976b337c19e547844"
+  },
+  "officialSourceAt": "2026-11-14 18:09:30",
+  "winners": {
+    "2026-11-14_14_5": [
+      2
+    ],
+    "2026-11-14_14_6": [
+      4
+    ],
+    "2026-11-14_14_7": [
+      11
+    ],
+    "2026-11-14_14_8": [
+      4
+    ],
+    "2026-11-14_14_9": [
+      9
+    ],
+    "2026-11-14_14_10": [
+      10
+    ],
+    "2026-11-14_14_11": [
+      4
+    ],
+    "2026-11-14_14_12": [
+      2
+    ]
+  },
+  "races": [
+    {
+      "leg": 1,
+      "raceId": "2026-11-14_14_5",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 2,
+          "name": "Frances Will",
+          "prestartPct": 7.53,
+          "finalOdds": 9.34
+        }
+      ]
+    },
+    {
+      "leg": 2,
+      "raceId": "2026-11-14_14_6",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 4,
+          "name": "Chamberi",
+          "prestartPct": 65.7,
+          "finalOdds": 1.68
+        }
+      ]
+    },
+    {
+      "leg": 3,
+      "raceId": "2026-11-14_14_7",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 11,
+          "name": "Sven Kuce",
+          "prestartPct": 12.52,
+          "finalOdds": 4.59
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "raceId": "2026-11-14_14_8",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 4,
+          "name": "Reidar di Quattro",
+          "prestartPct": 40.98,
+          "finalOdds": 2.1
+        }
+      ]
+    },
+    {
+      "leg": 5,
+      "raceId": "2026-11-14_14_9",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 9,
+          "name": "Miss Brighton",
+          "prestartPct": 6.49,
+          "finalOdds": 9.54
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "raceId": "2026-11-14_14_10",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 10,
+          "name": "Hankypanky Readler",
+          "prestartPct": 21.51,
+          "finalOdds": 2.87
+        }
+      ]
+    },
+    {
+      "leg": 7,
+      "raceId": "2026-11-14_14_11",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 4,
+          "name": "Steady Spender",
+          "prestartPct": 5.4,
+          "finalOdds": 20.34
+        }
+      ]
+    },
+    {
+      "leg": 8,
+      "raceId": "2026-11-14_14_12",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 2,
+          "name": "Einstein Face",
+          "prestartPct": 13.35,
+          "finalOdds": 6.27
+        }
+      ]
+    }
+  ],
+  "payouts": {
+    "5": {
+      "amountSEK": 8.0,
+      "systems": 2869862
+    },
+    "6": {
+      "amountSEK": 31.0,
+      "systems": 325804
+    },
+    "7": {
+      "amountSEK": 687.0,
+      "systems": 19674
+    },
+    "8": {
+      "amountSEK": 105247.0,
+      "systems": 492
+    }
+  },
+  "metrics": {
+    "Historik-CatBoost": {
+      "first": {
+        "hits": 0,
+        "races": 8,
+        "raceIds": [
+          "2026-11-14_14_5",
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_9",
+          "2026-11-14_14_10",
+          "2026-11-14_14_11",
+          "2026-11-14_14_12"
+        ],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 4,
+        "races": 8,
+        "raceIds": [
+          "2026-11-14_14_5",
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_9",
+          "2026-11-14_14_10",
+          "2026-11-14_14_11",
+          "2026-11-14_14_12"
+        ],
+        "hitRaceIds": [
+          "2026-11-14_14_6",
+          "2026-11-14_14_8",
+          "2026-11-14_14_11",
+          "2026-11-14_14_12"
+        ]
+      }
+    },
+    "Utökad CatBoost (experimentell)": {
+      "first": {
+        "hits": 3,
+        "races": 8,
+        "raceIds": [
+          "2026-11-14_14_5",
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_9",
+          "2026-11-14_14_10",
+          "2026-11-14_14_11",
+          "2026-11-14_14_12"
+        ],
+        "hitRaceIds": [
+          "2026-11-14_14_6",
+          "2026-11-14_14_8",
+          "2026-11-14_14_10"
+        ]
+      },
+      "top3": {
+        "hits": 5,
+        "races": 8,
+        "raceIds": [
+          "2026-11-14_14_5",
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_9",
+          "2026-11-14_14_10",
+          "2026-11-14_14_11",
+          "2026-11-14_14_12"
+        ],
+        "hitRaceIds": [
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_10",
+          "2026-11-14_14_12"
+        ]
+      }
+    },
+    "Marknaden vid frysning": {
+      "first": {
+        "hits": 2,
+        "races": 8,
+        "raceIds": [
+          "2026-11-14_14_5",
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_9",
+          "2026-11-14_14_10",
+          "2026-11-14_14_11",
+          "2026-11-14_14_12"
+        ],
+        "hitRaceIds": [
+          "2026-11-14_14_6",
+          "2026-11-14_14_8"
+        ]
+      },
+      "top3": {
+        "hits": 5,
+        "races": 8,
+        "raceIds": [
+          "2026-11-14_14_5",
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_9",
+          "2026-11-14_14_10",
+          "2026-11-14_14_11",
+          "2026-11-14_14_12"
+        ],
+        "hitRaceIds": [
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_10",
+          "2026-11-14_14_12"
+        ]
+      }
+    },
+    "Travmaskinen": {
+      "first": {
+        "hits": 0,
+        "races": 1,
+        "raceIds": [
+          "2026-11-14_14_5"
+        ],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 1,
+        "raceIds": [
+          "2026-11-14_14_5"
+        ],
+        "hitRaceIds": []
+      }
+    },
+    "Travtips AI": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "V46": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "Tipper Trav": {
+      "first": {
+        "hits": 3,
+        "races": 7,
+        "raceIds": [
+          "2026-11-14_14_5",
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_9",
+          "2026-11-14_14_10",
+          "2026-11-14_14_12"
+        ],
+        "hitRaceIds": [
+          "2026-11-14_14_6",
+          "2026-11-14_14_8",
+          "2026-11-14_14_10"
+        ]
+      },
+      "top3": {
+        "hits": 4,
+        "races": 7,
+        "raceIds": [
+          "2026-11-14_14_5",
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_9",
+          "2026-11-14_14_10",
+          "2026-11-14_14_12"
+        ],
+        "hitRaceIds": [
+          "2026-11-14_14_6",
+          "2026-11-14_14_7",
+          "2026-11-14_14_8",
+          "2026-11-14_14_10"
+        ]
+      }
+    },
+    "Travtipsaren": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "Travia AI": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "ATG Elli": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "Simsalabim Heat Rank": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "Travia omgångsanalys": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    }
+  },
+  "pairedAgainstMarket": {
+    "Historik-CatBoost": {
+      "first": {
+        "left": {
+          "hits": 0,
+          "races": 8,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_11",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": []
+        },
+        "right": {
+          "hits": 2,
+          "races": 8,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_11",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_6",
+            "2026-11-14_14_8"
+          ]
+        }
+      },
+      "top3": {
+        "left": {
+          "hits": 4,
+          "races": 8,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_11",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_11",
+            "2026-11-14_14_12",
+            "2026-11-14_14_6",
+            "2026-11-14_14_8"
+          ]
+        },
+        "right": {
+          "hits": 5,
+          "races": 8,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_11",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_12",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8"
+          ]
+        }
+      }
+    },
+    "Utökad CatBoost (experimentell)": {
+      "first": {
+        "left": {
+          "hits": 3,
+          "races": 8,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_11",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_6",
+            "2026-11-14_14_8"
+          ]
+        },
+        "right": {
+          "hits": 2,
+          "races": 8,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_11",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_6",
+            "2026-11-14_14_8"
+          ]
+        }
+      },
+      "top3": {
+        "left": {
+          "hits": 5,
+          "races": 8,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_11",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_12",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8"
+          ]
+        },
+        "right": {
+          "hits": 5,
+          "races": 8,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_11",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_12",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8"
+          ]
+        }
+      }
+    },
+    "Travmaskinen": {
+      "first": {
+        "left": {
+          "hits": 0,
+          "races": 1,
+          "raceIds": [
+            "2026-11-14_14_5"
+          ],
+          "hitRaceIds": []
+        },
+        "right": {
+          "hits": 0,
+          "races": 1,
+          "raceIds": [
+            "2026-11-14_14_5"
+          ],
+          "hitRaceIds": []
+        }
+      },
+      "top3": {
+        "left": {
+          "hits": 0,
+          "races": 1,
+          "raceIds": [
+            "2026-11-14_14_5"
+          ],
+          "hitRaceIds": []
+        },
+        "right": {
+          "hits": 0,
+          "races": 1,
+          "raceIds": [
+            "2026-11-14_14_5"
+          ],
+          "hitRaceIds": []
+        }
+      }
+    },
+    "Tipper Trav": {
+      "first": {
+        "left": {
+          "hits": 3,
+          "races": 7,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_6",
+            "2026-11-14_14_8"
+          ]
+        },
+        "right": {
+          "hits": 2,
+          "races": 7,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_6",
+            "2026-11-14_14_8"
+          ]
+        }
+      },
+      "top3": {
+        "left": {
+          "hits": 4,
+          "races": 7,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8"
+          ]
+        },
+        "right": {
+          "hits": 5,
+          "races": 7,
+          "raceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_12",
+            "2026-11-14_14_5",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8",
+            "2026-11-14_14_9"
+          ],
+          "hitRaceIds": [
+            "2026-11-14_14_10",
+            "2026-11-14_14_12",
+            "2026-11-14_14_6",
+            "2026-11-14_14_7",
+            "2026-11-14_14_8"
+          ]
+        }
+      }
+    }
+  },
+  "ownPickOutcomes": [
+    {
+      "role": "outsider",
+      "leg": 1,
+      "number": 14,
+      "name": "Kyrkebys Gunbritt",
+      "won": false,
+      "place": 6,
+      "finishOrder": 6,
+      "prestartPct": 7.13,
+      "historyRank": 1,
+      "expandedRank": 5,
+      "reason": "Tre segrar och en andraplats på fem redovisade starter; historikmodellen rankar etta.",
+      "risk": "Tillägg i voltstart, trafik och tydlig oenighet med marknaden."
+    },
+    {
+      "role": "outsider",
+      "leg": 6,
+      "number": 1,
+      "name": "Yalla Yalla",
+      "won": false,
+      "place": 0,
+      "finishOrder": 10,
+      "prestartPct": 2.98,
+      "historyRank": 7,
+      "expandedRank": 5,
+      "reason": "Fem senaste placeringarna 3–2–3–3–1. Innerspår kan ge ekonomisk resa över 2640 meter.",
+      "risk": "Kräver position och lucka; Prince Harry och Vince Wynn är tydliga motbud."
+    },
+    {
+      "role": "outsider",
+      "leg": 3,
+      "number": 6,
+      "name": "Gumshoe Sox",
+      "won": false,
+      "place": 0,
+      "finishOrder": 11,
+      "prestartPct": 3.75,
+      "historyRank": 5,
+      "expandedRank": 6,
+      "reason": "Fem senaste placeringarna 2–1–1–1–2. Aktuellt formbud och offentligt skrällbud hos Travia.",
+      "risk": "Zarex och Recycle Cash har starkt stöd; tuff final och ingen säker spets från spår 6."
+    },
+    {
+      "role": "outsider",
+      "leg": 8,
+      "number": 5,
+      "name": "Justcantgetenough",
+      "won": false,
+      "place": 5,
+      "finishOrder": 5,
+      "prestartPct": 7.3,
+      "historyRank": 3,
+      "expandedRank": 4,
+      "reason": "Tre segrar och två pallplatser på de fem senaste redovisade starterna. Trea i historiska CatBoost-rankningen. Prioriterat garderingsbud efter lördagsgranskning.",
+      "risk": "Strecken har stigit från 3,76 till 7.3 procent sedan fredagens huvudobservation. Lägre klassproxy än huvudmotbuden; Neil Jung och Florenzo är starka konkurrenter."
+    },
+    {
+      "role": "outsider",
+      "leg": 1,
+      "number": 4,
+      "name": "Mill Indra",
+      "won": false,
+      "place": 0,
+      "finishOrder": 11,
+      "prestartPct": 1.96,
+      "historyRank": 4,
+      "expandedRank": 9,
+      "reason": "Två raka segrar, dessförinnan trea och tvåa. Fyra i historikmodellen. Prioriterat garderingsbud efter lördagsgranskning.",
+      "risk": "Voltstart och tufft motstånd; den utökade modellen ger svagare stöd."
+    },
+    {
+      "role": "outsider",
+      "leg": 7,
+      "number": 4,
+      "name": "Steady Spender",
+      "won": true,
+      "place": 1,
+      "finishOrder": 1,
+      "prestartPct": 5.4,
+      "historyRank": 2,
+      "expandedRank": 4,
+      "reason": "Tvåa senast och tre segrar bland de fem redovisade starterna. Tvåa i historikmodellen. Prioriterat garderingsbud efter lördagsgranskning.",
+      "risk": "En historisk placering saknas. Kodiak Zet och Nanda Devi Cut är starka motbud."
+    },
+    {
+      "role": "outsider",
+      "leg": 1,
+      "number": 2,
+      "name": "Frances Will",
+      "won": true,
+      "place": 1,
+      "finishOrder": 1,
+      "prestartPct": 7.53,
+      "historyRank": 9,
+      "expandedRank": 6,
+      "reason": "Två raka andraplatser. Dagens historikmodell rankar 9 och experimentmodellen 6. Voltstart och dokumenterad jämn närform gör hästen till garderingsbud.",
+      "risk": "Historikmodellen rankar nia: tydlig oenighet. Voltstart och positionsrisk."
+    },
+    {
+      "role": "outsider",
+      "leg": 2,
+      "number": 6,
+      "name": "Jacqueline Zet",
+      "won": false,
+      "place": 0,
+      "finishOrder": 7,
+      "prestartPct": 2.19,
+      "historyRank": 5,
+      "expandedRank": 7,
+      "reason": "Tvåa senast, fem senaste 2–6–3–6–2. Historikmodellen rankar 5 och experimentmodellen 7 i dagens körning. Fredagens modellplacering återanvänds inte.",
+      "risk": "Ojämn resultatrad och spår 6. Chamberi är stark favorit; ett chansbetonat garderingsbud."
+    },
+    {
+      "role": "outsider",
+      "leg": 6,
+      "number": 5,
+      "name": "Napoleon Sisu",
+      "won": false,
+      "place": 8,
+      "finishOrder": 8,
+      "prestartPct": 2.03,
+      "historyRank": 1,
+      "expandedRank": 7,
+      "reason": "Seger senast och tvåa gången före. Historikmodellens förstahäst.",
+      "risk": "Experimentmodellen rankar 7. 2640 meter och starka motbud: ett chansbetonat modellbud, ingen kalibrerad värdering."
+    },
+    {
+      "role": "spikeCandidate",
+      "leg": 2,
+      "number": 4,
+      "name": "Chamberi",
+      "won": true,
+      "place": 1,
+      "finishOrder": 1,
+      "prestartPct": 65.7,
+      "historyRank": 2,
+      "expandedRank": 1,
+      "reason": "Fem raka segrar, spår 4 över 2140 meter. Dagens historiska modell rankar 2 och experimentmodellen 1. Fortsatt spikkandidat, inte ett påstått säkert singelstreck.",
+      "risk": "Högt streckad. Love to the Limit har bättre tempo/spårproxy och Milady Josselyn högre klassproxy. Egen vinstchans över 50 procent är inte fastställd."
+    },
+    {
+      "role": "spikeCandidate",
+      "leg": 3,
+      "number": 4,
+      "name": "Zarex",
+      "won": false,
+      "place": 0,
+      "finishOrder": 7,
+      "prestartPct": 41.38,
+      "historyRank": 1,
+      "expandedRank": 1,
+      "reason": "Fyra segrar på fem redovisade starter och stark klassproxy. Dagens historiska modell rankar 1 och experimentmodellen 1. Marknadsstödet har sjunkit från 48,11 till 41.38 procent sedan fredag; motbuden måste tas på allvar.",
+      "risk": "Recycle Cash har bättre tempo/spårproxy. Sven Kuce och formstarke Gumshoe Sox är ytterligare hot. Egen vinstchans över 50 procent är inte fastställd."
+    }
+  ],
+  "externalProposalOutcomes": [
+    {
+      "name": "Travia omgångsanalys",
+      "role": "spikes",
+      "hits": 1,
+      "proposals": 1,
+      "choices": [
+        {
+          "leg": 2,
+          "number": 4,
+          "name": "Chamberi"
+        }
+      ]
+    },
+    {
+      "name": "Travia omgångsanalys",
+      "role": "outsiders",
+      "hits": 0,
+      "proposals": 1,
+      "choices": [
+        {
+          "leg": 3,
+          "number": 6,
+          "name": "Gumshoe Sox"
+        }
+      ]
+    }
+  ],
+  "formalSpikeCount": 0,
+  "cumulative": {
+    "rounds": 2,
+    "dates": [
+      "2026-11-07",
+      "2026-11-14"
+    ],
+    "metrics": {
+      "Historik-CatBoost": {
+        "first": {
+          "hits": 2,
+          "races": 16
+        },
+        "top3": {
+          "hits": 10,
+          "races": 16
+        }
+      },
+      "Utökad CatBoost (experimentell)": {
+        "first": {
+          "hits": 8,
+          "races": 16
+        },
+        "top3": {
+          "hits": 12,
+          "races": 16
+        }
+      },
+      "Marknaden vid frysning": {
+        "first": {
+          "hits": 7,
+          "races": 16
+        },
+        "top3": {
+          "hits": 13,
+          "races": 16
+        }
+      },
+      "Travmaskinen": {
+        "first": {
+          "hits": 0,
+          "races": 2
+        },
+        "top3": {
+          "hits": 1,
+          "races": 2
+        }
+      },
+      "Travtips AI": {
+        "first": {
+          "hits": 0,
+          "races": 0
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0
+        }
+      },
+      "V46": {
+        "first": {
+          "hits": 0,
+          "races": 0
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0
+        }
+      },
+      "Tipper Trav": {
+        "first": {
+          "hits": 9,
+          "races": 15
+        },
+        "top3": {
+          "hits": 8,
+          "races": 12
+        }
+      },
+      "Travtipsaren": {
+        "first": {
+          "hits": 5,
+          "races": 8
+        },
+        "top3": {
+          "hits": 5,
+          "races": 6
+        }
+      },
+      "Travia AI": {
+        "first": {
+          "hits": 0,
+          "races": 0
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0
+        }
+      },
+      "ATG Elli": {
+        "first": {
+          "hits": 0,
+          "races": 0
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0
+        }
+      },
+      "Simsalabim Heat Rank": {
+        "first": {
+          "hits": 0,
+          "races": 0
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0
+        }
+      },
+      "Travia omgångsanalys": {
+        "first": {
+          "hits": 0,
+          "races": 0
+        },
+        "top3": {
+          "hits": 0,
+          "races": 0
+        }
+      }
+    },
+    "note": "Only frozen published prestart comparisons; retrospective backtests and older unlike models excluded. Source coverage differs; no pooled competitor league.",
+    "excludedHistoricalAttributions": [
+      "7 november: Simsalabims redaktionella förslag är inte verifierad Heat Rank och förs inte över som modellstatistik."
+    ]
+  },
+  "financialComparison": "confirmed_ticket_settled_no_complete_frozen_model_system",
+  "submittedTicket": {
+    "status": "confirmed_user_receipt",
+    "ticket": {
+      "date": "2026-11-14",
+      "track": "Eskilstuna",
+      "submittedAt": "2026-11-14 13:05",
+      "costSEK": 960,
+      "stakeFraction": 0.5,
+      "rows": 3840,
+      "legs": [
+        {
+          "leg": 1,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Nightdance"
+            },
+            {
+              "number": 2,
+              "name": "Frances Will"
+            },
+            {
+              "number": 4,
+              "name": "Mill Indra"
+            },
+            {
+              "number": 14,
+              "name": "Kyrkebys Gunbritt"
+            }
+          ],
+          "reserves": [
+            3,
+            6
+          ],
+          "winners": [
+            {
+              "number": 2,
+              "name": "Frances Will"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 2,
+          "selected": [
+            {
+              "number": 4,
+              "name": "Chamberi"
+            }
+          ],
+          "reserves": [
+            2,
+            3
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Chamberi"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 3,
+          "selected": [
+            {
+              "number": 4,
+              "name": "Zarex"
+            }
+          ],
+          "reserves": [
+            2,
+            1
+          ],
+          "winners": [
+            {
+              "number": 11,
+              "name": "Sven Kuce"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 4,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Conrads Ove"
+            },
+            {
+              "number": 3,
+              "name": "Rob Roy Boko"
+            },
+            {
+              "number": 4,
+              "name": "Reidar di Quattro"
+            },
+            {
+              "number": 5,
+              "name": "Hard Rock"
+            }
+          ],
+          "reserves": [
+            7,
+            10
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Reidar di Quattro"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 5,
+          "selected": [
+            {
+              "number": 2,
+              "name": "I See Tail Lights"
+            },
+            {
+              "number": 3,
+              "name": "Zeebreeze"
+            },
+            {
+              "number": 4,
+              "name": "Grace in Heaven"
+            }
+          ],
+          "reserves": [
+            1,
+            9
+          ],
+          "winners": [
+            {
+              "number": 9,
+              "name": "Miss Brighton"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 6,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Yalla Yalla"
+            },
+            {
+              "number": 3,
+              "name": "Vince Wynn"
+            },
+            {
+              "number": 5,
+              "name": "Napoleon Sisu"
+            },
+            {
+              "number": 10,
+              "name": "Hankypanky Readler"
+            },
+            {
+              "number": 11,
+              "name": "Prince Harry"
+            }
+          ],
+          "reserves": [
+            6,
+            7
+          ],
+          "winners": [
+            {
+              "number": 10,
+              "name": "Hankypanky Readler"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 7,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Com Best"
+            },
+            {
+              "number": 3,
+              "name": "Kodiak Zet"
+            },
+            {
+              "number": 4,
+              "name": "Steady Spender"
+            },
+            {
+              "number": 6,
+              "name": "Nanda Devi Cut"
+            }
+          ],
+          "reserves": [
+            2,
+            10
+          ],
+          "winners": [
+            {
+              "number": 4,
+              "name": "Steady Spender"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 8,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Einstein Face"
+            },
+            {
+              "number": 3,
+              "name": "Neil Jung"
+            },
+            {
+              "number": 5,
+              "name": "Justcantgetenough"
+            },
+            {
+              "number": 7,
+              "name": "Florenzo"
+            }
+          ],
+          "reserves": [
+            12,
+            1
+          ],
+          "winners": [
+            {
+              "number": 2,
+              "name": "Einstein Face"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        }
+      ],
+      "payouts": {
+        "5": {
+          "amountSEK": 8.0,
+          "jackpot": false
+        },
+        "6": {
+          "amountSEK": 31.0,
+          "jackpot": false
+        },
+        "7": {
+          "amountSEK": 687.0,
+          "jackpot": false
+        },
+        "8": {
+          "amountSEK": 105247.0,
+          "jackpot": false
+        }
+      },
+      "hits": 6,
+      "winningRows": {
+        "5": 48,
+        "6": 3,
+        "7": 0,
+        "8": 0
+      },
+      "prizeSEK": 238.5,
+      "netSEK": -721.5,
+      "reviewUrl": "../efteranalys/2026-11-14/",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-14_14_5",
+      "sourceSha256": "111ac2720db7c92d8334e5190c44f0f5cbad48af40e017a976b337c19e547844",
+      "sourceTimestamp": "2026-11-14 18:09:30",
+      "sourceEvidencePath": "efteranalys/2026-11-14/evidence/games_V85_2026-11-14_14_5.json.gz",
+      "resultUrl": "https://www.atg.se/spel/2026-11-14/V85/eskilstuna/resultat",
+      "receiptSource": "Användarens uppladdade inlämningskvitto för Eskilstuna 14 november 2026."
+    }
+  },
+  "corrections": [],
+  "missingSources": [
+    {
+      "name": "Travmaskinen",
+      "status": "partial_public_preview",
+      "note": "Endast avdelning 1 AI-rankad; övriga startlistor/medlemsinnehåll.",
+      "capturedAt": "2026-11-14T11:04:56.543449+00:00",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "Travtips AI",
+      "status": "partial_locked_preview",
+      "note": "Offentlig oordnad trio i avdelning 1: Nightdance, Pachamama, Miami Mearas. Helanalys låst; ingen strikt ordnad topp tre.",
+      "capturedAt": "2026-11-14T11:04:57.562400+00:00",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "V46",
+      "status": "access_failed",
+      "note": "Ingen verifierad prognos tillgänglig.",
+      "capturedAt": "2026-11-14T11:04:55.627607+00:00",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "Tipper Trav",
+      "status": "captured_numeric_index",
+      "note": "Numeriskt Tipper AI-index, inte sannolikhet. Separat nämnare för unik etta och strikt topp tre utan interna/gränsties.",
+      "capturedAt": "2026-11-14T11:04:56.919653+00:00",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "Travtipsaren",
+      "status": "javascript_content_unverified",
+      "note": "Appskal; ingen daterad ranking kunde verifieras.",
+      "capturedAt": "2026-11-14T11:05:01.636642+00:00",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "Travia AI",
+      "status": "parameter_dependent_not_comparable",
+      "note": "Ingen fast daterad ordnad ranking verifierad.",
+      "capturedAt": "2026-11-14T11:05:02.544841+00:00",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "ATG Elli",
+      "status": "analysis_not_verified",
+      "note": "ATG-startsidan innehåller ingen identifierad daterad Elli-prognos.",
+      "capturedAt": "2026-11-14T11:05:02.185303+00:00",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "Simsalabim Heat Rank",
+      "status": "access_failed",
+      "note": "Ingen verifierad prognos tillgänglig.",
+      "capturedAt": "2026-11-14T11:05:03.375559+00:00",
+      "sourcePublishedAt": null
+    },
+    {
+      "name": "Travia omgångsanalys",
+      "status": "parameter_dependent_preview",
+      "note": "Parametriserad analys, tre avdelningar. Chamberi spikförslag och Gumshoe Sox skräll; ingen fast fullrankning.",
+      "capturedAt": "2026-11-14T11:05:09.687962+00:00",
+      "sourcePublishedAt": null
+    }
+  ]
+}
