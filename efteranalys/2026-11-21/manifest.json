@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-21",
+  "roundId": "2026-11-21-jagersro",
+  "gameId": "V85_2026-11-21_7_5",
+  "createdAt": "2026-11-21T20:03:03.536482+00:00",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "3857aa607fdcf82b30066c50267308043051f29e7c921d2d370169e2a1e58cfa",
+      "bytes": 13989
+    },
+    {
+      "path": "lessons.json",
+      "sha256": "6e0198c13aa5156aaa0f6e35a2699196462ba639f4d3734accfa233ee573de74",
+      "bytes": 1325
+    },
+    {
+      "path": "official-game.json.gz",
+      "sha256": "2171695eea32c0cb149e9b4f0c93bb5b5d753d0360c3b02ea3c24732a422268c",
+      "bytes": 52570
+    },
+    {
+      "path": "results.json",
+      "sha256": "90a859d4cc8a35a1471414ff6e26555ec597f9992d3dc4cd326c5e4164f4edde",
+      "bytes": 36639
+    },
+    {
+      "path": "verification.json",
+      "sha256": "92b1f28d57fde5bbf631c226831321391e5c8e61d144b22f61b0faa2516f7466",
+      "bytes": 1150
+    }
+  ]
+}

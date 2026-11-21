@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-21",
+  "status": "published_findings_not_model_changes",
+  "findings": [
+    "Marknadens frysta topp tre täckte 6/8 vinnare; båda modellerna täckte 5/8 och tillförde ingen vinnare utanför marknadens topp tre denna vecka.",
+    "Utökad CatBoost vann som förstaval i 3/8 lopp mot historikmodellens 2/8 och marknadens 4/8. Skillnaden räcker inte för ett modellbyte.",
+    "Turfmans Nancy (2,03 %) och Ugalli (5,69 %) saknades i samtliga tre huvudrankningars topp tre. De är nästa veckas viktigaste missar att granska utan facitstyrd viktändring.",
+    "Tre spikkandidater gav två vinnare: Rocksteady Artist och Gurion Font. A Fair Day förlorade mot det namngivna motbudet Boscha Diablo.",
+    "Åtta redaktionella utmanare/skrällbud gav noll vinnare. Antalet kandidater och deras risk behöver redovisas lika tydligt som träffar.",
+    "Ingen modell- eller urvalsregel ändras i denna rapport; förbättringar ska testas på framtida frysta omgångar."
+  ],
+  "nextChecks": [
+    "Följ om namngivna spikmotbud faktiskt inkluderas i ett prissatt alternativsystem före start.",
+    "Undersök rank 4–6 och form-/klassproxy för lågprocentvinnare, men behåll marknaden som separat baslinje.",
+    "Frys kompletta jämförbara system och budget om ekonomiskt utfall ska jämföras."
+  ]
+}

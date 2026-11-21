@@ -1,0 +1,39 @@
+{
+  "verifiedAt": "2026-11-21T20:03:03.535650+00:00",
+  "status": "verified_results",
+  "remoteBaseCommit": "cd3bcc5a42c822744ee9d65534e571bd4153fb0d",
+  "prestart": {
+    "index": "research/comparison/2026-11-21/prestart-index.json",
+    "primaryBatch": "20261121T110417Z",
+    "snapshotId": "f130c072ab6464e0038f2f2b77a5d9db9ecf67230f1feaacdd1831ad8e6fd33d",
+    "manifestFiles": 40,
+    "manifestVerified": true,
+    "bettingDeadline": "2026-11-21T15:00:00+01:00"
+  },
+  "official": {
+    "gameId": "V85_2026-11-21_7_5",
+    "status": "results",
+    "raceIds": [
+      "2026-11-21_7_5",
+      "2026-11-21_7_6",
+      "2026-11-21_7_7",
+      "2026-11-21_7_8",
+      "2026-11-21_7_9",
+      "2026-11-21_7_10",
+      "2026-11-21_7_11",
+      "2026-11-21_7_12"
+    ],
+    "allRacesSettled": true,
+    "poolStatus": "results",
+    "sourceAt": "2026-11-21 18:03:30",
+    "capturedAt": "2026-11-21T20:02:55.068013+00:00",
+    "sha256": "5ea93532cdc3bde20db28d58ad2f00dc7ea7f918aa47cc42b3cb9e1dcfaebf78"
+  },
+  "counts": {
+    "races": 8,
+    "deadHeats": 0,
+    "ownOutsiderCandidates": 8,
+    "ownSpikeCandidates": 3
+  },
+  "receiptStatus": "missing"
+}

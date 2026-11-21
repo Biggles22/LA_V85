@@ -2,7 +2,7 @@
 
 ## Aktuell omgång
 
-`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Aktuell arbetsyta är Jägersro 21 november 2026. Åtta lopp, 100 anmälda hästar och 92 aktiva är identitetskontrollerade mot ATG. Form och båda befintliga modellvarianter är omräknade mot samma primära lördagssnapshot. Slutlig analys med åtta utmanare/garderingsbud och tre spikkandidater finns under `uppdateringar/2026-11-21/`; fredagens, torsdagens och tisdagens observationer är bevarade. Träningen använder befintliga 12 247 starter i 1 047 lopp till och med 31 oktober; inga efterhandsvikter har införts. Eskilstunas startsida bevaras i `archive/2026-11-14-eskilstuna/forhand.html` med egna sidfiler och egen omgångskonfiguration. Den är arkiverad efter omgången; de ursprungliga förhandsfrysningarna och den fördjupade efteranalysen bevaras separat.
+`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Senast avslutade arbetsyta är Jägersro 21 november 2026. Åtta lopp, 100 anmälda hästar och 92 aktiva är identitetskontrollerade mot ATG. Form och båda befintliga modellvarianter är omräknade mot samma primära lördagssnapshot. Slutlig förhandsanalys med åtta utmanare/garderingsbud och tre spikkandidater finns under `uppdateringar/2026-11-21/`; verifierad efteranalys finns under `efteranalys/2026-11-21/`; fredagens, torsdagens och tisdagens observationer är bevarade. Träningen använder befintliga 12 247 starter i 1 047 lopp till och med 31 oktober; inga efterhandsvikter har införts. Eskilstunas startsida bevaras i `archive/2026-11-14-eskilstuna/forhand.html` med egna sidfiler och egen omgångskonfiguration. Den är arkiverad efter omgången; de ursprungliga förhandsfrysningarna och den fördjupade efteranalysen bevaras separat.
 
 Huvudmenyn har tre delar: **Lördagens V85**, **Historik**, **Metod & resultat**. Startsidan har ankarlänkar till **Skrällförslag**, **Spikförslag**, **Lopp för lopp** och **Mitt urval**. En avdelning visas åt gången med sökning, sortering och hästkort i mobilvy.
 
@@ -120,3 +120,7 @@ Efter `python3 scripts/update_current_round.py`, kör `python3 scripts/update_cu
 
 - `uppdateringar/2026-11-21/` — primär lördagsuppdatering före spelstopp för Jägersro 21 november.
 - `research/comparison/2026-11-21/prestart-index.json` — pekar ut den gemensamma primära lördagsfrysningen `20261121T110417Z`.
+
+
+
+- `efteranalys/2026-11-21/` — verifierad efteranalys för Jägersro med officiella resultat, utdelning och frysta jämförelser.
