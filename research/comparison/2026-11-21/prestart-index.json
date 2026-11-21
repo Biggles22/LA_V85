@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "roundId": "2026-11-21-jagersro",
+  "gameId": "V85_2026-11-21_7_5",
+  "bettingDeadline": "2026-11-21T15:00:00+01:00",
+  "primaryBatch": "20261121T110417Z",
+  "selectedAt": "2026-11-21T11:07:00+00:00",
+  "snapshotId": "f130c072ab6464e0038f2f2b77a5d9db9ecf67230f1feaacdd1831ad8e6fd33d",
+  "observedAt": "2026-11-21T12:03:27.410234+01:00",
+  "sourceAt": "2026-11-21T12:00:45+01:00",
+  "captureWindow": {
+    "startedAt": "2026-11-21T11:01:33.859089+00:00",
+    "finishedAt": "2026-11-21T11:06:20.242635+00:00"
+  },
+  "files": {
+    "manifest": "20261121T110417Z/manifest.json",
+    "analysis": "20261121T110417Z/analysis.json",
+    "manualReview": "20261121T110417Z/manual-review.json",
+    "market": "20261121T110417Z/market.json",
+    "models": "20261121T110417Z/models.json",
+    "externalSources": "20261121T110417Z/external-sources.json",
+    "verification": "20261121T110417Z/verification.json",
+    "versions": "20261121T110417Z/versions.json"
+  },
+  "note": "Primärt gemensamt lördagsunderlag före verifierat spelstopp. Äldre observationer är bevarade oförändrade."
+}

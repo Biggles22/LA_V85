@@ -1,0 +1,391 @@
+{
+  "roundId": "2026-11-21-jagersro",
+  "gameId": "V85_2026-11-21_7_5",
+  "referenceSnapshotId": "f130c072ab6464e0038f2f2b77a5d9db9ecf67230f1feaacdd1831ad8e6fd33d",
+  "note": "Primär lördagsobservation före spelstopp. Verkliga capture-tider per källa. Oordnade grupper och ties har inte gjorts om till strikt topp tre. Inget låst innehåll har öppnats.",
+  "sources": [
+    {
+      "name": "Travmaskinen",
+      "url": "https://travmaskinen.se/v85-tips",
+      "orderedTop3": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-21_7_5",
+          "horses": [
+            {
+              "number": 7,
+              "name": "Riverdale Z."
+            },
+            {
+              "number": 2,
+              "name": "Global Gaiety"
+            },
+            {
+              "number": 4,
+              "name": "Drag Racing"
+            }
+          ]
+        }
+      ],
+      "firstChoices": [
+        {
+          "leg": 1,
+          "number": 7,
+          "name": "Riverdale Z."
+        }
+      ],
+      "spikes": [],
+      "outsiders": [],
+      "sourcePublishedAt": null,
+      "httpStatus": 200,
+      "sha256": "83fbc09cd5d4f8f1bf754c218c3d76efc8ca66512ec44ae739b9291c3bd21633",
+      "capturedAt": "2026-11-21T11:05:18.418415+00:00",
+      "status": "partial_public_preview",
+      "coverageNote": "Endast avdelning 1 var uttryckligen AI-rankad. Övriga avdelningar visades som startlistor/medlemsinnehåll."
+    },
+    {
+      "name": "Travtips AI",
+      "url": "https://travtips.ai/sv/game/S1_NR_2026-11-21/V85",
+      "orderedTop3": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-21_7_5",
+          "horses": [
+            {
+              "number": 7,
+              "name": "Riverdale Z."
+            },
+            {
+              "number": 2,
+              "name": "Global Gaiety"
+            },
+            {
+              "number": 4,
+              "name": "Drag Racing"
+            }
+          ]
+        }
+      ],
+      "firstChoices": [
+        {
+          "leg": 1,
+          "number": 7,
+          "name": "Riverdale Z."
+        }
+      ],
+      "spikes": [],
+      "outsiders": [],
+      "sourcePublishedAt": null,
+      "httpStatus": 200,
+      "sha256": "9f60a5898182abc9d27df4b40006b34275f6abdfc17fde3dc194b151a8e79d8a",
+      "capturedAt": "2026-11-21T11:05:25.092938+00:00",
+      "status": "locked_partial_public_preview",
+      "coverageNote": "Kontolåst analys öppnades inte. Endast den publikt synliga V85-1-trion registrerades; övriga sju lopp saknade publika toppförslag."
+    },
+    {
+      "name": "V46",
+      "url": "https://v46.se/spel/V85_2026-11-21_7_5/",
+      "orderedTop3": [],
+      "firstChoices": [],
+      "spikes": [],
+      "outsiders": [],
+      "sourcePublishedAt": null,
+      "httpStatus": 503,
+      "sha256": "33fbc61ad080ef68dd7a6479f8c53f1bf864dba2930567dbbc4ceb47490a1909",
+      "capturedAt": "2026-11-21T11:05:42.416501+00:00",
+      "status": "access_failed",
+      "coverageNote": "HTTP 503; ingen prognos verifierad."
+    },
+    {
+      "name": "Tipper Trav",
+      "url": "https://tippertrav.se/",
+      "orderedTop3": [
+        {
+          "leg": 1,
+          "raceId": "2026-11-21_7_5",
+          "horses": [
+            {
+              "number": 7,
+              "name": "Riverdale Z."
+            },
+            {
+              "number": 2,
+              "name": "Global Gaiety"
+            },
+            {
+              "number": 4,
+              "name": "Drag Racing"
+            }
+          ]
+        },
+        {
+          "leg": 2,
+          "raceId": "2026-11-21_7_6",
+          "horses": [
+            {
+              "number": 2,
+              "name": "A Fair Day"
+            },
+            {
+              "number": 5,
+              "name": "Boscha Diablo"
+            },
+            {
+              "number": 7,
+              "name": "Västerbo Exciting"
+            }
+          ]
+        },
+        {
+          "leg": 3,
+          "raceId": "2026-11-21_7_7",
+          "horses": [
+            {
+              "number": 7,
+              "name": "Isaia Degato"
+            },
+            {
+              "number": 10,
+              "name": "Mamadou Pellini"
+            },
+            {
+              "number": 3,
+              "name": "Scandalous Zon"
+            }
+          ]
+        },
+        {
+          "leg": 4,
+          "raceId": "2026-11-21_7_8",
+          "horses": [
+            {
+              "number": 3,
+              "name": "Rocksteady Artist"
+            },
+            {
+              "number": 2,
+              "name": "Martha Minow"
+            },
+            {
+              "number": 4,
+              "name": "Qule Sting"
+            }
+          ]
+        },
+        {
+          "leg": 6,
+          "raceId": "2026-11-21_7_10",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Corsa's Titan"
+            },
+            {
+              "number": 13,
+              "name": "Global Giant"
+            },
+            {
+              "number": 7,
+              "name": "Elroy Face"
+            }
+          ]
+        },
+        {
+          "leg": 7,
+          "raceId": "2026-11-21_7_11",
+          "horses": [
+            {
+              "number": 2,
+              "name": "Gurion Font"
+            },
+            {
+              "number": 1,
+              "name": "Kung Fu Dot Com"
+            },
+            {
+              "number": 4,
+              "name": "Wannabe Zaz"
+            }
+          ]
+        },
+        {
+          "leg": 8,
+          "raceId": "2026-11-21_7_12",
+          "horses": [
+            {
+              "number": 6,
+              "name": "Modric Renka"
+            },
+            {
+              "number": 2,
+              "name": "Simon Palema"
+            },
+            {
+              "number": 4,
+              "name": "Global Futurity"
+            }
+          ]
+        }
+      ],
+      "firstChoices": [
+        {
+          "leg": 1,
+          "number": 7,
+          "name": "Riverdale Z."
+        },
+        {
+          "leg": 2,
+          "number": 2,
+          "name": "A Fair Day"
+        },
+        {
+          "leg": 3,
+          "number": 7,
+          "name": "Isaia Degato"
+        },
+        {
+          "leg": 4,
+          "number": 3,
+          "name": "Rocksteady Artist"
+        },
+        {
+          "leg": 5,
+          "number": 4,
+          "name": "Limoncello Boko"
+        },
+        {
+          "leg": 6,
+          "number": 6,
+          "name": "Corsa's Titan"
+        },
+        {
+          "leg": 7,
+          "number": 2,
+          "name": "Gurion Font"
+        },
+        {
+          "leg": 8,
+          "number": 6,
+          "name": "Modric Renka"
+        }
+      ],
+      "spikes": [
+        {
+          "leg": 1,
+          "number": 7,
+          "name": "Riverdale Z."
+        },
+        {
+          "leg": 2,
+          "number": 2,
+          "name": "A Fair Day"
+        },
+        {
+          "leg": 4,
+          "number": 3,
+          "name": "Rocksteady Artist"
+        }
+      ],
+      "outsiders": [],
+      "sourcePublishedAt": null,
+      "httpStatus": 200,
+      "sha256": "64bde6e5cdb06a84d731c7a28462aa47c9dc6e9a03d03b14657829378b77a88b",
+      "capturedAt": "2026-11-21T11:05:48.819122+00:00",
+      "status": "public_numeric_index",
+      "coverageNote": "Tipper AI-index. Strikt topp tre registreras bara utan olösta ties; V85-5 saknar därför strikt topp tre. Indexet är inte kalibrerad sannolikhet."
+    },
+    {
+      "name": "Travtipsaren",
+      "url": "https://travtipsaren.se/",
+      "orderedTop3": [],
+      "firstChoices": [],
+      "spikes": [],
+      "outsiders": [],
+      "sourcePublishedAt": null,
+      "httpStatus": 200,
+      "sha256": "841ff3a12cc1de9b0892c60ce909c877e448c72b635a95cd8bd2d0604c0c87d3",
+      "capturedAt": "2026-11-21T11:05:54.761961+00:00",
+      "status": "app_shell_no_verified_prediction",
+      "coverageNote": "Appskal utan verifierad daterad prognos."
+    },
+    {
+      "name": "Travia AI",
+      "url": "https://travia.se/ai",
+      "orderedTop3": [],
+      "firstChoices": [],
+      "spikes": [],
+      "outsiders": [],
+      "sourcePublishedAt": null,
+      "httpStatus": 200,
+      "sha256": "14a879f24f9a5bf9b79f83b0b2377d7da946bd610b856e00ce552ad88e7f6020",
+      "capturedAt": "2026-11-21T11:06:00.887687+00:00",
+      "status": "parameter_dependent_no_fixed_prediction",
+      "coverageNote": "Simulatorberoende AI-sida utan fast daterad ranking."
+    },
+    {
+      "name": "ATG Elli",
+      "url": "https://www.atg.se/",
+      "orderedTop3": [],
+      "firstChoices": [],
+      "spikes": [],
+      "outsiders": [],
+      "sourcePublishedAt": null,
+      "httpStatus": 200,
+      "sha256": "076869e95c1fe3c52354f2d011b16a0d3b3ec6b1fba9d3d75e9042f84b6bbede",
+      "capturedAt": "2026-11-21T11:06:07.731385+00:00",
+      "status": "no_verified_prediction",
+      "coverageNote": "ATG-startsidan var inte en verifierad daterad Elli-prognos."
+    },
+    {
+      "name": "Simsalabim Heat Rank",
+      "url": "https://simsalabim.se/travtips/simsalabims-jackpot-tips-v85/",
+      "orderedTop3": [],
+      "firstChoices": [],
+      "spikes": [],
+      "outsiders": [],
+      "sourcePublishedAt": null,
+      "httpStatus": 200,
+      "sha256": "9cca1b29fbc6c379fafb3c0f78a11be3890497304afbe0fa5cf56cc1470aafdf",
+      "capturedAt": "2026-11-21T11:06:14.603612+00:00",
+      "status": "wrong_round",
+      "coverageNote": "Sidan avsåg Bergsåker 7 november, inte denna Jägersro-omgång."
+    },
+    {
+      "name": "Travia omgångsanalys",
+      "url": "https://travia.se/v85/jagersro-2026-11-21",
+      "orderedTop3": [],
+      "firstChoices": [
+        {
+          "leg": 1,
+          "number": 10,
+          "name": "Juventas"
+        },
+        {
+          "leg": 3,
+          "number": 7,
+          "name": "Isaia Degato"
+        }
+      ],
+      "spikes": [
+        {
+          "leg": 4,
+          "number": 3,
+          "name": "Rocksteady Artist"
+        }
+      ],
+      "outsiders": [
+        {
+          "leg": 6,
+          "number": 9,
+          "name": "Frank Caviar"
+        }
+      ],
+      "sourcePublishedAt": null,
+      "httpStatus": 200,
+      "sha256": "9f30277fb1244d8c405eb5c3bfa9129c2e7cece74d432a8501e747913cf1722d",
+      "capturedAt": "2026-11-21T11:06:20.242635+00:00",
+      "status": "dated_public_partial",
+      "coverageNote": "Offentliga A/B/C-grupper är inte strikt ordnade trior och har inte omvandlats. Publika höjdpunkter: spik Rocksteady Artist, skräll Frank Caviar och överspelad Corsa's Titan."
+    }
+  ]
+}

@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "roundId": "2026-11-21-jagersro",
   "gameId": "V85_2026-11-21_7_5",
-  "snapshotId": "3db3452d736b345ed3cf6add4eb7defb730e568532a17deed25359ae2e6b85ea",
-  "version": 3,
-  "reviewedAt": "2026-11-20T19:10:47.846925+00:00",
+  "snapshotId": "f130c072ab6464e0038f2f2b77a5d9db9ecf67230f1feaacdd1831ad8e6fd33d",
+  "version": 4,
+  "reviewedAt": "2026-11-21T11:07:00+00:00",
   "picks": [
     {
       "type": "outsider",
       "leg": 1,
       "number": 4,
       "name": "Drag Racing",
-      "reason": "Fredagens marknad har flyttat upp hästen till 13,44 procent och båda CatBoost-varianterna håller den topp tre, rank 3/2. Spår 4 över 1640 meter och anmäld amerikansk vagn ger ett konkret motbud.",
-      "risk": "Det är inte längre ett lågprocentbud och femstartersraden saknar seger. Riverdale Z. och Global Gaiety är tydliga huvudmotbud.",
+      "reason": "Lördagens streck har stigit till 16,48 procent och båda modellerna håller hästen topp tre, rank 3/3. Spår 4 över 1640 meter och anmäld amerikansk vagn gör den till ett konkret motbud, men inte längre en lågprocentare.",
+      "risk": "Femstartersraden saknar seger. Riverdale Z. och Global Gaiety är huvudmotbud, och marknadslyftet har minskat spelvärdet.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
         "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-21_7_5/extended"
@@ -23,8 +23,8 @@
       "leg": 2,
       "number": 7,
       "name": "Västerbo Exciting",
-      "reason": "Två segrar och två andraplatser på fem redovisade starter. Båda modellerna rankar trea och formen är stark i förhållande till 1,58 procent.",
-      "risk": "Gulddivisionen är en tydlig klassprövning. A Fair Day och Boscha Diablo har starkare klass- och marknadsstöd, och spår 7 kräver rätt lopp.",
+      "reason": "Två segrar och två andraplatser på fem redovisade starter. Historikmodellen rankar trea trots endast 1,19 procent av strecken.",
+      "risk": "Gulddivisionen är en stor klassprövning, spår 7 kräver klaff och den utökade modellen rankar sexa. A Fair Day och Boscha Diablo är tydliga huvudhästar.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
         "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-21_7_6/extended"
@@ -35,8 +35,8 @@
       "leg": 3,
       "number": 8,
       "name": "Indian Summer",
-      "reason": "Resultatraden 2–2–1–0–3 ger fyra topp-tre-placeringar på fem starter. Historikmodellen rankar trea och hästen står på grunddistansen 2140 meter.",
-      "risk": "Voltstart och spår 8 kan ge positionsproblem. Isaia Degato är klar marknadsfavorit; den utökade modellen rankar Indian Summer åtta.",
+      "reason": "Resultatraden 2–2–1–0–3 ger fyra topp-tre-placeringar. Historikmodellen rankar trea vid 3,17 procent och hästen står på grunddistansen 2140 meter.",
+      "risk": "Voltstart och spår 8 kan ge positionsproblem. Isaia Degato har starkast samlat stöd; den utökade modellen rankar Indian Summer femma.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
         "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-21_7_7/extended"
@@ -45,10 +45,10 @@
     {
       "type": "outsider",
       "leg": 4,
-      "number": 6,
-      "name": "Auguste",
-      "reason": "Resultatraden 2–2–1 och historikmodellens tredjeplats ger ett konkret motbud i tvååringsfinalen. Hästen har redovisad amerikansk vagn och 10,41 procent av strecken.",
-      "risk": "Litet erfarenhetsunderlag. Rocksteady Artist har fem raka segrar, Martha Minow tre, och den utökade modellen rankar Auguste femma.",
+      "number": 4,
+      "name": "Qule Sting",
+      "reason": "Qule Sting har resultatraden 2–2–1 och är den utökade modellens tvåa till 4,45 procent. Det gör hästen till lördagens lågprocentmotbud bakom den stora favoriten.",
+      "risk": "Tvååringsfinal och bara tre redovisade starter innebär stort stickprovfel. Rocksteady Artist har fem raka segrar; Martha Minow och Auguste har mer marknadsstöd.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
         "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-21_7_8/extended"
@@ -59,8 +59,8 @@
       "leg": 5,
       "number": 4,
       "name": "Limoncello Boko",
-      "reason": "Seger senast, spår 4 över 1640 meter och rapporterad ändring till amerikansk vagn. Fredagens utökade modell rankar hästen etta efter att marknads- och oddsbilden blivit fylligare.",
-      "risk": "Streckandelen har stigit till 12,34 procent. Historikrank 5 och en ojämn resultatrad gör att De Chambeau, Ideal Stone och Black Fire fortsatt måste respekteras; utrustningsanmälan garanterar ingen effekt.",
+      "reason": "Seger senast, spår 4 över 1640 meter och den utökade modellens förstaplats. Hästen har stigit till 17,06 procent och är nu främst en utmanare, inte en ren skräll.",
+      "risk": "Historikrank 5 och den kraftiga procentuppgången minskar marginalen. Ideal Stone, De Chambeau och Black Fire är reella motbud; utrustningsanmälan garanterar ingen effekt.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
         "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-21_7_9/extended"
@@ -71,8 +71,8 @@
       "leg": 6,
       "number": 9,
       "name": "Frank Caviar",
-      "reason": "Fem senaste 1–2–4–2–2 och fyra topp-två-resultat. Travias daterade omgångsanalys pekar fortfarande ut hästen som skräll vid 2,30 procent.",
-      "risk": "Fredagens båda modeller rankar bara 10/10 när oddsbilden fyllts på. Bakspår 9 över 2640 meter gör detta till en tydligt redaktionell avvikelse; Global Giant, Corsa's Titan och Wingait Stefan är konkreta motbud.",
+      "reason": "Fem senaste 1–2–4–2–2 och fyra topp-två-resultat. Travias daterade offentliga omgångsanalys pekar ut hästen som skräll vid 1,90 procent.",
+      "risk": "Båda modellerna rankar bara 10/8. Bakspår 9 över 2640 meter gör detta till en redaktionell avvikelse; Corsa's Titan, Wingait Stefan, Global Giant och Elroy Face är konkreta motbud.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
         "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-21_7_10/extended"
@@ -83,8 +83,8 @@
       "leg": 7,
       "number": 4,
       "name": "Wannabe Zaz",
-      "reason": "Två segrar och en andraplats på fem starter. Historikmodellen rankar etta; spår 4 och anmäld amerikansk vagn är bättre utgångspunkter än flera lågprocentare.",
-      "risk": "Gurion Font och Kung Fu Dot Com har fyra segrar på de fem redovisade starterna. Den utökade modellen rankar Wannabe Zaz sexa.",
+      "reason": "Två segrar och en andraplats på fem starter. Historikmodellen rankar etta och den utökade modellen trea till 9,95 procent.",
+      "risk": "Gurion Font och Kung Fu Dot Com har fyra segrar vardera i femstartersraden och betydligt större marknadsstöd.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
         "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-21_7_11/extended"
@@ -95,8 +95,8 @@
       "leg": 8,
       "number": 9,
       "name": "Fly Express",
-      "reason": "Den utökade modellen rankar hästen trea medan streckandelen är 3,73 procent. Vinnarodds 6,74 och en seger i femstartersraden gör den mer modellnära än torsdagens extrema långskott.",
-      "risk": "Bakspår 9, historikrank 8 och en ojämn resultatrad. Modric Renka, Simon Palema och Global Futurity är tydliga huvudmotbud; L'Amiral S.J.S. kvarstår endast på bevakningslistan.",
+      "reason": "Den utökade modellen rankar hästen trea medan streckandelen är 4,24 procent. Vinnarodds 8,45 och en seger i femstartersraden ger ett tydligt modellargument.",
+      "risk": "Bakspår 9, historikrank 8 och ojämn form. Modric Renka, Simon Palema och Global Futurity är tydliga huvudmotbud.",
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
         "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-21_7_12/extended"
@@ -108,8 +108,8 @@
       "leg": 2,
       "number": 2,
       "name": "A Fair Day",
-      "reason": "Tre segrar på fem starter, rank 1 i båda modellerna och 75,33 procent av strecken. Spår 2 över 2140 meter gör hästen till den tydligaste spikkandidaten.",
-      "risk": "Sexa senast och mycket hårt streckad. Boscha Diablo är ett reellt klass- och formmotbud; marknadsandel och modellrank är inte egen vinstchans över 50 procent.",
+      "reason": "Tre segrar på fem starter, rank 1 i båda modellerna och 77,56 procent av strecken. Spår 2 över 2140 meter gör A Fair Day till den tydligaste spikkandidaten.",
+      "risk": "Sexa senast och extremt hårt streckad. Boscha Diablo är ett reellt klass- och formmotbud; streck och modellrank är inte egen vinstchans över 50 procent.",
       "challengers": [
         "Boscha Diablo",
         "Västerbo Exciting"
@@ -123,12 +123,12 @@
       "leg": 4,
       "number": 3,
       "name": "Rocksteady Artist",
-      "reason": "Fem raka segrar, rank 1 i båda modellerna och uttryckligt spikbud hos både Tipper Trav och Travias daterade analys.",
-      "risk": "Tvååringsfinal med litet stickprov och 66,10 procent av strecken. Martha Minow, Auguste och Sphinx Boko är aktiva motbud; ingen egen kalibrerad chans över 50 procent påstås.",
+      "reason": "Fem raka segrar, rank 1 i båda modellerna och uttryckligt spikbud i Tipper Travs och Travias offentliga lördagsmaterial.",
+      "risk": "Tvååringsfinal med litet stickprov och 68,44 procent av strecken. Qule Sting, Martha Minow och Auguste är aktiva motbud; ingen kalibrerad chans över 50 procent påstås.",
       "challengers": [
+        "Qule Sting",
         "Martha Minow",
-        "Auguste",
-        "Sphinx Boko"
+        "Auguste"
       ],
       "sources": [
         "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
@@ -139,8 +139,8 @@
       "leg": 7,
       "number": 2,
       "name": "Gurion Font",
-      "reason": "Fyra segrar i femstartersraden, rank 1 i den utökade modellen och 57,34 procent av strecken från spår 2.",
-      "risk": "Historikmodellen rankar tvåa. Kung Fu Dot Com har samma starka segerrad och Wannabe Zaz är historikmodellens etta; ingen egen kalibrerad chans över 50 procent påstås.",
+      "reason": "Fyra segrar i femstartersraden, rank 1 i den utökade modellen och 56,55 procent av strecken från spår 2.",
+      "risk": "Historikmodellen rankar tvåa. Kung Fu Dot Com har samma starka segerrad och Wannabe Zaz är historikmodellens etta; ingen kalibrerad chans över 50 procent påstås.",
       "challengers": [
         "Kung Fu Dot Com",
         "Wannabe Zaz"
@@ -152,5 +152,5 @@
     }
   ],
   "spikeReview": "Tre spikkandidater redovisas med motbud. De är inte formella spikar med egen kalibrerad vinstchans över 50 procent.",
-  "limitations": "Fredagsunderlag före spelstopp. Streck, odds, strykningar och utrustningsanmälningar kan ändras. Modellpoäng är inte kalibrerade chanser. Den utökade modellen använder marknads-/oddsfält tränade på historisk slutmarknad och är experimentell."
+  "limitations": "Primär lördagsobservation före verifierat spelstopp. Streck, odds, strykningar och utrustningsanmälningar kan ändras efter källtiden. Modellpoäng är inte kalibrerade vinstchanser. Den utökade modellen använder marknads-/oddsfält tränade på historisk slutmarknad och är experimentell."
 }

@@ -1,0 +1,183 @@
+{
+  "capturedAt": "2026-11-21T12:03:27.410234+01:00",
+  "sourceAt": "2026-11-21T12:00:45+01:00",
+  "snapshotId": "f130c072ab6464e0038f2f2b77a5d9db9ecf67230f1feaacdd1831ad8e6fd33d",
+  "races": [
+    {
+      "leg": 1,
+      "raceId": "2026-11-21_7_5",
+      "top3": [
+        {
+          "number": 7,
+          "name": "Riverdale Z.",
+          "pct": 34.12
+        },
+        {
+          "number": 2,
+          "name": "Global Gaiety",
+          "pct": 23.81
+        },
+        {
+          "number": 4,
+          "name": "Drag Racing",
+          "pct": 16.48
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 2,
+      "raceId": "2026-11-21_7_6",
+      "top3": [
+        {
+          "number": 2,
+          "name": "A Fair Day",
+          "pct": 77.56
+        },
+        {
+          "number": 5,
+          "name": "Boscha Diablo",
+          "pct": 15.81
+        },
+        {
+          "number": 8,
+          "name": "Karat River",
+          "pct": 1.79
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 3,
+      "raceId": "2026-11-21_7_7",
+      "top3": [
+        {
+          "number": 7,
+          "name": "Isaia Degato",
+          "pct": 30.66
+        },
+        {
+          "number": 3,
+          "name": "Scandalous Zon",
+          "pct": 16.68
+        },
+        {
+          "number": 10,
+          "name": "Mamadou Pellini",
+          "pct": 16.31
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 4,
+      "raceId": "2026-11-21_7_8",
+      "top3": [
+        {
+          "number": 3,
+          "name": "Rocksteady Artist",
+          "pct": 68.44
+        },
+        {
+          "number": 6,
+          "name": "Auguste",
+          "pct": 11.62
+        },
+        {
+          "number": 2,
+          "name": "Martha Minow",
+          "pct": 9.5
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 5,
+      "raceId": "2026-11-21_7_9",
+      "top3": [
+        {
+          "number": 5,
+          "name": "Ideal Stone",
+          "pct": 24.09
+        },
+        {
+          "number": 1,
+          "name": "De Chambeau",
+          "pct": 23.54
+        },
+        {
+          "number": 4,
+          "name": "Limoncello Boko",
+          "pct": 17.06
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 6,
+      "raceId": "2026-11-21_7_10",
+      "top3": [
+        {
+          "number": 6,
+          "name": "Corsa's Titan",
+          "pct": 33.02
+        },
+        {
+          "number": 8,
+          "name": "Wingait Stefan",
+          "pct": 20.2
+        },
+        {
+          "number": 13,
+          "name": "Global Giant",
+          "pct": 16.63
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 7,
+      "raceId": "2026-11-21_7_11",
+      "top3": [
+        {
+          "number": 2,
+          "name": "Gurion Font",
+          "pct": 56.55
+        },
+        {
+          "number": 1,
+          "name": "Kung Fu Dot Com",
+          "pct": 20.69
+        },
+        {
+          "number": 4,
+          "name": "Wannabe Zaz",
+          "pct": 9.95
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 8,
+      "raceId": "2026-11-21_7_12",
+      "top3": [
+        {
+          "number": 6,
+          "name": "Modric Renka",
+          "pct": 45.83
+        },
+        {
+          "number": 2,
+          "name": "Simon Palema",
+          "pct": 23.77
+        },
+        {
+          "number": 4,
+          "name": "Global Futurity",
+          "pct": 11.84
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    }
+  ]
+}

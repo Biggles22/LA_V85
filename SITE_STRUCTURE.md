@@ -2,7 +2,7 @@
 
 ## Aktuell omgång
 
-`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Aktuell arbetsyta är Jägersro 21 november 2026. Åtta lopp, 100 anmälda hästar och 93 aktiva är identitetskontrollerade mot ATG. Form och båda befintliga modellvarianter är omräknade mot samma fredags-snapshot. Uppdaterad analys med åtta utmanare/garderingsbud och tre spikkandidater finns under `uppdateringar/2026-11-20/`; torsdagens och tisdagens observationer är bevarade. Träningen använder befintliga 12 247 starter i 1 047 lopp till och med 31 oktober; inga efterhandsvikter har införts. Eskilstunas startsida bevaras i `archive/2026-11-14-eskilstuna/forhand.html` med egna sidfiler och egen omgångskonfiguration. Den är arkiverad efter omgången; de ursprungliga förhandsfrysningarna och den fördjupade efteranalysen bevaras separat.
+`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Aktuell arbetsyta är Jägersro 21 november 2026. Åtta lopp, 100 anmälda hästar och 92 aktiva är identitetskontrollerade mot ATG. Form och båda befintliga modellvarianter är omräknade mot samma primära lördagssnapshot. Slutlig analys med åtta utmanare/garderingsbud och tre spikkandidater finns under `uppdateringar/2026-11-21/`; fredagens, torsdagens och tisdagens observationer är bevarade. Träningen använder befintliga 12 247 starter i 1 047 lopp till och med 31 oktober; inga efterhandsvikter har införts. Eskilstunas startsida bevaras i `archive/2026-11-14-eskilstuna/forhand.html` med egna sidfiler och egen omgångskonfiguration. Den är arkiverad efter omgången; de ursprungliga förhandsfrysningarna och den fördjupade efteranalysen bevaras separat.
 
 Huvudmenyn har tre delar: **Lördagens V85**, **Historik**, **Metod & resultat**. Startsidan har ankarlänkar till **Skrällförslag**, **Spikförslag**, **Lopp för lopp** och **Mitt urval**. En avdelning visas åt gången med sökning, sortering och hästkort i mobilvy.
 
@@ -117,3 +117,6 @@ Efter `python3 scripts/update_current_round.py`, kör `python3 scripts/update_cu
 ## Våra inlämnade resultat
 
 `resultat/` samlar användarens sex V85-kuponger från oktober–november 2026. `data.json` bevarar alla streck, reserver, inlämningstider, ATG-källor, SHA-256 för källsvaren, vinnare och utdelningsberäkningar. HTML är förgenererad och läsbar utan JavaScript. Filtret påverkar bara omgångslistan; totalsiffrorna avser alla sex. Beräknad utdelning är inte verifierad kontoutbetalning. Alla sex kuponger har 50 % insats och inga valda strykningar. Jägersros döda lopp har flera godkända vinnare per avdelning; en rad räknas endast en gång. Nya kuponger kräver ny avläsning, kontroll av strykningar/reserver och ny beräkning. Startsidan och huvudmenyn länkar till resultatöversikten.
+
+- `uppdateringar/2026-11-21/` — primär lördagsuppdatering före spelstopp för Jägersro 21 november.
+- `research/comparison/2026-11-21/prestart-index.json` — pekar ut den gemensamma primära lördagsfrysningen `20261121T110417Z`.

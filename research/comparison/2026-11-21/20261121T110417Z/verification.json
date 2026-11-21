@@ -1,0 +1,39 @@
+{
+  "verifiedAt": "2026-11-21T11:07:00+00:00",
+  "captureWindow": {
+    "startedAt": "2026-11-21T11:01:33.859089+00:00",
+    "finishedAt": "2026-11-21T11:06:20.242635+00:00"
+  },
+  "round": {
+    "date": "2026-11-21",
+    "track": "Jägersro",
+    "gameId": "V85_2026-11-21_7_5",
+    "raceIds": [
+      "2026-11-21_7_5",
+      "2026-11-21_7_6",
+      "2026-11-21_7_7",
+      "2026-11-21_7_8",
+      "2026-11-21_7_9",
+      "2026-11-21_7_10",
+      "2026-11-21_7_11",
+      "2026-11-21_7_12"
+    ],
+    "startTime": "2026-11-21T15:00:00+01:00",
+    "sourceAt": "2026-11-21T12:00:45+01:00",
+    "snapshotId": "f130c072ab6464e0038f2f2b77a5d9db9ecf67230f1feaacdd1831ad8e6fd33d"
+  },
+  "counts": {
+    "legs": 8,
+    "listed": 100,
+    "active": 92,
+    "scratched": 8
+  },
+  "checks": [
+    "ATG calendar/game identity verified by versioned importer.",
+    "All race IDs, start numbers and horse names cross-checked by form/model scripts.",
+    "Both model variants used the same cached ATG responses.",
+    "Observation is before verified betting deadline.",
+    "No previous freeze overwritten."
+  ],
+  "batchRole": "Primary Saturday prestart observation selected by prestart-index.json."
+}
