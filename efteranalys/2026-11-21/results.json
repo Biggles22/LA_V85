@@ -180,22 +180,22 @@
       ]
     }
   ],
-  "turnoverSEK": 76849054.0,
+  "turnoverSEK": 76849054,
   "payouts": {
     "5": {
-      "amountSEK": 7.0,
+      "amountSEK": 7,
       "systems": 2421858
     },
     "6": {
-      "amountSEK": 32.0,
+      "amountSEK": 32,
       "systems": 234119
     },
     "7": {
-      "amountSEK": 1063.0,
+      "amountSEK": 1063,
       "systems": 9389
     },
     "8": {
-      "amountSEK": 142962.0,
+      "amountSEK": 142962,
       "systems": 104
     }
   },
@@ -1476,12 +1476,17 @@
     "note": "Roller och bedömningsgrund hålls isär. Antal kandidater redovisas med träffarna."
   },
   "betReceipt": {
-    "status": "missing",
-    "note": "Ingen uttryckligen bekräftad Jägersro-bong för 21 november finns i repot. Ingen ekonomisk rättning eller ROI beräknas."
+    "status": "verified",
+    "note": "Kupongen fick 4 av 8 rätt. Insatsen var 900 kr och utdelningen blev 0 kr.",
+    "receiptCheckedAt": "2026-11-22",
+    "dataPath": "resultat/data.json",
+    "hits": 4,
+    "costSEK": 900,
+    "prizeSEK": 0,
+    "netSEK": -900
   },
   "limitations": [
     "Modellpoäng är inte kalibrerade vinstchanser.",
-    "Den utökade modellen använder marknadsfält och är inte en oberoende expertkälla.",
-    "Ekonomisk jämförelse saknas eftersom ingen fryst komplett och bekräftad bong finns för omgången."
+    "Den utökade modellen använder marknadsfält och är inte en oberoende expertkälla."
   ]
 }

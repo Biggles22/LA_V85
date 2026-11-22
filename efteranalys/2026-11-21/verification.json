@@ -35,5 +35,6 @@
     "ownOutsiderCandidates": 8,
     "ownSpikeCandidates": 3
   },
-  "receiptStatus": "missing"
+  "receiptStatus": "verified",
+  "receiptCheckedAt": "2026-11-22"
 }

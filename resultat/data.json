@@ -1,9 +1,293 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-14",
-  "systemSource": "Sju inlämningskvitton uppladdade av användaren: fem oktoberkuponger, Bergsåker 7 november och Eskilstuna 14 november 2026. Samtliga spelade med 50 % insats.",
+  "checkedAt": "2026-11-22",
+  "systemSource": "Åtta inlämningskvitton från 3 oktober till 21 november 2026. Samtliga spelade med 50 % insats.",
   "settlementNote": "Beräknad utdelning från kupongens rader och ATG:s slutliga utdelningar, utan Boost. Inte bekräftad kontoutbetalning. Inga valda hästar var strukna. Döda lopp behandlas som flera godkända vinnare i samma avdelning.",
   "rounds": [
+    {
+      "date": "2026-11-21",
+      "track": "Jägersro",
+      "submittedAt": "2026-11-21 13:14",
+      "costSEK": 900,
+      "stakeFraction": 0.5,
+      "rows": 3600,
+      "legs": [
+        {
+          "leg": 1,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Global Gaiety"
+            },
+            {
+              "number": 4,
+              "name": "Drag Racing"
+            },
+            {
+              "number": 7,
+              "name": "Riverdale Z."
+            }
+          ],
+          "reserves": [
+            9,
+            10
+          ],
+          "winners": [
+            {
+              "number": 7,
+              "name": "Riverdale Z."
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 2,
+          "selected": [
+            {
+              "number": 2,
+              "name": "A Fair Day"
+            }
+          ],
+          "reserves": [
+            5,
+            1
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Boscha Diablo"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 3,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Scandalous Zon"
+            },
+            {
+              "number": 7,
+              "name": "Isaia Degato"
+            },
+            {
+              "number": 8,
+              "name": "Indian Summer"
+            },
+            {
+              "number": 10,
+              "name": "Mamadou Pellini"
+            },
+            {
+              "number": 15,
+              "name": "Sparkling Power"
+            }
+          ],
+          "reserves": [
+            11,
+            5
+          ],
+          "winners": [
+            {
+              "number": 12,
+              "name": "Turfmans Nancy"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 4,
+          "selected": [
+            {
+              "number": 3,
+              "name": "Rocksteady Artist"
+            }
+          ],
+          "reserves": [
+            6,
+            2
+          ],
+          "winners": [
+            {
+              "number": 3,
+              "name": "Rocksteady Artist"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 5,
+          "selected": [
+            {
+              "number": 1,
+              "name": "De Chambeau"
+            },
+            {
+              "number": 2,
+              "name": "Parish Crooks V.S."
+            },
+            {
+              "number": 4,
+              "name": "Limoncello Boko"
+            },
+            {
+              "number": 7,
+              "name": "Black Fire"
+            },
+            {
+              "number": 12,
+              "name": "Godfather"
+            }
+          ],
+          "reserves": [
+            5,
+            9
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Ideal Stone"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 6,
+          "selected": [
+            {
+              "number": 6,
+              "name": "Corsa's Titan"
+            },
+            {
+              "number": 8,
+              "name": "Wingait Stefan"
+            },
+            {
+              "number": 9,
+              "name": "Frank Caviar"
+            },
+            {
+              "number": 15,
+              "name": "Levi Wynn"
+            }
+          ],
+          "reserves": [
+            7,
+            13
+          ],
+          "winners": [
+            {
+              "number": 8,
+              "name": "Wingait Stefan"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 7,
+          "selected": [
+            {
+              "number": 1,
+              "name": "Kung Fu Dot Com"
+            },
+            {
+              "number": 2,
+              "name": "Gurion Font"
+            },
+            {
+              "number": 4,
+              "name": "Wannabe Zaz"
+            }
+          ],
+          "reserves": [
+            9,
+            10
+          ],
+          "winners": [
+            {
+              "number": 2,
+              "name": "Gurion Font"
+            }
+          ],
+          "hit": true,
+          "scratchedSelected": []
+        },
+        {
+          "leg": 8,
+          "selected": [
+            {
+              "number": 2,
+              "name": "Simon Palema"
+            },
+            {
+              "number": 4,
+              "name": "Global Futurity"
+            },
+            {
+              "number": 6,
+              "name": "Modric Renka"
+            },
+            {
+              "number": 9,
+              "name": "Fly Express"
+            }
+          ],
+          "reserves": [
+            1,
+            5
+          ],
+          "winners": [
+            {
+              "number": 5,
+              "name": "Ugalli"
+            }
+          ],
+          "hit": false,
+          "scratchedSelected": []
+        }
+      ],
+      "payouts": {
+        "5": {
+          "amountSEK": 7,
+          "jackpot": false
+        },
+        "6": {
+          "amountSEK": 32,
+          "jackpot": false
+        },
+        "7": {
+          "amountSEK": 1063,
+          "jackpot": false
+        },
+        "8": {
+          "amountSEK": 142962,
+          "jackpot": false
+        }
+      },
+      "hits": 4,
+      "winningRows": {
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "prizeSEK": 0,
+      "netSEK": -900,
+      "reviewUrl": "../efteranalys/2026-11-21/",
+      "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V85_2026-11-21_7_5",
+      "sourceSha256": "5ea93532cdc3bde20db28d58ad2f00dc7ea7f918aa47cc42b3cb9e1dcfaebf78",
+      "sourceTimestamp": "2026-11-21 18:03:30",
+      "sourceEvidencePath": "efteranalys/2026-11-21/official-game.json.gz",
+      "resultUrl": "https://www.atg.se/spel/2026-11-21/V85/jagersro/resultat",
+      "receiptSource": "Användarens inlämningskvitto för Jägersro 21 november 2026."
+    },
     {
       "date": "2026-11-14",
       "track": "Eskilstuna",
@@ -255,19 +539,19 @@
       ],
       "payouts": {
         "5": {
-          "amountSEK": 8.0,
+          "amountSEK": 8,
           "jackpot": false
         },
         "6": {
-          "amountSEK": 31.0,
+          "amountSEK": 31,
           "jackpot": false
         },
         "7": {
-          "amountSEK": 687.0,
+          "amountSEK": 687,
           "jackpot": false
         },
         "8": {
-          "amountSEK": 105247.0,
+          "amountSEK": 105247,
           "jackpot": false
         }
       },
@@ -300,19 +584,19 @@
       "netSEK": -987.5,
       "payouts": {
         "5": {
-          "amountSEK": 0.0,
+          "amountSEK": 0,
           "jackpot": true
         },
         "6": {
-          "amountSEK": 0.0,
+          "amountSEK": 0,
           "jackpot": true
         },
         "7": {
-          "amountSEK": 25.0,
+          "amountSEK": 25,
           "jackpot": false
         },
         "8": {
-          "amountSEK": 1762.0,
+          "amountSEK": 1762,
           "jackpot": false
         }
       },
@@ -584,23 +868,23 @@
       "stakeFraction": 0.5,
       "rows": 2592,
       "hits": 8,
-      "prizeSEK": 1338.0,
-      "netSEK": 690.0,
+      "prizeSEK": 1338,
+      "netSEK": 690,
       "payouts": {
         "5": {
-          "amountSEK": 0.0,
+          "amountSEK": 0,
           "jackpot": true
         },
         "6": {
-          "amountSEK": 0.0,
+          "amountSEK": 0,
           "jackpot": true
         },
         "7": {
-          "amountSEK": 54.0,
+          "amountSEK": 54,
           "jackpot": false
         },
         "8": {
-          "amountSEK": 1866.0,
+          "amountSEK": 1866,
           "jackpot": false
         }
       },
@@ -854,23 +1138,23 @@
       "stakeFraction": 0.5,
       "rows": 1944,
       "hits": 5,
-      "prizeSEK": 108.0,
-      "netSEK": -378.0,
+      "prizeSEK": 108,
+      "netSEK": -378,
       "payouts": {
         "5": {
-          "amountSEK": 6.0,
+          "amountSEK": 6,
           "jackpot": false
         },
         "6": {
-          "amountSEK": 27.0,
+          "amountSEK": 27,
           "jackpot": false
         },
         "7": {
-          "amountSEK": 835.0,
+          "amountSEK": 835,
           "jackpot": false
         },
         "8": {
-          "amountSEK": 75808.0,
+          "amountSEK": 75808,
           "jackpot": false
         }
       },
@@ -1128,23 +1412,23 @@
       "stakeFraction": 0.5,
       "rows": 2160,
       "hits": 2,
-      "prizeSEK": 0.0,
-      "netSEK": -540.0,
+      "prizeSEK": 0,
+      "netSEK": -540,
       "payouts": {
         "5": {
-          "amountSEK": 113.0,
+          "amountSEK": 113,
           "jackpot": false
         },
         "6": {
-          "amountSEK": 945.0,
+          "amountSEK": 945,
           "jackpot": false
         },
         "7": {
-          "amountSEK": 50954.0,
+          "amountSEK": 50954,
           "jackpot": false
         },
         "8": {
-          "amountSEK": 6401695.0,
+          "amountSEK": 6401695,
           "jackpot": false
         }
       },
@@ -1402,23 +1686,23 @@
       "stakeFraction": 0.5,
       "rows": 2880,
       "hits": 5,
-      "prizeSEK": 56.0,
-      "netSEK": -664.0,
+      "prizeSEK": 56,
+      "netSEK": -664,
       "payouts": {
         "5": {
-          "amountSEK": 7.0,
+          "amountSEK": 7,
           "jackpot": false
         },
         "6": {
-          "amountSEK": 32.0,
+          "amountSEK": 32,
           "jackpot": false
         },
         "7": {
-          "amountSEK": 846.0,
+          "amountSEK": 846,
           "jackpot": false
         },
         "8": {
-          "amountSEK": 64035.0,
+          "amountSEK": 64035,
           "jackpot": false
         }
       },
@@ -1684,19 +1968,19 @@
       "netSEK": 109.5,
       "payouts": {
         "5": {
-          "amountSEK": 20.0,
+          "amountSEK": 20,
           "jackpot": false
         },
         "6": {
-          "amountSEK": 117.0,
+          "amountSEK": 117,
           "jackpot": false
         },
         "7": {
-          "amountSEK": 3472.0,
+          "amountSEK": 3472,
           "jackpot": false
         },
         "8": {
-          "amountSEK": 256598.0,
+          "amountSEK": 256598,
           "jackpot": false
         }
       },
