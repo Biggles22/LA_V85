@@ -13,5 +13,16 @@
     "Följ om namngivna spikmotbud faktiskt inkluderas i ett prissatt alternativsystem före start.",
     "Undersök rank 4–6 och form-/klassproxy för lågprocentvinnare, men behåll marknaden som separat baslinje.",
     "Frys kompletta jämförbara system och budget om ekonomiskt utfall ska jämföras."
-  ]
+  ],
+  "followUp": {
+    "decidedOn": "2026-11-22",
+    "appliesFrom": "Nästa svenska lördagsomgång efter Jägersro 2026-11-21",
+    "source": "research/comparison/2026-11-21/20261121T110417Z/manual-review.json",
+    "rules": {
+      "Spik och gardering": "Frys två kompletta jämförelsesystem före spelstopp. A spikar och B tar även med det främsta namngivna motbudet som ordinarie streck. Visa hästar i varje avdelning, rader, radpris, insatsandel, kostnad och merkostnad om övriga streck behålls. Visa även vilka streck som behöver tas bort för att B ska rymmas inom A:s budget. Registrera systemen som teoretiska. Använd angiven budget, annars senaste kupongens insats som uttryckligt räkneexempel.",
+      "Prioriterade skrällar": "Från nästa omgång testas högst tre hästar totalt och högst en per avdelning. Kräv under 10 % vid frysningen, historikrank 1–6 och placering i bästa tredjedelen för form eller klass i loppet. Beräkna fältrank som ett plus antalet strikt högre proxyvärden bland aktiva med känt värde. Kräv täckning för minst halva startfältet i den proxy som används och fältrank högst avrundat uppåt(täckta hästar/3). Sortera kvalificerade på bäst historikrank, sedan lägst streck, avdelning och startnummer. Ta första per avdelning upp till tre. Noll förslag är möjligt. Spara hela urvalet och redovisa övriga garderingsbud separat.",
+      "Kontroll efter loppet": "Rätta de frysta systemen med officiella strykningar, reserver och utdelningar. Redovisa kostnad, utdelning och netto för varje alternativ. Följ de prioriterade skrällarnas vinnare per publicerad kandidat och antal representerade lopp. Jämför marknaden vid samma frysning med båda CatBoost-varianterna på samma verifierade lopp. Visa förstaval, topp tre, antal lopp samt vilka vinnare respektive modell tillförde utanför marknadens topp tre, både för omgången och kumulativt. Följ form, klass och utgångsläge för samtliga kvalificerade kandidater för att pröva hypotesen i kommande omgångar."
+    },
+    "reviewAnchor": "index.html#uppfoljning"
+  }
 }
