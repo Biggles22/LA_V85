@@ -33,7 +33,7 @@ class Page(HTMLParser):
             self.text.append(value)
 
 
-def verify_html(body, content_type, expected):
+def verify_html(body, content_type, expected=None):
     if 'text/html' not in content_type:
         raise RuntimeError('Production URL did not return HTML')
     if 'cloudflareaccess.com' in body and ('Send login code' in body or 'Sign in' in body):
@@ -41,7 +41,7 @@ def verify_html(body, content_type, expected):
     page = Page()
     page.feed(body)
     text = ' '.join(' '.join(page.text).split())
-    if 'V75travet.se' not in text or expected not in text:
+    if 'V75travet.se' not in text or (expected is not None and expected not in text):
         raise RuntimeError('Expected publication text was not found')
     return page
 
@@ -67,14 +67,22 @@ def verify_home_link(home, path, credentials):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', required=True)
-    parser.add_argument('--expect', required=True)
+    parser.add_argument('--expect')
+    parser.add_argument('--expect-file', type=pathlib.Path)
     parser.add_argument('--browser', action='store_true')
     parser.add_argument('--output-dir', type=pathlib.Path)
     args = parser.parse_args()
+    if not (args.expect or args.expect_file):
+        parser.error('Provide --expect or --expect-file')
+    if args.browser and not args.expect:
+        parser.error('--browser requires --expect')
     site_url(args.path)
+    expected_source = args.expect_file.read_bytes() if args.expect_file else None
     credentials = load_credentials()
     body, content_type = fetch_site(args.path, credentials)
-    page = verify_html(body, content_type, args.expect)
+    verify_html(body, content_type, args.expect)
+    if expected_source is not None and body.encode('utf-8') != expected_source:
+        raise RuntimeError('Production HTML differs from the checked-out publication')
     homepage, homepage_type = fetch_site('/', credentials)
     home = verify_html(homepage, homepage_type, 'V75travet.se')
     verify_home_link(home, args.path, credentials)
@@ -88,6 +96,8 @@ def main():
         payload = {**credentials, 'url': site_url(args.path), 'expect': args.expect,
                    'outputDir': str(args.output_dir.resolve())}
         environment = os.environ.copy()
+        for key in ('V75_CF_ACCESS_CLIENT_ID', 'V75_CF_ACCESS_CLIENT_SECRET'):
+            environment.pop(key, None)
         modules = pathlib.Path.home()/'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules'
         if not environment.get('NODE_PATH') and modules.is_dir():
             environment['NODE_PATH'] = str(modules)

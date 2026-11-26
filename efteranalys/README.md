@@ -22,7 +22,15 @@ Run relevant tests, validate links/mobile layout, commit only report-related wor
 
 ## Private production verification (Cloudflare Access)
 
-Keep the existing human login policy. Authorize only the dedicated `V75travet slutkontroll` service token with a **Service Auth** policy attached only to the `v75travet.se` Access application. Do not use Bypass, Everyone, Any service token, or grant Cloudflare administrative API permissions. A service token allows access to the application; the verifier itself uses only GET/HEAD.
+Keep the existing human login policy. Use a named Cloudflare service token with a **Service Auth** policy on the `v75travet.se` Access application only. Select the specific service token. Do not use Bypass, Everyone, Any service token, or grant Cloudflare administrative API permissions.
+
+### GitHub Actions
+
+Create a separate service token named `V75travet slutkontroll moln` if the Windows token is already in use. In the repository's **Settings → Environments**, use the `v75travet-production` environment and restrict its deployment branches to `main`. Save the token's Client ID and Client Secret as environment secrets `V75_CF_ACCESS_CLIENT_ID` and `V75_CF_ACCESS_CLIENT_SECRET`. Enter the values directly in GitHub Settings.
+
+After a dated report is published to `main`, check **Verify V75travet production** in GitHub Actions for the same commit, in addition to the separate Pages build and deploy result. The verifier checks the report HTML against the commit and follows the report's link from the homepage or after-analysis archive. It retries while Pages is publishing. The workflow can also be started manually on `main` with a report path such as `/uppdateringar/2026-11-26/`. A failed or missing run means the protected live content is unverified.
+
+### Local Windows verification
 
 Run `scripts/configure_cloudflare_access.py` on the owning Windows machine to obtain a one-use loopback form. Enter Client ID and Client Secret into that form, never into chat, command-line arguments, repository files, scheduled prompts or logs. The helper stores an encrypted DPAPI blob at `%LOCALAPPDATA%/V75travet/Cloudflare/access-token.bin` and stops after a successful save. This is tied to the Windows user and machine, not portable cloud credentials. Creation/authorization in Cloudflare must be completed before this verification can pass.
 

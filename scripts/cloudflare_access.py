@@ -1,4 +1,4 @@
-"""Local, Windows-user encrypted Access credentials; never shipped to the site."""
+"""Access credentials from a secret environment or the local Windows vault."""
 from __future__ import annotations
 import ctypes
 from ctypes import wintypes
@@ -11,6 +11,8 @@ import urllib.parse
 import urllib.request
 
 ORIGIN = 'https://v75travet.se'
+CLIENT_ID_ENV = 'V75_CF_ACCESS_CLIENT_ID'
+CLIENT_SECRET_ENV = 'V75_CF_ACCESS_CLIENT_SECRET'
 
 
 def credential_path():
@@ -65,6 +67,14 @@ def save_credentials(client_id, client_secret):
 
 
 def load_credentials():
+    client_id = os.environ.get(CLIENT_ID_ENV)
+    client_secret = os.environ.get(CLIENT_SECRET_ENV)
+    if client_id is not None or client_secret is not None:
+        if not client_id or not client_secret:
+            raise RuntimeError('Both V75travet Cloudflare Access secrets must be configured')
+        return validate_credentials({'clientId': client_id, 'clientSecret': client_secret})
+    if os.name != 'nt' or not os.environ.get('LOCALAPPDATA'):
+        raise RuntimeError('No Cloudflare Access credentials configured for this runtime')
     path = credential_path()
     if not path.exists():
         raise RuntimeError('Cloudflare Access credentials have not been configured locally')
