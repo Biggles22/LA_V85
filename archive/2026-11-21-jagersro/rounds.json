@@ -1,0 +1,18 @@
+{
+  "current": "2026-11-21-jagersro",
+  "rounds": [
+    {
+      "id": "2026-11-21-jagersro",
+      "date": "2026-11-21",
+      "track": "Jägersro",
+      "gameType": "V85",
+      "legs": 8,
+      "status": "completed",
+      "data": "rounds/2026-11-21-jagersro/data.json",
+      "analysis": "rounds/2026-11-21-jagersro/analysis.json",
+      "sourceUrl": "https://www.atg.se/spel/2026-11-21/V85/jagersro",
+      "overview": "uppdateringar/2026-11-21/",
+      "review": "efteranalys/2026-11-21/"
+    }
+  ]
+}

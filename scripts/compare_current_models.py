@@ -1,5 +1,5 @@
 """Exploratory comparison. Historical final markets are NOT prestart validation."""
-import sys, pathlib, json, gzip, datetime as dt, math, hashlib, urllib.request
+import sys, pathlib, json, gzip, datetime as dt, math, hashlib, urllib.request, urllib.error, time
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 ROOT=pathlib.Path(__file__).resolve().parents[1]
@@ -17,7 +17,13 @@ OUT=ROOT/'research/comparison'/ROUND['date']/NOW.strftime('%Y%m%dT%H%M%SZ')
 WORK=OUT/'raw'; WORK.mkdir(parents=True,exist_ok=False)
 BASE='https://www.atg.se/services/racinginfo/v1/api'
 def fetch(path):
-    with urllib.request.urlopen(urllib.request.Request(BASE+path,headers={'User-Agent':'LA_V85/research-comparison','Accept':'application/json'}),timeout=40) as r:return json.load(r)
+    request=urllib.request.Request(BASE+path,headers={'User-Agent':'LA_V85/research-comparison','Accept':'application/json'})
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request,timeout=40) as r:return json.load(r)
+        except urllib.error.HTTPError as error:
+            if error.code != 503 or attempt == 2:raise
+            time.sleep(2*(attempt+1))
 def equipment(h):
     horse=h.get('horse',{}); shoes=horse.get('shoes',{}); sulky=horse.get('sulky',{})
     def flag(v):return float(v) if type(v) is bool else None
@@ -67,43 +73,47 @@ def main():
     print('HOLDOUT',json.dumps(metrics),flush=True)
     cfg=json.loads((ROOT/'rounds.json').read_text(encoding='utf8')); info=next(r for r in cfg['rounds'] if r['id']==cfg['current'])
     saved=json.loads((ROOT/info['data']).read_text(encoding='utf8')); game=fetch('/games/'+saved['gameId'])
-    assert game['id']==saved['gameId'] and len(game['races'])==8
+    game_type=saved.get('gameType','V85')
+    assert game['id']==saved['gameId'] and len(game['races'])==saved.get('legs', len(saved['races']))
     assert NOW < dt.datetime.fromisoformat(saved['startTime']) and all(r.get('status')!='results' for r in game['races'])
-    # The market can change during fitting. Identify the actual captured game,
-    # rather than assigning the older input snapshot ID to newer odds/shares.
+    # Keep both model variants on the exact saved market snapshot. The fresh
+    # game/extended responses are identity and equipment evidence only.
     captured_at = dt.datetime.now(dt.timezone.utc)
-    captured = normalize(game, info, captured_at.astimezone(TZ))
-    (OUT/'data.json').write_text(json.dumps(captured,ensure_ascii=False,indent=2),encoding='utf8')
+    (OUT/'data.json').write_text(json.dumps(saved,ensure_ascii=False,indent=2),encoding='utf8')
     stamp=NOW.strftime('%Y%m%dT%H%M%SZ');(WORK/(stamp+'_game.json')).write_text(json.dumps(game,ensure_ascii=False),encoding='utf8')
     extended=list(ThreadPoolExecutor(max_workers=3).map(lambda r:fetch('/races/'+r['id']+'/extended'),game['races']))
     current=[]; pool_info=[]
     for leg,(race,ext) in enumerate(zip(game['races'],extended),1):
         assert race['id']==ext['id']; (WORK/(stamp+'_'+race['id']+'.json')).write_text(json.dumps(ext,ensure_ascii=False),encoding='utf8')
         active=[h for h in race['starts'] if not h.get('scratched')]; exth={h['number']:h for h in ext['starts'] if not h.get('scratched')};assert set(exth)=={h['number'] for h in active}
-        pool_info.append({'leg':leg,'pools':race.get('pools',{}),'name':race.get('name'),'distance':race.get('distance'),'startMethod':race.get('startMethod')})
+        saved_race=next(r for r in saved['races'] if r['leg']==leg and r['raceId']==race['id'])
+        saved_horses={h['number']:h for h in saved_race['starts'] if not h['scratched']}
+        assert set(saved_horses)=={h['number'] for h in active}
+        pool_info.append({'leg':leg,'raceId':saved_race['raceId'],'distance':saved_race.get('distance'),'startMethod':saved_race.get('startMethod'),'active':len(saved_horses)})
         for h in active:
-            o=(h.get('pools',{}).get('vinnare') or {}).get('odds'); p=(h.get('pools',{}).get('V85') or {}).get('betDistribution')
-            horse=h['horse']; eh=exth[h['number']]
+            saved_horse=saved_horses[h['number']]; o=saved_horse.get('odds'); p=saved_horse.get('pct')
+            horse=h['horse']; eh=exth[h['number']]; assert horse['name']==saved_horse['name']
             current.append({'raceId':race['id'],'leg':leg,'number':h['number'],'name':horse['name'],
               'prestartFeatures':features_from_history(eh,ext,dt.date.fromisoformat(saved['date']),len(active)),
-              'odds':o/100 if isinstance(o,(int,float)) and 0<o<9999 else None,'oddsCapped':o==9999,
-              'marketPct':p/100 if isinstance(p,(int,float)) else None,'equipment':equipment(h),'post':h.get('postPosition'),
+              'odds':o if isinstance(o,(int,float)) and o>0 else None,'oddsCapped':saved_horse.get('oddsCapped') is True,
+              'marketPct':p if isinstance(p,(int,float)) else None,'equipment':equipment(h),'post':h.get('postPosition'),
               'driver':h.get('driver',{}),'trainer':horse.get('trainer',{}),'history':horse.get('results',{}).get('records',[]) or eh.get('horse',{}).get('results',{}).get('records',[])})
     full=doc['rows']; base=estimator();base.fit(matrix(full),[r['winner'] for r in full])
     exp=estimator();exp.fit(augmented(rows),[r['winner'] for r in rows])
     for key,model,fn in [('historyScore',base,matrix),('expandedScore',exp,augmented),('expandedWithoutOddsScore',exp,lambda rs:augmented(rs,True))]:
         for r,p in zip(current,model.predict_proba(fn(current))[:,1]):r[key]=float(p)
     races=[]
-    for leg in range(1,9):
+    for leg in range(1, saved.get('legs', len(saved['races'])) + 1):
         rs=[r for r in current if r['leg']==leg];rankings={}
         for key in ['historyScore','expandedScore','expandedWithoutOddsScore']:
             ordered=sorted(rs,key=lambda r:(-r[key],r['number']));rankings[key]=[r['number'] for r in ordered[:3]]
             for rank,r in enumerate(ordered,1):r[key+'Rank']=rank
         races.append({'leg':leg,'top3':rankings,'horses':rs})
-    report={'kind':'EXPERIMENTAL_FINAL_MARKET_TRAINED_COMPARISON_NOT_PRESTART_VALIDATION','roundId':saved['roundId'],'gameId':saved['gameId'],'inputSnapshotId':saved['snapshotId'],'snapshotId':captured['snapshotId'],'runStartedAt':NOW.isoformat(),'observedAt':captured_at.isoformat(),
-      'sourceAt':game.get('pools',{}).get('V85',{}).get('timestamp'),'sourceUrl':BASE+'/games/'+game['id'],
+    report={'kind':'EXPERIMENTAL_EXPANDED_PRESTART_COMPARISON_NOT_VALIDATION','roundId':saved['roundId'],'gameId':saved['gameId'],'inputSnapshotId':saved['snapshotId'],'snapshotId':saved['snapshotId'],'runStartedAt':NOW.isoformat(),'observedAt':captured_at.isoformat(),
+      'sourceAt':saved['sourceAt'],'sourceUrl':BASE+'/games/'+game['id'],
       'limitations':['Expanded model is trained on final market odds/shares and recorded equipment; historical timing of equipment is not independently verified.',
       'Current prestart markets are incomplete and do not match historical final markets. No calibration or >50% win-probability claims.',
+      'Historical holdout metrics are V85-only; applying the ranking to a V75 card is prospective and not separately validated for this game type.',
       'Masking odds is a sensitivity check of the SAME model, not a separately trained third model. No automatic publishing or model replacement.'],
       'training':{'historicalSource':'research/historical_expanded_2024_2026.json','historicalSourceSha256':hashlib.sha256((ROOT/'research/historical_expanded_2024_2026.json').read_bytes()).hexdigest(),'historyStarts':len(full),'expandedStarts':len(rows),'expandedRaces':len(good),'testFrom':'2026-08-01','holdoutMetrics':metrics},
       'extraFeatures':EXTRA,'raceInfo':pool_info,'races':races}

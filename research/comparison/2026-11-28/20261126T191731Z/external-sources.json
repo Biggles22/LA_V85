@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "roundId": "2026-11-28-solvalla",
+  "gameId": "V75_2026-11-28_5_5",
+  "capturedAt": "2026-11-26T20:21:23+01:00",
+  "status": "THURSDAY_PARTIAL",
+  "sources": [
+    {"name":"Tipper Trav","url":"https://tippertrav.se/","status":"public_partial","prediction":{"leg":1,"metric":"Tipper AI-index","ordered":[{"number":5,"name":"Fine Manners","index":81},{"number":11,"name":"Iaintnoquitter","index":34},{"number":8,"name":"Shogun R.R.","index":31}]},"note":"Endast denna publikt verifierade strikta trio registreras. Index är inte kalibrerad vinstchans."},
+    {"name":"Travia omgångsanalys","url":"https://travia.se/v75/solvalla-2026-11-28","status":"public_partial_unordered","prediction":{"spike":{"leg":6,"number":4,"name":"Osvaldo A.Boko"},"outsider":{"leg":3,"number":2,"name":"Stens Rubin"},"overplayed":{"leg":6,"number":7,"name":"Barn Bank"}},"note":"A/B/C-grupper och oordnade trior har inte omvandlats till strikt topp tre."},
+    {"name":"Travmaskinen","url":"https://travmaskinen.se/v75-tips","status":"guide_only","note":"Den publika sidan verifierade produktformat och radpris men ingen säker, daterad omgångsprognos."},
+    {"name":"Travtips AI","url":"https://travtips.ai/","status":"current_prediction_not_safely_verified","note":"Publikt svar visade stale/annan omgång. Ingen ranking registrerad."},
+    {"name":"V46","url":"https://v46.se/","status":"not_verified"},
+    {"name":"Travtipsaren","url":"https://travtipsaren.se/","status":"not_verified"},
+    {"name":"ATG Elli","url":"https://www.atg.se/","status":"not_verified_as_dated_prediction"},
+    {"name":"Simsalabim Heat Rank","url":"https://simsalabim.se/","status":"not_verified"},
+    {"name":"Travmasen","url":"https://www.travmasen.se/","status":"public_editorial_not_ai","prediction":{"spike":{"leg":6,"number":7,"name":"Barn Bank"},"outsider":{"leg":5,"number":8,"name":"Mace Windu"}}}
+  ],
+  "limitations": "Betal- och kontolåsta delar har inte öppnats. Saknade prognoser har inte hittats på."
+}

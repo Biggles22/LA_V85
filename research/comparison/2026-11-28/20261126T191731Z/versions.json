@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-11-26T20:21:23+01:00",
+  "historicalModel": {"name":"CatBoostClassifier","catboost":"1.2.10","numpy":"2.3.5","python":"3.12.14","trainingSource":"research/historical_expanded_2024_2026.json","trainingSha256":"e22dedcaa2c8c623ced57641b85dd1ae1025ab2b4c6caaa95b97be523e5c0975"},
+  "expandedModel": {"kind":"EXPERIMENTAL_EXPANDED_COMPARISON","source":"research/expanded_model_evaluation_2026.json","marketFeatures":"preliminära frysningens streck och odds"},
+  "code": {"historical":"scripts/rank_current_catboost.py","comparison":"scripts/compare_current_models.py"}
+}

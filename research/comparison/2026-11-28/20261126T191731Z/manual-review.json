@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "roundId": "2026-11-28-solvalla",
+  "snapshotId": "baee7fd8db919f43528211f4053d69cb82eee958d1eb6466fbff00856417d0a9",
+  "reviewedAt": "2026-11-26T20:21:23+01:00",
+  "activeHorsesReviewed": 83,
+  "scratchedHorses": [{"leg":4,"number":13,"name":"Anna K.J."},{"leg":7,"number":12,"name":"Cabello"}],
+  "categoriesReviewed": ["favoriter","spikkandidater","utmanare","lågprocentare","skrällar"],
+  "prioritizedOutsiders": [{"leg":2,"number":2,"name":"Crazy Mary"},{"leg":4,"number":5,"name":"Raina Schermer"},{"leg":6,"number":4,"name":"Osvaldo A.Boko"}],
+  "spikeCandidates": [{"leg":1,"number":5,"name":"Fine Manners","challengers":["Iaintnoquitter","Shogun R.R."]},{"leg":6,"number":7,"name":"Barn Bank","challengers":["Romulus Diablo","Osvaldo A.Boko"]}],
+  "equipmentReview": "ATG:s rapporterade sko- och sulkyuppgifter granskades i de sparade extended-svaren. Inga prestationsförbättringar har antagits utan verifierad ändring.",
+  "reportedEquipmentChanges": [
+    {"leg":3,"number":2,"name":"Stens Rubin","change":"sulky"},
+    {"leg":3,"number":9,"name":"Castor the Star","change":"front shoes, back shoes, sulky"},
+    {"leg":4,"number":11,"name":"Hankypanky Leonie","change":"sulky"},
+    {"leg":7,"number":4,"name":"Joker Ima","change":"back shoes"},
+    {"leg":7,"number":6,"name":"River Tooma","change":"front shoes"}
+  ],
+  "driverChangeReview": "Ingen tidigare verifierad snapshot för samma Solvalla-omgång finns att para mot; därför påstås inga kuskbyten.",
+  "selectionRuleSource": "efteranalys/2026-11-21/lessons.json#followUp",
+  "analysisSource": "rounds/2026-11-28-solvalla/analysis.json",
+  "limitations": "Torsdagsgranskning. Form-, marknads- och utrustningsuppgifter kan ändras före spelstopp."
+}

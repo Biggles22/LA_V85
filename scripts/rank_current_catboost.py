@@ -7,6 +7,8 @@ import json
 import pathlib
 import sys
 import urllib.request
+import urllib.error
+import time
 import numpy as np
 import catboost
 from catboost import CatBoostClassifier
@@ -118,7 +120,15 @@ def current_rows(data):
     def collect(race):
         url = 'https://www.atg.se/services/racinginfo/v1/api/races/' + race['raceId'] + '/extended'
         req = urllib.request.Request(url, headers={'User-Agent': 'LA_V85/research-1.0', 'Accept': 'application/json'})
-        with urllib.request.urlopen(req, timeout=35) as response: raw = json.load(response)
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=35) as response:
+                    raw = json.load(response)
+                break
+            except urllib.error.HTTPError as error:
+                if error.code != 503 or attempt == 2:
+                    raise
+                time.sleep(2 * (attempt + 1))
         if raw.get('id') != race['raceId']: raise ValueError('Race identity mismatch')
         expected = {h['number']: h for h in race['starts'] if not h['scratched']}
         active = [h for h in raw['starts'] if not h.get('scratched')]

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-11-26T20:21:23+01:00",
+  "roundIdentity": {"date":"2026-11-28","track":"Solvalla","gameType":"V75","gameId":"V75_2026-11-28_5_5","legs":7,"raceIds":["2026-11-28_5_5","2026-11-28_5_6","2026-11-28_5_7","2026-11-28_5_8","2026-11-28_5_9","2026-11-28_5_10","2026-11-28_5_11"]},
+  "deadline": "2026-11-28T15:00:00+01:00",
+  "sourceAt": "2026-11-26T17:35:15+01:00",
+  "retrievedAt": "2026-11-26T20:05:10.265609+01:00",
+  "snapshotId": "baee7fd8db919f43528211f4053d69cb82eee958d1eb6466fbff00856417d0a9",
+  "listed": 85,
+  "active": 83,
+  "scratched": 2,
+  "turnoverSEK": 2496287,
+  "unitStakeSEK": 0.6,
+  "identityChecks": ["date","track","gameId","raceIds","start numbers","horse names"],
+  "status": "verified_prestart_snapshot"
+}

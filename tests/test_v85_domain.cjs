@@ -10,6 +10,12 @@ test('validate complete round, reject wrong track or duplicate runners',()=>{
  assert.throws(()=>D.validate({...d,track:'Bjerke'},round));
  d.races[0].starts.push(d.races[0].starts[0]);assert.throws(()=>D.validate(d,round));
 });
+test('validate a seven-leg V75 round without fabricating an eighth leg',()=>{
+ const r={id:'2026-11-28-solvalla',date:'2026-11-28',track:'Solvalla',gameType:'V75',legs:7};
+ const d={...snapshot(),roundId:r.id,date:r.date,track:r.track,gameType:'V75',legs:7,gameId:'V75_2026-11-28_5_5',startTime:'2026-11-28T15:00:00+01:00',races:snapshot().races.slice(0,7)};
+ assert.equal(D.validate(d,r),d);assert.equal(D.totals(d,Object.fromEntries(d.races.map(x=>[x.leg+'-1',{role:'include'}])),.6).rows,1);
+ assert.throws(()=>D.validate({...d,races:snapshot().races},r));
+});
 test('absent data cannot produce runners or proposals',()=>{
  const d={...snapshot(),status:'awaiting_data',races:[]};
  assert.equal(D.validate(d,round),d);assert.equal(D.phase(d),'awaiting');assert.deepEqual(D.picks(d,analysis(d)),[]);
@@ -43,7 +49,7 @@ test('spiking replaces other runners in that race and preserves other races',()=
  assert.equal(s['1-1'],undefined);assert.equal(s['1-2'].role,'spike');assert.ok(s['2-1']);
  s=D.select(d,s,'1-1','include');assert.equal(s['1-2'].role,'include');
 });
-test('system row count is product of eight legs, no fabricated price',()=>{
+test('system row count is product of every leg, no fabricated price',()=>{
  const d=snapshot();let s={};for(let leg=1;leg<=8;leg++)s=D.select(d,s,leg+'-1','include');
  s=D.select(d,s,'1-2','include');assert.equal(D.totals(d,s,null).rows,2);assert.equal(D.totals(d,s,null).cost,null);
  assert.equal(D.totals(d,s,.5).cost,1);delete s['8-1'];assert.equal(D.totals(d,s,.5).rows,0);

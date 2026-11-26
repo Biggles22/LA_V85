@@ -2,7 +2,7 @@
 
 ## Aktuell omgång
 
-`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsarkiv och efteranalys. Startsidan använder denna metadata, inte en föregående omgångs filer. Senast avslutade arbetsyta är Jägersro 21 november 2026. Åtta lopp, 100 anmälda hästar och 92 aktiva är identitetskontrollerade mot ATG. Form och båda befintliga modellvarianter är omräknade mot samma primära lördagssnapshot. Slutlig förhandsanalys med åtta utmanare/garderingsbud och tre spikkandidater finns under `uppdateringar/2026-11-21/`; verifierad efteranalys finns under `efteranalys/2026-11-21/`; fredagens, torsdagens och tisdagens observationer är bevarade. Träningen använder befintliga 12 247 starter i 1 047 lopp till och med 31 oktober; inga efterhandsvikter har införts. Eskilstunas startsida bevaras i `archive/2026-11-14-eskilstuna/forhand.html` med egna sidfiler och egen omgångskonfiguration. Den är arkiverad efter omgången; de ursprungliga förhandsfrysningarna och den fördjupade efteranalysen bevaras separat.
+`rounds.json` väljer aktuell omgång och samlar datum, bana och länkar till förhandsunderlag och analys. Aktuell arbetsyta är V75 Solvalla 28 november 2026: sju lopp, 85 anmälda och 83 aktiva är identitetskontrollerade mot ATG:s torsdags-snapshot med källtid 26 november 17.35 svensk tid. Startlista, form, historisk CatBoost, experimentell utökad CatBoost och marknadsbaslinje är bundna till samma snapshot. Preliminär rapport finns under `uppdateringar/2026-11-26/` och primär oföränderlig frysning under `research/comparison/2026-11-28/20261126T191731Z/`. Historikmodellens publicerade testmått avser V85 och ska inte presenteras som separat V75-validering. Jägersros tidigare startsida bevaras i `archive/2026-11-21-jagersro/forhand.html`; dess förhandsfrysningar och efteranalys är oförändrade.
 
 Huvudmenyn har tre delar: **Lördagens V85**, **Historik**, **Metod & resultat**. Startsidan har ankarlänkar till **Skrällförslag**, **Spikförslag**, **Lopp för lopp** och **Mitt urval**. En avdelning visas åt gången med sökning, sortering och hästkort i mobilvy.
 
@@ -16,7 +16,7 @@ Huvudmenyn har tre delar: **Lördagens V85**, **Historik**, **Metod & resultat**
 
 ## Verifierat underlag och förslag
 
-Kör `python3 scripts/update_current_round.py` från projektroten. Skriptet upptäcker V85-ID från ATG:s kalender och verifierar datum, bana, åtta lopp, hästidentiteter, starttid och källtid. Saknade uppgifter gissas inte. Nätverksfel, felaktig data, äldre snapshots eller passerad start lämnar tidigare data oförändrad. TLS-verifiering och den konfigurerade proxyn ska användas.
+Kör `python3 scripts/update_current_round.py` från projektroten. Skriptet upptäcker V75- eller V85-ID från ATG:s kalender och verifierar datum, bana, förväntat antal lopp, hästidentiteter, starttid och källtid. Saknade uppgifter gissas inte. Nätverksfel, felaktig data, äldre snapshots eller passerad start lämnar tidigare data oförändrad. TLS-verifiering och den konfigurerade proxyn ska användas.
 
 Inga förslag genereras enbart från låg streckandel eller hög marknadsrank. När underlaget har granskats anges `gameId`, `snapshotId`, `reviewedAt` och `version` i analysis.json. Varje post i `picks` ska innehålla:
 
@@ -112,7 +112,7 @@ Vägd poäng = summan av delbetyg/5 × vikt; intervallet är 0–100. **Poängen
 
 ## Aktuell formuppdatering
 
-Efter `python3 scripts/update_current_round.py`, kör `python3 scripts/update_current_form.py`. Formrapporten återanvänder de testade historiska beräkningsfunktionerna, kontrollerar lopp- och hästidentitet och använder endast starter före aktuell tävlingsdag. Den skriver först när alla åtta lopp hämtats. Rapporten binds till aktuell snapshotId. Startsidan visar delranking, datatäckning och fem senaste starter. Ingen tränad XGBoost/CatBoost-prognos eller kalibrerad vinstchans påstås.
+Efter `python3 scripts/update_current_round.py`, kör `python3 scripts/update_current_form.py`. Formrapporten återanvänder de testade historiska beräkningsfunktionerna, kontrollerar lopp- och hästidentitet och använder endast starter före aktuell tävlingsdag. Den skriver först när omgångens samtliga sju eller åtta lopp hämtats. Rapporten binds till aktuell snapshotId. Startsidan visar delranking, datatäckning och fem senaste starter. Ingen tränad XGBoost/CatBoost-prognos eller kalibrerad vinstchans påstås.
 
 ## Våra inlämnade resultat
 

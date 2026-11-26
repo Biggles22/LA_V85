@@ -5,7 +5,8 @@ function validate(model,data){
   if(!model||data.status!=='verified'||model.kind!=='CATBOOST_PRESTART_RANKING'||model.roundId!==data.roundId||model.gameId!==data.gameId||model.snapshotId!==data.snapshotId)return null;
   const made=Date.parse(model.generatedAt),start=Date.parse(data.startTime);
   if(!Number.isFinite(made)||!Number.isFinite(start)||made>=start||made>Date.now()+300000||!model.training||model.training.until>=data.date)return null;
-  if(!Array.isArray(model.races)||model.races.length!==8||new Set(model.races.map(r=>r.leg)).size!==8)return null;
+  const legs=Array.isArray(data.races)?data.races.length:0;
+  if(![7,8].includes(legs)||!Array.isArray(model.races)||model.races.length!==legs||new Set(model.races.map(r=>r.leg)).size!==legs)return null;
   for(const race of data.races){
     const ranked=model.races.find(r=>r.leg===race.leg),active=race.starts.filter(h=>!h.scratched);
     if(!ranked||ranked.raceId!==race.raceId||!Array.isArray(ranked.horses)||ranked.horses.length!==active.length||new Set(ranked.horses.map(h=>h.number)).size!==active.length)return null;

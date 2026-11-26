@@ -16,7 +16,7 @@ bad(x=>x.generatedAt=data.startTime);
 bad(x=>x.training.until=data.date);
 const changed=structuredClone(data);changed.races[0].starts.find(h=>!h.scratched).scratched=true;
 assert.equal(validate(model,changed),null);
-assert.equal(model.races.flatMap(r=>r.top3).length,24);
+assert.equal(model.races.flatMap(r=>r.top3).length,data.races.length*3);
 assert.ok(model.validation.folds.every(f=>f.trainUntil<f.date));
 const history=JSON.parse(fs.readFileSync(model.training.source,'utf8'));
 assert.equal(require('node:crypto').createHash('sha256').update(fs.readFileSync(model.training.source)).digest('hex'),model.training.sha256);
@@ -35,4 +35,4 @@ if(model.training.byGameType?.V75?.races){
   assert.equal(evaluation.training.sha256,model.training.sha256);
   assert.deepEqual(evaluation.validation,model.validation);
 }
-console.log('PASS: actual model, 24 candidates, scratches, stale snapshot, identity, scores, duplicate legs and temporal checks');
+console.log('PASS: actual model, '+(data.races.length*3)+' candidates, scratches, stale snapshot, identity, scores, duplicate legs and temporal checks');

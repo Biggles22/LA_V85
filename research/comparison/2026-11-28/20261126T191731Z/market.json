@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-11-26T19:17:46.410163+00:00",
+  "sourceAt": "2026-11-26T17:35:15+01:00",
+  "snapshotId": "baee7fd8db919f43528211f4053d69cb82eee958d1eb6466fbff00856417d0a9",
+  "gameType": "V75",
+  "races": [
+    {"leg": 1, "raceId": "2026-11-28_5_5", "top3": [{"number": 5, "name": "Fine Manners", "pct": 60.54}, {"number": 11, "name": "Iaintnoquitter", "pct": 13.62}, {"number": 8, "name": "Shogun R.R.", "pct": 11.09}], "strictOrderedTop3Eligible": true},
+    {"leg": 2, "raceId": "2026-11-28_5_6", "top3": [{"number": 3, "name": "Hola Que Tal", "pct": 30.88}, {"number": 4, "name": "Capo", "pct": 23.63}, {"number": 8, "name": "The Pope", "pct": 17.76}], "strictOrderedTop3Eligible": true},
+    {"leg": 3, "raceId": "2026-11-28_5_7", "top3": [{"number": 3, "name": "Double Deceiver", "pct": 47.36}, {"number": 10, "name": "Diva Ek", "pct": 21.80}, {"number": 2, "name": "Stens Rubin", "pct": 13.94}], "strictOrderedTop3Eligible": true},
+    {"leg": 4, "raceId": "2026-11-28_5_8", "top3": [{"number": 11, "name": "Hankypanky Leonie", "pct": 35.67}, {"number": 14, "name": "Lotusorchide", "pct": 13.54}, {"number": 6, "name": "Haute Couture", "pct": 13.17}], "strictOrderedTop3Eligible": true},
+    {"leg": 5, "raceId": "2026-11-28_5_9", "top3": [{"number": 5, "name": "Tangelo Lane", "pct": 40.79}, {"number": 6, "name": "Justice for All", "pct": 17.44}, {"number": 1, "name": "Medavoy", "pct": 14.34}], "strictOrderedTop3Eligible": true},
+    {"leg": 6, "raceId": "2026-11-28_5_10", "top3": [{"number": 7, "name": "Barn Bank", "pct": 57.91}, {"number": 5, "name": "Romulus Diablo", "pct": 12.01}, {"number": 1, "name": "Celtic Tonga", "pct": 8.15}], "strictOrderedTop3Eligible": true},
+    {"leg": 7, "raceId": "2026-11-28_5_11", "top3": [{"number": 1, "name": "Likeaboss", "pct": 21.04}, {"number": 6, "name": "River Tooma", "pct": 20.16}, {"number": 4, "name": "Joker Ima", "pct": 18.28}], "strictOrderedTop3Eligible": true}
+  ],
+  "note": "Marknadsbaslinje från samma verifierade ATG-snapshot som båda CatBoost-varianterna. Streckandelar är en tidig ögonblicksbild, inte vinstchanser."
+}

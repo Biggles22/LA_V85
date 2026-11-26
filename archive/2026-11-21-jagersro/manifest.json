@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "roundId": "2026-11-21-jagersro",
+  "archivedAt": "2026-11-26T20:21:23+01:00",
+  "sourceCommit": "31237d3e21fab357f1771cf31dc1794375ff132f",
+  "files": {
+    "forhand.html": "90cc4e3553aa746f01076c1b5423860c8ea971486bfeed90ed5715e693a4109b",
+    "rounds.json": "bbba26fa23e2f1c9ff89aeee946871f91e2583e5ed603058d39636ff63314618",
+    "v85-domain.js": "539547e0dc13567889c546c35088d269acbff1183822e01eb6eb94ad7ec5a733",
+    "v85-model.js": "154b6b686c4788960cd44f3129e98bcf94c1286b5db4bf04e231f8497c9ef63d",
+    "v85.css": "2c7333429d0630a664845e1a8f765cbabdc70e87afe595e015a3758240a1b9da",
+    "v85.js": "f3ad74195898bb71f6790caa8e9235e06e06ca6b96a3ccbaa153b46e92141189"
+  },
+  "note": "Startsidan och dess körfiler bevarades före övergången till Solvalla 28 november. Förhandsdata och efteranalys ligger kvar på sina ursprungliga paths."
+}

@@ -41,31 +41,35 @@ def get_json(path):
     return doc
 
 
-def game_ids(calendar, date):
+def game_ids(calendar, date, game_type="V85"):
     games = calendar.get("games", {})
-    entries = games.get("V85", []) if isinstance(games, dict) else games
+    entries = games.get(game_type, []) if isinstance(games, dict) else games
     if isinstance(entries, dict):
         entries = [entries]
     return list(dict.fromkeys(x["id"] for x in entries if isinstance(x, dict)
-                             and str(x.get("id", "")).startswith("V85_" + date + "_")))
+                             and str(x.get("id", "")).startswith(game_type + "_" + date + "_")))
 
 
 def normalize(game, round_info, now):
     date, track = round_info["date"], round_info["track"]
-    if not str(game.get("id", "")).startswith("V85_" + date + "_"):
+    game_type = round_info.get("gameType", "V85")
+    expected_legs = round_info.get("legs", 8 if game_type == "V85" else 7)
+    if game_type not in ("V75", "V85") or expected_legs not in (7, 8):
+        raise ValueError("Unsupported game type or leg count")
+    if not str(game.get("id", "")).startswith(game_type + "_" + date + "_"):
         raise ValueError("Wrong game/date")
     races = game.get("races", [])
-    if not isinstance(races, list) or len(races) != 8:
-        raise ValueError("Expected exactly eight V85 races")
+    if not isinstance(races, list) or len(races) != expected_legs:
+        raise ValueError(f"Expected exactly {expected_legs} {game_type} races")
     if any((r.get("track") or {}).get("name") != track for r in races):
         raise ValueError("Wrong track")
     race_ids = [r.get("id") for r in races]
-    if any(not isinstance(rid, str) or not rid.startswith(date + "_") for rid in race_ids) or len(set(race_ids)) != 8:
+    if any(not isinstance(rid, str) or not rid.startswith(date + "_") for rid in race_ids) or len(set(race_ids)) != expected_legs:
         raise ValueError("Invalid or duplicate race identities")
     starts_at = [time_value(r.get("startTime")) for r in races]
     if any(t.date().isoformat() != date for t in starts_at):
         raise ValueError("Race start date does not match calendar")
-    pool = (game.get("pools") or {}).get("V85") or {}
+    pool = (game.get("pools") or {}).get(game_type) or {}
     first_start = min(starts_at)
     deadline = time_value(pool["bettingDeadline"]) if pool.get("bettingDeadline") else first_start
     if deadline > first_start or deadline.date().isoformat() != date:
@@ -87,7 +91,7 @@ def normalize(game, round_info, now):
             if type(number) is not int or number < 1 or number in seen or not isinstance(horse.get("name"), str) or not horse["name"].strip():
                 raise ValueError("Invalid or duplicate horse")
             seen.add(number)
-            market = (start.get("pools") or {}).get("V85") or {}
+            market = (start.get("pools") or {}).get(game_type) or {}
             pct = market.get("betDistribution")
             if not numeric(pool.get("turnover")) or pool["turnover"] <= 0:
                 pct = None
@@ -125,6 +129,7 @@ def normalize(game, round_info, now):
                        "distance": race.get("distance"), "startMethod": race.get("startMethod"),
                        "startTime": starts_at[leg-1].isoformat(), "starts": horses})
     record = {"schemaVersion": 1, "roundId": round_info["id"], "date": date, "track": track,
+              "gameType": game_type, "legs": expected_legs,
               "status": "verified", "gameId": game["id"], "sourceUrl": BASE + "/games/" + game["id"],
               "sourceAt": source_at.isoformat(), "retrievedAt": now.isoformat(), "startTime": deadline.isoformat(),
               "unitStakeSEK": None, "turnoverSEK": round(pool["turnover"]/100, 2) if numeric(pool.get("turnover")) else None,
@@ -164,9 +169,10 @@ def main():
         print("Round date has passed; no prestart update.")
         return
     calendar = get_json("/calendar/day/" + round_info["date"])
-    ids = game_ids(calendar, round_info["date"])
+    game_type = round_info.get("gameType", "V85")
+    ids = game_ids(calendar, round_info["date"], game_type)
     if not ids:
-        raise ValueError("No V85 game published for requested date")
+        raise ValueError(f"No {game_type} game published for requested date")
     candidates = []
     for gid in ids:
         game = get_json("/games/" + gid)

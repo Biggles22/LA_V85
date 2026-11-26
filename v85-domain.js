@@ -10,11 +10,13 @@
   function validate(data,round){
     if(data?.schemaVersion!==1||data.roundId!==round.id||data.date!==round.date||data.track!==round.track)throw Error('Datakällan gäller en annan omgång.');
     if(data.status==='awaiting_data'&&Array.isArray(data.races)&&data.races.length===0)return data;
-    if(data.status!=='verified'||!data.gameId?.startsWith('V85_'+round.date+'_')||!instant(data.sourceAt)||!instant(data.retrievedAt)||!instant(data.startTime)||!data.snapshotId)throw Error('Omgångens identitet eller källtid kunde inte verifieras.');
-    if(!Array.isArray(data.races)||data.races.length!==8)throw Error('Startlistan måste innehålla åtta avdelningar.');
+    const gameType=round.gameType||data.gameType||'V85',expectedLegs=round.legs||data.legs||(gameType==='V75'?7:8);
+    if(!['V75','V85'].includes(gameType)||![7,8].includes(expectedLegs)||data.gameType&&data.gameType!==gameType||data.legs&&data.legs!==expectedLegs)throw Error('Omgångens spelform kunde inte verifieras.');
+    if(data.status!=='verified'||!data.gameId?.startsWith(gameType+'_'+round.date+'_')||!instant(data.sourceAt)||!instant(data.retrievedAt)||!instant(data.startTime)||!data.snapshotId)throw Error('Omgångens identitet eller källtid kunde inte verifieras.');
+    if(!Array.isArray(data.races)||data.races.length!==expectedLegs)throw Error('Startlistan har fel antal avdelningar.');
     const legs=new Set();
     for(const race of data.races){
-      if(!Number.isInteger(race.leg)||race.leg<1||race.leg>8||legs.has(race.leg)||!Array.isArray(race.starts)||!race.starts.length)throw Error('Ogiltig avdelning.');
+      if(!Number.isInteger(race.leg)||race.leg<1||race.leg>data.races.length||legs.has(race.leg)||!Array.isArray(race.starts)||!race.starts.length)throw Error('Ogiltig avdelning.');
       legs.add(race.leg);const numbers=new Set();
       for(const horse of race.starts){
         if(!Number.isInteger(horse.number)||horse.number<1||numbers.has(horse.number)||typeof horse.name!=='string'||!horse.name.trim()||typeof horse.scratched!=='boolean')throw Error('Ogiltig häst i startlistan.');
@@ -68,7 +70,7 @@
     return out;
   }
   function totals(data,selection,stake){
-    const clean=cleanSelection(data,selection),counts=Array.from({length:8},(_,i)=>Object.keys(clean).filter(k=>k.startsWith((i+1)+'-')).length);
+    const clean=cleanSelection(data,selection),counts=Array.from({length:(data.races||[]).length},(_,i)=>Object.keys(clean).filter(k=>k.startsWith((i+1)+'-')).length);
     const rows=counts.every(n=>n>0)?counts.reduce((a,b)=>a*b,1):0;
     return {counts,rows,cost:rows&&finite(stake)&&stake>0?Math.round(rows*stake*100)/100:null,selected:Object.keys(clean).length};
   }

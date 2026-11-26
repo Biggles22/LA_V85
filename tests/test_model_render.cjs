@@ -3,6 +3,7 @@ const scriptVersion=require('node:crypto').createHash('sha256').update(fs.readFi
 assert.ok(fs.readFileSync('index.html','utf8').includes('v85.js?v='+scriptVersion),'Homepage must change the script URL when rendering code changes');
 const config=JSON.parse(fs.readFileSync('rounds.json','utf8'));
 const current=config.rounds.find(r=>r.id===config.current);
+const data=JSON.parse(fs.readFileSync(current.data,'utf8'));
 const model=JSON.parse(fs.readFileSync('rounds/'+current.id+'/model.json','utf8'));
 const vm=require('node:vm'),D=require('../v85-domain.js'),M=require('../v85-model.js');
 const elements=new Map(),events={};
@@ -11,16 +12,18 @@ const context={window:{V85Domain:D,V85Model:M},document:{querySelector:element,a
 (async()=>{
 await vm.runInNewContext(fs.readFileSync('v85.js','utf8'),context);
 assert.ok(!element('#data-status').className.includes('error'));
-assert.equal((element('#model-list').innerHTML.match(/<article /g)||[]).length,8);
-assert.equal((element('#model-list').innerHTML.match(/<li>/g)||[]).length,24);
+assert.equal((element('#model-list').innerHTML.match(/<article /g)||[]).length,data.races.length);
+assert.equal((element('#model-list').innerHTML.match(/<li>/g)||[]).length,data.races.length*3);
 const metrics=model.validation.metrics;
 assert.ok(element('#model-status').textContent.includes(`${metrics.top3Count} av ${metrics.races}`));
 assert.ok(element('#model-status').textContent.includes(`${metrics.top1Count} av ${metrics.races}`));
 assert.ok(element('#model-status').textContent.includes(`slutstreckens topp 3 ${model.validation.retrospectiveFinalPool.top3Count} träffar`));
 assert.match(element('#race-panel').innerHTML,/CatBoost · topp 3/);
-for(let leg=1;leg<=8;leg++){
+for(let leg=1;leg<=data.races.length;leg++){
 events.click({target:{closest:()=>({dataset:{leg:String(leg)},closest:()=>true})}});
 for(const h of model.races.find(r=>r.leg===leg).top3)assert.ok(element('#race-panel').innerHTML.includes(h.name.replaceAll('&','&amp;').replaceAll("'",'&#39;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;')));
 }
-console.log('PASS: real app renders eight model cards, 24 candidates, both test metrics and all race tabs');
+assert.equal((element('#outsider-list').innerHTML.match(/<article /g)||[]).length,3);
+assert.equal((element('#spike-list').innerHTML.match(/<article /g)||[]).length,2);
+console.log('PASS: real app renders '+data.races.length+' model cards, '+(data.races.length*3)+' candidates, both test metrics and all race tabs');
 })().catch(e=>{console.error(e);process.exitCode=1;});

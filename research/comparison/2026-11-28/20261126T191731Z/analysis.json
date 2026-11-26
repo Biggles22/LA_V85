@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "roundId": "2026-11-28-solvalla",
+  "gameId": "V75_2026-11-28_5_5",
+  "snapshotId": "baee7fd8db919f43528211f4053d69cb82eee958d1eb6466fbff00856417d0a9",
+  "version": 1,
+  "reviewedAt": "2026-11-26T20:21:23+01:00",
+  "sourceAt": "2026-11-26T17:35:15+01:00",
+  "status": "PRELIMINARY_THURSDAY",
+  "picks": [
+    {
+      "type": "outsider",
+      "leg": 2,
+      "number": 2,
+      "name": "Crazy Mary",
+      "marketPercentage": 2.8,
+      "winnerOdds": 11.37,
+      "historicalRank": 1,
+      "expandedRank": 8,
+      "qualifyingProxy": "class",
+      "proxyRank": 3,
+      "proxyCoverage": 12,
+      "reason": "Historikmodellen rankar etta och klassproxyn trea av tolv aktiva med känt värde. Det klarar bästa tredjedelen vid 2,80 procent från spår 2.",
+      "risk": "Den utökade modellen rankar åtta och resultatraden innehåller ingen seger på de fem redovisade starterna. Hola Que Tal och Capo är marknadens tydliga huvudhästar.",
+      "sources": ["https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5", "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_6/extended"]
+    },
+    {
+      "type": "outsider",
+      "leg": 4,
+      "number": 5,
+      "name": "Raina Schermer",
+      "marketPercentage": 3.15,
+      "winnerOdds": 33.59,
+      "historicalRank": 2,
+      "expandedRank": 9,
+      "qualifyingProxy": "class",
+      "proxyRank": 1,
+      "proxyCoverage": 14,
+      "reason": "Historikmodellen rankar tvåa och klassproxyn högst av fjorton aktiva med känt värde. Spår 5 över 2640 meter ger ett konkret styrkeargument vid 3,15 procent.",
+      "risk": "Den utökade modellen rankar nio och marknaden ger långt högre stöd åt Hankypanky Leonie. Voltstart och lång distans ökar positions- och tempoberoendet.",
+      "sources": ["https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5", "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_8/extended"]
+    },
+    {
+      "type": "outsider",
+      "leg": 6,
+      "number": 4,
+      "name": "Osvaldo A.Boko",
+      "marketPercentage": 6.19,
+      "winnerOdds": 15.33,
+      "historicalRank": 2,
+      "expandedRank": 4,
+      "qualifyingProxy": "form",
+      "proxyRank": 3,
+      "proxyCoverage": 12,
+      "reason": "Historikmodellen rankar tvåa och formproxyn trea av tolv. Femstartersraden 2–2–4–2–1, spår 4 över 1640 meter och 6,19 procent uppfyller den frysta skrällregeln.",
+      "risk": "Barn Bank dominerar marknaden och är etta i båda modellerna. Osvaldo A.Boko är fyra i den utökade modellen och måste hantera sprinttempot.",
+      "sources": ["https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5", "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_10/extended"]
+    }
+  ],
+  "spikeCandidates": [
+    {
+      "leg": 1,
+      "number": 5,
+      "name": "Fine Manners",
+      "marketPercentage": 60.54,
+      "reason": "Etta i båda modellerna, 60,54 procent och tre segrar på fem redovisade starter från spår 5 över 2140 meter.",
+      "risk": "Hårt streckad och resultatraden innehåller både sjundeplats och galopp. Modellrank och streck är inte en kalibrerad vinstchans.",
+      "challengers": ["Iaintnoquitter", "Shogun R.R."],
+      "sources": ["https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5", "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_5/extended"]
+    },
+    {
+      "leg": 6,
+      "number": 7,
+      "name": "Barn Bank",
+      "marketPercentage": 57.91,
+      "reason": "Etta i båda modellerna, 57,91 procent och två segrar i de fem senaste redovisade starterna över aktuell sprintdistans.",
+      "risk": "Resultatraden innehåller två galopper och en fjärdeplats. Romulus Diablo och Osvaldo A.Boko är konkreta motbud.",
+      "challengers": ["Romulus Diablo", "Osvaldo A.Boko"],
+      "sources": ["https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5", "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_10/extended"]
+    }
+  ],
+  "qualifiedOutsiders": [
+    {"leg":2,"number":2,"name":"Crazy Mary","percentage":2.8,"historicalRank":1,"proxy":"class","proxyRank":3,"coverage":12,"selected":true},
+    {"leg":4,"number":5,"name":"Raina Schermer","percentage":3.15,"historicalRank":2,"proxy":"class","proxyRank":1,"coverage":14,"selected":true},
+    {"leg":6,"number":4,"name":"Osvaldo A.Boko","percentage":6.19,"historicalRank":2,"proxy":"form","proxyRank":3,"coverage":12,"selected":true},
+    {"leg":1,"number":2,"name":"Four White E.G.","percentage":1.46,"historicalRank":3,"proxy":"class","proxyRank":3,"coverage":12,"selected":false},
+    {"leg":5,"number":3,"name":"Padron","percentage":4.3,"historicalRank":3,"proxy":"class","proxyRank":4,"coverage":12,"selected":false},
+    {"leg":6,"number":3,"name":"Joakim Palema","percentage":4.83,"historicalRank":4,"proxy":"form","proxyRank":4,"coverage":12,"selected":false},
+    {"leg":5,"number":7,"name":"Ice Cubes","percentage":6.76,"historicalRank":4,"proxy":"class","proxyRank":2,"coverage":12,"selected":false},
+    {"leg":1,"number":6,"name":"Alvena Roy","percentage":1.88,"historicalRank":5,"proxy":"class","proxyRank":3,"coverage":12,"selected":false},
+    {"leg":3,"number":9,"name":"Castor the Star","percentage":3.2,"historicalRank":5,"proxy":"class","proxyRank":3,"coverage":10,"selected":false},
+    {"leg":6,"number":1,"name":"Celtic Tonga","percentage":8.15,"historicalRank":5,"proxy":"class","proxyRank":4,"coverage":12,"selected":false},
+    {"leg":2,"number":7,"name":"Surveillance","percentage":5.17,"historicalRank":6,"proxy":"class","proxyRank":1,"coverage":12,"selected":false},
+    {"leg":3,"number":6,"name":"Makalu Doc","percentage":8.8,"historicalRank":6,"proxy":"form","proxyRank":4,"coverage":10,"selected":false}
+  ],
+  "outsiderRule": "Högst tre totalt och en per avdelning; under 10 procent, historikrank 1–6 och bästa tredjedelen i form eller klass med minst halva fältet täckt. Sortering: historikrank, lägst procent, avdelning, startnummer.",
+  "theoreticalSystems": {
+    "rowPriceSEK": 0.6,
+    "stakeFraction": 1.0,
+    "budgetExampleSEK": 900,
+    "budgetSource": "Senaste uttryckligen bekräftade kupongens insats, Jägersro 2026-11-21; endast räkneexempel.",
+    "A": {"label":"Två arbetsspikar","selections":[[5],[2,3,4,5,8],[2,3,6,10],[1,5,6,11,14],[1,3,5,6,7],[7],[1,4,5]],"rows":1500,"costSEK":900},
+    "BUncut": {"label":"Motbuden tillagda, övriga streck kvar","selections":[[5,11],[2,3,4,5,8],[2,3,6,10],[1,5,6,11,14],[1,3,5,6,7],[5,7],[1,4,5]],"rows":6000,"costSEK":3600,"extraCostSEK":2700},
+    "BWithinBudget": {"label":"Motbuden tillagda inom A:s budget","selections":[[5,11],[2,3,4,5,8],[2,3,10],[1,5,6,11,14],[1,3,5,6,7],[5,7],[4]],"removedToFit":[{"leg":3,"numbers":[6]},{"leg":7,"numbers":[1,5]}],"rows":1500,"costSEK":900,"extraCostSEK":0}
+  },
+  "limitations": "Preliminär torsdagsbedömning. Streck, odds, strykningar, omsättning och utrustningsanmälningar kan ändras. Utrustning redovisas bara när ATG har en verifierad uppgift; ingen effekt antas. Modellpoäng är inte kalibrerade vinstchanser. Historikmodellens publicerade validering är V85-only och har inte separat validerats för den återinförda V75-produkten. Inga spel har lagts."
+}
