@@ -3,8 +3,8 @@
   "kind": "CATBOOST_PRESTART_RANKING",
   "roundId": "2026-11-28-solvalla",
   "gameId": "V75_2026-11-28_5_5",
-  "snapshotId": "baee7fd8db919f43528211f4053d69cb82eee958d1eb6466fbff00856417d0a9",
-  "generatedAt": "2026-11-26T19:07:43.019584+00:00",
+  "snapshotId": "3b1f749ce57868bcaba83303c941a530f183c4577602960d32090174ef7a5eed",
+  "generatedAt": "2026-11-27T19:05:54.903579+00:00",
   "model": "CatBoostClassifier",
   "parameters": {
     "iterations": 220,
@@ -5719,37 +5719,37 @@
     {
       "raceId": "2026-11-28_5_5",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_5/extended",
-      "sha256": "e730bc6f3c2efae159c17f1875f06ff00dc4d168a2b3bb13b3e1c482e8e0d01c"
+      "sha256": "30fc96b17314ecded6556bc0faf3ff4d5cf50ff1db75055a8a3ad7ab1bbd7491"
     },
     {
       "raceId": "2026-11-28_5_6",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_6/extended",
-      "sha256": "f89a68a0cc0109386c0dcfc2546a21b6aefc6c6f5a679f6f5400a68cc3eb125e"
+      "sha256": "d92660c2bfb2fe722ad510b5d233b39cd118b8e8e47d9b6d14786776f37c4c44"
     },
     {
       "raceId": "2026-11-28_5_7",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_7/extended",
-      "sha256": "fc4e9be505b985bc0be4f763f105bcf4235c6c133ab7285ae332a6c34797133a"
+      "sha256": "aa341eb17468f839ca4a6520d212fe5569111eeeaeb5ea1aadf3042cafe5c295"
     },
     {
       "raceId": "2026-11-28_5_8",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_8/extended",
-      "sha256": "d8ba053e3848d1e8d6f3be5bf0db3357b9eec84baa7b36716906fcb4f96c1055"
+      "sha256": "310fae81325345f3be60d54e0740242f703874a8ba52b05b08441f3a054e8834"
     },
     {
       "raceId": "2026-11-28_5_9",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_9/extended",
-      "sha256": "aec63fd50a006e2147eed20503fff3d21d5fa0e3923298574c0f1843701b515e"
+      "sha256": "8ae909049adb2da536e358723acf378ceb2cc34912426e377b330f6804c5ec66"
     },
     {
       "raceId": "2026-11-28_5_10",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_10/extended",
-      "sha256": "787aa4281ab9943b9da2cdc0be9d3808d845e8337e77a569264851e343a4910f"
+      "sha256": "dc7f9e78b5490aa37e9cdaca1d3225a6e565cafd73f8354d4cd72e7bd2aebd2e"
     },
     {
       "raceId": "2026-11-28_5_11",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_11/extended",
-      "sha256": "8501767d0f97083d98950e4cd5e415c3f4b9571c42a01fdedfc3e58e33e62c3f"
+      "sha256": "19b5127c847e5291ad40391d60b12c95adf061a7a29bbe5580a6ff425b3a5b0f"
     }
   ],
   "limitations": "Experimentell ranking från utvalda kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, aktuellt resultat, hästnamn, kusk, tränare och karriärstatistik ingår inte som modellvariabler. Galoppvariabeln är avstängd för jämförbarhet med grundförsöket. Testet är retrospektivt och visar inte lönsamhet.",
@@ -6583,7 +6583,7 @@
           "prestartFeatures": {
             "post": 5.0,
             "distance": 2660.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 1,
@@ -6594,7 +6594,7 @@
             "km_median": null,
             "past_purse_log": 16.341
           },
-          "modelScore": 0.1708675,
+          "modelScore": 0.19551626,
           "rank": 1
         },
         {
@@ -6605,7 +6605,7 @@
           "prestartFeatures": {
             "post": 5.0,
             "distance": 2640.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 3,
@@ -6616,30 +6616,8 @@
             "km_median": null,
             "past_purse_log": 16.678
           },
-          "modelScore": 0.16364974,
+          "modelScore": 0.18684773,
           "rank": 2
-        },
-        {
-          "raceId": "2026-11-28_5_8",
-          "leg": 4,
-          "number": 6,
-          "name": "Haute Couture",
-          "prestartFeatures": {
-            "post": 6.0,
-            "distance": 2640.0,
-            "field": 14,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 3.2,
-            "win5": 1,
-            "top3_5": 3,
-            "days_off": 30,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.761
-          },
-          "modelScore": 0.07204961,
-          "rank": 3
         },
         {
           "raceId": "2026-11-28_5_8",
@@ -6649,7 +6627,7 @@
           "prestartFeatures": {
             "post": 1.0,
             "distance": 2640.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 2,
@@ -6660,30 +6638,30 @@
             "km_median": null,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.06862098,
-          "rank": 4
+          "modelScore": 0.07736498,
+          "rank": 3
         },
         {
           "raceId": "2026-11-28_5_8",
           "leg": 4,
-          "number": 14,
-          "name": "Lotusorchide",
+          "number": 6,
+          "name": "Haute Couture",
           "prestartFeatures": {
-            "post": 8.0,
-            "distance": 2660.0,
-            "field": 14,
+            "post": 6.0,
+            "distance": 2640.0,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
-            "form_place_mean": 2,
+            "form_place_mean": 3.2,
             "win5": 1,
             "top3_5": 3,
-            "days_off": 27,
+            "days_off": 30,
             "gallop5": null,
             "km_median": null,
-            "past_purse_log": 16.341
+            "past_purse_log": 15.761
           },
-          "modelScore": 0.06404142,
-          "rank": 5
+          "modelScore": 0.07250392,
+          "rank": 4
         },
         {
           "raceId": "2026-11-28_5_8",
@@ -6693,7 +6671,7 @@
           "prestartFeatures": {
             "post": 4.0,
             "distance": 2640.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 2,
@@ -6704,8 +6682,8 @@
             "km_median": null,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.06338705,
-          "rank": 6
+          "modelScore": 0.06878414,
+          "rank": 5
         },
         {
           "raceId": "2026-11-28_5_8",
@@ -6715,7 +6693,7 @@
           "prestartFeatures": {
             "post": 3.0,
             "distance": 2660.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 3,
@@ -6726,7 +6704,29 @@
             "km_median": null,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.05483245,
+          "modelScore": 0.06153974,
+          "rank": 6
+        },
+        {
+          "raceId": "2026-11-28_5_8",
+          "leg": 4,
+          "number": 14,
+          "name": "Lotusorchide",
+          "prestartFeatures": {
+            "post": 8.0,
+            "distance": 2660.0,
+            "field": 13,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 27,
+            "gallop5": null,
+            "km_median": null,
+            "past_purse_log": 16.341
+          },
+          "modelScore": 0.05868037,
           "rank": 7
         },
         {
@@ -6737,7 +6737,7 @@
           "prestartFeatures": {
             "post": 2.0,
             "distance": 2640.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 3.2,
@@ -6748,7 +6748,7 @@
             "km_median": null,
             "past_purse_log": 15.565
           },
-          "modelScore": 0.04992675,
+          "modelScore": 0.05588638,
           "rank": 8
         },
         {
@@ -6759,7 +6759,7 @@
           "prestartFeatures": {
             "post": 3.0,
             "distance": 2640.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 5.25,
@@ -6770,30 +6770,8 @@
             "km_median": null,
             "past_purse_log": 16.118
           },
-          "modelScore": 0.0422442,
+          "modelScore": 0.04765477,
           "rank": 9
-        },
-        {
-          "raceId": "2026-11-28_5_8",
-          "leg": 4,
-          "number": 12,
-          "name": "Thankworthy Tile",
-          "prestartFeatures": {
-            "post": 6.0,
-            "distance": 2660.0,
-            "field": 14,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 4.5,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 12,
-            "gallop5": 1.0,
-            "km_median": null,
-            "past_purse_log": 15.607
-          },
-          "modelScore": 0.03629703,
-          "rank": 10
         },
         {
           "raceId": "2026-11-28_5_8",
@@ -6803,7 +6781,7 @@
           "prestartFeatures": {
             "post": 1.0,
             "distance": 2660.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 2.5,
@@ -6814,7 +6792,29 @@
             "km_median": null,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.03329058,
+          "modelScore": 0.03631559,
+          "rank": 10
+        },
+        {
+          "raceId": "2026-11-28_5_8",
+          "leg": 4,
+          "number": 12,
+          "name": "Thankworthy Tile",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2660.0,
+            "field": 13,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.5,
+            "win5": 1,
+            "top3_5": 2,
+            "days_off": 12,
+            "gallop5": 1.0,
+            "km_median": null,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.03423288,
           "rank": 11
         },
         {
@@ -6825,7 +6825,7 @@
           "prestartFeatures": {
             "post": 4.0,
             "distance": 2660.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 3.333,
@@ -6836,7 +6836,7 @@
             "km_median": null,
             "past_purse_log": 15.137
           },
-          "modelScore": 0.02638434,
+          "modelScore": 0.02762335,
           "rank": 12
         },
         {
@@ -6847,7 +6847,7 @@
           "prestartFeatures": {
             "post": 9.0,
             "distance": 2660.0,
-            "field": 14,
+            "field": 13,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 3.5,
@@ -6858,30 +6858,8 @@
             "km_median": null,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.02448442,
+          "modelScore": 0.02101292,
           "rank": 13
-        },
-        {
-          "raceId": "2026-11-28_5_8",
-          "leg": 4,
-          "number": 8,
-          "name": "Budets Hildur",
-          "prestartFeatures": {
-            "post": 2.0,
-            "distance": 2660.0,
-            "field": 14,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 4,
-            "win5": 0,
-            "top3_5": 1,
-            "days_off": 14,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 15.202
-          },
-          "modelScore": 0.02148328,
-          "rank": 14
         }
       ],
       "top3": [
@@ -6896,8 +6874,8 @@
           "rank": 2
         },
         {
-          "number": 6,
-          "name": "Haute Couture",
+          "number": 1,
+          "name": "Kahbean",
           "rank": 3
         }
       ]
@@ -6914,7 +6892,7 @@
           "prestartFeatures": {
             "post": 5.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 10,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 1.6,
@@ -6925,7 +6903,7 @@
             "km_median": 75.4,
             "past_purse_log": 15.202
           },
-          "modelScore": 0.18324651,
+          "modelScore": 0.22995477,
           "rank": 1
         },
         {
@@ -6936,7 +6914,7 @@
           "prestartFeatures": {
             "post": 6.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 10,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 1.8,
@@ -6947,30 +6925,8 @@
             "km_median": 77.35,
             "past_purse_log": 15.425
           },
-          "modelScore": 0.14559601,
+          "modelScore": 0.15202113,
           "rank": 2
-        },
-        {
-          "raceId": "2026-11-28_5_9",
-          "leg": 5,
-          "number": 3,
-          "name": "Padron",
-          "prestartFeatures": {
-            "post": 3.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 5,
-            "win5": 1,
-            "top3_5": 1,
-            "days_off": 11,
-            "gallop5": null,
-            "km_median": 74.4,
-            "past_purse_log": 15.761
-          },
-          "modelScore": 0.07571112,
-          "rank": 3
         },
         {
           "raceId": "2026-11-28_5_9",
@@ -6980,7 +6936,7 @@
           "prestartFeatures": {
             "post": 7.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 10,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 3,
@@ -6991,30 +6947,8 @@
             "km_median": 75.7,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.06664907,
-          "rank": 4
-        },
-        {
-          "raceId": "2026-11-28_5_9",
-          "leg": 5,
-          "number": 2,
-          "name": "Bransbys Saga",
-          "prestartFeatures": {
-            "post": 2.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 3,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 13,
-            "gallop5": null,
-            "km_median": 75.2,
-            "past_purse_log": 15.202
-          },
-          "modelScore": 0.05296572,
-          "rank": 5
+          "modelScore": 0.06061618,
+          "rank": 3
         },
         {
           "raceId": "2026-11-28_5_9",
@@ -7024,7 +6958,7 @@
           "prestartFeatures": {
             "post": 1.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 10,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 3.2,
@@ -7035,52 +6969,8 @@
             "km_median": 75.5,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.04682951,
-          "rank": 6
-        },
-        {
-          "raceId": "2026-11-28_5_9",
-          "leg": 5,
-          "number": 11,
-          "name": "Mint Julep",
-          "prestartFeatures": {
-            "post": 11.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 3.5,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 30,
-            "gallop5": null,
-            "km_median": 74.3,
-            "past_purse_log": 15.068
-          },
-          "modelScore": 0.04424497,
-          "rank": 7
-        },
-        {
-          "raceId": "2026-11-28_5_9",
-          "leg": 5,
-          "number": 8,
-          "name": "Mace Windu",
-          "prestartFeatures": {
-            "post": 8.0,
-            "distance": 2140.0,
-            "field": 12,
-            "auto": 0,
-            "starts5": 5,
-            "form_place_mean": 3.75,
-            "win5": 1,
-            "top3_5": 2,
-            "days_off": 168,
-            "gallop5": null,
-            "km_median": 75.1,
-            "past_purse_log": 15.607
-          },
-          "modelScore": 0.04171282,
-          "rank": 8
+          "modelScore": 0.0483362,
+          "rank": 4
         },
         {
           "raceId": "2026-11-28_5_9",
@@ -7090,7 +6980,7 @@
           "prestartFeatures": {
             "post": 4.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 10,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 2.333,
@@ -7101,52 +6991,52 @@
             "km_median": 75.8,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.03811391,
-          "rank": 9
+          "modelScore": 0.04173499,
+          "rank": 5
         },
         {
           "raceId": "2026-11-28_5_9",
           "leg": 5,
-          "number": 12,
-          "name": "Conrads Ove",
+          "number": 8,
+          "name": "Mace Windu",
           "prestartFeatures": {
-            "post": 12.0,
+            "post": 8.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 10,
             "auto": 0,
             "starts5": 5,
-            "form_place_mean": 4.2,
+            "form_place_mean": 3.75,
             "win5": 1,
-            "top3_5": 3,
-            "days_off": 14,
+            "top3_5": 2,
+            "days_off": 168,
             "gallop5": null,
-            "km_median": 75.2,
+            "km_median": 75.1,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.03327124,
-          "rank": 10
+          "modelScore": 0.04069762,
+          "rank": 6
         },
         {
           "raceId": "2026-11-28_5_9",
           "leg": 5,
-          "number": 9,
-          "name": "Conrads Skifs",
+          "number": 11,
+          "name": "Mint Julep",
           "prestartFeatures": {
-            "post": 9.0,
+            "post": 11.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 10,
             "auto": 0,
             "starts5": 5,
-            "form_place_mean": 3,
+            "form_place_mean": 3.5,
             "win5": 1,
-            "top3_5": 1,
-            "days_off": 14,
+            "top3_5": 2,
+            "days_off": 30,
             "gallop5": null,
-            "km_median": 75.7,
-            "past_purse_log": 15.425
+            "km_median": 74.3,
+            "past_purse_log": 15.068
           },
-          "modelScore": 0.02713322,
-          "rank": 11
+          "modelScore": 0.03639439,
+          "rank": 7
         },
         {
           "raceId": "2026-11-28_5_9",
@@ -7156,7 +7046,7 @@
           "prestartFeatures": {
             "post": 10.0,
             "distance": 2140.0,
-            "field": 12,
+            "field": 10,
             "auto": 0,
             "starts5": 5,
             "form_place_mean": 2,
@@ -7167,8 +7057,52 @@
             "km_median": null,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.02683696,
-          "rank": 12
+          "modelScore": 0.03219312,
+          "rank": 8
+        },
+        {
+          "raceId": "2026-11-28_5_9",
+          "leg": 5,
+          "number": 12,
+          "name": "Conrads Ove",
+          "prestartFeatures": {
+            "post": 12.0,
+            "distance": 2140.0,
+            "field": 10,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 4.2,
+            "win5": 1,
+            "top3_5": 3,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": 75.2,
+            "past_purse_log": 15.607
+          },
+          "modelScore": 0.03047284,
+          "rank": 9
+        },
+        {
+          "raceId": "2026-11-28_5_9",
+          "leg": 5,
+          "number": 9,
+          "name": "Conrads Skifs",
+          "prestartFeatures": {
+            "post": 9.0,
+            "distance": 2140.0,
+            "field": 10,
+            "auto": 0,
+            "starts5": 5,
+            "form_place_mean": 3,
+            "win5": 1,
+            "top3_5": 1,
+            "days_off": 14,
+            "gallop5": null,
+            "km_median": 75.7,
+            "past_purse_log": 15.425
+          },
+          "modelScore": 0.02918315,
+          "rank": 10
         }
       ],
       "top3": [
@@ -7183,8 +7117,8 @@
           "rank": 2
         },
         {
-          "number": 3,
-          "name": "Padron",
+          "number": 7,
+          "name": "Ice Cubes",
           "rank": 3
         }
       ]
@@ -7488,7 +7422,7 @@
           "prestartFeatures": {
             "post": 4.0,
             "distance": 2140.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3.5,
@@ -7499,7 +7433,7 @@
             "km_median": 72.0,
             "past_purse_log": 16.524
           },
-          "modelScore": 0.20571009,
+          "modelScore": 0.20386444,
           "rank": 1
         },
         {
@@ -7510,7 +7444,7 @@
           "prestartFeatures": {
             "post": 1.0,
             "distance": 2140.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2,
@@ -7521,30 +7455,8 @@
             "km_median": 72.85,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.1831819,
+          "modelScore": 0.19877828,
           "rank": 2
-        },
-        {
-          "raceId": "2026-11-28_5_11",
-          "leg": 7,
-          "number": 2,
-          "name": "My Honky Tonk Man",
-          "prestartFeatures": {
-            "post": 2.0,
-            "distance": 2140.0,
-            "field": 11,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 4,
-            "win5": 1,
-            "top3_5": 1,
-            "days_off": 10,
-            "gallop5": null,
-            "km_median": null,
-            "past_purse_log": 16.418
-          },
-          "modelScore": 0.08101209,
-          "rank": 3
         },
         {
           "raceId": "2026-11-28_5_11",
@@ -7554,7 +7466,7 @@
           "prestartFeatures": {
             "post": 11.0,
             "distance": 2140.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 3,
@@ -7565,52 +7477,30 @@
             "km_median": 73.0,
             "past_purse_log": 15.895
           },
-          "modelScore": 0.08073108,
-          "rank": 4
+          "modelScore": 0.08427975,
+          "rank": 3
         },
         {
           "raceId": "2026-11-28_5_11",
           "leg": 7,
-          "number": 3,
-          "name": "Sir Tooma",
+          "number": 2,
+          "name": "My Honky Tonk Man",
           "prestartFeatures": {
-            "post": 3.0,
+            "post": 2.0,
             "distance": 2140.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
-            "form_place_mean": 5.75,
-            "win5": 0,
+            "form_place_mean": 4,
+            "win5": 1,
             "top3_5": 1,
-            "days_off": 27,
+            "days_off": 10,
             "gallop5": null,
-            "km_median": 72.1,
+            "km_median": null,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.06886747,
-          "rank": 5
-        },
-        {
-          "raceId": "2026-11-28_5_11",
-          "leg": 7,
-          "number": 6,
-          "name": "River Tooma",
-          "prestartFeatures": {
-            "post": 6.0,
-            "distance": 2140.0,
-            "field": 11,
-            "auto": 1,
-            "starts5": 5,
-            "form_place_mean": 3.8,
-            "win5": 0,
-            "top3_5": 3,
-            "days_off": 21,
-            "gallop5": null,
-            "km_median": 73.15,
-            "past_purse_log": 16.418
-          },
-          "modelScore": 0.05969329,
-          "rank": 6
+          "modelScore": 0.08196778,
+          "rank": 4
         },
         {
           "raceId": "2026-11-28_5_11",
@@ -7620,7 +7510,7 @@
           "prestartFeatures": {
             "post": 10.0,
             "distance": 2140.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 4,
@@ -7631,8 +7521,30 @@
             "km_median": 72.55,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.05335881,
-          "rank": 7
+          "modelScore": 0.06345771,
+          "rank": 5
+        },
+        {
+          "raceId": "2026-11-28_5_11",
+          "leg": 7,
+          "number": 6,
+          "name": "River Tooma",
+          "prestartFeatures": {
+            "post": 6.0,
+            "distance": 2140.0,
+            "field": 10,
+            "auto": 1,
+            "starts5": 5,
+            "form_place_mean": 3.8,
+            "win5": 0,
+            "top3_5": 3,
+            "days_off": 21,
+            "gallop5": null,
+            "km_median": 73.15,
+            "past_purse_log": 16.418
+          },
+          "modelScore": 0.05733178,
+          "rank": 6
         },
         {
           "raceId": "2026-11-28_5_11",
@@ -7642,7 +7554,7 @@
           "prestartFeatures": {
             "post": 5.0,
             "distance": 2140.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": null,
@@ -7653,8 +7565,8 @@
             "km_median": null,
             "past_purse_log": 16.418
           },
-          "modelScore": 0.05309587,
-          "rank": 8
+          "modelScore": 0.05147331,
+          "rank": 7
         },
         {
           "raceId": "2026-11-28_5_11",
@@ -7664,7 +7576,7 @@
           "prestartFeatures": {
             "post": 8.0,
             "distance": 2140.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 2.667,
@@ -7675,8 +7587,8 @@
             "km_median": null,
             "past_purse_log": 15.607
           },
-          "modelScore": 0.04152169,
-          "rank": 9
+          "modelScore": 0.04196047,
+          "rank": 8
         },
         {
           "raceId": "2026-11-28_5_11",
@@ -7686,7 +7598,7 @@
           "prestartFeatures": {
             "post": 7.0,
             "distance": 2140.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 4.667,
@@ -7697,8 +7609,8 @@
             "km_median": 74.7,
             "past_purse_log": 15.068
           },
-          "modelScore": 0.01674001,
-          "rank": 10
+          "modelScore": 0.01203781,
+          "rank": 9
         },
         {
           "raceId": "2026-11-28_5_11",
@@ -7708,7 +7620,7 @@
           "prestartFeatures": {
             "post": 9.0,
             "distance": 2140.0,
-            "field": 11,
+            "field": 10,
             "auto": 1,
             "starts5": 5,
             "form_place_mean": 4.5,
@@ -7719,8 +7631,8 @@
             "km_median": 74.2,
             "past_purse_log": 14.914
           },
-          "modelScore": 0.01452579,
-          "rank": 11
+          "modelScore": 0.01067909,
+          "rank": 10
         }
       ],
       "top3": [
@@ -7735,8 +7647,8 @@
           "rank": 2
         },
         {
-          "number": 2,
-          "name": "My Honky Tonk Man",
+          "number": 11,
+          "name": "Overdrive Steel",
           "rank": 3
         }
       ]

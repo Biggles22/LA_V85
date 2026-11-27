@@ -4,6 +4,8 @@ import concurrent.futures
 import datetime as dt
 import json
 import urllib.request
+import urllib.error
+import time
 import update_bjerke_form as model
 from update_current_round import ROOT, TZ, time_value
 
@@ -18,8 +20,15 @@ def main():
     model.DAY = dt.date.fromisoformat(data['date'])
     def collect(race):
         url = model.API + race['raceId'] + '/extended'
-        with urllib.request.urlopen(urllib.request.Request(url, headers=model.HEADERS), timeout=28) as response:
-            raw = json.load(response)
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(urllib.request.Request(url, headers=model.HEADERS), timeout=28) as response:
+                    raw = json.load(response)
+                break
+            except urllib.error.HTTPError as error:
+                if error.code != 503 or attempt == 2:
+                    raise
+                time.sleep(2 * (attempt + 1))
         if raw.get('id') != race['raceId']:
             raise ValueError('Extended race identity mismatch')
         found = {s['number']: s for s in raw['starts']}

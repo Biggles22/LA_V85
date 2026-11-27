@@ -1,0 +1,95 @@
+{
+  "verifiedAt": "2026-11-27T19:08:33.631771+00:00",
+  "sourceAt": "2026-11-27T19:55:15+01:00",
+  "retrievedAt": "2026-11-27T20:05:25.909974+01:00",
+  "gameId": "V75_2026-11-28_5_5",
+  "snapshotId": "3b1f749ce57868bcaba83303c941a530f183c4577602960d32090174ef7a5eed",
+  "date": "2026-11-28",
+  "track": "Solvalla",
+  "raceIds": [
+    "2026-11-28_5_5",
+    "2026-11-28_5_6",
+    "2026-11-28_5_7",
+    "2026-11-28_5_8",
+    "2026-11-28_5_9",
+    "2026-11-28_5_10",
+    "2026-11-28_5_11"
+  ],
+  "active": 79,
+  "scratched": 6,
+  "deadline": "2026-11-28T15:00:00+01:00",
+  "changesSinceThursday": [
+    {
+      "leg": 2,
+      "number": 11,
+      "name": "Allant Express",
+      "type": "equipment",
+      "before": {
+        "age": 4,
+        "front_shoe": 1.0,
+        "back_shoe": 1.0,
+        "front_changed": 0.0,
+        "back_changed": 0.0,
+        "american": 0.0,
+        "sulky_changed": 0.0
+      },
+      "after": {
+        "age": 4,
+        "front_shoe": 0.0,
+        "back_shoe": 0.0,
+        "front_changed": 1.0,
+        "back_changed": 1.0,
+        "american": 0.0,
+        "sulky_changed": 0.0
+      }
+    },
+    {
+      "leg": 4,
+      "number": 6,
+      "name": "Haute Couture",
+      "type": "equipment",
+      "before": {
+        "age": 4,
+        "front_shoe": 0.0,
+        "back_shoe": 1.0,
+        "front_changed": 0.0,
+        "back_changed": 0.0,
+        "american": 0.0,
+        "sulky_changed": 0.0
+      },
+      "after": {
+        "age": 4,
+        "front_shoe": 1.0,
+        "back_shoe": 1.0,
+        "front_changed": 1.0,
+        "back_changed": 0.0,
+        "american": 0.0,
+        "sulky_changed": 0.0
+      }
+    },
+    {
+      "leg": 4,
+      "number": 8,
+      "name": "Budets Hildur",
+      "type": "new_scratch"
+    },
+    {
+      "leg": 5,
+      "number": 2,
+      "name": "Bransbys Saga",
+      "type": "new_scratch"
+    },
+    {
+      "leg": 5,
+      "number": 3,
+      "name": "Padron",
+      "type": "new_scratch"
+    },
+    {
+      "leg": 7,
+      "number": 3,
+      "name": "Sir Tooma",
+      "type": "new_scratch"
+    }
+  ]
+}

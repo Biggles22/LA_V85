@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "roundId": "2026-11-28-solvalla",
+  "gameId": "V75_2026-11-28_5_5",
+  "snapshotId": "3b1f749ce57868bcaba83303c941a530f183c4577602960d32090174ef7a5eed",
+  "createdAt": "2026-11-27T19:08:33.631771+00:00",
+  "role": "preliminary_friday_prestart_observation",
+  "files": [
+    {
+      "path": "analysis.json",
+      "sha256": "7e201746e816ed3f03fd6cf340851d9b59f5eedd542146806c322d040e034a00",
+      "bytes": 12182
+    },
+    {
+      "path": "data.json",
+      "sha256": "97c7f00fe938449298716c5e9c78019a5e42341718e6d91f884ab03c0720c4a0",
+      "bytes": 33666
+    },
+    {
+      "path": "external-sources.json",
+      "sha256": "2783fd8107390bf566ce226cc327f0b58fa4cd277f09f96c395337094eab92c0",
+      "bytes": 2988
+    },
+    {
+      "path": "manual-review.json",
+      "sha256": "2a92dcad42b1467a0a6d481f1e8ee875bd8aa42e8475d1f6fb49f5e2075782f9",
+      "bytes": 272193
+    },
+    {
+      "path": "market.json",
+      "sha256": "ce7d2b722d5477da571bface87ed54d55ad99fe2736c96a95c8bc42dd7241d78",
+      "bytes": 3193
+    },
+    {
+      "path": "models.json",
+      "sha256": "5de8f3998515145bf900042bec770aa8e1ddae68f74689c3c2c395e2933583b2",
+      "bytes": 877363
+    },
+    {
+      "path": "published-data.json",
+      "sha256": "29916a9a9e2a97a64405e6a555a3151b34984dcfa54e3e4c6179f0313201ec1b",
+      "bytes": 33667
+    },
+    {
+      "path": "published-form.json",
+      "sha256": "3cce4caa029065e5c1ce31b350b72e59fc4a32d01565fa114e341a7f5104c67d",
+      "bytes": 240008
+    },
+    {
+      "path": "published-model.json",
+      "sha256": "bf9f92802a1ec1d1489019a7501146cb41ae69c5ca6ce23ff7dc81b864214da6",
+      "bytes": 161215
+    },
+    {
+      "path": "raw/20261127T190642Z_2026-11-28_5_10.json.gz",
+      "sha256": "dec049cb83b001ab5ab038e5badcd913cc4b9ce9177721a2ebe62bc21d4b3325",
+      "bytes": 12246
+    },
+    {
+      "path": "raw/20261127T190642Z_2026-11-28_5_11.json.gz",
+      "sha256": "e25761805725d604c1af7045b793ee91732c6ca7e9846c56415450d55d5777b6",
+      "bytes": 12277
+    },
+    {
+      "path": "raw/20261127T190642Z_2026-11-28_5_5.json.gz",
+      "sha256": "ba8b65ce4c3dbab051f1ef733a8f4ea4766d76f066eba75b89ac6541828a7b2d",
+      "bytes": 11966
+    },
+    {
+      "path": "raw/20261127T190642Z_2026-11-28_5_6.json.gz",
+      "sha256": "7238ab4b0e7a1d9a498d653466bdc9fde3cafefb8e07691df16e94dbc2fd2d69",
+      "bytes": 11976
+    },
+    {
+      "path": "raw/20261127T190642Z_2026-11-28_5_7.json.gz",
+      "sha256": "9876be167e6939669f90ab8ad4725d08786fc54b71e2ee78e89d6ed2db0f58eb",
+      "bytes": 10290
+    },
+    {
+      "path": "raw/20261127T190642Z_2026-11-28_5_8.json.gz",
+      "sha256": "0a2c73bf758521de126ef16433386315e6480849afcb294f80593adecbd57257",
+      "bytes": 14875
+    },
+    {
+      "path": "raw/20261127T190642Z_2026-11-28_5_9.json.gz",
+      "sha256": "13292d5ba60444675492e3d06d8a4d1cb909bd69b3ca0ad32072c5db9ee844c8",
+      "bytes": 11684
+    },
+    {
+      "path": "raw/20261127T190642Z_game.json.gz",
+      "sha256": "742b0a9595925fd2990b212b33730bd3c55287c1dd9b43c5e06b01c99085d10d",
+      "bytes": 41788
+    },
+    {
+      "path": "verification.json",
+      "sha256": "5470916a4950b008443d71f54fdc4e17ab5c1af4b6bd329fc116d95fe188303b",
+      "bytes": 2071
+    },
+    {
+      "path": "versions.json",
+      "sha256": "afedff6b21eb9f66b976717e5aac8b437e7247a17dacb103458c4bd0a39799da",
+      "bytes": 1079
+    }
+  ]
+}

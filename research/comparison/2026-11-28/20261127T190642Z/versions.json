@@ -1,0 +1,46 @@
+{
+  "capturedAt": "2026-11-27T19:08:33.631771+00:00",
+  "software": {
+    "catboost": "1.2.10",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "xgboost": "3.4.1"
+  },
+  "parameters": {
+    "iterations": 220,
+    "learning_rate": 0.045,
+    "depth": 5,
+    "l2_leaf_reg": 6,
+    "loss_function": "Logloss",
+    "thread_count": 2,
+    "random_seed": 214,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "training": {
+    "starts": 12247,
+    "races": 1047,
+    "dates": 145,
+    "from": "2024-01-06",
+    "until": "2026-10-31",
+    "source": "research/historical_expanded_2024_2026.json",
+    "sha256": "e22dedcaa2c8c623ced57641b85dd1ae1025ab2b4c6caaa95b97be523e5c0975",
+    "excludedRaces": 21,
+    "byGameType": {
+      "V75": {
+        "races": 634,
+        "starts": 7441
+      },
+      "V85": {
+        "races": 413,
+        "starts": 4806
+      }
+    }
+  },
+  "codeCommit": "ac89312f480f1c8fb36458e1a62d3126c4273b57",
+  "modelScripts": [
+    "scripts/rank_current_catboost.py",
+    "scripts/compare_current_models.py"
+  ],
+  "validationScope": "V85_ONLY"
+}

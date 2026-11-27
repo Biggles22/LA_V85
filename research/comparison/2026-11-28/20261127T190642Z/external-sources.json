@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "roundId": "2026-11-28-solvalla",
+  "gameId": "V75_2026-11-28_5_5",
+  "capturedAt": "2026-11-27T19:08:33.631771+00:00",
+  "sources": [
+    {
+      "name": "Travia omgångsanalys",
+      "url": "https://travia.se/v75/solvalla-2026-11-28",
+      "publicationTimeText": "Uppdaterad 19:06",
+      "publishedAt": null,
+      "status": "public_partial_unordered",
+      "spike": {
+        "leg": 5,
+        "number": 5,
+        "name": "Tangelo Lane"
+      },
+      "outsider": {
+        "leg": 4,
+        "number": 2,
+        "name": "Eye to Eye"
+      },
+      "overplayed": {
+        "leg": 2,
+        "number": 3,
+        "name": "Hola Que Tal"
+      },
+      "evidence": "V75 på Solvalla, 28 november 2026. Offentliga höjdpunkter och A/B/C-grupper.",
+      "strictOrderedTop3": false
+    },
+    {
+      "name": "Tipper Trav",
+      "url": "https://tippertrav.se/",
+      "publishedAt": null,
+      "status": "public_numeric_index_partial",
+      "races": [
+        {
+          "leg": 1,
+          "top3": [
+            5,
+            11,
+            6
+          ],
+          "indices": [
+            81,
+            32,
+            30
+          ],
+          "nextIndex": 26,
+          "strictOrderedTop3Eligible": true
+        },
+        {
+          "leg": 2,
+          "top3": [
+            4,
+            3,
+            8
+          ],
+          "indices": [
+            71,
+            68,
+            39
+          ],
+          "nextIndex": 38,
+          "strictOrderedTop3Eligible": true
+        },
+        {
+          "leg": 3,
+          "firstChoice": 3,
+          "top3": null,
+          "reason": "Stens Rubin och Makalu Doc delar tredje index 35."
+        },
+        {
+          "leg": 7,
+          "firstChoice": null,
+          "top3": null,
+          "reason": "Likeaboss och Joker Ima delar högsta index 71."
+        }
+      ],
+      "evidence": "V75 Solvalla 2026-11-28, Tipper AI-tabell. Numeriskt index utan kalibrerad sannolikhet."
+    },
+    {
+      "name": "Travtips AI",
+      "url": "https://travtips.ai/sv/tips/v75",
+      "status": "stale_other_round",
+      "evidence": "Öppnat svar visade Bjerke/Jägersro. Aktuell prognos ej verifierad."
+    },
+    {
+      "name": "Travmaskinen",
+      "url": "https://travmaskinen.se/v75-tips",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "V46",
+      "url": "https://v46.se/",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "Travia AI",
+      "url": "https://travia.se/ai",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "Travtipsaren",
+      "url": "https://travtipsaren.se/",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "ATG Elli",
+      "url": "https://www.atg.se/",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "Simsalabim Heat Rank",
+      "url": "https://simsalabim.se/",
+      "status": "current_prediction_not_captured"
+    }
+  ]
+}
