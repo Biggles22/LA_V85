@@ -1,0 +1,929 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-11-28-saturday-final",
+  "roundId": "2026-11-28-solvalla",
+  "gameId": "V75_2026-11-28_5_5",
+  "snapshotId": "b47d9bf350b04f6ccc1548f81d4ca792f2b1a8285f697b410994a53060d6136b",
+  "sourceAt": "2026-11-28T11:03:00+01:00",
+  "reviewedAt": "2026-11-28T10:13:48.376281+00:00",
+  "status": "SATURDAY_FINAL_PRESTART",
+  "picks": [
+    {
+      "leg": 2,
+      "number": 2,
+      "name": "Crazy Mary",
+      "pct": 2.37,
+      "historicalRank": 1,
+      "expandedRank": 7,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.08
+        }
+      ],
+      "type": "outsider",
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+      ],
+      "reason": "Historikrank 1, utökad rank 7 och 2.37 procent. class-proxy 3/12 klarar bästa tredjedelen.",
+      "argument": "Historikrank 1, utökad rank 7 och 2.37 procent. class-proxy 3/12 klarar bästa tredjedelen.",
+      "risk": "Hola Que Tal och Capo har klart högre marknadsstöd; femstartersraden saknar seger och den utökade modellen rankar lägre."
+    },
+    {
+      "leg": 4,
+      "number": 5,
+      "name": "Raina Schermer",
+      "pct": 1.78,
+      "historicalRank": 2,
+      "expandedRank": 9,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 1,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 3.42
+        }
+      ],
+      "type": "outsider",
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+      ],
+      "reason": "Historikrank 2, utökad rank 9 och 1.78 procent. class-proxy 1/13 klarar bästa tredjedelen.",
+      "argument": "Historikrank 2, utökad rank 9 och 1.78 procent. class-proxy 1/13 klarar bästa tredjedelen.",
+      "risk": "Voltstart över 2640 meter samt starkt marknadsstöd för Hankypanky Leonie; den utökade modellen rankar lägre."
+    },
+    {
+      "leg": 6,
+      "number": 4,
+      "name": "Osvaldo A.Boko",
+      "pct": 5.99,
+      "historicalRank": 2,
+      "expandedRank": 2,
+      "qualifyingProxies": [
+        {
+          "type": "form",
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.82
+        }
+      ],
+      "type": "outsider",
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+      ],
+      "reason": "Historikrank 2, utökad rank 2 och 5.99 procent. form-proxy 3/12 klarar bästa tredjedelen.",
+      "argument": "Historikrank 2, utökad rank 2 och 5.99 procent. form-proxy 3/12 klarar bästa tredjedelen.",
+      "risk": "Barn Bank toppar båda modellerna och sprinttempot från spår 4 måste falla rätt."
+    }
+  ],
+  "spikeCandidates": [
+    {
+      "leg": 1,
+      "number": 5,
+      "name": "Fine Manners",
+      "pct": 65.26,
+      "historicalRank": 1,
+      "expandedRank": 1,
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+      ],
+      "reason": "Förstaval i båda modellerna i lördagens snapshot.",
+      "challengers": [
+        "Iaintnoquitter",
+        "Shogun R.R."
+      ],
+      "opponents": [
+        {
+          "number": 11,
+          "name": "Iaintnoquitter"
+        },
+        {
+          "number": 8,
+          "name": "Shogun R.R."
+        }
+      ],
+      "risk": "Hög streckandel och 47 dagars uppehåll; Iaintnoquitter har fyra segrar och en andraplats på fem starter."
+    },
+    {
+      "leg": 6,
+      "number": 7,
+      "name": "Barn Bank",
+      "pct": 57.88,
+      "historicalRank": 1,
+      "expandedRank": 1,
+      "sources": [
+        "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+      ],
+      "reason": "Förstaval i båda modellerna i lördagens snapshot.",
+      "challengers": [
+        "Osvaldo A.Boko",
+        "Romulus Diablo"
+      ],
+      "opponents": [
+        {
+          "number": 4,
+          "name": "Osvaldo A.Boko"
+        },
+        {
+          "number": 5,
+          "name": "Romulus Diablo"
+        }
+      ],
+      "risk": "Spår 7 över 1640 meter och två galoppnoteringar i femstartersunderlaget; Osvaldo A.Boko och Romulus Diablo är motbud."
+    }
+  ],
+  "qualifiedOutsiders": [
+    {
+      "leg": 2,
+      "number": 2,
+      "name": "Crazy Mary",
+      "pct": 2.37,
+      "historicalRank": 1,
+      "expandedRank": 7,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.08
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 5,
+      "name": "Raina Schermer",
+      "pct": 1.78,
+      "historicalRank": 2,
+      "expandedRank": 9,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 1,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 3.42
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 4,
+      "name": "Osvaldo A.Boko",
+      "pct": 5.99,
+      "historicalRank": 2,
+      "expandedRank": 2,
+      "qualifyingProxies": [
+        {
+          "type": "form",
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.82
+        }
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 2,
+      "name": "Four White E.G.",
+      "pct": 1.0,
+      "historicalRank": 3,
+      "expandedRank": 8,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.01
+        }
+      ]
+    },
+    {
+      "leg": 5,
+      "number": 7,
+      "name": "Ice Cubes",
+      "pct": 6.09,
+      "historicalRank": 3,
+      "expandedRank": 4,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 2,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 3.32
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 5,
+      "name": "Romulus Diablo",
+      "pct": 9.19,
+      "historicalRank": 3,
+      "expandedRank": 4,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.34
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 1,
+      "name": "Kahbean",
+      "pct": 9.68,
+      "historicalRank": 3,
+      "expandedRank": 5,
+      "qualifyingProxies": [
+        {
+          "type": "form",
+          "rank": 1,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 3.61
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "number": 3,
+      "name": "Joakim Palema",
+      "pct": 4.38,
+      "historicalRank": 4,
+      "expandedRank": 5,
+      "qualifyingProxies": [
+        {
+          "type": "form",
+          "rank": 4,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.7
+        }
+      ]
+    },
+    {
+      "leg": 1,
+      "number": 6,
+      "name": "Alvena Roy",
+      "pct": 1.26,
+      "historicalRank": 5,
+      "expandedRank": 7,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.01
+        }
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 9,
+      "name": "Castor the Star",
+      "pct": 2.01,
+      "historicalRank": 5,
+      "expandedRank": 5,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 3,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 2.8
+        }
+      ]
+    },
+    {
+      "leg": 7,
+      "number": 10,
+      "name": "Ebbot Rice",
+      "pct": 9.4,
+      "historicalRank": 5,
+      "expandedRank": 5,
+      "qualifyingProxies": [
+        {
+          "type": "form",
+          "rank": 1,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 3.19
+        },
+        {
+          "type": "class",
+          "rank": 3,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 2.99
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "number": 9,
+      "name": "Global Good Girl",
+      "pct": 2.58,
+      "historicalRank": 6,
+      "expandedRank": 7,
+      "qualifyingProxies": [
+        {
+          "type": "form",
+          "rank": 5,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 2.82
+        },
+        {
+          "type": "class",
+          "rank": 3,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 3.15
+        }
+      ]
+    },
+    {
+      "leg": 3,
+      "number": 6,
+      "name": "Makalu Doc",
+      "pct": 6.89,
+      "historicalRank": 6,
+      "expandedRank": 4,
+      "qualifyingProxies": [
+        {
+          "type": "form",
+          "rank": 4,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 2.61
+        }
+      ]
+    },
+    {
+      "leg": 2,
+      "number": 7,
+      "name": "Surveillance",
+      "pct": 8.36,
+      "historicalRank": 6,
+      "expandedRank": 3,
+      "qualifyingProxies": [
+        {
+          "type": "class",
+          "rank": 1,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.67
+        }
+      ]
+    }
+  ],
+  "outsiderRuleSource": "efteranalys/2026-11-21/lessons.json#followUp",
+  "theoreticalSystems": {
+    "rowPriceSEK": 0.6,
+    "stakeFraction": 1.0,
+    "budgetExampleSEK": 900,
+    "budgetSource": "Senaste uttryckligen bekräftade kupongens insats, Jägersro 2026-11-21; endast räkneexempel.",
+    "A": {
+      "label": "Två arbetsspikar",
+      "selections": [
+        [
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          8
+        ],
+        [
+          2,
+          3,
+          6,
+          10
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          11
+        ],
+        [
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          7
+        ],
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "reserveOrder": [
+        {
+          "leg": 1,
+          "numbers": [
+            5,
+            11,
+            8,
+            1,
+            4,
+            6,
+            2,
+            3,
+            10,
+            7,
+            12,
+            9
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 2,
+          "numbers": [
+            3,
+            4,
+            8,
+            10,
+            7,
+            9,
+            2,
+            11,
+            1,
+            5,
+            6,
+            12
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 3,
+          "numbers": [
+            3,
+            10,
+            2,
+            6,
+            9,
+            8,
+            5,
+            1,
+            7,
+            4
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 4,
+          "numbers": [
+            11,
+            6,
+            2,
+            14,
+            4,
+            1,
+            7,
+            9,
+            3,
+            5,
+            15,
+            10,
+            12
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 5,
+          "numbers": [
+            5,
+            6,
+            1,
+            8,
+            7,
+            12,
+            11,
+            10,
+            9,
+            4
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 6,
+          "numbers": [
+            7,
+            1,
+            5,
+            4,
+            3,
+            6,
+            2,
+            11,
+            10,
+            12,
+            9,
+            8
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 7,
+          "numbers": [
+            1,
+            4,
+            6,
+            5,
+            10,
+            2,
+            11,
+            8,
+            9,
+            7
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        }
+      ],
+      "rows": 1500,
+      "costSEK": 900.0,
+      "extraCostSEK": 0
+    },
+    "BUncut": {
+      "label": "Motbuden tillagda, övriga streck kvar",
+      "selections": [
+        [
+          5,
+          11
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          8
+        ],
+        [
+          2,
+          3,
+          6,
+          10
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          11
+        ],
+        [
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "reserveOrder": [
+        {
+          "leg": 1,
+          "numbers": [
+            5,
+            11,
+            8,
+            1,
+            4,
+            6,
+            2,
+            3,
+            10,
+            7,
+            12,
+            9
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 2,
+          "numbers": [
+            3,
+            4,
+            8,
+            10,
+            7,
+            9,
+            2,
+            11,
+            1,
+            5,
+            6,
+            12
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 3,
+          "numbers": [
+            3,
+            10,
+            2,
+            6,
+            9,
+            8,
+            5,
+            1,
+            7,
+            4
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 4,
+          "numbers": [
+            11,
+            6,
+            2,
+            14,
+            4,
+            1,
+            7,
+            9,
+            3,
+            5,
+            15,
+            10,
+            12
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 5,
+          "numbers": [
+            5,
+            6,
+            1,
+            8,
+            7,
+            12,
+            11,
+            10,
+            9,
+            4
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 6,
+          "numbers": [
+            7,
+            1,
+            5,
+            4,
+            3,
+            6,
+            2,
+            11,
+            10,
+            12,
+            9,
+            8
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 7,
+          "numbers": [
+            1,
+            4,
+            6,
+            5,
+            10,
+            2,
+            11,
+            8,
+            9,
+            7
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        }
+      ],
+      "rows": 6000,
+      "costSEK": 3600.0,
+      "extraCostSEK": 2700
+    },
+    "BWithinBudget": {
+      "label": "Motbuden tillagda inom A:s budget",
+      "selections": [
+        [
+          5,
+          11
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          8
+        ],
+        [
+          2,
+          3,
+          10
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          11
+        ],
+        [
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4
+        ]
+      ],
+      "reserveOrder": [
+        {
+          "leg": 1,
+          "numbers": [
+            5,
+            11,
+            8,
+            1,
+            4,
+            6,
+            2,
+            3,
+            10,
+            7,
+            12,
+            9
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 2,
+          "numbers": [
+            3,
+            4,
+            8,
+            10,
+            7,
+            9,
+            2,
+            11,
+            1,
+            5,
+            6,
+            12
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 3,
+          "numbers": [
+            3,
+            10,
+            2,
+            6,
+            9,
+            8,
+            5,
+            1,
+            7,
+            4
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 4,
+          "numbers": [
+            11,
+            6,
+            2,
+            14,
+            4,
+            1,
+            7,
+            9,
+            3,
+            5,
+            15,
+            10,
+            12
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 5,
+          "numbers": [
+            5,
+            6,
+            1,
+            8,
+            7,
+            12,
+            11,
+            10,
+            9,
+            4
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 6,
+          "numbers": [
+            7,
+            1,
+            5,
+            4,
+            3,
+            6,
+            2,
+            11,
+            10,
+            12,
+            9,
+            8
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        },
+        {
+          "leg": 7,
+          "numbers": [
+            1,
+            4,
+            6,
+            5,
+            10,
+            2,
+            11,
+            8,
+            9,
+            7
+          ],
+          "basis": "ATG streckandel, fallande; startnummer bryter lika värde"
+        }
+      ],
+      "rows": 1500,
+      "costSEK": 900.0,
+      "extraCostSEK": 0,
+      "removedToFit": [
+        {
+          "leg": 3,
+          "numbers": [
+            6
+          ]
+        },
+        {
+          "leg": 7,
+          "numbers": [
+            1,
+            5
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Modellpoäng är inte kalibrerade vinstchanser.",
+    "Den utökade modellen är experimentell och använder marknad och anmäld utrustning.",
+    "Vinnarodds, streck och omsättning kan ändras efter snapshoten."
+  ]
+}

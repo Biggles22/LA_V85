@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "roundId": "2026-11-28-solvalla",
   "gameId": "V75_2026-11-28_5_5",
-  "snapshotId": "3b1f749ce57868bcaba83303c941a530f183c4577602960d32090174ef7a5eed",
-  "retrievedAt": "2026-11-27T20:06:04.204503+01:00",
+  "snapshotId": "b47d9bf350b04f6ccc1548f81d4ca792f2b1a8285f697b410994a53060d6136b",
+  "retrievedAt": "2026-11-28T11:04:09.445662+01:00",
   "method": "Preliminär delranking från historisk form, klass och tempo/spår där underlag finns. Ingen kalibrerad vinstchans eller tränad XGBoost/CatBoost-prognos.",
   "races": [
     {

@@ -1,0 +1,161 @@
+{
+  "verifiedAt": "2026-11-28T10:13:48.376281+00:00",
+  "sourceAt": "2026-11-28T11:03:00+01:00",
+  "retrievedAt": "2026-11-28T11:04:00.939199+01:00",
+  "gameId": "V75_2026-11-28_5_5",
+  "snapshotId": "b47d9bf350b04f6ccc1548f81d4ca792f2b1a8285f697b410994a53060d6136b",
+  "date": "2026-11-28",
+  "track": "Solvalla",
+  "raceIds": [
+    "2026-11-28_5_5",
+    "2026-11-28_5_6",
+    "2026-11-28_5_7",
+    "2026-11-28_5_8",
+    "2026-11-28_5_9",
+    "2026-11-28_5_10",
+    "2026-11-28_5_11"
+  ],
+  "active": 79,
+  "scratched": 6,
+  "deadline": "2026-11-28T15:00:00+01:00",
+  "turnoverSEK": 25542215.0,
+  "changesSinceFriday": [
+    {
+      "leg": 3,
+      "number": 3,
+      "name": "Double Deceiver",
+      "type": "market_pct",
+      "before": 50.43,
+      "after": 54.3
+    },
+    {
+      "leg": 4,
+      "number": 11,
+      "name": "Hankypanky Leonie",
+      "type": "market_pct",
+      "before": 33.08,
+      "after": 30.19
+    },
+    {
+      "leg": 6,
+      "number": 1,
+      "name": "Celtic Tonga",
+      "type": "market_pct",
+      "before": 10.63,
+      "after": 13.41
+    },
+    {
+      "leg": 5,
+      "number": 5,
+      "name": "Tangelo Lane",
+      "type": "market_pct",
+      "before": 39.6,
+      "after": 36.96
+    },
+    {
+      "leg": 7,
+      "number": 6,
+      "name": "River Tooma",
+      "type": "market_pct",
+      "before": 19.24,
+      "after": 16.87
+    },
+    {
+      "leg": 4,
+      "number": 4,
+      "name": "Snowqueen",
+      "type": "market_pct",
+      "before": 7.5,
+      "after": 9.82
+    },
+    {
+      "leg": 5,
+      "number": 6,
+      "name": "Justice for All",
+      "type": "market_pct",
+      "before": 20.01,
+      "after": 22.05
+    },
+    {
+      "leg": 4,
+      "number": 2,
+      "name": "Eye to Eye",
+      "type": "market_pct",
+      "before": 10.29,
+      "after": 12.17
+    },
+    {
+      "leg": 6,
+      "number": 5,
+      "name": "Romulus Diablo",
+      "type": "market_pct",
+      "before": 10.95,
+      "after": 9.19
+    },
+    {
+      "leg": 7,
+      "number": 4,
+      "name": "Joker Ima",
+      "type": "market_pct",
+      "before": 20.51,
+      "after": 22.25
+    },
+    {
+      "leg": 2,
+      "number": 7,
+      "name": "Surveillance",
+      "type": "market_pct",
+      "before": 6.64,
+      "after": 8.36
+    },
+    {
+      "leg": 2,
+      "number": 3,
+      "name": "Hola Que Tal",
+      "type": "market_pct",
+      "before": 29.68,
+      "after": 27.99
+    },
+    {
+      "leg": 1,
+      "number": 5,
+      "name": "Fine Manners",
+      "type": "market_pct",
+      "before": 63.6,
+      "after": 65.26
+    },
+    {
+      "leg": 7,
+      "number": 1,
+      "name": "Likeaboss",
+      "type": "market_pct",
+      "before": 24.89,
+      "after": 26.5
+    },
+    {
+      "leg": 7,
+      "number": 10,
+      "name": "Ebbot Rice",
+      "type": "market_pct",
+      "before": 8.14,
+      "after": 9.4
+    },
+    {
+      "leg": 5,
+      "number": 8,
+      "name": "Mace Windu",
+      "type": "market_pct",
+      "before": 6.9,
+      "after": 8.15
+    },
+    {
+      "leg": 3,
+      "number": 6,
+      "name": "Makalu Doc",
+      "type": "market_pct",
+      "before": 8.07,
+      "after": 6.89
+    }
+  ],
+  "newScratchesSinceFriday": []
+}

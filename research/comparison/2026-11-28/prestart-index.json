@@ -3,25 +3,25 @@
   "roundId": "2026-11-28-solvalla",
   "gameId": "V75_2026-11-28_5_5",
   "bettingDeadline": "2026-11-28T15:00:00+01:00",
-  "primaryBatch": "20261127T190642Z",
-  "selectedAt": "2026-11-27T19:08:33.631771+00:00",
-  "snapshotId": "3b1f749ce57868bcaba83303c941a530f183c4577602960d32090174ef7a5eed",
-  "observedAt": "2026-11-27T19:06:54.399971+00:00",
-  "sourceAt": "2026-11-27T19:55:15+01:00",
-  "status": "FRIDAY_PRELIMINARY",
+  "primaryBatch": "20261128T100612Z",
+  "selectedAt": "2026-11-28T10:13:48.376281+00:00",
+  "snapshotId": "b47d9bf350b04f6ccc1548f81d4ca792f2b1a8285f697b410994a53060d6136b",
+  "observedAt": "2026-11-28T10:06:23.905040+00:00",
+  "sourceAt": "2026-11-28T11:03:00+01:00",
+  "status": "SATURDAY_FINAL_PRESTART",
   "captureWindow": {
-    "startedAt": "2026-11-27T20:05:25.909974+01:00",
-    "finishedAt": "2026-11-27T19:08:33.631771+00:00"
+    "startedAt": "2026-11-28T10:06:12.542748+00:00",
+    "finishedAt": "2026-11-28T10:13:48.376281+00:00"
   },
   "files": {
-    "manifest": "20261127T190642Z/manifest.json",
-    "analysis": "20261127T190642Z/analysis.json",
-    "manualReview": "20261127T190642Z/manual-review.json",
-    "market": "20261127T190642Z/market.json",
-    "models": "20261127T190642Z/models.json",
-    "externalSources": "20261127T190642Z/external-sources.json",
-    "verification": "20261127T190642Z/verification.json",
-    "versions": "20261127T190642Z/versions.json"
+    "manifest": "20261128T100612Z/manifest.json",
+    "analysis": "20261128T100612Z/analysis.json",
+    "manualReview": "20261128T100612Z/manual-review.json",
+    "market": "20261128T100612Z/market.json",
+    "models": "20261128T100612Z/models.json",
+    "externalSources": "20261128T100612Z/external-sources.json",
+    "verification": "20261128T100612Z/verification.json",
+    "versions": "20261128T100612Z/versions.json"
   },
-  "note": "Fredagens primära preliminära observation. Torsdagens katalog bevaras. Lördagens primära frysning får väljas vid senare verifierad observation före start."
+  "note": "Primär lördagsfrysning före verifierat spelstopp. Tidigare batcher bevaras oförändrade."
 }

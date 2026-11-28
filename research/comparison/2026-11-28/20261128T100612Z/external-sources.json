@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "roundId": "2026-11-28-solvalla",
+  "gameId": "V75_2026-11-28_5_5",
+  "capturedAt": "2026-11-28T10:13:48.376281+00:00",
+  "sources": [
+    {
+      "name": "Travia omgångsanalys",
+      "url": "https://travia.se/v75/solvalla-2026-11-28",
+      "publicationTimeText": "Uppdaterad 10:56 den 28 november",
+      "status": "public_partial_unordered",
+      "spike": {
+        "leg": 5,
+        "number": 5,
+        "name": "Tangelo Lane"
+      },
+      "outsider": {
+        "leg": 4,
+        "number": 14,
+        "name": "Lotusorchide"
+      },
+      "overplayed": {
+        "leg": 2,
+        "number": 3,
+        "name": "Hola Que Tal"
+      },
+      "strictOrderedTop3": false
+    },
+    {
+      "name": "Tipper Trav",
+      "url": "https://tippertrav.se/",
+      "status": "public_numeric_index_partial",
+      "warning": "Sidan visade lägre omsättning och äldre streck än ATG-snapshoten; endast publicerade index fryses.",
+      "races": [
+        {
+          "leg": 1,
+          "top3": [
+            5,
+            11,
+            6
+          ],
+          "indices": [
+            81,
+            33,
+            29
+          ]
+        },
+        {
+          "leg": 2,
+          "top3": [
+            4,
+            3,
+            8
+          ],
+          "indices": [
+            71,
+            67,
+            40
+          ]
+        },
+        {
+          "leg": 3,
+          "firstChoice": 3,
+          "top3": null,
+          "reason": "Delad tredjeplats 35."
+        },
+        {
+          "leg": 4,
+          "top3": [
+            4,
+            11,
+            6
+          ],
+          "indices": [
+            71,
+            63,
+            43
+          ]
+        },
+        {
+          "leg": 5,
+          "top3": [
+            5,
+            6,
+            8
+          ],
+          "indices": [
+            70,
+            39,
+            34
+          ]
+        },
+        {
+          "leg": 6,
+          "top3": [
+            7,
+            4,
+            2
+          ],
+          "indices": [
+            81,
+            30,
+            29
+          ]
+        },
+        {
+          "leg": 7,
+          "firstChoice": null,
+          "top3": null,
+          "reason": "Delad förstaplats 71."
+        }
+      ]
+    },
+    {
+      "name": "Travtips AI",
+      "url": "https://travtips.ai/sv/tips/v75",
+      "publicationTimeText": "Kontrollerad 27 november",
+      "status": "public_first_choices_only",
+      "firstChoices": [
+        {
+          "leg": 1,
+          "number": 5
+        },
+        {
+          "leg": 2,
+          "number": 3
+        },
+        {
+          "leg": 3,
+          "number": 3
+        },
+        {
+          "leg": 4,
+          "number": 11
+        },
+        {
+          "leg": 5,
+          "number": 5
+        },
+        {
+          "leg": 6,
+          "number": 7
+        },
+        {
+          "leg": 7,
+          "number": 1
+        }
+      ],
+      "strictOrderedTop3": false
+    },
+    {
+      "name": "Travmaskinen",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "V46",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "Travia AI",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "Travtipsaren",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "ATG Elli",
+      "status": "current_prediction_not_captured"
+    },
+    {
+      "name": "Simsalabim Heat Rank",
+      "status": "current_prediction_not_captured"
+    }
+  ]
+}

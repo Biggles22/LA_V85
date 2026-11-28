@@ -3,8 +3,8 @@
   "kind": "CATBOOST_PRESTART_RANKING",
   "roundId": "2026-11-28-solvalla",
   "gameId": "V75_2026-11-28_5_5",
-  "snapshotId": "3b1f749ce57868bcaba83303c941a530f183c4577602960d32090174ef7a5eed",
-  "generatedAt": "2026-11-27T19:05:54.903579+00:00",
+  "snapshotId": "b47d9bf350b04f6ccc1548f81d4ca792f2b1a8285f697b410994a53060d6136b",
+  "generatedAt": "2026-11-28T10:05:26.207538+00:00",
   "model": "CatBoostClassifier",
   "parameters": {
     "iterations": 220,
@@ -5719,37 +5719,37 @@
     {
       "raceId": "2026-11-28_5_5",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_5/extended",
-      "sha256": "30fc96b17314ecded6556bc0faf3ff4d5cf50ff1db75055a8a3ad7ab1bbd7491"
+      "sha256": "4455d730b39ac2219a96f1e3b4c1a5aff110edfd626f58d0f2b372818c0b570b"
     },
     {
       "raceId": "2026-11-28_5_6",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_6/extended",
-      "sha256": "d92660c2bfb2fe722ad510b5d233b39cd118b8e8e47d9b6d14786776f37c4c44"
+      "sha256": "f16295d781b272d48b05307eb16df3e5e69143b125698a607d9b1328add44f3a"
     },
     {
       "raceId": "2026-11-28_5_7",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_7/extended",
-      "sha256": "aa341eb17468f839ca4a6520d212fe5569111eeeaeb5ea1aadf3042cafe5c295"
+      "sha256": "2ae74f57c5ef80980b1f237c810c8e70f5c5c291ba2b7a87acc649f8a2519aa2"
     },
     {
       "raceId": "2026-11-28_5_8",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_8/extended",
-      "sha256": "310fae81325345f3be60d54e0740242f703874a8ba52b05b08441f3a054e8834"
+      "sha256": "2a380484680aa7d660e26ec3057f294119a833fb00d75e97ca00d99ebe3ffb52"
     },
     {
       "raceId": "2026-11-28_5_9",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_9/extended",
-      "sha256": "8ae909049adb2da536e358723acf378ceb2cc34912426e377b330f6804c5ec66"
+      "sha256": "4e0d40c0bf6c2c8c7217178ed9c71f0b65fc579155d93c9e197b483daadf7aae"
     },
     {
       "raceId": "2026-11-28_5_10",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_10/extended",
-      "sha256": "dc7f9e78b5490aa37e9cdaca1d3225a6e565cafd73f8354d4cd72e7bd2aebd2e"
+      "sha256": "570283b6e3655949d1752fc3f4d93419e9b8e44ff0c9afc87b8344ef9bfb5d06"
     },
     {
       "raceId": "2026-11-28_5_11",
       "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/races/2026-11-28_5_11/extended",
-      "sha256": "19b5127c847e5291ad40391d60b12c95adf061a7a29bbe5580a6ff425b3a5b0f"
+      "sha256": "bf573af6fe0518bb9676da15ff0b9766be7e36aee6ecd1e4e343fd6c7a336a71"
     }
   ],
   "limitations": "Experimentell ranking från utvalda kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, aktuellt resultat, hästnamn, kusk, tränare och karriärstatistik ingår inte som modellvariabler. Galoppvariabeln är avstängd för jämförbarhet med grundförsöket. Testet är retrospektivt och visar inte lönsamhet.",

@@ -5819,6 +5819,6 @@
       "baselineSource": "research/baseline_196_races_2026.json"
     }
   },
-  "generatedAt": "2026-11-21T11:03:28.292237+00:00",
+  "generatedAt": "2026-11-28T10:05:26.207538+00:00",
   "limitations": "Experimentell ranking från utvalda kompletta historiska lopp. Modellpoäng är inte kalibrerad vinstchans. Odds, streck, aktuellt resultat, hästnamn, kusk, tränare och karriärstatistik ingår inte som modellvariabler. Galoppvariabeln är avstängd för jämförbarhet med grundförsöket. Testet är retrospektivt och visar inte lönsamhet."
 }

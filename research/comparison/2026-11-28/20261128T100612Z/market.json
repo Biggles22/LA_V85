@@ -1,0 +1,161 @@
+{
+  "capturedAt": "2026-11-28T11:04:00.939199+01:00",
+  "sourceAt": "2026-11-28T11:03:00+01:00",
+  "snapshotId": "b47d9bf350b04f6ccc1548f81d4ca792f2b1a8285f697b410994a53060d6136b",
+  "races": [
+    {
+      "leg": 1,
+      "raceId": "2026-11-28_5_5",
+      "top3": [
+        {
+          "number": 5,
+          "name": "Fine Manners",
+          "pct": 65.26
+        },
+        {
+          "number": 11,
+          "name": "Iaintnoquitter",
+          "pct": 12.51
+        },
+        {
+          "number": 8,
+          "name": "Shogun R.R.",
+          "pct": 11.59
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 2,
+      "raceId": "2026-11-28_5_6",
+      "top3": [
+        {
+          "number": 3,
+          "name": "Hola Que Tal",
+          "pct": 27.99
+        },
+        {
+          "number": 4,
+          "name": "Capo",
+          "pct": 24.38
+        },
+        {
+          "number": 8,
+          "name": "The Pope",
+          "pct": 15.96
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 3,
+      "raceId": "2026-11-28_5_7",
+      "top3": [
+        {
+          "number": 3,
+          "name": "Double Deceiver",
+          "pct": 54.3
+        },
+        {
+          "number": 10,
+          "name": "Diva Ek",
+          "pct": 20.94
+        },
+        {
+          "number": 2,
+          "name": "Stens Rubin",
+          "pct": 13.4
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 4,
+      "raceId": "2026-11-28_5_8",
+      "top3": [
+        {
+          "number": 11,
+          "name": "Hankypanky Leonie",
+          "pct": 30.19
+        },
+        {
+          "number": 6,
+          "name": "Haute Couture",
+          "pct": 15.11
+        },
+        {
+          "number": 2,
+          "name": "Eye to Eye",
+          "pct": 12.17
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 5,
+      "raceId": "2026-11-28_5_9",
+      "top3": [
+        {
+          "number": 5,
+          "name": "Tangelo Lane",
+          "pct": 36.96
+        },
+        {
+          "number": 6,
+          "name": "Justice for All",
+          "pct": 22.05
+        },
+        {
+          "number": 1,
+          "name": "Medavoy",
+          "pct": 16.12
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 6,
+      "raceId": "2026-11-28_5_10",
+      "top3": [
+        {
+          "number": 7,
+          "name": "Barn Bank",
+          "pct": 57.88
+        },
+        {
+          "number": 1,
+          "name": "Celtic Tonga",
+          "pct": 13.41
+        },
+        {
+          "number": 5,
+          "name": "Romulus Diablo",
+          "pct": 9.19
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    },
+    {
+      "leg": 7,
+      "raceId": "2026-11-28_5_11",
+      "top3": [
+        {
+          "number": 1,
+          "name": "Likeaboss",
+          "pct": 26.5
+        },
+        {
+          "number": 4,
+          "name": "Joker Ima",
+          "pct": 22.25
+        },
+        {
+          "number": 6,
+          "name": "River Tooma",
+          "pct": 16.87
+        }
+      ],
+      "strictOrderedTop3Eligible": true
+    }
+  ]
+}
