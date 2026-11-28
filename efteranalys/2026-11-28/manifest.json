@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "publishedAt": "2026-11-28T21:02:56.712367+01:00",
+  "roundId": "2026-11-28-solvalla",
+  "gameId": "V75_2026-11-28_5_5",
+  "files": {
+    "index.html": {
+      "sha256": "395c022effe0c27421104ad40fbab4bdc30cf4a82821a48dd2b9347e2cce7859",
+      "bytes": 12104
+    },
+    "lessons.json": {
+      "sha256": "a13a922a2a90c7da9585bcf1adc46d028d1a2842cc80ddd9c41e2be53f258674",
+      "bytes": 1515
+    },
+    "official-game.json.gz": {
+      "sha256": "aba3e286f4a54495be658a5476a9c980a2e8131f3469184d5376f836b1d13eec",
+      "bytes": 46057
+    },
+    "results.json": {
+      "sha256": "6825d8adea7c89a6fa45f3f789d5b8cddad1156dd1d409db6f09522f6740288a",
+      "bytes": 33869
+    },
+    "verification.json": {
+      "sha256": "82648fe6839d8abc33cf7ce3fa271c434ff1778138a49766f9e9cf5aa757dfad",
+      "bytes": 544
+    }
+  }
+}

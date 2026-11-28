@@ -1,0 +1,1540 @@
+{
+  "publishedAt": "2026-11-28T21:02:56.712367+01:00",
+  "status": "verified_results",
+  "gameId": "V75_2026-11-28_5_5",
+  "batchPath": "research/comparison/2026-11-28/20261128T100612Z/",
+  "manifestVerified": true,
+  "prestartSnapshotId": "b47d9bf350b04f6ccc1548f81d4ca792f2b1a8285f697b410994a53060d6136b",
+  "observationWindow": {
+    "startedAt": "2026-11-28T10:06:12.542748+00:00",
+    "finishedAt": "2026-11-28T10:13:48.376281+00:00"
+  },
+  "officialEvidence": {
+    "sourceUrl": "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5",
+    "capturedAt": "2026-11-28T21:02:56.712367+01:00",
+    "sha256": "b9b379c97621ea1975e680fc96c7d3eca1f282b9a215d792857e919b694434e2",
+    "savedAs": "official-game.json.gz"
+  },
+  "officialSourceAt": "2026-11-28 17:39:00",
+  "winners": {
+    "2026-11-28_5_5": [
+      5
+    ],
+    "2026-11-28_5_6": [
+      3
+    ],
+    "2026-11-28_5_7": [
+      10
+    ],
+    "2026-11-28_5_8": [
+      14
+    ],
+    "2026-11-28_5_9": [
+      1
+    ],
+    "2026-11-28_5_10": [
+      7
+    ],
+    "2026-11-28_5_11": [
+      4
+    ]
+  },
+  "races": [
+    {
+      "leg": 1,
+      "raceId": "2026-11-28_5_5",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 5,
+          "name": "Fine Manners",
+          "prestartPct": 65.26,
+          "prestartWinOdds": 1.64,
+          "finalOdds": 1.47,
+          "place": 1,
+          "finishOrder": 1
+        }
+      ]
+    },
+    {
+      "leg": 2,
+      "raceId": "2026-11-28_5_6",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 3,
+          "name": "Hola Que Tal",
+          "prestartPct": 27.99,
+          "prestartWinOdds": 3.33,
+          "finalOdds": 3.61,
+          "place": 1,
+          "finishOrder": 1
+        }
+      ]
+    },
+    {
+      "leg": 3,
+      "raceId": "2026-11-28_5_7",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 10,
+          "name": "Diva Ek",
+          "prestartPct": 20.94,
+          "prestartWinOdds": 2.89,
+          "finalOdds": 4.79,
+          "place": 1,
+          "finishOrder": 1
+        }
+      ]
+    },
+    {
+      "leg": 4,
+      "raceId": "2026-11-28_5_8",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 14,
+          "name": "Lotusorchide",
+          "prestartPct": 11.67,
+          "prestartWinOdds": 10.18,
+          "finalOdds": 11.39,
+          "place": 1,
+          "finishOrder": 1
+        }
+      ]
+    },
+    {
+      "leg": 5,
+      "raceId": "2026-11-28_5_9",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 1,
+          "name": "Medavoy",
+          "prestartPct": 16.12,
+          "prestartWinOdds": 7.19,
+          "finalOdds": 3.79,
+          "place": 1,
+          "finishOrder": 1
+        }
+      ]
+    },
+    {
+      "leg": 6,
+      "raceId": "2026-11-28_5_10",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 7,
+          "name": "Barn Bank",
+          "prestartPct": 57.88,
+          "prestartWinOdds": 2.61,
+          "finalOdds": 2.01,
+          "place": 1,
+          "finishOrder": 1
+        }
+      ]
+    },
+    {
+      "leg": 7,
+      "raceId": "2026-11-28_5_11",
+      "status": "verified",
+      "deadHeat": false,
+      "winners": [
+        {
+          "number": 4,
+          "name": "Joker Ima",
+          "prestartPct": 22.25,
+          "prestartWinOdds": 3.9,
+          "finalOdds": 3.45,
+          "place": 1,
+          "finishOrder": 1
+        }
+      ]
+    }
+  ],
+  "turnoverSEK": 111974812.0,
+  "payouts": {
+    "5": {
+      "amountSEK": 0.0,
+      "systems": 3055508,
+      "jackpot": true
+    },
+    "6": {
+      "amountSEK": 46.0,
+      "systems": 312135,
+      "jackpot": false
+    },
+    "7": {
+      "amountSEK": 3538.0,
+      "systems": 12784,
+      "jackpot": false
+    }
+  },
+  "lateScratches": [
+    {
+      "leg": 6,
+      "number": 8
+    },
+    {
+      "leg": 6,
+      "number": 11
+    }
+  ],
+  "metrics": {
+    "Historik-CatBoost": {
+      "first": {
+        "hits": 3,
+        "races": 7,
+        "raceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_8",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ],
+        "hitRaceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ]
+      },
+      "top3": {
+        "hits": 4,
+        "races": 7,
+        "raceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_8",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ],
+        "hitRaceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_7",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ]
+      }
+    },
+    "Utökad CatBoost (experimentell)": {
+      "first": {
+        "hits": 4,
+        "races": 7,
+        "raceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_8",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ],
+        "hitRaceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ]
+      },
+      "top3": {
+        "hits": 6,
+        "races": 7,
+        "raceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_8",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ],
+        "hitRaceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ]
+      }
+    },
+    "Marknaden vid frysning": {
+      "first": {
+        "hits": 3,
+        "races": 7,
+        "raceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_8",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ],
+        "hitRaceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_10"
+        ]
+      },
+      "top3": {
+        "hits": 6,
+        "races": 7,
+        "raceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_8",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ],
+        "hitRaceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ]
+      }
+    },
+    "Tipper Trav": {
+      "first": {
+        "hits": 2,
+        "races": 6,
+        "raceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_8",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10"
+        ],
+        "hitRaceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_10"
+        ]
+      },
+      "top3": {
+        "hits": 3,
+        "races": 5,
+        "raceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_8",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10"
+        ],
+        "hitRaceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_10"
+        ]
+      }
+    },
+    "Travtips AI": {
+      "first": {
+        "hits": 3,
+        "races": 7,
+        "raceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_7",
+          "2026-11-28_5_8",
+          "2026-11-28_5_9",
+          "2026-11-28_5_10",
+          "2026-11-28_5_11"
+        ],
+        "hitRaceIds": [
+          "2026-11-28_5_5",
+          "2026-11-28_5_6",
+          "2026-11-28_5_10"
+        ]
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "Travmaskinen": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "V46": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "Travia AI": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "Travtipsaren": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "ATG Elli": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    },
+    "Simsalabim Heat Rank": {
+      "first": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      },
+      "top3": {
+        "hits": 0,
+        "races": 0,
+        "raceIds": [],
+        "hitRaceIds": []
+      }
+    }
+  },
+  "pairedMainDenominator": 7,
+  "modelWinnerAdditionsOutsideMarketTop3": {
+    "Historik-CatBoost": [],
+    "Utökad CatBoost (experimentell)": []
+  },
+  "spikes": {
+    "hits": 2,
+    "candidates": 2,
+    "records": [
+      {
+        "leg": 1,
+        "number": 5,
+        "name": "Fine Manners",
+        "pct": 65.26,
+        "historicalRank": 1,
+        "expandedRank": 1,
+        "sources": [
+          "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+        ],
+        "reason": "Förstaval i båda modellerna i lördagens snapshot.",
+        "challengers": [
+          "Iaintnoquitter",
+          "Shogun R.R."
+        ],
+        "opponents": [
+          {
+            "number": 11,
+            "name": "Iaintnoquitter"
+          },
+          {
+            "number": 8,
+            "name": "Shogun R.R."
+          }
+        ],
+        "risk": "Hög streckandel och 47 dagars uppehåll; Iaintnoquitter har fyra segrar och en andraplats på fem starter.",
+        "won": true,
+        "result": {
+          "place": 1,
+          "finishOrder": 1,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 10,
+            "tenths": 9
+          },
+          "prizeMoney": 150000,
+          "finalOdds": 1.47,
+          "startNumber": 5
+        }
+      },
+      {
+        "leg": 6,
+        "number": 7,
+        "name": "Barn Bank",
+        "pct": 57.88,
+        "historicalRank": 1,
+        "expandedRank": 1,
+        "sources": [
+          "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+        ],
+        "reason": "Förstaval i båda modellerna i lördagens snapshot.",
+        "challengers": [
+          "Osvaldo A.Boko",
+          "Romulus Diablo"
+        ],
+        "opponents": [
+          {
+            "number": 4,
+            "name": "Osvaldo A.Boko"
+          },
+          {
+            "number": 5,
+            "name": "Romulus Diablo"
+          }
+        ],
+        "risk": "Spår 7 över 1640 meter och två galoppnoteringar i femstartersunderlaget; Osvaldo A.Boko och Romulus Diablo är motbud.",
+        "won": true,
+        "result": {
+          "place": 1,
+          "finishOrder": 1,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 11,
+            "tenths": 9
+          },
+          "prizeMoney": 135000,
+          "finalOdds": 2.01,
+          "startNumber": 7
+        }
+      }
+    ]
+  },
+  "prioritizedOutsiders": {
+    "hits": 0,
+    "candidates": 3,
+    "representedLegs": 3,
+    "records": [
+      {
+        "leg": 2,
+        "number": 2,
+        "name": "Crazy Mary",
+        "pct": 2.37,
+        "historicalRank": 1,
+        "expandedRank": 7,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 3,
+            "covered": 12,
+            "cutoff": 4,
+            "value": 3.08
+          }
+        ],
+        "type": "outsider",
+        "sources": [
+          "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+        ],
+        "reason": "Historikrank 1, utökad rank 7 och 2.37 procent. class-proxy 3/12 klarar bästa tredjedelen.",
+        "argument": "Historikrank 1, utökad rank 7 och 2.37 procent. class-proxy 3/12 klarar bästa tredjedelen.",
+        "risk": "Hola Que Tal och Capo har klart högre marknadsstöd; femstartersraden saknar seger och den utökade modellen rankar lägre.",
+        "won": false,
+        "result": {
+          "place": 3,
+          "finishOrder": 3,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 13,
+            "tenths": 0
+          },
+          "prizeMoney": 34000,
+          "finalOdds": 23.64,
+          "startNumber": 2
+        }
+      },
+      {
+        "leg": 4,
+        "number": 5,
+        "name": "Raina Schermer",
+        "pct": 1.78,
+        "historicalRank": 2,
+        "expandedRank": 9,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 1,
+            "covered": 13,
+            "cutoff": 5,
+            "value": 3.42
+          }
+        ],
+        "type": "outsider",
+        "sources": [
+          "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+        ],
+        "reason": "Historikrank 2, utökad rank 9 och 1.78 procent. class-proxy 1/13 klarar bästa tredjedelen.",
+        "argument": "Historikrank 2, utökad rank 9 och 1.78 procent. class-proxy 1/13 klarar bästa tredjedelen.",
+        "risk": "Voltstart över 2640 meter samt starkt marknadsstöd för Hankypanky Leonie; den utökade modellen rankar lägre.",
+        "won": false,
+        "result": {
+          "finishOrder": 42,
+          "kmTime": {
+            "code": "12"
+          },
+          "galloped": true,
+          "disqualified": true,
+          "prizeMoney": 2500,
+          "finalOdds": 19.39,
+          "startNumber": 5
+        }
+      },
+      {
+        "leg": 6,
+        "number": 4,
+        "name": "Osvaldo A.Boko",
+        "pct": 5.99,
+        "historicalRank": 2,
+        "expandedRank": 2,
+        "qualifyingProxies": [
+          {
+            "type": "form",
+            "rank": 3,
+            "covered": 12,
+            "cutoff": 4,
+            "value": 3.82
+          }
+        ],
+        "type": "outsider",
+        "sources": [
+          "https://www.atg.se/services/racinginfo/v1/api/games/V75_2026-11-28_5_5"
+        ],
+        "reason": "Historikrank 2, utökad rank 2 och 5.99 procent. form-proxy 3/12 klarar bästa tredjedelen.",
+        "argument": "Historikrank 2, utökad rank 2 och 5.99 procent. form-proxy 3/12 klarar bästa tredjedelen.",
+        "risk": "Barn Bank toppar båda modellerna och sprinttempot från spår 4 måste falla rätt.",
+        "won": false,
+        "result": {
+          "place": 3,
+          "finishOrder": 3,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 12,
+            "tenths": 1
+          },
+          "prizeMoney": 36000,
+          "finalOdds": 9.61,
+          "startNumber": 4
+        }
+      }
+    ]
+  },
+  "qualifiedOutsiders": {
+    "hits": 0,
+    "candidates": 14,
+    "records": [
+      {
+        "leg": 2,
+        "number": 2,
+        "name": "Crazy Mary",
+        "pct": 2.37,
+        "historicalRank": 1,
+        "expandedRank": 7,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 3,
+            "covered": 12,
+            "cutoff": 4,
+            "value": 3.08
+          }
+        ],
+        "postPosition": 2,
+        "distance": 2140,
+        "formProxy": {
+          "rank": 9,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 2.35
+        },
+        "classProxy": {
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.08
+        },
+        "won": false,
+        "result": {
+          "place": 3,
+          "finishOrder": 3,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 13,
+            "tenths": 0
+          },
+          "prizeMoney": 34000,
+          "finalOdds": 23.64,
+          "startNumber": 2
+        }
+      },
+      {
+        "leg": 4,
+        "number": 5,
+        "name": "Raina Schermer",
+        "pct": 1.78,
+        "historicalRank": 2,
+        "expandedRank": 9,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 1,
+            "covered": 13,
+            "cutoff": 5,
+            "value": 3.42
+          }
+        ],
+        "postPosition": 5,
+        "distance": 2640,
+        "formProxy": {
+          "rank": 8,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 2.66
+        },
+        "classProxy": {
+          "rank": 1,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 3.42
+        },
+        "won": false,
+        "result": {
+          "finishOrder": 42,
+          "kmTime": {
+            "code": "12"
+          },
+          "galloped": true,
+          "disqualified": true,
+          "prizeMoney": 2500,
+          "finalOdds": 19.39,
+          "startNumber": 5
+        }
+      },
+      {
+        "leg": 6,
+        "number": 4,
+        "name": "Osvaldo A.Boko",
+        "pct": 5.99,
+        "historicalRank": 2,
+        "expandedRank": 2,
+        "qualifyingProxies": [
+          {
+            "type": "form",
+            "rank": 3,
+            "covered": 12,
+            "cutoff": 4,
+            "value": 3.82
+          }
+        ],
+        "postPosition": 4,
+        "distance": 1640,
+        "formProxy": {
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.82
+        },
+        "classProxy": {
+          "rank": 8,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 2.42
+        },
+        "won": false,
+        "result": {
+          "place": 3,
+          "finishOrder": 3,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 12,
+            "tenths": 1
+          },
+          "prizeMoney": 36000,
+          "finalOdds": 9.61,
+          "startNumber": 4
+        }
+      },
+      {
+        "leg": 1,
+        "number": 2,
+        "name": "Four White E.G.",
+        "pct": 1.0,
+        "historicalRank": 3,
+        "expandedRank": 8,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 3,
+            "covered": 12,
+            "cutoff": 4,
+            "value": 3.01
+          }
+        ],
+        "postPosition": 2,
+        "distance": 2140,
+        "formProxy": {
+          "rank": 7,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 2.54
+        },
+        "classProxy": {
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.01
+        },
+        "won": false,
+        "result": {
+          "place": 0,
+          "finishOrder": 10,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 12,
+            "tenths": 1
+          },
+          "prizeMoney": 2500,
+          "finalOdds": 40.14,
+          "startNumber": 2
+        }
+      },
+      {
+        "leg": 5,
+        "number": 7,
+        "name": "Ice Cubes",
+        "pct": 6.09,
+        "historicalRank": 3,
+        "expandedRank": 4,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 2,
+            "covered": 10,
+            "cutoff": 4,
+            "value": 3.32
+          }
+        ],
+        "postPosition": 7,
+        "distance": 2140,
+        "formProxy": {
+          "rank": 5,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 2.78
+        },
+        "classProxy": {
+          "rank": 2,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 3.32
+        },
+        "won": false,
+        "result": {
+          "place": 6,
+          "finishOrder": 6,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 15,
+            "tenths": 3
+          },
+          "prizeMoney": 10500,
+          "finalOdds": 17.9,
+          "startNumber": 7
+        }
+      },
+      {
+        "leg": 6,
+        "number": 5,
+        "name": "Romulus Diablo",
+        "pct": 9.19,
+        "historicalRank": 3,
+        "expandedRank": 4,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 3,
+            "covered": 12,
+            "cutoff": 4,
+            "value": 3.34
+          }
+        ],
+        "postPosition": 5,
+        "distance": 1640,
+        "formProxy": {
+          "rank": 6,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.42
+        },
+        "classProxy": {
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.34
+        },
+        "won": false,
+        "result": {
+          "place": 0,
+          "finishOrder": 10,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 15,
+            "tenths": 5
+          },
+          "galloped": true,
+          "prizeMoney": 2500,
+          "finalOdds": 11.02,
+          "startNumber": 5
+        }
+      },
+      {
+        "leg": 4,
+        "number": 1,
+        "name": "Kahbean",
+        "pct": 9.68,
+        "historicalRank": 3,
+        "expandedRank": 5,
+        "qualifyingProxies": [
+          {
+            "type": "form",
+            "rank": 1,
+            "covered": 13,
+            "cutoff": 5,
+            "value": 3.61
+          }
+        ],
+        "postPosition": 1,
+        "distance": 2640,
+        "formProxy": {
+          "rank": 1,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 3.61
+        },
+        "classProxy": {
+          "rank": 12,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 2.02
+        },
+        "won": false,
+        "result": {
+          "finishOrder": 43,
+          "kmTime": {
+            "code": "u"
+          },
+          "galloped": true,
+          "disqualified": true,
+          "prizeMoney": 2500,
+          "finalOdds": 16.01,
+          "startNumber": 1
+        }
+      },
+      {
+        "leg": 6,
+        "number": 3,
+        "name": "Joakim Palema",
+        "pct": 4.38,
+        "historicalRank": 4,
+        "expandedRank": 5,
+        "qualifyingProxies": [
+          {
+            "type": "form",
+            "rank": 4,
+            "covered": 12,
+            "cutoff": 4,
+            "value": 3.7
+          }
+        ],
+        "postPosition": 3,
+        "distance": 1640,
+        "formProxy": {
+          "rank": 4,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.7
+        },
+        "classProxy": {
+          "rank": 7,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 2.61
+        },
+        "won": false,
+        "result": {
+          "place": 2,
+          "finishOrder": 2,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 12,
+            "tenths": 1
+          },
+          "prizeMoney": 67500,
+          "finalOdds": 17.19,
+          "startNumber": 3
+        }
+      },
+      {
+        "leg": 1,
+        "number": 6,
+        "name": "Alvena Roy",
+        "pct": 1.26,
+        "historicalRank": 5,
+        "expandedRank": 7,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 3,
+            "covered": 12,
+            "cutoff": 4,
+            "value": 3.01
+          }
+        ],
+        "postPosition": 6,
+        "distance": 2140,
+        "formProxy": {
+          "rank": 6,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 2.58
+        },
+        "classProxy": {
+          "rank": 3,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.01
+        },
+        "won": false,
+        "result": {
+          "place": 4,
+          "finishOrder": 4,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 11,
+            "tenths": 5
+          },
+          "prizeMoney": 25000,
+          "finalOdds": 49.94,
+          "startNumber": 6
+        }
+      },
+      {
+        "leg": 3,
+        "number": 9,
+        "name": "Castor the Star",
+        "pct": 2.01,
+        "historicalRank": 5,
+        "expandedRank": 5,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 3,
+            "covered": 10,
+            "cutoff": 4,
+            "value": 2.8
+          }
+        ],
+        "postPosition": 9,
+        "distance": 2140,
+        "formProxy": {
+          "rank": 6,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 2.07
+        },
+        "classProxy": {
+          "rank": 3,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 2.8
+        },
+        "won": false,
+        "result": {
+          "place": 5,
+          "finishOrder": 5,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 12,
+            "tenths": 1
+          },
+          "prizeMoney": 24000,
+          "finalOdds": 26.06,
+          "startNumber": 9
+        }
+      },
+      {
+        "leg": 7,
+        "number": 10,
+        "name": "Ebbot Rice",
+        "pct": 9.4,
+        "historicalRank": 5,
+        "expandedRank": 5,
+        "qualifyingProxies": [
+          {
+            "type": "form",
+            "rank": 1,
+            "covered": 10,
+            "cutoff": 4,
+            "value": 3.19
+          },
+          {
+            "type": "class",
+            "rank": 3,
+            "covered": 10,
+            "cutoff": 4,
+            "value": 2.99
+          }
+        ],
+        "postPosition": 10,
+        "distance": 2140,
+        "formProxy": {
+          "rank": 1,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 3.19
+        },
+        "classProxy": {
+          "rank": 3,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 2.99
+        },
+        "won": false,
+        "result": {
+          "place": 0,
+          "finishOrder": 9,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 13,
+            "tenths": 5
+          },
+          "prizeMoney": 2500,
+          "finalOdds": 7.33,
+          "startNumber": 10
+        }
+      },
+      {
+        "leg": 4,
+        "number": 9,
+        "name": "Global Good Girl",
+        "pct": 2.58,
+        "historicalRank": 6,
+        "expandedRank": 7,
+        "qualifyingProxies": [
+          {
+            "type": "form",
+            "rank": 5,
+            "covered": 13,
+            "cutoff": 5,
+            "value": 2.82
+          },
+          {
+            "type": "class",
+            "rank": 3,
+            "covered": 13,
+            "cutoff": 5,
+            "value": 3.15
+          }
+        ],
+        "postPosition": 3,
+        "distance": 2660,
+        "formProxy": {
+          "rank": 5,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 2.82
+        },
+        "classProxy": {
+          "rank": 3,
+          "covered": 13,
+          "cutoff": 5,
+          "value": 3.15
+        },
+        "won": false,
+        "result": {
+          "place": 4,
+          "finishOrder": 4,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 13,
+            "tenths": 9
+          },
+          "galloped": true,
+          "prizeMoney": 21000,
+          "finalOdds": 21.09,
+          "startNumber": 9
+        }
+      },
+      {
+        "leg": 3,
+        "number": 6,
+        "name": "Makalu Doc",
+        "pct": 6.89,
+        "historicalRank": 6,
+        "expandedRank": 4,
+        "qualifyingProxies": [
+          {
+            "type": "form",
+            "rank": 4,
+            "covered": 10,
+            "cutoff": 4,
+            "value": 2.61
+          }
+        ],
+        "postPosition": 6,
+        "distance": 2140,
+        "formProxy": {
+          "rank": 4,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 2.61
+        },
+        "classProxy": {
+          "rank": 5,
+          "covered": 10,
+          "cutoff": 4,
+          "value": 2.55
+        },
+        "won": false,
+        "result": {
+          "place": 4,
+          "finishOrder": 4,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 11,
+            "tenths": 9
+          },
+          "prizeMoney": 39000,
+          "finalOdds": 14.03,
+          "startNumber": 6
+        }
+      },
+      {
+        "leg": 2,
+        "number": 7,
+        "name": "Surveillance",
+        "pct": 8.36,
+        "historicalRank": 6,
+        "expandedRank": 3,
+        "qualifyingProxies": [
+          {
+            "type": "class",
+            "rank": 1,
+            "covered": 12,
+            "cutoff": 4,
+            "value": 3.67
+          }
+        ],
+        "postPosition": 7,
+        "distance": 2140,
+        "formProxy": {
+          "rank": 5,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 2.68
+        },
+        "classProxy": {
+          "rank": 1,
+          "covered": 12,
+          "cutoff": 4,
+          "value": 3.67
+        },
+        "won": false,
+        "result": {
+          "place": 6,
+          "finishOrder": 6,
+          "kmTime": {
+            "minutes": 1,
+            "seconds": 13,
+            "tenths": 3
+          },
+          "prizeMoney": 10500,
+          "finalOdds": 5.93,
+          "startNumber": 7
+        }
+      }
+    ]
+  },
+  "traviaPublicHighlights": {
+    "hits": 1,
+    "candidates": 2,
+    "records": [
+      {
+        "leg": 5,
+        "number": 5,
+        "name": "Tangelo Lane",
+        "kind": "spike",
+        "won": false
+      },
+      {
+        "leg": 4,
+        "number": 14,
+        "name": "Lotusorchide",
+        "kind": "outsider",
+        "won": true
+      }
+    ],
+    "notFirstChoiceMetric": true
+  },
+  "theoreticalSystems": {
+    "A": {
+      "label": "Två arbetsspikar",
+      "selections": [
+        [
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          8
+        ],
+        [
+          2,
+          3,
+          6,
+          10
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          11
+        ],
+        [
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          7
+        ],
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "rows": 1500,
+      "rowPriceSEK": 0.6,
+      "stakeFraction": 1.0,
+      "costSEK": 900.0,
+      "correctRows": {
+        "2": 480,
+        "3": 640,
+        "4": 310,
+        "5": 65,
+        "6": 5
+      },
+      "maxCorrect": 6,
+      "grossPayoutSEK": 230.0,
+      "netSEK": -670.0,
+      "reserveActivated": false,
+      "lateScratchesInSelections": []
+    },
+    "BUncut": {
+      "label": "Motbuden tillagda, övriga streck kvar",
+      "selections": [
+        [
+          5,
+          11
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          8
+        ],
+        [
+          2,
+          3,
+          6,
+          10
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          11
+        ],
+        [
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "rows": 6000,
+      "rowPriceSEK": 0.6,
+      "stakeFraction": 1.0,
+      "costSEK": 3600.0,
+      "correctRows": {
+        "0": 480,
+        "1": 1600,
+        "2": 2070,
+        "3": 1325,
+        "4": 445,
+        "5": 75,
+        "6": 5
+      },
+      "maxCorrect": 6,
+      "grossPayoutSEK": 230.0,
+      "netSEK": -3370.0,
+      "reserveActivated": false,
+      "lateScratchesInSelections": []
+    },
+    "BWithinBudget": {
+      "label": "Motbuden tillagda inom A:s budget",
+      "selections": [
+        [
+          5,
+          11
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          8
+        ],
+        [
+          2,
+          3,
+          10
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          11
+        ],
+        [
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4
+        ]
+      ],
+      "rows": 1500,
+      "rowPriceSEK": 0.6,
+      "stakeFraction": 1.0,
+      "costSEK": 900.0,
+      "correctRows": {
+        "1": 160,
+        "2": 480,
+        "3": 530,
+        "4": 265,
+        "5": 60,
+        "6": 5
+      },
+      "maxCorrect": 6,
+      "grossPayoutSEK": 230.0,
+      "netSEK": -670.0,
+      "reserveActivated": false,
+      "lateScratchesInSelections": []
+    }
+  },
+  "confirmedUserCoupon": {
+    "status": "missing",
+    "note": "Ingen uttryckligen bekräftad Solvalla-bong finns i repot. De tre systemen är teoretiska förhandsalternativ."
+  },
+  "cumulative": {
+    "scope": "Primärfrysningar 7, 14, 21 och 28 november 2026",
+    "Historik-CatBoost": {
+      "first": "7/31",
+      "top3": "19/31"
+    },
+    "Utökad CatBoost (experimentell)": {
+      "first": "15/31",
+      "top3": "23/31"
+    },
+    "Marknaden vid frysning": {
+      "first": "14/31",
+      "top3": "25/31"
+    },
+    "Tipper Trav": {
+      "first": "14/29",
+      "top3": "15/24"
+    },
+    "Travtips AI": {
+      "first": "4/8",
+      "top3": "1/1"
+    },
+    "prioritizedOutsidersNewRule": {
+      "hits": 0,
+      "candidates": 3,
+      "rounds": 1
+    },
+    "note": "Olika källtäckning och nämnare bevaras. Dagens Travtips AI hade endast förstaval, ingen topp tre."
+  }
+}

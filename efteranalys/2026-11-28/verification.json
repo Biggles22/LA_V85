@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-11-28T21:02:56.712367+01:00",
+  "status": "verified",
+  "gameId": "V75_2026-11-28_5_5",
+  "roundId": "2026-11-28-solvalla",
+  "prestartIndex": "research/comparison/2026-11-28/prestart-index.json",
+  "primaryBatch": "20261128T100612Z",
+  "manifestVerified": true,
+  "officialSha256": "b9b379c97621ea1975e680fc96c7d3eca1f282b9a215d792857e919b694434e2",
+  "officialSourceAt": "2026-11-28 17:39:00",
+  "racesVerified": 7,
+  "payoutComplete": true,
+  "deadHeats": 0,
+  "confirmedUserCoupon": false,
+  "lateScratchCount": 2
+}

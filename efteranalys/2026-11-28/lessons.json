@@ -1,0 +1,18 @@
+{
+  "publishedAt": "2026-11-28T21:02:56.712367+01:00",
+  "roundId": "2026-11-28-solvalla",
+  "source": "verified frozen comparison and official ATG result",
+  "observations": [
+    "Båda arbetsspikarna vann, men spikmotbudsalternativen gav ingen extra systemutdelning; den gemensamma missen var Lotusorchide i V75-4.",
+    "Den prioriterade skrällregeln gav 0/3 vinnare. Crazy Mary och Osvaldo A.Boko blev trea; Raina Schermer diskvalificerades.",
+    "Alla tre huvudbaslinjer missade Lotusorchide i topp tre. Travias uttryckliga outsider Lotusorchide vann, men deras grupper var oordnade och räknas inte som strikt topp tre.",
+    "Den utökade modellen och marknaden nådde 6/7 topp tre; historikmodellen 4/7. Den utökade modellen är marknadspåverkad och inte en oberoende källa.",
+    "Två sena strykningar tillkom efter frysningen. Ingen fanns i systemen, så inga reserver aktiverades."
+  ],
+  "followUp": [
+    "Behåll den beslutade skrällregeln oförändrad minst en omgång till; ändra inte gränser efter en enskild nolla.",
+    "Frys externa uttryckliga outsider-signaler separat när de ligger utanför alla tre huvudbaslinjernas topp tre. De ska följas upp men inte automatiskt bli egna systemstreck.",
+    "Fortsätt prissätta A, oskuret B och B inom budget före start. Redovisa även vilken annan avdelning som faktiskt orsakar systemmissen.",
+    "Gör en sista verifierad strykningskontroll nära spelstopp och dokumentera reservaktivering utan att skriva om tidigare snapshot."
+  ]
+}

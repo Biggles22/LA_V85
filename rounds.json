@@ -7,11 +7,12 @@
       "track": "Solvalla",
       "gameType": "V75",
       "legs": 7,
-      "status": "preparing",
+      "status": "completed",
       "data": "rounds/2026-11-28-solvalla/data.json",
       "analysis": "rounds/2026-11-28-solvalla/analysis.json",
       "overview": "uppdateringar/2026-11-28/",
-      "sourceUrl": "https://www.atg.se/spel/2026-11-28/V75/solvalla"
+      "sourceUrl": "https://www.atg.se/spel/2026-11-28/V75/solvalla",
+      "review": "efteranalys/2026-11-28/"
     },
     {
       "id": "2026-11-21-jagersro",
